@@ -98,10 +98,15 @@ class BBoxItem(QGraphicsRectItem):
         self.item_id = item_id
         self.char = char
         self._selected = False
+        # 基础层级：用于重叠时保持稳定排序；选中时会临时置顶
+        self._base_z = float(item_id)
         self._resizing = False
         self._resize_handle: str | None = None
         self._resize_start_scene_pos: QPointF | None = None
         self._resize_start_bbox: List[float] | None = None
+
+        # 拖拽移动起始 bbox（用于提交撤销）
+        self._move_start_bbox: List[float] | None = None
 
         # 设置默认样式
         self.setPen(QPen(QColor(0, 255, 0), 2))
@@ -109,12 +114,14 @@ class BBoxItem(QGraphicsRectItem):
         self.setFlag(QGraphicsRectItem.ItemIsSelectable, True)
         self.setFlag(QGraphicsRectItem.ItemIsMovable, True)
         self.setFlag(QGraphicsRectItem.ItemSendsGeometryChanges, True)
+        self.setZValue(self._base_z)
 
         # 字符标签
         self.label = QGraphicsTextItem(char, self)
         self.label.setDefaultTextColor(QColor(255, 0, 0))
         self.label.setFont(QFont("Arial", 12, QFont.Bold))
         self.label.setPos(0, -20)
+        self.label.setZValue(10)
 
         # 调整手柄
         self.handles = []
@@ -159,10 +166,13 @@ class BBoxItem(QGraphicsRectItem):
         """设置选中状态"""
         self._selected = selected
         if selected:
+            # 选中置顶：避免 bbox 重叠时误操作到别的框
+            self.setZValue(100000.0 + self._base_z)
             self.setPen(QPen(QColor(255, 0, 0), 3))
             for handle in self.handles:
                 handle.setVisible(True)
         else:
+            self.setZValue(self._base_z)
             self.setPen(QPen(QColor(0, 255, 0), 2))
             for handle in self.handles:
                 handle.setVisible(False)
@@ -195,6 +205,15 @@ class BBoxItem(QGraphicsRectItem):
         self._resize_handle = handle_pos
         self._resize_start_scene_pos = scene_pos
         self._resize_start_bbox = self.get_bbox()
+
+    def _notify_bbox_committed(self, old_bbox: List[float], new_bbox: List[float]):
+        """向所属 view 通知 bbox 变更（用于撤销栈）"""
+        sc = self.scene()
+        if not sc:
+            return
+        for v in sc.views():
+            if hasattr(v, "_notify_bbox_committed"):
+                v._notify_bbox_committed(self.item_id, old_bbox, new_bbox)
 
     def resize_to(self, scene_pos: QPointF):
         """调整到新位置"""
@@ -242,18 +261,55 @@ class BBoxItem(QGraphicsRectItem):
         self.setRect(0, 0, x2 - x1, y2 - y1)
         self._update_handle_positions()
 
+        # 实时通知预览更新
+        self._notify_bbox_live()
+
+    def _notify_bbox_live(self):
+        """实时通知 view：bbox 正在变化（用于预览跟随）"""
+        sc = self.scene()
+        if not sc:
+            return
+        bbox = self.get_bbox()
+        for v in sc.views():
+            if hasattr(v, "_notify_bbox_live"):
+                v._notify_bbox_live(self.item_id, bbox)
+
     def end_resize(self):
         """结束调整大小"""
+        if self._resize_start_bbox is not None:
+            old_bbox = self._resize_start_bbox
+            new_bbox = self.get_bbox()
+            if any(abs(a - b) > 0.001 for a, b in zip(old_bbox, new_bbox)):
+                self._notify_bbox_committed(old_bbox, new_bbox)
+
         self._resizing = False
         self._resize_handle = None
         self._resize_start_scene_pos = None
         self._resize_start_bbox = None
+
+    def mousePressEvent(self, event):
+        # 记录移动前 bbox
+        self._move_start_bbox = self.get_bbox()
+        return super().mousePressEvent(event)
+
+    def mouseReleaseEvent(self, event):
+        # 移动后提交 bbox 变化
+        if self._move_start_bbox is not None:
+            old_bbox = self._move_start_bbox
+            new_bbox = self.get_bbox()
+            if any(abs(a - b) > 0.001 for a, b in zip(old_bbox, new_bbox)):
+                self._notify_bbox_committed(old_bbox, new_bbox)
+        self._move_start_bbox = None
+        return super().mouseReleaseEvent(event)
 
     def itemChange(self, change, value):
         """项目变化事件"""
         if change == QGraphicsRectItem.ItemPositionHasChanged:
             # 位置变化时更新手柄
             self._update_handle_positions()
+
+            # 实时通知预览更新
+            self._notify_bbox_live()
         return super().itemChange(change, value)
 
 
@@ -263,6 +319,7 @@ class ImageCanvas(QGraphicsView):
     # 信号：选中项变化
     selection_changed = pyqtSignal(int)  # item_id
     bbox_updated = pyqtSignal(int, list)  # item_id, bbox
+    bbox_edit_committed = pyqtSignal(int, list, list)  # item_id, old_bbox, new_bbox
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -279,10 +336,14 @@ class ImageCanvas(QGraphicsView):
         self.bbox_items: List[BBoxItem] = []
         self.selected_item: Optional[BBoxItem] = None
 
+        # bbox 编辑追踪（用于撤销）
+        self._bbox_editing_id: Optional[int] = None
+        self._bbox_edit_start: Optional[List[float]] = None
+
         # 视图设置
         self.setRenderHint(QPainter.Antialiasing)
         # 关闭 QGraphicsView 自带的拖拽模式，避免与 bbox 拖拽/缩放冲突。
-        # 平移改用：鼠标中键拖拽，或按住 Space + 左键拖拽。
+        # 平移改用：鼠标中键拖拽。
         self.setDragMode(QGraphicsView.NoDrag)
         self.setTransformationAnchor(QGraphicsView.AnchorUnderMouse)
         self.setResizeAnchor(QGraphicsView.AnchorUnderMouse)
@@ -297,6 +358,14 @@ class ImageCanvas(QGraphicsView):
         self.zoom_factor = 1.0
         self.min_zoom = 0.1
         self.max_zoom = 10.0
+
+    def _notify_bbox_committed(self, item_id: int, old_bbox: list, new_bbox: list):
+        """由 BBoxItem/HandleItem 回调触发的提交"""
+        self.bbox_edit_committed.emit(item_id, old_bbox, new_bbox)
+
+    def _notify_bbox_live(self, item_id: int, bbox: list):
+        """由 BBoxItem 回调触发的实时更新"""
+        self.bbox_updated.emit(item_id, bbox)
 
     def load_image(self, image_path: str):
         """加载图片"""
@@ -462,6 +531,11 @@ class ImageCanvas(QGraphicsView):
                     parent.set_selected(True)
                     self.selected_item = parent
                     self.selection_changed.emit(parent.item_id)
+
+                    # 记录开始 bbox（缩放）
+                    self._bbox_editing_id = parent.item_id
+                    self._bbox_edit_start = parent.get_bbox()
+
                     super().mousePressEvent(event)
                     return
 
@@ -472,12 +546,19 @@ class ImageCanvas(QGraphicsView):
                 item.set_selected(True)
                 self.selected_item = item
                 self.selection_changed.emit(item.item_id)
+
+                # 记录开始 bbox（拖拽移动）
+                self._bbox_editing_id = item.item_id
+                self._bbox_edit_start = item.get_bbox()
             elif item == self.image_item or item is None:
                 # 点击了图片空白区域
                 if self.selected_item:
                     self.selected_item.set_selected(False)
                     self.selected_item = None
                     self.selection_changed.emit(-1)
+
+                self._bbox_editing_id = None
+                self._bbox_edit_start = None
 
         super().mousePressEvent(event)
 
@@ -492,6 +573,20 @@ class ImageCanvas(QGraphicsView):
             # 通知边界框更新
             bbox = self.selected_item.get_bbox()
             self.bbox_updated.emit(self.selected_item.item_id, bbox)
+
+            # 提交 bbox 变更（用于撤销）
+            if (
+                self._bbox_editing_id is not None
+                and self._bbox_edit_start is not None
+                and self._bbox_editing_id == self.selected_item.item_id
+            ):
+                old_bbox = self._bbox_edit_start
+                new_bbox = bbox
+                if any(abs(a - b) > 0.001 for a, b in zip(old_bbox, new_bbox)):
+                    self.bbox_edit_committed.emit(self.selected_item.item_id, old_bbox, new_bbox)
+
+        self._bbox_editing_id = None
+        self._bbox_edit_start = None
         super().mouseReleaseEvent(event)
 
     def get_cv_image(self) -> Optional[np.ndarray]:

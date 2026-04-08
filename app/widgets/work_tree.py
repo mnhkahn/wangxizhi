@@ -1,0 +1,276 @@
+""" 
+字帖页面选择树（包含已识别列表）
+
+用途：
+- 启动时扫描项目根目录下的字帖图片（各作品目录下的 fatie-*.jpg）
+- 扫描 ocr_output/ 下已有 result.json 的识别结果
+- 点击树节点即可快速加载对应图片/缓存
+"""
+
+from __future__ import annotations
+
+import json
+from pathlib import Path
+from typing import Dict, Any, Optional, List
+
+from PyQt5.QtCore import Qt, pyqtSignal
+from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTreeWidget, QTreeWidgetItem, QToolButton
+from PyQt5.QtGui import QFont
+
+
+class WorkTreeWidget(QWidget):
+    """左侧树状结构：字帖/已识别"""
+
+    # payload:
+    # - {"kind": "work_dir", "dir_path": str}
+    # - {"kind": "work_image"|"recognized", "image_path": str, "cache_path": str|None}
+    item_activated = pyqtSignal(dict)
+    visibility_changed = pyqtSignal(bool)
+
+    def __init__(self, project_root: Path, parent=None):
+        super().__init__(parent)
+        self.project_root = Path(project_root)
+
+        self.tree = QTreeWidget()
+        self.tree.setHeaderHidden(True)
+        self.tree.itemDoubleClicked.connect(self._on_item_activated)
+        self.tree.itemClicked.connect(self._on_item_clicked)
+
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(5, 5, 5, 5)
+        layout.setSpacing(6)
+
+        header = QHBoxLayout()
+        header.setContentsMargins(0, 0, 0, 0)
+
+        self.toggle_btn = QToolButton()
+        self.toggle_btn.setText("字帖")
+        self.toggle_btn.setCheckable(True)
+        self.toggle_btn.setChecked(True)
+        self.toggle_btn.setToolButtonStyle(Qt.ToolButtonTextOnly)
+        self.toggle_btn.clicked.connect(self._toggle_tree_visible)
+        header.addWidget(self.toggle_btn)
+        header.addStretch(1)
+
+        layout.addLayout(header)
+        layout.addWidget(self.tree, 1)
+
+        self._root_recognized: Optional[QTreeWidgetItem] = None
+        self._root_works: Optional[QTreeWidgetItem] = None
+
+        # image_abs_path -> tree item
+        self._image_item_map: Dict[str, QTreeWidgetItem] = {}
+        # dir_abs_path -> tree item
+        self._dir_item_map: Dict[str, QTreeWidgetItem] = {}
+
+        self.rebuild()
+
+    def ensure_visible(self):
+        """确保树可见（不自动折叠）"""
+        if not self.toggle_btn.isChecked():
+            self.toggle_btn.setChecked(True)
+            self._toggle_tree_visible()
+
+    def select_image(self, image_path: str):
+        """在树中选中并定位到图片节点"""
+        if not image_path:
+            return
+        self.ensure_visible()
+
+        key = str(Path(image_path).resolve())
+        item = self._image_item_map.get(key)
+        if not item:
+            return
+
+        # 展开父节点
+        p = item.parent()
+        while p is not None:
+            p.setExpanded(True)
+            p = p.parent()
+
+        self.tree.setCurrentItem(item)
+        self.tree.scrollToItem(item)
+
+    def _toggle_tree_visible(self):
+        visible = self.toggle_btn.isChecked()
+        self.tree.setVisible(visible)
+
+        # 折叠时缩成窄条，让出空间给右侧
+        if visible:
+            self.toggle_btn.setText("字帖")
+            self.setMinimumWidth(220)
+            self.setMaximumWidth(360)
+        else:
+            self.toggle_btn.setText("字帖 ▶")
+            self.setMinimumWidth(44)
+            self.setMaximumWidth(44)
+
+        self.visibility_changed.emit(visible)
+
+    def rebuild(self):
+        """重建整棵树"""
+        # 记录展开状态与当前选中项，避免刷新后折叠/跳走
+        expanded_dirs = set()
+        for i in range(self.tree.topLevelItemCount()):
+            top = self.tree.topLevelItem(i)
+            payload = top.data(0, Qt.UserRole)
+            if top.isExpanded() and isinstance(payload, dict) and payload.get("kind") == "work_dir":
+                dp = payload.get("dir_path")
+                if dp:
+                    expanded_dirs.add(str(Path(dp).resolve()))
+
+        selected = None
+        cur = self.tree.currentItem()
+        if cur is not None:
+            payload = cur.data(0, Qt.UserRole)
+            if isinstance(payload, dict):
+                selected = payload
+
+        self.tree.clear()
+        self._image_item_map.clear()
+        self._dir_item_map.clear()
+
+        # 直接展示字帖目录树（作品目录 -> 图片），识别过的图片打标记
+        self._populate_works_as_top_level()
+
+        # 恢复展开状态
+        for dp in expanded_dirs:
+            node = self._dir_item_map.get(dp)
+            if node:
+                node.setExpanded(True)
+
+        # 恢复选中项
+        if isinstance(selected, dict):
+            kind = selected.get("kind")
+            if kind in ("work_image", "recognized"):
+                self.select_image(selected.get("image_path") or "")
+            elif kind == "work_dir":
+                dp = selected.get("dir_path")
+                if dp:
+                    node = self._dir_item_map.get(str(Path(dp).resolve()))
+                    if node:
+                        self.ensure_visible()
+                        self.tree.setCurrentItem(node)
+                        self.tree.scrollToItem(node)
+
+    def refresh_recognized(self):
+        """刷新识别标记（识别状态变化后重建树即可）"""
+        self.rebuild()
+
+    def _on_item_clicked(self, item: QTreeWidgetItem, _col: int):
+        payload = item.data(0, Qt.UserRole)
+        if isinstance(payload, dict) and payload.get("kind") in ("work_dir", "work_image", "recognized"):
+            self.item_activated.emit(payload)
+
+    def _on_item_activated(self, item: QTreeWidgetItem, _col: int):
+        payload = item.data(0, Qt.UserRole)
+        if isinstance(payload, dict) and payload.get("kind") in ("work_dir", "work_image", "recognized"):
+            self.item_activated.emit(payload)
+
+    def _build_recognized_index(self) -> Dict[str, Dict[str, Any]]:
+        """构建已识别索引：image_abs_path -> {cache_path, total_chars}"""
+        out_dir = self.project_root / "ocr_output"
+        idx: Dict[str, Dict[str, Any]] = {}
+        if not out_dir.exists():
+            return idx
+
+        for sub in [p for p in out_dir.iterdir() if p.is_dir()]:
+            result_path = sub / "result.json"
+            if not result_path.exists():
+                continue
+            try:
+                with open(result_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+            except Exception:
+                continue
+
+            image_rel = data.get("image_path") or ""
+            if not image_rel:
+                continue
+            image_abs = str((self.project_root / image_rel).resolve())
+            idx[image_abs] = {
+                "cache_path": str(result_path.resolve()),
+                "total_chars": data.get("total_chars"),
+            }
+
+        return idx
+
+    def _populate_works_as_top_level(self):
+        # 过滤掉非字帖目录
+        ignore = {
+            "ocr",
+            "ocr_output",
+            "app",
+            "__pycache__",
+            ".git",
+            ".idea",
+            ".vscode",
+        }
+
+        recognized = self._build_recognized_index()
+
+        work_dirs = []
+        for p in self.project_root.iterdir():
+            if not p.is_dir():
+                continue
+            if p.name in ignore:
+                continue
+            # 字帖目录：包含至少一个 fatie-*.jpg
+            if any(p.glob("fatie-*.jpg")):
+                work_dirs.append(p)
+
+        if not work_dirs:
+            self.tree.addTopLevelItem(QTreeWidgetItem(["(未发现字帖目录)"]))
+            return
+
+        for wd in sorted(work_dirs, key=lambda p: p.name):
+            # 作品目录直接作为顶层节点
+            imgs = sorted(wd.glob("fatie-*.jpg"), key=lambda p: p.name)
+            total = len(imgs)
+            done = 0
+            for img in imgs:
+                if str(img.resolve()) in recognized:
+                    done += 1
+            percent = 0
+            if total > 0:
+                percent = int(round(done * 100 / total))
+
+            wnode = QTreeWidgetItem([f"{wd.name} ({percent}%)"])
+            wnode.setData(
+                0,
+                Qt.UserRole,
+                {
+                    "kind": "work_dir",
+                    "dir_path": str(wd.resolve()),
+                },
+            )
+            wnode.setExpanded(wd.name.startswith("怀仁集王羲之圣教序"))
+            self.tree.addTopLevelItem(wnode)
+
+            self._dir_item_map[str(wd.resolve())] = wnode
+
+            for img in imgs:
+                image_abs = str(img.resolve())
+                rec = recognized.get(image_abs)
+                label = img.name
+                if rec:
+                    # 打标记：已识别
+                    extra = ""
+                    if isinstance(rec.get("total_chars"), int):
+                        extra = f" | {rec['total_chars']}字"
+                    label = f"{img.name}  [已识别]{extra}"
+
+                inode = QTreeWidgetItem([label])
+                inode.setData(
+                    0,
+                    Qt.UserRole,
+                    {
+                        "kind": "work_image" if not rec else "recognized",
+                        "image_path": image_abs,
+                        "cache_path": rec.get("cache_path") if rec else "",
+                    },
+                )
+                wnode.addChild(inode)
+
+                # 索引，用于快速定位
+                self._image_item_map[image_abs] = inode
