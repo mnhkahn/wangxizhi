@@ -110,6 +110,8 @@ class OCRAPIClient:
         }
 
         # 可选参数
+        # 注意：不同部署/版本的 layout-parsing 服务对参数字段支持度不一致。
+        # 为了降低 500 风险，这里仅发送核心字段；其余高级参数不强依赖。
         optional_payload = {
             "markdownIgnoreLabels": markdown_ignore_labels
             or [
@@ -129,15 +131,8 @@ class OCRAPIClient:
             "useOcrForImageBlock": use_ocr_for_image_block,
             "mergeTables": merge_tables,
             "relevelTitles": relevel_titles,
-            "layoutShapeMode": "auto",
+            # 书法场景：优先拿到 spotting_res（包含 rec_polys/rec_texts）
             "promptLabel": "spotting",
-            "repetitionPenalty": 1,
-            "temperature": 0,
-            "topP": 1,
-            "minPixels": 51586,
-            "maxPixels": 2822400,
-            "layoutNms": True,
-            "restructurePages": True,
         }
 
         payload = {**required_payload, **optional_payload}
@@ -152,7 +147,15 @@ class OCRAPIClient:
                     headers=headers,
                     timeout=REQUEST_TIMEOUT,
                 )
-                response.raise_for_status()
+                try:
+                    response.raise_for_status()
+                except requests.exceptions.HTTPError as e:
+                    # 补充服务端返回信息，便于定位 500 / 4xx
+                    text_snippet = (response.text or "")[:2000]
+                    raise requests.exceptions.HTTPError(
+                        f"{e}; response_text={text_snippet}",
+                        response=response,
+                    )
                 result = response.json()
 
                 # 检查错误码: errorCode 在外层，result 包含实际数据

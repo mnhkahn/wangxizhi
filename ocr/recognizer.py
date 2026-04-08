@@ -14,9 +14,11 @@ import cv2
 from .config import (
     OUTPUT_DIR,
     SAVE_DEBUG_IMAGES,
+    CHAR_BBOX,
 )
 from .preprocess import ImagePreprocessor
 from .api_client import OCRAPIClient
+from .char_splitter import CharSplitter, SplitMethod
 
 
 def log_step(step_name: str, data: Any, output_dir: Path, debug: bool = False,
@@ -297,11 +299,12 @@ class CalligraphyOCR:
         debug: bool = False,
     ) -> List[Dict[str, Any]]:
         """
-        使用列坐标数据和像素投影法拆分单字
+        使用混合分割策略拆分单字
 
         Args:
             parsed_results: Step 3 解析的列数据，每项包含 text, poly, bbox
             image: 原图数据 (numpy array)，用于像素分析
+            debug: 是否输出调试信息
 
         Returns:
             单字结果列表，每项包含 char, bbox, column, row, global_index
@@ -309,9 +312,13 @@ class CalligraphyOCR:
         if not parsed_results:
             return []
 
-        auto_threshold = None
-        if image is not None:
-            auto_threshold = self._estimate_threshold_from_corners(image, debug=debug)
+        # 初始化分割器
+        split_method = SplitMethod(CHAR_BBOX.get("split_method", "hybrid"))
+        splitter = CharSplitter(
+            method=split_method,
+            min_char_height=CHAR_BBOX.get("min_char_height", 20),
+            margin_ratio=CHAR_BBOX.get("margin_ratio", 0.05),
+        )
 
         # 按列从右到左排序（书法从右向左读）
         sorted_columns = sorted(
@@ -326,56 +333,30 @@ class CalligraphyOCR:
             text = col_data["text"]
             bbox = col_data["bbox"]
 
-            # 如果有图像数据，使用像素投影法拆分
-            if image is not None:
-                char_bboxes = self._split_column_by_pixels(
-                    image,
-                    bbox,
-                    threshold=auto_threshold,
-                    debug=debug,
-                )
+            if not text:
+                continue
 
-                # 将文字分配到各个bbox
-                for row_idx, (char, char_bbox) in enumerate(zip(text, char_bboxes)):
-                    if row_idx >= len(text):
-                        break
+            # 使用分割器
+            char_bboxes, used_method = splitter.split_column(
+                image, bbox, text, debug=debug
+            )
 
-                    char_results.append({
-                        "char": text[row_idx],
-                        "bbox": char_bbox,
-                        "column": col_idx,
-                        "row": row_idx,
-                        "global_index": global_index,
-                        "col_text": text,
-                        "col_bbox": bbox,
-                    })
-                    global_index += 1
-            else:
-                # 回退：使用平均值拆分
-                x1, y1, x2, y2 = bbox
-                col_height = y2 - y1
-                char_count = len(text)
+            if debug:
+                print(f"[SPLIT] 列 {col_idx}: '{text[:10]}...' ({len(text)}字) -> {used_method}")
 
-                if char_count == 0:
-                    continue
-
-                char_height = col_height / char_count
-
-                for row_idx, char in enumerate(text):
-                    char_y1 = y1 + row_idx * char_height
-                    char_y2 = y1 + (row_idx + 1) * char_height
-                    char_bbox = [x1, char_y1, x2, char_y2]
-
-                    char_results.append({
-                        "char": char,
-                        "bbox": char_bbox,
-                        "column": col_idx,
-                        "row": row_idx,
-                        "global_index": global_index,
-                        "col_text": text,
-                        "col_bbox": bbox,
-                    })
-                    global_index += 1
+            # 将文字分配到各个bbox
+            for row_idx, (char, char_bbox) in enumerate(zip(text, char_bboxes)):
+                char_results.append({
+                    "char": char,
+                    "bbox": char_bbox,
+                    "column": col_idx,
+                    "row": row_idx,
+                    "global_index": global_index,
+                    "col_text": text,
+                    "col_bbox": bbox,
+                    "split_method": used_method,
+                })
+                global_index += 1
 
         return char_results
 

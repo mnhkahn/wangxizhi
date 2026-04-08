@@ -36,6 +36,10 @@ CHAR_BBOX = {
     "min_char_height": 20,  # 最小字高
     "min_char_width": 20,  # 最小字宽
     "overlap_threshold": 0.3,  # bbox重叠阈值
+    # 分割策略配置
+    "split_method": "hybrid",  # 分割方法: uniform, pixel, hybrid
+    "margin_ratio": 0.05,  # 均分边距比例
+    "projection_threshold_ratio": 0.1,  # 投影阈值比例
 }
 
 # Output Configuration

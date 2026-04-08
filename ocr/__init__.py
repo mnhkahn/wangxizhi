@@ -29,6 +29,7 @@ from .config import (
 from .preprocess import ImagePreprocessor
 from .api_client import OCRAPIClient
 from .postprocess import CalligraphyPostprocessor, VerticalTextLayoutAnalyzer
+from .char_splitter import CharSplitter, SplitMethod, split_column_to_chars
 from .recognizer import CalligraphyOCR, recognize_calligraphy
 
 __all__ = [
@@ -40,6 +41,9 @@ __all__ = [
     "OCRAPIClient",
     "CalligraphyPostprocessor",
     "VerticalTextLayoutAnalyzer",
+    "CharSplitter",
+    "SplitMethod",
+    "split_column_to_chars",
     # 配置
     "API_URL",
     "API_TOKEN",
