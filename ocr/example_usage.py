@@ -20,7 +20,7 @@ def example_basic_usage():
     print("=" * 60)
 
     # 测试图片路径
-    image_path = "/Users/mnhkahn/code/wangxizhi/怀仁集王羲之圣教序/fatie-000.jpg"
+    image_path = str(project_root / "怀仁集王羲之圣教序" / "fatie-000.jpg")
 
     # 使用便捷函数
     result = recognize_calligraphy(image_path, debug=True)
@@ -30,43 +30,15 @@ def example_basic_usage():
     print(f"  列数: {result['column_count']}")
     print(f"  完整文字:\n  {result['recognized_text'][:50]}...")
 
-
-def example_with_known_text():
-    """示例2: 使用已知文字验证"""
-    print("\n" + "=" * 60)
-    print("示例2: 使用已知文字验证")
-    print("=" * 60)
-
-    image_path = "/Users/mnhkahn/code/wangxizhi/怀仁集王羲之圣教序/fatie-000.jpg"
-
-    # 已知文字（用于校验）
-    known_text = (
-        "大唐三藏聖教序太宗文皇帝製和福寺沙门懷仁集晋右将军王羲之书"
-        "盖闻二仪有像头霞载以含生四时气形滑寒暑以化物是以窺天鑑地庸愚"
-    )
-
-    result = recognize_calligraphy(image_path, known_text=known_text)
-
-    print(f"\n比对结果:")
-    print(f"  识别文字: {result['recognized_text'][:40]}...")
-    print(f"  已知文字: {result['known_text'][:40]}...")
-
-    # 计算匹配率
-    min_len = min(len(result['recognized_text']), len(result['known_text']))
-    matches = sum(1 for i in range(min_len)
-                  if result['recognized_text'][i] == result['known_text'][i])
-    print(f"  匹配率: {matches}/{min_len} = {matches/min_len:.1%}")
-
-
 def example_access_char_bboxes():
-    """示例3: 访问每个字的bbox信息"""
+    """示例2: 访问每个字的bbox信息"""
     print("\n" + "=" * 60)
     print("示例3: 访问单字Bbox信息")
     print("=" * 60)
 
     ocr = CalligraphyOCR()
     result = ocr.recognize_image(
-        "/Users/mnhkahn/code/wangxizhi/怀仁集王羲之圣教序/fatie-000.jpg",
+        str(project_root / "怀仁集王羲之圣教序" / "fatie-000.jpg"),
         debug=False
     )
 
@@ -83,13 +55,13 @@ def example_access_char_bboxes():
 
 
 def example_process_single_column():
-    """示例4: 按列处理文字"""
+    """示例3: 按列处理文字"""
     print("\n" + "=" * 60)
     print("示例4: 按列处理文字")
     print("=" * 60)
 
     result = recognize_calligraphy(
-        "/Users/mnhkahn/code/wangxizhi/怀仁集王羲之圣教序/fatie-000.jpg",
+        str(project_root / "怀仁集王羲之圣教序" / "fatie-000.jpg"),
         debug=False
     )
 
@@ -111,7 +83,6 @@ def example_process_single_column():
 if __name__ == "__main__":
     # 运行所有示例
     example_basic_usage()
-    example_with_known_text()
     example_access_char_bboxes()
     example_process_single_column()
 

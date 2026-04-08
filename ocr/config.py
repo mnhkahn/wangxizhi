@@ -4,10 +4,17 @@ OCR Configuration Module
 """
 
 import os
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+# 从项目根目录加载 .env 文件
+_project_root = Path(__file__).resolve().parent.parent
+load_dotenv(_project_root / ".env")
 
 # API Configuration - Layout Parsing API
-API_URL = "https://k71ai350v9z6pdud.aistudio-app.com/layout-parsing"
-API_TOKEN = os.environ.get("OCR_API_TOKEN", "448d7ec0b4da8d1d64d1b9915f12022dcd4690c3")
+API_URL = os.environ.get("OCR_API_URL", "")
+API_TOKEN = os.environ.get("OCR_API_TOKEN", "")
 
 # Request Configuration
 REQUEST_TIMEOUT = 60  # seconds
@@ -29,14 +36,6 @@ CHAR_BBOX = {
     "min_char_height": 20,  # 最小字高
     "min_char_width": 20,  # 最小字宽
     "overlap_threshold": 0.3,  # bbox重叠阈值
-}
-
-# Known text for validation (校验用已知文字)
-KNOWN_TEXTS = {
-    "怀仁集王羲之圣教序/fatie-000.jpg": (
-        "大唐三藏聖教序太宗文皇帝製和福寺沙门懷仁集晋右将军王羲之书"
-        "盖闻二仪有像头霞载以含生四时气形滑寒暑以化物是以窺天鑑地庸愚"
-    ),
 }
 
 # Output Configuration

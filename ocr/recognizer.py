@@ -14,11 +14,9 @@ import cv2
 from .config import (
     OUTPUT_DIR,
     SAVE_DEBUG_IMAGES,
-    KNOWN_TEXTS,
 )
 from .preprocess import ImagePreprocessor
 from .api_client import OCRAPIClient
-from .postprocess import CalligraphyPostprocessor
 
 
 def log_step(step_name: str, data: Any, output_dir: Path, debug: bool = False,
@@ -53,21 +51,6 @@ def log_step(step_name: str, data: Any, output_dir: Path, debug: bool = False,
 class CalligraphyOCR:
     """书法拆字识别器"""
 
-    def _get_relative_path_for_known_text(self, image_path: Path) -> str:
-        """获取用于匹配已知文字配置的相对路径"""
-        parts = image_path.parts
-        for i, part in enumerate(parts):
-            if "fatie" in part.lower() or part.startswith("fatie"):
-                if i > 0:
-                    parent_name = parts[i - 1]
-                    return f"{parent_name}/{parts[i]}"
-                break
-
-        if len(parts) >= 2:
-            return f"{parts[-2]}/{parts[-1]}"
-
-        return str(image_path.name)
-
     def __init__(
         self,
         api_url: Optional[str] = None,
@@ -77,7 +60,6 @@ class CalligraphyOCR:
         """初始化识别器"""
         self.preprocessor = ImagePreprocessor()
         self.api_client = OCRAPIClient(api_url, api_token) if api_url else OCRAPIClient()
-        self.postprocessor = CalligraphyPostprocessor()
         self.output_dir = Path(output_dir or OUTPUT_DIR)
 
     def crop_and_save_chars(
@@ -152,10 +134,70 @@ class CalligraphyOCR:
 
         return saved_images
 
-    def _calculate_luminance(self, pixel: tuple) -> float:
+    def _calculate_luminance(self, b: int, g: int, r: int) -> float:
         """计算像素亮度 (0-255)"""
-        r, g, b = pixel[0], pixel[1], pixel[2]
-        return (r + g + b) / 3
+        return (int(b) + int(g) + int(r)) / 3
+
+    def _estimate_threshold_from_corners(
+        self,
+        image: Any,
+        corner_size: int = 50,
+        debug: bool = False,
+    ) -> float:
+        """根据四角背景亮度自动估算单字拆分阈值"""
+        if image is None or len(image.shape) < 2:
+            return 200
+
+        height, width = image.shape[:2]
+        sample_w = min(corner_size, width)
+        sample_h = min(corner_size, height)
+
+        if sample_w <= 0 or sample_h <= 0:
+            return 200
+
+        corners = [
+            image[0:sample_h, 0:sample_w],
+            image[0:sample_h, max(0, width - sample_w):width],
+            image[max(0, height - sample_h):height, 0:sample_w],
+            image[max(0, height - sample_h):height, max(0, width - sample_w):width],
+        ]
+
+        luminance_sum = 0.0
+        pixel_count = 0
+
+        for corner in corners:
+            if corner.size == 0:
+                continue
+
+            if len(corner.shape) == 2:
+                luminance_sum += float(corner.astype("float32").sum())
+                pixel_count += int(corner.size)
+                continue
+
+            pixels = corner.reshape(-1, corner.shape[2])
+            for pixel in pixels:
+                if len(pixel) >= 4 and int(pixel[3]) == 0:
+                    continue
+
+                b = int(pixel[0])
+                g = int(pixel[1]) if len(pixel) > 1 else b
+                r = int(pixel[2]) if len(pixel) > 2 else b
+                luminance_sum += self._calculate_luminance(b, g, r)
+                pixel_count += 1
+
+        if pixel_count == 0:
+            return 200
+
+        bg_luminance = luminance_sum / pixel_count
+        threshold = max(0, min(255, int(bg_luminance)))
+
+        if debug:
+            print(
+                f"[SPLIT] Auto threshold from corners: "
+                f"bg_luminance={bg_luminance:.2f}, threshold={threshold}"
+            )
+
+        return threshold
 
     def _split_column_by_pixels(
         self,
@@ -205,7 +247,7 @@ class CalligraphyOCR:
             for col in range(x2 - x1):
                 # BGR 转 亮度
                 b, g, r = col_region[row, col]
-                lum = (b + g + r) / 3
+                lum = self._calculate_luminance(b, g, r)
                 if lum < threshold:  # 深色像素（文字）
                     dark_count += 1
             row_projection.append(dark_count)
@@ -252,7 +294,6 @@ class CalligraphyOCR:
         self,
         parsed_results: List[Dict[str, Any]],
         image: Any = None,
-        known_text: Optional[str] = None,
         debug: bool = False,
     ) -> List[Dict[str, Any]]:
         """
@@ -261,13 +302,16 @@ class CalligraphyOCR:
         Args:
             parsed_results: Step 3 解析的列数据，每项包含 text, poly, bbox
             image: 原图数据 (numpy array)，用于像素分析
-            known_text: 已知文字内容（用于校验）
 
         Returns:
             单字结果列表，每项包含 char, bbox, column, row, global_index
         """
         if not parsed_results:
             return []
+
+        auto_threshold = None
+        if image is not None:
+            auto_threshold = self._estimate_threshold_from_corners(image, debug=debug)
 
         # 按列从右到左排序（书法从右向左读）
         sorted_columns = sorted(
@@ -284,7 +328,12 @@ class CalligraphyOCR:
 
             # 如果有图像数据，使用像素投影法拆分
             if image is not None:
-                char_bboxes = self._split_column_by_pixels(image, bbox, debug=debug)
+                char_bboxes = self._split_column_by_pixels(
+                    image,
+                    bbox,
+                    threshold=auto_threshold,
+                    debug=debug,
+                )
 
                 # 将文字分配到各个bbox
                 for row_idx, (char, char_bbox) in enumerate(zip(text, char_bboxes)):
@@ -327,14 +376,6 @@ class CalligraphyOCR:
                         "col_bbox": bbox,
                     })
                     global_index += 1
-
-        # 校验
-        if known_text:
-            recognized = "".join(r["char"] for r in char_results)
-            for i, r in enumerate(char_results):
-                if i < len(known_text):
-                    r["expected"] = known_text[i]
-                    r["correct"] = r["char"] == known_text[i]
 
         return char_results
 
@@ -418,7 +459,6 @@ class CalligraphyOCR:
     def recognize_image(
         self,
         image_path: str,
-        known_text: Optional[str] = None,
         save_result: bool = True,
         debug: bool = False,
         crop_chars: bool = True,
@@ -432,14 +472,8 @@ class CalligraphyOCR:
         output_dir = self.output_dir / image_path.stem
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        # 确定已知文字
-        if known_text is None:
-            relative_path = self._get_relative_path_for_known_text(image_path)
-            known_text = KNOWN_TEXTS.get(relative_path)
-
         if debug:
             print(f"[DEBUG] Processing: {image_path}")
-            print(f"[DEBUG] Known text: {known_text[:20] if known_text else 'None'}...")
 
         # Step 1: 加载图像
         image = self.preprocessor.load_image(str(image_path))
@@ -482,7 +516,7 @@ class CalligraphyOCR:
             print(f"[DEBUG] Saved {len(saved_files)} files from API")
 
         # Step 5: 使用列坐标数据和像素投影法拆分单字
-        char_results = self._split_columns_to_chars(parsed_results, image=image, known_text=known_text, debug=debug)
+        char_results = self._split_columns_to_chars(parsed_results, image=image, debug=debug)
 
         log_step("05_char_results", char_results, output_dir, debug,
             image=image,
@@ -501,7 +535,6 @@ class CalligraphyOCR:
         result = {
             "image_path": str(image_path),
             "image_info": image_info,
-            "known_text": known_text,
             "recognized_text": recognized_text,
             "parsed_results": parsed_results,
             "char_results": char_results,
@@ -606,12 +639,11 @@ class CalligraphyOCR:
 
 def recognize_calligraphy(
     image_path: str,
-    known_text: Optional[str] = None,
     debug: bool = False,
 ) -> Dict[str, Any]:
     """便捷函数：识别书法图像"""
     ocr = CalligraphyOCR()
-    return ocr.recognize_image(image_path, known_text, debug=debug)
+    return ocr.recognize_image(image_path, debug=debug)
 
 
 def main():
@@ -620,7 +652,6 @@ def main():
 
     parser = argparse.ArgumentParser(description="Chinese Calligraphy OCR")
     parser.add_argument("image_path", help="Path to the calligraphy image")
-    parser.add_argument("--known-text", "-t", help="Known text for validation")
     parser.add_argument("--debug", "-d", action="store_true", help="Enable debug output")
     parser.add_argument("--output", "-o", help="Output directory")
 
@@ -629,7 +660,6 @@ def main():
     ocr = CalligraphyOCR(output_dir=args.output)
     result = ocr.recognize_image(
         args.image_path,
-        known_text=args.known_text,
         debug=args.debug,
     )
 
@@ -637,8 +667,6 @@ def main():
     print(f" 总字数: {result['total_chars']}")
     print(f" 列数: {result['column_count']}")
     print(f" 识别文字: {result['recognized_text'][:50]}...")
-    if result['known_text']:
-        print(f" 已知文字: {result['known_text'][:50]}...")
 
 
 if __name__ == "__main__":

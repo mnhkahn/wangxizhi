@@ -24,7 +24,6 @@ from .config import (
     API_TOKEN,
     VERTICAL_LAYOUT,
     CHAR_BBOX,
-    KNOWN_TEXTS,
     OUTPUT_DIR,
 )
 from .preprocess import ImagePreprocessor
@@ -46,7 +45,6 @@ __all__ = [
     "API_TOKEN",
     "VERTICAL_LAYOUT",
     "CHAR_BBOX",
-    "KNOWN_TEXTS",
     "OUTPUT_DIR",
 ]
 

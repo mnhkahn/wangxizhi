@@ -1,3 +1,4 @@
+# Java
 *.class
 *.log
 *.jar
@@ -6,8 +7,40 @@
 *.zip
 *.tar.gz
 *.rar
+bin
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node.js
+node_modules
+
+# OS
 .DS_Store
+
+# Environment
+.env
+
+# Project specific
 w100
 w1000
-bin
-node_modules
+ocr_output

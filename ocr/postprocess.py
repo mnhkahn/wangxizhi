@@ -31,7 +31,6 @@ class CalligraphyPostprocessor:
     def process(
         self,
         ocr_results: List[Dict[str, Any]],
-        known_text: Optional[str] = None,
         image_width: Optional[int] = None,
         image_height: Optional[int] = None,
     ) -> List[Dict[str, Any]]:
@@ -40,7 +39,6 @@ class CalligraphyPostprocessor:
 
         Args:
             ocr_results: 原始OCR结果
-            known_text: 已知文字内容（用于校验和分割）
             image_width: 图像宽度
             image_height: 图像高度
 
@@ -70,14 +68,6 @@ class CalligraphyPostprocessor:
 
         for col_idx, col in enumerate(sorted_columns):
             col_items = col["items"]
-            col_text = "".join(item["text"] for item in col_items)
-
-            # 计算每列的字数
-            if known_text:
-                # 根据已知文字分配
-                col_char_count = len(col_text)
-            else:
-                col_char_count = len(col_text)
 
             # 生成单字bbox
             for row_idx, item in enumerate(col_items):
@@ -99,10 +89,6 @@ class CalligraphyPostprocessor:
                         "global_index": global_char_index,
                     })
                     global_char_index += 1
-
-        # Step 5: 验证结果
-        if known_text:
-            char_results = self._validate_with_known_text(char_results, known_text)
 
         return char_results
 
@@ -263,34 +249,6 @@ class CalligraphyPostprocessor:
 
         return char_bboxes
 
-    def _validate_with_known_text(
-        self,
-        char_results: List[Dict[str, Any]],
-        known_text: str,
-    ) -> List[Dict[str, Any]]:
-        """
-        用已知文字验证结果
-
-        Args:
-            char_results: 字符结果列表
-            known_text: 已知文字内容
-
-        Returns:
-            验证后的结果
-        """
-        recognized_text = "".join(r["char"] for r in char_results)
-
-        # 简单的对齐和标记
-        for i, result in enumerate(char_results):
-            if i < len(known_text):
-                result["expected_char"] = known_text[i]
-                result["is_correct"] = result["char"] == known_text[i]
-            else:
-                result["expected_char"] = None
-                result["is_correct"] = None
-
-        return char_results
-
     def get_ordered_text(self, char_results: List[Dict[str, Any]]) -> str:
         """获取排序后的完整文字"""
         return "".join(r["char"] for r in char_results)
@@ -298,7 +256,6 @@ class CalligraphyPostprocessor:
     def process_from_text(
         self,
         text: str,
-        known_text: Optional[str] = None,
         image_width: Optional[int] = None,
         image_height: Optional[int] = None,
         columns: int = 3,
@@ -310,7 +267,6 @@ class CalligraphyPostprocessor:
 
         Args:
             text: 识别的文本
-            known_text: 已知文字内容
             image_width: 图像宽度
             image_height: 图像高度
             columns: 列数
@@ -326,12 +282,7 @@ class CalligraphyPostprocessor:
         if not clean_text:
             return []
 
-        # 使用已知文字或清理后的文本
-        if known_text:
-            # 尝试匹配已知文字
-            use_text = known_text[:len(clean_text)] if len(known_text) >= len(clean_text) else known_text + clean_text[len(known_text):]
-        else:
-            use_text = clean_text
+        use_text = clean_text
 
         # 估算尺寸
         if image_width and image_height:
@@ -382,10 +333,6 @@ class CalligraphyPostprocessor:
                     "global_index": global_char_index,
                 })
                 global_char_index += 1
-
-        # 验证
-        if known_text:
-            char_results = self._validate_with_known_text(char_results, known_text)
 
         return char_results
 

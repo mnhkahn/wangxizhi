@@ -16,14 +16,7 @@ from ocr import CalligraphyOCR, recognize_calligraphy
 
 
 # 测试图片路径
-TEST_IMAGE = "/Users/mnhkahn/code/wangxizhi/怀仁集王羲之圣教序/fatie-000.jpg"
-
-# 已知文字内容（用于校验）
-KNOWN_TEXT = (
-    "大唐三藏聖教序太宗文皇帝製和福寺沙门懷仁集晋右将军王羲之书"
-    "盖闻二仪有像头霞载以含生四时气形滑寒暑以化物是以窺天鑑地庸愚"
-)
-
+TEST_IMAGE = "./怀仁集王羲之圣教序/fatie-000.jpg"
 
 def test_basic_ocr():
     """测试基本OCR功能"""
@@ -34,14 +27,13 @@ def test_basic_ocr():
     ocr = CalligraphyOCR()
     result = ocr.recognize_image(
         TEST_IMAGE,
-        known_text=KNOWN_TEXT,
         debug=True,
     )
 
     print(f"\n结果摘要:")
     print(f"  图像路径: {result['image_path']}")
     print(f"  图像尺寸: {result['image_info']['width']}x{result['image_info']['height']}")
-    print(f"  OCR检测项数: {len(result['ocr_results'])}")
+    print(f"  OCR解析项数: {len(result['parsed_results'])}")
     print(f"  总字数: {result['total_chars']}")
     print(f"  列数: {result['column_count']}")
 
@@ -54,13 +46,13 @@ def test_ocr_details(result):
     print("Test 2: OCR Results Details")
     print("=" * 60)
 
-    print("\n原始OCR检测结果:")
-    for i, r in enumerate(result['ocr_results'][:10]):
+    print("\n解析后的文本结果:")
+    for i, r in enumerate(result['parsed_results'][:10]):
         print(f"  [{i}] 文字: {r['text'][:15]}...")
-        print(f"      bbox: {r['bbox']}")
-        print(f"      置信度: {r['confidence']:.2f}")
+        if 'bbox' in r:
+            print(f"      bbox: {r['bbox']}")
 
-    print(f"\n共 {len(result['ocr_results'])} 个检测项")
+    print(f"\n共 {len(result['parsed_results'])} 个解析项")
 
 
 def test_char_results(result):
@@ -77,35 +69,6 @@ def test_char_results(result):
         print(f"{r['global_index']:<6} {r['column']:<4} {r['row']:<4} {r['char']:<4} {str(r['bbox'])}")
 
     print(f"\n共 {len(result['char_results'])} 个字")
-
-
-def test_text_comparison(result):
-    """比较识别文字和已知文字"""
-    print("\n" + "=" * 60)
-    print("Test 4: Text Comparison")
-    print("=" * 60)
-
-    recognized = result['recognized_text']
-    known = result['known_text']
-
-    print(f"\n识别文字 ({len(recognized)}字):")
-    print(f"  {recognized[:50]}...")
-
-    print(f"\n已知文字 ({len(known)}字):")
-    print(f"  {known[:50]}...")
-
-    # 计算匹配度
-    min_len = min(len(recognized), len(known))
-    matches = sum(1 for i in range(min_len) if recognized[i] == known[i])
-    accuracy = matches / min_len if min_len > 0 else 0
-
-    print(f"\n匹配度: {matches}/{min_len} = {accuracy:.2%}")
-
-    # 显示差异
-    print("\n差异分析:")
-    for i in range(min(20, min_len)):
-        if recognized[i] != known[i]:
-            print(f"  位置{i}: 识别='{recognized[i]}' 已知='{known[i]}'")
 
 
 def test_column_structure(result):
@@ -165,7 +128,6 @@ def main():
     result = test_basic_ocr()
     test_ocr_details(result)
     test_char_results(result)
-    test_text_comparison(result)
     test_column_structure(result)
     test_output_files(result)
 
