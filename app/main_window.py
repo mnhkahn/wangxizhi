@@ -48,6 +48,7 @@ class OCRWorker(QThread):
     def run(self):
         try:
             import sys
+
             # 添加项目根目录到路径
             project_root = Path(__file__).parent.parent
             if str(project_root) not in sys.path:
@@ -57,7 +58,9 @@ class OCRWorker(QThread):
 
             ocr = CalligraphyOCR()
             # 识别后保存到 <字帖目录>/.debug/<stem>/{result.json,chars.json}
-            result = ocr.recognize_image(self.image_path, save_result=True, debug=False, crop_chars=False)
+            result = ocr.recognize_image(
+                self.image_path, save_result=True, debug=False, crop_chars=False
+            )
             result["_from_cache"] = False
             self.finished.emit(result)
         except Exception as e:
@@ -67,7 +70,9 @@ class OCRWorker(QThread):
 class BatchOCRWorker(QThread):
     """批量 OCR 线程"""
 
-    progress = pyqtSignal(int, int, str, bool, str)  # idx, total, image_path, ok, message
+    progress = pyqtSignal(
+        int, int, str, bool, str
+    )  # idx, total, image_path, ok, message
     finished = pyqtSignal(int, int, int)  # total, ok_count, fail_count
     error = pyqtSignal(str)
 
@@ -79,6 +84,7 @@ class BatchOCRWorker(QThread):
         try:
             # 与 OCRWorker 一致，确保能 import 到项目根
             import sys
+
             project_root = Path(__file__).parent.parent
             if str(project_root) not in sys.path:
                 sys.path.insert(0, str(project_root))
@@ -93,7 +99,9 @@ class BatchOCRWorker(QThread):
             for i, path in enumerate(self.image_paths, start=1):
                 try:
                     # 仅生成 result.json/chars.json
-                    ocr.recognize_image(path, save_result=True, debug=False, crop_chars=False)
+                    ocr.recognize_image(
+                        path, save_result=True, debug=False, crop_chars=False
+                    )
                     ok_count += 1
                     self.progress.emit(i, total, path, True, "")
                 except Exception as e:
@@ -311,17 +319,23 @@ class MainWindow(QMainWindow):
         # 字帖最小化按钮（放在“识别”左侧）
         self.action_toggle_worktree = QAction(self)
         # 用目录图标区分
-        self.action_toggle_worktree.setIcon(self.style().standardIcon(QStyle.SP_DirIcon))
+        self.action_toggle_worktree.setIcon(
+            self.style().standardIcon(QStyle.SP_DirIcon)
+        )
         self.action_toggle_worktree.setToolTip("折叠/展开字帖")
         self.action_toggle_worktree.setCheckable(True)
         self.action_toggle_worktree.setChecked(False)  # 默认不折叠
-        self.action_toggle_worktree.toggled.connect(lambda checked: self.work_tree.set_collapsed(checked))
+        self.action_toggle_worktree.toggled.connect(
+            lambda checked: self.work_tree.set_collapsed(checked)
+        )
         toolbar.addAction(self.action_toggle_worktree)
 
         # 字符列表最小化按钮（放在字帖按钮右边）
         self.action_toggle_charlist = QAction(self)
         # 用列表视图图标区分
-        self.action_toggle_charlist.setIcon(self.style().standardIcon(QStyle.SP_FileDialogDetailedView))
+        self.action_toggle_charlist.setIcon(
+            self.style().standardIcon(QStyle.SP_FileDialogDetailedView)
+        )
         self.action_toggle_charlist.setToolTip("显示/隐藏字符列表")
         self.action_toggle_charlist.setCheckable(True)
         self.action_toggle_charlist.setChecked(True)  # checked 表示隐藏（默认不展示）
@@ -382,10 +396,7 @@ class MainWindow(QMainWindow):
         return
 
         file_path, _ = QFileDialog.getOpenFileName(
-            self,
-            "选择图片",
-            "",
-            "图片文件 (*.jpg *.jpeg *.png *.bmp);;所有文件 (*)"
+            self, "选择图片", "", "图片文件 (*.jpg *.jpeg *.png *.bmp);;所有文件 (*)"
         )
 
         if file_path:
@@ -468,12 +479,17 @@ class MainWindow(QMainWindow):
                 char_results_sorted = sorted(char_results, key=_order_key)
                 for gi, r in enumerate(char_results_sorted):
                     r["global_index"] = gi
-                recognized_text = "".join([x.get("char", "") for x in char_results_sorted])
+                recognized_text = "".join(
+                    [x.get("char", "") for x in char_results_sorted]
+                )
                 total_chars = len(char_results_sorted)
                 column_count = 0
                 if total_chars:
                     try:
-                        column_count = max([int(x.get("column", 0)) for x in char_results_sorted]) + 1
+                        column_count = (
+                            max([int(x.get("column", 0)) for x in char_results_sorted])
+                            + 1
+                        )
                     except Exception:
                         column_count = 0
 
@@ -504,7 +520,9 @@ class MainWindow(QMainWindow):
 
                 # image_path 尽量写成相对路径（与原 result.json 一致）
                 try:
-                    rel = str(Path(image_path).resolve().relative_to(project_root.resolve()))
+                    rel = str(
+                        Path(image_path).resolve().relative_to(project_root.resolve())
+                    )
                 except Exception:
                     rel = str(Path(image_path))
 
@@ -524,7 +542,9 @@ class MainWindow(QMainWindow):
                 self._on_ocr_finished(cached)
                 return True
             except Exception as e:
-                self.status_label.setText(f"chars.json 缓存加载失败：{e}；将尝试加载 result.json")
+                self.status_label.setText(
+                    f"chars.json 缓存加载失败：{e}；将尝试加载 result.json"
+                )
 
         # 2) 回退 result.json
         cache_path = self._cache_result_path(image_path)
@@ -549,7 +569,11 @@ class MainWindow(QMainWindow):
         - 若当前选中的是图片：识别当前图片
         """
 
-        if hasattr(self, "batch_worker") and self.batch_worker and self.batch_worker.isRunning():
+        if (
+            hasattr(self, "batch_worker")
+            and self.batch_worker
+            and self.batch_worker.isRunning()
+        ):
             self.status_label.setText("正在批量识别中，请稍候")
             return
         if self.ocr_worker and self.ocr_worker.isRunning():
@@ -568,7 +592,9 @@ class MainWindow(QMainWindow):
             return
 
         # 默认：识别当前图片（或树中选中的图片）
-        image_path = sel.get("image_path") if kind in ("work_image", "recognized") else None
+        image_path = (
+            sel.get("image_path") if kind in ("work_image", "recognized") else None
+        )
         if not image_path:
             image_path = self.current_image_path
         if not image_path:
@@ -592,8 +618,8 @@ class MainWindow(QMainWindow):
 
         # 添加边界框
         for item in self.char_manager.items:
-                x, y, x2, y2 = item.bbox
-                self.image_canvas.add_bbox(x, y, x2 - x, y2 - y, item.char, item.id)
+            x, y, x2, y2 = item.bbox
+            self.image_canvas.add_bbox(x, y, x2 - x, y2 - y, item.char, item.id)
 
         # 字体/作者/作品：加载时按第一个字展示
         self.current_font = result.get("font") or self.current_font or "楷书"
@@ -602,9 +628,13 @@ class MainWindow(QMainWindow):
 
         # 若仍为空，尝试从字帖目录名注入默认值
         if self.current_image_path:
-            self._inject_meta_defaults_from_folder(Path(self.current_image_path).parent.name)
+            self._inject_meta_defaults_from_folder(
+                Path(self.current_image_path).parent.name
+            )
 
-        self.property_panel.set_image_meta(self.current_font, self.current_author, self.current_work, enabled=True)
+        self.property_panel.set_image_meta(
+            self.current_font, self.current_author, self.current_work, enabled=True
+        )
 
         if result.get("_from_cache"):
             self.status_label.setText(
@@ -612,7 +642,9 @@ class MainWindow(QMainWindow):
             )
             self._last_loaded_cache_path = result.get("_cache_path")
         else:
-            self.status_label.setText(f"已识别并加载 {len(self.char_manager.items)} 个字符")
+            self.status_label.setText(
+                f"已识别并加载 {len(self.char_manager.items)} 个字符"
+            )
             self._last_loaded_cache_path = None
 
         # 刷新左侧“已识别”列表
@@ -627,7 +659,9 @@ class MainWindow(QMainWindow):
         if kind == "work_dir":
             # 仅记录选择，不加载图片
             dir_path = payload.get("dir_path") or ""
-            self.status_label.setText(f"已选中字帖：{Path(dir_path).name}（点击“识别”可批量识别）")
+            self.status_label.setText(
+                f"已选中字帖：{Path(dir_path).name}（点击“识别”可批量识别）"
+            )
             return
 
         image_path = payload.get("image_path") or ""
@@ -661,13 +695,17 @@ class MainWindow(QMainWindow):
         self.batch_worker.error.connect(self._on_batch_error)
         self.batch_worker.start()
 
-    def _on_batch_progress(self, idx: int, total: int, image_path: str, ok: bool, message: str):
+    def _on_batch_progress(
+        self, idx: int, total: int, image_path: str, ok: bool, message: str
+    ):
         name = Path(image_path).name
         status = "OK" if ok else "FAIL"
         self.status_label.setText(f"批量识别 {idx}/{total} {status}: {name} {message}")
 
     def _on_batch_finished(self, total: int, ok_count: int, fail_count: int):
-        self.status_label.setText(f"批量识别完成：成功 {ok_count}，失败 {fail_count}，共 {total}")
+        self.status_label.setText(
+            f"批量识别完成：成功 {ok_count}，失败 {fail_count}，共 {total}"
+        )
         if hasattr(self, "work_tree"):
             self.work_tree.refresh_recognized()
 
@@ -754,66 +792,117 @@ class MainWindow(QMainWindow):
         except Exception as e:
             self.status_label.setText(f"导出失败：{e}")
 
-    def _export_all_glyphs_sqlite(self):
-        """扫描 ocr_output 并生成全量 glyphs.sqlite（字段：id,char,字帖）"""
+    def _create_glyphs_table(self, cursor):
+        """创建 glyphs 表"""
+        cursor.execute(
+            """
+            CREATE TABLE IF NOT EXISTS "glyphs" (
+                id TEXT PRIMARY KEY,
+                char TEXT,
+                work_dir TEXT,
+                author TEXT,
+                font TEXT,
+                work_title TEXT
+            )
+        """
+        )
+
+    def _export_glyphs_to_sqlite(self, sqlite_path, items):
+        """导出字形数据到 SQLite"""
         import sqlite3
 
+        conn = sqlite3.connect(str(sqlite_path))
+        try:
+            cur = conn.cursor()
+            self._create_glyphs_table(cur)
+            conn.commit()
+
+            total = 0
+            batch = []
+
+            for item in items:
+                if not isinstance(item, dict):
+                    continue
+                gid = item.get("id")
+                ch = item.get("char")
+                work_dir = item.get("work_dir", "")
+                author = item.get("author", "")
+                font = item.get("font", "")
+                work_title = item.get("work", "") or item.get("work_title", "")
+
+                if not gid or not ch:
+                    continue
+
+                batch.append(
+                    (
+                        str(gid),
+                        str(ch),
+                        str(work_dir),
+                        str(author),
+                        str(font),
+                        str(work_title),
+                    )
+                )
+                total += 1
+
+                if len(batch) >= 2000:
+                    cur.executemany(
+                        "INSERT OR REPLACE INTO glyphs (id, char, work_dir, author, font, work_title) VALUES (?,?,?,?,?,?)",
+                        batch,
+                    )
+                    conn.commit()
+                    batch.clear()
+
+            if batch:
+                cur.executemany(
+                    "INSERT OR REPLACE INTO glyphs (id, char, work_dir, author, font, work_title) VALUES (?,?,?,?,?,?)",
+                    batch,
+                )
+                conn.commit()
+
+            return total
+        finally:
+            conn.close()
+
+    def _export_all_glyphs_sqlite(self):
+        """扫描 ocr_output 并生成全量 glyphs.sqlite"""
         project_root = Path(__file__).parent.parent
         ocr_output = project_root / "ocr_output"
         ocr_output.mkdir(parents=True, exist_ok=True)
 
         sqlite_path = ocr_output / "glyphs.sqlite"
 
-        conn = sqlite3.connect(str(sqlite_path))
-        try:
-            cur = conn.cursor()
-            cur.execute("DROP TABLE IF EXISTS glyphs")
-            cur.execute('CREATE TABLE glyphs (id TEXT PRIMARY KEY, char TEXT, work_dir TEXT)')
-            conn.commit()
-
-            total = 0
-            batch = []
-
-            # 新目录结构：<字帖目录>/.debug/<stem>/chars.json
-            for work_dir in sorted([p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name):
-                debug_dir = work_dir / ".debug"
-                if not debug_dir.exists():
+        # 收集所有字符数据
+        all_items = []
+        # 新目录结构：<字帖目录>/.debug/<stem>/chars.json
+        for work_dir in sorted(
+            [p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name
+        ):
+            debug_dir = work_dir / ".debug"
+            if not debug_dir.exists():
+                continue
+            for chars_path in sorted(
+                debug_dir.glob("*/chars.json"), key=lambda p: str(p)
+            ):
+                try:
+                    with open(chars_path, "r", encoding="utf-8") as f:
+                        chars = json.load(f)
+                except Exception:
                     continue
-                for chars_path in sorted(debug_dir.glob("*/chars.json"), key=lambda p: str(p)):
-                    try:
-                        with open(chars_path, "r", encoding="utf-8") as f:
-                            chars = json.load(f)
-                    except Exception:
+
+                if not isinstance(chars, list):
+                    continue
+
+                for rec in chars:
+                    if not isinstance(rec, dict):
                         continue
+                    # 确保 work_dir 字段存在
+                    if "work_dir" not in rec:
+                        rec["work_dir"] = work_dir.name
+                    all_items.append(rec)
 
-                    if not isinstance(chars, list):
-                        continue
-
-                    for rec in chars:
-                        if not isinstance(rec, dict):
-                            continue
-                        gid = rec.get("id")
-                        ch = rec.get("char")
-                        work = rec.get("work_dir") or work_dir.name
-
-                        if not gid or not ch:
-                            continue
-
-                        batch.append((str(gid), str(ch), str(work or "")))
-                        total += 1
-
-                        if len(batch) >= 2000:
-                            cur.executemany('INSERT OR REPLACE INTO glyphs (id, char, work_dir) VALUES (?,?,?)', batch)
-                            conn.commit()
-                            batch.clear()
-
-            if batch:
-                cur.executemany('INSERT OR REPLACE INTO glyphs (id, char, work_dir) VALUES (?,?,?)', batch)
-                conn.commit()
-
-            return str(sqlite_path), total
-        finally:
-            conn.close()
+        total = self._export_glyphs_to_sqlite(sqlite_path, all_items)
+        return str(sqlite_path), total
 
     def _export_all_crops(self):
         """扫描 ocr_output 并把裁剪后的单字图片写到对应字帖目录内。
@@ -837,12 +926,16 @@ class MainWindow(QMainWindow):
         ok = 0
         fail = 0
 
-        for work_dir in sorted([p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name):
+        for work_dir in sorted(
+            [p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name
+        ):
             debug_dir = work_dir / ".debug"
             if not debug_dir.exists():
                 continue
 
-            for chars_path in sorted(debug_dir.glob("*/chars.json"), key=lambda p: str(p)):
+            for chars_path in sorted(
+                debug_dir.glob("*/chars.json"), key=lambda p: str(p)
+            ):
                 stem = chars_path.parent.name
                 # 不依赖 result.json：直接用 <字帖目录>/<stem>.jpg 作为原图来源
                 image_abs = None
@@ -903,7 +996,9 @@ class MainWindow(QMainWindow):
                         # 避免同名覆盖：存在则追加序号
                         if out_path.exists():
                             for i in range(1, 1000):
-                                alt = out_dir / ("%s_%d.webp" % (_sanitize_filename(base), i))
+                                alt = out_dir / (
+                                    "%s_%d.webp" % (_sanitize_filename(base), i)
+                                )
                                 if not alt.exists():
                                     out_path = alt
                                     break
@@ -919,7 +1014,6 @@ class MainWindow(QMainWindow):
     def _do_export(self, export_dir: str):
         """执行导出"""
         import cv2
-        import sqlite3
 
         # 获取原图
         image = self.image_canvas.get_cv_image()
@@ -931,29 +1025,30 @@ class MainWindow(QMainWindow):
         chars_dir = Path(export_dir) / "chars"
         chars_dir.mkdir(parents=True, exist_ok=True)
 
-        # 生成 SQLite（最小字段：id,char,字帖）
+        # 生成 SQLite
         image_path = Path(self.current_image_path) if self.current_image_path else None
         work_name = image_path.parent.name if image_path and image_path.parent else ""
         image_name = image_path.name if image_path else ""
 
-        def _make_id(item: CharItem) -> str:
+        def _make_id(item) -> str:
             return f"{work_name}_{image_name}_{item.row}_{item.column}_{item.char}"
 
-        sqlite_path = Path(export_dir) / "glyphs.sqlite"
-        conn = sqlite3.connect(str(sqlite_path))
-        try:
-            cur = conn.cursor()
-            cur.execute("DROP TABLE IF EXISTS glyphs")
-            cur.execute('CREATE TABLE glyphs (id TEXT PRIMARY KEY, char TEXT, "字帖" TEXT)')
-            conn.commit()
+        # 准备导出数据
+        export_items = []
+        for item in self.char_manager.items:
+            export_items.append(
+                {
+                    "id": _make_id(item),
+                    "char": item.char,
+                    "work_dir": work_name,
+                    "author": self.current_author,
+                    "font": self.current_font,
+                    "work": self.current_work,
+                }
+            )
 
-            rows = []
-            for item in self.char_manager.items:
-                rows.append((_make_id(item), item.char, work_name))
-            cur.executemany('INSERT OR REPLACE INTO glyphs (id, char, "字帖") VALUES (?,?,?)', rows)
-            conn.commit()
-        finally:
-            conn.close()
+        sqlite_path = Path(export_dir) / "glyphs.sqlite"
+        self._export_glyphs_to_sqlite(sqlite_path, export_items)
 
         # 裁剪并保存每个字符
         for item in self.char_manager.items:
@@ -976,12 +1071,14 @@ class MainWindow(QMainWindow):
         # 保存元数据
         metadata_path = Path(export_dir) / "chars.json"
         with open(metadata_path, "w", encoding="utf-8") as f:
-            json.dump(self.char_manager.to_export_format(), f, ensure_ascii=False, indent=2)
+            json.dump(
+                self.char_manager.to_export_format(), f, ensure_ascii=False, indent=2
+            )
 
         QMessageBox.information(
             self,
             "导出完成",
-            f"已导出 {len(self.char_manager.items)} 个字符到:\n{export_dir}\n\nSQLite: {sqlite_path}"
+            f"已导出 {len(self.char_manager.items)} 个字符到:\n{export_dir}\n\nSQLite: {sqlite_path}",
         )
 
     def _on_char_selected(self, item_id: int):
@@ -1020,7 +1117,10 @@ class MainWindow(QMainWindow):
             self._update_preview(item)
 
             # 若当前属性面板正在显示该 item，同步更新数值（不触发信号）
-            if self.property_panel.current_item and self.property_panel.current_item.id == item_id:
+            if (
+                self.property_panel.current_item
+                and self.property_panel.current_item.id == item_id
+            ):
                 self.property_panel.update_from_item(item)
 
     def _apply_bbox(self, item_id: int, bbox: list):
@@ -1034,7 +1134,9 @@ class MainWindow(QMainWindow):
         x1, y1, x2, y2 = bbox
         for bbox_item in self.image_canvas.bbox_items:
             if bbox_item.item_id == item_id:
-                bbox_item.update_bbox(float(x1), float(y1), float(x2 - x1), float(y2 - y1))
+                bbox_item.update_bbox(
+                    float(x1), float(y1), float(x2 - x1), float(y2 - y1)
+                )
                 break
 
         # 更新属性面板（不触发信号）
@@ -1075,7 +1177,9 @@ class MainWindow(QMainWindow):
 
             self._update_preview(item)
 
-    def _on_property_bbox_changed(self, item_id: int, x: float, y: float, w: float, h: float):
+    def _on_property_bbox_changed(
+        self, item_id: int, x: float, y: float, w: float, h: float
+    ):
         """属性面板边界框变化"""
         item = self.char_manager.get_item(item_id)
         if item:
@@ -1116,14 +1220,22 @@ class MainWindow(QMainWindow):
                 self.action_toggle_worktree.setChecked(True)
                 self.action_toggle_worktree.blockSignals(False)
             # 字符列表按当前状态决定宽度
-            char_w = 0 if (hasattr(self, "char_list") and not self.char_list.isVisible()) else 160
+            char_w = (
+                0
+                if (hasattr(self, "char_list") and not self.char_list.isVisible())
+                else 160
+            )
             self.main_splitter.setSizes([28, char_w, 1200])
         else:
             if hasattr(self, "action_toggle_worktree"):
                 self.action_toggle_worktree.blockSignals(True)
                 self.action_toggle_worktree.setChecked(False)
                 self.action_toggle_worktree.blockSignals(False)
-            char_w = 0 if (hasattr(self, "char_list") and not self.char_list.isVisible()) else 160
+            char_w = (
+                0
+                if (hasattr(self, "char_list") and not self.char_list.isVisible())
+                else 160
+            )
             self.main_splitter.setSizes([280, char_w, 960])
 
     def _toggle_char_list(self, checked: bool):
@@ -1150,7 +1262,7 @@ class MainWindow(QMainWindow):
             "功能:\n"
             "- 自动识别书法文字\n"
             "- 可视化编辑边界框\n"
-            "- 导出单字图片"
+            "- 导出单字图片",
         )
 
     def closeEvent(self, event):
