@@ -12,7 +12,8 @@ class CharItem:
 
     id: int
     char: str
-    bbox: List[float]  # [x1, y1, x2, y2]
+    uuid: str = ""  # 持久化 id（写入 chars.json）
+    bbox: List[float] = field(default_factory=lambda: [0.0, 0.0, 0.0, 0.0])  # [x1, y1, x2, y2]
     column: int = 0
     row: int = 0
     global_index: int = 0
@@ -59,6 +60,7 @@ class CharItem:
         """转换为字典"""
         return {
             "id": self.id,
+            "uuid": self.uuid,
             "char": self.char,
             "bbox": self.bbox.copy(),
             "column": self.column,
@@ -72,6 +74,7 @@ class CharItem:
         """从字典创建"""
         return cls(
             id=data.get("id", 0),
+            uuid=data.get("uuid", ""),
             char=data.get("char", ""),
             bbox=data.get("bbox", [0, 0, 0, 0]).copy(),
             column=data.get("column", 0),
@@ -121,6 +124,7 @@ class CharItemManager:
         for i, char_data in enumerate(char_results):
             item = CharItem(
                 id=i,
+                uuid=str(char_data.get("uuid") or ""),
                 char=char_data.get("char", ""),
                 bbox=char_data.get("bbox", [0, 0, 0, 0]).copy(),
                 column=char_data.get("column", 0),

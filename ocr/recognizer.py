@@ -9,6 +9,7 @@ import re
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 from datetime import datetime
+import uuid
 import cv2
 
 from .config import (
@@ -500,7 +501,9 @@ class CalligraphyOCR:
 
     def _save_result(self, result: Dict[str, Any], debug: bool = False):
         """保存结果到JSON文件"""
-        output_dir = self.output_dir / Path(result["image_path"]).stem
+        img_path = Path(result.get("image_path", ""))
+        work_dir = img_path.parent
+        output_dir = work_dir / ".debug" / img_path.stem
         output_dir.mkdir(parents=True, exist_ok=True)
 
         # 保存完整结果
@@ -514,17 +517,45 @@ class CalligraphyOCR:
             print(f"[DEBUG] Result saved to: {json_path}")
 
         # 保存单字结果（简化版）
+        # 约定：chars.json 不包含“字帖”字段，字段使用英文键。
         chars_path = output_dir / "chars.json"
-        char_data = [
-            {
-                "char": r["char"],
-                "bbox": r["bbox"],
-                "column": r["column"],
-                "row": r["row"],
-                "global_index": r["global_index"],
-            }
-            for r in result["char_results"]
-        ]
+        work_name = work_dir.name if work_dir else ""
+        image_name = img_path.name
+
+        # 从字帖目录名注入默认 author/font/work（可被后续编辑器覆盖）
+        author = ""
+        font = ""
+        work_title = ""
+        if work_name and "-" in work_name:
+            parts = [p.strip() for p in work_name.split("-") if p.strip()]
+            if len(parts) >= 2:
+                author = parts[0]
+                font_candidates = {"楷书", "行书", "草书", "篆书", "隶书"}
+                if parts[1] in font_candidates:
+                    font = parts[1]
+                    if len(parts) >= 3:
+                        work_title = "-".join(parts[2:])
+                else:
+                    work_title = "-".join(parts[1:])
+
+        char_data = []
+        for r in result["char_results"]:
+            # chars.json 的 id 改为 UUID
+            rid = str(uuid.uuid4())
+            char_data.append(
+                {
+                    "id": rid,
+                    "char": r.get("char", ""),
+                    # 元数据字段使用英文（后续可由桌面端/其他工具补全）
+                    "font": font,
+                    "author": author,
+                    "work": work_title,
+                    "work_dir": work_name,
+                    "bbox": r.get("bbox", [0, 0, 0, 0]),
+                    "column": r.get("column", 0),
+                    "row": r.get("row", 0),
+                }
+            )
         with open(chars_path, "w", encoding="utf-8") as f:
             json.dump(char_data, f, ensure_ascii=False, indent=2)
 

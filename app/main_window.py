@@ -6,6 +6,7 @@ import os
 import json
 from typing import Optional, List
 from pathlib import Path
+import uuid
 from PyQt5.QtWidgets import (
     QMainWindow,
     QWidget,
@@ -23,6 +24,7 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import Qt, QThread, pyqtSignal, QSize
 from PyQt5.QtGui import QIcon, QFont, QKeySequence
+from PyQt5.QtWidgets import QStyle
 from PyQt5.QtWidgets import QUndoStack, QUndoCommand
 
 from .widgets.image_canvas import ImageCanvas
@@ -54,7 +56,7 @@ class OCRWorker(QThread):
             from ocr import CalligraphyOCR
 
             ocr = CalligraphyOCR()
-            # 识别后保存到 ocr_output/<stem>/result.json，方便下次直接加载
+            # 识别后保存到 <字帖目录>/.debug/<stem>/{result.json,chars.json}
             result = ocr.recognize_image(self.image_path, save_result=True, debug=False, crop_chars=False)
             result["_from_cache"] = False
             self.finished.emit(result)
@@ -115,6 +117,11 @@ class MainWindow(QMainWindow):
         self._last_loaded_cache_path: Optional[str] = None
         self._current_tree_selection: Optional[dict] = None
 
+        # 每张图片一个：字体/作者
+        self.current_font: str = "楷书"
+        self.current_author: str = ""
+        self.current_work: str = ""
+
         # 撤销栈（用于框拖拽/缩放等编辑）
         self.undo_stack = QUndoStack(self)
 
@@ -124,10 +131,42 @@ class MainWindow(QMainWindow):
         self._init_statusbar()
         self._connect_signals()
 
+    def _inject_meta_defaults_from_folder(self, folder_name: str):
+        """从字帖文件夹名推导 author/font/work 的默认值。
+
+        支持格式：
+        - 作者-字体-作品  (如：王羲之-行书-圣教序)
+        - 作者-作品
+        """
+        if not folder_name or "-" not in folder_name:
+            return
+
+        parts = [p.strip() for p in folder_name.split("-") if p.strip()]
+        if len(parts) < 2:
+            return
+
+        font_candidates = {"楷书", "行书", "草书", "篆书", "隶书"}
+
+        if not self.current_author:
+            self.current_author = parts[0]
+
+        if parts[1] in font_candidates:
+            # 仅当用户没主动改过字体时再注入
+            if not self.current_font or self.current_font == "楷书":
+                self.current_font = parts[1]
+            if len(parts) >= 3 and not self.current_work:
+                self.current_work = "-".join(parts[2:])
+        else:
+            if not self.current_work:
+                self.current_work = "-".join(parts[1:])
+
     def _init_ui(self):
         """初始化 UI"""
         self.setWindowTitle("书法拆字编辑器")
-        self.setGeometry(100, 100, 1400, 900)
+        # macOS 下某些情况下 setGeometry 会被 Qt 重新计算覆盖，
+        # 这里用 resize + setMinimumSize 保证窗口不会“缩成很小”。
+        self.resize(1400, 900)
+        self.setMinimumSize(1100, 700)
 
         # 中央部件
         central_widget = QWidget()
@@ -160,26 +199,35 @@ class MainWindow(QMainWindow):
         right_layout.setContentsMargins(0, 0, 0, 0)
         right_layout.setSpacing(6)
 
-        self.property_panel = PropertyPanel()
-        self.property_panel.setMinimumHeight(44)
-        self.property_panel.setMaximumHeight(72)
-        right_layout.addWidget(self.property_panel, 0)
-
-        # 右侧下方：图片编辑区 + 预览框
+        # 右侧下方：图片编辑区 + 预览列（操作栏在预览上方）
         right_splitter = QSplitter(Qt.Horizontal)
         right_splitter.setChildrenCollapsible(False)
 
         self.image_canvas = ImageCanvas()
         right_splitter.addWidget(self.image_canvas)
 
-        self.char_preview = CharPreviewWidget()
-        self.char_preview.setMinimumWidth(220)
-        self.char_preview.setMaximumWidth(420)
-        right_splitter.addWidget(self.char_preview)
+        # 预览列：上方操作栏（字~H），下方预览
+        preview_col = QWidget()
+        preview_col_layout = QVBoxLayout(preview_col)
+        preview_col_layout.setContentsMargins(0, 0, 0, 0)
+        preview_col_layout.setSpacing(6)
 
-        right_splitter.setStretchFactor(0, 3)
-        right_splitter.setStretchFactor(1, 1)
-        right_splitter.setSizes([900, 300])
+        self.property_panel = PropertyPanel()
+        # 操作栏每项一行（字体、作者、字、X、Y、W、H）
+        self.property_panel.setMinimumHeight(240)
+        self.property_panel.setMaximumHeight(320)
+        preview_col_layout.addWidget(self.property_panel, 0)
+
+        self.char_preview = CharPreviewWidget()
+        preview_col_layout.addWidget(self.char_preview, 1)
+
+        # 预览列宽度减半
+        preview_col.setFixedWidth(180)
+        right_splitter.addWidget(preview_col)
+
+        right_splitter.setStretchFactor(0, 1)
+        right_splitter.setStretchFactor(1, 0)
+        right_splitter.setSizes([1280, 180])
 
         right_layout.addWidget(right_splitter, 1)
 
@@ -190,7 +238,9 @@ class MainWindow(QMainWindow):
         splitter.setStretchFactor(1, 0)
         splitter.setStretchFactor(2, 1)
         splitter.setChildrenCollapsible(False)
-        splitter.setSizes([280, 160, 960])
+        # 默认隐藏字符列表
+        self.char_list.setVisible(False)
+        splitter.setSizes([280, 0, 1200])
 
         main_layout.addWidget(splitter, 1)
 
@@ -258,6 +308,26 @@ class MainWindow(QMainWindow):
         toolbar = self.addToolBar("主工具栏")
         toolbar.setMovable(False)
 
+        # 字帖最小化按钮（放在“识别”左侧）
+        self.action_toggle_worktree = QAction(self)
+        # 用目录图标区分
+        self.action_toggle_worktree.setIcon(self.style().standardIcon(QStyle.SP_DirIcon))
+        self.action_toggle_worktree.setToolTip("折叠/展开字帖")
+        self.action_toggle_worktree.setCheckable(True)
+        self.action_toggle_worktree.setChecked(False)  # 默认不折叠
+        self.action_toggle_worktree.toggled.connect(lambda checked: self.work_tree.set_collapsed(checked))
+        toolbar.addAction(self.action_toggle_worktree)
+
+        # 字符列表最小化按钮（放在字帖按钮右边）
+        self.action_toggle_charlist = QAction(self)
+        # 用列表视图图标区分
+        self.action_toggle_charlist.setIcon(self.style().standardIcon(QStyle.SP_FileDialogDetailedView))
+        self.action_toggle_charlist.setToolTip("显示/隐藏字符列表")
+        self.action_toggle_charlist.setCheckable(True)
+        self.action_toggle_charlist.setChecked(True)  # checked 表示隐藏（默认不展示）
+        self.action_toggle_charlist.toggled.connect(self._toggle_char_list)
+        toolbar.addAction(self.action_toggle_charlist)
+
         # 识别（强制调用 API 并刷新结果）
         toolbar.addAction(self.action_recognize)
 
@@ -301,6 +371,9 @@ class MainWindow(QMainWindow):
         # 属性面板信号
         self.property_panel.char_changed.connect(self._on_property_char_changed)
         self.property_panel.bbox_changed.connect(self._on_property_bbox_changed)
+        self.property_panel.font_changed.connect(self._on_property_font_changed)
+        self.property_panel.author_changed.connect(self._on_property_author_changed)
+        self.property_panel.work_changed.connect(self._on_property_work_changed)
 
     def open_image(self):
         """打开图片"""
@@ -338,24 +411,24 @@ class MainWindow(QMainWindow):
         self.status_label.setText("已打开图片（未发现缓存），请点击“识别”")
 
     def _cache_result_path(self, image_path: str) -> Path:
-        project_root = Path(__file__).parent.parent
-        return project_root / "ocr_output" / Path(image_path).stem / "result.json"
+        img = Path(image_path)
+        return img.parent / ".debug" / img.stem / "result.json"
 
     def _cache_chars_path(self, image_path: str) -> Path:
-        project_root = Path(__file__).parent.parent
-        return project_root / "ocr_output" / Path(image_path).stem / "chars.json"
+        img = Path(image_path)
+        return img.parent / ".debug" / img.stem / "chars.json"
 
     def _try_load_cache(self, image_path: str) -> bool:
-        """尝试从 ocr_output 缓存加载
+        """尝试从缓存加载
 
         优先级：
-        1) chars.json（用户编辑后的结果）
-        2) result.json（OCR 原始结果）
+        1) <字帖目录>/.debug/<stem>/chars.json（用户编辑后的结果）
+        2) <字帖目录>/.debug/<stem>/result.json（OCR 原始结果）
         """
 
         project_root = Path(__file__).parent.parent
 
-        # 1) 优先 chars.json
+        # 1) 优先 chars.json（用户编辑后的结果）
         chars_path = self._cache_chars_path(image_path)
         if chars_path.exists():
             try:
@@ -370,19 +443,31 @@ class MainWindow(QMainWindow):
                 for i, c in enumerate(chars):
                     if not isinstance(c, dict):
                         continue
+                    uid = c.get("id")
                     char_results.append(
                         {
-                            "id": c.get("id", i),
+                            "id": i,
+                            "uuid": str(uid or ""),
                             "char": c.get("char", ""),
+                            "work_dir": c.get("work_dir", ""),
                             "bbox": c.get("bbox", [0, 0, 0, 0]),
                             "column": c.get("column", 0),
                             "row": c.get("row", 0),
-                            "global_index": c.get("global_index", i),
+                            # 说明：chars.json 不再保存 global_index，这里运行时补一个
+                            "global_index": i,
                         }
                     )
 
-                # recognized_text：按 global_index 拼接
-                char_results_sorted = sorted(char_results, key=lambda x: x.get("global_index", 0))
+                # recognized_text：按 column/row 拼接（column 0 为最右列，按 0,1,2... 即从右向左）
+                def _order_key(x: dict):
+                    try:
+                        return (int(x.get("column", 0)), int(x.get("row", 0)))
+                    except Exception:
+                        return (0, 0)
+
+                char_results_sorted = sorted(char_results, key=_order_key)
+                for gi, r in enumerate(char_results_sorted):
+                    r["global_index"] = gi
                 recognized_text = "".join([x.get("char", "") for x in char_results_sorted])
                 total_chars = len(char_results_sorted)
                 column_count = 0
@@ -391,6 +476,31 @@ class MainWindow(QMainWindow):
                         column_count = max([int(x.get("column", 0)) for x in char_results_sorted]) + 1
                     except Exception:
                         column_count = 0
+
+                font = "楷书"
+                author = ""
+                work_title = ""
+                if chars and isinstance(chars[0], dict):
+                    # 新字段（英文）优先；兼容旧字段（中文）
+                    font = chars[0].get("font") or chars[0].get("字体") or "楷书"
+                    author = chars[0].get("author") or chars[0].get("作者") or ""
+                    work_title = chars[0].get("work") or chars[0].get("作品") or ""
+
+                # 若没有作者/字体/作品，尝试从字帖文件夹名推导：作者-字体-作品
+                # 示例：王羲之-行书-圣教序
+                folder = Path(image_path).parent.name
+                if "-" in folder:
+                    parts = [p.strip() for p in folder.split("-") if p.strip()]
+                    if len(parts) >= 2:
+                        author = author or parts[0]
+                        # 第二段如果是字体，映射到字体；否则拼入作品
+                        font_candidates = {"楷书", "行书", "草书", "篆书", "隶书"}
+                        if parts[1] in font_candidates:
+                            font = font or parts[1]
+                            if len(parts) >= 3:
+                                work_title = work_title or "-".join(parts[2:])
+                        else:
+                            work_title = work_title or "-".join(parts[1:])
 
                 # image_path 尽量写成相对路径（与原 result.json 一致）
                 try:
@@ -404,6 +514,9 @@ class MainWindow(QMainWindow):
                     "recognized_text": recognized_text,
                     "total_chars": total_chars,
                     "column_count": column_count,
+                    "font": font,
+                    "author": author,
+                    "work_title": work_title,
                     "_from_cache": True,
                     "_cache_path": str(chars_path),
                     "_cache_kind": "chars.json",
@@ -479,8 +592,19 @@ class MainWindow(QMainWindow):
 
         # 添加边界框
         for item in self.char_manager.items:
-            x, y, x2, y2 = item.bbox
-            self.image_canvas.add_bbox(x, y, x2 - x, y2 - y, item.char, item.id)
+                x, y, x2, y2 = item.bbox
+                self.image_canvas.add_bbox(x, y, x2 - x, y2 - y, item.char, item.id)
+
+        # 字体/作者/作品：加载时按第一个字展示
+        self.current_font = result.get("font") or self.current_font or "楷书"
+        self.current_author = result.get("author") or self.current_author or ""
+        self.current_work = result.get("work_title") or self.current_work or ""
+
+        # 若仍为空，尝试从字帖目录名注入默认值
+        if self.current_image_path:
+            self._inject_meta_defaults_from_folder(Path(self.current_image_path).parent.name)
+
+        self.property_panel.set_image_meta(self.current_font, self.current_author, self.current_work, enabled=True)
 
         if result.get("_from_cache"):
             self.status_label.setText(
@@ -560,42 +684,57 @@ class MainWindow(QMainWindow):
             self.status_label.setText("保存失败：当前没有可保存的字符数据")
             return
 
-        project_root = Path(__file__).parent.parent
-        out_dir = project_root / "ocr_output" / Path(self.current_image_path).stem
+        # 输出目录调整：<字帖目录>/.debug/<stem>/chars.json
+        image_path = Path(self.current_image_path)
+        out_dir = image_path.parent / ".debug" / image_path.stem
         out_dir.mkdir(parents=True, exist_ok=True)
 
         chars_path = out_dir / "chars.json"
 
         # 只更新 chars.json（现有 json），不改 result.json
         # chars.json 格式与 recognizer.py 保存的一致（简化版）
-        image_path = Path(self.current_image_path)
-        # work_name：字帖目录名
-        try:
-            work_name = image_path.parent.name
-        except Exception:
-            work_name = ""
+        # 字帖目录名（仅用于生成 id）
+        work_dir_name = image_path.parent.name if image_path.parent else ""
         image_name = image_path.name
 
-        def _make_id(item: CharItem) -> str:
-            # 字帖名称_图片名称_行_列_字
-            # 注意：这里 row/column 使用 UI/后处理后的值（从 0 开始）
-            return f"{work_name}_{image_name}_{item.row}_{item.column}_{item.char}"
+        # 保存前确保 author/font/work 有默认值（来自字帖目录名）
+        self._inject_meta_defaults_from_folder(work_dir_name)
 
         char_data = []
-        for r in sorted(self.char_manager.items, key=lambda x: x.global_index):
+        for r in sorted(self.char_manager.items, key=lambda x: (x.column, x.row)):
+            # 每次保存全量更新，并确保每条记录都有 UUID
+            if not getattr(r, "uuid", ""):
+                r.uuid = str(uuid.uuid4())
             char_data.append(
                 {
-                    "id": _make_id(r),
+                    "id": r.uuid,
                     "char": r.char,
+                    # 元数据字段使用英文
+                    "font": self.current_font or "楷书",
+                    "author": self.current_author or "",
+                    "work": self.current_work or "",
+                    # 仅用于可追溯（不是“字帖”字段）：记录字帖目录名
+                    "work_dir": work_dir_name,
                     "bbox": r.bbox,
                     "column": r.column,
                     "row": r.row,
-                    "global_index": r.global_index,
                 }
             )
 
         with open(chars_path, "w", encoding="utf-8") as f:
             json.dump(char_data, f, ensure_ascii=False, indent=2)
+
+        # 同步写入 words/<stem>.txt（拆解后的文字）
+        try:
+            words_dir = image_path.parent / "words"
+            words_dir.mkdir(parents=True, exist_ok=True)
+            words_path = words_dir / f"{image_path.stem}.txt"
+            recognized_text = "".join([x["char"] for x in char_data])
+            with open(words_path, "w", encoding="utf-8") as wf:
+                wf.write(recognized_text)
+        except Exception as e:
+            self.status_label.setText(f"已保存到 {chars_path}（写 words 失败：{e}）")
+            return
 
         self.status_label.setText(f"已保存到 {chars_path}")
 
@@ -605,24 +744,187 @@ class MainWindow(QMainWindow):
         self.status_label.setText("识别失败")
 
     def export_chars(self):
-        """导出字符"""
-        if not self.char_manager.items:
-            QMessageBox.warning(self, "警告", "没有可导出的字符")
-            return
+        """导出：全量导出所有字帖到 SQLite（无需选择目录）"""
+        try:
+            sqlite_path, total = self._export_all_glyphs_sqlite()
+            crop_total, crop_ok, crop_fail = self._export_all_crops()
+            self.status_label.setText(
+                f"导出完成：SQLite {total} 条 -> {sqlite_path}；裁剪 {crop_ok}/{crop_total}（失败 {crop_fail}）"
+            )
+        except Exception as e:
+            self.status_label.setText(f"导出失败：{e}")
 
-        # 选择导出目录
-        export_dir = QFileDialog.getExistingDirectory(
-            self,
-            "选择导出目录",
-            ""
-        )
+    def _export_all_glyphs_sqlite(self):
+        """扫描 ocr_output 并生成全量 glyphs.sqlite（字段：id,char,字帖）"""
+        import sqlite3
 
-        if export_dir:
-            self._do_export(export_dir)
+        project_root = Path(__file__).parent.parent
+        ocr_output = project_root / "ocr_output"
+        ocr_output.mkdir(parents=True, exist_ok=True)
+
+        sqlite_path = ocr_output / "glyphs.sqlite"
+
+        conn = sqlite3.connect(str(sqlite_path))
+        try:
+            cur = conn.cursor()
+            cur.execute("DROP TABLE IF EXISTS glyphs")
+            cur.execute('CREATE TABLE glyphs (id TEXT PRIMARY KEY, char TEXT, work_dir TEXT)')
+            conn.commit()
+
+            total = 0
+            batch = []
+
+            # 新目录结构：<字帖目录>/.debug/<stem>/chars.json
+            for work_dir in sorted([p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name):
+                debug_dir = work_dir / ".debug"
+                if not debug_dir.exists():
+                    continue
+                for chars_path in sorted(debug_dir.glob("*/chars.json"), key=lambda p: str(p)):
+                    try:
+                        with open(chars_path, "r", encoding="utf-8") as f:
+                            chars = json.load(f)
+                    except Exception:
+                        continue
+
+                    if not isinstance(chars, list):
+                        continue
+
+                    for rec in chars:
+                        if not isinstance(rec, dict):
+                            continue
+                        gid = rec.get("id")
+                        ch = rec.get("char")
+                        work = rec.get("work_dir") or work_dir.name
+
+                        if not gid or not ch:
+                            continue
+
+                        batch.append((str(gid), str(ch), str(work or "")))
+                        total += 1
+
+                        if len(batch) >= 2000:
+                            cur.executemany('INSERT OR REPLACE INTO glyphs (id, char, work_dir) VALUES (?,?,?)', batch)
+                            conn.commit()
+                            batch.clear()
+
+            if batch:
+                cur.executemany('INSERT OR REPLACE INTO glyphs (id, char, work_dir) VALUES (?,?,?)', batch)
+                conn.commit()
+
+            return str(sqlite_path), total
+        finally:
+            conn.close()
+
+    def _export_all_crops(self):
+        """扫描 ocr_output 并把裁剪后的单字图片写到对应字帖目录内。
+
+        输出路径：
+        - <字帖目录>/chars/<image_stem>/<sanitized_filename>.jpg
+        """
+        import cv2
+        import re
+
+        project_root = Path(__file__).parent.parent
+        # 新目录结构：<字帖目录>/.debug/<stem>/{result.json,chars.json}
+
+        def _sanitize_filename(name: str) -> str:
+            # 保留中文/字母数字/下划线/短横线/点，其余替换为 '_'
+            name = name.strip().replace(" ", "_")
+            name = re.sub(r"[^0-9A-Za-z_\-\.\u4e00-\u9fff]+", "_", name)
+            return name[:180] if len(name) > 180 else name
+
+        total = 0
+        ok = 0
+        fail = 0
+
+        for work_dir in sorted([p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name):
+            debug_dir = work_dir / ".debug"
+            if not debug_dir.exists():
+                continue
+
+            for chars_path in sorted(debug_dir.glob("*/chars.json"), key=lambda p: str(p)):
+                stem = chars_path.parent.name
+                result_path = chars_path.parent / "result.json"
+                if not result_path.exists():
+                    continue
+
+                try:
+                    with open(result_path, "r", encoding="utf-8") as f:
+                        result = json.load(f)
+                except Exception:
+                    continue
+
+                image_rel = result.get("image_path")
+                if not image_rel:
+                    continue
+                p = Path(image_rel)
+                image_abs = p.resolve() if p.is_absolute() else (project_root / p).resolve()
+                if not image_abs.exists():
+                    continue
+
+                try:
+                    with open(chars_path, "r", encoding="utf-8") as f:
+                        chars = json.load(f)
+                except Exception:
+                    continue
+                if not isinstance(chars, list):
+                    continue
+
+                img = cv2.imread(str(image_abs))
+                if img is None:
+                    continue
+
+                h, w = img.shape[:2]
+                out_dir = image_abs.parent / "chars" / stem
+                out_dir.mkdir(parents=True, exist_ok=True)
+
+                for rec in chars:
+                    if not isinstance(rec, dict):
+                        continue
+                    bbox = rec.get("bbox")
+                    ch = rec.get("char", "")
+                    rid = rec.get("id", "")
+                    row = rec.get("row", 0)
+                    col = rec.get("column", 0)
+
+                    if not bbox or len(bbox) != 4:
+                        continue
+
+                    total += 1
+                    try:
+                        x1, y1, x2, y2 = [int(float(v)) for v in bbox]
+                        x1 = max(0, min(w - 1, x1))
+                        y1 = max(0, min(h - 1, y1))
+                        x2 = max(0, min(w, x2))
+                        y2 = max(0, min(h, y2))
+                        if x2 <= x1 or y2 <= y1:
+                            fail += 1
+                            continue
+
+                        crop = img[y1:y2, x1:x2]
+                        base = f"{row}_{col}_{ch}_{rid}" if rid else f"{row}_{col}_{ch}"
+                        filename = _sanitize_filename(base) + ".jpg"
+                        out_path = out_dir / filename
+
+                        # 避免同名覆盖：存在则追加序号
+                        if out_path.exists():
+                            for i in range(1, 1000):
+                                alt = out_dir / ("%s_%d.jpg" % (_sanitize_filename(base), i))
+                                if not alt.exists():
+                                    out_path = alt
+                                    break
+
+                        cv2.imwrite(str(out_path), crop)
+                        ok += 1
+                    except Exception:
+                        fail += 1
+
+        return total, ok, fail
 
     def _do_export(self, export_dir: str):
         """执行导出"""
         import cv2
+        import sqlite3
 
         # 获取原图
         image = self.image_canvas.get_cv_image()
@@ -633,6 +935,30 @@ class MainWindow(QMainWindow):
         # 创建导出目录
         chars_dir = Path(export_dir) / "chars"
         chars_dir.mkdir(parents=True, exist_ok=True)
+
+        # 生成 SQLite（最小字段：id,char,字帖）
+        image_path = Path(self.current_image_path) if self.current_image_path else None
+        work_name = image_path.parent.name if image_path and image_path.parent else ""
+        image_name = image_path.name if image_path else ""
+
+        def _make_id(item: CharItem) -> str:
+            return f"{work_name}_{image_name}_{item.row}_{item.column}_{item.char}"
+
+        sqlite_path = Path(export_dir) / "glyphs.sqlite"
+        conn = sqlite3.connect(str(sqlite_path))
+        try:
+            cur = conn.cursor()
+            cur.execute("DROP TABLE IF EXISTS glyphs")
+            cur.execute('CREATE TABLE glyphs (id TEXT PRIMARY KEY, char TEXT, "字帖" TEXT)')
+            conn.commit()
+
+            rows = []
+            for item in self.char_manager.items:
+                rows.append((_make_id(item), item.char, work_name))
+            cur.executemany('INSERT OR REPLACE INTO glyphs (id, char, "字帖") VALUES (?,?,?)', rows)
+            conn.commit()
+        finally:
+            conn.close()
 
         # 裁剪并保存每个字符
         for item in self.char_manager.items:
@@ -647,6 +973,7 @@ class MainWindow(QMainWindow):
 
             if x2 > x1 and y2 > y1:
                 char_img = image[y1:y2, x1:x2]
+                # 文件名避免使用过长 id，这里沿用可读形式
                 filename = f"{item.char}_{item.id}.jpg"
                 filepath = chars_dir / filename
                 cv2.imwrite(str(filepath), char_img)
@@ -659,7 +986,7 @@ class MainWindow(QMainWindow):
         QMessageBox.information(
             self,
             "导出完成",
-            f"已导出 {len(self.char_manager.items)} 个字符到:\n{export_dir}"
+            f"已导出 {len(self.char_manager.items)} 个字符到:\n{export_dir}\n\nSQLite: {sqlite_path}"
         )
 
     def _on_char_selected(self, item_id: int):
@@ -767,6 +1094,15 @@ class MainWindow(QMainWindow):
 
             self._update_preview(item)
 
+    def _on_property_font_changed(self, font: str):
+        self.current_font = font or "楷书"
+
+    def _on_property_author_changed(self, author: str):
+        self.current_author = author or ""
+
+    def _on_property_work_changed(self, work: str):
+        self.current_work = work or ""
+
     def _update_preview(self, item: CharItem):
         if not hasattr(self, "char_preview"):
             return
@@ -780,9 +1116,34 @@ class MainWindow(QMainWindow):
             return
         # 折叠时把左侧宽度压到最小，让空间给右侧
         if not visible:
-            self.main_splitter.setSizes([44, 160, 1200])
+            if hasattr(self, "action_toggle_worktree"):
+                self.action_toggle_worktree.blockSignals(True)
+                self.action_toggle_worktree.setChecked(True)
+                self.action_toggle_worktree.blockSignals(False)
+            # 字符列表按当前状态决定宽度
+            char_w = 0 if (hasattr(self, "char_list") and not self.char_list.isVisible()) else 160
+            self.main_splitter.setSizes([28, char_w, 1200])
         else:
-            self.main_splitter.setSizes([280, 160, 960])
+            if hasattr(self, "action_toggle_worktree"):
+                self.action_toggle_worktree.blockSignals(True)
+                self.action_toggle_worktree.setChecked(False)
+                self.action_toggle_worktree.blockSignals(False)
+            char_w = 0 if (hasattr(self, "char_list") and not self.char_list.isVisible()) else 160
+            self.main_splitter.setSizes([280, char_w, 960])
+
+    def _toggle_char_list(self, checked: bool):
+        """显示/隐藏字符列表。checked=True 表示隐藏。"""
+        hide = bool(checked)
+        self.char_list.setVisible(not hide)
+
+        if not hasattr(self, "main_splitter"):
+            return
+
+        # 维持当前字帖宽度：折叠时用更窄的 28，避免左侧灰条过宽
+        work_w = 28 if getattr(self.work_tree, "_collapsed", False) else 280
+        char_w = 0 if hide else 160
+        right_w = 1200 if getattr(self.work_tree, "_collapsed", False) else 960
+        self.main_splitter.setSizes([work_w, char_w, right_w])
 
     def show_about(self):
         """显示关于对话框"""

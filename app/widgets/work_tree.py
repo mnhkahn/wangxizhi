@@ -3,7 +3,7 @@
 
 用途：
 - 启动时扫描项目根目录下的字帖图片（各作品目录下的 fatie-*.jpg）
-- 扫描 ocr_output/ 下已有 result.json 的识别结果
+- 扫描 <字帖目录>/.debug/<stem>/result.json 的识别结果
 - 点击树节点即可快速加载对应图片/缓存
 """
 
@@ -14,8 +14,7 @@ from pathlib import Path
 from typing import Dict, Any, Optional, List
 
 from PyQt5.QtCore import Qt, pyqtSignal
-from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTreeWidget, QTreeWidgetItem, QToolButton
-from PyQt5.QtGui import QFont
+from PyQt5.QtWidgets import QWidget, QVBoxLayout, QTreeWidget, QTreeWidgetItem
 
 
 class WorkTreeWidget(QWidget):
@@ -39,20 +38,6 @@ class WorkTreeWidget(QWidget):
         layout = QVBoxLayout(self)
         layout.setContentsMargins(5, 5, 5, 5)
         layout.setSpacing(6)
-
-        header = QHBoxLayout()
-        header.setContentsMargins(0, 0, 0, 0)
-
-        self.toggle_btn = QToolButton()
-        self.toggle_btn.setText("字帖")
-        self.toggle_btn.setCheckable(True)
-        self.toggle_btn.setChecked(True)
-        self.toggle_btn.setToolButtonStyle(Qt.ToolButtonTextOnly)
-        self.toggle_btn.clicked.connect(self._toggle_tree_visible)
-        header.addWidget(self.toggle_btn)
-        header.addStretch(1)
-
-        layout.addLayout(header)
         layout.addWidget(self.tree, 1)
 
         self._root_recognized: Optional[QTreeWidgetItem] = None
@@ -63,13 +48,34 @@ class WorkTreeWidget(QWidget):
         # dir_abs_path -> tree item
         self._dir_item_map: Dict[str, QTreeWidgetItem] = {}
 
+        # 展开/折叠状态（折叠时隐藏 tree 并收窄宽度）
+        self._collapsed = False
+
         self.rebuild()
+
+    def set_collapsed(self, collapsed: bool):
+        """折叠/展开字帖树"""
+        self._collapsed = bool(collapsed)
+        visible = not self._collapsed
+        self.tree.setVisible(visible)
+
+        if visible:
+            self.setMinimumWidth(220)
+            self.setMaximumWidth(360)
+        else:
+            # 折叠时尽量收窄（只留一条灰条）
+            self.setMinimumWidth(28)
+            self.setMaximumWidth(28)
+
+        self.visibility_changed.emit(visible)
+
+    def toggle_collapsed(self):
+        self.set_collapsed(not self._collapsed)
 
     def ensure_visible(self):
         """确保树可见（不自动折叠）"""
-        if not self.toggle_btn.isChecked():
-            self.toggle_btn.setChecked(True)
-            self._toggle_tree_visible()
+        if self._collapsed:
+            self.set_collapsed(False)
 
     def select_image(self, image_path: str):
         """在树中选中并定位到图片节点"""
@@ -90,22 +96,6 @@ class WorkTreeWidget(QWidget):
 
         self.tree.setCurrentItem(item)
         self.tree.scrollToItem(item)
-
-    def _toggle_tree_visible(self):
-        visible = self.toggle_btn.isChecked()
-        self.tree.setVisible(visible)
-
-        # 折叠时缩成窄条，让出空间给右侧
-        if visible:
-            self.toggle_btn.setText("字帖")
-            self.setMinimumWidth(220)
-            self.setMaximumWidth(360)
-        else:
-            self.toggle_btn.setText("字帖 ▶")
-            self.setMinimumWidth(44)
-            self.setMaximumWidth(44)
-
-        self.visibility_changed.emit(visible)
 
     def rebuild(self):
         """重建整棵树"""
@@ -169,29 +159,31 @@ class WorkTreeWidget(QWidget):
 
     def _build_recognized_index(self) -> Dict[str, Dict[str, Any]]:
         """构建已识别索引：image_abs_path -> {cache_path, total_chars}"""
-        out_dir = self.project_root / "ocr_output"
         idx: Dict[str, Dict[str, Any]] = {}
-        if not out_dir.exists():
-            return idx
 
-        for sub in [p for p in out_dir.iterdir() if p.is_dir()]:
-            result_path = sub / "result.json"
-            if not result_path.exists():
-                continue
-            try:
-                with open(result_path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-            except Exception:
+        # 新结构：<字帖目录>/.debug/<stem>/result.json
+        for work_dir in [p for p in self.project_root.iterdir() if p.is_dir()]:
+            debug_dir = work_dir / ".debug"
+            if not debug_dir.exists():
                 continue
 
-            image_rel = data.get("image_path") or ""
-            if not image_rel:
-                continue
-            image_abs = str((self.project_root / image_rel).resolve())
-            idx[image_abs] = {
-                "cache_path": str(result_path.resolve()),
-                "total_chars": data.get("total_chars"),
-            }
+            for result_path in debug_dir.glob("*/result.json"):
+                try:
+                    with open(result_path, "r", encoding="utf-8") as f:
+                        data = json.load(f)
+                except Exception:
+                    continue
+
+                image_rel = data.get("image_path") or ""
+                if not image_rel:
+                    continue
+
+                p = Path(image_rel)
+                image_abs = str(p.resolve()) if p.is_absolute() else str((self.project_root / p).resolve())
+                idx[image_abs] = {
+                    "cache_path": str(result_path.resolve()),
+                    "total_chars": data.get("total_chars"),
+                }
 
         return idx
 

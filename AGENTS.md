@@ -23,7 +23,8 @@
 │   ├── preprocess.py       # 图像预处理
 │   ├── postprocess.py      # 后处理（竖排重排序、单字分割）
 │   └── config.py           # 配置管理
-└── ocr_output/             # OCR 输出结果
+└── {字帖目录}/.debug/      # OCR 输出结果（每张图一个子目录）
+└── {字帖目录}/words/       # 拆解后的文字（每张图一个 txt）
 ```
 
 ## 构建与命令
@@ -176,13 +177,11 @@ VERTICAL_LAYOUT = {
 
 ### 输出文件
 
-识别结果保存在 `ocr_output/<image_name>/` 目录：
+识别结果保存在字帖目录下：
 
-- `result.json`：完整识别结果
-- `chars.json`：单字信息（简化版）
-- `text.txt`：纯文本
-- `chars/`：裁剪的单字图片
-- `debug_*.jpg`：调试图片
+- `{字帖目录}/.debug/<image_stem>/result.json`：完整识别结果
+- `{字帖目录}/.debug/<image_stem>/chars.json`：单字信息（简化版，可编辑）
+- `{字帖目录}/words/<image_stem>.txt`：拆解后的文字
 
 ## 开发注意事项
 
