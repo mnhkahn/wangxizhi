@@ -24,30 +24,14 @@ from .char_splitter import CharSplitter, SplitMethod
 def log_step(step_name: str, data: Any, output_dir: Path, debug: bool = False,
              image: Any = None, bboxes: List = None, labels: List = None,
              title: str = None):
-    """记录每一步的结果到JSON文件和图片"""
-    step_file = output_dir / f"step_{step_name}.json"
-    with open(step_file, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    """记录步骤信息（不落盘）。
 
-    # 保存调试图片
-    if image is not None and bboxes:
-        colors = [
-            (255, 0, 0), (0, 255, 0), (0, 0, 255),
-            (255, 255, 0), (255, 0, 255), (0, 255, 255),
-        ]
-        img_draw = image.copy()
-        for i, bbox in enumerate(bboxes):
-            color = colors[i % len(colors)]
-            x1, y1, x2, y2 = [int(v) for v in bbox]
-            cv2.rectangle(img_draw, (x1, y1), (x2, y2), color, 2)
-            if labels and i < len(labels):
-                cv2.putText(img_draw, str(labels[i]), (x1, y1 - 5),
-                           cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1, cv2.LINE_AA)
-        step_img = output_dir / f"step_{step_name}.jpg"
-        cv2.imwrite(str(step_img), img_draw)
-
+    说明：为了简化输出文件，仅保留 result.json 与 chars.json。
+    因此这里不再生成 step_*.json / step_*.jpg 等中间文件。
+    """
     if debug:
-        print(f"[STEP] {step_name} -> {step_file}")
+        extra = f" | {title}" if title else ""
+        print(f"[STEP] {step_name}{extra}")
 
 
 class CalligraphyOCR:
@@ -442,16 +426,17 @@ class CalligraphyOCR:
         image_path: str,
         save_result: bool = True,
         debug: bool = False,
-        crop_chars: bool = True,
+        crop_chars: bool = False,
     ) -> Dict[str, Any]:
         """识别单个图像"""
         image_path = Path(image_path)
         if not image_path.exists():
             raise FileNotFoundError(f"Image not found: {image_path}")
 
-        # 创建输出目录
+        # 创建输出目录（仅用于保存 result.json/chars.json）
         output_dir = self.output_dir / image_path.stem
-        output_dir.mkdir(parents=True, exist_ok=True)
+        if save_result:
+            output_dir.mkdir(parents=True, exist_ok=True)
 
         if debug:
             print(f"[DEBUG] Processing: {image_path}")
@@ -459,8 +444,7 @@ class CalligraphyOCR:
         # Step 1: 加载图像
         image = self.preprocessor.load_image(str(image_path))
         image_info = self.preprocessor.get_image_info()
-        log_step("01_image_info", image_info, output_dir, debug,
-                image=image, bboxes=[], labels=[], title="原图")
+        log_step("01_image_info", image_info, output_dir, debug, title="原图")
         if debug:
             print(f"[DEBUG] Image size: {image_info['width']}x{image_info['height']}")
 
@@ -470,48 +454,30 @@ class CalligraphyOCR:
 
         response = self.api_client.recognize(str(image_path))
 
-        # 保存API返回的图片（布局检测图、预处理图等）
-        self._save_api_images(response, output_dir / "api_images", debug)
-
-        log_step("02_api_response", response, output_dir, debug,
-                image=image, bboxes=[], labels=[], title="API调用后")
+        log_step("02_api_response", {"ok": True}, output_dir, debug, title="API调用后")
 
         # Step 3: 解析API结果 - 获取识别的文字和坐标
         parsed_results = self._parse_markdown_result(response)
 
         # 绘制带坐标的预览图
-        parsed_bboxes = [r.get("bbox", [0,0,0,0]) for r in parsed_results if "bbox" in r]
-        parsed_labels = [r["text"][:10] for r in parsed_results if "bbox" in r]
-        log_step("03_parsed_text", parsed_results, output_dir, debug,
-            image=image, bboxes=parsed_bboxes, labels=parsed_labels,
-            title=f"解析的文本 ({len(parsed_results)}列)")
+        log_step("03_parsed_text", {"columns": len(parsed_results)}, output_dir, debug,
+                 title=f"解析的文本 ({len(parsed_results)}列)")
 
         if debug:
             print(f"[DEBUG] Parsed text results: {len(parsed_results)} items")
             for i, r in enumerate(parsed_results[:10]):
                 print(f" [{i}] {r['text'][:30]}...")
 
-        # Step 4: 保存markdown结果到文件
-        saved_files = self.api_client.save_results(response, str(output_dir / "api_output"))
-        if debug:
-            print(f"[DEBUG] Saved {len(saved_files)} files from API")
-
         # Step 5: 使用列坐标数据和像素投影法拆分单字
         char_results = self._split_columns_to_chars(parsed_results, image=image, debug=debug)
 
-        log_step("05_char_results", char_results, output_dir, debug,
-            image=image,
-            bboxes=[r["bbox"] for r in char_results],
-            labels=[r["char"] for r in char_results],
-            title=f"单字结果 ({len(char_results)}字)")
+        log_step("05_char_results", {"chars": len(char_results)}, output_dir, debug,
+                 title=f"单字结果 ({len(char_results)}字)")
 
         # Step 6: 生成最终输出
         recognized_text = "".join(r["char"] for r in char_results)
-        log_step("06_recognized_text", {"text": recognized_text}, output_dir, debug,
-            image=image,
-            bboxes=[r["bbox"] for r in char_results],
-            labels=[r["char"] for r in char_results],
-            title=f"最终识别: {recognized_text[:20]}...")
+        log_step("06_recognized_text", {"text_preview": recognized_text[:20]}, output_dir, debug,
+                 title=f"最终识别: {recognized_text[:20]}...")
 
         result = {
             "image_path": str(image_path),
@@ -522,25 +488,13 @@ class CalligraphyOCR:
             "column_count": max((r["column"] for r in char_results), default=0) + 1 if char_results else 0,
             "total_chars": len(char_results),
             "timestamp": datetime.now().isoformat(),
-            "api_output_files": saved_files,
         }
 
         # Step 7: 保存结果
         if save_result:
             self._save_result(result, debug)
 
-        # Step 8: 裁剪并保存单字图片
-        if crop_chars:
-            if debug:
-                print("[DEBUG] Cropping character images...")
-            cropped_paths = self.crop_and_save_chars(image, char_results, str(image_path))
-            result["cropped_char_images"] = cropped_paths
-            if debug:
-                print(f"[DEBUG] Cropped {len(cropped_paths)} character images")
-
-        # Step 9: 保存调试图片
-        if debug and SAVE_DEBUG_IMAGES:
-            self._save_debug_images(result, image, str(image_path))
+        # 不再生成裁剪图片/调试图片/中间文件，仅保留 result.json 与 chars.json
 
         return result
 
@@ -574,10 +528,8 @@ class CalligraphyOCR:
         with open(chars_path, "w", encoding="utf-8") as f:
             json.dump(char_data, f, ensure_ascii=False, indent=2)
 
-        # 保存纯文本
-        text_path = output_dir / "text.txt"
-        with open(text_path, "w", encoding="utf-8") as f:
-            f.write(result["recognized_text"])
+        if debug:
+            print(f"[DEBUG] Chars saved to: {chars_path}")
 
     def _save_debug_images(
         self,
@@ -585,37 +537,8 @@ class CalligraphyOCR:
         image: Any,
         image_path: str,
     ):
-        """保存调试图片"""
-        output_dir = self.output_dir / Path(image_path).stem
-
-        # 绘制单字bbox
-        char_bboxes = [r["bbox"] for r in result["char_results"]]
-        char_texts = [r["char"] for r in result["char_results"]]
-        self.preprocessor.draw_bboxes(
-            char_bboxes,
-            output_path=str(output_dir / "debug_char_bboxes.jpg"),
-            color=(255, 0, 0),
-        )
-
-        # 绘制带标签的图片
-        self.preprocessor.draw_text_labels(
-            char_bboxes,
-            char_texts,
-            output_path=str(output_dir / "debug_with_labels.jpg"),
-        )
-
-        # 按列着色
-        img_colored = image.copy()
-        colors = [
-            (255, 0, 0), (0, 255, 0), (0, 0, 255),
-            (255, 255, 0), (255, 0, 255), (0, 255, 255),
-            (128, 0, 255), (255, 128, 0),
-        ]
-        for r in result["char_results"]:
-            color = colors[r["column"] % len(colors)]
-            bbox = [int(v) for v in r["bbox"]]
-            cv2.rectangle(img_colored, (bbox[0], bbox[1]), (bbox[2], bbox[3]), color, 2)
-        cv2.imwrite(str(output_dir / "debug_columns.jpg"), img_colored)
+        """保留空实现：不再写调试图片。"""
+        return
 
 
 def recognize_calligraphy(

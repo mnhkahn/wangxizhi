@@ -55,7 +55,7 @@ class OCRWorker(QThread):
 
             ocr = CalligraphyOCR()
             # 识别后保存到 ocr_output/<stem>/result.json，方便下次直接加载
-            result = ocr.recognize_image(self.image_path, save_result=True, debug=False)
+            result = ocr.recognize_image(self.image_path, save_result=True, debug=False, crop_chars=False)
             result["_from_cache"] = False
             self.finished.emit(result)
         except Exception as e:
@@ -90,7 +90,8 @@ class BatchOCRWorker(QThread):
 
             for i, path in enumerate(self.image_paths, start=1):
                 try:
-                    ocr.recognize_image(path, save_result=True, debug=False)
+                    # 仅生成 result.json/chars.json
+                    ocr.recognize_image(path, save_result=True, debug=False, crop_chars=False)
                     ok_count += 1
                     self.progress.emit(i, total, path, True, "")
                 except Exception as e:
