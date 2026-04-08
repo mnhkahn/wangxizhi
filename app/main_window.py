@@ -819,7 +819,7 @@ class MainWindow(QMainWindow):
         """扫描 ocr_output 并把裁剪后的单字图片写到对应字帖目录内。
 
         输出路径：
-        - <字帖目录>/chars/<image_stem>/<sanitized_filename>.jpg
+        - <字帖目录>/words/<id>.jpg
         """
         import cv2
         import re
@@ -844,22 +844,14 @@ class MainWindow(QMainWindow):
 
             for chars_path in sorted(debug_dir.glob("*/chars.json"), key=lambda p: str(p)):
                 stem = chars_path.parent.name
-                result_path = chars_path.parent / "result.json"
-                if not result_path.exists():
-                    continue
-
-                try:
-                    with open(result_path, "r", encoding="utf-8") as f:
-                        result = json.load(f)
-                except Exception:
-                    continue
-
-                image_rel = result.get("image_path")
-                if not image_rel:
-                    continue
-                p = Path(image_rel)
-                image_abs = p.resolve() if p.is_absolute() else (project_root / p).resolve()
-                if not image_abs.exists():
+                # 不依赖 result.json：直接用 <字帖目录>/<stem>.jpg 作为原图来源
+                image_abs = None
+                for ext in (".jpg", ".jpeg", ".png", ".bmp", ".webp"):
+                    cand = work_dir / f"{stem}{ext}"
+                    if cand.exists():
+                        image_abs = cand
+                        break
+                if image_abs is None:
                     continue
 
                 try:
@@ -875,7 +867,8 @@ class MainWindow(QMainWindow):
                     continue
 
                 h, w = img.shape[:2]
-                out_dir = image_abs.parent / "chars" / stem
+                # 不需要多层目录，统一输出到字帖目录的 words/ 下
+                out_dir = image_abs.parent / "words"
                 out_dir.mkdir(parents=True, exist_ok=True)
 
                 for rec in chars:
@@ -902,19 +895,21 @@ class MainWindow(QMainWindow):
                             continue
 
                         crop = img[y1:y2, x1:x2]
-                        base = f"{row}_{col}_{ch}_{rid}" if rid else f"{row}_{col}_{ch}"
-                        filename = _sanitize_filename(base) + ".jpg"
+                        # 文件名只用 chars.json 的 id（UUID），方便反查与去重
+                        base = str(rid) if rid else f"{row}_{col}_{ch}"
+                        filename = _sanitize_filename(base) + ".webp"
                         out_path = out_dir / filename
 
                         # 避免同名覆盖：存在则追加序号
                         if out_path.exists():
                             for i in range(1, 1000):
-                                alt = out_dir / ("%s_%d.jpg" % (_sanitize_filename(base), i))
+                                alt = out_dir / ("%s_%d.webp" % (_sanitize_filename(base), i))
                                 if not alt.exists():
                                     out_path = alt
                                     break
 
-                        cv2.imwrite(str(out_path), crop)
+                        # 输出为 webp
+                        cv2.imwrite(str(out_path), crop, [cv2.IMWRITE_WEBP_QUALITY, 95])
                         ok += 1
                     except Exception:
                         fail += 1

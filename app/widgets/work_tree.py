@@ -158,31 +158,43 @@ class WorkTreeWidget(QWidget):
             self.item_activated.emit(payload)
 
     def _build_recognized_index(self) -> Dict[str, Dict[str, Any]]:
-        """构建已识别索引：image_abs_path -> {cache_path, total_chars}"""
+        """构建已完成索引：image_abs_path -> {cache_path, total_chars}
+
+        判定规则：对应图片存在 `.debug/<stem>/chars.json` 即视为完成。
+        """
         idx: Dict[str, Dict[str, Any]] = {}
 
-        # 新结构：<字帖目录>/.debug/<stem>/result.json
         for work_dir in [p for p in self.project_root.iterdir() if p.is_dir()]:
             debug_dir = work_dir / ".debug"
             if not debug_dir.exists():
                 continue
 
-            for result_path in debug_dir.glob("*/result.json"):
+            for chars_path in debug_dir.glob("*/chars.json"):
                 try:
-                    with open(result_path, "r", encoding="utf-8") as f:
+                    with open(chars_path, "r", encoding="utf-8") as f:
                         data = json.load(f)
                 except Exception:
                     continue
 
-                image_rel = data.get("image_path") or ""
-                if not image_rel:
+                if not isinstance(data, list):
                     continue
 
-                p = Path(image_rel)
-                image_abs = str(p.resolve()) if p.is_absolute() else str((self.project_root / p).resolve())
+                total_chars = len(data)
+
+                # 推导图片路径：<字帖目录>/<stem>.(jpg/jpeg/png/bmp/webp)
+                stem = chars_path.parent.name
+                found = None
+                for ext in (".jpg", ".jpeg", ".png", ".bmp", ".webp"):
+                    cand = work_dir / f"{stem}{ext}"
+                    if cand.exists():
+                        found = str(cand.resolve())
+                        break
+                if not found:
+                    continue
+                image_abs = found
                 idx[image_abs] = {
-                    "cache_path": str(result_path.resolve()),
-                    "total_chars": data.get("total_chars"),
+                    "cache_path": str(chars_path.resolve()),
+                    "total_chars": total_chars,
                 }
 
         return idx
