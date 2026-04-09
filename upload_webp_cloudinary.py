@@ -82,6 +82,7 @@ def upload_items(
     folder: str = "",
     timeout_s: int = 600,
     concurrency: int = 4,
+    mock_upload: bool = False,
     progress_cb: Optional[Any] = None,
 ) -> List[UploadResult]:
     """上传多个条目。
@@ -101,7 +102,8 @@ def upload_items(
     concurrency_n = max(1, concurrency_n)
 
     # 预先配置一次（减少重复配置开销；并在多线程中保持一致）
-    _cloudinary_configure(cloud_name=cloud_name, api_key=api_key, api_secret=api_secret)
+    if not mock_upload:
+        _cloudinary_configure(cloud_name=cloud_name, api_key=api_key, api_secret=api_secret)
 
     results: List[Optional[UploadResult]] = [None] * total
     done_counter = 0
@@ -118,6 +120,7 @@ def upload_items(
             public_id=it.public_id,
             file_path=it.abs_path,
             timeout_s=timeout_s,
+            mock_upload=mock_upload,
         )
         r = UploadResult(
             rel_path=it.rel_path,
@@ -257,8 +260,14 @@ def _cloudinary_upload_one(
     public_id: str,
     file_path: Path,
     timeout_s: int,
+    mock_upload: bool = False,
 ) -> Tuple[bool, str, str]:
     """上传单个文件，返回 (ok, url, error)。"""
+
+    if mock_upload:
+        # 用于压测并发/进度条：不发起真实网络请求
+        time.sleep(1)
+        return True, f"mock://{public_id}", ""
 
     if unsigned and not upload_preset:
         return False, "", "unsigned 上传必须提供 upload_preset（--upload-preset 或 CLOUDINARY_UPLOAD_PRESET）"
@@ -375,6 +384,11 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         default=4,
         help="并发上传线程数（默认 4）",
     )
+    parser.add_argument(
+        "--mock-upload",
+        action="store_true",
+        help="模拟上传：每张 sleep 1 秒并返回（不请求 Cloudinary）",
+    )
     args = parser.parse_args(argv)
 
     root = Path(args.root).expanduser().resolve()
@@ -406,7 +420,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                 )
             )
     else:
-        if not str(args.cloud_name).strip():
+        if not args.mock_upload and (not str(args.cloud_name).strip()):
             print("缺少 Cloudinary cloud_name：请提供 --cloud-name 或设置 CLOUDINARY_CLOUD_NAME", file=sys.stderr)
             return 2
 
@@ -434,6 +448,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             folder=str(args.folder or ""),
             timeout_s=int(args.timeout),
             concurrency=int(args.concurrency or 4),
+            mock_upload=bool(args.mock_upload),
             progress_cb=_cb,
         )
 

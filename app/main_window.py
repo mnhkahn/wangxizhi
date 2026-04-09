@@ -35,6 +35,234 @@ from .widgets.char_preview import CharPreviewWidget
 from .models.char_item import CharItem, CharItemManager
 
 
+def export_glyphs_to_sqlite(sqlite_path: Path, items: list) -> int:
+    """导出字形数据到 SQLite（线程安全：纯文件/DB 操作，不触碰 UI）。"""
+
+    import sqlite3
+
+    conn = sqlite3.connect(str(sqlite_path))
+    try:
+        cur = conn.cursor()
+        cur.execute(
+            """
+            CREATE TABLE IF NOT EXISTS "glyphs" (
+                id TEXT PRIMARY KEY,
+                char TEXT,
+                work_dir TEXT,
+                author TEXT,
+                font TEXT,
+                work_title TEXT
+            )
+        """
+        )
+        conn.commit()
+
+        total = 0
+        batch = []
+
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+            gid = item.get("id")
+            ch = item.get("char")
+            work_dir = item.get("work_dir", "")
+            author = item.get("author", "")
+            font = item.get("font", "")
+            work_title = item.get("work", "") or item.get("work_title", "")
+
+            if not gid or not ch:
+                continue
+
+            batch.append(
+                (
+                    str(gid),
+                    str(ch),
+                    str(work_dir),
+                    str(author),
+                    str(font),
+                    str(work_title),
+                )
+            )
+            total += 1
+
+            if len(batch) >= 2000:
+                cur.executemany(
+                    "INSERT OR REPLACE INTO glyphs (id, char, work_dir, author, font, work_title) VALUES (?,?,?,?,?,?)",
+                    batch,
+                )
+                conn.commit()
+                batch.clear()
+
+        if batch:
+            cur.executemany(
+                "INSERT OR REPLACE INTO glyphs (id, char, work_dir, author, font, work_title) VALUES (?,?,?,?,?,?)",
+                batch,
+            )
+            conn.commit()
+
+        return total
+    finally:
+        conn.close()
+
+
+def export_all_glyphs_sqlite(project_root: Path, progress_cb=None):
+    """扫描所有字帖的 chars.json 并生成全量 glyphs.sqlite。
+
+    progress_cb(done:int, total:int, message:str) 可选。
+    """
+
+    ocr_output = project_root / "ocr_output"
+    ocr_output.mkdir(parents=True, exist_ok=True)
+
+    sqlite_path = ocr_output / "glyphs.sqlite"
+
+    chars_paths = []
+    for work_dir in sorted([p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name):
+        debug_dir = work_dir / ".debug"
+        if not debug_dir.exists():
+            continue
+        chars_paths.extend(sorted(debug_dir.glob("*/chars.json"), key=lambda p: str(p)))
+
+    all_items = []
+    total_files = len(chars_paths)
+    for i, chars_path in enumerate(chars_paths, start=1):
+        if callable(progress_cb):
+            progress_cb(i, total_files, f"导出 SQLite：扫描 {i}/{total_files} {chars_path}")
+
+        work_dir = chars_path.parent.parent.parent
+        try:
+            with open(chars_path, "r", encoding="utf-8") as f:
+                chars = json.load(f)
+        except Exception:
+            continue
+
+        if not isinstance(chars, list):
+            continue
+
+        for rec in chars:
+            if not isinstance(rec, dict):
+                continue
+            if "work_dir" not in rec:
+                rec["work_dir"] = work_dir.name
+            all_items.append(rec)
+
+    total = export_glyphs_to_sqlite(sqlite_path, all_items)
+    return str(sqlite_path), total
+
+
+def export_all_crops(project_root: Path, progress_cb=None):
+    """扫描所有字帖的 chars.json 并裁剪导出 webp 到 <字帖目录>/words/。
+
+    progress_cb(done:int, total:int, message:str) 可选。
+    """
+
+    import cv2
+    import re
+
+    def _sanitize_filename(name: str) -> str:
+        # 保留中文/字母数字/下划线/短横线/点，其余替换为 '_'
+        name = name.strip().replace(" ", "_")
+        name = re.sub(r"[^0-9A-Za-z_\-\.\u4e00-\u9fff]+", "_", name)
+        return name[:180] if len(name) > 180 else name
+
+    tasks = []
+    for work_dir in sorted([p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name):
+        debug_dir = work_dir / ".debug"
+        if not debug_dir.exists():
+            continue
+        for chars_path in sorted(debug_dir.glob("*/chars.json"), key=lambda p: str(p)):
+            stem = chars_path.parent.name
+            image_abs = None
+            for ext in (".jpg", ".jpeg", ".png", ".bmp", ".webp"):
+                cand = work_dir / f"{stem}{ext}"
+                if cand.exists():
+                    image_abs = cand
+                    break
+            if image_abs is None:
+                continue
+            tasks.append((work_dir, stem, chars_path, image_abs))
+
+    # 预统计总数（只统计 bbox 合法的记录，便于进度条准确）
+    total = 0
+    for work_dir, stem, chars_path, image_abs in tasks:
+        try:
+            with open(chars_path, "r", encoding="utf-8") as f:
+                chars = json.load(f)
+        except Exception:
+            continue
+        if not isinstance(chars, list):
+            continue
+        for rec in chars:
+            if not isinstance(rec, dict):
+                continue
+            bbox = rec.get("bbox")
+            if bbox and isinstance(bbox, (list, tuple)) and len(bbox) == 4:
+                total += 1
+
+    done = 0
+    ok = 0
+    fail = 0
+
+    for work_dir, stem, chars_path, image_abs in tasks:
+        try:
+            with open(chars_path, "r", encoding="utf-8") as f:
+                chars = json.load(f)
+        except Exception:
+            continue
+        if not isinstance(chars, list):
+            continue
+
+        img = cv2.imread(str(image_abs))
+        if img is None:
+            continue
+
+        h, w = img.shape[:2]
+        out_dir = image_abs.parent / "words"
+        out_dir.mkdir(parents=True, exist_ok=True)
+
+        for rec in chars:
+            if not isinstance(rec, dict):
+                continue
+            bbox = rec.get("bbox")
+            ch = rec.get("char", "")
+            rid = rec.get("id", "")
+            row = rec.get("row", 0)
+            col = rec.get("column", 0)
+
+            if not bbox or not isinstance(bbox, (list, tuple)) or len(bbox) != 4:
+                continue
+
+            done += 1
+            try:
+                x1, y1, x2, y2 = [int(float(v)) for v in bbox]
+                x1 = max(0, min(w - 1, x1))
+                y1 = max(0, min(h - 1, y1))
+                x2 = max(0, min(w, x2))
+                y2 = max(0, min(h, y2))
+                if x2 <= x1 or y2 <= y1:
+                    fail += 1
+                    if callable(progress_cb):
+                        progress_cb(done, total, f"导出图片 {done}/{total} [FAIL] {work_dir.name}/{stem} bbox 无效")
+                    continue
+
+                crop = img[y1:y2, x1:x2]
+                base = str(rid) if rid else f"{row}_{col}_{ch}"
+                filename = _sanitize_filename(base) + ".webp"
+                out_path = out_dir / filename
+
+                # 若存在同名文件，直接覆盖
+                cv2.imwrite(str(out_path), crop, [cv2.IMWRITE_WEBP_QUALITY, 95])
+                ok += 1
+                if callable(progress_cb):
+                    progress_cb(done, total, f"导出图片 {done}/{total} [OK] {work_dir.name}/words/{filename}")
+            except Exception as e:
+                fail += 1
+                if callable(progress_cb):
+                    progress_cb(done, total, f"导出图片 {done}/{total} [FAIL] {work_dir.name}/{stem} {str(e)[:120]}")
+
+    return total, ok, fail
+
+
 class OCRWorker(QThread):
     """OCR 处理线程"""
 
@@ -130,6 +358,8 @@ class UploadWebPWorker(QThread):
         unsigned: bool,
         remote_folder: str,
         limit: int = 0,
+        concurrency: int = 4,
+        mock_upload: bool = False,
         parent=None,
     ):
         super().__init__(parent)
@@ -141,6 +371,8 @@ class UploadWebPWorker(QThread):
         self.unsigned = unsigned
         self.remote_folder = remote_folder
         self.limit = int(limit or 0)
+        self.concurrency = int(concurrency or 4)
+        self.mock_upload = bool(mock_upload)
 
     def run(self):
         try:
@@ -186,7 +418,8 @@ class UploadWebPWorker(QThread):
                 upload_preset=str(self.upload_preset),
                 folder=str(self.remote_folder or ""),
                 timeout_s=600,
-                concurrency=4,
+                concurrency=int(self.concurrency or 4),
+                mock_upload=bool(self.mock_upload),
                 progress_cb=_cb,
             )
 
@@ -219,6 +452,40 @@ class UploadWebPWorker(QThread):
             ok_cnt = sum(1 for r in results if r.ok)
             fail_cnt = total - ok_cnt
             self.finished.emit(total, ok_cnt, fail_cnt, table)
+        except Exception as e:
+            self.error.emit(str(e))
+
+
+class ExportAllWorker(QThread):
+    """全量导出（后台线程）：生成 glyphs.sqlite + 导出裁剪 webp。"""
+
+    progress = pyqtSignal(int, int, str)  # done, total, message
+    finished = pyqtSignal(str, int, int, int, int)  # sqlite_path, sqlite_total, crop_total, crop_ok, crop_fail
+    error = pyqtSignal(str)
+
+    def __init__(self, parent=None):
+        super().__init__(parent)
+
+    def run(self):
+        try:
+            project_root = Path(__file__).parent.parent
+
+            # 1) SQLite：先扫描（进度不一定准确，主要用于状态提示）
+            self.progress.emit(0, 0, "正在导出 SQLite...")
+
+            def _sqlite_cb(done: int, total: int, msg: str):
+                # SQLite 阶段：不占用进度条，避免和图片导出混淆
+                self.progress.emit(0, 0, msg)
+
+            sqlite_path, sqlite_total = export_all_glyphs_sqlite(project_root, progress_cb=_sqlite_cb)
+
+            # 2) 裁剪导出：使用可计数进度
+            def _crop_cb(done: int, total: int, msg: str):
+                self.progress.emit(int(done), int(total), str(msg))
+
+            crop_total, crop_ok, crop_fail = export_all_crops(project_root, progress_cb=_crop_cb)
+
+            self.finished.emit(str(sqlite_path), int(sqlite_total), int(crop_total), int(crop_ok), int(crop_fail))
         except Exception as e:
             self.error.emit(str(e))
 
@@ -386,6 +653,7 @@ class MainWindow(QMainWindow):
         export_action.setShortcut("Ctrl+E")
         export_action.triggered.connect(self.export_chars)
         file_menu.addAction(export_action)
+        self.action_export_menu = export_action
 
         upload_action = QAction("上传(&U)", self)
         upload_action.setShortcut("Ctrl+U")
@@ -470,6 +738,7 @@ class MainWindow(QMainWindow):
         export_action = QAction("导出", self)
         export_action.triggered.connect(self.export_chars)
         toolbar.addAction(export_action)
+        self.action_export_toolbar = export_action
 
         # 上传（导出产物 webp）
         upload_action = QAction("上传", self)
@@ -493,6 +762,18 @@ class MainWindow(QMainWindow):
         self.statusbar.addPermanentWidget(self.progress_bar)
 
         self.upload_worker = None
+        self.export_worker = None
+
+    def _set_export_actions_enabled(self, enabled: bool) -> None:
+        for a in [
+            getattr(self, "action_export_menu", None),
+            getattr(self, "action_export_toolbar", None),
+        ]:
+            if a is not None:
+                try:
+                    a.setEnabled(bool(enabled))
+                except Exception:
+                    pass
 
     def _set_upload_actions_enabled(self, enabled: bool) -> None:
         for a in [
@@ -554,33 +835,41 @@ class MainWindow(QMainWindow):
             self.status_label.setText("正在上传中，请稍候")
             return
 
-        cloud_name, api_key, api_secret, upload_preset, unsigned, remote_folder = (
-            self._read_upload_config_from_env()
+        cloud_name, api_key, api_secret, upload_preset, unsigned, remote_folder = self._read_upload_config_from_env()
+        mock_upload = str(os.environ.get("CLOUDINARY_MOCK_UPLOAD", "")).strip().lower() in (
+            "1",
+            "true",
+            "yes",
         )
-        if not cloud_name:
-            QMessageBox.warning(
-                self,
-                "缺少配置",
-                "未配置 Cloudinary cloud_name：请在 .env 中设置 CLOUDINARY_CLOUD_NAME（或 CLOUD_NAME）",
-            )
-            return
 
-        if unsigned:
-            if not upload_preset:
+        if not mock_upload:
+            if not cloud_name:
                 QMessageBox.warning(
                     self,
                     "缺少配置",
-                    "未配置 upload preset：请在 .env 中设置 CLOUDINARY_UPLOAD_PRESET（或 UPLOAD_PRESET）",
+                    "未配置 Cloudinary cloud_name：请在 .env 中设置 CLOUDINARY_CLOUD_NAME（或 CLOUD_NAME）",
                 )
                 return
+
+            if unsigned:
+                if not upload_preset:
+                    QMessageBox.warning(
+                        self,
+                        "缺少配置",
+                        "未配置 upload preset：请在 .env 中设置 CLOUDINARY_UPLOAD_PRESET（或 UPLOAD_PRESET）",
+                    )
+                    return
+            else:
+                if not api_key or not api_secret:
+                    QMessageBox.warning(
+                        self,
+                        "缺少配置",
+                        "未配置 appkey/token：请在 .env 中设置 CLOUDINARY_API_KEY 与 CLOUDINARY_API_SECRET（或 APPKEY/TOKEN）",
+                    )
+                    return
         else:
-            if not api_key or not api_secret:
-                QMessageBox.warning(
-                    self,
-                    "缺少配置",
-                    "未配置 appkey/token：请在 .env 中设置 CLOUDINARY_API_KEY 与 CLOUDINARY_API_SECRET（或 APPKEY/TOKEN）",
-                )
-                return
+            # mock 模式下允许不配置真实凭证
+            cloud_name = cloud_name or "mock"
 
         scan_root = self._resolve_upload_scan_root()
 
@@ -598,6 +887,8 @@ class MainWindow(QMainWindow):
             unsigned=unsigned,
             remote_folder=remote_folder,
             limit=0,
+            concurrency=4,
+            mock_upload=mock_upload,
             parent=self,
         )
         self.upload_worker.progress.connect(self._on_upload_progress)
@@ -1053,14 +1344,47 @@ class MainWindow(QMainWindow):
 
     def export_chars(self):
         """导出：全量导出所有字帖到 SQLite（无需选择目录）"""
-        try:
-            sqlite_path, total = self._export_all_glyphs_sqlite()
-            crop_total, crop_ok, crop_fail = self._export_all_crops()
-            self.status_label.setText(
-                f"导出完成：SQLite {total} 条 -> {sqlite_path}；裁剪 {crop_ok}/{crop_total}（失败 {crop_fail}）"
-            )
-        except Exception as e:
-            self.status_label.setText(f"导出失败：{e}")
+        # 避免重复触发
+        if getattr(self, "export_worker", None) is not None and self.export_worker.isRunning():
+            return
+
+        self.status_label.setText("正在导出...")
+        self.progress_bar.setVisible(True)
+        self.progress_bar.setRange(0, 0)  # indeterminate，直到裁剪阶段拿到 total
+        self._set_export_actions_enabled(False)
+
+        self.export_worker = ExportAllWorker(parent=self)
+        self.export_worker.progress.connect(self._on_export_progress)
+        self.export_worker.finished.connect(self._on_export_finished)
+        self.export_worker.error.connect(self._on_export_error)
+        self.export_worker.start()
+
+    def _on_export_progress(self, done: int, total: int, message: str):
+        if int(total or 0) > 0:
+            self.progress_bar.setRange(0, int(total))
+            self.progress_bar.setValue(int(done))
+        else:
+            self.progress_bar.setRange(0, 0)
+        self.status_label.setText(str(message or "正在导出..."))
+
+    def _on_export_finished(
+        self,
+        sqlite_path: str,
+        sqlite_total: int,
+        crop_total: int,
+        crop_ok: int,
+        crop_fail: int,
+    ):
+        self.progress_bar.setVisible(False)
+        self._set_export_actions_enabled(True)
+        self.status_label.setText(
+            f"导出完成：SQLite {sqlite_total} 条 -> {sqlite_path}；裁剪 {crop_ok}/{crop_total}（失败 {crop_fail}）"
+        )
+
+    def _on_export_error(self, message: str):
+        self.progress_bar.setVisible(False)
+        self._set_export_actions_enabled(True)
+        QMessageBox.warning(self, "导出失败", message)
 
     def _create_glyphs_table(self, cursor):
         """创建 glyphs 表"""
@@ -1079,207 +1403,21 @@ class MainWindow(QMainWindow):
 
     def _export_glyphs_to_sqlite(self, sqlite_path, items):
         """导出字形数据到 SQLite"""
-        import sqlite3
-
-        conn = sqlite3.connect(str(sqlite_path))
-        try:
-            cur = conn.cursor()
-            self._create_glyphs_table(cur)
-            conn.commit()
-
-            total = 0
-            batch = []
-
-            for item in items:
-                if not isinstance(item, dict):
-                    continue
-                gid = item.get("id")
-                ch = item.get("char")
-                work_dir = item.get("work_dir", "")
-                author = item.get("author", "")
-                font = item.get("font", "")
-                work_title = item.get("work", "") or item.get("work_title", "")
-
-                if not gid or not ch:
-                    continue
-
-                batch.append(
-                    (
-                        str(gid),
-                        str(ch),
-                        str(work_dir),
-                        str(author),
-                        str(font),
-                        str(work_title),
-                    )
-                )
-                total += 1
-
-                if len(batch) >= 2000:
-                    cur.executemany(
-                        "INSERT OR REPLACE INTO glyphs (id, char, work_dir, author, font, work_title) VALUES (?,?,?,?,?,?)",
-                        batch,
-                    )
-                    conn.commit()
-                    batch.clear()
-
-            if batch:
-                cur.executemany(
-                    "INSERT OR REPLACE INTO glyphs (id, char, work_dir, author, font, work_title) VALUES (?,?,?,?,?,?)",
-                    batch,
-                )
-                conn.commit()
-
-            return total
-        finally:
-            conn.close()
+        return export_glyphs_to_sqlite(Path(sqlite_path), items)
 
     def _export_all_glyphs_sqlite(self):
         """扫描 ocr_output 并生成全量 glyphs.sqlite"""
         project_root = Path(__file__).parent.parent
-        ocr_output = project_root / "ocr_output"
-        ocr_output.mkdir(parents=True, exist_ok=True)
-
-        sqlite_path = ocr_output / "glyphs.sqlite"
-
-        # 收集所有字符数据
-        all_items = []
-        # 新目录结构：<字帖目录>/.debug/<stem>/chars.json
-        for work_dir in sorted(
-            [p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name
-        ):
-            debug_dir = work_dir / ".debug"
-            if not debug_dir.exists():
-                continue
-            for chars_path in sorted(
-                debug_dir.glob("*/chars.json"), key=lambda p: str(p)
-            ):
-                try:
-                    with open(chars_path, "r", encoding="utf-8") as f:
-                        chars = json.load(f)
-                except Exception:
-                    continue
-
-                if not isinstance(chars, list):
-                    continue
-
-                for rec in chars:
-                    if not isinstance(rec, dict):
-                        continue
-                    # 确保 work_dir 字段存在
-                    if "work_dir" not in rec:
-                        rec["work_dir"] = work_dir.name
-                    all_items.append(rec)
-
-        total = self._export_glyphs_to_sqlite(sqlite_path, all_items)
-        return str(sqlite_path), total
+        return export_all_glyphs_sqlite(project_root)
 
     def _export_all_crops(self):
         """扫描 ocr_output 并把裁剪后的单字图片写到对应字帖目录内。
 
         输出路径：
-        - <字帖目录>/words/<id>.jpg
+        - <字帖目录>/words/<id>.webp
         """
-        import cv2
-        import re
-
         project_root = Path(__file__).parent.parent
-        # 新目录结构：<字帖目录>/.debug/<stem>/{result.json,chars.json}
-
-        def _sanitize_filename(name: str) -> str:
-            # 保留中文/字母数字/下划线/短横线/点，其余替换为 '_'
-            name = name.strip().replace(" ", "_")
-            name = re.sub(r"[^0-9A-Za-z_\-\.\u4e00-\u9fff]+", "_", name)
-            return name[:180] if len(name) > 180 else name
-
-        total = 0
-        ok = 0
-        fail = 0
-
-        for work_dir in sorted(
-            [p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name
-        ):
-            debug_dir = work_dir / ".debug"
-            if not debug_dir.exists():
-                continue
-
-            for chars_path in sorted(
-                debug_dir.glob("*/chars.json"), key=lambda p: str(p)
-            ):
-                stem = chars_path.parent.name
-                # 不依赖 result.json：直接用 <字帖目录>/<stem>.jpg 作为原图来源
-                image_abs = None
-                for ext in (".jpg", ".jpeg", ".png", ".bmp", ".webp"):
-                    cand = work_dir / f"{stem}{ext}"
-                    if cand.exists():
-                        image_abs = cand
-                        break
-                if image_abs is None:
-                    continue
-
-                try:
-                    with open(chars_path, "r", encoding="utf-8") as f:
-                        chars = json.load(f)
-                except Exception:
-                    continue
-                if not isinstance(chars, list):
-                    continue
-
-                img = cv2.imread(str(image_abs))
-                if img is None:
-                    continue
-
-                h, w = img.shape[:2]
-                # 不需要多层目录，统一输出到字帖目录的 words/ 下
-                out_dir = image_abs.parent / "words"
-                out_dir.mkdir(parents=True, exist_ok=True)
-
-                for rec in chars:
-                    if not isinstance(rec, dict):
-                        continue
-                    bbox = rec.get("bbox")
-                    ch = rec.get("char", "")
-                    rid = rec.get("id", "")
-                    row = rec.get("row", 0)
-                    col = rec.get("column", 0)
-
-                    if not bbox or len(bbox) != 4:
-                        continue
-
-                    total += 1
-                    try:
-                        x1, y1, x2, y2 = [int(float(v)) for v in bbox]
-                        x1 = max(0, min(w - 1, x1))
-                        y1 = max(0, min(h - 1, y1))
-                        x2 = max(0, min(w, x2))
-                        y2 = max(0, min(h, y2))
-                        if x2 <= x1 or y2 <= y1:
-                            fail += 1
-                            continue
-
-                        crop = img[y1:y2, x1:x2]
-                        # 文件名只用 chars.json 的 id（UUID），方便反查与去重
-                        base = str(rid) if rid else f"{row}_{col}_{ch}"
-                        filename = _sanitize_filename(base) + ".webp"
-                        out_path = out_dir / filename
-
-                        # 避免同名覆盖：存在则追加序号
-                        if out_path.exists():
-                            for i in range(1, 1000):
-                                alt = out_dir / (
-                                    "%s_%d.webp" % (_sanitize_filename(base), i)
-                                )
-                                if not alt.exists():
-                                    out_path = alt
-                                    break
-
-                        # 输出为 webp
-                        cv2.imwrite(str(out_path), crop, [cv2.IMWRITE_WEBP_QUALITY, 95])
-                        ok += 1
-                    except Exception:
-                        fail += 1
-
-        return total, ok, fail
+        return export_all_crops(project_root)
 
     def _do_export(self, export_dir: str):
         """执行导出"""
