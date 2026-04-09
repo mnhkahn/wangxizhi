@@ -113,6 +113,116 @@ class BatchOCRWorker(QThread):
             self.error.emit(str(e))
 
 
+class UploadWebPWorker(QThread):
+    """批量上传 WebP（后台线程）"""
+
+    progress = pyqtSignal(int, int, str, bool, str)  # idx, total, rel_path, ok, message
+    finished = pyqtSignal(int, int, int, str)  # total, ok_count, fail_count, table_text
+    error = pyqtSignal(str)
+
+    def __init__(
+        self,
+        scan_root: str,
+        cloud_name: str,
+        api_key: str,
+        api_secret: str,
+        upload_preset: str,
+        unsigned: bool,
+        remote_folder: str,
+        limit: int = 0,
+        parent=None,
+    ):
+        super().__init__(parent)
+        self.scan_root = scan_root
+        self.cloud_name = cloud_name
+        self.api_key = api_key
+        self.api_secret = api_secret
+        self.upload_preset = upload_preset
+        self.unsigned = unsigned
+        self.remote_folder = remote_folder
+        self.limit = int(limit or 0)
+
+    def run(self):
+        try:
+            import sys
+
+            project_root = Path(__file__).parent.parent
+            if str(project_root) not in sys.path:
+                sys.path.insert(0, str(project_root))
+
+            from upload_webp_cloudinary import collect_upload_items, upload_items
+
+            root = Path(self.scan_root).expanduser().resolve()
+            items = collect_upload_items(root, limit=0, keep_dirs=False)
+            # 尽量只上传导出产物：*/words/*.webp
+            items = [it for it in items if "/words/" in ("/" + it.rel_path.replace("\\", "/") + "/")]
+            if self.limit and self.limit > 0:
+                items = items[: self.limit]
+
+            if not items:
+                self.finished.emit(0, 0, 0, "")
+                return
+
+            # 进度回调
+            results_holder = {"ok": 0, "fail": 0}
+
+            def _cb(idx: int, total: int, item, result):
+                if result.ok:
+                    results_holder["ok"] += 1
+                    ok = True
+                    msg = result.url
+                else:
+                    results_holder["fail"] += 1
+                    ok = False
+                    msg = result.error
+                self.progress.emit(idx, total, result.rel_path, ok, msg)
+
+            results = upload_items(
+                items=items,
+                cloud_name=str(self.cloud_name),
+                api_key=str(self.api_key),
+                api_secret=str(self.api_secret),
+                unsigned=bool(self.unsigned),
+                upload_preset=str(self.upload_preset),
+                folder=str(self.remote_folder or ""),
+                timeout_s=600,
+                concurrency=4,
+                progress_cb=_cb,
+            )
+
+            # 生成 summary 表格（纯文本）
+            headers = ["#", "状态", "public_id", "文件", "URL(截断)", "错误(截断)"]
+            rows = []
+            for i, r in enumerate(results, start=1):
+                rows.append(
+                    [
+                        str(i),
+                        "OK" if r.ok else "FAIL",
+                        str(r.public_id),
+                        str(r.rel_path),
+                        (r.url or "")[:120],
+                        (r.error or "")[:120],
+                    ]
+                )
+
+            # 本地实现一个简单等宽表格
+            all_rows = [headers] + rows
+            widths = [max(len(rr[i]) for rr in all_rows) for i in range(len(headers))]
+
+            def _fmt(rr):
+                return " | ".join(rr[i].ljust(widths[i]) for i in range(len(headers)))
+
+            sep = "-+-".join("-" * w for w in widths)
+            table = "\n".join([_fmt(headers), sep] + [_fmt(r) for r in rows])
+
+            total = len(results)
+            ok_cnt = sum(1 for r in results if r.ok)
+            fail_cnt = total - ok_cnt
+            self.finished.emit(total, ok_cnt, fail_cnt, table)
+        except Exception as e:
+            self.error.emit(str(e))
+
+
 class MainWindow(QMainWindow):
     """主窗口"""
 
@@ -277,6 +387,14 @@ class MainWindow(QMainWindow):
         export_action.triggered.connect(self.export_chars)
         file_menu.addAction(export_action)
 
+        upload_action = QAction("上传(&U)", self)
+        upload_action.setShortcut("Ctrl+U")
+        upload_action.triggered.connect(self.upload_exported_webps)
+        file_menu.addAction(upload_action)
+
+        # 便于在运行时启用/禁用
+        self.action_upload_menu = upload_action
+
         file_menu.addSeparator()
 
         exit_action = QAction("退出(&X)", self)
@@ -353,6 +471,13 @@ class MainWindow(QMainWindow):
         export_action.triggered.connect(self.export_chars)
         toolbar.addAction(export_action)
 
+        # 上传（导出产物 webp）
+        upload_action = QAction("上传", self)
+        upload_action.triggered.connect(self.upload_exported_webps)
+        toolbar.addAction(upload_action)
+
+        self.action_upload_toolbar = upload_action
+
         # 说明：放大/缩小/重置按钮已移除（画布缩放使用 Ctrl+滚轮）
 
     def _init_statusbar(self):
@@ -366,6 +491,148 @@ class MainWindow(QMainWindow):
         self.progress_bar = QProgressBar()
         self.progress_bar.setVisible(False)
         self.statusbar.addPermanentWidget(self.progress_bar)
+
+        self.upload_worker = None
+
+    def _set_upload_actions_enabled(self, enabled: bool) -> None:
+        for a in [
+            getattr(self, "action_upload_menu", None),
+            getattr(self, "action_upload_toolbar", None),
+        ]:
+            if a is not None:
+                try:
+                    a.setEnabled(bool(enabled))
+                except Exception:
+                    pass
+
+    def _resolve_upload_scan_root(self) -> str:
+        """根据当前选择，决定扫描上传的根目录。"""
+
+        sel = self._current_tree_selection or {}
+        kind = sel.get("kind")
+        if kind == "work_dir":
+            dir_path = sel.get("dir_path") or ""
+            if dir_path:
+                return dir_path
+        if kind in ("work_image", "recognized"):
+            image_path = sel.get("image_path") or ""
+            if image_path:
+                return str(Path(image_path).parent)
+        # 默认：项目根目录
+        return str(Path(__file__).parent.parent)
+
+    def _read_upload_config_from_env(self):
+        """从环境变量（.env 已在 run_app.py 加载）读取上传配置。"""
+
+        # 兼容用户描述的命名：appkey/token/remote-folder
+        cloud_name = os.environ.get("CLOUDINARY_CLOUD_NAME", "").strip() or os.environ.get(
+            "CLOUD_NAME", ""
+        ).strip()
+        api_key = os.environ.get("CLOUDINARY_API_KEY", "").strip() or os.environ.get(
+            "APPKEY", ""
+        ).strip()
+        api_secret = os.environ.get("CLOUDINARY_API_SECRET", "").strip() or os.environ.get(
+            "TOKEN", ""
+        ).strip()
+        upload_preset = os.environ.get("CLOUDINARY_UPLOAD_PRESET", "").strip() or os.environ.get(
+            "UPLOAD_PRESET", ""
+        ).strip()
+        remote_folder = os.environ.get("CLOUDINARY_FOLDER", "").strip() or os.environ.get(
+            "REMOTE_FOLDER", ""
+        ).strip()
+
+        unsigned = False
+        if (not api_key or not api_secret) and upload_preset:
+            unsigned = True
+
+        return cloud_name, api_key, api_secret, upload_preset, unsigned, remote_folder
+
+    def upload_exported_webps(self):
+        """批量上传导出的 webp（默认扫描 */words/*.webp）。"""
+
+        if self.upload_worker and self.upload_worker.isRunning():
+            self.status_label.setText("正在上传中，请稍候")
+            return
+
+        cloud_name, api_key, api_secret, upload_preset, unsigned, remote_folder = (
+            self._read_upload_config_from_env()
+        )
+        if not cloud_name:
+            QMessageBox.warning(
+                self,
+                "缺少配置",
+                "未配置 Cloudinary cloud_name：请在 .env 中设置 CLOUDINARY_CLOUD_NAME（或 CLOUD_NAME）",
+            )
+            return
+
+        if unsigned:
+            if not upload_preset:
+                QMessageBox.warning(
+                    self,
+                    "缺少配置",
+                    "未配置 upload preset：请在 .env 中设置 CLOUDINARY_UPLOAD_PRESET（或 UPLOAD_PRESET）",
+                )
+                return
+        else:
+            if not api_key or not api_secret:
+                QMessageBox.warning(
+                    self,
+                    "缺少配置",
+                    "未配置 appkey/token：请在 .env 中设置 CLOUDINARY_API_KEY 与 CLOUDINARY_API_SECRET（或 APPKEY/TOKEN）",
+                )
+                return
+
+        scan_root = self._resolve_upload_scan_root()
+
+        self.status_label.setText("正在扫描并上传 webp...")
+        self.progress_bar.setVisible(True)
+        self.progress_bar.setRange(0, 0)  # indeterminate，直到知道 total
+        self._set_upload_actions_enabled(False)
+
+        self.upload_worker = UploadWebPWorker(
+            scan_root=scan_root,
+            cloud_name=cloud_name,
+            api_key=api_key,
+            api_secret=api_secret,
+            upload_preset=upload_preset,
+            unsigned=unsigned,
+            remote_folder=remote_folder,
+            limit=0,
+            parent=self,
+        )
+        self.upload_worker.progress.connect(self._on_upload_progress)
+        self.upload_worker.finished.connect(self._on_upload_finished)
+        self.upload_worker.error.connect(self._on_upload_error)
+        self.upload_worker.start()
+
+    def _on_upload_progress(self, idx: int, total: int, rel_path: str, ok: bool, message: str):
+        if total > 0:
+            self.progress_bar.setRange(0, total)
+            self.progress_bar.setValue(idx)
+        status = "OK" if ok else "FAIL"
+        self.status_label.setText(f"上传 {idx}/{total} [{status}] {rel_path}")
+
+    def _on_upload_finished(self, total: int, ok_count: int, fail_count: int, table_text: str):
+        self.progress_bar.setVisible(False)
+        self.status_label.setText(f"上传完成：总数={total} 成功={ok_count} 失败={fail_count}")
+        self._set_upload_actions_enabled(True)
+
+        if total == 0:
+            QMessageBox.information(self, "上传", "未找到可上传的 webp（仅匹配 */words/*.webp）")
+            return
+
+        box = QMessageBox(self)
+        box.setWindowTitle("上传结果")
+        box.setIcon(QMessageBox.Information if fail_count == 0 else QMessageBox.Warning)
+        box.setText(f"上传完成：总数={total}，成功={ok_count}，失败={fail_count}")
+        if table_text:
+            box.setDetailedText(table_text)
+        box.exec_()
+
+    def _on_upload_error(self, message: str):
+        self.progress_bar.setVisible(False)
+        self._set_upload_actions_enabled(True)
+        QMessageBox.warning(self, "上传失败", message)
 
     def _connect_signals(self):
         """连接信号"""
