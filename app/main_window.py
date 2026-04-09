@@ -738,14 +738,17 @@ class MainWindow(QMainWindow):
         # 保存前确保 author/font/work 有默认值（来自字帖目录名）
         self._inject_meta_defaults_from_folder(work_dir_name)
 
+        import hashlib
+
         char_data = []
         for r in sorted(self.char_manager.items, key=lambda x: (x.column, x.row)):
-            # 每次保存全量更新，并确保每条记录都有 UUID
-            if not getattr(r, "uuid", ""):
-                r.uuid = str(uuid.uuid4())
+            # 使用 char+work_dir+column+row 生成 MD5 作为唯一 ID
+            md5_input = f"{r.char}_{work_dir_name}_{r.column}_{r.row}"
+            md5_hash = hashlib.md5(md5_input.encode("utf-8")).hexdigest()
+            r.uuid = md5_hash
             char_data.append(
                 {
-                    "id": r.uuid,
+                    "id": md5_hash,
                     "char": r.char,
                     # 元数据字段使用英文
                     "font": self.current_font or "楷书",

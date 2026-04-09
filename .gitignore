@@ -39,6 +39,7 @@ node_modules
 
 # Environment
 .env
+.claude
 
 # Project specific
 w100
