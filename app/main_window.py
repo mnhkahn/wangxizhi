@@ -21,6 +21,7 @@ from PyQt5.QtWidgets import (
     QProgressBar,
     QLabel,
     QApplication,
+    QLineEdit,
 )
 from PyQt5.QtCore import Qt, QThread, pyqtSignal, QSize
 from PyQt5.QtGui import QIcon, QFont, QKeySequence
@@ -490,6 +491,80 @@ class ExportAllWorker(QThread):
             self.error.emit(str(e))
 
 
+class CharSearchWorker(QThread):
+    """在所有 chars.json 中搜索单字并定位到对应原图（后台线程）。"""
+
+    progress = pyqtSignal(int, int, str)  # idx, total, message
+    found = pyqtSignal(str, str, str)  # image_path, chars_path, query_char
+    not_found = pyqtSignal(str)  # query
+    error = pyqtSignal(str)
+
+    def __init__(self, query_char: str, parent=None):
+        super().__init__(parent)
+        self.query_char = (query_char or "").strip()[:1]
+
+    def run(self):
+        try:
+            q = self.query_char
+            if not q:
+                self.not_found.emit("")
+                return
+
+            project_root = Path(__file__).parent.parent
+            chars_paths = []
+            for work_dir in sorted(
+                [p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name
+            ):
+                debug_dir = work_dir / ".debug"
+                if not debug_dir.exists():
+                    continue
+                chars_paths.extend(sorted(debug_dir.glob("*/chars.json"), key=lambda p: str(p)))
+
+            total = len(chars_paths)
+            for i, chars_path in enumerate(chars_paths, start=1):
+                if self.isInterruptionRequested():
+                    return
+
+                if i == 1 or i % 25 == 0:
+                    self.progress.emit(i, total, f"搜索 {i}/{total} {chars_path}")
+
+                try:
+                    with open(chars_path, "r", encoding="utf-8") as f:
+                        chars = json.load(f)
+                except Exception:
+                    continue
+                if not isinstance(chars, list):
+                    continue
+
+                hit = False
+                for rec in chars:
+                    if not isinstance(rec, dict):
+                        continue
+                    if str(rec.get("char", "")) == q:
+                        hit = True
+                        break
+                if not hit:
+                    continue
+
+                # chars.json 位于：<字帖目录>/.debug/<stem>/chars.json
+                stem = chars_path.parent.name
+                work_dir = chars_path.parent.parent.parent
+                image_abs = None
+                for ext in (".jpg", ".jpeg", ".png", ".bmp", ".webp"):
+                    cand = work_dir / f"{stem}{ext}"
+                    if cand.exists():
+                        image_abs = cand
+                        break
+
+                if image_abs is not None:
+                    self.found.emit(str(image_abs), str(chars_path), q)
+                    return
+
+            self.not_found.emit(q)
+        except Exception as e:
+            self.error.emit(str(e))
+
+
 class MainWindow(QMainWindow):
     """主窗口"""
 
@@ -747,6 +822,13 @@ class MainWindow(QMainWindow):
 
         self.action_upload_toolbar = upload_action
 
+        # 搜索框（单字）：放在最右侧（上传按钮右边）
+        self.search_edit = QLineEdit()
+        self.search_edit.setPlaceholderText("搜字：输入单字回车")
+        self.search_edit.setFixedWidth(140)
+        self.search_edit.returnPressed.connect(self.search_char)
+        toolbar.addWidget(self.search_edit)
+
         # 说明：放大/缩小/重置按钮已移除（画布缩放使用 Ctrl+滚轮）
 
     def _init_statusbar(self):
@@ -763,6 +845,7 @@ class MainWindow(QMainWindow):
 
         self.upload_worker = None
         self.export_worker = None
+        self.search_worker = None
 
     def _set_export_actions_enabled(self, enabled: bool) -> None:
         for a in [
@@ -1385,6 +1468,118 @@ class MainWindow(QMainWindow):
         self.progress_bar.setVisible(False)
         self._set_export_actions_enabled(True)
         QMessageBox.warning(self, "导出失败", message)
+
+    def search_char(self):
+        """在全量 chars.json 中搜索单字并跳转到对应图片。"""
+
+        if not hasattr(self, "search_edit"):
+            return
+
+        raw = (self.search_edit.text() or "").strip()
+        if not raw:
+            return
+
+        q = raw[:1]
+        if raw != q:
+            # 用户误输入多个字符时，自动截断成单字
+            try:
+                self.search_edit.setText(q)
+            except Exception:
+                pass
+
+        # 若上一次搜索还在跑，先打断
+        if getattr(self, "search_worker", None) is not None and self.search_worker.isRunning():
+            try:
+                self.search_worker.requestInterruption()
+            except Exception:
+                pass
+
+        self.status_label.setText(f"正在搜索：{q}")
+        try:
+            self.search_edit.setEnabled(False)
+        except Exception:
+            pass
+
+        self.search_worker = CharSearchWorker(q, parent=self)
+        self.search_worker.progress.connect(self._on_search_progress)
+        self.search_worker.found.connect(self._on_search_found)
+        self.search_worker.not_found.connect(self._on_search_not_found)
+        self.search_worker.error.connect(self._on_search_error)
+        self.search_worker.start()
+
+    def _on_search_progress(self, idx: int, total: int, message: str):
+        # 不占用全局 progress_bar（避免和导出/上传进度冲突）
+        if message:
+            self.status_label.setText(str(message))
+
+    def _on_search_found(self, image_path: str, chars_path: str, query_char: str):
+        try:
+            self.search_edit.setEnabled(True)
+            self.search_edit.selectAll()
+        except Exception:
+            pass
+
+        self.status_label.setText(f"已找到并跳转：{Path(image_path).name}")
+        try:
+            # 自动加载图片（内部会同步在目录树中选中）
+            self._load_image(str(image_path))
+            # 选中目标字（尽量模拟“鼠标点选”效果）
+            q = (query_char or "").strip()[:1]
+            if q:
+                self._select_first_char_in_current_image(q)
+        except Exception as e:
+            QMessageBox.warning(self, "跳转失败", str(e))
+
+    def _select_first_char_in_current_image(self, q: str) -> None:
+        """在当前已加载图片的 char_manager 中选中第一个匹配字符。"""
+
+        q = (q or "").strip()[:1]
+        if not q:
+            return
+
+        if not getattr(self, "char_manager", None) or not self.char_manager.items:
+            return
+
+        candidates = [it for it in self.char_manager.items if (it.char or "") == q]
+        if not candidates:
+            return
+
+        # 按阅读顺序（column 0 为最右列，row 从上到下）选第一个
+        chosen = sorted(candidates, key=lambda x: (int(x.column or 0), int(x.row or 0), int(x.id or 0)))[0]
+
+        try:
+            self.char_list.select_item(chosen.id)
+        except Exception:
+            pass
+
+        try:
+            self._on_char_selected(chosen.id)
+        except Exception:
+            # 最差情况下至少把 bbox 选中
+            try:
+                self.image_canvas.select_bbox(chosen.id)
+            except Exception:
+                pass
+
+    def _on_search_not_found(self, query: str):
+        try:
+            self.search_edit.setEnabled(True)
+            self.search_edit.selectAll()
+        except Exception:
+            pass
+
+        q = (query or "").strip()[:1]
+        self.status_label.setText(f"未找到：{q}")
+        if q:
+            QMessageBox.information(self, "搜索", f"未在任何 chars.json 中找到：{q}")
+
+    def _on_search_error(self, message: str):
+        try:
+            self.search_edit.setEnabled(True)
+        except Exception:
+            pass
+        self.status_label.setText("搜索失败")
+        QMessageBox.warning(self, "搜索失败", message)
 
     def _create_glyphs_table(self, cursor):
         """创建 glyphs 表"""
