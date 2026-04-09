@@ -363,6 +363,7 @@ class UploadWebPWorker(QThread):
         limit: int = 0,
         concurrency: int = 4,
         mock_upload: bool = False,
+        selected_image: str = "",
         parent=None,
     ):
         super().__init__(parent)
@@ -376,6 +377,7 @@ class UploadWebPWorker(QThread):
         self.limit = int(limit or 0)
         self.concurrency = int(concurrency or 4)
         self.mock_upload = bool(mock_upload)
+        self.selected_image = selected_image  # 选中的图片路径，用于精确过滤
 
     def run(self):
         try:
@@ -391,6 +393,30 @@ class UploadWebPWorker(QThread):
             items = collect_upload_items(root, limit=0, keep_dirs=False)
             # 尽量只上传导出产物：*/words/*.webp
             items = [it for it in items if "/words/" in ("/" + it.rel_path.replace("\\", "/") + "/")]
+
+            # 如果指定了选中图片，读取对应的 chars.json 获取 id 列表进行过滤
+            if self.selected_image:
+                selected_stem = Path(self.selected_image).stem  # e.g., "fatie-001"
+                chars_path = Path(self.selected_image).parent / ".debug" / selected_stem / "chars.json"
+                allowed_ids = set()
+                if chars_path.exists():
+                    try:
+                        import json
+                        with open(chars_path, "r", encoding="utf-8") as f:
+                            chars_data = json.load(f)
+                        if isinstance(chars_data, list):
+                            for rec in chars_data:
+                                if isinstance(rec, dict) and rec.get("id"):
+                                    allowed_ids.add(rec["id"])
+                    except Exception:
+                        pass
+                # 过滤：只保留文件名（不含扩展名）在 allowed_ids 中的项
+                if allowed_ids:
+                    items = [it for it in items if Path(it.rel_path).stem in allowed_ids]
+                else:
+                    # 如果读取失败或没有 id，不上传任何内容
+                    items = []
+
             if self.limit and self.limit > 0:
                 items = items[: self.limit]
 
@@ -871,21 +897,31 @@ class MainWindow(QMainWindow):
                 except Exception:
                     pass
 
-    def _resolve_upload_scan_root(self) -> str:
-        """根据当前选择，决定扫描上传的根目录。"""
+    def _resolve_upload_scan_root(self) -> tuple:
+        """根据当前选择，决定扫描上传的根目录和选中的图片。
 
+        Returns:
+            tuple: (scan_root, selected_image)
+            - scan_root: 扫描的根目录
+            - selected_image: 如果选中了单张图片，返回其路径；否则返回空字符串
+        """
         sel = self._current_tree_selection or {}
         kind = sel.get("kind")
+
+        # 选中了字帖目录
         if kind == "work_dir":
             dir_path = sel.get("dir_path") or ""
             if dir_path:
-                return dir_path
+                return (dir_path, "")
+
+        # 选中了单张图片
         if kind in ("work_image", "recognized"):
             image_path = sel.get("image_path") or ""
             if image_path:
-                return str(Path(image_path).parent)
+                return (str(Path(image_path).parent), image_path)
+
         # 默认：项目根目录
-        return str(Path(__file__).parent.parent)
+        return (str(Path(__file__).parent.parent), "")
 
     def _read_upload_config_from_env(self):
         """从环境变量（.env 已在 run_app.py 加载）读取上传配置。"""
@@ -956,9 +992,16 @@ class MainWindow(QMainWindow):
             # mock 模式下允许不配置真实凭证
             cloud_name = cloud_name or "mock"
 
-        scan_root = self._resolve_upload_scan_root()
+        scan_root, selected_image = self._resolve_upload_scan_root()
 
-        self.status_label.setText("正在扫描并上传 webp...")
+        # 构建状态文本
+        if selected_image:
+            status_text = f"正在上传单页: {Path(selected_image).name}"
+        elif scan_root != str(Path(__file__).parent.parent):
+            status_text = f"正在上传字帖: {Path(scan_root).name}"
+        else:
+            status_text = "正在扫描并上传所有 webp..."
+        self.status_label.setText(status_text)
         self.progress_bar.setVisible(True)
         self.progress_bar.setRange(0, 0)  # indeterminate，直到知道 total
         self._set_upload_actions_enabled(False)
@@ -974,6 +1017,7 @@ class MainWindow(QMainWindow):
             limit=0,
             concurrency=4,
             mock_upload=mock_upload,
+            selected_image=selected_image,
             parent=self,
         )
         self.upload_worker.progress.connect(self._on_upload_progress)

@@ -199,6 +199,20 @@ class WorkTreeWidget(QWidget):
 
         return idx
 
+    def _has_fatie_images(self, work_dir: Path) -> bool:
+        """检查目录是否包含 fatie-* 图片（支持 jpg/jpeg/png/bmp/webp）"""
+        for ext in (".jpg", ".jpeg", ".png", ".bmp", ".webp"):
+            if any(work_dir.glob(f"fatie-*{ext}")):
+                return True
+        return False
+
+    def _list_fatie_images(self, work_dir: Path) -> list:
+        """列出目录下所有 fatie-* 图片（支持 jpg/jpeg/png/bmp/webp）"""
+        imgs = []
+        for ext in (".jpg", ".jpeg", ".png", ".bmp", ".webp"):
+            imgs.extend(work_dir.glob(f"fatie-*{ext}"))
+        return sorted(imgs, key=lambda p: p.name)
+
     def _populate_works_as_top_level(self):
         # 过滤掉非字帖目录
         ignore = {
@@ -219,8 +233,8 @@ class WorkTreeWidget(QWidget):
                 continue
             if p.name in ignore:
                 continue
-            # 字帖目录：包含至少一个 fatie-*.jpg
-            if any(p.glob("fatie-*.jpg")):
+            # 字帖目录：包含至少一个 fatie-* 图片（支持 jpg/jpeg/png/bmp/webp）
+            if self._has_fatie_images(p):
                 work_dirs.append(p)
 
         if not work_dirs:
@@ -229,7 +243,7 @@ class WorkTreeWidget(QWidget):
 
         for wd in sorted(work_dirs, key=lambda p: p.name):
             # 作品目录直接作为顶层节点
-            imgs = sorted(wd.glob("fatie-*.jpg"), key=lambda p: p.name)
+            imgs = self._list_fatie_images(wd)
             total = len(imgs)
             done = 0
             for img in imgs:
@@ -253,7 +267,7 @@ class WorkTreeWidget(QWidget):
 
             self._dir_item_map[str(wd.resolve())] = wnode
 
-            for img in imgs:
+            for img in self._list_fatie_images(wd):
                 image_abs = str(img.resolve())
                 rec = recognized.get(image_abs)
                 label = img.name
