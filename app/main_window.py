@@ -56,6 +56,8 @@ def export_glyphs_to_sqlite(sqlite_path: Path, items: list) -> int:
             )
         """
         )
+        # 清空旧数据，避免残留过期记录
+        cur.execute("DELETE FROM glyphs")
         conn.commit()
 
         total = 0
@@ -1383,8 +1385,8 @@ class MainWindow(QMainWindow):
 
         char_data = []
         for r in sorted(self.char_manager.items, key=lambda x: (x.column, x.row)):
-            # 使用 char+work_dir+column+row 生成 MD5 作为唯一 ID
-            md5_input = f"{r.char}_{work_dir_name}_{r.column}_{r.row}"
+            # 使用 char+work_dir+图片名称+column+row 生成 MD5 作为唯一 ID
+            md5_input = f"{r.char}_{work_dir_name}_{image_name}_{r.column}_{r.row}"
             md5_hash = hashlib.md5(md5_input.encode("utf-8")).hexdigest()
             r.uuid = md5_hash
             char_data.append(
@@ -1633,15 +1635,14 @@ class MainWindow(QMainWindow):
         work_name = image_path.parent.name if image_path and image_path.parent else ""
         image_name = image_path.name if image_path else ""
 
-        def _make_id(item) -> str:
-            return f"{work_name}_{image_name}_{item.row}_{item.column}_{item.char}"
-
-        # 准备导出数据
+        # 准备导出数据 - 使用 item.uuid（即 chars.json 中的 MD5 id）
         export_items = []
         for item in self.char_manager.items:
+            # 优先使用 uuid（MD5 id），如果没有则使用运行时 id
+            gid = item.uuid if item.uuid else str(item.id)
             export_items.append(
                 {
-                    "id": _make_id(item),
+                    "id": gid,
                     "char": item.char,
                     "work_dir": work_name,
                     "author": self.current_author,

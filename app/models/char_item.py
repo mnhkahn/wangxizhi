@@ -59,7 +59,7 @@ class CharItem:
     def to_dict(self) -> Dict[str, Any]:
         """转换为字典"""
         return {
-            "id": self.id,
+            "id": self.uuid if self.uuid else str(self.id),
             "uuid": self.uuid,
             "char": self.char,
             "bbox": self.bbox.copy(),
@@ -72,9 +72,18 @@ class CharItem:
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "CharItem":
         """从字典创建"""
+        # 处理 id 字段：如果是字符串（如 MD5），存入 uuid；数值型存入 id
+        raw_id = data.get("id", 0)
+        uuid_val = data.get("uuid", "")
+        if isinstance(raw_id, str):
+            # MD5/UUID 格式的 id，存入 uuid
+            uuid_val = raw_id
+            item_id = 0  # 运行时由 manager 分配
+        else:
+            item_id = raw_id
         return cls(
-            id=data.get("id", 0),
-            uuid=data.get("uuid", ""),
+            id=item_id,
+            uuid=uuid_val,
             char=data.get("char", ""),
             bbox=data.get("bbox", [0, 0, 0, 0]).copy(),
             column=data.get("column", 0),

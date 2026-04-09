@@ -191,6 +191,20 @@ ocr_output/glyphs.sqlite
 - `glyphs.sqlite`：汇总所有已识别字形元数据
 - `words/<字符ID>.webp`：按字符边界框裁剪出的单字图片（若文件名重复会直接覆盖）
 
+## 调试命令
+
+### 查看 glyphs.sqlite 记录数
+
+```bash
+sqlite3 ocr_output/glyphs.sqlite 'SELECT COUNT(*) FROM glyphs;'
+```
+
+### 查看 glyphs.sqlite 前5条记录
+
+```bash
+sqlite3 ocr_output/glyphs.sqlite 'SELECT * FROM glyphs LIMIT 5;'
+```
+
 ## 推荐操作手段
 
 ### 场景一：只浏览网站
