@@ -31,8 +31,8 @@
 在项目根目录执行：
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements-app.txt
 ```
 
@@ -90,8 +90,7 @@ http://127.0.0.1:8000/王羲之-行书-兰亭序/
 #### 识别单张图片
 
 ```bash
-source .venv/bin/activate
-python3 -m ocr.recognizer "./王羲之-行书-圣教序/fatie-000.jpg" --debug
+source venv/bin/activate && python3 -m ocr.recognizer "./王羲之-行书-圣教序/fatie-000.jpg" --debug
 ```
 
 参数说明：
@@ -105,14 +104,14 @@ python3 -m ocr.recognizer "./王羲之-行书-圣教序/fatie-000.jpg" --debug
 单张图片验证：
 
 ```bash
-source .venv/bin/activate
+source venv/bin/activate
 python3 ocr/validate_split.py "./王羲之-行书-圣教序/fatie-000.jpg" --debug
 ```
 
 目录批量验证：
 
 ```bash
-source .venv/bin/activate
+source venv/bin/activate
 python3 ocr/validate_split.py "./王羲之-行书-圣教序" --batch --debug
 ```
 
@@ -123,8 +122,7 @@ python3 ocr/validate_split.py "./王羲之-行书-圣教序" --batch --debug
 启动：
 
 ```bash
-source .venv/bin/activate
-python3 run_app.py
+source venv/bin/activate && python3 run_app.py
 ```
 
 桌面编辑器适合对识别结果进行人工校正，主流程如下：
@@ -216,7 +214,7 @@ python3 -m http.server 8000
 ### 场景二：只跑 OCR 识别
 
 ```bash
-source .venv/bin/activate
+source venv/bin/activate
 python3 -m ocr.recognizer "./王羲之-行书-圣教序/fatie-000.jpg" --debug
 ```
 

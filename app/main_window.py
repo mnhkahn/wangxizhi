@@ -449,6 +449,7 @@ class UploadWebPWorker(QThread):
                 timeout_s=600,
                 concurrency=int(self.concurrency or 4),
                 mock_upload=bool(self.mock_upload),
+                invalidate=True,
                 progress_cb=_cb,
             )
 

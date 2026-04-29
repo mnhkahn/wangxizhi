@@ -83,6 +83,7 @@ def upload_items(
     timeout_s: int = 600,
     concurrency: int = 4,
     mock_upload: bool = False,
+    invalidate: bool = True,
     progress_cb: Optional[Any] = None,
 ) -> List[UploadResult]:
     """上传多个条目。
@@ -121,6 +122,7 @@ def upload_items(
             file_path=it.abs_path,
             timeout_s=timeout_s,
             mock_upload=mock_upload,
+            invalidate=bool(invalidate and not unsigned),
         )
         r = UploadResult(
             rel_path=it.rel_path,
@@ -261,6 +263,7 @@ def _cloudinary_upload_one(
     file_path: Path,
     timeout_s: int,
     mock_upload: bool = False,
+    invalidate: bool = True,
 ) -> Tuple[bool, str, str]:
     """上传单个文件，返回 (ok, url, error)。"""
 
@@ -283,6 +286,7 @@ def _cloudinary_upload_one(
     options: dict = {
         "folder": folder or None,
         "public_id": public_id or None,
+        "invalidate": invalidate,
         "resource_type": "image",
         "timeout": timeout_s,
     }
