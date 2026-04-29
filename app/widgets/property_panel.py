@@ -12,6 +12,7 @@ from PyQt5.QtWidgets import (
     QSpinBox,
     QDoubleSpinBox,
     QComboBox,
+    QCheckBox,
 )
 from PyQt5.QtCore import Qt, pyqtSignal
 from PyQt5.QtGui import QFont
@@ -28,6 +29,7 @@ class PropertyPanel(QWidget):
     font_changed = pyqtSignal(str)  # 字体（每张图）
     author_changed = pyqtSignal(str)  # 作者（每张图）
     work_changed = pyqtSignal(str)  # 作品（每张图）
+    visible_changed = pyqtSignal(int, bool)  # item_id, visible
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -132,6 +134,15 @@ class PropertyPanel(QWidget):
         row_h.addWidget(self.height_spin, 1)
         outer.addLayout(row_h)
 
+        # 可见性（参与导出）
+        row_visible = QHBoxLayout()
+        row_visible.setSpacing(10)
+        self.visible_check = QCheckBox("可见（参与导出）")
+        self.visible_check.setChecked(True)
+        self.visible_check.stateChanged.connect(self._on_visible_changed)
+        row_visible.addWidget(self.visible_check)
+        outer.addLayout(row_visible)
+
         # 初始禁用
         self._set_item_enabled(False)
         self._set_meta_enabled(False)
@@ -143,6 +154,7 @@ class PropertyPanel(QWidget):
         self.y_spin.setEnabled(enabled)
         self.width_spin.setEnabled(enabled)
         self.height_spin.setEnabled(enabled)
+        self.visible_check.setEnabled(enabled)
 
     def _set_meta_enabled(self, enabled: bool):
         """设置图片级元数据启用状态"""
@@ -180,6 +192,7 @@ class PropertyPanel(QWidget):
             self.y_spin.setValue(item.y)
             self.width_spin.setValue(item.width)
             self.height_spin.setValue(item.height)
+            self.visible_check.setChecked(item.visible)
             self.info_label.setText(f"ID: {item.id} | 列: {item.column} | 行: {item.row}")
             self.info_label.setStyleSheet("color: black;")
         else:
@@ -189,6 +202,7 @@ class PropertyPanel(QWidget):
             self.y_spin.setValue(0)
             self.width_spin.setValue(1)
             self.height_spin.setValue(1)
+            self.visible_check.setChecked(True)
             self.info_label.setText("未选中字符")
             self.info_label.setStyleSheet("color: gray;")
 
@@ -252,6 +266,14 @@ class PropertyPanel(QWidget):
             self.current_item.y,
             width, height
         )
+
+    def _on_visible_changed(self, state: int):
+        """可见性变化"""
+        if self._updating or not self.current_item:
+            return
+        visible = bool(state == Qt.Checked)
+        self.current_item.visible = visible
+        self.visible_changed.emit(self.current_item.id, visible)
 
     def update_from_item(self, item: CharItem):
         """从字符项更新（不触发信号）"""

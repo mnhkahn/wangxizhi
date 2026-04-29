@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QIcon
 
 # 添加项目根目录到路径
 project_root = Path(__file__).parent.parent
@@ -24,11 +25,19 @@ def main():
     app.setApplicationName("书法拆字编辑器")
     app.setApplicationVersion("1.0.0")
 
+    # 设置应用图标
+    icon_path = Path(__file__).parent / "assets" / "icon.png"
+    if icon_path.exists():
+        app_icon = QIcon(str(icon_path))
+        app.setWindowIcon(app_icon)
+
     # 设置样式
     app.setStyle("Fusion")
 
     # 创建主窗口
     window = MainWindow()
+    if icon_path.exists():
+        window.setWindowIcon(app_icon)
     window.show()
 
     sys.exit(app.exec_())

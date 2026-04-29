@@ -18,6 +18,7 @@ class CharItem:
     row: int = 0
     global_index: int = 0
     split_method: str = ""
+    visible: bool = True  # 是否参与导出
 
     @property
     def x(self) -> float:
@@ -67,6 +68,7 @@ class CharItem:
             "row": self.row,
             "global_index": self.global_index,
             "split_method": self.split_method,
+            "visible": self.visible,
         }
 
     @classmethod
@@ -90,6 +92,7 @@ class CharItem:
             row=data.get("row", 0),
             global_index=data.get("global_index", 0),
             split_method=data.get("split_method", ""),
+            visible=data.get("visible", True),
         )
 
 
@@ -140,6 +143,7 @@ class CharItemManager:
                 row=char_data.get("row", 0),
                 global_index=char_data.get("global_index", 0),
                 split_method=char_data.get("split_method", ""),
+                visible=char_data.get("visible", True),
             )
             self.items.append(item)
         self._next_id = len(self.items)

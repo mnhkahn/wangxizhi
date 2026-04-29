@@ -145,6 +145,8 @@ def export_all_glyphs_sqlite(project_root: Path, progress_cb=None):
         for rec in chars:
             if not isinstance(rec, dict):
                 continue
+            if rec.get("visible") is False:
+                continue
             if "work_dir" not in rec:
                 rec["work_dir"] = work_dir.name
             all_items.append(rec)
@@ -198,6 +200,8 @@ def export_all_crops(project_root: Path, progress_cb=None):
         for rec in chars:
             if not isinstance(rec, dict):
                 continue
+            if rec.get("visible") is False:
+                continue
             bbox = rec.get("bbox")
             if bbox and isinstance(bbox, (list, tuple)) and len(bbox) == 4:
                 total += 1
@@ -225,6 +229,8 @@ def export_all_crops(project_root: Path, progress_cb=None):
 
         for rec in chars:
             if not isinstance(rec, dict):
+                continue
+            if rec.get("visible") is False:
                 continue
             bbox = rec.get("bbox")
             ch = rec.get("char", "")
@@ -653,7 +659,7 @@ class MainWindow(QMainWindow):
         """初始化 UI"""
         self.setWindowTitle("书法拆字编辑器")
         # macOS 下某些情况下 setGeometry 会被 Qt 重新计算覆盖，
-        # 这里用 resize + setMinimumSize 保证窗口不会“缩成很小”。
+        # 这里用 resize + setMinimumSize 保证窗口不会"缩成很小"。
         self.resize(1400, 900)
         self.setMinimumSize(1100, 700)
 
@@ -788,7 +794,8 @@ class MainWindow(QMainWindow):
         edit_menu.addSeparator()
 
         delete_action = QAction("删除(&D)", self)
-        delete_action.setShortcut("Delete")
+        delete_action.setShortcuts([QKeySequence.Delete, QKeySequence("Backspace")])
+        delete_action.triggered.connect(self.delete_selected_char)
         edit_menu.addAction(delete_action)
 
         # 视图菜单（保留占位，避免后续扩展时找不到菜单）
@@ -806,7 +813,7 @@ class MainWindow(QMainWindow):
         toolbar = self.addToolBar("主工具栏")
         toolbar.setMovable(False)
 
-        # 字帖最小化按钮（放在“识别”左侧）
+        # 字帖最小化按钮（放在"识别"左侧）
         self.action_toggle_worktree = QAction(self)
         # 用目录图标区分
         self.action_toggle_worktree.setIcon(
@@ -837,6 +844,11 @@ class MainWindow(QMainWindow):
 
         # 保存编辑（写回现有 json，不写 result.json）
         toolbar.addAction(self.action_save)
+
+        # 添加框
+        add_bbox_action = QAction("添加框", self)
+        add_bbox_action.triggered.connect(self.add_new_bbox)
+        toolbar.addAction(add_bbox_action)
 
         # 导出
         export_action = QAction("导出", self)
@@ -1069,6 +1081,7 @@ class MainWindow(QMainWindow):
         self.image_canvas.selection_changed.connect(self._on_canvas_selection_changed)
         self.image_canvas.bbox_updated.connect(self._on_bbox_updated)
         self.image_canvas.bbox_edit_committed.connect(self._on_bbox_edit_committed)
+        self.image_canvas.item_deleted.connect(self._on_canvas_item_deleted)
 
         # 属性面板信号
         self.property_panel.char_changed.connect(self._on_property_char_changed)
@@ -1076,10 +1089,11 @@ class MainWindow(QMainWindow):
         self.property_panel.font_changed.connect(self._on_property_font_changed)
         self.property_panel.author_changed.connect(self._on_property_author_changed)
         self.property_panel.work_changed.connect(self._on_property_work_changed)
+        self.property_panel.visible_changed.connect(self._on_property_visible_changed)
 
     def open_image(self):
         """打开图片"""
-        # 已移除“打开”入口：请从左侧字帖树选择图片
+        # 已移除"打开"入口：请从左侧字帖树选择图片
         QMessageBox.information(self, "提示", "请从左侧字帖树选择图片")
         return
 
@@ -1107,7 +1121,7 @@ class MainWindow(QMainWindow):
         if self._try_load_cache(image_path):
             return
 
-        self.status_label.setText("已打开图片（未发现缓存），请点击“识别”")
+        self.status_label.setText('已打开图片（未发现缓存），请点击"识别"')
 
     def _cache_result_path(self, image_path: str) -> Path:
         img = Path(image_path)
@@ -1152,6 +1166,7 @@ class MainWindow(QMainWindow):
                             "bbox": c.get("bbox", [0, 0, 0, 0]),
                             "column": c.get("column", 0),
                             "row": c.get("row", 0),
+                            "visible": c.get("visible", True),
                             # 说明：chars.json 不再保存 global_index，这里运行时补一个
                             "global_index": i,
                         }
@@ -1248,11 +1263,11 @@ class MainWindow(QMainWindow):
             self._on_ocr_finished(cached)
             return True
         except Exception as e:
-            self.status_label.setText(f"缓存加载失败：{e}；可点击“识别”重新生成")
+            self.status_label.setText(f'缓存加载失败：{e}；可点击"识别"重新生成')
             return False
 
     def recognize_image(self):
-        """点击“识别”：
+        """点击"识别"：
         - 若当前选中的是字帖目录：批量识别该目录下所有 fatie-*.jpg
         - 若当前选中的是图片：识别当前图片
         """
@@ -1309,6 +1324,14 @@ class MainWindow(QMainWindow):
             x, y, x2, y2 = item.bbox
             self.image_canvas.add_bbox(x, y, x2 - x, y2 - y, item.char, item.id)
 
+        # 同步不可见框的透明度
+        for item in self.char_manager.items:
+            if not item.visible:
+                for bbox_item in self.image_canvas.bbox_items:
+                    if bbox_item.item_id == item.id:
+                        bbox_item.setOpacity(0.3)
+                        break
+
         # 字体/作者/作品：加载时按第一个字展示
         self.current_font = result.get("font") or self.current_font or "楷书"
         self.current_author = result.get("author") or self.current_author or ""
@@ -1335,7 +1358,7 @@ class MainWindow(QMainWindow):
             )
             self._last_loaded_cache_path = None
 
-        # 刷新左侧“已识别”列表
+        # 刷新左侧"已识别"列表
         if hasattr(self, "work_tree"):
             self.work_tree.refresh_recognized()
 
@@ -1348,7 +1371,7 @@ class MainWindow(QMainWindow):
             # 仅记录选择，不加载图片
             dir_path = payload.get("dir_path") or ""
             self.status_label.setText(
-                f"已选中字帖：{Path(dir_path).name}（点击“识别”可批量识别）"
+                f'已选中字帖：{Path(dir_path).name}（点击"识别"可批量识别）'
             )
             return
 
@@ -1401,7 +1424,7 @@ class MainWindow(QMainWindow):
         self.status_label.setText(f"批量识别异常：{error}")
 
     def save_edits(self):
-        """点击“保存”：将当前编辑结果写回现有 json（不写 result.json）"""
+        """点击"保存"：将当前编辑结果写回现有 json（不写 result.json）"""
         if not self.current_image_path:
             self.status_label.setText("保存失败：请先打开一张图片")
             return
@@ -1442,11 +1465,12 @@ class MainWindow(QMainWindow):
                     "font": self.current_font or "楷书",
                     "author": self.current_author or "",
                     "work": self.current_work or "",
-                    # 仅用于可追溯（不是“字帖”字段）：记录字帖目录名
+                    # 仅用于可追溯（不是"字帖"字段）：记录字帖目录名
                     "work_dir": work_dir_name,
                     "bbox": r.bbox,
                     "column": r.column,
                     "row": r.row,
+                    "visible": r.visible,
                 }
             )
 
@@ -1570,7 +1594,7 @@ class MainWindow(QMainWindow):
         try:
             # 自动加载图片（内部会同步在目录树中选中）
             self._load_image(str(image_path))
-            # 选中目标字（尽量模拟“鼠标点选”效果）
+            # 选中目标字（尽量模拟"鼠标点选"效果）
             q = (query_char or "").strip()[:1]
             if q:
                 self._select_first_char_in_current_image(q)
@@ -1745,6 +1769,143 @@ class MainWindow(QMainWindow):
         self.property_panel.char_edit.setFocus()
         self.property_panel.char_edit.selectAll()
 
+    def _compute_column_row(self, x: float, y: float, w: float, h: float) -> tuple:
+        """根据位置推断新框的 column/row（基于已有框的空间分布）。"""
+        existing = self.char_manager.items
+        if not existing:
+            return 0, 0
+
+        cx = x + w / 2
+        cy = y + h / 2
+
+        # 按 column 分组，计算每列的平均中心 x
+        from collections import defaultdict
+        col_xs = defaultdict(list)
+        for it in existing:
+            col_xs[it.column].append(it.x + it.width / 2)
+        col_avg_x = {c: sum(xs) / len(xs) for c, xs in col_xs.items()}
+
+        # 找 x 最接近的列
+        best_col = min(col_avg_x.keys(), key=lambda c: abs(cx - col_avg_x[c]))
+        threshold_x = sum(it.width for it in existing) / len(existing) * 0.6
+        if abs(cx - col_avg_x[best_col]) > threshold_x and cx < min(col_avg_x.values()):
+            # 明显更靠左，视为新列
+            best_col = max(col_avg_x.keys()) + 1
+
+        # 在同列内推断 row
+        same_col = [it for it in existing if it.column == best_col]
+        if not same_col:
+            return best_col, 0
+
+        best_item = min(same_col, key=lambda it: abs(cy - (it.y + it.height / 2)))
+        row = best_item.row
+        threshold_y = sum(it.height for it in same_col) / len(same_col) * 0.5
+        item_cy = best_item.y + best_item.height / 2
+        if cy < item_cy - threshold_y:
+            row -= 1
+        elif cy > item_cy + threshold_y:
+            row += 1
+
+        return best_col, row
+
+    def add_new_bbox(self):
+        """在空白处添加一个与现有框平均大小相近的新框"""
+        if not self.image_canvas.image_item:
+            self.status_label.setText("请先打开一张图片")
+            return
+
+        # 1. 计算平均大小：取四个角上的框（不足四个则取全部）
+        items = self.char_manager.items
+        if not items:
+            avg_w, avg_h = 60.0, 60.0
+        elif len(items) <= 4:
+            avg_w = sum(it.width for it in items) / len(items)
+            avg_h = sum(it.height for it in items) / len(items)
+        else:
+            # 按中心点找四个角的框各一个
+            centers = [(it.x + it.width / 2, it.y + it.height / 2, it) for it in items]
+            corner_items = [
+                min(centers, key=lambda t: t[0] + t[1])[2],   # 左上
+                max(centers, key=lambda t: t[0] - t[1])[2],   # 右上
+                max(centers, key=lambda t: t[1] - t[0])[2],   # 左下
+                max(centers, key=lambda t: t[0] + t[1])[2],   # 右下
+            ]
+            avg_w = sum(it.width for it in corner_items) / len(corner_items)
+            avg_h = sum(it.height for it in corner_items) / len(corner_items)
+
+        scene_rect = self.image_canvas.scene.sceneRect()
+        img_w, img_h = scene_rect.width(), scene_rect.height()
+
+        # 2. 网格扫描找重叠最少的位置
+        step_x = max(avg_w / 2, 20)
+        step_y = max(avg_h / 2, 20)
+        margin = 10
+
+        best_pos = None
+        best_overlap = float('inf')
+
+        y = margin
+        while y + avg_h + margin <= img_h:
+            x = margin
+            while x + avg_w + margin <= img_w:
+                new_bbox = [x, y, x + avg_w, y + avg_h]
+                total_overlap = 0.0
+                for it in self.char_manager.items:
+                    bx1, by1, bx2, by2 = it.bbox
+                    ix1 = max(new_bbox[0], bx1)
+                    iy1 = max(new_bbox[1], by1)
+                    ix2 = min(new_bbox[2], bx2)
+                    iy2 = min(new_bbox[3], by2)
+                    if ix2 > ix1 and iy2 > iy1:
+                        total_overlap += (ix2 - ix1) * (iy2 - iy1)
+
+                if total_overlap == 0:
+                    best_pos = (x, y)
+                    best_overlap = 0
+                    break
+                elif total_overlap < best_overlap:
+                    best_overlap = total_overlap
+                    best_pos = (x, y)
+
+                x += step_x
+            if best_overlap == 0:
+                break
+            y += step_y
+
+        if best_pos is None:
+            best_pos = (img_w / 2 - avg_w / 2, img_h / 2 - avg_h / 2)
+
+        x, y = best_pos
+        column, row = self._compute_column_row(x, y, avg_w, avg_h)
+
+        item = CharItem(
+            id=0,
+            char="",
+            bbox=[x, y, x + avg_w, y + avg_h],
+            column=column,
+            row=row,
+        )
+        item = self.char_manager.add_item(item)
+
+        self.image_canvas.add_bbox(x, y, avg_w, avg_h, item.char, item.id, highlight=(column == 0 and row == 0))
+        self.char_list.load_items(self.char_manager.items)
+        self.image_canvas.select_bbox(item.id)
+        self.status_label.setText(f"已添加新框 (id={item.id}, 列{column}, 行{row})")
+
+    def delete_selected_char(self):
+        """删除当前选中的字符（框 / 列表项）"""
+        if self.image_canvas.selected_item:
+            self.image_canvas.delete_selected_bbox()
+
+    def _on_canvas_item_deleted(self, item_id: int):
+        """画布删除字符后同步模型与列表"""
+        self.char_manager.remove_item(item_id)
+        self.char_list.load_items(self.char_manager.items)
+        self.property_panel.load_item(None)
+        if hasattr(self, "char_preview"):
+            self.char_preview.clear()
+        self.status_label.setText(f"已删除字符 (id={item_id})")
+
     def _on_canvas_selection_changed(self, item_id: int):
         """画布选中变化"""
         if item_id >= 0:
@@ -1850,6 +2011,20 @@ class MainWindow(QMainWindow):
 
     def _on_property_work_changed(self, work: str):
         self.current_work = work or ""
+
+    def _on_property_visible_changed(self, item_id: int, visible: bool):
+        """属性面板可见性变化"""
+        item = self.char_manager.get_item(item_id)
+        if item:
+            item.visible = visible
+            # 同步画布视觉：不可见时降低透明度
+            for bbox_item in self.image_canvas.bbox_items:
+                if bbox_item.item_id == item_id:
+                    if visible:
+                        bbox_item.setOpacity(1.0)
+                    else:
+                        bbox_item.setOpacity(0.3)
+                    break
 
     def _update_preview(self, item: CharItem):
         if not hasattr(self, "char_preview"):

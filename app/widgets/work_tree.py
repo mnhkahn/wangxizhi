@@ -34,6 +34,7 @@ class WorkTreeWidget(QWidget):
         self.tree.setHeaderHidden(True)
         self.tree.itemDoubleClicked.connect(self._on_item_activated)
         self.tree.itemClicked.connect(self._on_item_clicked)
+        self.tree.currentItemChanged.connect(self._on_current_item_changed)
 
         layout = QVBoxLayout(self)
         layout.setContentsMargins(5, 5, 5, 5)
@@ -50,6 +51,9 @@ class WorkTreeWidget(QWidget):
 
         # 展开/折叠状态（折叠时隐藏 tree 并收窄宽度）
         self._collapsed = False
+
+        # 防止内部 setCurrentItem 触发 currentItemChanged 导致循环
+        self._suppress_activation = False
 
         self.rebuild()
 
@@ -94,8 +98,12 @@ class WorkTreeWidget(QWidget):
             p.setExpanded(True)
             p = p.parent()
 
-        self.tree.setCurrentItem(item)
-        self.tree.scrollToItem(item)
+        self._suppress_activation = True
+        try:
+            self.tree.setCurrentItem(item)
+            self.tree.scrollToItem(item)
+        finally:
+            self._suppress_activation = False
 
     def rebuild(self):
         """重建整棵树"""
@@ -140,8 +148,12 @@ class WorkTreeWidget(QWidget):
                     node = self._dir_item_map.get(str(Path(dp).resolve()))
                     if node:
                         self.ensure_visible()
-                        self.tree.setCurrentItem(node)
-                        self.tree.scrollToItem(node)
+                        self._suppress_activation = True
+                        try:
+                            self.tree.setCurrentItem(node)
+                            self.tree.scrollToItem(node)
+                        finally:
+                            self._suppress_activation = False
 
     def refresh_recognized(self):
         """刷新识别标记（识别状态变化后重建树即可）"""
@@ -149,6 +161,13 @@ class WorkTreeWidget(QWidget):
 
     def _on_item_clicked(self, item: QTreeWidgetItem, _col: int):
         payload = item.data(0, Qt.UserRole)
+        if isinstance(payload, dict) and payload.get("kind") in ("work_dir", "work_image", "recognized"):
+            self.item_activated.emit(payload)
+
+    def _on_current_item_changed(self, current: Optional[QTreeWidgetItem], previous: Optional[QTreeWidgetItem]):
+        if self._suppress_activation or current is None:
+            return
+        payload = current.data(0, Qt.UserRole)
         if isinstance(payload, dict) and payload.get("kind") in ("work_dir", "work_image", "recognized"):
             self.item_activated.emit(payload)
 

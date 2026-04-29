@@ -98,6 +98,7 @@ class BBoxItem(QGraphicsRectItem):
         self.item_id = item_id
         self.char = char
         self._selected = False
+        self._highlighted = False
         # 基础层级：用于重叠时保持稳定排序；选中时会临时置顶
         self._base_z = float(item_id)
         self._resizing = False
@@ -162,20 +163,35 @@ class BBoxItem(QGraphicsRectItem):
         for handle, pos in zip(self.handles, positions):
             handle.setPos(*pos)
 
+    def set_highlight(self, highlighted: bool):
+        """设置高亮状态（column/row 可能未正确推断时加粗提醒）"""
+        self._highlighted = highlighted
+        self._apply_pen()
+
+    def _apply_pen(self):
+        """根据选中/高亮状态应用边框样式"""
+        if self._selected:
+            width = 4 if self._highlighted else 3
+            self.setPen(QPen(QColor(255, 0, 0), width))
+        else:
+            if self._highlighted:
+                self.setPen(QPen(QColor(255, 165, 0), 4))
+            else:
+                self.setPen(QPen(QColor(0, 255, 0), 2))
+
     def set_selected(self, selected: bool):
         """设置选中状态"""
         self._selected = selected
         if selected:
             # 选中置顶：避免 bbox 重叠时误操作到别的框
             self.setZValue(100000.0 + self._base_z)
-            self.setPen(QPen(QColor(255, 0, 0), 3))
             for handle in self.handles:
                 handle.setVisible(True)
         else:
             self.setZValue(self._base_z)
-            self.setPen(QPen(QColor(0, 255, 0), 2))
             for handle in self.handles:
                 handle.setVisible(False)
+        self._apply_pen()
 
     def update_char(self, char: str):
         """更新字符"""
@@ -320,6 +336,7 @@ class ImageCanvas(QGraphicsView):
     selection_changed = pyqtSignal(int)  # item_id
     bbox_updated = pyqtSignal(int, list)  # item_id, bbox
     bbox_edit_committed = pyqtSignal(int, list, list)  # item_id, old_bbox, new_bbox
+    item_deleted = pyqtSignal(int)  # item_id
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -473,9 +490,11 @@ class ImageCanvas(QGraphicsView):
         super().mouseMoveEvent(event)
 
     def add_bbox(self, x: float, y: float, width: float, height: float,
-                 char: str = "", item_id: int = 0) -> BBoxItem:
+                 char: str = "", item_id: int = 0, highlight: bool = False) -> BBoxItem:
         """添加边界框"""
         bbox = BBoxItem(x, y, width, height, char, item_id)
+        if highlight:
+            bbox.set_highlight(True)
         self.scene.addItem(bbox)
         self.bbox_items.append(bbox)
         return bbox
@@ -560,6 +579,7 @@ class ImageCanvas(QGraphicsView):
                 self._bbox_editing_id = None
                 self._bbox_edit_start = None
 
+        self.setFocus()
         super().mousePressEvent(event)
 
     def mouseReleaseEvent(self, event):
@@ -588,6 +608,24 @@ class ImageCanvas(QGraphicsView):
         self._bbox_editing_id = None
         self._bbox_edit_start = None
         super().mouseReleaseEvent(event)
+
+    def delete_selected_bbox(self):
+        """删除当前选中的边界框"""
+        if not self.selected_item:
+            return
+        item_id = self.selected_item.item_id
+        self.scene.removeItem(self.selected_item)
+        self.bbox_items.remove(self.selected_item)
+        self.selected_item = None
+        self.item_deleted.emit(item_id)
+        self.selection_changed.emit(-1)
+
+    def keyPressEvent(self, event):
+        if event.key() in (Qt.Key_Delete, Qt.Key_Backspace):
+            self.delete_selected_bbox()
+            event.accept()
+            return
+        super().keyPressEvent(event)
 
     def get_cv_image(self) -> Optional[np.ndarray]:
         """获取 OpenCV 图像"""
