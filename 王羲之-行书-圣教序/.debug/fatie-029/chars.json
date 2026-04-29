@@ -13,11 +13,12 @@
       623.0
     ],
     "column": 0,
-    "row": 0
+    "row": 0,
+    "visible": true
   },
   {
-    "id": "5644d796b78aa891ae1f808a960fe50b",
-    "char": "華",
+    "id": "9c2e00b8dba68318e19c9870adcf3847",
+    "char": "等",
     "font": "行书",
     "author": "王羲之",
     "work": "圣教序",
@@ -29,11 +30,12 @@
       893.0
     ],
     "column": 0,
-    "row": 1
+    "row": 1,
+    "visible": true
   },
   {
-    "id": "33108fb0401e9fafd33f868f04af13e6",
-    "char": "春",
+    "id": "9455b89540a08bffa96f6525a8e1e9c7",
+    "char": "奉",
     "font": "行书",
     "author": "王羲之",
     "work": "圣教序",
@@ -45,11 +47,12 @@
       1263.4667405764967
     ],
     "column": 0,
-    "row": 2
+    "row": 2,
+    "visible": true
   },
   {
-    "id": "3f83e76fc1a69fa5037218273cd002a6",
-    "char": "初",
+    "id": "5abd20ba9e795322de4844ed0deabdb9",
+    "char": "勅",
     "font": "行书",
     "author": "王羲之",
     "work": "圣教序",
@@ -61,11 +64,12 @@
       1611.9334811529936
     ],
     "column": 0,
-    "row": 3
+    "row": 3,
+    "visible": true
   },
   {
-    "id": "5c1beb2b49860ca240227f5555f21aba",
-    "char": "閏",
+    "id": "80c15dc395ad1277c0ffb0a4b760dd68",
+    "char": "潤",
     "font": "行书",
     "author": "王羲之",
     "work": "圣教序",
@@ -77,7 +81,8 @@
       1846.7993348115301
     ],
     "column": 0,
-    "row": 4
+    "row": 4,
+    "visible": true
   },
   {
     "id": "e6b6e97160120076c496ef12b9691155",
@@ -87,13 +92,14 @@
     "work": "圣教序",
     "work_dir": "王羲之-行书-圣教序",
     "bbox": [
-      2770.0,
-      1836.39911308204,
-      3055.0,
-      2132.0
+      2794.267184035477,
+      1829.4656319290466,
+      3079.267184035477,
+      2125.0665188470066
     ],
     "column": 0,
-    "row": 5
+    "row": 5,
+    "visible": true
   },
   {
     "id": "7a2496dc02e15417c279dcdf15f153a9",
@@ -109,7 +115,8 @@
       227.0
     ],
     "column": 1,
-    "row": 0
+    "row": 0,
+    "visible": true
   },
   {
     "id": "9b2c075911c55888f2166c4985f011e6",
@@ -125,7 +132,8 @@
       557.6685144124169
     ],
     "column": 1,
-    "row": 1
+    "row": 1,
+    "visible": true
   },
   {
     "id": "834a3f8964c05fd9a6656232c64cf0a5",
@@ -141,7 +149,8 @@
       718.2682926829268
     ],
     "column": 1,
-    "row": 2
+    "row": 2,
+    "visible": true
   },
   {
     "id": "6629dd9c37b6dc709e7fa1a20936423a",
@@ -157,7 +166,8 @@
       994.8015521064303
     ],
     "column": 1,
-    "row": 3
+    "row": 3,
+    "visible": true
   },
   {
     "id": "19864c783bb3813f239042c54611a7c0",
@@ -173,7 +183,8 @@
       1210.9345898004435
     ],
     "column": 1,
-    "row": 4
+    "row": 4,
+    "visible": true
   },
   {
     "id": "920e27d6807b9dbf189e470e3762ea39",
@@ -189,7 +200,8 @@
       1351.0
     ],
     "column": 1,
-    "row": 5
+    "row": 5,
+    "visible": true
   },
   {
     "id": "4a93daf2cd1c6250ed0f5e27dad83996",
@@ -205,7 +217,8 @@
       1607.0
     ],
     "column": 1,
-    "row": 6
+    "row": 6,
+    "visible": true
   },
   {
     "id": "f16c01fe73c66f13ba8b06828d1bf657",
@@ -221,7 +234,8 @@
       1715.3281596452332
     ],
     "column": 1,
-    "row": 7
+    "row": 7,
+    "visible": true
   },
   {
     "id": "271ec10bfec100dbc8b3c4c54144f034",
@@ -237,7 +251,8 @@
       1851.1940133037695
     ],
     "column": 1,
-    "row": 8
+    "row": 8,
+    "visible": true
   },
   {
     "id": "8caff1d0a62e93c2d4b274f4a0a8298b",
@@ -253,7 +268,8 @@
       249.0
     ],
     "column": 2,
-    "row": 0
+    "row": 0,
+    "visible": true
   },
   {
     "id": "fa03b67f4feda85d88df668b6600a664",
@@ -269,11 +285,12 @@
       511.26053215077604
     ],
     "column": 2,
-    "row": 1
+    "row": 1,
+    "visible": true
   },
   {
-    "id": "8d3fc78b35d9ce32694f4e4b7553a857",
-    "char": "倡",
+    "id": "d3743a7ffa9b049db53439771d07a4e1",
+    "char": "侶",
     "font": "行书",
     "author": "王羲之",
     "work": "圣教序",
@@ -285,7 +302,8 @@
       744.7250554323724
     ],
     "column": 2,
-    "row": 2
+    "row": 2,
+    "visible": true
   },
   {
     "id": "641182333e5da55fc558a4fa016e9095",
@@ -301,11 +319,12 @@
       1005.9933481152993
     ],
     "column": 2,
-    "row": 3
+    "row": 3,
+    "visible": true
   },
   {
-    "id": "4de646e1ef17f8c7c6068b4d7a3c380d",
-    "char": "之",
+    "id": "599dfd202fb9a0ce01ae8161dd2d9b83",
+    "char": "立",
     "font": "行书",
     "author": "王羲之",
     "work": "圣教序",
@@ -317,7 +336,8 @@
       1721.0
     ],
     "column": 2,
-    "row": 4
+    "row": 4,
+    "visible": true
   },
   {
     "id": "89d1fc2ac39bf2839f12374d5860c70a",
@@ -333,7 +353,8 @@
       2132.0
     ],
     "column": 2,
-    "row": 5
+    "row": 5,
+    "visible": true
   },
   {
     "id": "bc541dc71a95460ea199146a0ed20c60",
@@ -349,7 +370,8 @@
       225.0
     ],
     "column": 3,
-    "row": 0
+    "row": 0,
+    "visible": true
   },
   {
     "id": "ca53c42f1a351cd1a33b543740ea1b35",
@@ -365,7 +387,8 @@
       543.0
     ],
     "column": 3,
-    "row": 1
+    "row": 1,
+    "visible": true
   },
   {
     "id": "566da5934f1aad8455b01abfa9cfca1d",
@@ -381,7 +404,8 @@
       812.3370288248339
     ],
     "column": 3,
-    "row": 2
+    "row": 2,
+    "visible": true
   },
   {
     "id": "032dc8d228d101f693d165103f65f1b5",
@@ -397,23 +421,8 @@
       1164.9368070953437
     ],
     "column": 3,
-    "row": 3
-  },
-  {
-    "id": "c678cbf545af70a2cf63c56372f8022b",
-    "char": "马",
-    "font": "行书",
-    "author": "王羲之",
-    "work": "圣教序",
-    "work_dir": "王羲之-行书-圣教序",
-    "bbox": [
-      164.09977827051,
-      1938.0199556541022,
-      439.09977827051,
-      2145.6208425720624
-    ],
-    "column": 3,
-    "row": 4
+    "row": 3,
+    "visible": true
   },
   {
     "id": "ce8774d05288c5ba0c3125b36d200648",
@@ -429,7 +438,8 @@
       1394.60088691796
     ],
     "column": 3,
-    "row": 5
+    "row": 5,
+    "visible": true
   },
   {
     "id": "82298613aced1ed52ba1af72a887665e",
@@ -445,11 +455,12 @@
       1616.7339246119732
     ],
     "column": 3,
-    "row": 6
+    "row": 6,
+    "visible": true
   },
   {
-    "id": "2b45f4b6c980a41b62957a5df56acb18",
-    "char": "勤",
+    "id": "0ba3416df3238f1619c414d84fa38fef",
+    "char": "勒",
     "font": "行书",
     "author": "王羲之",
     "work": "圣教序",
@@ -461,11 +472,12 @@
       1883.0
     ],
     "column": 3,
-    "row": 7
+    "row": 7,
+    "visible": true
   },
   {
-    "id": "8b8081fa82a004e0444dc0c5e4c4b4b7",
-    "char": "不",
+    "id": "508939933cc78e5e48799b2d34bf0936",
+    "char": "石",
     "font": "行书",
     "author": "王羲之",
     "work": "圣教序",
@@ -477,7 +489,8 @@
       2132.0
     ],
     "column": 3,
-    "row": 8
+    "row": 8,
+    "visible": true
   },
   {
     "id": "20bb9593e52967ce15a2f77fd877b110",
@@ -493,7 +506,8 @@
       659.0
     ],
     "column": 4,
-    "row": 0
+    "row": 0,
+    "visible": true
   },
   {
     "id": "19c58e81b86a26c05f00ef6728c76bf9",
@@ -509,7 +523,8 @@
       920.0
     ],
     "column": 4,
-    "row": 1
+    "row": 1,
+    "visible": true
   },
   {
     "id": "b473a96f60fbb5c499d14d19035839b9",
@@ -525,7 +540,8 @@
       1175.0
     ],
     "column": 4,
-    "row": 2
+    "row": 2,
+    "visible": true
   },
   {
     "id": "c092c1c0db8819fde167c750cefec7ba",
@@ -538,10 +554,11 @@
       1347.0,
       1175.0,
       1622.0,
-      1493.0
+      1444.4656319290466
     ],
     "column": 4,
-    "row": 3
+    "row": 3,
+    "visible": true
   },
   {
     "id": "39f578ab84cae9cffa1a18a1b1f3b868",
@@ -551,17 +568,18 @@
     "work": "圣教序",
     "work_dir": "王羲之-行书-圣教序",
     "bbox": [
-      1347.0,
-      1493.0,
-      1622.0,
-      1780.0
+      1343.5332594235033,
+      1461.79933481153,
+      1618.5332594235033,
+      1748.79933481153
     ],
     "column": 4,
-    "row": 4
+    "row": 4,
+    "visible": true
   },
   {
-    "id": "2c45fcf067f51c7bc728c65e0ef42448",
-    "char": "葳",
+    "id": "4cf1218f21e6e960cb55db854fe6500b",
+    "char": "藏",
     "font": "行书",
     "author": "王羲之",
     "work": "圣教序",
@@ -573,7 +591,8 @@
       2132.0
     ],
     "column": 4,
-    "row": 5
+    "row": 5,
+    "visible": true
   },
   {
     "id": "5e8df6d7b3adeb220b7a084e96647514",
@@ -589,7 +608,8 @@
       339.0
     ],
     "column": 5,
-    "row": 0
+    "row": 0,
+    "visible": true
   },
   {
     "id": "40b72f7e214523b284b76d11856e1230",
@@ -605,7 +625,8 @@
       653.0
     ],
     "column": 5,
-    "row": 1
+    "row": 1,
+    "visible": true
   },
   {
     "id": "13fde4c38c8ebacb74af7646693b464e",
@@ -621,11 +642,12 @@
       380.0
     ],
     "column": 6,
-    "row": 0
+    "row": 0,
+    "visible": true
   },
   {
-    "id": "a6b4516ba74aa5aa956c6bededf13fe4",
-    "char": "京",
+    "id": "7ee96073080efeea8608fb7bf0f8b978",
+    "char": "字",
     "font": "行书",
     "author": "王羲之",
     "work": "圣教序",
@@ -637,54 +659,7 @@
       2127.8713968957873
     ],
     "column": 7,
-    "row": 0
-  },
-  {
-    "id": "488147375b140d23e2d10d988f60ac1e",
-    "char": "書",
-    "font": "行书",
-    "author": "王羲之",
-    "work": "圣教序",
-    "work_dir": "王羲之-行书-圣教序",
-    "bbox": [
-      509.0,
-      1906.0,
-      791.0,
-      1973.0
-    ],
-    "column": 7,
-    "row": 1
-  },
-  {
-    "id": "b88d4320cf4c9a3b067a4e163afb07e2",
-    "char": "書",
-    "font": "行书",
-    "author": "王羲之",
-    "work": "圣教序",
-    "work_dir": "王羲之-行书-圣教序",
-    "bbox": [
-      509.0,
-      1973.0,
-      791.0,
-      2068.0
-    ],
-    "column": 7,
-    "row": 2
-  },
-  {
-    "id": "3446aa75ea6abe59b579988d79ffa472",
-    "char": "籍",
-    "font": "行书",
-    "author": "王羲之",
-    "work": "圣教序",
-    "work_dir": "王羲之-行书-圣教序",
-    "bbox": [
-      509.0,
-      2068.0,
-      791.0,
-      2132.0
-    ],
-    "column": 7,
-    "row": 3
+    "row": 0,
+    "visible": true
   }
 ]
