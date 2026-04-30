@@ -50,8 +50,12 @@ class UploadResult:
     error: str
 
 
-def collect_upload_items(root: Path, limit: int = 0, keep_dirs: bool = False) -> List[UploadItem]:
-    """扫描 root 下的 webp，返回用于上传的条目列表。"""
+def collect_upload_items(root: Path, limit: int = 0, keep_dirs: bool = False, min_mtime: float = 0) -> List[UploadItem]:
+    """扫描 root 下的 webp，返回用于上传的条目列表。
+
+    Args:
+        min_mtime: 仅返回修改时间 >= 该时间戳的文件（0 表示不限制）
+    """
 
     root = root.expanduser().resolve()
     webps = sorted(_iter_webp_files(root))
@@ -64,8 +68,12 @@ def collect_upload_items(root: Path, limit: int = 0, keep_dirs: bool = False) ->
         try:
             st = p.stat()
             size = int(st.st_size)
+            mtime = st.st_mtime
         except OSError:
             size = -1
+            mtime = 0
+        if min_mtime > 0 and mtime < min_mtime:
+            continue
         public_id = _compute_public_id(rel, keep_dirs=keep_dirs)
         items.append(UploadItem(abs_path=p, rel_path=rel, size_bytes=size, public_id=public_id))
     return items

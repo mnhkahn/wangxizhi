@@ -6,6 +6,7 @@ from typing import List, Optional, Dict, Any
 from PyQt5.QtWidgets import (
     QGraphicsView,
     QGraphicsScene,
+    QGraphicsItem,
     QGraphicsRectItem,
     QGraphicsTextItem,
     QGraphicsPixmapItem,
@@ -85,12 +86,11 @@ class HandleItem(QGraphicsRectItem):
 class BBoxItem(QGraphicsRectItem):
     """可编辑的边界框项"""
 
-    # 调整手柄大小
-    HANDLE_SIZE = 12
     MIN_SIZE = 8
 
     def __init__(self, x: float, y: float, width: float, height: float,
-                 char: str = "", item_id: int = 0):
+                 char: str = "", item_id: int = 0,
+                 pen_width: int = 2, font_size: int = 12):
         # 使用 setPos + local rect(0,0,w,h) 的方式，避免移动后 bbox 计算错误
         super().__init__(0, 0, width, height)
         self.setPos(x, y)
@@ -99,6 +99,10 @@ class BBoxItem(QGraphicsRectItem):
         self.char = char
         self._selected = False
         self._highlighted = False
+        self._pen_width = pen_width
+        self._font_size = font_size
+        # 手柄大小随线宽缩放
+        self.HANDLE_SIZE = max(8, int(pen_width * 3))
         # 基础层级：用于重叠时保持稳定排序；选中时会临时置顶
         self._base_z = float(item_id)
         self._resizing = False
@@ -110,19 +114,20 @@ class BBoxItem(QGraphicsRectItem):
         self._move_start_bbox: List[float] | None = None
 
         # 设置默认样式
-        self.setPen(QPen(QColor(0, 255, 0), 2))
+        self.setPen(QPen(QColor(0, 255, 0), pen_width))
         self.setBrush(QBrush(Qt.NoBrush))
         self.setFlag(QGraphicsRectItem.ItemIsSelectable, True)
         self.setFlag(QGraphicsRectItem.ItemIsMovable, True)
         self.setFlag(QGraphicsRectItem.ItemSendsGeometryChanges, True)
         self.setZValue(self._base_z)
 
-        # 字符标签
+        # 字符标签（固定屏幕大小，不随视图缩放）
         self.label = QGraphicsTextItem(char, self)
         self.label.setDefaultTextColor(QColor(255, 0, 0))
-        self.label.setFont(QFont("Arial", 12, QFont.Bold))
-        self.label.setPos(0, -20)
+        self.label.setFont(QFont("Arial", 14, QFont.Bold))
+        self.label.setPos(0, -16)
         self.label.setZValue(10)
+        self.label.setFlag(QGraphicsItem.ItemIgnoresTransformations, True)
 
         # 调整手柄
         self.handles = []
@@ -131,7 +136,7 @@ class BBoxItem(QGraphicsRectItem):
     def _create_handles(self):
         """创建调整手柄"""
         handle_brush = QBrush(QColor(255, 255, 255))
-        handle_pen = QPen(QColor(0, 0, 0), 1)
+        handle_pen = QPen(QColor(0, 0, 0), max(1, self._pen_width // 2))
 
         for pos in ["nw", "n", "ne", "e", "se", "s", "sw", "w"]:
             handle = HandleItem(pos, self)
@@ -170,14 +175,14 @@ class BBoxItem(QGraphicsRectItem):
 
     def _apply_pen(self):
         """根据选中/高亮状态应用边框样式"""
+        pw = self._pen_width
         if self._selected:
-            width = 4 if self._highlighted else 3
-            self.setPen(QPen(QColor(255, 0, 0), width))
+            self.setPen(QPen(QColor(255, 0, 0), pw))
         else:
             if self._highlighted:
-                self.setPen(QPen(QColor(255, 165, 0), 4))
+                self.setPen(QPen(QColor(255, 165, 0), pw))
             else:
-                self.setPen(QPen(QColor(0, 255, 0), 2))
+                self.setPen(QPen(QColor(0, 255, 0), pw))
 
     def set_selected(self, selected: bool):
         """设置选中状态"""
@@ -352,6 +357,8 @@ class ImageCanvas(QGraphicsView):
         # 边界框项
         self.bbox_items: List[BBoxItem] = []
         self.selected_item: Optional[BBoxItem] = None
+        self._pen_width = 2
+        self._font_size = 12
 
         # bbox 编辑追踪（用于撤销）
         self._bbox_editing_id: Optional[int] = None
@@ -402,6 +409,10 @@ class ImageCanvas(QGraphicsView):
         # 创建 QPixmap
         pixmap = QPixmap.fromImage(self._q_image)
 
+        # 根据图片尺寸计算框线粗细和字体大小
+        self._pen_width = max(2, min(w, h) // 200)
+        self._font_size = max(8, min(w, h) // 80)
+
         # 清除场景并添加图片
         self.scene.clear()
         self.image_item = self.scene.addPixmap(pixmap)
@@ -417,6 +428,9 @@ class ImageCanvas(QGraphicsView):
     def load_from_array(self, image: np.ndarray):
         """从 numpy 数组加载图片"""
         self.cv_image = image.copy()
+        h, w = image.shape[:2]
+        self._pen_width = max(2, min(w, h) // 200)
+        self._font_size = max(8, min(w, h) // 80)
 
         # 转换为 RGB
         if len(image.shape) == 3:
@@ -492,7 +506,8 @@ class ImageCanvas(QGraphicsView):
     def add_bbox(self, x: float, y: float, width: float, height: float,
                  char: str = "", item_id: int = 0, highlight: bool = False) -> BBoxItem:
         """添加边界框"""
-        bbox = BBoxItem(x, y, width, height, char, item_id)
+        bbox = BBoxItem(x, y, width, height, char, item_id,
+                        pen_width=self._pen_width, font_size=self._font_size)
         if highlight:
             bbox.set_highlight(True)
         self.scene.addItem(bbox)

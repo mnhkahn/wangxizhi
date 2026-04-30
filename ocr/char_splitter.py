@@ -1,6 +1,11 @@
 """
 单字分割模块
 支持多种分割策略：均匀分割、像素投影、混合策略
+
+v2 改进：
+1. 多参数组合尝试（窗口大小、搜索范围），自动选优
+2. 分割稳定性评分（变异系数 + 分割点笔画密度）
+3. 保留所有原有接口
 """
 
 from typing import List, Tuple, Optional, Dict, Any
@@ -40,12 +45,11 @@ class CharSplitter:
             method: 分割方法
             min_char_height: 最小字高度（像素）
             margin_ratio: 均分边距比例
-            projection_threshold_ratio: 投影阈值比例
+            projection_threshold_ratio: 投影阈值比例（保留兼容，不再使用）
         """
         self.method = method
         self.min_char_height = min_char_height
         self.margin_ratio = margin_ratio
-        self.projection_threshold_ratio = projection_threshold_ratio
 
     def split_column(
         self,
@@ -79,10 +83,8 @@ class CharSplitter:
             return result, "pixel_projection"
 
         else:  # HYBRID
-            # 先尝试像素投影
             result = self._pixel_projection_split(image, col_bbox, char_count, debug)
 
-            # 验证结果：如果分割数量与文字数量不匹配，回退到均分
             if len(result) != char_count:
                 if debug:
                     print(f"[SPLIT] 像素投影失败: 期望 {char_count} 个字, 检测到 {len(result)} 个段落")
@@ -96,28 +98,14 @@ class CharSplitter:
         bbox: List[float],
         char_count: int,
     ) -> List[List[float]]:
-        """
-        均匀分割
-
-        书法特点：文字间隔相对均匀，均分效果可接受
-
-        Args:
-            bbox: 列边界框 [x1, y1, x2, y2]
-            char_count: 字数
-
-        Returns:
-            单字边界框列表
-        """
+        """均匀分割"""
         if char_count <= 0:
             return []
 
         x1, y1, x2, y2 = bbox
         height = y2 - y1
-
-        # 计算边距（处理书法文字的微小变化）
         margin = height * self.margin_ratio
         effective_height = height - margin * 2
-
         char_height = effective_height / char_count
 
         char_bboxes = []
@@ -139,23 +127,12 @@ class CharSplitter:
         改进的像素投影分割
 
         改进点：
-        1. 自适应二值化（替代固定阈值）
-        2. 高斯平滑投影曲线
-        3. 寻找局部最小值作为分割点
-        4. 使用字数作为约束
-
-        Args:
-            image: 原图
-            col_bbox: 列边界框
-            char_count: 字数
-            debug: 是否输出调试信息
-
-        Returns:
-            单字边界框列表
+        1. 尝试多种窗口大小（11, 21）和搜索范围（30%, 50%）
+        2. 选择变异系数最低 + 分割点笔画密度最低的组合
+        3. 保留自适应高斯二值化（已验证对书法有效）
         """
         x1, y1, x2, y2 = [int(v) for v in col_bbox]
 
-        # 边界检查
         if image is None:
             return self._uniform_split(col_bbox, char_count)
 
@@ -166,45 +143,74 @@ class CharSplitter:
         if x2 <= x1 or y2 <= y1:
             return self._uniform_split(col_bbox, char_count)
 
-        # 裁剪列区域
         col_region = image[y1:y2, x1:x2]
 
-        # 转灰度
         if len(col_region.shape) == 3:
             gray = cv2.cvtColor(col_region, cv2.COLOR_BGR2GRAY)
         else:
             gray = col_region
 
-        # 自适应二值化
-        try:
-            binary = cv2.adaptiveThreshold(
-                gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
-                cv2.THRESH_BINARY_INV, 11, 2
-            )
-        except cv2.error:
-            # 如果自适应二值化失败，使用固定阈值
-            _, binary = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY_INV)
+        col_h = y2 - y1
 
-        # 水平投影
-        projection = np.sum(binary, axis=1).astype(float)
+        # 尝试多种参数组合，选择最优
+        best_result = None
+        best_score = float('inf')
+        best_params = None
 
-        # 平滑投影曲线
-        kernel_size = max(5, int((y2 - y1) / char_count / 4))
-        kernel = np.ones(kernel_size) / kernel_size
-        smoothed = np.convolve(projection, kernel, mode='same')
+        # 检测黑底白字（碑帖拓片）还是白底黑字
+        is_dark_bg = float(np.mean(gray)) < 128
+        thresh_type = cv2.THRESH_BINARY if is_dark_bg else cv2.THRESH_BINARY_INV
 
-        # 寻找分割点
-        split_points = self._find_split_points(smoothed, char_count, debug)
+        for window in [11, 21]:
+            for search_ratio in [0.3, 0.5]:
+                try:
+                    binary = cv2.adaptiveThreshold(
+                        gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                        thresh_type, window, 2
+                    )
+                except cv2.error:
+                    continue
 
-        if len(split_points) != char_count + 1:
-            # 分割点数量不匹配
+                projection = np.sum(binary, axis=1).astype(float)
+
+                # 平滑
+                kernel_size = max(5, int(col_h / char_count / 4))
+                if kernel_size % 2 == 0:
+                    kernel_size += 1
+                kernel = np.ones(kernel_size) / kernel_size
+                smoothed = np.convolve(projection, kernel, mode='same')
+
+                split_points = self._find_split_points(
+                    smoothed, char_count, search_ratio
+                )
+                if len(split_points) != char_count + 1:
+                    continue
+
+                heights = [split_points[i+1] - split_points[i] for i in range(char_count)]
+                avg_h = np.mean(heights)
+                if avg_h <= 0:
+                    continue
+                cv = np.std(heights) / avg_h
+
+                # 评分：CV 越低越好，分割点处笔画密度越低越好
+                split_score = self._score_split(smoothed, split_points)
+                score = cv * 100 + split_score / (np.max(smoothed) + 1)
+
+                if score < best_score:
+                    best_score = score
+                    best_result = split_points
+                    best_params = (window, search_ratio)
+
+        if best_result is None:
             return self._uniform_split(col_bbox, char_count)
 
-        # 生成 bbox
+        if debug:
+            print(f"[SPLIT] 最优参数: window={best_params[0]}, search={best_params[1]}, score={best_score:.1f}")
+
         char_bboxes = []
         for i in range(char_count):
-            char_y1 = y1 + split_points[i]
-            char_y2 = y1 + split_points[i + 1]
+            char_y1 = y1 + best_result[i]
+            char_y2 = y1 + best_result[i + 1]
             char_bboxes.append([float(x1), float(char_y1), float(x2), float(char_y2)])
 
         return char_bboxes
@@ -213,39 +219,22 @@ class CharSplitter:
         self,
         projection: np.ndarray,
         target_count: int,
-        debug: bool = False,
+        search_ratio: float = 0.3,
     ) -> List[int]:
-        """
-        寻找分割点
-
-        策略：找到 target_count + 1 个分割点（包括起点和终点）
-
-        Args:
-            projection: 投影曲线
-            target_count: 目标字数
-            debug: 是否输出调试信息
-
-        Returns:
-            分割点列表（y坐标）
-        """
+        """寻找分割点，支持动态搜索范围"""
         length = len(projection)
 
         if target_count <= 0:
             return [0, length]
-
         if target_count == 1:
             return [0, length]
 
-        # 计算期望的字符高度
         expected_height = length / target_count
+        search_range = int(expected_height * search_ratio)
 
         split_points = [0]
-
         for i in range(1, target_count):
-            # 在期望位置附近搜索局部最小值
             center = int(i * expected_height)
-            search_range = int(expected_height * 0.3)
-
             start = max(split_points[-1] + self.min_char_height,
                        center - search_range)
             end = min(length - self.min_char_height, center + search_range)
@@ -254,17 +243,35 @@ class CharSplitter:
                 split_points.append(center)
                 continue
 
-            # 找局部最小值
             local_region = projection[start:end]
             local_min_idx = np.argmin(local_region)
             split_points.append(start + local_min_idx)
 
         split_points.append(length)
 
-        if debug:
-            print(f"[SPLIT] 找到 {len(split_points)} 个分割点: {split_points}")
+        # 确保递增且满足最小高度
+        adjusted = [split_points[0]]
+        for i in range(1, len(split_points) - 1):
+            min_y = adjusted[-1] + self.min_char_height
+            max_y = length - self.min_char_height * (target_count - i)
+            if split_points[i] < min_y:
+                split_points[i] = min_y
+            elif split_points[i] > max_y:
+                split_points[i] = max_y
+            adjusted.append(split_points[i])
+        adjusted.append(split_points[-1])
 
-        return split_points
+        return adjusted
+
+    def _score_split(self, projection, split_points):
+        """评分：分割点处笔画密度越低越好"""
+        score = 0
+        for sp in split_points[1:-1]:
+            w = 3
+            start = max(0, sp - w)
+            end = min(len(projection), sp + w + 1)
+            score += np.mean(projection[start:end])
+        return score
 
 
 def split_column_to_chars(

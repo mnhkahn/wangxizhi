@@ -134,9 +134,14 @@ class CharItemManager:
         self.clear()
         char_results = result.get("char_results", [])
         for i, char_data in enumerate(char_results):
+            # chars.json 的 id 字段可能是 uuid 字符串，优先从这里取
+            raw_id = char_data.get("id", 0)
+            uuid_val = str(char_data.get("uuid") or "")
+            if isinstance(raw_id, str) and not uuid_val:
+                uuid_val = raw_id
             item = CharItem(
                 id=i,
-                uuid=str(char_data.get("uuid") or ""),
+                uuid=uuid_val,
                 char=char_data.get("char", ""),
                 bbox=char_data.get("bbox", [0, 0, 0, 0]).copy(),
                 column=char_data.get("column", 0),

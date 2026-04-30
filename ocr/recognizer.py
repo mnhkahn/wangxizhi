@@ -225,6 +225,15 @@ class CalligraphyOCR:
         # 裁剪出列区域
         col_region = image[y1:y2, x1:x2]
 
+        # 检测黑底白字（碑帖拓片）还是白底黑字
+        if len(col_region.shape) == 3:
+            gray_region = cv2.cvtColor(col_region, cv2.COLOR_BGR2GRAY)
+        else:
+            gray_region = col_region
+        is_dark_bg = float(np.mean(gray_region)) < 128
+        if debug and is_dark_bg:
+            print(f"[SPLIT] 检测到黑底白字，反转亮度判断逻辑")
+
         # 计算每行的像素投影（亮度累加）
         row_height = y2 - y1
         row_projection = []
@@ -235,8 +244,14 @@ class CalligraphyOCR:
                 # BGR 转 亮度
                 b, g, r = col_region[row, col]
                 lum = self._calculate_luminance(b, g, r)
-                if lum < threshold:  # 深色像素（文字）
-                    dark_count += 1
+                if is_dark_bg:
+                    # 黑底白字：亮度高的是文字
+                    if lum > threshold:
+                        dark_count += 1
+                else:
+                    # 白底黑字：亮度低的是文字
+                    if lum < threshold:
+                        dark_count += 1
             row_projection.append(dark_count)
 
         # 找到分割点（投影为0或接近0的行）
@@ -423,6 +438,63 @@ class CalligraphyOCR:
         return results
 
     @staticmethod
+    def _has_chinese(text: str) -> bool:
+        """检查文本是否包含至少一个汉字（CJK Unified Ideographs）"""
+        return any('\u4e00' <= c <= '\u9fff' for c in text)
+
+    def _filter_garbage_columns(
+        self,
+        columns: List[Dict[str, Any]],
+        debug: bool = False,
+    ) -> List[Dict[str, Any]]:
+        """
+        过滤不含汉字的垃圾列（如 LaTeX 公式、印章误识别等）
+        保留：包含至少一个汉字的列
+        丢弃：完全不含汉字的列
+        """
+        filtered = []
+        for col in columns:
+            text = col.get("text", "")
+            if self._has_chinese(text):
+                filtered.append(col)
+            elif debug:
+                print(f"[FILTER] 丢弃垃圾列: '{text[:40]}'")
+        if debug and len(filtered) < len(columns):
+            print(f"[FILTER] 列过滤: {len(columns)} -> {len(filtered)}")
+        return filtered
+
+    def _filter_garbage_chars(
+        self,
+        char_results: List[Dict[str, Any]],
+        debug: bool = False,
+    ) -> List[Dict[str, Any]]:
+        """
+        仅保留汉字（CJK Unified Ideographs），丢弃所有非汉字字符。
+        """
+        filtered = []
+        for r in char_results:
+            char = r.get("char", "")
+            bbox = r.get("bbox", [0, 0, 0, 0])
+            h = bbox[3] - bbox[1]
+            w = bbox[2] - bbox[0]
+
+            is_chinese = '一' <= char <= '鿿'
+            if is_chinese:
+                filtered.append(r)
+            else:
+                if debug:
+                    print(f"[FILTER] 丢弃非汉字: '{char}'")
+
+
+        # 重新编号
+        for i, r in enumerate(filtered):
+            r["global_index"] = i
+
+        if debug and len(filtered) < len(char_results):
+            print(f"[FILTER] 单字过滤: {len(char_results)} -> {len(filtered)}")
+        return filtered
+
+    @staticmethod
     def _deduplicate_columns(columns: List[Dict[str, Any]], iou_threshold: float = 0.6) -> List[Dict[str, Any]]:
         """基于 bbox IOU 去重：重叠度超过阈值视为同一列的重复识别，保留第一个。"""
         def _iou(a, b):
@@ -490,6 +562,7 @@ class CalligraphyOCR:
         # Step 3: 解析API结果 - 获取识别的文字和坐标
         parsed_results = self._parse_markdown_result(response)
         parsed_results = self._deduplicate_columns(parsed_results)
+        parsed_results = self._filter_garbage_columns(parsed_results, debug=debug)
 
         # 绘制带坐标的预览图
         log_step("03_parsed_text", {"columns": len(parsed_results)}, output_dir, debug,
@@ -502,6 +575,7 @@ class CalligraphyOCR:
 
         # Step 5: 使用列坐标数据和像素投影法拆分单字
         char_results = self._split_columns_to_chars(parsed_results, image=image, debug=debug)
+        char_results = self._filter_garbage_chars(char_results, debug=debug)
 
         log_step("05_char_results", {"chars": len(char_results)}, output_dir, debug,
                  title=f"单字结果 ({len(char_results)}字)")

@@ -4,6 +4,7 @@
 
 import os
 import json
+import time
 from typing import Optional, List
 from pathlib import Path
 import uuid
@@ -370,6 +371,7 @@ class UploadWebPWorker(QThread):
         concurrency: int = 4,
         mock_upload: bool = False,
         selected_image: str = "",
+        min_mtime: float = 0.0,
         parent=None,
     ):
         super().__init__(parent)
@@ -384,6 +386,7 @@ class UploadWebPWorker(QThread):
         self.concurrency = int(concurrency or 4)
         self.mock_upload = bool(mock_upload)
         self.selected_image = selected_image  # 选中的图片路径，用于精确过滤
+        self.min_mtime = float(min_mtime or 0.0)
 
     def run(self):
         try:
@@ -396,7 +399,7 @@ class UploadWebPWorker(QThread):
             from upload_webp_cloudinary import collect_upload_items, upload_items
 
             root = Path(self.scan_root).expanduser().resolve()
-            items = collect_upload_items(root, limit=0, keep_dirs=False)
+            items = collect_upload_items(root, limit=0, keep_dirs=False, min_mtime=self.min_mtime)
             # 尽量只上传导出产物：*/words/*.webp
             items = [it for it in items if "/words/" in ("/" + it.rel_path.replace("\\", "/") + "/")]
 
@@ -487,6 +490,37 @@ class UploadWebPWorker(QThread):
             total = len(results)
             ok_cnt = sum(1 for r in results if r.ok)
             fail_cnt = total - ok_cnt
+
+            # 写入上传日志
+            try:
+                log_dir = Path(__file__).parent.parent / "ocr_output"
+                log_dir.mkdir(parents=True, exist_ok=True)
+                log_path = log_dir / "upload_log.jsonl"
+                log_entry = {
+                    "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                    "scan_root": str(root),
+                    "cloud_name": self.cloud_name,
+                    "remote_folder": self.remote_folder,
+                    "mock_upload": self.mock_upload,
+                    "total": total,
+                    "ok": ok_cnt,
+                    "fail": fail_cnt,
+                    "results": [
+                        {
+                            "rel_path": r.rel_path,
+                            "public_id": r.public_id,
+                            "ok": r.ok,
+                            "url": r.url,
+                            "error": r.error,
+                        }
+                        for r in results
+                    ],
+                }
+                with open(log_path, "a", encoding="utf-8") as f:
+                    f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
+            except Exception:
+                pass
+
             self.finished.emit(total, ok_cnt, fail_cnt, table)
         except Exception as e:
             self.error.emit(str(e))
@@ -962,6 +996,28 @@ class MainWindow(QMainWindow):
 
         return cloud_name, api_key, api_secret, upload_preset, unsigned, remote_folder
 
+    def _last_upload_time_path(self) -> Path:
+        return Path(__file__).parent.parent / "ocr_output" / "last_upload_time.txt"
+
+    def _read_last_upload_time(self) -> float:
+        """读取上次上传时间戳。没有记录则返回 20 分钟前。"""
+        path = self._last_upload_time_path()
+        if path.exists():
+            try:
+                return float(path.read_text(encoding="utf-8").strip())
+            except Exception:
+                pass
+        return time.time() - 20 * 60
+
+    def _write_last_upload_time(self, ts: float) -> None:
+        """写入上次上传时间戳。"""
+        try:
+            path = self._last_upload_time_path()
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(str(ts), encoding="utf-8")
+        except Exception:
+            pass
+
     def upload_exported_webps(self):
         """批量上传导出的 webp（默认扫描 */words/*.webp）。"""
 
@@ -1007,6 +1063,91 @@ class MainWindow(QMainWindow):
 
         scan_root, selected_image = self._resolve_upload_scan_root()
 
+        # 先扫描，统计数量
+        import sys
+        project_root = Path(__file__).parent.parent
+        if str(project_root) not in sys.path:
+            sys.path.insert(0, str(project_root))
+        from upload_webp_cloudinary import collect_upload_items
+
+        root = Path(scan_root).expanduser().resolve()
+        all_items = collect_upload_items(root, limit=0, keep_dirs=False)
+        all_items = [it for it in all_items if "/words/" in ("/" + it.rel_path.replace("\\", "/") + "/")]
+
+        # 如果指定了选中图片，按 chars.json 的 id 过滤
+        if selected_image:
+            selected_stem = Path(selected_image).stem
+            chars_path = Path(selected_image).parent / ".debug" / selected_stem / "chars.json"
+            allowed_ids = set()
+            if chars_path.exists():
+                try:
+                    with open(chars_path, "r", encoding="utf-8") as f:
+                        chars_data = json.load(f)
+                    if isinstance(chars_data, list):
+                        for rec in chars_data:
+                            if isinstance(rec, dict) and rec.get("id"):
+                                allowed_ids.add(rec["id"])
+                except Exception:
+                    pass
+            if allowed_ids:
+                all_items = [it for it in all_items if Path(it.rel_path).stem in allowed_ids]
+            else:
+                all_items = []
+
+        if not all_items:
+            QMessageBox.information(self, "上传", "未找到可上传的 webp（仅匹配 */words/*.webp）")
+            return
+
+        # 读取上次上传时间
+        last_upload_time = self._read_last_upload_time()
+        last_upload_str = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(last_upload_time))
+        recent_items = [it for it in all_items if it.abs_path.stat().st_mtime >= last_upload_time]
+
+        # 按字帖分组
+        def _group(items):
+            groups = {}
+            for it in items:
+                parts = it.rel_path.replace("\\", "/").split("/")
+                work = parts[0] if parts else it.rel_path
+                groups[work] = groups.get(work, 0) + 1
+            return groups
+
+        all_groups = _group(all_items)
+        recent_groups = _group(recent_items)
+
+        def _fmt(groups, total):
+            lines = [f"总计: {total} 张"]
+            if groups:
+                lines.append("")
+                for k, v in sorted(groups.items()):
+                    lines.append(f"  {k}: {v} 张")
+            return "\n".join(lines)
+
+        all_text = _fmt(all_groups, len(all_items))
+        recent_text = _fmt(recent_groups, len(recent_items))
+
+        msg_box = QMessageBox(self)
+        msg_box.setWindowTitle("选择上传方式")
+        msg_box.setText("请选择要上传的文件范围：")
+        info = f"【全量上传】\n{all_text}\n\n【增量上传（上次上传后新增/修改）】\n上次上传时间: {last_upload_str}\n{recent_text}"
+        msg_box.setInformativeText(info)
+
+        btn_all = msg_box.addButton("全量上传", QMessageBox.AcceptRole)
+        btn_recent = msg_box.addButton("增量上传", QMessageBox.AcceptRole)
+        btn_cancel = msg_box.addButton("取消", QMessageBox.RejectRole)
+
+        msg_box.exec_()
+
+        if msg_box.clickedButton() == btn_cancel:
+            return
+        elif msg_box.clickedButton() == btn_recent:
+            since_minutes = -1  # 特殊标记：使用 last_upload_time
+            if not recent_items:
+                QMessageBox.information(self, "上传", f"{last_upload_str} 之后没有新增或修改的 webp")
+                return
+        else:
+            since_minutes = 0
+
         # 构建状态文本
         if selected_image:
             status_text = f"正在上传单页: {Path(selected_image).name}"
@@ -1016,9 +1157,11 @@ class MainWindow(QMainWindow):
             status_text = "正在扫描并上传所有 webp..."
         self.status_label.setText(status_text)
         self.progress_bar.setVisible(True)
-        self.progress_bar.setRange(0, 0)  # indeterminate，直到知道 total
+        self.progress_bar.setRange(0, 0)
         self._set_upload_actions_enabled(False)
 
+        # 根据选择决定 min_mtime
+        min_mtime = float(last_upload_time if since_minutes == -1 else 0.0)
         self.upload_worker = UploadWebPWorker(
             scan_root=scan_root,
             cloud_name=cloud_name,
@@ -1031,6 +1174,7 @@ class MainWindow(QMainWindow):
             concurrency=4,
             mock_upload=mock_upload,
             selected_image=selected_image,
+            min_mtime=min_mtime,
             parent=self,
         )
         self.upload_worker.progress.connect(self._on_upload_progress)
@@ -1053,6 +1197,10 @@ class MainWindow(QMainWindow):
         if total == 0:
             QMessageBox.information(self, "上传", "未找到可上传的 webp（仅匹配 */words/*.webp）")
             return
+
+        # 有成功上传的，更新上次上传时间
+        if ok_count > 0:
+            self._write_last_upload_time(time.time())
 
         box = QMessageBox(self)
         box.setWindowTitle("上传结果")
@@ -1093,6 +1241,9 @@ class MainWindow(QMainWindow):
         self.property_panel.visible_changed.connect(self._on_property_visible_changed)
         self.property_panel.row_changed.connect(self._on_property_row_changed)
         self.property_panel.column_changed.connect(self._on_property_column_changed)
+
+        # 预览框上传
+        self.char_preview.upload_requested.connect(self._on_preview_upload_requested)
 
     def open_image(self):
         """打开图片"""
@@ -1510,13 +1661,14 @@ class MainWindow(QMainWindow):
 
         char_data = []
         for r in sorted(self.char_manager.items, key=lambda x: (x.column, x.row)):
-            # 使用 char+work_dir+图片名称+column+row 生成 MD5 作为唯一 ID
-            md5_input = f"{r.char}_{work_dir_name}_{image_name}_{r.column}_{r.row}"
-            md5_hash = hashlib.md5(md5_input.encode("utf-8")).hexdigest()
-            r.uuid = md5_hash
+            # 已有 uuid 的保留不动，避免和已导出的 webp / SQLite / 云端对不上
+            if not r.uuid:
+                md5_input = f"{r.char}_{work_dir_name}_{image_name}_{r.column}_{r.row}"
+                r.uuid = hashlib.md5(md5_input.encode("utf-8")).hexdigest()
             char_data.append(
                 {
-                    "id": md5_hash,
+                    "id": r.uuid,
+                    "uuid": r.uuid,
                     "char": r.char,
                     # 元数据字段使用英文
                     "font": self.current_font or "楷书",
@@ -2111,7 +2263,82 @@ class MainWindow(QMainWindow):
             return
         img = self.image_canvas.get_cv_image()
         meta = f"id: {item.id} | 列{item.column} 行{item.row} | idx {item.global_index}"
+        if self.current_image_path:
+            uuid_val = item.uuid or str(item.id)
+            webp_path = Path(self.current_image_path).parent / "words" / f"{uuid_val}.webp"
+            if webp_path.exists():
+                name = webp_path.name
+                # 长文件名每隔 24 个字符插入换行，避免 QLabel 不换行
+                if len(name) > 24:
+                    name = "\n".join(name[i : i + 24] for i in range(0, len(name), 24))
+                meta += f"\n已导出：{name}"
         self.char_preview.update_preview(img, item.char, item.bbox, meta=meta)
+
+    def _on_preview_upload_requested(self):
+        """预览框点击上传：只上传当前选中的单字"""
+        if not self.current_image_path:
+            QMessageBox.warning(self, "上传", "请先打开一张图片")
+            return
+
+        # 获取当前选中的字
+        selected_bbox = self.image_canvas.selected_item
+        if not selected_bbox:
+            QMessageBox.warning(self, "上传", "请先选中一个字")
+            return
+
+        item = self.char_manager.get_item(selected_bbox.item_id)
+        if not item:
+            QMessageBox.warning(self, "上传", "未找到当前字的记录")
+            return
+
+        uuid_val = item.uuid or str(item.id)
+        work_dir = Path(self.current_image_path).parent
+        webp_path = work_dir / "words" / f"{uuid_val}.webp"
+        if not webp_path.exists():
+            QMessageBox.warning(self, "上传", f"未找到导出的 webp：{webp_path.name}\n请先导出再上传")
+            return
+
+        # 读取配置
+        cloud_name, api_key, api_secret, upload_preset, unsigned, remote_folder = self._read_upload_config_from_env()
+        if not cloud_name:
+            QMessageBox.warning(self, "上传", "未配置 Cloudinary cloud_name")
+            return
+
+        # 上传
+        self.status_label.setText(f"正在上传：{item.char} ({webp_path.name})")
+        try:
+            from upload_webp_cloudinary import collect_upload_items, upload_items, UploadItem
+
+            # public_id 保持和批量上传一致：words__<uuid>
+            public_id = f"words__{uuid_val}"
+            it = UploadItem(
+                abs_path=webp_path,
+                rel_path=webp_path.name,
+                size_bytes=webp_path.stat().st_size,
+                public_id=public_id,
+            )
+            results = upload_items(
+                items=[it],
+                cloud_name=cloud_name,
+                api_key=api_key,
+                api_secret=api_secret,
+                unsigned=unsigned,
+                upload_preset=upload_preset,
+                folder=remote_folder,
+                timeout_s=60,
+                concurrency=1,
+            )
+            r = results[0]
+            if r.ok:
+                self.status_label.setText(f"上传成功：{item.char} → {r.url}")
+                QMessageBox.information(self, "上传成功", f"字：{item.char}\nURL：{r.url}")
+            else:
+                self.status_label.setText(f"上传失败：{r.error}")
+                QMessageBox.warning(self, "上传失败", f"字：{item.char}\n错误：{r.error}")
+                QMessageBox.warning(self, "上传失败", f"字：{item.char}\n错误：{r.error}")
+        except Exception as e:
+            self.status_label.setText(f"上传异常：{e}")
+            QMessageBox.warning(self, "上传异常", str(e))
 
     def _on_work_tree_visibility_changed(self, visible: bool):
         """字帖树折叠/展开后，调整 splitter 空间"""

@@ -8,13 +8,15 @@ from typing import Optional, List
 
 import cv2
 import numpy as np
-from PyQt5.QtCore import Qt, QTimer
+from PyQt5.QtCore import Qt, QTimer, pyqtSignal
 from PyQt5.QtGui import QImage, QPixmap, QFont
-from PyQt5.QtWidgets import QWidget, QVBoxLayout, QLabel, QFrame, QSizePolicy
+from PyQt5.QtWidgets import QWidget, QVBoxLayout, QLabel, QFrame, QSizePolicy, QPushButton, QHBoxLayout
 
 
 class CharPreviewWidget(QWidget):
     """字符预览组件"""
+
+    upload_requested = pyqtSignal()  # 请求上传当前字
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -34,16 +36,24 @@ class CharPreviewWidget(QWidget):
         self.image_label = QLabel()
         self.image_label.setFrameShape(QFrame.Box)
         self.image_label.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
-        self.image_label.setMinimumHeight(220)
+        self.image_label.setMinimumHeight(80)
         self.image_label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         layout.addWidget(self.image_label, 1)
 
         self.info_label = QLabel("")
         self.info_label.setWordWrap(True)
         self.info_label.setStyleSheet("color: gray;")
-        # 固定信息区高度，避免内容变化导致预览区整体抖动
-        self.info_label.setFixedHeight(54)
         layout.addWidget(self.info_label)
+
+        # 上传按钮
+        btn_row = QHBoxLayout()
+        self.upload_btn = QPushButton("上传")
+        self.upload_btn.setEnabled(False)
+        self.upload_btn.clicked.connect(self.upload_requested.emit)
+        btn_row.addStretch(1)
+        btn_row.addWidget(self.upload_btn)
+        btn_row.addStretch(1)
+        layout.addLayout(btn_row)
 
         layout.addStretch(0)
 
@@ -60,6 +70,7 @@ class CharPreviewWidget(QWidget):
         self.char_label.setText("(未选中)")
         self.image_label.clear()
         self.info_label.setText("")
+        self.upload_btn.setEnabled(False)
         self._last_image_bgr = None
         self._last_char = ""
         self._last_bbox = []
@@ -96,18 +107,22 @@ class CharPreviewWidget(QWidget):
         ch = rgb.shape[2]
         qimg = QImage(rgb.data, rgb.shape[1], rgb.shape[0], ch * rgb.shape[1], QImage.Format_RGB888)
         pix = QPixmap.fromImage(qimg)
-        # 预览不截断：保持比例“完整展示”（可能出现留白）
-        pix = pix.scaled(
-            self.image_label.size(),
+        # 按标签宽度等比例缩放，标签高度自适应（减少上下空白）
+        label_w = max(self.image_label.width(), 80)
+        scaled_h = int(pix.height() * label_w / max(pix.width(), 1))
+        scaled_pix = pix.scaled(
+            label_w, scaled_h,
             Qt.KeepAspectRatio,
             Qt.SmoothTransformation,
         )
-        self.image_label.setPixmap(pix)
+        self.image_label.setPixmap(scaled_pix)
+        self.image_label.setFixedHeight(min(max(scaled_pix.height(), 80), 300))
 
         info = f"bbox: [{x1}, {y1}, {x2}, {y2}]"
         if meta:
             info = meta + "\n" + info
         self.info_label.setText(info)
+        self.upload_btn.setEnabled(True)
 
     def resizeEvent(self, event):
         # 当预览框尺寸变化（例如 minimize / 窗口缩放）时，按新尺寸重新渲染。
