@@ -30,6 +30,8 @@ class PropertyPanel(QWidget):
     author_changed = pyqtSignal(str)  # 作者（每张图）
     work_changed = pyqtSignal(str)  # 作品（每张图）
     visible_changed = pyqtSignal(int, bool)  # item_id, visible
+    row_changed = pyqtSignal(int, int)  # item_id, row
+    column_changed = pyqtSignal(int, int)  # item_id, column
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -134,6 +136,26 @@ class PropertyPanel(QWidget):
         row_h.addWidget(self.height_spin, 1)
         outer.addLayout(row_h)
 
+        # 列
+        row_col = QHBoxLayout()
+        row_col.setSpacing(10)
+        row_col.addWidget(QLabel("列:"))
+        self.column_spin = QSpinBox()
+        self.column_spin.setRange(0, 99999)
+        self.column_spin.valueChanged.connect(self._on_column_changed)
+        row_col.addWidget(self.column_spin, 1)
+        outer.addLayout(row_col)
+
+        # 行
+        row_row = QHBoxLayout()
+        row_row.setSpacing(10)
+        row_row.addWidget(QLabel("行:"))
+        self.row_spin = QSpinBox()
+        self.row_spin.setRange(0, 99999)
+        self.row_spin.valueChanged.connect(self._on_row_changed)
+        row_row.addWidget(self.row_spin, 1)
+        outer.addLayout(row_row)
+
         # 可见性（参与导出）
         row_visible = QHBoxLayout()
         row_visible.setSpacing(10)
@@ -154,6 +176,8 @@ class PropertyPanel(QWidget):
         self.y_spin.setEnabled(enabled)
         self.width_spin.setEnabled(enabled)
         self.height_spin.setEnabled(enabled)
+        self.column_spin.setEnabled(enabled)
+        self.row_spin.setEnabled(enabled)
         self.visible_check.setEnabled(enabled)
 
     def _set_meta_enabled(self, enabled: bool):
@@ -192,6 +216,8 @@ class PropertyPanel(QWidget):
             self.y_spin.setValue(item.y)
             self.width_spin.setValue(item.width)
             self.height_spin.setValue(item.height)
+            self.column_spin.setValue(item.column)
+            self.row_spin.setValue(item.row)
             self.visible_check.setChecked(item.visible)
             self.info_label.setText(f"ID: {item.id} | 列: {item.column} | 行: {item.row}")
             self.info_label.setStyleSheet("color: black;")
@@ -202,6 +228,8 @@ class PropertyPanel(QWidget):
             self.y_spin.setValue(0)
             self.width_spin.setValue(1)
             self.height_spin.setValue(1)
+            self.column_spin.setValue(0)
+            self.row_spin.setValue(0)
             self.visible_check.setChecked(True)
             self.info_label.setText("未选中字符")
             self.info_label.setStyleSheet("color: gray;")
@@ -274,6 +302,20 @@ class PropertyPanel(QWidget):
         visible = bool(state == Qt.Checked)
         self.current_item.visible = visible
         self.visible_changed.emit(self.current_item.id, visible)
+
+    def _on_column_changed(self, value: int):
+        """列变化"""
+        if self._updating or not self.current_item:
+            return
+        self.current_item.column = value
+        self.column_changed.emit(self.current_item.id, value)
+
+    def _on_row_changed(self, value: int):
+        """行变化"""
+        if self._updating or not self.current_item:
+            return
+        self.current_item.row = value
+        self.row_changed.emit(self.current_item.id, value)
 
     def update_from_item(self, item: CharItem):
         """从字符项更新（不触发信号）"""

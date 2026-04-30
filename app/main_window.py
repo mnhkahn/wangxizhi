@@ -1091,6 +1091,8 @@ class MainWindow(QMainWindow):
         self.property_panel.author_changed.connect(self._on_property_author_changed)
         self.property_panel.work_changed.connect(self._on_property_work_changed)
         self.property_panel.visible_changed.connect(self._on_property_visible_changed)
+        self.property_panel.row_changed.connect(self._on_property_row_changed)
+        self.property_panel.column_changed.connect(self._on_property_column_changed)
 
     def open_image(self):
         """打开图片"""
@@ -2080,6 +2082,29 @@ class MainWindow(QMainWindow):
                     else:
                         bbox_item.setOpacity(0.3)
                     break
+
+    def _on_property_row_changed(self, item_id: int, row: int):
+        """属性面板行变化"""
+        item = self.char_manager.get_item(item_id)
+        if item:
+            item.row = row
+            self._sync_bbox_highlight(item)
+            self.property_panel.load_item(item)
+
+    def _on_property_column_changed(self, item_id: int, column: int):
+        """属性面板列变化"""
+        item = self.char_manager.get_item(item_id)
+        if item:
+            item.column = column
+            self._sync_bbox_highlight(item)
+            self.property_panel.load_item(item)
+
+    def _sync_bbox_highlight(self, item: CharItem):
+        """同步画布高亮状态（row=column=0 时高亮）"""
+        for bbox_item in self.image_canvas.bbox_items:
+            if bbox_item.item_id == item.id:
+                bbox_item.set_highlight(item.column == 0 and item.row == 0)
+                break
 
     def _update_preview(self, item: CharItem):
         if not hasattr(self, "char_preview"):

@@ -422,6 +422,36 @@ class CalligraphyOCR:
 
         return results
 
+    @staticmethod
+    def _deduplicate_columns(columns: List[Dict[str, Any]], iou_threshold: float = 0.6) -> List[Dict[str, Any]]:
+        """基于 bbox IOU 去重：重叠度超过阈值视为同一列的重复识别，保留第一个。"""
+        def _iou(a, b):
+            ax1, ay1, ax2, ay2 = a
+            bx1, by1, bx2, by2 = b
+            ix = max(0, min(ax2, bx2) - max(ax1, bx1))
+            iy = max(0, min(ay2, by2) - max(ay1, by1))
+            inter = ix * iy
+            area_a = (ax2 - ax1) * (ay2 - ay1)
+            area_b = (bx2 - bx1) * (by2 - by1)
+            union = area_a + area_b - inter
+            return inter / union if union > 0 else 0.0
+
+        kept = []
+        for col in columns:
+            bbox = col.get("bbox")
+            if not bbox or len(bbox) != 4:
+                kept.append(col)
+                continue
+            duplicate = False
+            for existing in kept:
+                eb = existing.get("bbox")
+                if eb and len(eb) == 4 and _iou(bbox, eb) > iou_threshold:
+                    duplicate = True
+                    break
+            if not duplicate:
+                kept.append(col)
+        return kept
+
     def recognize_image(
         self,
         image_path: str,
@@ -459,6 +489,7 @@ class CalligraphyOCR:
 
         # Step 3: 解析API结果 - 获取识别的文字和坐标
         parsed_results = self._parse_markdown_result(response)
+        parsed_results = self._deduplicate_columns(parsed_results)
 
         # 绘制带坐标的预览图
         log_step("03_parsed_text", {"columns": len(parsed_results)}, output_dir, debug,
