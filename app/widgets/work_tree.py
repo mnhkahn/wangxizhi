@@ -13,8 +13,18 @@ import json
 from pathlib import Path
 from typing import Dict, Any, Optional, List
 
-from PyQt5.QtCore import Qt, pyqtSignal
-from PyQt5.QtWidgets import QWidget, QVBoxLayout, QTreeWidget, QTreeWidgetItem
+from PyQt5.QtCore import Qt, pyqtSignal, QEvent
+from PyQt5.QtCore import QUrl
+from PyQt5.QtGui import QDesktopServices
+from PyQt5.QtWidgets import (
+    QWidget,
+    QVBoxLayout,
+    QTreeWidget,
+    QTreeWidgetItem,
+    QAbstractItemView,
+    QMenu,
+    QAction,
+)
 
 
 class WorkTreeWidget(QWidget):
@@ -25,6 +35,8 @@ class WorkTreeWidget(QWidget):
     # - {"kind": "work_image"|"recognized", "image_path": str, "cache_path": str|None}
     item_activated = pyqtSignal(dict)
     visibility_changed = pyqtSignal(bool)
+    # 批量删除图片：list of image_path
+    items_deleted = pyqtSignal(list)
 
     def __init__(self, project_root: Path, parent=None):
         super().__init__(parent)
@@ -32,9 +44,13 @@ class WorkTreeWidget(QWidget):
 
         self.tree = QTreeWidget()
         self.tree.setHeaderHidden(True)
+        self.tree.setSelectionMode(QAbstractItemView.ExtendedSelection)
         self.tree.itemDoubleClicked.connect(self._on_item_activated)
         self.tree.itemClicked.connect(self._on_item_clicked)
         self.tree.currentItemChanged.connect(self._on_current_item_changed)
+        self.tree.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.tree.customContextMenuRequested.connect(self._on_context_menu)
+        self.tree.installEventFilter(self)
 
         layout = QVBoxLayout(self)
         layout.setContentsMargins(5, 5, 5, 5)
@@ -175,6 +191,78 @@ class WorkTreeWidget(QWidget):
         payload = item.data(0, Qt.UserRole)
         if isinstance(payload, dict) and payload.get("kind") in ("work_dir", "work_image", "recognized"):
             self.item_activated.emit(payload)
+
+    def eventFilter(self, obj, event):
+        if obj is self.tree and event.type() == QEvent.KeyPress:
+            if event.key() in (Qt.Key_Delete, Qt.Key_Backspace):
+                self._delete_selected_items()
+                return True
+        return super().eventFilter(obj, event)
+
+    def _on_context_menu(self, pos):
+        """右键菜单"""
+        item = self.tree.itemAt(pos)
+        if item is None:
+            return
+        payload = item.data(0, Qt.UserRole)
+        if not isinstance(payload, dict):
+            return
+
+        kind = payload.get("kind")
+        menu = QMenu(self)
+
+        if kind == "work_dir":
+            dir_path = payload.get("dir_path", "")
+            if not dir_path:
+                return
+            open_action = QAction("打开所在文件夹", self)
+            open_action.triggered.connect(lambda: QDesktopServices.openUrl(QUrl.fromLocalFile(dir_path)))
+            menu.addAction(open_action)
+
+            words_dir = str(Path(dir_path) / "words")
+            words_action = QAction("展示 Words 文件夹", self)
+            words_action.triggered.connect(lambda: QDesktopServices.openUrl(QUrl.fromLocalFile(words_dir)))
+            menu.addAction(words_action)
+
+        elif kind in ("work_image", "recognized"):
+            image_path = payload.get("image_path", "")
+            if not image_path:
+                return
+            dir_path = str(Path(image_path).parent)
+            stem = Path(image_path).stem
+
+            open_action = QAction("打开所在文件夹", self)
+            open_action.triggered.connect(lambda: QDesktopServices.openUrl(QUrl.fromLocalFile(dir_path)))
+            menu.addAction(open_action)
+
+            debug_dir = str(Path(dir_path) / ".debug" / stem)
+            debug_action = QAction("展示 debug", self)
+            debug_action.triggered.connect(lambda: QDesktopServices.openUrl(QUrl.fromLocalFile(debug_dir)))
+            menu.addAction(debug_action)
+
+            words_dir = str(Path(dir_path) / "words")
+            words_action = QAction("展示 Words 文件夹", self)
+            words_action.triggered.connect(lambda: QDesktopServices.openUrl(QUrl.fromLocalFile(words_dir)))
+            menu.addAction(words_action)
+
+        else:
+            return
+
+        if menu.actions():
+            menu.exec_(self.tree.viewport().mapToGlobal(pos))
+
+    def _delete_selected_items(self):
+        """收集当前选中的图片节点并发出删除信号（不删除目录节点）"""
+        selected = self.tree.selectedItems()
+        image_paths = []
+        for item in selected:
+            payload = item.data(0, Qt.UserRole)
+            if isinstance(payload, dict) and payload.get("kind") in ("work_image", "recognized"):
+                image_path = payload.get("image_path")
+                if image_path:
+                    image_paths.append(image_path)
+        if image_paths:
+            self.items_deleted.emit(image_paths)
 
     def _build_recognized_index(self) -> Dict[str, Dict[str, Any]]:
         """构建已完成索引：image_abs_path -> {cache_path, total_chars}

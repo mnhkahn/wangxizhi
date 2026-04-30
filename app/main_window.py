@@ -1072,6 +1072,7 @@ class MainWindow(QMainWindow):
         # 字帖树信号
         self.work_tree.item_activated.connect(self._on_tree_item_activated)
         self.work_tree.visibility_changed.connect(self._on_work_tree_visibility_changed)
+        self.work_tree.items_deleted.connect(self._on_tree_items_deleted)
 
         # 字符列表信号
         self.char_list.char_selected.connect(self._on_char_selected)
@@ -1382,6 +1383,60 @@ class MainWindow(QMainWindow):
             QMessageBox.warning(self, "错误", f"文件不存在: {image_path}")
             return
         self._load_image(image_path)
+
+    def _on_tree_items_deleted(self, image_paths: list):
+        """批量删除选中的图片（含缓存）"""
+        if not image_paths:
+            return
+
+        names = [Path(p).name for p in image_paths]
+        preview = "\n".join(names[:10])
+        if len(names) > 10:
+            preview += f"\n...等共 {len(names)} 个文件"
+
+        reply = QMessageBox.question(
+            self,
+            "确认删除",
+            f"确定删除以下图片及其识别缓存吗？\n\n{preview}",
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.No,
+        )
+        if reply != QMessageBox.Yes:
+            return
+
+        deleted = 0
+        failed = []
+        for image_path in image_paths:
+            img = Path(image_path)
+            try:
+                # 删除图片文件
+                if img.exists():
+                    img.unlink()
+                # 删除对应缓存目录
+                debug_dir = img.parent / ".debug" / img.stem
+                if debug_dir.exists():
+                    import shutil
+                    shutil.rmtree(debug_dir)
+                deleted += 1
+            except Exception as e:
+                failed.append(f"{img.name}: {e}")
+
+        # 如果当前打开的图片被删了，清空画布
+        if self.current_image_path and self.current_image_path in image_paths:
+            self.current_image_path = ""
+            self.image_canvas.scene.clear()
+            self.image_canvas.cv_image = None
+            self.image_canvas.bbox_items.clear()
+            self.image_canvas.selected_item = None
+            self.char_manager.clear()
+            self.char_list.load_items([])
+            self.property_panel.load_item(None)
+
+        self.work_tree.refresh_recognized()
+        msg = f"已删除 {deleted} 个图片"
+        if failed:
+            msg += f"，失败 {len(failed)} 个"
+        self.status_label.setText(msg)
 
     def _recognize_work_dir(self, dir_path: str):
         """批量识别字帖目录"""
