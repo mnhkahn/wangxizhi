@@ -351,6 +351,120 @@ class BatchOCRWorker(QThread):
             self.error.emit(str(e))
 
 
+class SplitCharsWorker(QThread):
+    """拆字处理线程：重新计算 bbox，不修改字、id、author、font、work 等其他内容。"""
+
+    progress = pyqtSignal(int, int, str, bool, str)  # idx, total, image_path, ok, message
+    finished = pyqtSignal(int, int, int)  # total, ok_count, fail_count
+    error = pyqtSignal(str)
+
+    def __init__(self, image_paths: List[str], parent=None):
+        super().__init__(parent)
+        self.image_paths = image_paths
+
+    def run(self):
+        try:
+            import sys
+            from pathlib import Path
+            from collections import defaultdict
+
+            project_root = Path(__file__).parent.parent
+            if str(project_root) not in sys.path:
+                sys.path.insert(0, str(project_root))
+
+            import cv2
+            from ocr.char_splitter import CharSplitter, SplitMethod
+
+            splitter = CharSplitter(method=SplitMethod.HYBRID, min_char_height=20)
+
+            total = len(self.image_paths)
+            ok_count = 0
+            fail_count = 0
+
+            for i, image_path in enumerate(self.image_paths, start=1):
+                try:
+                    ok, msg = self._split_single_image(image_path, splitter)
+                    if ok:
+                        ok_count += 1
+                    else:
+                        fail_count += 1
+                    self.progress.emit(i, total, image_path, ok, msg)
+                except Exception as e:
+                    fail_count += 1
+                    self.progress.emit(i, total, image_path, False, str(e)[:120])
+
+            self.finished.emit(total, ok_count, fail_count)
+        except Exception as e:
+            self.error.emit(str(e))
+
+    def _split_single_image(self, image_path: str, splitter) -> tuple:
+        """对单张图片重新拆字，返回 (ok, message)。"""
+        from pathlib import Path
+        from collections import defaultdict
+        import cv2
+
+        img_path = Path(image_path)
+        chars_path = img_path.parent / ".debug" / img_path.stem / "chars.json"
+
+        if not chars_path.exists():
+            return False, "chars.json 不存在"
+
+        with open(chars_path, "r", encoding="utf-8") as f:
+            chars = json.load(f)
+
+        if not isinstance(chars, list) or not chars:
+            return False, "chars.json 为空"
+
+        image = cv2.imread(str(image_path))
+        if image is None:
+            return False, "无法加载图片"
+
+        # 按 column 分组
+        col_groups = defaultdict(list)
+        for c in chars:
+            col_groups[c.get("column", 0)].append(c)
+
+        updated_count = 0
+
+        for col_idx, items in col_groups.items():
+            items.sort(key=lambda x: x.get("row", 0))
+            text = "".join(c.get("char", "") for c in items)
+            if not text:
+                continue
+
+            # 计算列 bbox（所有字 bbox 的并集）
+            bboxes = [c.get("bbox", [0, 0, 0, 0]) for c in items]
+            try:
+                x1 = min(b[0] for b in bboxes)
+                y1 = min(b[1] for b in bboxes)
+                x2 = max(b[2] for b in bboxes)
+                y2 = max(b[3] for b in bboxes)
+            except Exception:
+                continue
+
+            col_bbox = [float(x1), float(y1), float(x2), float(y2)]
+
+            try:
+                char_bboxes, method = splitter.split_column(
+                    image, col_bbox, text, debug=False
+                )
+            except Exception:
+                continue
+
+            if len(char_bboxes) != len(items):
+                continue
+
+            for j, item in enumerate(items):
+                item["bbox"] = char_bboxes[j]
+                updated_count += 1
+
+        # 保存
+        with open(chars_path, "w", encoding="utf-8") as f:
+            json.dump(chars, f, ensure_ascii=False, indent=2)
+
+        return True, f"已更新 {updated_count} 个字的 bbox"
+
+
 class UploadWebPWorker(QThread):
     """批量上传 WebP（后台线程）"""
 
@@ -875,6 +989,11 @@ class MainWindow(QMainWindow):
 
         # 识别（强制调用 API 并刷新结果）
         toolbar.addAction(self.action_recognize)
+
+        # 拆字（重新计算 bbox，不调用 API，不修改字/id/author/font/work）
+        self.action_split_chars = QAction("拆字", self)
+        self.action_split_chars.triggered.connect(self.split_chars)
+        toolbar.addAction(self.action_split_chars)
 
         # 保存编辑（写回现有 json，不写 result.json）
         toolbar.addAction(self.action_save)
@@ -1420,6 +1539,94 @@ class MainWindow(QMainWindow):
         except Exception as e:
             self.status_label.setText(f'缓存加载失败：{e}；可点击"识别"重新生成')
             return False
+
+    def split_chars(self):
+        """点击"拆字"：
+        - 若当前选中的是字帖目录：批量拆字该目录下所有图片
+        - 若当前选中的是图片：拆字当前图片
+        只重新计算 bbox，不修改字、id、author、font、work 等其他内容。
+        """
+        if (
+            getattr(self, "split_worker", None)
+            and self.split_worker
+            and self.split_worker.isRunning()
+        ):
+            self.status_label.setText("正在拆字中，请稍候")
+            return
+
+        sel = self._current_tree_selection or {}
+        kind = sel.get("kind")
+
+        if kind == "work_dir":
+            dir_path = sel.get("dir_path") or ""
+            if not dir_path:
+                self.status_label.setText("拆字失败：未获取到字帖目录")
+                return
+            self._split_work_dir(dir_path)
+            return
+
+        # 默认：拆字当前图片（或树中选中的图片）
+        image_path = (
+            sel.get("image_path") if kind in ("work_image", "recognized") else None
+        )
+        if not image_path:
+            image_path = self.current_image_path
+        if not image_path:
+            self.status_label.setText("拆字失败：请先从左侧字帖树选择字帖或图片")
+            return
+
+        self.status_label.setText("正在拆字...")
+        self.split_worker = SplitCharsWorker([image_path])
+        self.split_worker.progress.connect(self._on_split_progress)
+        self.split_worker.finished.connect(self._on_split_finished)
+        self.split_worker.error.connect(self._on_split_error)
+        self.split_worker.start()
+
+    def _split_work_dir(self, dir_path: str):
+        """批量拆字字帖目录"""
+        from pathlib import Path
+
+        wd = Path(dir_path)
+        if not wd.exists() or not wd.is_dir():
+            self.status_label.setText(f"拆字失败：目录不存在 {dir_path}")
+            return
+
+        # 收集所有图片
+        images = []
+        for ext in ("*.jpg", "*.jpeg", "*.png", "*.webp"):
+            images.extend(wd.glob(ext))
+        images = sorted(images, key=lambda p: p.name)
+
+        if not images:
+            self.status_label.setText("拆字失败：目录下未找到图片")
+            return
+
+        self.status_label.setText(f"开始批量拆字：{wd.name}（{len(images)} 张）")
+        self.split_worker = SplitCharsWorker([str(p) for p in images])
+        self.split_worker.progress.connect(self._on_split_progress)
+        self.split_worker.finished.connect(self._on_split_finished)
+        self.split_worker.error.connect(self._on_split_error)
+        self.split_worker.start()
+
+    def _on_split_progress(
+        self, idx: int, total: int, image_path: str, ok: bool, message: str
+    ):
+        name = Path(image_path).name
+        status = "OK" if ok else "FAIL"
+        self.status_label.setText(f"拆字 {idx}/{total} {status}: {name} {message}")
+
+    def _on_split_finished(self, total: int, ok_count: int, fail_count: int):
+        self.status_label.setText(
+            f"拆字完成：成功 {ok_count}，失败 {fail_count}，共 {total}"
+        )
+        # 刷新当前图片显示
+        if self.current_image_path:
+            self._try_load_cache(self.current_image_path)
+        if hasattr(self, "work_tree"):
+            self.work_tree.refresh_recognized()
+
+    def _on_split_error(self, error: str):
+        self.status_label.setText(f"拆字异常：{error}")
 
     def recognize_image(self):
         """点击"识别"：
