@@ -48,3 +48,5 @@ ocr_output
 words/
 .debug
 tmp/
+# OCR batch log
+batch_ocr_log.txt
