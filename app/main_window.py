@@ -1231,6 +1231,7 @@ class MainWindow(QMainWindow):
         self.image_canvas.bbox_updated.connect(self._on_bbox_updated)
         self.image_canvas.bbox_edit_committed.connect(self._on_bbox_edit_committed)
         self.image_canvas.item_deleted.connect(self._on_canvas_item_deleted)
+        self.image_canvas.items_deleted.connect(self._on_canvas_items_deleted)
 
         # 属性面板信号
         self.property_panel.char_changed.connect(self._on_property_char_changed)
@@ -2103,8 +2104,8 @@ class MainWindow(QMainWindow):
 
     def delete_selected_char(self):
         """删除当前选中的字符（框 / 列表项）"""
-        if self.image_canvas.selected_item:
-            self.image_canvas.delete_selected_bbox()
+        if self.image_canvas.selected_items:
+            self.image_canvas.delete_selected_bboxes()
 
     def _on_canvas_item_deleted(self, item_id: int):
         """画布删除字符后同步模型与列表"""
@@ -2115,6 +2116,16 @@ class MainWindow(QMainWindow):
             self.char_preview.clear()
         self.status_label.setText(f"已删除字符 (id={item_id})")
 
+    def _on_canvas_items_deleted(self, item_ids: list):
+        """画布批量删除字符后同步模型与列表"""
+        for item_id in item_ids:
+            self.char_manager.remove_item(item_id)
+        self.char_list.load_items(self.char_manager.items)
+        self.property_panel.load_item(None)
+        if hasattr(self, "char_preview"):
+            self.char_preview.clear()
+        self.status_label.setText(f"已删除 {len(item_ids)} 个字符")
+
     def _on_canvas_selection_changed(self, item_id: int):
         """画布选中变化"""
         if item_id >= 0:
@@ -2123,6 +2134,11 @@ class MainWindow(QMainWindow):
             if item:
                 self.property_panel.load_item(item)
                 self._update_preview(item)
+        elif item_id == -2:
+            # 多选状态
+            self.property_panel.load_item(None)
+            if hasattr(self, "char_preview"):
+                self.char_preview.clear()
         else:
             self.property_panel.load_item(None)
             if hasattr(self, "char_preview"):

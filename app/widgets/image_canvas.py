@@ -329,6 +329,13 @@ class BBoxItem(QGraphicsRectItem):
             # 位置变化时更新手柄
             self._update_handle_positions()
 
+            # 组拖拽同步：通知 ImageCanvas 移动其他选中的框
+            sc = self.scene()
+            if sc:
+                for v in sc.views():
+                    if hasattr(v, '_sync_group_drag'):
+                        v._sync_group_drag(self, value)
+
             # 实时通知预览更新
             self._notify_bbox_live()
         return super().itemChange(change, value)
@@ -338,10 +345,11 @@ class ImageCanvas(QGraphicsView):
     """图片编辑画布"""
 
     # 信号：选中项变化
-    selection_changed = pyqtSignal(int)  # item_id
+    selection_changed = pyqtSignal(int)  # item_id（>=0 单选，-1 无选中，-2 多选）
     bbox_updated = pyqtSignal(int, list)  # item_id, bbox
     bbox_edit_committed = pyqtSignal(int, list, list)  # item_id, old_bbox, new_bbox
     item_deleted = pyqtSignal(int)  # item_id
+    items_deleted = pyqtSignal(list)  # [item_id, ...] 批量删除
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -356,9 +364,20 @@ class ImageCanvas(QGraphicsView):
 
         # 边界框项
         self.bbox_items: List[BBoxItem] = []
-        self.selected_item: Optional[BBoxItem] = None
+        self.selected_items: List[BBoxItem] = []
         self._pen_width = 2
         self._font_size = 12
+
+        # 框选状态
+        self._selecting = False
+        self._rubber_band: Optional[QGraphicsRectItem] = None
+        self._rubber_band_origin: Optional[QPointF] = None
+
+        # 组拖拽状态（多选时整体移动）
+        self._group_dragging = False
+        self._group_drag_offsets: Dict[int, QPointF] = {}
+        self._syncing_group_drag = False
+        self._group_drag_start_bboxes: Dict[int, List[float]] = {}
 
         # bbox 编辑追踪（用于撤销）
         self._bbox_editing_id: Optional[int] = None
@@ -421,7 +440,7 @@ class ImageCanvas(QGraphicsView):
         # 重置视图
         self.reset_view()
         self.bbox_items.clear()
-        self.selected_item = None
+        self.selected_items.clear()
 
         return True
 
@@ -454,7 +473,7 @@ class ImageCanvas(QGraphicsView):
         # 重置视图
         self.reset_view()
         self.bbox_items.clear()
-        self.selected_item = None
+        self.selected_items.clear()
 
     def reset_view(self):
         """重置视图"""
@@ -501,6 +520,18 @@ class ImageCanvas(QGraphicsView):
             self.verticalScrollBar().setValue(self.verticalScrollBar().value() - delta.y())
             event.accept()
             return
+
+        if self._selecting and self._rubber_band_origin is not None:
+            pos = self.mapToScene(event.pos())
+            x1 = min(self._rubber_band_origin.x(), pos.x())
+            y1 = min(self._rubber_band_origin.y(), pos.y())
+            w = abs(pos.x() - self._rubber_band_origin.x())
+            h = abs(pos.y() - self._rubber_band_origin.y())
+            self._rubber_band.setRect(0, 0, w, h)
+            self._rubber_band.setPos(x1, y1)
+            event.accept()
+            return
+
         super().mouseMoveEvent(event)
 
     def add_bbox(self, x: float, y: float, width: float, height: float,
@@ -514,24 +545,57 @@ class ImageCanvas(QGraphicsView):
         self.bbox_items.append(bbox)
         return bbox
 
+    # 兼容属性：返回第一个选中的框（向后兼容单选逻辑）
+    @property
+    def selected_item(self) -> Optional[BBoxItem]:
+        return self.selected_items[0] if self.selected_items else None
+
+    @selected_item.setter
+    def selected_item(self, value):
+        if value is None:
+            self._clear_selection()
+        elif isinstance(value, BBoxItem):
+            self._set_single_selection(value)
+
+    def _clear_selection(self):
+        """清除所有选中"""
+        for bbox in self.selected_items:
+            try:
+                bbox.set_selected(False)
+            except RuntimeError:
+                pass
+        self.selected_items.clear()
+
+    def _add_to_selection(self, bbox: BBoxItem):
+        """添加一个框到选中"""
+        if bbox not in self.selected_items:
+            bbox.set_selected(True)
+            self.selected_items.append(bbox)
+
+    def _remove_from_selection(self, bbox: BBoxItem):
+        """从选中移除一个框"""
+        if bbox in self.selected_items:
+            bbox.set_selected(False)
+            self.selected_items.remove(bbox)
+
+    def _set_single_selection(self, bbox: BBoxItem):
+        """单选：清除其他，只选中该框"""
+        self._clear_selection()
+        self._add_to_selection(bbox)
+
     def clear_bboxes(self):
         """清除所有边界框"""
         for bbox in self.bbox_items:
             self.scene.removeItem(bbox)
         self.bbox_items.clear()
-        self.selected_item = None
+        self.selected_items.clear()
 
     def select_bbox(self, item_id: int):
-        """选中边界框"""
-        # 取消之前的选中
-        if self.selected_item:
-            self.selected_item.set_selected(False)
-
-        # 查找并选中新项
+        """选中单个边界框"""
+        self._clear_selection()
         for bbox in self.bbox_items:
             if bbox.item_id == item_id:
-                bbox.set_selected(True)
-                self.selected_item = bbox
+                self._add_to_selection(bbox)
                 self.center_on_bbox(bbox)
                 self.selection_changed.emit(item_id)
                 return
@@ -541,61 +605,135 @@ class ImageCanvas(QGraphicsView):
         rect = bbox.sceneBoundingRect()
         self.centerOn(rect.center())
 
+    def _finish_rubber_band_selection(self):
+        """结束框选，选中矩形内的所有边界框"""
+        if not self._rubber_band:
+            self._selecting = False
+            self._rubber_band_origin = None
+            return
+
+        selection_rect = self._rubber_band.sceneBoundingRect()
+
+        self.scene.removeItem(self._rubber_band)
+        self._rubber_band = None
+        self._rubber_band_origin = None
+        self._selecting = False
+
+        selected_count = 0
+        for bbox in self.bbox_items:
+            if selection_rect.intersects(bbox.sceneBoundingRect()):
+                self._add_to_selection(bbox)
+                selected_count += 1
+
+        if selected_count == 1:
+            self.selection_changed.emit(self.selected_items[0].item_id)
+        elif selected_count > 1:
+            self.selection_changed.emit(-2)
+        else:
+            self.selection_changed.emit(-1)
+
+    def _sync_group_drag(self, dragged_bbox: BBoxItem, new_pos: QPointF):
+        """多选状态下，同步移动其他选中的框"""
+        if not self._group_dragging or self._syncing_group_drag:
+            return
+        if dragged_bbox.item_id not in self._group_drag_offsets:
+            return
+
+        self._syncing_group_drag = True
+        try:
+            for bbox in self.selected_items:
+                if bbox == dragged_bbox:
+                    continue
+                offset = self._group_drag_offsets.get(bbox.item_id)
+                if offset is not None:
+                    target_pos = new_pos + offset
+                    if (target_pos - bbox.pos()).manhattanLength() > 0.001:
+                        bbox.setPos(target_pos)
+        finally:
+            self._syncing_group_drag = False
+
     def mousePressEvent(self, event):
         """鼠标按下事件"""
         # 平移：中键拖拽
-        # 说明：空格键不是 Qt 的 modifier（只包含 Ctrl/Shift/Alt/Meta），
-        # 因此不使用 “Space + 左键” 作为平移手势，避免在 PyQt5 下报错。
         if event.button() == Qt.MiddleButton:
             self._start_pan(event)
             event.accept()
             return
 
         if event.button() == Qt.LeftButton:
-            # 检查是否点击了边界框
             pos = self.mapToScene(event.pos())
             item = self.scene.itemAt(pos, self.transform())
 
-            # 点击了手柄：选中其父级 bbox
+            # 点击了手柄：单选该 bbox
             if isinstance(item, HandleItem):
                 parent = item.parentItem()
                 if isinstance(parent, BBoxItem):
-                    if self.selected_item and self.selected_item != parent:
-                        self.selected_item.set_selected(False)
-                    parent.set_selected(True)
-                    self.selected_item = parent
+                    self._set_single_selection(parent)
                     self.selection_changed.emit(parent.item_id)
-
-                    # 记录开始 bbox（缩放）
                     self._bbox_editing_id = parent.item_id
                     self._bbox_edit_start = parent.get_bbox()
-
                     super().mousePressEvent(event)
                     return
 
             if isinstance(item, BBoxItem):
                 # 点击了边界框
-                if self.selected_item and self.selected_item != item:
-                    self.selected_item.set_selected(False)
-                item.set_selected(True)
-                self.selected_item = item
-                self.selection_changed.emit(item.item_id)
+                if event.modifiers() & Qt.ControlModifier:
+                    # Ctrl + 点击：切换选中
+                    if item in self.selected_items:
+                        self._remove_from_selection(item)
+                        if len(self.selected_items) == 1:
+                            self.selection_changed.emit(self.selected_items[0].item_id)
+                        elif len(self.selected_items) > 1:
+                            self.selection_changed.emit(-2)
+                        else:
+                            self.selection_changed.emit(-1)
+                    else:
+                        self._add_to_selection(item)
+                        self.selection_changed.emit(-2 if len(self.selected_items) > 1 else item.item_id)
+                else:
+                    # 普通点击：未选中的框单选，已选中的保持多选不变
+                    if item not in self.selected_items:
+                        self._set_single_selection(item)
+                        self.selection_changed.emit(item.item_id)
 
-                # 记录开始 bbox（拖拽移动）
+                # 记录组拖拽偏移（多选时整体移动）
+                if len(self.selected_items) > 1 and item in self.selected_items:
+                    self._group_dragging = True
+                    dragged_pos = item.scenePos()
+                    self._group_drag_offsets = {
+                        bbox.item_id: bbox.scenePos() - dragged_pos
+                        for bbox in self.selected_items
+                    }
+                    self._group_drag_start_bboxes = {
+                        bbox.item_id: bbox.get_bbox() for bbox in self.selected_items
+                    }
+                else:
+                    self._group_dragging = False
+                    self._group_drag_offsets.clear()
+                    self._group_drag_start_bboxes.clear()
+
                 self._bbox_editing_id = item.item_id
                 self._bbox_edit_start = item.get_bbox()
-            elif item == self.image_item or item is None:
-                # 点击了图片空白区域
-                if self.selected_item:
-                    self.selected_item.set_selected(False)
-                    self.selected_item = None
-                    self.selection_changed.emit(-1)
 
+            if item == self.image_item or item is None:
+                # 点击空白处：开始框选
+                if not (event.modifiers() & Qt.ControlModifier):
+                    self._clear_selection()
+                    self.selection_changed.emit(-1)
+                self._selecting = True
+                self._rubber_band_origin = pos
+                self._rubber_band = QGraphicsRectItem(0, 0, 0, 0)
+                self._rubber_band.setPen(QPen(QColor(0, 120, 255), 1, Qt.DashLine))
+                self._rubber_band.setBrush(QBrush(QColor(0, 120, 255, 30)))
+                self._rubber_band.setZValue(999999)
+                self.scene.addItem(self._rubber_band)
+                self._rubber_band.setPos(pos.x(), pos.y())
                 self._bbox_editing_id = None
                 self._bbox_edit_start = None
 
         self.setFocus()
         super().mousePressEvent(event)
+
 
     def mouseReleaseEvent(self, event):
         """鼠标释放事件"""
@@ -604,40 +742,56 @@ class ImageCanvas(QGraphicsView):
             event.accept()
             return
 
-        if self.selected_item:
-            # 通知边界框更新
-            bbox = self.selected_item.get_bbox()
-            self.bbox_updated.emit(self.selected_item.item_id, bbox)
+        if self._selecting:
+            self._finish_rubber_band_selection()
+            event.accept()
+            return
 
-            # 提交 bbox 变更（用于撤销）
-            if (
-                self._bbox_editing_id is not None
-                and self._bbox_edit_start is not None
-                and self._bbox_editing_id == self.selected_item.item_id
-            ):
+        # 拖拽结束：提交所有移动过的框
+        if self._group_dragging and self._group_drag_start_bboxes:
+            for bbox in self.selected_items:
+                old_bbox = self._group_drag_start_bboxes.get(bbox.item_id)
+                new_bbox = bbox.get_bbox()
+                if old_bbox and any(abs(a - b) > 0.001 for a, b in zip(old_bbox, new_bbox)):
+                    self.bbox_edit_committed.emit(bbox.item_id, old_bbox, new_bbox)
+                self.bbox_updated.emit(bbox.item_id, new_bbox)
+            self._group_dragging = False
+            self._group_drag_offsets.clear()
+            self._group_drag_start_bboxes.clear()
+        elif self._bbox_editing_id is not None and self._bbox_edit_start is not None:
+            dragged = None
+            for bbox in self.selected_items:
+                if bbox.item_id == self._bbox_editing_id:
+                    dragged = bbox
+                    break
+            if dragged:
+                bbox = dragged.get_bbox()
+                self.bbox_updated.emit(dragged.item_id, bbox)
                 old_bbox = self._bbox_edit_start
                 new_bbox = bbox
                 if any(abs(a - b) > 0.001 for a, b in zip(old_bbox, new_bbox)):
-                    self.bbox_edit_committed.emit(self.selected_item.item_id, old_bbox, new_bbox)
+                    self.bbox_edit_committed.emit(dragged.item_id, old_bbox, new_bbox)
 
         self._bbox_editing_id = None
         self._bbox_edit_start = None
         super().mouseReleaseEvent(event)
 
-    def delete_selected_bbox(self):
-        """删除当前选中的边界框"""
-        if not self.selected_item:
+    def delete_selected_bboxes(self):
+        """删除所有选中的边界框"""
+        if not self.selected_items:
             return
-        item_id = self.selected_item.item_id
-        self.scene.removeItem(self.selected_item)
-        self.bbox_items.remove(self.selected_item)
-        self.selected_item = None
-        self.item_deleted.emit(item_id)
+        item_ids = [bbox.item_id for bbox in self.selected_items]
+        for bbox in self.selected_items:
+            self.scene.removeItem(bbox)
+            if bbox in self.bbox_items:
+                self.bbox_items.remove(bbox)
+        self.selected_items.clear()
+        self.items_deleted.emit(item_ids)
         self.selection_changed.emit(-1)
 
     def keyPressEvent(self, event):
         if event.key() in (Qt.Key_Delete, Qt.Key_Backspace):
-            self.delete_selected_bbox()
+            self.delete_selected_bboxes()
             event.accept()
             return
         super().keyPressEvent(event)

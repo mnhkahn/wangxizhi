@@ -2,10 +2,10 @@
 单字分割模块
 支持多种分割策略：均匀分割、像素投影、混合策略
 
-v2 改进：
-1. 多参数组合尝试（窗口大小、搜索范围），自动选优
-2. 分割稳定性评分（变异系数 + 分割点笔画密度）
-3. 保留所有原有接口
+v3 改进（针对行书/草书）：
+1. 严格的"真正间隙"检测：只接受连续多行低投影的间隙，避免字内空白被误判
+2. 分割结果验证：高度必须在合理范围内，否则回退到均匀分割
+3. 更宽的搜索范围以适应字高变化
 """
 
 from typing import List, Tuple, Optional, Dict, Any
@@ -28,7 +28,7 @@ class CharSplitter:
     支持三种分割策略：
     1. 均匀分割：根据字数均分列高度，适合书法文字间隔均匀的特点
     2. 像素投影：基于图像像素分析，适合背景均匀的图像
-    3. 混合策略：先尝试像素投影，失败则回退到均分
+    3. 混合策略：先尝试像素投影（带严格验证），失败则回退到均分
     """
 
     def __init__(
@@ -124,12 +124,12 @@ class CharSplitter:
         debug: bool = False,
     ) -> List[List[float]]:
         """
-        改进的像素投影分割
+        改进的像素投影分割（v3）
 
-        改进点：
-        1. 尝试多种窗口大小（11, 21）和搜索范围（30%, 50%）
-        2. 选择变异系数最低 + 分割点笔画密度最低的组合
-        3. 保留自适应高斯二值化（已验证对书法有效）
+        核心改进：
+        1. 严格验证分割结果，不合理则回退
+        2. "真正间隙"检测：避免把字内空白当成间隙
+        3. 更宽的搜索范围以适应行书字高变化
         """
         x1, y1, x2, y2 = [int(v) for v in col_bbox]
 
@@ -151,18 +151,19 @@ class CharSplitter:
             gray = col_region
 
         col_h = y2 - y1
+        expected_height = col_h / char_count
+
+        # 检测黑底白字（碑帖拓片）还是白底黑字
+        is_dark_bg = float(np.mean(gray)) < 128
+        thresh_type = cv2.THRESH_BINARY if is_dark_bg else cv2.THRESH_BINARY_INV
 
         # 尝试多种参数组合，选择最优
         best_result = None
         best_score = float('inf')
         best_params = None
 
-        # 检测黑底白字（碑帖拓片）还是白底黑字
-        is_dark_bg = float(np.mean(gray)) < 128
-        thresh_type = cv2.THRESH_BINARY if is_dark_bg else cv2.THRESH_BINARY_INV
-
         for window in [11, 21]:
-            for search_ratio in [0.3, 0.5]:
+            for search_ratio in [0.3, 0.5, 0.7, 1.0]:
                 try:
                     binary = cv2.adaptiveThreshold(
                         gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
@@ -171,17 +172,21 @@ class CharSplitter:
                 except cv2.error:
                     continue
 
-                projection = np.sum(binary, axis=1).astype(float)
+                # 使用中心 50% 宽度计算投影，减少边缘干扰
+                cw = binary.shape[1]
+                center_start = max(0, int(cw * 0.25))
+                center_end = min(cw, int(cw * 0.75))
+                projection = np.sum(binary[:, center_start:center_end], axis=1).astype(float)
 
                 # 平滑
-                kernel_size = max(5, int(col_h / char_count / 4))
+                kernel_size = max(5, int(expected_height / 3))
                 if kernel_size % 2 == 0:
                     kernel_size += 1
                 kernel = np.ones(kernel_size) / kernel_size
                 smoothed = np.convolve(projection, kernel, mode='same')
 
                 split_points = self._find_split_points(
-                    smoothed, char_count, search_ratio
+                    smoothed, char_count, search_ratio, expected_height
                 )
                 if len(split_points) != char_count + 1:
                     continue
@@ -190,9 +195,14 @@ class CharSplitter:
                 avg_h = np.mean(heights)
                 if avg_h <= 0:
                     continue
-                cv = np.std(heights) / avg_h
 
-                # 评分：CV 越低越好，分割点处笔画密度越低越好
+                # === 严格验证 ===
+                if not self._validate_splits(heights, expected_height, char_count):
+                    if debug:
+                        print(f"[SPLIT] 参数 window={window}, ratio={search_ratio} 验证失败: heights={heights}")
+                    continue
+
+                cv = np.std(heights) / avg_h
                 split_score = self._score_split(smoothed, split_points)
                 score = cv * 100 + split_score / (np.max(smoothed) + 1)
 
@@ -202,6 +212,8 @@ class CharSplitter:
                     best_params = (window, search_ratio)
 
         if best_result is None:
+            if debug:
+                print(f"[SPLIT] 所有投影参数均验证失败，回退到均匀分割")
             return self._uniform_split(col_bbox, char_count)
 
         if debug:
@@ -215,13 +227,47 @@ class CharSplitter:
 
         return char_bboxes
 
+    def _validate_splits(self, heights: List[float], expected_height: float, char_count: int) -> bool:
+        """
+        验证分割结果是否合理。
+
+        行书/草书特点：字高会有变化，但不会极端。
+        拒绝任何 segment 过短（< 55% 预期）或过长（> 165% 预期）的分割。
+        """
+        if not heights or expected_height <= 0:
+            return False
+
+        min_allowed = expected_height * 0.55
+        max_allowed = expected_height * 1.65
+
+        for h in heights:
+            if h < min_allowed or h > max_allowed:
+                return False
+
+        # 变异系数不能太大
+        avg_h = np.mean(heights)
+        if avg_h <= 0:
+            return False
+        cv = np.std(heights) / avg_h
+        if cv > 0.35:
+            return False
+
+        return True
+
     def _find_split_points(
         self,
         projection: np.ndarray,
         target_count: int,
         search_ratio: float = 0.3,
+        expected_height: float = None,
     ) -> List[int]:
-        """寻找分割点，支持动态搜索范围"""
+        """
+        寻找分割点，支持动态搜索范围。
+
+        核心改进：
+        1. 首先尝试找到"真正的间隙"（连续多行低投影）
+        2. 如果没有真正间隙，使用预期位置而非局部最小值
+        """
         length = len(projection)
 
         if target_count <= 0:
@@ -229,31 +275,77 @@ class CharSplitter:
         if target_count == 1:
             return [0, length]
 
-        expected_height = length / target_count
+        if expected_height is None:
+            expected_height = length / target_count
+
         search_range = int(expected_height * search_ratio)
+
+        # 动态阈值：真正的间隙应该是局部区域的低值
+        # 使用局部最大值的 15% 作为阈值
+        proj_max = np.max(projection)
+        if proj_max <= 0:
+            # 全黑或全白，无法分割
+            return []
 
         split_points = [0]
         for i in range(1, target_count):
             center = int(i * expected_height)
-            start = max(split_points[-1] + self.min_char_height,
+            start = max(split_points[-1] + int(expected_height * 0.4),
                        center - search_range)
-            end = min(length - self.min_char_height, center + search_range)
+            end = min(length - int(expected_height * 0.4), center + search_range)
 
             if start >= end:
                 split_points.append(center)
                 continue
 
             local_region = projection[start:end]
-            local_min_idx = np.argmin(local_region)
-            split_points.append(start + local_min_idx)
+            local_max = np.max(local_region)
+
+            # 阈值：局部最大值的 15% 或全局最大值的 10%
+            gap_threshold = min(local_max * 0.15, proj_max * 0.10)
+            if gap_threshold <= 0:
+                gap_threshold = proj_max * 0.05
+
+            # 寻找连续低值区域
+            low_mask = local_region < gap_threshold
+            if np.any(low_mask):
+                # 找到最长的连续低值区域
+                best_gap_center = None
+                best_gap_width = 0
+                current_start = None
+                for j, is_low in enumerate(low_mask):
+                    if is_low:
+                        if current_start is None:
+                            current_start = j
+                    else:
+                        if current_start is not None:
+                            width = j - current_start
+                            if width > best_gap_width:
+                                best_gap_width = width
+                                best_gap_center = current_start + width // 2
+                            current_start = None
+                if current_start is not None:
+                    width = len(low_mask) - current_start
+                    if width > best_gap_width:
+                        best_gap_width = width
+                        best_gap_center = current_start + width // 2
+
+                if best_gap_center is not None and best_gap_width >= 2:
+                    # 找到了真正的间隙（至少2像素宽）
+                    split_points.append(start + best_gap_center)
+                    continue
+
+            # 没有找到真正的间隙，回退到预期位置
+            # （不寻找局部最小值，避免切入字内部）
+            split_points.append(center)
 
         split_points.append(length)
 
         # 确保递增且满足最小高度
         adjusted = [split_points[0]]
         for i in range(1, len(split_points) - 1):
-            min_y = adjusted[-1] + self.min_char_height
-            max_y = length - self.min_char_height * (target_count - i)
+            min_y = adjusted[-1] + int(expected_height * 0.4)
+            max_y = length - int(expected_height * 0.4) * (target_count - i)
             if split_points[i] < min_y:
                 split_points[i] = min_y
             elif split_points[i] > max_y:

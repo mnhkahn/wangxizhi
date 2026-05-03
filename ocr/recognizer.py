@@ -11,6 +11,7 @@ from typing import Dict, List, Any, Optional
 from datetime import datetime
 import uuid
 import cv2
+import numpy as np
 
 from .config import (
     OUTPUT_DIR,
@@ -371,15 +372,21 @@ class CalligraphyOCR:
             解析后的文字列表，每项包含 text, poly (四边形坐标)
         """
         results = []
-        layout_results = api_result.get("layoutParsingResults", [])
+        # 同时支持 layoutParsingResults（Layout Parsing API）和 ocrResults（OCR API）
+        layout_results = api_result.get("layoutParsingResults", []) or api_result.get("ocrResults", [])
 
         for page_result in layout_results:
             pruned = page_result.get("prunedResult", {})
             spotting_res = pruned.get("spotting_res", {})
 
-            # 优先从 spotting_res 获取 rec_polys 和 rec_texts
+            # 优先从 spotting_res 获取 rec_polys 和 rec_texts（layoutParsing 格式）
             rec_polys = spotting_res.get("rec_polys", [])
             rec_texts = spotting_res.get("rec_texts", [])
+
+            # 兼容 ocrResults 格式：直接从 prunedResult 获取
+            if not rec_polys or not rec_texts:
+                rec_polys = pruned.get("rec_polys", [])
+                rec_texts = pruned.get("rec_texts", [])
 
             if rec_polys and rec_texts and len(rec_polys) == len(rec_texts):
                 # 有精确的坐标信息
@@ -442,27 +449,6 @@ class CalligraphyOCR:
         """检查文本是否包含至少一个汉字（CJK Unified Ideographs）"""
         return any('\u4e00' <= c <= '\u9fff' for c in text)
 
-    def _filter_garbage_columns(
-        self,
-        columns: List[Dict[str, Any]],
-        debug: bool = False,
-    ) -> List[Dict[str, Any]]:
-        """
-        过滤不含汉字的垃圾列（如 LaTeX 公式、印章误识别等）
-        保留：包含至少一个汉字的列
-        丢弃：完全不含汉字的列
-        """
-        filtered = []
-        for col in columns:
-            text = col.get("text", "")
-            if self._has_chinese(text):
-                filtered.append(col)
-            elif debug:
-                print(f"[FILTER] 丢弃垃圾列: '{text[:40]}'")
-        if debug and len(filtered) < len(columns):
-            print(f"[FILTER] 列过滤: {len(columns)} -> {len(filtered)}")
-        return filtered
-
     def _filter_garbage_chars(
         self,
         char_results: List[Dict[str, Any]],
@@ -524,6 +510,147 @@ class CalligraphyOCR:
                 kept.append(col)
         return kept
 
+    def _merge_overlapping_columns(
+        self,
+        columns: List[Dict[str, Any]],
+        max_center_dist: float = 25,
+        debug: bool = False,
+    ) -> List[Dict[str, Any]]:
+        """
+        合并 x 方向重叠的 API 文本块（同一物理列被拆成多个块）。
+        策略：按中心 x 从右到左排序，相邻列若中心 x 距离 < 阈值则视为同一物理列。
+        阈值设置较小（25px），避免把相邻物理列错误合并。
+        """
+        if not columns:
+            return columns
+
+        # 计算每列中心 x，按从右到左排序
+        cols_with_center = [
+            (col, (col["bbox"][0] + col["bbox"][2]) / 2)
+            for col in columns
+        ]
+        cols_sorted = sorted(cols_with_center, key=lambda x: -x[1])
+
+        groups: List[List[Dict[str, Any]]] = []
+        prev_centers: List[float] = []
+
+        for col, center in cols_sorted:
+            placed = False
+            for idx, group in enumerate(groups):
+                # 只与该组最新加入的列比较中心距离
+                if abs(center - prev_centers[idx]) < max_center_dist:
+                    group.append(col)
+                    prev_centers[idx] = center
+                    placed = True
+                    break
+            if not placed:
+                groups.append([col])
+                prev_centers.append(center)
+
+        merged = []
+        for group in groups:
+            # 合并 bbox：并集
+            x1 = min(c["bbox"][0] for c in group)
+            y1 = min(c["bbox"][1] for c in group)
+            x2 = max(c["bbox"][2] for c in group)
+            y2 = max(c["bbox"][3] for c in group)
+            # 合并文字：按 y 坐标（从上到下）排序
+            items_sorted = sorted(group, key=lambda c: c["bbox"][1])
+            text = "".join(c["text"] for c in items_sorted)
+            merged.append({
+                "text": text,
+                "bbox": [x1, y1, x2, y2],
+                "poly": [[x1, y1], [x2, y1], [x2, y2], [x1, y2]],
+            })
+
+        # 保持从右到左排序
+        merged.sort(key=lambda c: -(c["bbox"][0] + c["bbox"][2]) / 2)
+
+        if debug and len(merged) < len(columns):
+            print(f"[MERGE] 列合并: {len(columns)} -> {len(merged)} 列")
+            for i, m in enumerate(merged):
+                print(f"  列{i}: x={m['bbox'][0]:.0f}-{m['bbox'][2]:.0f}: {m['text'][:20]}...")
+
+        return merged
+
+    def _filter_garbage_columns(
+        self,
+        columns: List[Dict[str, Any]],
+        debug: bool = False,
+    ) -> List[Dict[str, Any]]:
+        """
+        过滤明显不是主文的列（极端窄列、完全非汉字）。
+        """
+        if not columns:
+            return columns
+
+        filtered = []
+        for col in columns:
+            bbox = col["bbox"]
+            w = bbox[2] - bbox[0]
+            text = col.get("text", "")
+
+            # 只过滤极端情况：宽度 < 15px 或 > 400px
+            if w < 15 or w > 400:
+                if debug:
+                    print(f"[FILTER_COL] 丢弃极端宽度({w:.0f}px): '{text[:15]}...'")
+                continue
+
+            # 完全非汉字且长度 >= 5（短文本可能是OCR识别错误，保留让fix_page处理）
+            han_chars = sum(1 for ch in text if "\u4e00" <= ch <= "\u9fff")
+            if text and han_chars == 0 and len(text) >= 5:
+                if debug:
+                    print(f"[FILTER_COL] 丢弃无汉字: '{text[:15]}...'")
+                continue
+
+            filtered.append(col)
+
+        if debug and len(filtered) < len(columns):
+            print(f"[FILTER_COL] 列过滤: {len(columns)} -> {len(filtered)} 列")
+
+        return filtered
+
+    def _filter_annotation_columns(
+        self,
+        columns: List[Dict[str, Any]],
+        debug: bool = False,
+    ) -> List[Dict[str, Any]]:
+        """
+        过滤释文/注释列。
+
+        策略：正文列宽度相近且明显大于释文列。
+        释文列通常宽度 < 50px 或 < 最大列宽的 50%。
+        """
+        if not columns:
+            return columns
+
+        widths = [c["bbox"][2] - c["bbox"][0] for c in columns]
+        if len(widths) <= 1:
+            return columns
+
+        max_width = max(widths)
+        # 阈值：小于最大宽度的 50% 或小于 50px 视为释文
+        threshold = max(max_width * 0.5, 50)
+
+        filtered = []
+        for col in columns:
+            w = col["bbox"][2] - col["bbox"][0]
+            if w < threshold:
+                if debug:
+                    text = col.get("text", "")
+                    print(f"[FILTER_ANNO] 过滤释文列(宽{w:.0f}px < {threshold:.0f}px): '{text[:15]}...'")
+                continue
+            filtered.append(col)
+
+        # 如果过滤后没有列了，回退到原始列
+        if not filtered:
+            return columns
+
+        if debug and len(filtered) < len(columns):
+            print(f"[FILTER_ANNO] 过滤释文: {len(columns)} -> {len(filtered)} 列")
+
+        return filtered
+
     def recognize_image(
         self,
         image_path: str,
@@ -562,7 +689,9 @@ class CalligraphyOCR:
         # Step 3: 解析API结果 - 获取识别的文字和坐标
         parsed_results = self._parse_markdown_result(response)
         parsed_results = self._deduplicate_columns(parsed_results)
+        parsed_results = self._merge_overlapping_columns(parsed_results, debug=debug)
         parsed_results = self._filter_garbage_columns(parsed_results, debug=debug)
+        parsed_results = self._filter_annotation_columns(parsed_results, debug=debug)
 
         # 绘制带坐标的预览图
         log_step("03_parsed_text", {"columns": len(parsed_results)}, output_dir, debug,
