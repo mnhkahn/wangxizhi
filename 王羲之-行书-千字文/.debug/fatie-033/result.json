@@ -1,0 +1,2113 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-033.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多何以故是福德即非福德往故如来说福德多未如提汝意云何若寻大千世谬士寂貞用布社是人得福多不言甚何以故是福德財姬福德運沒如来說福德多未",
+  "parsed_results": [
+    {
+      "text": "28",
+      "bbox": [
+        864,
+        1423,
+        887,
+        1445
+      ],
+      "poly": [
+        [
+          864,
+          1423
+        ],
+        [
+          887,
+          1423
+        ],
+        [
+          887,
+          1445
+        ],
+        [
+          864,
+          1445
+        ]
+      ]
+    },
+    {
+      "text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "poly": [
+        [
+          733,
+          131
+        ],
+        [
+          760,
+          131
+        ],
+        [
+          760,
+          984
+        ],
+        [
+          733,
+          984
+        ]
+      ]
+    },
+    {
+      "text": "何以故是福德即非福德往故如来说福德多未如",
+      "bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "poly": [
+        [
+          698,
+          133
+        ],
+        [
+          724,
+          133
+        ],
+        [
+          724,
+          691
+        ],
+        [
+          698,
+          691
+        ]
+      ]
+    },
+    {
+      "text": "提汝意云何若寻",
+      "bbox": [
+        586,
+        139,
+        693,
+        1119
+      ],
+      "poly": [
+        [
+          586,
+          139
+        ],
+        [
+          693,
+          139
+        ],
+        [
+          693,
+          1119
+        ],
+        [
+          586,
+          1119
+        ]
+      ]
+    },
+    {
+      "text": "大千世谬士寂貞用布社",
+      "bbox": [
+        462,
+        136,
+        578,
+        1338
+      ],
+      "poly": [
+        [
+          462,
+          136
+        ],
+        [
+          578,
+          136
+        ],
+        [
+          578,
+          1338
+        ],
+        [
+          462,
+          1338
+        ]
+      ]
+    },
+    {
+      "text": "是人得福多不言甚",
+      "bbox": [
+        344,
+        129,
+        468,
+        1338
+      ],
+      "poly": [
+        [
+          344,
+          129
+        ],
+        [
+          468,
+          129
+        ],
+        [
+          468,
+          1338
+        ],
+        [
+          344,
+          1338
+        ]
+      ]
+    },
+    {
+      "text": "何以故是福德財姬福德",
+      "bbox": [
+        222,
+        126,
+        358,
+        1340
+      ],
+      "poly": [
+        [
+          222,
+          126
+        ],
+        [
+          358,
+          126
+        ],
+        [
+          358,
+          1340
+        ],
+        [
+          222,
+          1340
+        ]
+      ]
+    },
+    {
+      "text": "運沒如来說福德多未",
+      "bbox": [
+        119,
+        137,
+        236,
+        1334
+      ],
+      "poly": [
+        [
+          119,
+          137
+        ],
+        [
+          236,
+          137
+        ],
+        [
+          236,
+          1334
+        ],
+        [
+          119,
+          1334
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "提",
+      "bbox": [
+        733.0,
+        131.0,
+        760.0,
+        160.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "汝",
+      "bbox": [
+        733.0,
+        160.0,
+        760.0,
+        187.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "意",
+      "bbox": [
+        733.0,
+        187.0,
+        760.0,
+        214.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "云",
+      "bbox": [
+        733.0,
+        214.0,
+        760.0,
+        239.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        733.0,
+        239.0,
+        760.0,
+        268.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        733.0,
+        268.0,
+        760.0,
+        293.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        733.0,
+        293.0,
+        760.0,
+        322.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "满",
+      "bbox": [
+        733.0,
+        322.0,
+        760.0,
+        362.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "三",
+      "bbox": [
+        733.0,
+        362.0,
+        760.0,
+        390.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "千",
+      "bbox": [
+        733.0,
+        390.0,
+        760.0,
+        410.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        733.0,
+        410.0,
+        760.0,
+        450.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 10,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "千",
+      "bbox": [
+        733.0,
+        450.0,
+        760.0,
+        478.0
+      ],
+      "column": 1,
+      "row": 11,
+      "global_index": 11,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        733.0,
+        478.0,
+        760.0,
+        506.0
+      ],
+      "column": 1,
+      "row": 12,
+      "global_index": 12,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "界",
+      "bbox": [
+        733.0,
+        506.0,
+        760.0,
+        534.0
+      ],
+      "column": 1,
+      "row": 13,
+      "global_index": 13,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "七",
+      "bbox": [
+        733.0,
+        534.0,
+        760.0,
+        560.0
+      ],
+      "column": 1,
+      "row": 14,
+      "global_index": 14,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宝",
+      "bbox": [
+        733.0,
+        560.0,
+        760.0,
+        586.0
+      ],
+      "column": 1,
+      "row": 15,
+      "global_index": 15,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "口",
+      "bbox": [
+        733.0,
+        586.0,
+        760.0,
+        613.0
+      ],
+      "column": 1,
+      "row": 16,
+      "global_index": 16,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "用",
+      "bbox": [
+        733.0,
+        613.0,
+        760.0,
+        641.0
+      ],
+      "column": 1,
+      "row": 17,
+      "global_index": 17,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "布",
+      "bbox": [
+        733.0,
+        641.0,
+        760.0,
+        665.0
+      ],
+      "column": 1,
+      "row": 18,
+      "global_index": 18,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "施",
+      "bbox": [
+        733.0,
+        665.0,
+        760.0,
+        694.0
+      ],
+      "column": 1,
+      "row": 19,
+      "global_index": 19,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        733.0,
+        694.0,
+        760.0,
+        720.0
+      ],
+      "column": 1,
+      "row": 20,
+      "global_index": 20,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        733.0,
+        720.0,
+        760.0,
+        748.0
+      ],
+      "column": 1,
+      "row": 21,
+      "global_index": 21,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        733.0,
+        748.0,
+        760.0,
+        776.0
+      ],
+      "column": 1,
+      "row": 22,
+      "global_index": 22,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        733.0,
+        776.0,
+        760.0,
+        808.0
+      ],
+      "column": 1,
+      "row": 23,
+      "global_index": 23,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        733.0,
+        808.0,
+        760.0,
+        848.0
+      ],
+      "column": 1,
+      "row": 24,
+      "global_index": 24,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        733.0,
+        848.0,
+        760.0,
+        877.0
+      ],
+      "column": 1,
+      "row": 25,
+      "global_index": 25,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "口",
+      "bbox": [
+        733.0,
+        877.0,
+        760.0,
+        905.0
+      ],
+      "column": 1,
+      "row": 26,
+      "global_index": 26,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        733.0,
+        905.0,
+        760.0,
+        931.0
+      ],
+      "column": 1,
+      "row": 27,
+      "global_index": 27,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "甚",
+      "bbox": [
+        733.0,
+        931.0,
+        760.0,
+        959.0
+      ],
+      "column": 1,
+      "row": 28,
+      "global_index": 28,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        733.0,
+        959.0,
+        760.0,
+        984.0
+      ],
+      "column": 1,
+      "row": 29,
+      "global_index": 29,
+      "col_text": "提汝意云何若人满三千大千世界七宝口用布施是人得福多不口言甚多",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        698.0,
+        133.0,
+        724.0,
+        160.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        698.0,
+        160.0,
+        724.0,
+        186.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        698.0,
+        186.0,
+        724.0,
+        213.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        698.0,
+        213.0,
+        724.0,
+        240.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        698.0,
+        240.0,
+        724.0,
+        267.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        698.0,
+        267.0,
+        724.0,
+        293.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        698.0,
+        293.0,
+        724.0,
+        320.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        698.0,
+        320.0,
+        724.0,
+        348.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        698.0,
+        348.0,
+        724.0,
+        376.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        698.0,
+        376.0,
+        724.0,
+        404.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "往",
+      "bbox": [
+        698.0,
+        404.0,
+        724.0,
+        431.0
+      ],
+      "column": 2,
+      "row": 10,
+      "global_index": 40,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        698.0,
+        431.0,
+        724.0,
+        459.0
+      ],
+      "column": 2,
+      "row": 11,
+      "global_index": 41,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        698.0,
+        459.0,
+        724.0,
+        502.0
+      ],
+      "column": 2,
+      "row": 12,
+      "global_index": 42,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        698.0,
+        502.0,
+        724.0,
+        530.0
+      ],
+      "column": 2,
+      "row": 13,
+      "global_index": 43,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        698.0,
+        530.0,
+        724.0,
+        558.0
+      ],
+      "column": 2,
+      "row": 14,
+      "global_index": 44,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        698.0,
+        558.0,
+        724.0,
+        586.0
+      ],
+      "column": 2,
+      "row": 15,
+      "global_index": 45,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        698.0,
+        586.0,
+        724.0,
+        614.0
+      ],
+      "column": 2,
+      "row": 16,
+      "global_index": 46,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        698.0,
+        614.0,
+        724.0,
+        641.0
+      ],
+      "column": 2,
+      "row": 17,
+      "global_index": 47,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "未",
+      "bbox": [
+        698.0,
+        641.0,
+        724.0,
+        666.0
+      ],
+      "column": 2,
+      "row": 18,
+      "global_index": 48,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        698.0,
+        666.0,
+        724.0,
+        691.0
+      ],
+      "column": 2,
+      "row": 19,
+      "global_index": 49,
+      "col_text": "何以故是福德即非福德往故如来说福德多未如",
+      "col_bbox": [
+        698,
+        133,
+        724,
+        691
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        586.0,
+        139.0,
+        693.0,
+        314.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 50,
+      "col_text": "提汝意云何若寻",
+      "col_bbox": [
+        586,
+        139,
+        693,
+        1119
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "汝",
+      "bbox": [
+        586.0,
+        314.0,
+        693.0,
+        455.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 51,
+      "col_text": "提汝意云何若寻",
+      "col_bbox": [
+        586,
+        139,
+        693,
+        1119
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "意",
+      "bbox": [
+        586.0,
+        455.0,
+        693.0,
+        564.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 52,
+      "col_text": "提汝意云何若寻",
+      "col_bbox": [
+        586,
+        139,
+        693,
+        1119
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "云",
+      "bbox": [
+        586.0,
+        564.0,
+        693.0,
+        657.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 53,
+      "col_text": "提汝意云何若寻",
+      "col_bbox": [
+        586,
+        139,
+        693,
+        1119
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        586.0,
+        657.0,
+        693.0,
+        820.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 54,
+      "col_text": "提汝意云何若寻",
+      "col_bbox": [
+        586,
+        139,
+        693,
+        1119
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        586.0,
+        820.0,
+        693.0,
+        1019.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 55,
+      "col_text": "提汝意云何若寻",
+      "col_bbox": [
+        586,
+        139,
+        693,
+        1119
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寻",
+      "bbox": [
+        586.0,
+        1019.0,
+        693.0,
+        1119.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 56,
+      "col_text": "提汝意云何若寻",
+      "col_bbox": [
+        586,
+        139,
+        693,
+        1119
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        462.0,
+        136.0,
+        578.0,
+        285.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 57,
+      "col_text": "大千世谬士寂貞用布社",
+      "col_bbox": [
+        462,
+        136,
+        578,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "千",
+      "bbox": [
+        462.0,
+        285.0,
+        578.0,
+        411.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 58,
+      "col_text": "大千世谬士寂貞用布社",
+      "col_bbox": [
+        462,
+        136,
+        578,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        462.0,
+        411.0,
+        578.0,
+        531.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 59,
+      "col_text": "大千世谬士寂貞用布社",
+      "col_bbox": [
+        462,
+        136,
+        578,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "谬",
+      "bbox": [
+        462.0,
+        531.0,
+        578.0,
+        651.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 60,
+      "col_text": "大千世谬士寂貞用布社",
+      "col_bbox": [
+        462,
+        136,
+        578,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "士",
+      "bbox": [
+        462.0,
+        651.0,
+        578.0,
+        768.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 61,
+      "col_text": "大千世谬士寂貞用布社",
+      "col_bbox": [
+        462,
+        136,
+        578,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寂",
+      "bbox": [
+        462.0,
+        768.0,
+        578.0,
+        892.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 62,
+      "col_text": "大千世谬士寂貞用布社",
+      "col_bbox": [
+        462,
+        136,
+        578,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "貞",
+      "bbox": [
+        462.0,
+        892.0,
+        578.0,
+        992.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 63,
+      "col_text": "大千世谬士寂貞用布社",
+      "col_bbox": [
+        462,
+        136,
+        578,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "用",
+      "bbox": [
+        462.0,
+        992.0,
+        578.0,
+        1132.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 64,
+      "col_text": "大千世谬士寂貞用布社",
+      "col_bbox": [
+        462,
+        136,
+        578,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "布",
+      "bbox": [
+        462.0,
+        1132.0,
+        578.0,
+        1245.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 65,
+      "col_text": "大千世谬士寂貞用布社",
+      "col_bbox": [
+        462,
+        136,
+        578,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "社",
+      "bbox": [
+        462.0,
+        1245.0,
+        578.0,
+        1338.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 66,
+      "col_text": "大千世谬士寂貞用布社",
+      "col_bbox": [
+        462,
+        136,
+        578,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        344.0,
+        129.0,
+        468.0,
+        235.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 67,
+      "col_text": "是人得福多不言甚",
+      "col_bbox": [
+        344,
+        129,
+        468,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        344.0,
+        235.0,
+        468.0,
+        434.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 68,
+      "col_text": "是人得福多不言甚",
+      "col_bbox": [
+        344,
+        129,
+        468,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        344.0,
+        434.0,
+        468.0,
+        583.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 69,
+      "col_text": "是人得福多不言甚",
+      "col_bbox": [
+        344,
+        129,
+        468,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        344.0,
+        583.0,
+        468.0,
+        777.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 70,
+      "col_text": "是人得福多不言甚",
+      "col_bbox": [
+        344,
+        129,
+        468,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        344.0,
+        777.0,
+        468.0,
+        920.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 71,
+      "col_text": "是人得福多不言甚",
+      "col_bbox": [
+        344,
+        129,
+        468,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        344.0,
+        920.0,
+        468.0,
+        994.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 72,
+      "col_text": "是人得福多不言甚",
+      "col_bbox": [
+        344,
+        129,
+        468,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        344.0,
+        994.0,
+        468.0,
+        1182.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 73,
+      "col_text": "是人得福多不言甚",
+      "col_bbox": [
+        344,
+        129,
+        468,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "甚",
+      "bbox": [
+        344.0,
+        1182.0,
+        468.0,
+        1338.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 74,
+      "col_text": "是人得福多不言甚",
+      "col_bbox": [
+        344,
+        129,
+        468,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        222.0,
+        126.0,
+        358.0,
+        282.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 75,
+      "col_text": "何以故是福德財姬福德",
+      "col_bbox": [
+        222,
+        126,
+        358,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        222.0,
+        282.0,
+        358.0,
+        383.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 76,
+      "col_text": "何以故是福德財姬福德",
+      "col_bbox": [
+        222,
+        126,
+        358,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        222.0,
+        383.0,
+        358.0,
+        525.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 77,
+      "col_text": "何以故是福德財姬福德",
+      "col_bbox": [
+        222,
+        126,
+        358,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        222.0,
+        525.0,
+        358.0,
+        644.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 78,
+      "col_text": "何以故是福德財姬福德",
+      "col_bbox": [
+        222,
+        126,
+        358,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        222.0,
+        644.0,
+        358.0,
+        762.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 79,
+      "col_text": "何以故是福德財姬福德",
+      "col_bbox": [
+        222,
+        126,
+        358,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        222.0,
+        762.0,
+        358.0,
+        880.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 80,
+      "col_text": "何以故是福德財姬福德",
+      "col_bbox": [
+        222,
+        126,
+        358,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "財",
+      "bbox": [
+        222.0,
+        880.0,
+        358.0,
+        1010.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 81,
+      "col_text": "何以故是福德財姬福德",
+      "col_bbox": [
+        222,
+        126,
+        358,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "姬",
+      "bbox": [
+        222.0,
+        1010.0,
+        358.0,
+        1125.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 82,
+      "col_text": "何以故是福德財姬福德",
+      "col_bbox": [
+        222,
+        126,
+        358,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        222.0,
+        1125.0,
+        358.0,
+        1189.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 83,
+      "col_text": "何以故是福德財姬福德",
+      "col_bbox": [
+        222,
+        126,
+        358,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        222.0,
+        1189.0,
+        358.0,
+        1340.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 84,
+      "col_text": "何以故是福德財姬福德",
+      "col_bbox": [
+        222,
+        126,
+        358,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "運",
+      "bbox": [
+        119.0,
+        137.0,
+        236.0,
+        298.0
+      ],
+      "column": 7,
+      "row": 0,
+      "global_index": 85,
+      "col_text": "運沒如来說福德多未",
+      "col_bbox": [
+        119,
+        137,
+        236,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沒",
+      "bbox": [
+        119.0,
+        298.0,
+        236.0,
+        408.0
+      ],
+      "column": 7,
+      "row": 1,
+      "global_index": 86,
+      "col_text": "運沒如来說福德多未",
+      "col_bbox": [
+        119,
+        137,
+        236,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        119.0,
+        408.0,
+        236.0,
+        541.0
+      ],
+      "column": 7,
+      "row": 2,
+      "global_index": 87,
+      "col_text": "運沒如来說福德多未",
+      "col_bbox": [
+        119,
+        137,
+        236,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        119.0,
+        541.0,
+        236.0,
+        707.0
+      ],
+      "column": 7,
+      "row": 3,
+      "global_index": 88,
+      "col_text": "運沒如来說福德多未",
+      "col_bbox": [
+        119,
+        137,
+        236,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "說",
+      "bbox": [
+        119.0,
+        707.0,
+        236.0,
+        806.0
+      ],
+      "column": 7,
+      "row": 4,
+      "global_index": 89,
+      "col_text": "運沒如来說福德多未",
+      "col_bbox": [
+        119,
+        137,
+        236,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        119.0,
+        806.0,
+        236.0,
+        921.0
+      ],
+      "column": 7,
+      "row": 5,
+      "global_index": 90,
+      "col_text": "運沒如来說福德多未",
+      "col_bbox": [
+        119,
+        137,
+        236,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        119.0,
+        921.0,
+        236.0,
+        1046.0
+      ],
+      "column": 7,
+      "row": 6,
+      "global_index": 91,
+      "col_text": "運沒如来說福德多未",
+      "col_bbox": [
+        119,
+        137,
+        236,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        119.0,
+        1046.0,
+        236.0,
+        1191.0
+      ],
+      "column": 7,
+      "row": 7,
+      "global_index": 92,
+      "col_text": "運沒如来說福德多未",
+      "col_bbox": [
+        119,
+        137,
+        236,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "未",
+      "bbox": [
+        119.0,
+        1191.0,
+        236.0,
+        1334.0
+      ],
+      "column": 7,
+      "row": 8,
+      "global_index": 93,
+      "col_text": "運沒如来說福德多未",
+      "col_bbox": [
+        119,
+        137,
+        236,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 8,
+  "total_chars": 94,
+  "timestamp": "2026-05-02T23:10:37.384012"
+}

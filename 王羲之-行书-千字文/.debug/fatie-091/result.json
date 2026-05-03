@@ -1,0 +1,2193 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-091.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来有见可说者即非有见是名为见须菩提行菩萨乘月者見此亡為正耶為非耶須善提是人衣所如表所说義何八故如来有見可說者即忙有見是名為見須菩提行菩薩楽",
+  "parsed_results": [
+    {
+      "text": "86",
+      "bbox": [
+        871,
+        1409,
+        893,
+        1429
+      ],
+      "poly": [
+        [
+          871,
+          1409
+        ],
+        [
+          893,
+          1409
+        ],
+        [
+          893,
+          1429
+        ],
+        [
+          871,
+          1429
+        ]
+      ]
+    },
+    {
+      "text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "poly": [
+        [
+          733,
+          119
+        ],
+        [
+          760,
+          119
+        ],
+        [
+          760,
+          968
+        ],
+        [
+          733,
+          968
+        ]
+      ]
+    },
+    {
+      "text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "poly": [
+        [
+          696,
+          120
+        ],
+        [
+          726,
+          120
+        ],
+        [
+          726,
+          678
+        ],
+        [
+          696,
+          678
+        ]
+      ]
+    },
+    {
+      "text": "月者見此亡為正耶為",
+      "bbox": [
+        590,
+        123,
+        696,
+        1311
+      ],
+      "poly": [
+        [
+          590,
+          123
+        ],
+        [
+          696,
+          123
+        ],
+        [
+          696,
+          1311
+        ],
+        [
+          590,
+          1311
+        ]
+      ]
+    },
+    {
+      "text": "非耶須善提是人衣所",
+      "bbox": [
+        468,
+        120,
+        591,
+        1314
+      ],
+      "poly": [
+        [
+          468,
+          120
+        ],
+        [
+          591,
+          120
+        ],
+        [
+          591,
+          1314
+        ],
+        [
+          468,
+          1314
+        ]
+      ]
+    },
+    {
+      "text": "如表所说義何八故如来",
+      "bbox": [
+        349,
+        118,
+        484,
+        1323
+      ],
+      "poly": [
+        [
+          349,
+          118
+        ],
+        [
+          484,
+          118
+        ],
+        [
+          484,
+          1323
+        ],
+        [
+          349,
+          1323
+        ]
+      ]
+    },
+    {
+      "text": "有見可說者即忙有見是",
+      "bbox": [
+        245,
+        133,
+        349,
+        1315
+      ],
+      "poly": [
+        [
+          245,
+          133
+        ],
+        [
+          349,
+          133
+        ],
+        [
+          349,
+          1315
+        ],
+        [
+          245,
+          1315
+        ]
+      ]
+    },
+    {
+      "text": "名為見須菩提行菩薩楽",
+      "bbox": [
+        140,
+        130,
+        239,
+        1317
+      ],
+      "poly": [
+        [
+          140,
+          130
+        ],
+        [
+          239,
+          130
+        ],
+        [
+          239,
+          1317
+        ],
+        [
+          140,
+          1317
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "见",
+      "bbox": [
+        733.0,
+        119.0,
+        760.0,
+        147.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寿",
+      "bbox": [
+        733.0,
+        147.0,
+        760.0,
+        173.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        733.0,
+        173.0,
+        760.0,
+        200.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "见",
+      "bbox": [
+        733.0,
+        200.0,
+        760.0,
+        227.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        733.0,
+        227.0,
+        760.0,
+        255.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        733.0,
+        255.0,
+        760.0,
+        280.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        733.0,
+        280.0,
+        760.0,
+        309.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "正",
+      "bbox": [
+        733.0,
+        309.0,
+        760.0,
+        337.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "耶",
+      "bbox": [
+        733.0,
+        337.0,
+        760.0,
+        365.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        733.0,
+        365.0,
+        760.0,
+        394.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        733.0,
+        394.0,
+        760.0,
+        437.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 10,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "耶",
+      "bbox": [
+        733.0,
+        437.0,
+        760.0,
+        465.0
+      ],
+      "column": 1,
+      "row": 11,
+      "global_index": 11,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        733.0,
+        465.0,
+        760.0,
+        493.0
+      ],
+      "column": 1,
+      "row": 12,
+      "global_index": 12,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        733.0,
+        493.0,
+        760.0,
+        519.0
+      ],
+      "column": 1,
+      "row": 13,
+      "global_index": 13,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        733.0,
+        519.0,
+        760.0,
+        547.0
+      ],
+      "column": 1,
+      "row": 14,
+      "global_index": 14,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        733.0,
+        547.0,
+        760.0,
+        572.0
+      ],
+      "column": 1,
+      "row": 15,
+      "global_index": 15,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        733.0,
+        572.0,
+        760.0,
+        600.0
+      ],
+      "column": 1,
+      "row": 16,
+      "global_index": 16,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        733.0,
+        600.0,
+        760.0,
+        625.0
+      ],
+      "column": 1,
+      "row": 17,
+      "global_index": 17,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        733.0,
+        625.0,
+        760.0,
+        650.0
+      ],
+      "column": 1,
+      "row": 18,
+      "global_index": 18,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "解",
+      "bbox": [
+        733.0,
+        650.0,
+        760.0,
+        680.0
+      ],
+      "column": 1,
+      "row": 19,
+      "global_index": 19,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        733.0,
+        680.0,
+        760.0,
+        705.0
+      ],
+      "column": 1,
+      "row": 20,
+      "global_index": 20,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        733.0,
+        705.0,
+        760.0,
+        733.0
+      ],
+      "column": 1,
+      "row": 21,
+      "global_index": 21,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        733.0,
+        733.0,
+        760.0,
+        761.0
+      ],
+      "column": 1,
+      "row": 22,
+      "global_index": 22,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        733.0,
+        761.0,
+        760.0,
+        790.0
+      ],
+      "column": 1,
+      "row": 23,
+      "global_index": 23,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "义",
+      "bbox": [
+        733.0,
+        790.0,
+        760.0,
+        825.0
+      ],
+      "column": 1,
+      "row": 24,
+      "global_index": 24,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        733.0,
+        825.0,
+        760.0,
+        861.0
+      ],
+      "column": 1,
+      "row": 25,
+      "global_index": 25,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        733.0,
+        861.0,
+        760.0,
+        890.0
+      ],
+      "column": 1,
+      "row": 26,
+      "global_index": 26,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        733.0,
+        890.0,
+        760.0,
+        918.0
+      ],
+      "column": 1,
+      "row": 27,
+      "global_index": 27,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        733.0,
+        918.0,
+        760.0,
+        943.0
+      ],
+      "column": 1,
+      "row": 28,
+      "global_index": 28,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        733.0,
+        943.0,
+        760.0,
+        968.0
+      ],
+      "column": 1,
+      "row": 29,
+      "global_index": 29,
+      "col_text": "见寿者见此言为正耶为非耶须菩提言是人不解如来所说义何以故如来",
+      "col_bbox": [
+        733,
+        119,
+        760,
+        968
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        696.0,
+        120.0,
+        726.0,
+        147.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "见",
+      "bbox": [
+        696.0,
+        147.0,
+        726.0,
+        174.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        696.0,
+        174.0,
+        726.0,
+        200.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        696.0,
+        200.0,
+        726.0,
+        227.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        696.0,
+        227.0,
+        726.0,
+        254.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        696.0,
+        254.0,
+        726.0,
+        279.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        696.0,
+        279.0,
+        726.0,
+        308.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        696.0,
+        308.0,
+        726.0,
+        335.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "见",
+      "bbox": [
+        696.0,
+        335.0,
+        726.0,
+        363.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        696.0,
+        363.0,
+        726.0,
+        391.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        696.0,
+        391.0,
+        726.0,
+        418.0
+      ],
+      "column": 2,
+      "row": 10,
+      "global_index": 40,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        696.0,
+        418.0,
+        726.0,
+        446.0
+      ],
+      "column": 2,
+      "row": 11,
+      "global_index": 41,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "见",
+      "bbox": [
+        696.0,
+        446.0,
+        726.0,
+        475.0
+      ],
+      "column": 2,
+      "row": 12,
+      "global_index": 42,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        696.0,
+        475.0,
+        726.0,
+        517.0
+      ],
+      "column": 2,
+      "row": 13,
+      "global_index": 43,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        696.0,
+        517.0,
+        726.0,
+        545.0
+      ],
+      "column": 2,
+      "row": 14,
+      "global_index": 44,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        696.0,
+        545.0,
+        726.0,
+        573.0
+      ],
+      "column": 2,
+      "row": 15,
+      "global_index": 45,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "行",
+      "bbox": [
+        696.0,
+        573.0,
+        726.0,
+        598.0
+      ],
+      "column": 2,
+      "row": 16,
+      "global_index": 46,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        696.0,
+        598.0,
+        726.0,
+        625.0
+      ],
+      "column": 2,
+      "row": 17,
+      "global_index": 47,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "萨",
+      "bbox": [
+        696.0,
+        625.0,
+        726.0,
+        652.0
+      ],
+      "column": 2,
+      "row": 18,
+      "global_index": 48,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乘",
+      "bbox": [
+        696.0,
+        652.0,
+        726.0,
+        678.0
+      ],
+      "column": 2,
+      "row": 19,
+      "global_index": 49,
+      "col_text": "有见可说者即非有见是名为见须菩提行菩萨乘",
+      "col_bbox": [
+        696,
+        120,
+        726,
+        678
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "月",
+      "bbox": [
+        590.0,
+        123.0,
+        696.0,
+        290.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 50,
+      "col_text": "月者見此亡為正耶為",
+      "col_bbox": [
+        590,
+        123,
+        696,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        590.0,
+        290.0,
+        696.0,
+        424.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 51,
+      "col_text": "月者見此亡為正耶為",
+      "col_bbox": [
+        590,
+        123,
+        696,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "見",
+      "bbox": [
+        590.0,
+        424.0,
+        696.0,
+        481.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 52,
+      "col_text": "月者見此亡為正耶為",
+      "col_bbox": [
+        590,
+        123,
+        696,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        590.0,
+        481.0,
+        696.0,
+        665.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 53,
+      "col_text": "月者見此亡為正耶為",
+      "col_bbox": [
+        590,
+        123,
+        696,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "亡",
+      "bbox": [
+        590.0,
+        665.0,
+        696.0,
+        792.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 54,
+      "col_text": "月者見此亡為正耶為",
+      "col_bbox": [
+        590,
+        123,
+        696,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        590.0,
+        792.0,
+        696.0,
+        908.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 55,
+      "col_text": "月者見此亡為正耶為",
+      "col_bbox": [
+        590,
+        123,
+        696,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "正",
+      "bbox": [
+        590.0,
+        908.0,
+        696.0,
+        1014.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 56,
+      "col_text": "月者見此亡為正耶為",
+      "col_bbox": [
+        590,
+        123,
+        696,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "耶",
+      "bbox": [
+        590.0,
+        1014.0,
+        696.0,
+        1140.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 57,
+      "col_text": "月者見此亡為正耶為",
+      "col_bbox": [
+        590,
+        123,
+        696,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        590.0,
+        1140.0,
+        696.0,
+        1311.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 58,
+      "col_text": "月者見此亡為正耶為",
+      "col_bbox": [
+        590,
+        123,
+        696,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        468.0,
+        120.0,
+        591.0,
+        271.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 59,
+      "col_text": "非耶須善提是人衣所",
+      "col_bbox": [
+        468,
+        120,
+        591,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "耶",
+      "bbox": [
+        468.0,
+        271.0,
+        591.0,
+        397.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 60,
+      "col_text": "非耶須善提是人衣所",
+      "col_bbox": [
+        468,
+        120,
+        591,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "須",
+      "bbox": [
+        468.0,
+        397.0,
+        591.0,
+        526.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 61,
+      "col_text": "非耶須善提是人衣所",
+      "col_bbox": [
+        468,
+        120,
+        591,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "善",
+      "bbox": [
+        468.0,
+        526.0,
+        591.0,
+        656.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 62,
+      "col_text": "非耶須善提是人衣所",
+      "col_bbox": [
+        468,
+        120,
+        591,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        468.0,
+        656.0,
+        591.0,
+        744.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 63,
+      "col_text": "非耶須善提是人衣所",
+      "col_bbox": [
+        468,
+        120,
+        591,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        468.0,
+        744.0,
+        591.0,
+        914.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 64,
+      "col_text": "非耶須善提是人衣所",
+      "col_bbox": [
+        468,
+        120,
+        591,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        468.0,
+        914.0,
+        591.0,
+        1039.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 65,
+      "col_text": "非耶須善提是人衣所",
+      "col_bbox": [
+        468,
+        120,
+        591,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "衣",
+      "bbox": [
+        468.0,
+        1039.0,
+        591.0,
+        1219.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 66,
+      "col_text": "非耶須善提是人衣所",
+      "col_bbox": [
+        468,
+        120,
+        591,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        468.0,
+        1219.0,
+        591.0,
+        1314.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 67,
+      "col_text": "非耶須善提是人衣所",
+      "col_bbox": [
+        468,
+        120,
+        591,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        349.0,
+        118.0,
+        484.0,
+        271.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 68,
+      "col_text": "如表所说義何八故如来",
+      "col_bbox": [
+        349,
+        118,
+        484,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "表",
+      "bbox": [
+        349.0,
+        271.0,
+        484.0,
+        351.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 69,
+      "col_text": "如表所说義何八故如来",
+      "col_bbox": [
+        349,
+        118,
+        484,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        349.0,
+        351.0,
+        484.0,
+        504.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 70,
+      "col_text": "如表所说義何八故如来",
+      "col_bbox": [
+        349,
+        118,
+        484,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        349.0,
+        504.0,
+        484.0,
+        564.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 71,
+      "col_text": "如表所说義何八故如来",
+      "col_bbox": [
+        349,
+        118,
+        484,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "義",
+      "bbox": [
+        349.0,
+        564.0,
+        484.0,
+        695.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 72,
+      "col_text": "如表所说義何八故如来",
+      "col_bbox": [
+        349,
+        118,
+        484,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        349.0,
+        695.0,
+        484.0,
+        805.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 73,
+      "col_text": "如表所说義何八故如来",
+      "col_bbox": [
+        349,
+        118,
+        484,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "八",
+      "bbox": [
+        349.0,
+        805.0,
+        484.0,
+        983.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 74,
+      "col_text": "如表所说義何八故如来",
+      "col_bbox": [
+        349,
+        118,
+        484,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        349.0,
+        983.0,
+        484.0,
+        1106.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 75,
+      "col_text": "如表所说義何八故如来",
+      "col_bbox": [
+        349,
+        118,
+        484,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        349.0,
+        1106.0,
+        484.0,
+        1213.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 76,
+      "col_text": "如表所说義何八故如来",
+      "col_bbox": [
+        349,
+        118,
+        484,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        349.0,
+        1213.0,
+        484.0,
+        1323.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 77,
+      "col_text": "如表所说義何八故如来",
+      "col_bbox": [
+        349,
+        118,
+        484,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        245.0,
+        133.0,
+        349.0,
+        285.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 78,
+      "col_text": "有見可說者即忙有見是",
+      "col_bbox": [
+        245,
+        133,
+        349,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "見",
+      "bbox": [
+        245.0,
+        285.0,
+        349.0,
+        387.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 79,
+      "col_text": "有見可說者即忙有見是",
+      "col_bbox": [
+        245,
+        133,
+        349,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        245.0,
+        387.0,
+        349.0,
+        519.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 80,
+      "col_text": "有見可說者即忙有見是",
+      "col_bbox": [
+        245,
+        133,
+        349,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "說",
+      "bbox": [
+        245.0,
+        519.0,
+        349.0,
+        638.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 81,
+      "col_text": "有見可說者即忙有見是",
+      "col_bbox": [
+        245,
+        133,
+        349,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        245.0,
+        638.0,
+        349.0,
+        758.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 82,
+      "col_text": "有見可說者即忙有見是",
+      "col_bbox": [
+        245,
+        133,
+        349,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        245.0,
+        758.0,
+        349.0,
+        876.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 83,
+      "col_text": "有見可說者即忙有見是",
+      "col_bbox": [
+        245,
+        133,
+        349,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "忙",
+      "bbox": [
+        245.0,
+        876.0,
+        349.0,
+        926.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 84,
+      "col_text": "有見可說者即忙有見是",
+      "col_bbox": [
+        245,
+        133,
+        349,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        245.0,
+        926.0,
+        349.0,
+        1044.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 85,
+      "col_text": "有見可說者即忙有見是",
+      "col_bbox": [
+        245,
+        133,
+        349,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "見",
+      "bbox": [
+        245.0,
+        1044.0,
+        349.0,
+        1170.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 86,
+      "col_text": "有見可說者即忙有見是",
+      "col_bbox": [
+        245,
+        133,
+        349,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        245.0,
+        1170.0,
+        349.0,
+        1315.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 87,
+      "col_text": "有見可說者即忙有見是",
+      "col_bbox": [
+        245,
+        133,
+        349,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        140.0,
+        130.0,
+        239.0,
+        282.0
+      ],
+      "column": 7,
+      "row": 0,
+      "global_index": 88,
+      "col_text": "名為見須菩提行菩薩楽",
+      "col_bbox": [
+        140,
+        130,
+        239,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        140.0,
+        282.0,
+        239.0,
+        332.0
+      ],
+      "column": 7,
+      "row": 1,
+      "global_index": 89,
+      "col_text": "名為見須菩提行菩薩楽",
+      "col_bbox": [
+        140,
+        130,
+        239,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "見",
+      "bbox": [
+        140.0,
+        332.0,
+        239.0,
+        516.0
+      ],
+      "column": 7,
+      "row": 2,
+      "global_index": 90,
+      "col_text": "名為見須菩提行菩薩楽",
+      "col_bbox": [
+        140,
+        130,
+        239,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "須",
+      "bbox": [
+        140.0,
+        516.0,
+        239.0,
+        603.0
+      ],
+      "column": 7,
+      "row": 3,
+      "global_index": 91,
+      "col_text": "名為見須菩提行菩薩楽",
+      "col_bbox": [
+        140,
+        130,
+        239,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        140.0,
+        603.0,
+        239.0,
+        710.0
+      ],
+      "column": 7,
+      "row": 4,
+      "global_index": 92,
+      "col_text": "名為見須菩提行菩薩楽",
+      "col_bbox": [
+        140,
+        130,
+        239,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        140.0,
+        710.0,
+        239.0,
+        864.0
+      ],
+      "column": 7,
+      "row": 5,
+      "global_index": 93,
+      "col_text": "名為見須菩提行菩薩楽",
+      "col_bbox": [
+        140,
+        130,
+        239,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "行",
+      "bbox": [
+        140.0,
+        864.0,
+        239.0,
+        980.0
+      ],
+      "column": 7,
+      "row": 6,
+      "global_index": 94,
+      "col_text": "名為見須菩提行菩薩楽",
+      "col_bbox": [
+        140,
+        130,
+        239,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        140.0,
+        980.0,
+        239.0,
+        1108.0
+      ],
+      "column": 7,
+      "row": 7,
+      "global_index": 95,
+      "col_text": "名為見須菩提行菩薩楽",
+      "col_bbox": [
+        140,
+        130,
+        239,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薩",
+      "bbox": [
+        140.0,
+        1108.0,
+        239.0,
+        1179.0
+      ],
+      "column": 7,
+      "row": 8,
+      "global_index": 96,
+      "col_text": "名為見須菩提行菩薩楽",
+      "col_bbox": [
+        140,
+        130,
+        239,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "楽",
+      "bbox": [
+        140.0,
+        1179.0,
+        239.0,
+        1317.0
+      ],
+      "column": 7,
+      "row": 9,
+      "global_index": 97,
+      "col_text": "名為見須菩提行菩薩楽",
+      "col_bbox": [
+        140,
+        130,
+        239,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 8,
+  "total_chars": 98,
+  "timestamp": "2026-05-02T23:12:12.304616"
+}

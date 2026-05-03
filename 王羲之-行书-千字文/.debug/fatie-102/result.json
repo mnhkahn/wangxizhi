@@ -1,0 +1,1953 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-102.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "句偈寳為真宗假利喻坠被晟開龔缺降眾麻大瀛麗草蒙有金之地石之切昭示凸滋流傳無家广诊句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之功昭示正法流传无穷翰林学士中书舍人",
+  "parsed_results": [
+    {
+      "text": "句偈寳為真宗假利喻坠",
+      "bbox": [
+        674,
+        151,
+        774,
+        1341
+      ],
+      "poly": [
+        [
+          674,
+          151
+        ],
+        [
+          774,
+          151
+        ],
+        [
+          774,
+          1341
+        ],
+        [
+          674,
+          1341
+        ]
+      ]
+    },
+    {
+      "text": "被晟開龔缺降眾、麻大",
+      "bbox": [
+        555,
+        151,
+        670,
+        1343
+      ],
+      "poly": [
+        [
+          555,
+          151
+        ],
+        [
+          670,
+          151
+        ],
+        [
+          670,
+          1343
+        ],
+        [
+          555,
+          1343
+        ]
+      ]
+    },
+    {
+      "text": "瀛，麗草蒙有金之地石之",
+      "bbox": [
+        431,
+        149,
+        554,
+        1346
+      ],
+      "poly": [
+        [
+          431,
+          149
+        ],
+        [
+          554,
+          149
+        ],
+        [
+          554,
+          1346
+        ],
+        [
+          431,
+          1346
+        ]
+      ]
+    },
+    {
+      "text": "切昭示凸滋流傳無家",
+      "bbox": [
+        316,
+        143,
+        437,
+        1139
+      ],
+      "poly": [
+        [
+          316,
+          143
+        ],
+        [
+          437,
+          143
+        ],
+        [
+          437,
+          1139
+        ],
+        [
+          316,
+          1139
+        ]
+      ]
+    },
+    {
+      "text": "广诊",
+      "bbox": [
+        217,
+        424,
+        321,
+        1340
+      ],
+      "poly": [
+        [
+          217,
+          424
+        ],
+        [
+          321,
+          424
+        ],
+        [
+          321,
+          1340
+        ],
+        [
+          217,
+          1340
+        ]
+      ]
+    },
+    {
+      "text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "poly": [
+        [
+          171,
+          150
+        ],
+        [
+          198,
+          150
+        ],
+        [
+          198,
+          974
+        ],
+        [
+          171,
+          974
+        ]
+      ]
+    },
+    {
+      "text": "功昭示正法流传无穷翰林学士中书舍人",
+      "bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "poly": [
+        [
+          135,
+          150
+        ],
+        [
+          163,
+          150
+        ],
+        [
+          163,
+          629
+        ],
+        [
+          135,
+          629
+        ]
+      ]
+    },
+    {
+      "text": "97",
+      "bbox": [
+        16,
+        1441,
+        42,
+        1463
+      ],
+      "poly": [
+        [
+          16,
+          1441
+        ],
+        [
+          42,
+          1441
+        ],
+        [
+          42,
+          1463
+        ],
+        [
+          16,
+          1463
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "句",
+      "bbox": [
+        674.0,
+        151.0,
+        774.0,
+        304.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "句偈寳為真宗假利喻坠",
+      "col_bbox": [
+        674,
+        151,
+        774,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "偈",
+      "bbox": [
+        674.0,
+        304.0,
+        774.0,
+        401.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "句偈寳為真宗假利喻坠",
+      "col_bbox": [
+        674,
+        151,
+        774,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寳",
+      "bbox": [
+        674.0,
+        401.0,
+        774.0,
+        484.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "句偈寳為真宗假利喻坠",
+      "col_bbox": [
+        674,
+        151,
+        774,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        674.0,
+        484.0,
+        774.0,
+        606.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "句偈寳為真宗假利喻坠",
+      "col_bbox": [
+        674,
+        151,
+        774,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "真",
+      "bbox": [
+        674.0,
+        606.0,
+        774.0,
+        719.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "句偈寳為真宗假利喻坠",
+      "col_bbox": [
+        674,
+        151,
+        774,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宗",
+      "bbox": [
+        674.0,
+        719.0,
+        774.0,
+        899.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "句偈寳為真宗假利喻坠",
+      "col_bbox": [
+        674,
+        151,
+        774,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "假",
+      "bbox": [
+        674.0,
+        899.0,
+        774.0,
+        949.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "句偈寳為真宗假利喻坠",
+      "col_bbox": [
+        674,
+        151,
+        774,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "利",
+      "bbox": [
+        674.0,
+        949.0,
+        774.0,
+        1137.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "句偈寳為真宗假利喻坠",
+      "col_bbox": [
+        674,
+        151,
+        774,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "喻",
+      "bbox": [
+        674.0,
+        1137.0,
+        774.0,
+        1187.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "句偈寳為真宗假利喻坠",
+      "col_bbox": [
+        674,
+        151,
+        774,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "坠",
+      "bbox": [
+        674.0,
+        1187.0,
+        774.0,
+        1341.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "句偈寳為真宗假利喻坠",
+      "col_bbox": [
+        674,
+        151,
+        774,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "被",
+      "bbox": [
+        555.0,
+        151.0,
+        670.0,
+        235.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "被晟開龔缺降眾、麻大",
+      "col_bbox": [
+        555,
+        151,
+        670,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "晟",
+      "bbox": [
+        555.0,
+        235.0,
+        670.0,
+        355.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "被晟開龔缺降眾、麻大",
+      "col_bbox": [
+        555,
+        151,
+        670,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "開",
+      "bbox": [
+        555.0,
+        355.0,
+        670.0,
+        473.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "被晟開龔缺降眾、麻大",
+      "col_bbox": [
+        555,
+        151,
+        670,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "龔",
+      "bbox": [
+        555.0,
+        473.0,
+        670.0,
+        592.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "被晟開龔缺降眾、麻大",
+      "col_bbox": [
+        555,
+        151,
+        670,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "缺",
+      "bbox": [
+        555.0,
+        592.0,
+        670.0,
+        727.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "被晟開龔缺降眾、麻大",
+      "col_bbox": [
+        555,
+        151,
+        670,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "降",
+      "bbox": [
+        555.0,
+        727.0,
+        670.0,
+        831.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "被晟開龔缺降眾、麻大",
+      "col_bbox": [
+        555,
+        151,
+        670,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "眾",
+      "bbox": [
+        555.0,
+        831.0,
+        670.0,
+        999.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "被晟開龔缺降眾、麻大",
+      "col_bbox": [
+        555,
+        151,
+        670,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "麻",
+      "bbox": [
+        555.0,
+        1119.0,
+        670.0,
+        1210.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 17,
+      "col_text": "被晟開龔缺降眾、麻大",
+      "col_bbox": [
+        555,
+        151,
+        670,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        555.0,
+        1210.0,
+        670.0,
+        1343.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 18,
+      "col_text": "被晟開龔缺降眾、麻大",
+      "col_bbox": [
+        555,
+        151,
+        670,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "瀛",
+      "bbox": [
+        431.0,
+        149.0,
+        554.0,
+        230.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 19,
+      "col_text": "瀛，麗草蒙有金之地石之",
+      "col_bbox": [
+        431,
+        149,
+        554,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "麗",
+      "bbox": [
+        431.0,
+        385.0,
+        554.0,
+        506.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 20,
+      "col_text": "瀛，麗草蒙有金之地石之",
+      "col_bbox": [
+        431,
+        149,
+        554,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "草",
+      "bbox": [
+        431.0,
+        506.0,
+        554.0,
+        552.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 21,
+      "col_text": "瀛，麗草蒙有金之地石之",
+      "col_bbox": [
+        431,
+        149,
+        554,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "蒙",
+      "bbox": [
+        431.0,
+        552.0,
+        554.0,
+        661.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 22,
+      "col_text": "瀛，麗草蒙有金之地石之",
+      "col_bbox": [
+        431,
+        149,
+        554,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        431.0,
+        661.0,
+        554.0,
+        784.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 23,
+      "col_text": "瀛，麗草蒙有金之地石之",
+      "col_bbox": [
+        431,
+        149,
+        554,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        431.0,
+        784.0,
+        554.0,
+        878.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 24,
+      "col_text": "瀛，麗草蒙有金之地石之",
+      "col_bbox": [
+        431,
+        149,
+        554,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        431.0,
+        878.0,
+        554.0,
+        994.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 25,
+      "col_text": "瀛，麗草蒙有金之地石之",
+      "col_bbox": [
+        431,
+        149,
+        554,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "地",
+      "bbox": [
+        431.0,
+        994.0,
+        554.0,
+        1154.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 26,
+      "col_text": "瀛，麗草蒙有金之地石之",
+      "col_bbox": [
+        431,
+        149,
+        554,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "石",
+      "bbox": [
+        431.0,
+        1154.0,
+        554.0,
+        1205.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 27,
+      "col_text": "瀛，麗草蒙有金之地石之",
+      "col_bbox": [
+        431,
+        149,
+        554,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        431.0,
+        1205.0,
+        554.0,
+        1346.0
+      ],
+      "column": 2,
+      "row": 10,
+      "global_index": 28,
+      "col_text": "瀛，麗草蒙有金之地石之",
+      "col_bbox": [
+        431,
+        149,
+        554,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "切",
+      "bbox": [
+        316.0,
+        143.0,
+        437.0,
+        283.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 29,
+      "col_text": "切昭示凸滋流傳無家",
+      "col_bbox": [
+        316,
+        143,
+        437,
+        1139
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "昭",
+      "bbox": [
+        316.0,
+        283.0,
+        437.0,
+        393.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 30,
+      "col_text": "切昭示凸滋流傳無家",
+      "col_bbox": [
+        316,
+        143,
+        437,
+        1139
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "示",
+      "bbox": [
+        316.0,
+        393.0,
+        437.0,
+        489.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 31,
+      "col_text": "切昭示凸滋流傳無家",
+      "col_bbox": [
+        316,
+        143,
+        437,
+        1139
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "凸",
+      "bbox": [
+        316.0,
+        489.0,
+        437.0,
+        615.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 32,
+      "col_text": "切昭示凸滋流傳無家",
+      "col_bbox": [
+        316,
+        143,
+        437,
+        1139
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "滋",
+      "bbox": [
+        316.0,
+        615.0,
+        437.0,
+        710.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 33,
+      "col_text": "切昭示凸滋流傳無家",
+      "col_bbox": [
+        316,
+        143,
+        437,
+        1139
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "流",
+      "bbox": [
+        316.0,
+        710.0,
+        437.0,
+        825.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 34,
+      "col_text": "切昭示凸滋流傳無家",
+      "col_bbox": [
+        316,
+        143,
+        437,
+        1139
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "傳",
+      "bbox": [
+        316.0,
+        825.0,
+        437.0,
+        948.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 35,
+      "col_text": "切昭示凸滋流傳無家",
+      "col_bbox": [
+        316,
+        143,
+        437,
+        1139
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        316.0,
+        948.0,
+        437.0,
+        1042.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 36,
+      "col_text": "切昭示凸滋流傳無家",
+      "col_bbox": [
+        316,
+        143,
+        437,
+        1139
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "家",
+      "bbox": [
+        316.0,
+        1042.0,
+        437.0,
+        1139.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 37,
+      "col_text": "切昭示凸滋流傳無家",
+      "col_bbox": [
+        316,
+        143,
+        437,
+        1139
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "广",
+      "bbox": [
+        217.0,
+        424.0,
+        321.0,
+        981.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 38,
+      "col_text": "广诊",
+      "col_bbox": [
+        217,
+        424,
+        321,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诊",
+      "bbox": [
+        217.0,
+        981.0,
+        321.0,
+        1340.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 39,
+      "col_text": "广诊",
+      "col_bbox": [
+        217,
+        424,
+        321,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "句",
+      "bbox": [
+        171.0,
+        150.0,
+        198.0,
+        177.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 40,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "偈",
+      "bbox": [
+        171.0,
+        177.0,
+        198.0,
+        205.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 41,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "实",
+      "bbox": [
+        171.0,
+        205.0,
+        198.0,
+        232.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 42,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        171.0,
+        232.0,
+        198.0,
+        258.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 43,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "真",
+      "bbox": [
+        171.0,
+        258.0,
+        198.0,
+        285.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 44,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宗",
+      "bbox": [
+        171.0,
+        285.0,
+        198.0,
+        312.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 45,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "假",
+      "bbox": [
+        171.0,
+        312.0,
+        198.0,
+        340.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 46,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "利",
+      "bbox": [
+        171.0,
+        340.0,
+        198.0,
+        369.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 47,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "喻",
+      "bbox": [
+        171.0,
+        369.0,
+        198.0,
+        409.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 48,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "坚",
+      "bbox": [
+        171.0,
+        409.0,
+        198.0,
+        429.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 49,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "破",
+      "bbox": [
+        171.0,
+        429.0,
+        198.0,
+        469.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 50,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "昏",
+      "bbox": [
+        171.0,
+        469.0,
+        198.0,
+        497.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 51,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "开",
+      "bbox": [
+        171.0,
+        497.0,
+        198.0,
+        523.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 52,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "聋",
+      "bbox": [
+        171.0,
+        523.0,
+        198.0,
+        549.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 53,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        171.0,
+        549.0,
+        198.0,
+        577.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 54,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "降",
+      "bbox": [
+        171.0,
+        577.0,
+        198.0,
+        604.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 55,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "众",
+      "bbox": [
+        171.0,
+        604.0,
+        198.0,
+        630.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 56,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "魔",
+      "bbox": [
+        171.0,
+        630.0,
+        198.0,
+        658.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 57,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        171.0,
+        658.0,
+        198.0,
+        684.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 58,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "济",
+      "bbox": [
+        171.0,
+        684.0,
+        198.0,
+        710.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 59,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "群",
+      "bbox": [
+        171.0,
+        710.0,
+        198.0,
+        738.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 60,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "蒙",
+      "bbox": [
+        171.0,
+        738.0,
+        198.0,
+        767.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 61,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "布",
+      "bbox": [
+        171.0,
+        767.0,
+        198.0,
+        810.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 62,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        171.0,
+        810.0,
+        198.0,
+        838.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 63,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        171.0,
+        838.0,
+        198.0,
+        867.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 64,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "地",
+      "bbox": [
+        171.0,
+        867.0,
+        198.0,
+        895.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 65,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "刊",
+      "bbox": [
+        171.0,
+        895.0,
+        198.0,
+        922.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 66,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "石",
+      "bbox": [
+        171.0,
+        922.0,
+        198.0,
+        948.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 67,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        171.0,
+        948.0,
+        198.0,
+        974.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 68,
+      "col_text": "句偈实为真宗假利喻坚破昏开聋能降众魔大济群蒙布金之地刊石之",
+      "col_bbox": [
+        171,
+        150,
+        198,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "功",
+      "bbox": [
+        135.0,
+        150.0,
+        163.0,
+        178.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 69,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "昭",
+      "bbox": [
+        135.0,
+        178.0,
+        163.0,
+        205.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 70,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "示",
+      "bbox": [
+        135.0,
+        205.0,
+        163.0,
+        232.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 71,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "正",
+      "bbox": [
+        135.0,
+        232.0,
+        163.0,
+        257.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 72,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        135.0,
+        257.0,
+        163.0,
+        285.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 73,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "流",
+      "bbox": [
+        135.0,
+        285.0,
+        163.0,
+        312.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 74,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "传",
+      "bbox": [
+        135.0,
+        312.0,
+        163.0,
+        339.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 75,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        135.0,
+        339.0,
+        163.0,
+        367.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 76,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "穷",
+      "bbox": [
+        135.0,
+        367.0,
+        163.0,
+        410.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 77,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "翰",
+      "bbox": [
+        135.0,
+        410.0,
+        163.0,
+        438.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 78,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "林",
+      "bbox": [
+        135.0,
+        438.0,
+        163.0,
+        466.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 79,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "学",
+      "bbox": [
+        135.0,
+        466.0,
+        163.0,
+        495.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 80,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "士",
+      "bbox": [
+        135.0,
+        495.0,
+        163.0,
+        523.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 81,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        135.0,
+        523.0,
+        163.0,
+        548.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 82,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "书",
+      "bbox": [
+        135.0,
+        548.0,
+        163.0,
+        576.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 83,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "舍",
+      "bbox": [
+        135.0,
+        576.0,
+        163.0,
+        604.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 84,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        135.0,
+        604.0,
+        163.0,
+        629.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 85,
+      "col_text": "功昭示正法流传无穷翰林学士中书舍人",
+      "col_bbox": [
+        135,
+        150,
+        163,
+        629
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 86,
+  "timestamp": "2026-05-02T23:12:33.581793"
+}

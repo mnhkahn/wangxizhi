@@ -1,0 +1,1813 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-099.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗翰林学士中散大夫谏议大夫赐紫金鱼人我寒垢净平葬生减同風如如不動乃悟真宗翰赫學士中大夫谏議大夫赐紫金通",
+  "parsed_results": [
+    {
+      "text": "94",
+      "bbox": [
+        870,
+        1414,
+        893,
+        1434
+      ],
+      "poly": [
+        [
+          870,
+          1414
+        ],
+        [
+          893,
+          1414
+        ],
+        [
+          893,
+          1434
+        ],
+        [
+          870,
+          1434
+        ]
+      ]
+    },
+    {
+      "text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "poly": [
+        [
+          732,
+          125
+        ],
+        [
+          763,
+          125
+        ],
+        [
+          763,
+          950
+        ],
+        [
+          732,
+          950
+        ]
+      ]
+    },
+    {
+      "text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "poly": [
+        [
+          695,
+          123
+        ],
+        [
+          727,
+          123
+        ],
+        [
+          727,
+          580
+        ],
+        [
+          695,
+          580
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "bbox": [
+        578,
+        118,
+        703,
+        1318
+      ],
+      "poly": [
+        [
+          578,
+          118
+        ],
+        [
+          703,
+          118
+        ],
+        [
+          703,
+          1318
+        ],
+        [
+          578,
+          1318
+        ]
+      ]
+    },
+    {
+      "text": "人我寒垢净平葬生减同",
+      "bbox": [
+        468,
+        128,
+        582,
+        1315
+      ],
+      "poly": [
+        [
+          468,
+          128
+        ],
+        [
+          582,
+          128
+        ],
+        [
+          582,
+          1315
+        ],
+        [
+          468,
+          1315
+        ]
+      ]
+    },
+    {
+      "text": "風如如不動乃悟真宗",
+      "bbox": [
+        355,
+        139,
+        460,
+        1127
+      ],
+      "poly": [
+        [
+          355,
+          139
+        ],
+        [
+          460,
+          139
+        ],
+        [
+          460,
+          1127
+        ],
+        [
+          355,
+          1127
+        ]
+      ]
+    },
+    {
+      "text": "翰赫學士中フ大夫",
+      "bbox": [
+        242,
+        364,
+        353,
+        1314
+      ],
+      "poly": [
+        [
+          242,
+          364
+        ],
+        [
+          353,
+          364
+        ],
+        [
+          353,
+          1314
+        ],
+        [
+          242,
+          1314
+        ]
+      ]
+    },
+    {
+      "text": "谏議大夫赐紫金通",
+      "bbox": [
+        133,
+        371,
+        239,
+        1318
+      ],
+      "poly": [
+        [
+          133,
+          371
+        ],
+        [
+          239,
+          371
+        ],
+        [
+          239,
+          1318
+        ],
+        [
+          133,
+          1318
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "夫",
+      "bbox": [
+        732.0,
+        125.0,
+        763.0,
+        153.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "忧",
+      "bbox": [
+        732.0,
+        153.0,
+        763.0,
+        180.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "恶",
+      "bbox": [
+        732.0,
+        180.0,
+        763.0,
+        207.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        732.0,
+        207.0,
+        763.0,
+        233.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "攻",
+      "bbox": [
+        732.0,
+        233.0,
+        763.0,
+        261.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "塞",
+      "bbox": [
+        732.0,
+        261.0,
+        763.0,
+        287.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "口",
+      "bbox": [
+        732.0,
+        287.0,
+        763.0,
+        322.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "口",
+      "bbox": [
+        732.0,
+        322.0,
+        763.0,
+        344.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "源",
+      "bbox": [
+        732.0,
+        344.0,
+        763.0,
+        388.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "摧",
+      "bbox": [
+        732.0,
+        388.0,
+        763.0,
+        414.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        732.0,
+        414.0,
+        763.0,
+        444.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 10,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        732.0,
+        444.0,
+        763.0,
+        472.0
+      ],
+      "column": 1,
+      "row": 11,
+      "global_index": 11,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "峰",
+      "bbox": [
+        732.0,
+        472.0,
+        763.0,
+        498.0
+      ],
+      "column": 1,
+      "row": 12,
+      "global_index": 12,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "垢",
+      "bbox": [
+        732.0,
+        498.0,
+        763.0,
+        527.0
+      ],
+      "column": 1,
+      "row": 13,
+      "global_index": 13,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "净",
+      "bbox": [
+        732.0,
+        527.0,
+        763.0,
+        552.0
+      ],
+      "column": 1,
+      "row": 14,
+      "global_index": 14,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "平",
+      "bbox": [
+        732.0,
+        552.0,
+        763.0,
+        577.0
+      ],
+      "column": 1,
+      "row": 15,
+      "global_index": 15,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "等",
+      "bbox": [
+        732.0,
+        577.0,
+        763.0,
+        605.0
+      ],
+      "column": 1,
+      "row": 16,
+      "global_index": 16,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        732.0,
+        605.0,
+        763.0,
+        631.0
+      ],
+      "column": 1,
+      "row": 17,
+      "global_index": 17,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "灭",
+      "bbox": [
+        732.0,
+        631.0,
+        763.0,
+        657.0
+      ],
+      "column": 1,
+      "row": 18,
+      "global_index": 18,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "同",
+      "bbox": [
+        732.0,
+        657.0,
+        763.0,
+        685.0
+      ],
+      "column": 1,
+      "row": 19,
+      "global_index": 19,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "风",
+      "bbox": [
+        732.0,
+        685.0,
+        763.0,
+        714.0
+      ],
+      "column": 1,
+      "row": 20,
+      "global_index": 20,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        732.0,
+        714.0,
+        763.0,
+        742.0
+      ],
+      "column": 1,
+      "row": 21,
+      "global_index": 21,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        732.0,
+        742.0,
+        763.0,
+        786.0
+      ],
+      "column": 1,
+      "row": 22,
+      "global_index": 22,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        732.0,
+        786.0,
+        763.0,
+        814.0
+      ],
+      "column": 1,
+      "row": 23,
+      "global_index": 23,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "动",
+      "bbox": [
+        732.0,
+        814.0,
+        763.0,
+        843.0
+      ],
+      "column": 1,
+      "row": 24,
+      "global_index": 24,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乃",
+      "bbox": [
+        732.0,
+        843.0,
+        763.0,
+        870.0
+      ],
+      "column": 1,
+      "row": 25,
+      "global_index": 25,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悟",
+      "bbox": [
+        732.0,
+        870.0,
+        763.0,
+        897.0
+      ],
+      "column": 1,
+      "row": 26,
+      "global_index": 26,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "真",
+      "bbox": [
+        732.0,
+        897.0,
+        763.0,
+        924.0
+      ],
+      "column": 1,
+      "row": 27,
+      "global_index": 27,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宗",
+      "bbox": [
+        732.0,
+        924.0,
+        763.0,
+        950.0
+      ],
+      "column": 1,
+      "row": 28,
+      "global_index": 28,
+      "col_text": "夫忧恶相攻塞口口源摧人我峰垢净平等生灭同风如如不动乃悟真宗",
+      "col_bbox": [
+        732,
+        125,
+        763,
+        950
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "翰",
+      "bbox": [
+        695.0,
+        123.0,
+        727.0,
+        154.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 29,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "林",
+      "bbox": [
+        695.0,
+        154.0,
+        727.0,
+        179.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 30,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "学",
+      "bbox": [
+        695.0,
+        179.0,
+        727.0,
+        208.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 31,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "士",
+      "bbox": [
+        695.0,
+        208.0,
+        727.0,
+        234.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 32,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        695.0,
+        234.0,
+        727.0,
+        258.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 33,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "散",
+      "bbox": [
+        695.0,
+        258.0,
+        727.0,
+        288.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 34,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        695.0,
+        288.0,
+        727.0,
+        314.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 35,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "夫",
+      "bbox": [
+        695.0,
+        314.0,
+        727.0,
+        343.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 36,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "谏",
+      "bbox": [
+        695.0,
+        343.0,
+        727.0,
+        372.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 37,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "议",
+      "bbox": [
+        695.0,
+        372.0,
+        727.0,
+        415.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 38,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        695.0,
+        415.0,
+        727.0,
+        444.0
+      ],
+      "column": 2,
+      "row": 10,
+      "global_index": 39,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "夫",
+      "bbox": [
+        695.0,
+        444.0,
+        727.0,
+        472.0
+      ],
+      "column": 2,
+      "row": 11,
+      "global_index": 40,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "赐",
+      "bbox": [
+        695.0,
+        472.0,
+        727.0,
+        500.0
+      ],
+      "column": 2,
+      "row": 12,
+      "global_index": 41,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "紫",
+      "bbox": [
+        695.0,
+        500.0,
+        727.0,
+        527.0
+      ],
+      "column": 2,
+      "row": 13,
+      "global_index": 42,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        695.0,
+        527.0,
+        727.0,
+        553.0
+      ],
+      "column": 2,
+      "row": 14,
+      "global_index": 43,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "鱼",
+      "bbox": [
+        695.0,
+        553.0,
+        727.0,
+        580.0
+      ],
+      "column": 2,
+      "row": 15,
+      "global_index": 44,
+      "col_text": "翰林学士中散大夫谏议大夫赐紫金鱼",
+      "col_bbox": [
+        695,
+        123,
+        727,
+        580
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        468.0,
+        128.0,
+        582.0,
+        278.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 45,
+      "col_text": "人我寒垢净平葬生减同",
+      "col_bbox": [
+        468,
+        128,
+        582,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        468.0,
+        278.0,
+        582.0,
+        396.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 46,
+      "col_text": "人我寒垢净平葬生减同",
+      "col_bbox": [
+        468,
+        128,
+        582,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寒",
+      "bbox": [
+        468.0,
+        396.0,
+        582.0,
+        518.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 47,
+      "col_text": "人我寒垢净平葬生减同",
+      "col_bbox": [
+        468,
+        128,
+        582,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "垢",
+      "bbox": [
+        468.0,
+        518.0,
+        582.0,
+        623.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 48,
+      "col_text": "人我寒垢净平葬生减同",
+      "col_bbox": [
+        468,
+        128,
+        582,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "净",
+      "bbox": [
+        468.0,
+        623.0,
+        582.0,
+        686.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 49,
+      "col_text": "人我寒垢净平葬生减同",
+      "col_bbox": [
+        468,
+        128,
+        582,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "平",
+      "bbox": [
+        468.0,
+        686.0,
+        582.0,
+        874.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 50,
+      "col_text": "人我寒垢净平葬生减同",
+      "col_bbox": [
+        468,
+        128,
+        582,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "葬",
+      "bbox": [
+        468.0,
+        874.0,
+        582.0,
+        923.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 51,
+      "col_text": "人我寒垢净平葬生减同",
+      "col_bbox": [
+        468,
+        128,
+        582,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        468.0,
+        923.0,
+        582.0,
+        1063.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 52,
+      "col_text": "人我寒垢净平葬生减同",
+      "col_bbox": [
+        468,
+        128,
+        582,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "减",
+      "bbox": [
+        468.0,
+        1063.0,
+        582.0,
+        1193.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 53,
+      "col_text": "人我寒垢净平葬生减同",
+      "col_bbox": [
+        468,
+        128,
+        582,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "同",
+      "bbox": [
+        468.0,
+        1193.0,
+        582.0,
+        1315.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 54,
+      "col_text": "人我寒垢净平葬生减同",
+      "col_bbox": [
+        468,
+        128,
+        582,
+        1315
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "風",
+      "bbox": [
+        355.0,
+        139.0,
+        460.0,
+        261.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 55,
+      "col_text": "風如如不動乃悟真宗",
+      "col_bbox": [
+        355,
+        139,
+        460,
+        1127
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        355.0,
+        261.0,
+        460.0,
+        381.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 56,
+      "col_text": "風如如不動乃悟真宗",
+      "col_bbox": [
+        355,
+        139,
+        460,
+        1127
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        355.0,
+        381.0,
+        460.0,
+        456.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 57,
+      "col_text": "風如如不動乃悟真宗",
+      "col_bbox": [
+        355,
+        139,
+        460,
+        1127
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        355.0,
+        456.0,
+        460.0,
+        548.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 58,
+      "col_text": "風如如不動乃悟真宗",
+      "col_bbox": [
+        355,
+        139,
+        460,
+        1127
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "動",
+      "bbox": [
+        355.0,
+        548.0,
+        460.0,
+        701.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 59,
+      "col_text": "風如如不動乃悟真宗",
+      "col_bbox": [
+        355,
+        139,
+        460,
+        1127
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乃",
+      "bbox": [
+        355.0,
+        701.0,
+        460.0,
+        780.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 60,
+      "col_text": "風如如不動乃悟真宗",
+      "col_bbox": [
+        355,
+        139,
+        460,
+        1127
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悟",
+      "bbox": [
+        355.0,
+        780.0,
+        460.0,
+        887.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 61,
+      "col_text": "風如如不動乃悟真宗",
+      "col_bbox": [
+        355,
+        139,
+        460,
+        1127
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "真",
+      "bbox": [
+        355.0,
+        887.0,
+        460.0,
+        985.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 62,
+      "col_text": "風如如不動乃悟真宗",
+      "col_bbox": [
+        355,
+        139,
+        460,
+        1127
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宗",
+      "bbox": [
+        355.0,
+        985.0,
+        460.0,
+        1127.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 63,
+      "col_text": "風如如不動乃悟真宗",
+      "col_bbox": [
+        355,
+        139,
+        460,
+        1127
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "翰",
+      "bbox": [
+        242.0,
+        364.0,
+        353.0,
+        516.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 64,
+      "col_text": "翰赫學士中フ大夫",
+      "col_bbox": [
+        242,
+        364,
+        353,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "赫",
+      "bbox": [
+        242.0,
+        516.0,
+        353.0,
+        566.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 65,
+      "col_text": "翰赫學士中フ大夫",
+      "col_bbox": [
+        242,
+        364,
+        353,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "學",
+      "bbox": [
+        242.0,
+        566.0,
+        353.0,
+        695.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 66,
+      "col_text": "翰赫學士中フ大夫",
+      "col_bbox": [
+        242,
+        364,
+        353,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "士",
+      "bbox": [
+        242.0,
+        695.0,
+        353.0,
+        873.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 67,
+      "col_text": "翰赫學士中フ大夫",
+      "col_bbox": [
+        242,
+        364,
+        353,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        242.0,
+        873.0,
+        353.0,
+        991.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 68,
+      "col_text": "翰赫學士中フ大夫",
+      "col_bbox": [
+        242,
+        364,
+        353,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        242.0,
+        1058.0,
+        353.0,
+        1180.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 69,
+      "col_text": "翰赫學士中フ大夫",
+      "col_bbox": [
+        242,
+        364,
+        353,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "夫",
+      "bbox": [
+        242.0,
+        1180.0,
+        353.0,
+        1314.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 70,
+      "col_text": "翰赫學士中フ大夫",
+      "col_bbox": [
+        242,
+        364,
+        353,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "谏",
+      "bbox": [
+        133.0,
+        371.0,
+        239.0,
+        456.0
+      ],
+      "column": 7,
+      "row": 0,
+      "global_index": 71,
+      "col_text": "谏議大夫赐紫金通",
+      "col_bbox": [
+        133,
+        371,
+        239,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "議",
+      "bbox": [
+        133.0,
+        456.0,
+        239.0,
+        587.0
+      ],
+      "column": 7,
+      "row": 1,
+      "global_index": 72,
+      "col_text": "谏議大夫赐紫金通",
+      "col_bbox": [
+        133,
+        371,
+        239,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        133.0,
+        587.0,
+        239.0,
+        709.0
+      ],
+      "column": 7,
+      "row": 2,
+      "global_index": 73,
+      "col_text": "谏議大夫赐紫金通",
+      "col_bbox": [
+        133,
+        371,
+        239,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "夫",
+      "bbox": [
+        133.0,
+        709.0,
+        239.0,
+        835.0
+      ],
+      "column": 7,
+      "row": 3,
+      "global_index": 74,
+      "col_text": "谏議大夫赐紫金通",
+      "col_bbox": [
+        133,
+        371,
+        239,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "赐",
+      "bbox": [
+        133.0,
+        835.0,
+        239.0,
+        941.0
+      ],
+      "column": 7,
+      "row": 4,
+      "global_index": 75,
+      "col_text": "谏議大夫赐紫金通",
+      "col_bbox": [
+        133,
+        371,
+        239,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "紫",
+      "bbox": [
+        133.0,
+        941.0,
+        239.0,
+        1064.0
+      ],
+      "column": 7,
+      "row": 5,
+      "global_index": 76,
+      "col_text": "谏議大夫赐紫金通",
+      "col_bbox": [
+        133,
+        371,
+        239,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        133.0,
+        1064.0,
+        239.0,
+        1164.0
+      ],
+      "column": 7,
+      "row": 6,
+      "global_index": 77,
+      "col_text": "谏議大夫赐紫金通",
+      "col_bbox": [
+        133,
+        371,
+        239,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "通",
+      "bbox": [
+        133.0,
+        1164.0,
+        239.0,
+        1318.0
+      ],
+      "column": 7,
+      "row": 7,
+      "global_index": 78,
+      "col_text": "谏議大夫赐紫金通",
+      "col_bbox": [
+        133,
+        371,
+        239,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 8,
+  "total_chars": 79,
+  "timestamp": "2026-05-02T23:12:27.953018"
+}

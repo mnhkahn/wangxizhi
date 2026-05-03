@@ -1,0 +1,2193 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-026.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "身和成就臭追藤读觀如求不不也世薄染可身掏得見如来何以故始棗所說身粗即非身欄佛落凡所有相皆是處妄若以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如来所说身相即非身相佛言凡所有相皆是虛妄若",
+  "parsed_results": [
+    {
+      "text": "身和成就臭追藤读觀",
+      "bbox": [
+        637,
+        177,
+        753,
+        1355
+      ],
+      "poly": [
+        [
+          637,
+          177
+        ],
+        [
+          753,
+          177
+        ],
+        [
+          753,
+          1355
+        ],
+        [
+          637,
+          1355
+        ]
+      ]
+    },
+    {
+      "text": "如求不不也世薄染可",
+      "bbox": [
+        521,
+        158,
+        650,
+        1355
+      ],
+      "poly": [
+        [
+          521,
+          158
+        ],
+        [
+          650,
+          158
+        ],
+        [
+          650,
+          1355
+        ],
+        [
+          521,
+          1355
+        ]
+      ]
+    },
+    {
+      "text": "身掏得見如来何以故始",
+      "bbox": [
+        412,
+        162,
+        535,
+        1351
+      ],
+      "poly": [
+        [
+          412,
+          162
+        ],
+        [
+          535,
+          162
+        ],
+        [
+          535,
+          1351
+        ],
+        [
+          412,
+          1351
+        ]
+      ]
+    },
+    {
+      "text": "棗所說身粗即非身欄佛",
+      "bbox": [
+        302,
+        166,
+        419,
+        1349
+      ],
+      "poly": [
+        [
+          302,
+          166
+        ],
+        [
+          419,
+          166
+        ],
+        [
+          419,
+          1349
+        ],
+        [
+          302,
+          1349
+        ]
+      ]
+    },
+    {
+      "text": "落凡所有相皆是處妄若",
+      "bbox": [
+        195,
+        174,
+        300,
+        1352
+      ],
+      "poly": [
+        [
+          195,
+          174
+        ],
+        [
+          300,
+          174
+        ],
+        [
+          300,
+          1352
+        ],
+        [
+          195,
+          1352
+        ]
+      ]
+    },
+    {
+      "text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "poly": [
+        [
+          155,
+          151
+        ],
+        [
+          186,
+          151
+        ],
+        [
+          186,
+          1001
+        ],
+        [
+          155,
+          1001
+        ]
+      ]
+    },
+    {
+      "text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "poly": [
+        [
+          121,
+          149
+        ],
+        [
+          149,
+          149
+        ],
+        [
+          149,
+          708
+        ],
+        [
+          121,
+          708
+        ]
+      ]
+    },
+    {
+      "text": "21",
+      "bbox": [
+        0,
+        1438,
+        23,
+        1460
+      ],
+      "poly": [
+        [
+          0,
+          1438
+        ],
+        [
+          23,
+          1438
+        ],
+        [
+          23,
+          1460
+        ],
+        [
+          0,
+          1460
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "身",
+      "bbox": [
+        637.0,
+        177.0,
+        753.0,
+        268.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "身和成就臭追藤读觀",
+      "col_bbox": [
+        637,
+        177,
+        753,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "和",
+      "bbox": [
+        637.0,
+        268.0,
+        753.0,
+        413.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "身和成就臭追藤读觀",
+      "col_bbox": [
+        637,
+        177,
+        753,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "成",
+      "bbox": [
+        637.0,
+        413.0,
+        753.0,
+        554.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "身和成就臭追藤读觀",
+      "col_bbox": [
+        637,
+        177,
+        753,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "就",
+      "bbox": [
+        637.0,
+        554.0,
+        753.0,
+        661.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "身和成就臭追藤读觀",
+      "col_bbox": [
+        637,
+        177,
+        753,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "臭",
+      "bbox": [
+        637.0,
+        661.0,
+        753.0,
+        798.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "身和成就臭追藤读觀",
+      "col_bbox": [
+        637,
+        177,
+        753,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "追",
+      "bbox": [
+        637.0,
+        798.0,
+        753.0,
+        923.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "身和成就臭追藤读觀",
+      "col_bbox": [
+        637,
+        177,
+        753,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "藤",
+      "bbox": [
+        637.0,
+        923.0,
+        753.0,
+        1054.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "身和成就臭追藤读觀",
+      "col_bbox": [
+        637,
+        177,
+        753,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "读",
+      "bbox": [
+        637.0,
+        1054.0,
+        753.0,
+        1262.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "身和成就臭追藤读觀",
+      "col_bbox": [
+        637,
+        177,
+        753,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "觀",
+      "bbox": [
+        637.0,
+        1262.0,
+        753.0,
+        1355.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "身和成就臭追藤读觀",
+      "col_bbox": [
+        637,
+        177,
+        753,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        521.0,
+        158.0,
+        650.0,
+        329.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 9,
+      "col_text": "如求不不也世薄染可",
+      "col_bbox": [
+        521,
+        158,
+        650,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "求",
+      "bbox": [
+        521.0,
+        329.0,
+        650.0,
+        438.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 10,
+      "col_text": "如求不不也世薄染可",
+      "col_bbox": [
+        521,
+        158,
+        650,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        521.0,
+        438.0,
+        650.0,
+        567.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 11,
+      "col_text": "如求不不也世薄染可",
+      "col_bbox": [
+        521,
+        158,
+        650,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        521.0,
+        567.0,
+        650.0,
+        692.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 12,
+      "col_text": "如求不不也世薄染可",
+      "col_bbox": [
+        521,
+        158,
+        650,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "也",
+      "bbox": [
+        521.0,
+        692.0,
+        650.0,
+        792.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 13,
+      "col_text": "如求不不也世薄染可",
+      "col_bbox": [
+        521,
+        158,
+        650,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        521.0,
+        792.0,
+        650.0,
+        958.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 14,
+      "col_text": "如求不不也世薄染可",
+      "col_bbox": [
+        521,
+        158,
+        650,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薄",
+      "bbox": [
+        521.0,
+        958.0,
+        650.0,
+        1055.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 15,
+      "col_text": "如求不不也世薄染可",
+      "col_bbox": [
+        521,
+        158,
+        650,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "染",
+      "bbox": [
+        521.0,
+        1055.0,
+        650.0,
+        1185.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 16,
+      "col_text": "如求不不也世薄染可",
+      "col_bbox": [
+        521,
+        158,
+        650,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        521.0,
+        1185.0,
+        650.0,
+        1355.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 17,
+      "col_text": "如求不不也世薄染可",
+      "col_bbox": [
+        521,
+        158,
+        650,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        412.0,
+        162.0,
+        535.0,
+        251.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 18,
+      "col_text": "身掏得見如来何以故始",
+      "col_bbox": [
+        412,
+        162,
+        535,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "掏",
+      "bbox": [
+        412.0,
+        251.0,
+        535.0,
+        383.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 19,
+      "col_text": "身掏得見如来何以故始",
+      "col_bbox": [
+        412,
+        162,
+        535,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        412.0,
+        383.0,
+        535.0,
+        489.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 20,
+      "col_text": "身掏得見如来何以故始",
+      "col_bbox": [
+        412,
+        162,
+        535,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "見",
+      "bbox": [
+        412.0,
+        489.0,
+        535.0,
+        648.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 21,
+      "col_text": "身掏得見如来何以故始",
+      "col_bbox": [
+        412,
+        162,
+        535,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        412.0,
+        648.0,
+        535.0,
+        738.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 22,
+      "col_text": "身掏得見如来何以故始",
+      "col_bbox": [
+        412,
+        162,
+        535,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        412.0,
+        738.0,
+        535.0,
+        889.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 23,
+      "col_text": "身掏得見如来何以故始",
+      "col_bbox": [
+        412,
+        162,
+        535,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        412.0,
+        889.0,
+        535.0,
+        987.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 24,
+      "col_text": "身掏得見如来何以故始",
+      "col_bbox": [
+        412,
+        162,
+        535,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        412.0,
+        987.0,
+        535.0,
+        1117.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 25,
+      "col_text": "身掏得見如来何以故始",
+      "col_bbox": [
+        412,
+        162,
+        535,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        412.0,
+        1117.0,
+        535.0,
+        1211.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 26,
+      "col_text": "身掏得見如来何以故始",
+      "col_bbox": [
+        412,
+        162,
+        535,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "始",
+      "bbox": [
+        412.0,
+        1211.0,
+        535.0,
+        1351.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 27,
+      "col_text": "身掏得見如来何以故始",
+      "col_bbox": [
+        412,
+        162,
+        535,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "棗",
+      "bbox": [
+        302.0,
+        166.0,
+        419.0,
+        257.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 28,
+      "col_text": "棗所說身粗即非身欄佛",
+      "col_bbox": [
+        302,
+        166,
+        419,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        302.0,
+        257.0,
+        419.0,
+        428.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 29,
+      "col_text": "棗所說身粗即非身欄佛",
+      "col_bbox": [
+        302,
+        166,
+        419,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "說",
+      "bbox": [
+        302.0,
+        428.0,
+        419.0,
+        485.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 30,
+      "col_text": "棗所說身粗即非身欄佛",
+      "col_bbox": [
+        302,
+        166,
+        419,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        302.0,
+        485.0,
+        419.0,
+        604.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 31,
+      "col_text": "棗所說身粗即非身欄佛",
+      "col_bbox": [
+        302,
+        166,
+        419,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "粗",
+      "bbox": [
+        302.0,
+        604.0,
+        419.0,
+        791.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 32,
+      "col_text": "棗所說身粗即非身欄佛",
+      "col_bbox": [
+        302,
+        166,
+        419,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        302.0,
+        791.0,
+        419.0,
+        850.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 33,
+      "col_text": "棗所說身粗即非身欄佛",
+      "col_bbox": [
+        302,
+        166,
+        419,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        302.0,
+        850.0,
+        419.0,
+        959.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 34,
+      "col_text": "棗所說身粗即非身欄佛",
+      "col_bbox": [
+        302,
+        166,
+        419,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        302.0,
+        959.0,
+        419.0,
+        1091.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 35,
+      "col_text": "棗所說身粗即非身欄佛",
+      "col_bbox": [
+        302,
+        166,
+        419,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "欄",
+      "bbox": [
+        302.0,
+        1091.0,
+        419.0,
+        1195.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 36,
+      "col_text": "棗所說身粗即非身欄佛",
+      "col_bbox": [
+        302,
+        166,
+        419,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        302.0,
+        1195.0,
+        419.0,
+        1349.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 37,
+      "col_text": "棗所說身粗即非身欄佛",
+      "col_bbox": [
+        302,
+        166,
+        419,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "落",
+      "bbox": [
+        195.0,
+        174.0,
+        300.0,
+        313.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 38,
+      "col_text": "落凡所有相皆是處妄若",
+      "col_bbox": [
+        195,
+        174,
+        300,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "凡",
+      "bbox": [
+        195.0,
+        313.0,
+        300.0,
+        417.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 39,
+      "col_text": "落凡所有相皆是處妄若",
+      "col_bbox": [
+        195,
+        174,
+        300,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        195.0,
+        417.0,
+        300.0,
+        530.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 40,
+      "col_text": "落凡所有相皆是處妄若",
+      "col_bbox": [
+        195,
+        174,
+        300,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        195.0,
+        530.0,
+        300.0,
+        676.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 41,
+      "col_text": "落凡所有相皆是處妄若",
+      "col_bbox": [
+        195,
+        174,
+        300,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        195.0,
+        676.0,
+        300.0,
+        789.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 42,
+      "col_text": "落凡所有相皆是處妄若",
+      "col_bbox": [
+        195,
+        174,
+        300,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "皆",
+      "bbox": [
+        195.0,
+        789.0,
+        300.0,
+        845.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 43,
+      "col_text": "落凡所有相皆是處妄若",
+      "col_bbox": [
+        195,
+        174,
+        300,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        195.0,
+        845.0,
+        300.0,
+        963.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 44,
+      "col_text": "落凡所有相皆是處妄若",
+      "col_bbox": [
+        195,
+        174,
+        300,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "處",
+      "bbox": [
+        195.0,
+        963.0,
+        300.0,
+        1085.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 45,
+      "col_text": "落凡所有相皆是處妄若",
+      "col_bbox": [
+        195,
+        174,
+        300,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "妄",
+      "bbox": [
+        195.0,
+        1085.0,
+        300.0,
+        1201.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 46,
+      "col_text": "落凡所有相皆是處妄若",
+      "col_bbox": [
+        195,
+        174,
+        300,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        195.0,
+        1201.0,
+        300.0,
+        1352.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 47,
+      "col_text": "落凡所有相皆是處妄若",
+      "col_bbox": [
+        195,
+        174,
+        300,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        155.0,
+        151.0,
+        186.0,
+        179.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 48,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        155.0,
+        179.0,
+        186.0,
+        206.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 49,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        155.0,
+        206.0,
+        186.0,
+        232.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 50,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "成",
+      "bbox": [
+        155.0,
+        232.0,
+        186.0,
+        259.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 51,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "就",
+      "bbox": [
+        155.0,
+        259.0,
+        186.0,
+        286.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 52,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "具",
+      "bbox": [
+        155.0,
+        286.0,
+        186.0,
+        313.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 53,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "足",
+      "bbox": [
+        155.0,
+        313.0,
+        186.0,
+        341.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 54,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "胜",
+      "bbox": [
+        155.0,
+        341.0,
+        186.0,
+        369.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 55,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        155.0,
+        369.0,
+        186.0,
+        413.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 56,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "观",
+      "bbox": [
+        155.0,
+        413.0,
+        186.0,
+        433.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 57,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        155.0,
+        433.0,
+        186.0,
+        469.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 58,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        155.0,
+        469.0,
+        186.0,
+        497.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 59,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        155.0,
+        497.0,
+        186.0,
+        524.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 60,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        155.0,
+        524.0,
+        186.0,
+        549.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 61,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "也",
+      "bbox": [
+        155.0,
+        549.0,
+        186.0,
+        578.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 62,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        155.0,
+        578.0,
+        186.0,
+        604.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 63,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        155.0,
+        604.0,
+        186.0,
+        630.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 64,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        155.0,
+        630.0,
+        186.0,
+        657.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 65,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        155.0,
+        657.0,
+        186.0,
+        683.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 66,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        155.0,
+        683.0,
+        186.0,
+        711.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 67,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        155.0,
+        711.0,
+        186.0,
+        738.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 68,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        155.0,
+        738.0,
+        186.0,
+        766.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 69,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        155.0,
+        766.0,
+        186.0,
+        809.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 70,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "见",
+      "bbox": [
+        155.0,
+        809.0,
+        186.0,
+        833.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 71,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        155.0,
+        833.0,
+        186.0,
+        866.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 72,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        155.0,
+        866.0,
+        186.0,
+        894.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 73,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        155.0,
+        894.0,
+        186.0,
+        923.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 74,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        155.0,
+        923.0,
+        186.0,
+        949.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 75,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        155.0,
+        949.0,
+        186.0,
+        977.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 76,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        155.0,
+        977.0,
+        186.0,
+        1001.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 77,
+      "col_text": "以身相成就具足胜德观如来不不也世尊不可以身相得见如来何以故如",
+      "col_bbox": [
+        155,
+        151,
+        186,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        121.0,
+        149.0,
+        149.0,
+        178.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 78,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        121.0,
+        178.0,
+        149.0,
+        205.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 79,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        121.0,
+        205.0,
+        149.0,
+        232.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 80,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        121.0,
+        232.0,
+        149.0,
+        259.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 81,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        121.0,
+        259.0,
+        149.0,
+        285.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 82,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        121.0,
+        285.0,
+        149.0,
+        310.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 83,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        121.0,
+        310.0,
+        149.0,
+        339.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 84,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        121.0,
+        339.0,
+        149.0,
+        365.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 85,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        121.0,
+        365.0,
+        149.0,
+        392.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 86,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        121.0,
+        392.0,
+        149.0,
+        420.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 87,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        121.0,
+        420.0,
+        149.0,
+        448.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 88,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "凡",
+      "bbox": [
+        121.0,
+        448.0,
+        149.0,
+        480.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 89,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        121.0,
+        480.0,
+        149.0,
+        519.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 90,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        121.0,
+        519.0,
+        149.0,
+        547.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 91,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        121.0,
+        547.0,
+        149.0,
+        575.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 92,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "皆",
+      "bbox": [
+        121.0,
+        575.0,
+        149.0,
+        603.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 93,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        121.0,
+        603.0,
+        149.0,
+        631.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 94,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "虛",
+      "bbox": [
+        121.0,
+        631.0,
+        149.0,
+        658.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 95,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "妄",
+      "bbox": [
+        121.0,
+        658.0,
+        149.0,
+        684.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 96,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        121.0,
+        684.0,
+        149.0,
+        708.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 97,
+      "col_text": "来所说身相即非身相佛言凡所有相皆是虛妄若",
+      "col_bbox": [
+        121,
+        149,
+        149,
+        708
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 98,
+  "timestamp": "2026-05-02T23:10:27.611738"
+}

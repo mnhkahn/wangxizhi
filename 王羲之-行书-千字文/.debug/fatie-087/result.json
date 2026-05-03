@@ -1,0 +1,1953 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-087.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来者是真如实义无所从来亦无所去故名如来酒菩提若有人定如来兼若去着坐卧庭人不邂我可說義何以姻来者選真如宝義来所故名来",
+  "parsed_results": [
+    {
+      "text": "82",
+      "bbox": [
+        870,
+        1418,
+        891,
+        1438
+      ],
+      "poly": [
+        [
+          870,
+          1418
+        ],
+        [
+          891,
+          1418
+        ],
+        [
+          891,
+          1438
+        ],
+        [
+          870,
+          1438
+        ]
+      ]
+    },
+    {
+      "text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "poly": [
+        [
+          732,
+          128
+        ],
+        [
+          760,
+          128
+        ],
+        [
+          760,
+          980
+        ],
+        [
+          732,
+          980
+        ]
+      ]
+    },
+    {
+      "text": "者是真如实义无所从来亦无所去故名如来",
+      "bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "poly": [
+        [
+          691,
+          128
+        ],
+        [
+          724,
+          128
+        ],
+        [
+          724,
+          637
+        ],
+        [
+          691,
+          637
+        ]
+      ]
+    },
+    {
+      "text": "酒菩提若有人定如来",
+      "bbox": [
+        570,
+        145,
+        676,
+        1323
+      ],
+      "poly": [
+        [
+          570,
+          145
+        ],
+        [
+          676,
+          145
+        ],
+        [
+          676,
+          1323
+        ],
+        [
+          570,
+          1323
+        ]
+      ]
+    },
+    {
+      "text": "兼若去着坐卧庭人不",
+      "bbox": [
+        462,
+        134,
+        572,
+        1326
+      ],
+      "poly": [
+        [
+          462,
+          134
+        ],
+        [
+          572,
+          134
+        ],
+        [
+          572,
+          1326
+        ],
+        [
+          462,
+          1326
+        ]
+      ]
+    },
+    {
+      "text": "邂我可說義何以姻来",
+      "bbox": [
+        335,
+        146,
+        465,
+        1332
+      ],
+      "poly": [
+        [
+          335,
+          146
+        ],
+        [
+          465,
+          146
+        ],
+        [
+          465,
+          1332
+        ],
+        [
+          335,
+          1332
+        ]
+      ]
+    },
+    {
+      "text": "者選真如宝義来",
+      "bbox": [
+        234,
+        160,
+        348,
+        1329
+      ],
+      "poly": [
+        [
+          234,
+          160
+        ],
+        [
+          348,
+          160
+        ],
+        [
+          348,
+          1329
+        ],
+        [
+          234,
+          1329
+        ]
+      ]
+    },
+    {
+      "text": "所故名来",
+      "bbox": [
+        135,
+        162,
+        229,
+        1065
+      ],
+      "poly": [
+        [
+          135,
+          162
+        ],
+        [
+          229,
+          162
+        ],
+        [
+          229,
+          1065
+        ],
+        [
+          135,
+          1065
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "须",
+      "bbox": [
+        732.0,
+        128.0,
+        760.0,
+        158.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        732.0,
+        158.0,
+        760.0,
+        184.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        732.0,
+        184.0,
+        760.0,
+        211.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        732.0,
+        211.0,
+        760.0,
+        237.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        732.0,
+        237.0,
+        760.0,
+        266.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        732.0,
+        266.0,
+        760.0,
+        291.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        732.0,
+        291.0,
+        760.0,
+        318.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        732.0,
+        318.0,
+        760.0,
+        347.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        732.0,
+        347.0,
+        760.0,
+        382.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        732.0,
+        382.0,
+        760.0,
+        404.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        732.0,
+        404.0,
+        760.0,
+        447.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 10,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        732.0,
+        447.0,
+        760.0,
+        475.0
+      ],
+      "column": 1,
+      "row": 11,
+      "global_index": 11,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "去",
+      "bbox": [
+        732.0,
+        475.0,
+        760.0,
+        504.0
+      ],
+      "column": 1,
+      "row": 12,
+      "global_index": 12,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        732.0,
+        504.0,
+        760.0,
+        530.0
+      ],
+      "column": 1,
+      "row": 13,
+      "global_index": 13,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "坐",
+      "bbox": [
+        732.0,
+        530.0,
+        760.0,
+        557.0
+      ],
+      "column": 1,
+      "row": 14,
+      "global_index": 14,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        732.0,
+        557.0,
+        760.0,
+        582.0
+      ],
+      "column": 1,
+      "row": 15,
+      "global_index": 15,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "卧",
+      "bbox": [
+        732.0,
+        582.0,
+        760.0,
+        608.0
+      ],
+      "column": 1,
+      "row": 16,
+      "global_index": 16,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        732.0,
+        608.0,
+        760.0,
+        637.0
+      ],
+      "column": 1,
+      "row": 17,
+      "global_index": 17,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        732.0,
+        637.0,
+        760.0,
+        662.0
+      ],
+      "column": 1,
+      "row": 18,
+      "global_index": 18,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        732.0,
+        662.0,
+        760.0,
+        690.0
+      ],
+      "column": 1,
+      "row": 19,
+      "global_index": 19,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "解",
+      "bbox": [
+        732.0,
+        690.0,
+        760.0,
+        716.0
+      ],
+      "column": 1,
+      "row": 20,
+      "global_index": 20,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        732.0,
+        716.0,
+        760.0,
+        744.0
+      ],
+      "column": 1,
+      "row": 21,
+      "global_index": 21,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        732.0,
+        744.0,
+        760.0,
+        773.0
+      ],
+      "column": 1,
+      "row": 22,
+      "global_index": 22,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        732.0,
+        773.0,
+        760.0,
+        802.0
+      ],
+      "column": 1,
+      "row": 23,
+      "global_index": 23,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "义",
+      "bbox": [
+        732.0,
+        802.0,
+        760.0,
+        835.0
+      ],
+      "column": 1,
+      "row": 24,
+      "global_index": 24,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        732.0,
+        835.0,
+        760.0,
+        873.0
+      ],
+      "column": 1,
+      "row": 25,
+      "global_index": 25,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        732.0,
+        873.0,
+        760.0,
+        900.0
+      ],
+      "column": 1,
+      "row": 26,
+      "global_index": 26,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        732.0,
+        900.0,
+        760.0,
+        929.0
+      ],
+      "column": 1,
+      "row": 27,
+      "global_index": 27,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        732.0,
+        929.0,
+        760.0,
+        955.0
+      ],
+      "column": 1,
+      "row": 28,
+      "global_index": 28,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        732.0,
+        955.0,
+        760.0,
+        980.0
+      ],
+      "column": 1,
+      "row": 29,
+      "global_index": 29,
+      "col_text": "须菩提若有人言如来若来若去若坐若卧是人不解我所说义何以故如来",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        980
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        691.0,
+        128.0,
+        724.0,
+        157.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        691.0,
+        157.0,
+        724.0,
+        185.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "真",
+      "bbox": [
+        691.0,
+        185.0,
+        724.0,
+        212.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        691.0,
+        212.0,
+        724.0,
+        238.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "实",
+      "bbox": [
+        691.0,
+        238.0,
+        724.0,
+        265.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "义",
+      "bbox": [
+        691.0,
+        265.0,
+        724.0,
+        291.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        691.0,
+        291.0,
+        724.0,
+        317.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        691.0,
+        317.0,
+        724.0,
+        346.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "从",
+      "bbox": [
+        691.0,
+        346.0,
+        724.0,
+        374.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        691.0,
+        374.0,
+        724.0,
+        402.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "亦",
+      "bbox": [
+        691.0,
+        402.0,
+        724.0,
+        446.0
+      ],
+      "column": 2,
+      "row": 10,
+      "global_index": 40,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        691.0,
+        446.0,
+        724.0,
+        474.0
+      ],
+      "column": 2,
+      "row": 11,
+      "global_index": 41,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        691.0,
+        474.0,
+        724.0,
+        502.0
+      ],
+      "column": 2,
+      "row": 12,
+      "global_index": 42,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "去",
+      "bbox": [
+        691.0,
+        502.0,
+        724.0,
+        530.0
+      ],
+      "column": 2,
+      "row": 13,
+      "global_index": 43,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        691.0,
+        530.0,
+        724.0,
+        557.0
+      ],
+      "column": 2,
+      "row": 14,
+      "global_index": 44,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        691.0,
+        557.0,
+        724.0,
+        583.0
+      ],
+      "column": 2,
+      "row": 15,
+      "global_index": 45,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        691.0,
+        583.0,
+        724.0,
+        611.0
+      ],
+      "column": 2,
+      "row": 16,
+      "global_index": 46,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        691.0,
+        611.0,
+        724.0,
+        637.0
+      ],
+      "column": 2,
+      "row": 17,
+      "global_index": 47,
+      "col_text": "者是真如实义无所从来亦无所去故名如来",
+      "col_bbox": [
+        691,
+        128,
+        724,
+        637
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "酒",
+      "bbox": [
+        570.0,
+        145.0,
+        676.0,
+        308.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 48,
+      "col_text": "酒菩提若有人定如来",
+      "col_bbox": [
+        570,
+        145,
+        676,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        570.0,
+        308.0,
+        676.0,
+        444.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 49,
+      "col_text": "酒菩提若有人定如来",
+      "col_bbox": [
+        570,
+        145,
+        676,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        570.0,
+        444.0,
+        676.0,
+        546.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 50,
+      "col_text": "酒菩提若有人定如来",
+      "col_bbox": [
+        570,
+        145,
+        676,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        570.0,
+        546.0,
+        676.0,
+        704.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 51,
+      "col_text": "酒菩提若有人定如来",
+      "col_bbox": [
+        570,
+        145,
+        676,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        570.0,
+        704.0,
+        676.0,
+        805.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 52,
+      "col_text": "酒菩提若有人定如来",
+      "col_bbox": [
+        570,
+        145,
+        676,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        570.0,
+        805.0,
+        676.0,
+        921.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 53,
+      "col_text": "酒菩提若有人定如来",
+      "col_bbox": [
+        570,
+        145,
+        676,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "定",
+      "bbox": [
+        570.0,
+        921.0,
+        676.0,
+        1022.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 54,
+      "col_text": "酒菩提若有人定如来",
+      "col_bbox": [
+        570,
+        145,
+        676,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        570.0,
+        1022.0,
+        676.0,
+        1221.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 55,
+      "col_text": "酒菩提若有人定如来",
+      "col_bbox": [
+        570,
+        145,
+        676,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        570.0,
+        1221.0,
+        676.0,
+        1323.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 56,
+      "col_text": "酒菩提若有人定如来",
+      "col_bbox": [
+        570,
+        145,
+        676,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "兼",
+      "bbox": [
+        462.0,
+        134.0,
+        572.0,
+        289.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 57,
+      "col_text": "兼若去着坐卧庭人不",
+      "col_bbox": [
+        462,
+        134,
+        572,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        462.0,
+        289.0,
+        572.0,
+        367.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 58,
+      "col_text": "兼若去着坐卧庭人不",
+      "col_bbox": [
+        462,
+        134,
+        572,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "去",
+      "bbox": [
+        462.0,
+        367.0,
+        572.0,
+        542.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 59,
+      "col_text": "兼若去着坐卧庭人不",
+      "col_bbox": [
+        462,
+        134,
+        572,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "着",
+      "bbox": [
+        462.0,
+        542.0,
+        572.0,
+        675.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 60,
+      "col_text": "兼若去着坐卧庭人不",
+      "col_bbox": [
+        462,
+        134,
+        572,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "坐",
+      "bbox": [
+        462.0,
+        675.0,
+        572.0,
+        764.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 61,
+      "col_text": "兼若去着坐卧庭人不",
+      "col_bbox": [
+        462,
+        134,
+        572,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "卧",
+      "bbox": [
+        462.0,
+        764.0,
+        572.0,
+        927.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 62,
+      "col_text": "兼若去着坐卧庭人不",
+      "col_bbox": [
+        462,
+        134,
+        572,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "庭",
+      "bbox": [
+        462.0,
+        927.0,
+        572.0,
+        1082.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 63,
+      "col_text": "兼若去着坐卧庭人不",
+      "col_bbox": [
+        462,
+        134,
+        572,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        462.0,
+        1082.0,
+        572.0,
+        1197.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 64,
+      "col_text": "兼若去着坐卧庭人不",
+      "col_bbox": [
+        462,
+        134,
+        572,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        462.0,
+        1197.0,
+        572.0,
+        1326.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 65,
+      "col_text": "兼若去着坐卧庭人不",
+      "col_bbox": [
+        462,
+        134,
+        572,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "邂",
+      "bbox": [
+        335.0,
+        146.0,
+        465.0,
+        311.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 66,
+      "col_text": "邂我可說義何以姻来",
+      "col_bbox": [
+        335,
+        146,
+        465,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        335.0,
+        311.0,
+        465.0,
+        370.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 67,
+      "col_text": "邂我可說義何以姻来",
+      "col_bbox": [
+        335,
+        146,
+        465,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        335.0,
+        370.0,
+        465.0,
+        569.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 68,
+      "col_text": "邂我可說義何以姻来",
+      "col_bbox": [
+        335,
+        146,
+        465,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "說",
+      "bbox": [
+        335.0,
+        569.0,
+        465.0,
+        710.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 69,
+      "col_text": "邂我可說義何以姻来",
+      "col_bbox": [
+        335,
+        146,
+        465,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "義",
+      "bbox": [
+        335.0,
+        710.0,
+        465.0,
+        833.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 70,
+      "col_text": "邂我可說義何以姻来",
+      "col_bbox": [
+        335,
+        146,
+        465,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        335.0,
+        833.0,
+        465.0,
+        950.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 71,
+      "col_text": "邂我可說義何以姻来",
+      "col_bbox": [
+        335,
+        146,
+        465,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        335.0,
+        950.0,
+        465.0,
+        1073.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 72,
+      "col_text": "邂我可說義何以姻来",
+      "col_bbox": [
+        335,
+        146,
+        465,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "姻",
+      "bbox": [
+        335.0,
+        1073.0,
+        465.0,
+        1238.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 73,
+      "col_text": "邂我可說義何以姻来",
+      "col_bbox": [
+        335,
+        146,
+        465,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        335.0,
+        1238.0,
+        465.0,
+        1332.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 74,
+      "col_text": "邂我可說義何以姻来",
+      "col_bbox": [
+        335,
+        146,
+        465,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        234.0,
+        160.0,
+        348.0,
+        365.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 75,
+      "col_text": "者選真如宝義来",
+      "col_bbox": [
+        234,
+        160,
+        348,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "選",
+      "bbox": [
+        234.0,
+        365.0,
+        348.0,
+        543.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 76,
+      "col_text": "者選真如宝義来",
+      "col_bbox": [
+        234,
+        160,
+        348,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "真",
+      "bbox": [
+        234.0,
+        543.0,
+        348.0,
+        643.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 77,
+      "col_text": "者選真如宝義来",
+      "col_bbox": [
+        234,
+        160,
+        348,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        234.0,
+        643.0,
+        348.0,
+        877.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 78,
+      "col_text": "者選真如宝義来",
+      "col_bbox": [
+        234,
+        160,
+        348,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宝",
+      "bbox": [
+        234.0,
+        877.0,
+        348.0,
+        1037.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 79,
+      "col_text": "者選真如宝義来",
+      "col_bbox": [
+        234,
+        160,
+        348,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "義",
+      "bbox": [
+        234.0,
+        1037.0,
+        348.0,
+        1113.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 80,
+      "col_text": "者選真如宝義来",
+      "col_bbox": [
+        234,
+        160,
+        348,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        234.0,
+        1113.0,
+        348.0,
+        1329.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 81,
+      "col_text": "者選真如宝義来",
+      "col_bbox": [
+        234,
+        160,
+        348,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        135.0,
+        162.0,
+        229.0,
+        411.0
+      ],
+      "column": 7,
+      "row": 0,
+      "global_index": 82,
+      "col_text": "所故名来",
+      "col_bbox": [
+        135,
+        162,
+        229,
+        1065
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        135.0,
+        411.0,
+        229.0,
+        606.0
+      ],
+      "column": 7,
+      "row": 1,
+      "global_index": 83,
+      "col_text": "所故名来",
+      "col_bbox": [
+        135,
+        162,
+        229,
+        1065
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        135.0,
+        606.0,
+        229.0,
+        799.0
+      ],
+      "column": 7,
+      "row": 2,
+      "global_index": 84,
+      "col_text": "所故名来",
+      "col_bbox": [
+        135,
+        162,
+        229,
+        1065
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        135.0,
+        799.0,
+        229.0,
+        1065.0
+      ],
+      "column": 7,
+      "row": 3,
+      "global_index": 85,
+      "col_text": "所故名来",
+      "col_bbox": [
+        135,
+        162,
+        229,
+        1065
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 8,
+  "total_chars": 86,
+  "timestamp": "2026-05-02T23:12:04.221370"
+}

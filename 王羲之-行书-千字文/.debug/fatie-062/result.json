@@ -1,0 +1,2133 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-062.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "想則此菩薩所以者何酒菩提實有法名為菩萨上乗須菩提汝意云何知来於燃燈佛所颇有少法證菩提不酒菩提想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何如来于燃灯佛所颇有少法证菩提不须菩提言如",
+  "parsed_results": [
+    {
+      "text": "想則此菩薩所以者何酒",
+      "bbox": [
+        660,
+        162,
+        780,
+        1358
+      ],
+      "poly": [
+        [
+          660,
+          162
+        ],
+        [
+          780,
+          162
+        ],
+        [
+          780,
+          1358
+        ],
+        [
+          660,
+          1358
+        ]
+      ]
+    },
+    {
+      "text": "菩提實有法名為菩萨",
+      "bbox": [
+        556,
+        169,
+        661,
+        1348
+      ],
+      "poly": [
+        [
+          556,
+          169
+        ],
+        [
+          661,
+          169
+        ],
+        [
+          661,
+          1348
+        ],
+        [
+          556,
+          1348
+        ]
+      ]
+    },
+    {
+      "text": "上乗須菩提汝意云何",
+      "bbox": [
+        445,
+        170,
+        549,
+        1343
+      ],
+      "poly": [
+        [
+          445,
+          170
+        ],
+        [
+          549,
+          170
+        ],
+        [
+          549,
+          1343
+        ],
+        [
+          445,
+          1343
+        ]
+      ]
+    },
+    {
+      "text": "知来於燃燈佛所颇有少",
+      "bbox": [
+        329,
+        171,
+        439,
+        1348
+      ],
+      "poly": [
+        [
+          329,
+          171
+        ],
+        [
+          439,
+          171
+        ],
+        [
+          439,
+          1348
+        ],
+        [
+          329,
+          1348
+        ]
+      ]
+    },
+    {
+      "text": "法證菩提不酒菩提",
+      "bbox": [
+        207,
+        172,
+        327,
+        1355
+      ],
+      "poly": [
+        [
+          207,
+          172
+        ],
+        [
+          327,
+          172
+        ],
+        [
+          327,
+          1355
+        ],
+        [
+          207,
+          1355
+        ]
+      ]
+    },
+    {
+      "text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "poly": [
+        [
+          172,
+          157
+        ],
+        [
+          200,
+          157
+        ],
+        [
+          200,
+          984
+        ],
+        [
+          172,
+          984
+        ]
+      ]
+    },
+    {
+      "text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "poly": [
+        [
+          138,
+          162
+        ],
+        [
+          163,
+          162
+        ],
+        [
+          163,
+          715
+        ],
+        [
+          138,
+          715
+        ]
+      ]
+    },
+    {
+      "text": "57",
+      "bbox": [
+        28,
+        1451,
+        53,
+        1471
+      ],
+      "poly": [
+        [
+          28,
+          1451
+        ],
+        [
+          53,
+          1451
+        ],
+        [
+          53,
+          1471
+        ],
+        [
+          28,
+          1471
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "想",
+      "bbox": [
+        660.0,
+        162.0,
+        780.0,
+        248.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "想則此菩薩所以者何酒",
+      "col_bbox": [
+        660,
+        162,
+        780,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "則",
+      "bbox": [
+        660.0,
+        248.0,
+        780.0,
+        366.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "想則此菩薩所以者何酒",
+      "col_bbox": [
+        660,
+        162,
+        780,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        660.0,
+        366.0,
+        780.0,
+        485.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "想則此菩薩所以者何酒",
+      "col_bbox": [
+        660,
+        162,
+        780,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        660.0,
+        485.0,
+        780.0,
+        605.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "想則此菩薩所以者何酒",
+      "col_bbox": [
+        660,
+        162,
+        780,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薩",
+      "bbox": [
+        660.0,
+        605.0,
+        780.0,
+        725.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "想則此菩薩所以者何酒",
+      "col_bbox": [
+        660,
+        162,
+        780,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        660.0,
+        725.0,
+        780.0,
+        844.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "想則此菩薩所以者何酒",
+      "col_bbox": [
+        660,
+        162,
+        780,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        660.0,
+        844.0,
+        780.0,
+        1033.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "想則此菩薩所以者何酒",
+      "col_bbox": [
+        660,
+        162,
+        780,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        660.0,
+        1033.0,
+        780.0,
+        1097.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "想則此菩薩所以者何酒",
+      "col_bbox": [
+        660,
+        162,
+        780,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        660.0,
+        1097.0,
+        780.0,
+        1272.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "想則此菩薩所以者何酒",
+      "col_bbox": [
+        660,
+        162,
+        780,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "酒",
+      "bbox": [
+        660.0,
+        1272.0,
+        780.0,
+        1358.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "想則此菩薩所以者何酒",
+      "col_bbox": [
+        660,
+        162,
+        780,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        556.0,
+        169.0,
+        661.0,
+        326.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "菩提實有法名為菩萨",
+      "col_bbox": [
+        556,
+        169,
+        661,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        556.0,
+        326.0,
+        661.0,
+        422.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "菩提實有法名為菩萨",
+      "col_bbox": [
+        556,
+        169,
+        661,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "實",
+      "bbox": [
+        556.0,
+        422.0,
+        661.0,
+        599.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "菩提實有法名為菩萨",
+      "col_bbox": [
+        556,
+        169,
+        661,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        556.0,
+        599.0,
+        661.0,
+        731.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "菩提實有法名為菩萨",
+      "col_bbox": [
+        556,
+        169,
+        661,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        556.0,
+        731.0,
+        661.0,
+        836.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "菩提實有法名為菩萨",
+      "col_bbox": [
+        556,
+        169,
+        661,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        556.0,
+        836.0,
+        661.0,
+        991.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "菩提實有法名為菩萨",
+      "col_bbox": [
+        556,
+        169,
+        661,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        556.0,
+        991.0,
+        661.0,
+        1075.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "菩提實有法名為菩萨",
+      "col_bbox": [
+        556,
+        169,
+        661,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        556.0,
+        1075.0,
+        661.0,
+        1247.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "菩提實有法名為菩萨",
+      "col_bbox": [
+        556,
+        169,
+        661,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "萨",
+      "bbox": [
+        556.0,
+        1247.0,
+        661.0,
+        1348.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "菩提實有法名為菩萨",
+      "col_bbox": [
+        556,
+        169,
+        661,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "上",
+      "bbox": [
+        445.0,
+        170.0,
+        549.0,
+        296.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 19,
+      "col_text": "上乗須菩提汝意云何",
+      "col_bbox": [
+        445,
+        170,
+        549,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乗",
+      "bbox": [
+        445.0,
+        296.0,
+        549.0,
+        401.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 20,
+      "col_text": "上乗須菩提汝意云何",
+      "col_bbox": [
+        445,
+        170,
+        549,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "須",
+      "bbox": [
+        445.0,
+        401.0,
+        549.0,
+        562.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 21,
+      "col_text": "上乗須菩提汝意云何",
+      "col_bbox": [
+        445,
+        170,
+        549,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        445.0,
+        562.0,
+        549.0,
+        714.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 22,
+      "col_text": "上乗須菩提汝意云何",
+      "col_bbox": [
+        445,
+        170,
+        549,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        445.0,
+        714.0,
+        549.0,
+        855.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 23,
+      "col_text": "上乗須菩提汝意云何",
+      "col_bbox": [
+        445,
+        170,
+        549,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "汝",
+      "bbox": [
+        445.0,
+        855.0,
+        549.0,
+        977.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 24,
+      "col_text": "上乗須菩提汝意云何",
+      "col_bbox": [
+        445,
+        170,
+        549,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "意",
+      "bbox": [
+        445.0,
+        977.0,
+        549.0,
+        1069.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 25,
+      "col_text": "上乗須菩提汝意云何",
+      "col_bbox": [
+        445,
+        170,
+        549,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "云",
+      "bbox": [
+        445.0,
+        1069.0,
+        549.0,
+        1185.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 26,
+      "col_text": "上乗須菩提汝意云何",
+      "col_bbox": [
+        445,
+        170,
+        549,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        445.0,
+        1185.0,
+        549.0,
+        1343.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 27,
+      "col_text": "上乗須菩提汝意云何",
+      "col_bbox": [
+        445,
+        170,
+        549,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        329.0,
+        171.0,
+        439.0,
+        318.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 28,
+      "col_text": "知来於燃燈佛所颇有少",
+      "col_bbox": [
+        329,
+        171,
+        439,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        329.0,
+        318.0,
+        439.0,
+        371.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 29,
+      "col_text": "知来於燃燈佛所颇有少",
+      "col_bbox": [
+        329,
+        171,
+        439,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "於",
+      "bbox": [
+        329.0,
+        371.0,
+        439.0,
+        554.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 30,
+      "col_text": "知来於燃燈佛所颇有少",
+      "col_bbox": [
+        329,
+        171,
+        439,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "燃",
+      "bbox": [
+        329.0,
+        554.0,
+        439.0,
+        608.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 31,
+      "col_text": "知来於燃燈佛所颇有少",
+      "col_bbox": [
+        329,
+        171,
+        439,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "燈",
+      "bbox": [
+        329.0,
+        608.0,
+        439.0,
+        724.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 32,
+      "col_text": "知来於燃燈佛所颇有少",
+      "col_bbox": [
+        329,
+        171,
+        439,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        329.0,
+        724.0,
+        439.0,
+        911.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 33,
+      "col_text": "知来於燃燈佛所颇有少",
+      "col_bbox": [
+        329,
+        171,
+        439,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        329.0,
+        911.0,
+        439.0,
+        1028.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 34,
+      "col_text": "知来於燃燈佛所颇有少",
+      "col_bbox": [
+        329,
+        171,
+        439,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "颇",
+      "bbox": [
+        329.0,
+        1028.0,
+        439.0,
+        1081.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 35,
+      "col_text": "知来於燃燈佛所颇有少",
+      "col_bbox": [
+        329,
+        171,
+        439,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        329.0,
+        1081.0,
+        439.0,
+        1226.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 36,
+      "col_text": "知来於燃燈佛所颇有少",
+      "col_bbox": [
+        329,
+        171,
+        439,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "少",
+      "bbox": [
+        329.0,
+        1226.0,
+        439.0,
+        1348.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 37,
+      "col_text": "知来於燃燈佛所颇有少",
+      "col_bbox": [
+        329,
+        171,
+        439,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        207.0,
+        172.0,
+        327.0,
+        335.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 38,
+      "col_text": "法證菩提不酒菩提",
+      "col_bbox": [
+        207,
+        172,
+        327,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "證",
+      "bbox": [
+        207.0,
+        335.0,
+        327.0,
+        482.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 39,
+      "col_text": "法證菩提不酒菩提",
+      "col_bbox": [
+        207,
+        172,
+        327,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        207.0,
+        482.0,
+        327.0,
+        611.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 40,
+      "col_text": "法證菩提不酒菩提",
+      "col_bbox": [
+        207,
+        172,
+        327,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        207.0,
+        611.0,
+        327.0,
+        722.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 41,
+      "col_text": "法證菩提不酒菩提",
+      "col_bbox": [
+        207,
+        172,
+        327,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        207.0,
+        722.0,
+        327.0,
+        910.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 42,
+      "col_text": "法證菩提不酒菩提",
+      "col_bbox": [
+        207,
+        172,
+        327,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "酒",
+      "bbox": [
+        207.0,
+        910.0,
+        327.0,
+        1087.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 43,
+      "col_text": "法證菩提不酒菩提",
+      "col_bbox": [
+        207,
+        172,
+        327,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        207.0,
+        1087.0,
+        327.0,
+        1250.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 44,
+      "col_text": "法證菩提不酒菩提",
+      "col_bbox": [
+        207,
+        172,
+        327,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        207.0,
+        1250.0,
+        327.0,
+        1355.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 45,
+      "col_text": "法證菩提不酒菩提",
+      "col_bbox": [
+        207,
+        172,
+        327,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "想",
+      "bbox": [
+        172.0,
+        157.0,
+        200.0,
+        187.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 46,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "則",
+      "bbox": [
+        172.0,
+        187.0,
+        200.0,
+        214.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 47,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        172.0,
+        214.0,
+        200.0,
+        241.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 48,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        172.0,
+        241.0,
+        200.0,
+        266.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 49,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "萨",
+      "bbox": [
+        172.0,
+        266.0,
+        200.0,
+        292.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 50,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        172.0,
+        292.0,
+        200.0,
+        320.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 51,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        172.0,
+        320.0,
+        200.0,
+        348.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 52,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        172.0,
+        348.0,
+        200.0,
+        377.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 53,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        172.0,
+        377.0,
+        200.0,
+        408.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 54,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        172.0,
+        408.0,
+        200.0,
+        434.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 55,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        172.0,
+        434.0,
+        200.0,
+        477.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 56,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        172.0,
+        477.0,
+        200.0,
+        506.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 57,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "实",
+      "bbox": [
+        172.0,
+        506.0,
+        200.0,
+        532.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 58,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        172.0,
+        532.0,
+        200.0,
+        559.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 59,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        172.0,
+        559.0,
+        200.0,
+        587.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 60,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        172.0,
+        587.0,
+        200.0,
+        612.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 61,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        172.0,
+        612.0,
+        200.0,
+        639.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 62,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        172.0,
+        639.0,
+        200.0,
+        666.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 63,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        172.0,
+        666.0,
+        200.0,
+        692.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 64,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "萨",
+      "bbox": [
+        172.0,
+        692.0,
+        200.0,
+        721.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 65,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "上",
+      "bbox": [
+        172.0,
+        721.0,
+        200.0,
+        747.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 66,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乘",
+      "bbox": [
+        172.0,
+        747.0,
+        200.0,
+        776.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 67,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        172.0,
+        776.0,
+        200.0,
+        816.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 68,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        172.0,
+        816.0,
+        200.0,
+        848.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 69,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        172.0,
+        848.0,
+        200.0,
+        876.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 70,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "汝",
+      "bbox": [
+        172.0,
+        876.0,
+        200.0,
+        905.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 71,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "意",
+      "bbox": [
+        172.0,
+        905.0,
+        200.0,
+        932.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 72,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "云",
+      "bbox": [
+        172.0,
+        932.0,
+        200.0,
+        957.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 73,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        172.0,
+        957.0,
+        200.0,
+        984.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 74,
+      "col_text": "想則非菩萨所以者何须菩提实无有法名为菩萨上乘须菩提汝意云何",
+      "col_bbox": [
+        172,
+        157,
+        200,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        138.0,
+        162.0,
+        163.0,
+        186.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 75,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        138.0,
+        186.0,
+        163.0,
+        213.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 76,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "于",
+      "bbox": [
+        138.0,
+        213.0,
+        163.0,
+        239.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 77,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "燃",
+      "bbox": [
+        138.0,
+        239.0,
+        163.0,
+        267.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 78,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "灯",
+      "bbox": [
+        138.0,
+        267.0,
+        163.0,
+        292.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 79,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        138.0,
+        292.0,
+        163.0,
+        320.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 80,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        138.0,
+        320.0,
+        163.0,
+        347.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 81,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "颇",
+      "bbox": [
+        138.0,
+        347.0,
+        163.0,
+        375.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 82,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        138.0,
+        375.0,
+        163.0,
+        402.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 83,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "少",
+      "bbox": [
+        138.0,
+        402.0,
+        163.0,
+        430.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 84,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        138.0,
+        430.0,
+        163.0,
+        458.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 85,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "证",
+      "bbox": [
+        138.0,
+        458.0,
+        163.0,
+        485.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 86,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        138.0,
+        485.0,
+        163.0,
+        528.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 87,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        138.0,
+        528.0,
+        163.0,
+        556.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 88,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        138.0,
+        556.0,
+        163.0,
+        583.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 89,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        138.0,
+        583.0,
+        163.0,
+        611.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 90,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        138.0,
+        611.0,
+        163.0,
+        639.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 91,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        138.0,
+        639.0,
+        163.0,
+        666.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 92,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        138.0,
+        666.0,
+        163.0,
+        692.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 93,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        138.0,
+        692.0,
+        163.0,
+        715.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 94,
+      "col_text": "如来于燃灯佛所颇有少法证菩提不须菩提言如",
+      "col_bbox": [
+        138,
+        162,
+        163,
+        715
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 95,
+  "timestamp": "2026-05-02T23:11:21.047650"
+}

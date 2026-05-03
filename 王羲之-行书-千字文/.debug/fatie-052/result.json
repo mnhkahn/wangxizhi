@@ -1,0 +1,2213 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-052.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "目以日光明見種種色須菩提嘗案之世有能受持佟行此经者佛以智眼悉知患見是人成就已典邊功德須菩提若有喜男子目以日光明见种种色须菩提当来之世有能受持修行此经者佛以智眼悉知悉见是人成就无边功德须菩提若有善男子",
+  "parsed_results": [
+    {
+      "text": "目以日光明見種種色",
+      "bbox": [
+        657,
+        147,
+        790,
+        1237
+      ],
+      "poly": [
+        [
+          657,
+          147
+        ],
+        [
+          790,
+          147
+        ],
+        [
+          790,
+          1237
+        ],
+        [
+          657,
+          1237
+        ]
+      ]
+    },
+    {
+      "text": "須菩提嘗案之世有能受",
+      "bbox": [
+        544,
+        154,
+        669,
+        1354
+      ],
+      "poly": [
+        [
+          544,
+          154
+        ],
+        [
+          669,
+          154
+        ],
+        [
+          669,
+          1354
+        ],
+        [
+          544,
+          1354
+        ]
+      ]
+    },
+    {
+      "text": "持佟行此经者佛以智眼",
+      "bbox": [
+        421,
+        147,
+        568,
+        1354
+      ],
+      "poly": [
+        [
+          421,
+          147
+        ],
+        [
+          568,
+          147
+        ],
+        [
+          568,
+          1354
+        ],
+        [
+          421,
+          1354
+        ]
+      ]
+    },
+    {
+      "text": "悉知患見是人成就已典邊",
+      "bbox": [
+        311,
+        152,
+        458,
+        1342
+      ],
+      "poly": [
+        [
+          311,
+          152
+        ],
+        [
+          458,
+          152
+        ],
+        [
+          458,
+          1342
+        ],
+        [
+          311,
+          1342
+        ]
+      ]
+    },
+    {
+      "text": "功德須菩提若有喜男子",
+      "bbox": [
+        199,
+        150,
+        337,
+        1353
+      ],
+      "poly": [
+        [
+          199,
+          150
+        ],
+        [
+          337,
+          150
+        ],
+        [
+          337,
+          1353
+        ],
+        [
+          199,
+          1353
+        ]
+      ]
+    },
+    {
+      "text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "poly": [
+        [
+          172,
+          149
+        ],
+        [
+          208,
+          149
+        ],
+        [
+          208,
+          974
+        ],
+        [
+          172,
+          974
+        ]
+      ]
+    },
+    {
+      "text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "poly": [
+        [
+          138,
+          149
+        ],
+        [
+          172,
+          149
+        ],
+        [
+          172,
+          709
+        ],
+        [
+          138,
+          709
+        ]
+      ]
+    },
+    {
+      "text": "47",
+      "bbox": [
+        8,
+        1438,
+        31,
+        1458
+      ],
+      "poly": [
+        [
+          8,
+          1438
+        ],
+        [
+          31,
+          1438
+        ],
+        [
+          31,
+          1458
+        ],
+        [
+          8,
+          1458
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "目",
+      "bbox": [
+        657.0,
+        147.0,
+        790.0,
+        289.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "目以日光明見種種色",
+      "col_bbox": [
+        657,
+        147,
+        790,
+        1237
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        657.0,
+        289.0,
+        790.0,
+        406.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "目以日光明見種種色",
+      "col_bbox": [
+        657,
+        147,
+        790,
+        1237
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "日",
+      "bbox": [
+        657.0,
+        406.0,
+        790.0,
+        506.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "目以日光明見種種色",
+      "col_bbox": [
+        657,
+        147,
+        790,
+        1237
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "光",
+      "bbox": [
+        657.0,
+        506.0,
+        790.0,
+        654.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "目以日光明見種種色",
+      "col_bbox": [
+        657,
+        147,
+        790,
+        1237
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "明",
+      "bbox": [
+        657.0,
+        654.0,
+        790.0,
+        743.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "目以日光明見種種色",
+      "col_bbox": [
+        657,
+        147,
+        790,
+        1237
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "見",
+      "bbox": [
+        657.0,
+        743.0,
+        790.0,
+        907.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "目以日光明見種種色",
+      "col_bbox": [
+        657,
+        147,
+        790,
+        1237
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "種",
+      "bbox": [
+        657.0,
+        907.0,
+        790.0,
+        1015.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "目以日光明見種種色",
+      "col_bbox": [
+        657,
+        147,
+        790,
+        1237
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "種",
+      "bbox": [
+        657.0,
+        1015.0,
+        790.0,
+        1150.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "目以日光明見種種色",
+      "col_bbox": [
+        657,
+        147,
+        790,
+        1237
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "色",
+      "bbox": [
+        657.0,
+        1150.0,
+        790.0,
+        1237.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "目以日光明見種種色",
+      "col_bbox": [
+        657,
+        147,
+        790,
+        1237
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "須",
+      "bbox": [
+        544.0,
+        154.0,
+        669.0,
+        238.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 9,
+      "col_text": "須菩提嘗案之世有能受",
+      "col_bbox": [
+        544,
+        154,
+        669,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        544.0,
+        238.0,
+        669.0,
+        423.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 10,
+      "col_text": "須菩提嘗案之世有能受",
+      "col_bbox": [
+        544,
+        154,
+        669,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        544.0,
+        423.0,
+        669.0,
+        478.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 11,
+      "col_text": "須菩提嘗案之世有能受",
+      "col_bbox": [
+        544,
+        154,
+        669,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "嘗",
+      "bbox": [
+        544.0,
+        478.0,
+        669.0,
+        602.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 12,
+      "col_text": "須菩提嘗案之世有能受",
+      "col_bbox": [
+        544,
+        154,
+        669,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "案",
+      "bbox": [
+        544.0,
+        602.0,
+        669.0,
+        753.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 13,
+      "col_text": "須菩提嘗案之世有能受",
+      "col_bbox": [
+        544,
+        154,
+        669,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        544.0,
+        753.0,
+        669.0,
+        844.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 14,
+      "col_text": "須菩提嘗案之世有能受",
+      "col_bbox": [
+        544,
+        154,
+        669,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        544.0,
+        844.0,
+        669.0,
+        967.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 15,
+      "col_text": "須菩提嘗案之世有能受",
+      "col_bbox": [
+        544,
+        154,
+        669,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        544.0,
+        967.0,
+        669.0,
+        1078.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 16,
+      "col_text": "須菩提嘗案之世有能受",
+      "col_bbox": [
+        544,
+        154,
+        669,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        544.0,
+        1078.0,
+        669.0,
+        1198.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 17,
+      "col_text": "須菩提嘗案之世有能受",
+      "col_bbox": [
+        544,
+        154,
+        669,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "受",
+      "bbox": [
+        544.0,
+        1198.0,
+        669.0,
+        1354.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 18,
+      "col_text": "須菩提嘗案之世有能受",
+      "col_bbox": [
+        544,
+        154,
+        669,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "持",
+      "bbox": [
+        421.0,
+        147.0,
+        568.0,
+        231.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 19,
+      "col_text": "持佟行此经者佛以智眼",
+      "col_bbox": [
+        421,
+        147,
+        568,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佟",
+      "bbox": [
+        421.0,
+        231.0,
+        568.0,
+        352.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 20,
+      "col_text": "持佟行此经者佛以智眼",
+      "col_bbox": [
+        421,
+        147,
+        568,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "行",
+      "bbox": [
+        421.0,
+        352.0,
+        568.0,
+        544.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 21,
+      "col_text": "持佟行此经者佛以智眼",
+      "col_bbox": [
+        421,
+        147,
+        568,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        421.0,
+        544.0,
+        568.0,
+        640.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 22,
+      "col_text": "持佟行此经者佛以智眼",
+      "col_bbox": [
+        421,
+        147,
+        568,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        421.0,
+        640.0,
+        568.0,
+        714.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 23,
+      "col_text": "持佟行此经者佛以智眼",
+      "col_bbox": [
+        421,
+        147,
+        568,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        421.0,
+        714.0,
+        568.0,
+        857.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 24,
+      "col_text": "持佟行此经者佛以智眼",
+      "col_bbox": [
+        421,
+        147,
+        568,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        421.0,
+        857.0,
+        568.0,
+        971.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 25,
+      "col_text": "持佟行此经者佛以智眼",
+      "col_bbox": [
+        421,
+        147,
+        568,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        421.0,
+        971.0,
+        568.0,
+        1081.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 26,
+      "col_text": "持佟行此经者佛以智眼",
+      "col_bbox": [
+        421,
+        147,
+        568,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "智",
+      "bbox": [
+        421.0,
+        1081.0,
+        568.0,
+        1197.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 27,
+      "col_text": "持佟行此经者佛以智眼",
+      "col_bbox": [
+        421,
+        147,
+        568,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "眼",
+      "bbox": [
+        421.0,
+        1197.0,
+        568.0,
+        1354.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 28,
+      "col_text": "持佟行此经者佛以智眼",
+      "col_bbox": [
+        421,
+        147,
+        568,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悉",
+      "bbox": [
+        311.0,
+        152.0,
+        458.0,
+        228.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 29,
+      "col_text": "悉知患見是人成就已典邊",
+      "col_bbox": [
+        311,
+        152,
+        458,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        311.0,
+        228.0,
+        458.0,
+        336.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 30,
+      "col_text": "悉知患見是人成就已典邊",
+      "col_bbox": [
+        311,
+        152,
+        458,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "患",
+      "bbox": [
+        311.0,
+        336.0,
+        458.0,
+        480.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 31,
+      "col_text": "悉知患見是人成就已典邊",
+      "col_bbox": [
+        311,
+        152,
+        458,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "見",
+      "bbox": [
+        311.0,
+        480.0,
+        458.0,
+        614.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 32,
+      "col_text": "悉知患見是人成就已典邊",
+      "col_bbox": [
+        311,
+        152,
+        458,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        311.0,
+        614.0,
+        458.0,
+        723.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 33,
+      "col_text": "悉知患見是人成就已典邊",
+      "col_bbox": [
+        311,
+        152,
+        458,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        311.0,
+        723.0,
+        458.0,
+        795.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 34,
+      "col_text": "悉知患見是人成就已典邊",
+      "col_bbox": [
+        311,
+        152,
+        458,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "成",
+      "bbox": [
+        311.0,
+        795.0,
+        458.0,
+        940.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 35,
+      "col_text": "悉知患見是人成就已典邊",
+      "col_bbox": [
+        311,
+        152,
+        458,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "就",
+      "bbox": [
+        311.0,
+        940.0,
+        458.0,
+        985.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 36,
+      "col_text": "悉知患見是人成就已典邊",
+      "col_bbox": [
+        311,
+        152,
+        458,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "已",
+      "bbox": [
+        311.0,
+        985.0,
+        458.0,
+        1151.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 37,
+      "col_text": "悉知患見是人成就已典邊",
+      "col_bbox": [
+        311,
+        152,
+        458,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "典",
+      "bbox": [
+        311.0,
+        1151.0,
+        458.0,
+        1223.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 38,
+      "col_text": "悉知患見是人成就已典邊",
+      "col_bbox": [
+        311,
+        152,
+        458,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "邊",
+      "bbox": [
+        311.0,
+        1223.0,
+        458.0,
+        1342.0
+      ],
+      "column": 3,
+      "row": 10,
+      "global_index": 39,
+      "col_text": "悉知患見是人成就已典邊",
+      "col_bbox": [
+        311,
+        152,
+        458,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "功",
+      "bbox": [
+        199.0,
+        150.0,
+        337.0,
+        286.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 40,
+      "col_text": "功德須菩提若有喜男子",
+      "col_bbox": [
+        199,
+        150,
+        337,
+        1353
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        199.0,
+        286.0,
+        337.0,
+        425.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 41,
+      "col_text": "功德須菩提若有喜男子",
+      "col_bbox": [
+        199,
+        150,
+        337,
+        1353
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "須",
+      "bbox": [
+        199.0,
+        425.0,
+        337.0,
+        545.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 42,
+      "col_text": "功德須菩提若有喜男子",
+      "col_bbox": [
+        199,
+        150,
+        337,
+        1353
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        199.0,
+        545.0,
+        337.0,
+        622.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 43,
+      "col_text": "功德須菩提若有喜男子",
+      "col_bbox": [
+        199,
+        150,
+        337,
+        1353
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        199.0,
+        622.0,
+        337.0,
+        715.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 44,
+      "col_text": "功德須菩提若有喜男子",
+      "col_bbox": [
+        199,
+        150,
+        337,
+        1353
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        199.0,
+        715.0,
+        337.0,
+        835.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 45,
+      "col_text": "功德須菩提若有喜男子",
+      "col_bbox": [
+        199,
+        150,
+        337,
+        1353
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        199.0,
+        835.0,
+        337.0,
+        971.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 46,
+      "col_text": "功德須菩提若有喜男子",
+      "col_bbox": [
+        199,
+        150,
+        337,
+        1353
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "喜",
+      "bbox": [
+        199.0,
+        971.0,
+        337.0,
+        1076.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 47,
+      "col_text": "功德須菩提若有喜男子",
+      "col_bbox": [
+        199,
+        150,
+        337,
+        1353
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "男",
+      "bbox": [
+        199.0,
+        1076.0,
+        337.0,
+        1206.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 48,
+      "col_text": "功德須菩提若有喜男子",
+      "col_bbox": [
+        199,
+        150,
+        337,
+        1353
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "子",
+      "bbox": [
+        199.0,
+        1206.0,
+        337.0,
+        1353.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 49,
+      "col_text": "功德須菩提若有喜男子",
+      "col_bbox": [
+        199,
+        150,
+        337,
+        1353
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "目",
+      "bbox": [
+        172.0,
+        149.0,
+        208.0,
+        178.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 50,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        172.0,
+        178.0,
+        208.0,
+        205.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 51,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "日",
+      "bbox": [
+        172.0,
+        205.0,
+        208.0,
+        230.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 52,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "光",
+      "bbox": [
+        172.0,
+        230.0,
+        208.0,
+        259.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 53,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "明",
+      "bbox": [
+        172.0,
+        259.0,
+        208.0,
+        284.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 54,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "见",
+      "bbox": [
+        172.0,
+        284.0,
+        208.0,
+        311.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 55,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "种",
+      "bbox": [
+        172.0,
+        311.0,
+        208.0,
+        336.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 56,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "种",
+      "bbox": [
+        172.0,
+        336.0,
+        208.0,
+        365.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 57,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "色",
+      "bbox": [
+        172.0,
+        365.0,
+        208.0,
+        392.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 58,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        172.0,
+        416.0,
+        208.0,
+        444.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 59,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        172.0,
+        444.0,
+        208.0,
+        471.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 60,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        172.0,
+        471.0,
+        208.0,
+        498.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 61,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "当",
+      "bbox": [
+        172.0,
+        498.0,
+        208.0,
+        526.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 62,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        172.0,
+        526.0,
+        208.0,
+        553.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 63,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        172.0,
+        553.0,
+        208.0,
+        581.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 64,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        172.0,
+        581.0,
+        208.0,
+        608.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 65,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        172.0,
+        608.0,
+        208.0,
+        646.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 66,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        172.0,
+        646.0,
+        208.0,
+        674.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 67,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "受",
+      "bbox": [
+        172.0,
+        674.0,
+        208.0,
+        700.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 68,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "持",
+      "bbox": [
+        172.0,
+        700.0,
+        208.0,
+        733.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 69,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "修",
+      "bbox": [
+        172.0,
+        733.0,
+        208.0,
+        761.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 70,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "行",
+      "bbox": [
+        172.0,
+        761.0,
+        208.0,
+        788.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 71,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        172.0,
+        788.0,
+        208.0,
+        816.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 72,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        172.0,
+        816.0,
+        208.0,
+        843.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 73,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        172.0,
+        843.0,
+        208.0,
+        869.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 74,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        172.0,
+        869.0,
+        208.0,
+        897.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 75,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        172.0,
+        897.0,
+        208.0,
+        922.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 76,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "智",
+      "bbox": [
+        172.0,
+        922.0,
+        208.0,
+        949.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 77,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "眼",
+      "bbox": [
+        172.0,
+        949.0,
+        208.0,
+        974.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 78,
+      "col_text": "目以日光明见种种色 须菩提当来之世有能受持修行此经者佛以智眼",
+      "col_bbox": [
+        172,
+        149,
+        208,
+        974
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悉",
+      "bbox": [
+        138.0,
+        149.0,
+        172.0,
+        179.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 79,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        138.0,
+        179.0,
+        172.0,
+        203.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 80,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悉",
+      "bbox": [
+        138.0,
+        203.0,
+        172.0,
+        231.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 81,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "见",
+      "bbox": [
+        138.0,
+        231.0,
+        172.0,
+        257.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 82,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        138.0,
+        257.0,
+        172.0,
+        285.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 83,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        138.0,
+        285.0,
+        172.0,
+        311.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 84,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "成",
+      "bbox": [
+        138.0,
+        311.0,
+        172.0,
+        338.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 85,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "就",
+      "bbox": [
+        138.0,
+        338.0,
+        172.0,
+        365.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 86,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        138.0,
+        365.0,
+        172.0,
+        393.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 87,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "边",
+      "bbox": [
+        138.0,
+        393.0,
+        172.0,
+        421.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 88,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "功",
+      "bbox": [
+        138.0,
+        421.0,
+        172.0,
+        449.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 89,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        138.0,
+        449.0,
+        172.0,
+        492.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 90,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        138.0,
+        492.0,
+        172.0,
+        520.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 91,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        138.0,
+        520.0,
+        172.0,
+        548.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 92,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        138.0,
+        548.0,
+        172.0,
+        576.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 93,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        138.0,
+        576.0,
+        172.0,
+        603.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 94,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        138.0,
+        603.0,
+        172.0,
+        631.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 95,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "善",
+      "bbox": [
+        138.0,
+        631.0,
+        172.0,
+        656.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 96,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "男",
+      "bbox": [
+        138.0,
+        656.0,
+        172.0,
+        683.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 97,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "子",
+      "bbox": [
+        138.0,
+        683.0,
+        172.0,
+        709.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 98,
+      "col_text": "悉知悉见是人成就无边功德须菩提若有善男子",
+      "col_bbox": [
+        138,
+        149,
+        172,
+        709
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 99,
+  "timestamp": "2026-05-02T23:11:04.968663"
+}

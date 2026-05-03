@@ -1,0 +1,2093 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-066.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "長如来说即法大身是名大身酒菩秀窖薩作還言義當廣要重眾生窥憾者則不名薩何圾於法有名為薩息长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令寂灭者则不名菩萨何以故于法无有名为菩萨是",
+  "parsed_results": [
+    {
+      "text": "長K如来说即法大身是",
+      "bbox": [
+        659,
+        154,
+        764,
+        1331
+      ],
+      "poly": [
+        [
+          659,
+          154
+        ],
+        [
+          764,
+          154
+        ],
+        [
+          764,
+          1331
+        ],
+        [
+          659,
+          1331
+        ]
+      ]
+    },
+    {
+      "text": "名大身酒菩秀窖薩作",
+      "bbox": [
+        546,
+        163,
+        653,
+        1338
+      ],
+      "poly": [
+        [
+          546,
+          163
+        ],
+        [
+          653,
+          163
+        ],
+        [
+          653,
+          1338
+        ],
+        [
+          546,
+          1338
+        ]
+      ]
+    },
+    {
+      "text": "還言義當廣要重眾生",
+      "bbox": [
+        432,
+        154,
+        535,
+        1220
+      ],
+      "poly": [
+        [
+          432,
+          154
+        ],
+        [
+          535,
+          154
+        ],
+        [
+          535,
+          1220
+        ],
+        [
+          432,
+          1220
+        ]
+      ]
+    },
+    {
+      "text": "窥憾者則不名薩何",
+      "bbox": [
+        321,
+        168,
+        425,
+        1247
+      ],
+      "poly": [
+        [
+          321,
+          168
+        ],
+        [
+          425,
+          168
+        ],
+        [
+          425,
+          1247
+        ],
+        [
+          321,
+          1247
+        ]
+      ]
+    },
+    {
+      "text": "圾於法有名為薩息",
+      "bbox": [
+        212,
+        155,
+        320,
+        1314
+      ],
+      "poly": [
+        [
+          212,
+          155
+        ],
+        [
+          320,
+          155
+        ],
+        [
+          320,
+          1314
+        ],
+        [
+          212,
+          1314
+        ]
+      ]
+    },
+    {
+      "text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "poly": [
+        [
+          167,
+          153
+        ],
+        [
+          197,
+          153
+        ],
+        [
+          197,
+          1001
+        ],
+        [
+          167,
+          1001
+        ]
+      ]
+    },
+    {
+      "text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "poly": [
+        [
+          136,
+          156
+        ],
+        [
+          160,
+          156
+        ],
+        [
+          160,
+          711
+        ],
+        [
+          136,
+          711
+        ]
+      ]
+    },
+    {
+      "text": "61",
+      "bbox": [
+        3,
+        1443,
+        26,
+        1465
+      ],
+      "poly": [
+        [
+          3,
+          1443
+        ],
+        [
+          26,
+          1443
+        ],
+        [
+          26,
+          1465
+        ],
+        [
+          3,
+          1465
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "長",
+      "bbox": [
+        659.0,
+        154.0,
+        764.0,
+        281.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "長K如来说即法大身是",
+      "col_bbox": [
+        659,
+        154,
+        764,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        659.0,
+        363.0,
+        764.0,
+        476.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 1,
+      "col_text": "長K如来说即法大身是",
+      "col_bbox": [
+        659,
+        154,
+        764,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        659.0,
+        476.0,
+        764.0,
+        589.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 2,
+      "col_text": "長K如来说即法大身是",
+      "col_bbox": [
+        659,
+        154,
+        764,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        659.0,
+        589.0,
+        764.0,
+        776.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 3,
+      "col_text": "長K如来说即法大身是",
+      "col_bbox": [
+        659,
+        154,
+        764,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        659.0,
+        776.0,
+        764.0,
+        894.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 4,
+      "col_text": "長K如来说即法大身是",
+      "col_bbox": [
+        659,
+        154,
+        764,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        659.0,
+        894.0,
+        764.0,
+        1011.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 5,
+      "col_text": "長K如来说即法大身是",
+      "col_bbox": [
+        659,
+        154,
+        764,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        659.0,
+        1011.0,
+        764.0,
+        1108.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 6,
+      "col_text": "長K如来说即法大身是",
+      "col_bbox": [
+        659,
+        154,
+        764,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        659.0,
+        1108.0,
+        764.0,
+        1236.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 7,
+      "col_text": "長K如来说即法大身是",
+      "col_bbox": [
+        659,
+        154,
+        764,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        659.0,
+        1236.0,
+        764.0,
+        1331.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 8,
+      "col_text": "長K如来说即法大身是",
+      "col_bbox": [
+        659,
+        154,
+        764,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        546.0,
+        163.0,
+        653.0,
+        281.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 9,
+      "col_text": "名大身酒菩秀窖薩作",
+      "col_bbox": [
+        546,
+        163,
+        653,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        546.0,
+        281.0,
+        653.0,
+        406.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 10,
+      "col_text": "名大身酒菩秀窖薩作",
+      "col_bbox": [
+        546,
+        163,
+        653,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        546.0,
+        406.0,
+        653.0,
+        529.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 11,
+      "col_text": "名大身酒菩秀窖薩作",
+      "col_bbox": [
+        546,
+        163,
+        653,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "酒",
+      "bbox": [
+        546.0,
+        529.0,
+        653.0,
+        693.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 12,
+      "col_text": "名大身酒菩秀窖薩作",
+      "col_bbox": [
+        546,
+        163,
+        653,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        546.0,
+        693.0,
+        653.0,
+        812.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 13,
+      "col_text": "名大身酒菩秀窖薩作",
+      "col_bbox": [
+        546,
+        163,
+        653,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "秀",
+      "bbox": [
+        546.0,
+        812.0,
+        653.0,
+        948.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 14,
+      "col_text": "名大身酒菩秀窖薩作",
+      "col_bbox": [
+        546,
+        163,
+        653,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "窖",
+      "bbox": [
+        546.0,
+        948.0,
+        653.0,
+        1052.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 15,
+      "col_text": "名大身酒菩秀窖薩作",
+      "col_bbox": [
+        546,
+        163,
+        653,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薩",
+      "bbox": [
+        546.0,
+        1052.0,
+        653.0,
+        1219.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 16,
+      "col_text": "名大身酒菩秀窖薩作",
+      "col_bbox": [
+        546,
+        163,
+        653,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "作",
+      "bbox": [
+        546.0,
+        1219.0,
+        653.0,
+        1338.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 17,
+      "col_text": "名大身酒菩秀窖薩作",
+      "col_bbox": [
+        546,
+        163,
+        653,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "還",
+      "bbox": [
+        432.0,
+        154.0,
+        535.0,
+        304.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 18,
+      "col_text": "還言義當廣要重眾生",
+      "col_bbox": [
+        432,
+        154,
+        535,
+        1220
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        432.0,
+        304.0,
+        535.0,
+        424.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 19,
+      "col_text": "還言義當廣要重眾生",
+      "col_bbox": [
+        432,
+        154,
+        535,
+        1220
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "義",
+      "bbox": [
+        432.0,
+        424.0,
+        535.0,
+        541.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 20,
+      "col_text": "還言義當廣要重眾生",
+      "col_bbox": [
+        432,
+        154,
+        535,
+        1220
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "當",
+      "bbox": [
+        432.0,
+        541.0,
+        535.0,
+        639.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 21,
+      "col_text": "還言義當廣要重眾生",
+      "col_bbox": [
+        432,
+        154,
+        535,
+        1220
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "廣",
+      "bbox": [
+        432.0,
+        639.0,
+        535.0,
+        764.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 22,
+      "col_text": "還言義當廣要重眾生",
+      "col_bbox": [
+        432,
+        154,
+        535,
+        1220
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "要",
+      "bbox": [
+        432.0,
+        764.0,
+        535.0,
+        898.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 23,
+      "col_text": "還言義當廣要重眾生",
+      "col_bbox": [
+        432,
+        154,
+        535,
+        1220
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "重",
+      "bbox": [
+        432.0,
+        898.0,
+        535.0,
+        1017.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 24,
+      "col_text": "還言義當廣要重眾生",
+      "col_bbox": [
+        432,
+        154,
+        535,
+        1220
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "眾",
+      "bbox": [
+        432.0,
+        1017.0,
+        535.0,
+        1134.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 25,
+      "col_text": "還言義當廣要重眾生",
+      "col_bbox": [
+        432,
+        154,
+        535,
+        1220
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        432.0,
+        1134.0,
+        535.0,
+        1220.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 26,
+      "col_text": "還言義當廣要重眾生",
+      "col_bbox": [
+        432,
+        154,
+        535,
+        1220
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "窥",
+      "bbox": [
+        321.0,
+        168.0,
+        425.0,
+        333.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 27,
+      "col_text": "窥憾者則不名薩何",
+      "col_bbox": [
+        321,
+        168,
+        425,
+        1247
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "憾",
+      "bbox": [
+        321.0,
+        333.0,
+        425.0,
+        459.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 28,
+      "col_text": "窥憾者則不名薩何",
+      "col_bbox": [
+        321,
+        168,
+        425,
+        1247
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        321.0,
+        459.0,
+        425.0,
+        583.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 29,
+      "col_text": "窥憾者則不名薩何",
+      "col_bbox": [
+        321,
+        168,
+        425,
+        1247
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "則",
+      "bbox": [
+        321.0,
+        583.0,
+        425.0,
+        700.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 30,
+      "col_text": "窥憾者則不名薩何",
+      "col_bbox": [
+        321,
+        168,
+        425,
+        1247
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        321.0,
+        700.0,
+        425.0,
+        842.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 31,
+      "col_text": "窥憾者則不名薩何",
+      "col_bbox": [
+        321,
+        168,
+        425,
+        1247
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        321.0,
+        842.0,
+        425.0,
+        959.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 32,
+      "col_text": "窥憾者則不名薩何",
+      "col_bbox": [
+        321,
+        168,
+        425,
+        1247
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薩",
+      "bbox": [
+        321.0,
+        959.0,
+        425.0,
+        1116.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 33,
+      "col_text": "窥憾者則不名薩何",
+      "col_bbox": [
+        321,
+        168,
+        425,
+        1247
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        321.0,
+        1116.0,
+        425.0,
+        1247.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 34,
+      "col_text": "窥憾者則不名薩何",
+      "col_bbox": [
+        321,
+        168,
+        425,
+        1247
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "圾",
+      "bbox": [
+        212.0,
+        155.0,
+        320.0,
+        313.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 35,
+      "col_text": "圾於法有名為薩息",
+      "col_bbox": [
+        212,
+        155,
+        320,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "於",
+      "bbox": [
+        212.0,
+        313.0,
+        320.0,
+        429.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 36,
+      "col_text": "圾於法有名為薩息",
+      "col_bbox": [
+        212,
+        155,
+        320,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        212.0,
+        429.0,
+        320.0,
+        548.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 37,
+      "col_text": "圾於法有名為薩息",
+      "col_bbox": [
+        212,
+        155,
+        320,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        212.0,
+        548.0,
+        320.0,
+        766.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 38,
+      "col_text": "圾於法有名為薩息",
+      "col_bbox": [
+        212,
+        155,
+        320,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        212.0,
+        766.0,
+        320.0,
+        921.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 39,
+      "col_text": "圾於法有名為薩息",
+      "col_bbox": [
+        212,
+        155,
+        320,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        212.0,
+        921.0,
+        320.0,
+        1050.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 40,
+      "col_text": "圾於法有名為薩息",
+      "col_bbox": [
+        212,
+        155,
+        320,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薩",
+      "bbox": [
+        212.0,
+        1050.0,
+        320.0,
+        1143.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 41,
+      "col_text": "圾於法有名為薩息",
+      "col_bbox": [
+        212,
+        155,
+        320,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "息",
+      "bbox": [
+        212.0,
+        1143.0,
+        320.0,
+        1314.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 42,
+      "col_text": "圾於法有名為薩息",
+      "col_bbox": [
+        212,
+        155,
+        320,
+        1314
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "长",
+      "bbox": [
+        167.0,
+        153.0,
+        197.0,
+        181.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 43,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        167.0,
+        181.0,
+        197.0,
+        208.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 44,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        167.0,
+        208.0,
+        197.0,
+        235.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 45,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        167.0,
+        235.0,
+        197.0,
+        261.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 46,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        167.0,
+        261.0,
+        197.0,
+        288.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 47,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        167.0,
+        288.0,
+        197.0,
+        314.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 48,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        167.0,
+        314.0,
+        197.0,
+        342.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 49,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        167.0,
+        342.0,
+        197.0,
+        371.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 50,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        167.0,
+        371.0,
+        197.0,
+        402.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 51,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        167.0,
+        402.0,
+        197.0,
+        427.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 52,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        167.0,
+        427.0,
+        197.0,
+        470.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 53,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        167.0,
+        470.0,
+        197.0,
+        499.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 54,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        167.0,
+        499.0,
+        197.0,
+        527.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 55,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        167.0,
+        527.0,
+        197.0,
+        554.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 56,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        167.0,
+        554.0,
+        197.0,
+        580.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 57,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        167.0,
+        580.0,
+        197.0,
+        607.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 58,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        167.0,
+        607.0,
+        197.0,
+        633.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 59,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        167.0,
+        633.0,
+        197.0,
+        660.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 60,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "萨",
+      "bbox": [
+        167.0,
+        660.0,
+        197.0,
+        687.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 61,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "作",
+      "bbox": [
+        167.0,
+        687.0,
+        197.0,
+        715.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 62,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        167.0,
+        715.0,
+        197.0,
+        738.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 63,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        167.0,
+        738.0,
+        197.0,
+        767.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 64,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        167.0,
+        767.0,
+        197.0,
+        795.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 65,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "当",
+      "bbox": [
+        167.0,
+        795.0,
+        197.0,
+        823.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 66,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "度",
+      "bbox": [
+        167.0,
+        823.0,
+        197.0,
+        860.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 67,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        167.0,
+        860.0,
+        197.0,
+        888.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 68,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "量",
+      "bbox": [
+        167.0,
+        888.0,
+        197.0,
+        923.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 69,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "众",
+      "bbox": [
+        167.0,
+        923.0,
+        197.0,
+        951.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 70,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        167.0,
+        951.0,
+        197.0,
+        979.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 71,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "令",
+      "bbox": [
+        167.0,
+        979.0,
+        197.0,
+        1001.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 72,
+      "col_text": "长大如来说即非大身是名大身须菩提若菩萨作是言我当度无量众生令",
+      "col_bbox": [
+        167,
+        153,
+        197,
+        1001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寂",
+      "bbox": [
+        136.0,
+        156.0,
+        160.0,
+        182.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 73,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "灭",
+      "bbox": [
+        136.0,
+        182.0,
+        160.0,
+        208.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 74,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        136.0,
+        208.0,
+        160.0,
+        234.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 75,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "则",
+      "bbox": [
+        136.0,
+        234.0,
+        160.0,
+        261.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 76,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        136.0,
+        261.0,
+        160.0,
+        287.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 77,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        136.0,
+        287.0,
+        160.0,
+        314.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 78,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        136.0,
+        314.0,
+        160.0,
+        342.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 79,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "萨",
+      "bbox": [
+        136.0,
+        342.0,
+        160.0,
+        370.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 80,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        136.0,
+        370.0,
+        160.0,
+        397.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 81,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        136.0,
+        397.0,
+        160.0,
+        425.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 82,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        136.0,
+        425.0,
+        160.0,
+        453.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 83,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "于",
+      "bbox": [
+        136.0,
+        453.0,
+        160.0,
+        490.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 84,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        136.0,
+        490.0,
+        160.0,
+        523.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 85,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        136.0,
+        523.0,
+        160.0,
+        551.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 86,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        136.0,
+        551.0,
+        160.0,
+        579.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 87,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        136.0,
+        579.0,
+        160.0,
+        606.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 88,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        136.0,
+        606.0,
+        160.0,
+        634.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 89,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        136.0,
+        634.0,
+        160.0,
+        660.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 90,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "萨",
+      "bbox": [
+        136.0,
+        660.0,
+        160.0,
+        685.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 91,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        136.0,
+        685.0,
+        160.0,
+        711.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 92,
+      "col_text": "寂灭者则不名菩萨何以故于法无有名为菩萨是",
+      "col_bbox": [
+        136,
+        156,
+        160,
+        711
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 93,
+  "timestamp": "2026-05-02T23:11:27.218839"
+}

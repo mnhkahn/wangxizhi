@@ -1,0 +1,912 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-032.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "澄所說所思惟法皆不可取不可说非法非跳法所以一切賢聖皆以要為顯女玉法嘗差别酒菩",
+  "parsed_results": [
+    {
+      "text": "",
+      "bbox": [
+        640,
+        152,
+        763,
+        1360
+      ],
+      "poly": [
+        [
+          640,
+          152
+        ],
+        [
+          763,
+          152
+        ],
+        [
+          763,
+          1360
+        ],
+        [
+          640,
+          1360
+        ]
+      ]
+    },
+    {
+      "text": "澄所：說所思惟法皆不可",
+      "bbox": [
+        524,
+        156,
+        651,
+        1357
+      ],
+      "poly": [
+        [
+          524,
+          156
+        ],
+        [
+          651,
+          156
+        ],
+        [
+          651,
+          1357
+        ],
+        [
+          524,
+          1357
+        ]
+      ]
+    },
+    {
+      "text": "取不可说非法非跳法所",
+      "bbox": [
+        423,
+        162,
+        529,
+        1354
+      ],
+      "poly": [
+        [
+          423,
+          162
+        ],
+        [
+          529,
+          162
+        ],
+        [
+          529,
+          1354
+        ],
+        [
+          423,
+          1354
+        ]
+      ]
+    },
+    {
+      "text": "以一切賢聖皆以し要為顯",
+      "bbox": [
+        302,
+        159,
+        423,
+        1360
+      ],
+      "poly": [
+        [
+          302,
+          159
+        ],
+        [
+          423,
+          159
+        ],
+        [
+          423,
+          1360
+        ],
+        [
+          302,
+          1360
+        ]
+      ]
+    },
+    {
+      "text": "女玉法嘗差别酒菩",
+      "bbox": [
+        198,
+        165,
+        300,
+        1356
+      ],
+      "poly": [
+        [
+          198,
+          165
+        ],
+        [
+          300,
+          165
+        ],
+        [
+          300,
+          1356
+        ],
+        [
+          198,
+          1356
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "澄",
+      "bbox": [
+        524.0,
+        156.0,
+        651.0,
+        239.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "澄所：說所思惟法皆不可",
+      "col_bbox": [
+        524,
+        156,
+        651,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        524.0,
+        239.0,
+        651.0,
+        342.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "澄所：說所思惟法皆不可",
+      "col_bbox": [
+        524,
+        156,
+        651,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "說",
+      "bbox": [
+        524.0,
+        479.0,
+        651.0,
+        568.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 2,
+      "col_text": "澄所：說所思惟法皆不可",
+      "col_bbox": [
+        524,
+        156,
+        651,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        524.0,
+        568.0,
+        651.0,
+        708.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 3,
+      "col_text": "澄所：說所思惟法皆不可",
+      "col_bbox": [
+        524,
+        156,
+        651,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "思",
+      "bbox": [
+        524.0,
+        708.0,
+        651.0,
+        800.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 4,
+      "col_text": "澄所：說所思惟法皆不可",
+      "col_bbox": [
+        524,
+        156,
+        651,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "惟",
+      "bbox": [
+        524.0,
+        800.0,
+        651.0,
+        909.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 5,
+      "col_text": "澄所：說所思惟法皆不可",
+      "col_bbox": [
+        524,
+        156,
+        651,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        524.0,
+        909.0,
+        651.0,
+        997.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 6,
+      "col_text": "澄所：說所思惟法皆不可",
+      "col_bbox": [
+        524,
+        156,
+        651,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "皆",
+      "bbox": [
+        524.0,
+        997.0,
+        651.0,
+        1155.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 7,
+      "col_text": "澄所：說所思惟法皆不可",
+      "col_bbox": [
+        524,
+        156,
+        651,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        524.0,
+        1155.0,
+        651.0,
+        1215.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 8,
+      "col_text": "澄所：說所思惟法皆不可",
+      "col_bbox": [
+        524,
+        156,
+        651,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        524.0,
+        1215.0,
+        651.0,
+        1357.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 9,
+      "col_text": "澄所：說所思惟法皆不可",
+      "col_bbox": [
+        524,
+        156,
+        651,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "取",
+      "bbox": [
+        423.0,
+        162.0,
+        529.0,
+        315.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "取不可说非法非跳法所",
+      "col_bbox": [
+        423,
+        162,
+        529,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        423.0,
+        315.0,
+        529.0,
+        420.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "取不可说非法非跳法所",
+      "col_bbox": [
+        423,
+        162,
+        529,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        423.0,
+        420.0,
+        529.0,
+        553.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "取不可说非法非跳法所",
+      "col_bbox": [
+        423,
+        162,
+        529,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        423.0,
+        553.0,
+        529.0,
+        672.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "取不可说非法非跳法所",
+      "col_bbox": [
+        423,
+        162,
+        529,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        423.0,
+        672.0,
+        529.0,
+        724.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "取不可说非法非跳法所",
+      "col_bbox": [
+        423,
+        162,
+        529,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        423.0,
+        724.0,
+        529.0,
+        842.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "取不可说非法非跳法所",
+      "col_bbox": [
+        423,
+        162,
+        529,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        423.0,
+        842.0,
+        529.0,
+        961.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "取不可说非法非跳法所",
+      "col_bbox": [
+        423,
+        162,
+        529,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "跳",
+      "bbox": [
+        423.0,
+        961.0,
+        529.0,
+        1099.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "取不可说非法非跳法所",
+      "col_bbox": [
+        423,
+        162,
+        529,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        423.0,
+        1099.0,
+        529.0,
+        1220.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "取不可说非法非跳法所",
+      "col_bbox": [
+        423,
+        162,
+        529,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        423.0,
+        1220.0,
+        529.0,
+        1354.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 19,
+      "col_text": "取不可说非法非跳法所",
+      "col_bbox": [
+        423,
+        162,
+        529,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        302.0,
+        159.0,
+        423.0,
+        269.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 20,
+      "col_text": "以一切賢聖皆以し要為顯",
+      "col_bbox": [
+        302,
+        159,
+        423,
+        1360
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        302.0,
+        269.0,
+        423.0,
+        366.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 21,
+      "col_text": "以一切賢聖皆以し要為顯",
+      "col_bbox": [
+        302,
+        159,
+        423,
+        1360
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "切",
+      "bbox": [
+        302.0,
+        366.0,
+        423.0,
+        467.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 22,
+      "col_text": "以一切賢聖皆以し要為顯",
+      "col_bbox": [
+        302,
+        159,
+        423,
+        1360
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "賢",
+      "bbox": [
+        302.0,
+        467.0,
+        423.0,
+        593.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 23,
+      "col_text": "以一切賢聖皆以し要為顯",
+      "col_bbox": [
+        302,
+        159,
+        423,
+        1360
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "聖",
+      "bbox": [
+        302.0,
+        593.0,
+        423.0,
+        717.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 24,
+      "col_text": "以一切賢聖皆以し要為顯",
+      "col_bbox": [
+        302,
+        159,
+        423,
+        1360
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "皆",
+      "bbox": [
+        302.0,
+        717.0,
+        423.0,
+        845.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 25,
+      "col_text": "以一切賢聖皆以し要為顯",
+      "col_bbox": [
+        302,
+        159,
+        423,
+        1360
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        302.0,
+        845.0,
+        423.0,
+        954.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 26,
+      "col_text": "以一切賢聖皆以し要為顯",
+      "col_bbox": [
+        302,
+        159,
+        423,
+        1360
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "要",
+      "bbox": [
+        302.0,
+        1020.0,
+        423.0,
+        1159.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 27,
+      "col_text": "以一切賢聖皆以し要為顯",
+      "col_bbox": [
+        302,
+        159,
+        423,
+        1360
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        302.0,
+        1159.0,
+        423.0,
+        1273.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 28,
+      "col_text": "以一切賢聖皆以し要為顯",
+      "col_bbox": [
+        302,
+        159,
+        423,
+        1360
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "顯",
+      "bbox": [
+        302.0,
+        1273.0,
+        423.0,
+        1360.0
+      ],
+      "column": 3,
+      "row": 10,
+      "global_index": 29,
+      "col_text": "以一切賢聖皆以し要為顯",
+      "col_bbox": [
+        302,
+        159,
+        423,
+        1360
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "女",
+      "bbox": [
+        198.0,
+        165.0,
+        300.0,
+        278.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "女玉法嘗差别酒菩",
+      "col_bbox": [
+        198,
+        165,
+        300,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "玉",
+      "bbox": [
+        198.0,
+        278.0,
+        300.0,
+        466.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "女玉法嘗差别酒菩",
+      "col_bbox": [
+        198,
+        165,
+        300,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        198.0,
+        466.0,
+        300.0,
+        567.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "女玉法嘗差别酒菩",
+      "col_bbox": [
+        198,
+        165,
+        300,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "嘗",
+      "bbox": [
+        198.0,
+        567.0,
+        300.0,
+        772.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "女玉法嘗差别酒菩",
+      "col_bbox": [
+        198,
+        165,
+        300,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "差",
+      "bbox": [
+        198.0,
+        772.0,
+        300.0,
+        935.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "女玉法嘗差别酒菩",
+      "col_bbox": [
+        198,
+        165,
+        300,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "别",
+      "bbox": [
+        198.0,
+        935.0,
+        300.0,
+        1031.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "女玉法嘗差别酒菩",
+      "col_bbox": [
+        198,
+        165,
+        300,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "酒",
+      "bbox": [
+        198.0,
+        1031.0,
+        300.0,
+        1178.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "女玉法嘗差别酒菩",
+      "col_bbox": [
+        198,
+        165,
+        300,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        198.0,
+        1178.0,
+        300.0,
+        1356.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "女玉法嘗差别酒菩",
+      "col_bbox": [
+        198,
+        165,
+        300,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 5,
+  "total_chars": 38,
+  "timestamp": "2026-05-03T22:10:02.317610"
+}

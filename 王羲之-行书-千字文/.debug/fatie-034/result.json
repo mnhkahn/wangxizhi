@@ -1,0 +1,2213 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-034.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "酒菩提恒河中所有沙凝有如是沙蓐恒河是诸河沙寧為多否塔言甘芯但諸恆河尚多要數何次其沙須菩提我今實言告须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多但诸恒河尚多无数何况其沙须菩提我今实言告",
+  "parsed_results": [
+    {
+      "text": "酒菩提恒河中所有沙",
+      "bbox": [
+        654,
+        159,
+        761,
+        1337
+      ],
+      "poly": [
+        [
+          654,
+          159
+        ],
+        [
+          761,
+          159
+        ],
+        [
+          761,
+          1337
+        ],
+        [
+          654,
+          1337
+        ]
+      ]
+    },
+    {
+      "text": "凝，有如是沙蓐恒河是诸",
+      "bbox": [
+        543,
+        162,
+        656,
+        1344
+      ],
+      "poly": [
+        [
+          543,
+          162
+        ],
+        [
+          656,
+          162
+        ],
+        [
+          656,
+          1344
+        ],
+        [
+          543,
+          1344
+        ]
+      ]
+    },
+    {
+      "text": "河沙寧為多否塔言甘芯",
+      "bbox": [
+        436,
+        166,
+        530,
+        1343
+      ],
+      "poly": [
+        [
+          436,
+          166
+        ],
+        [
+          530,
+          166
+        ],
+        [
+          530,
+          1343
+        ],
+        [
+          436,
+          1343
+        ]
+      ]
+    },
+    {
+      "text": "但諸恆河尚多要數何次",
+      "bbox": [
+        307,
+        165,
+        422,
+        1343
+      ],
+      "poly": [
+        [
+          307,
+          165
+        ],
+        [
+          422,
+          165
+        ],
+        [
+          422,
+          1343
+        ],
+        [
+          307,
+          1343
+        ]
+      ]
+    },
+    {
+      "text": "其沙須菩提我今實言告",
+      "bbox": [
+        198,
+        163,
+        303,
+        1343
+      ],
+      "poly": [
+        [
+          198,
+          163
+        ],
+        [
+          303,
+          163
+        ],
+        [
+          303,
+          1343
+        ],
+        [
+          198,
+          1343
+        ]
+      ]
+    },
+    {
+      "text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "poly": [
+        [
+          158,
+          148
+        ],
+        [
+          188,
+          148
+        ],
+        [
+          188,
+          998
+        ],
+        [
+          158,
+          998
+        ]
+      ]
+    },
+    {
+      "text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "poly": [
+        [
+          124,
+          145
+        ],
+        [
+          152,
+          145
+        ],
+        [
+          152,
+          705
+        ],
+        [
+          124,
+          705
+        ]
+      ]
+    },
+    {
+      "text": "29",
+      "bbox": [
+        0,
+        1438,
+        16,
+        1454
+      ],
+      "poly": [
+        [
+          0,
+          1438
+        ],
+        [
+          16,
+          1438
+        ],
+        [
+          16,
+          1454
+        ],
+        [
+          0,
+          1454
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "酒",
+      "bbox": [
+        654.0,
+        159.0,
+        761.0,
+        327.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "酒菩提恒河中所有沙",
+      "col_bbox": [
+        654,
+        159,
+        761,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        654.0,
+        327.0,
+        761.0,
+        454.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "酒菩提恒河中所有沙",
+      "col_bbox": [
+        654,
+        159,
+        761,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        654.0,
+        454.0,
+        761.0,
+        556.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "酒菩提恒河中所有沙",
+      "col_bbox": [
+        654,
+        159,
+        761,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "恒",
+      "bbox": [
+        654.0,
+        556.0,
+        761.0,
+        664.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "酒菩提恒河中所有沙",
+      "col_bbox": [
+        654,
+        159,
+        761,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "河",
+      "bbox": [
+        654.0,
+        664.0,
+        761.0,
+        781.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "酒菩提恒河中所有沙",
+      "col_bbox": [
+        654,
+        159,
+        761,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        654.0,
+        781.0,
+        761.0,
+        905.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "酒菩提恒河中所有沙",
+      "col_bbox": [
+        654,
+        159,
+        761,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        654.0,
+        905.0,
+        761.0,
+        1036.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "酒菩提恒河中所有沙",
+      "col_bbox": [
+        654,
+        159,
+        761,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        654.0,
+        1036.0,
+        761.0,
+        1167.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "酒菩提恒河中所有沙",
+      "col_bbox": [
+        654,
+        159,
+        761,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沙",
+      "bbox": [
+        654.0,
+        1167.0,
+        761.0,
+        1337.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "酒菩提恒河中所有沙",
+      "col_bbox": [
+        654,
+        159,
+        761,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "凝",
+      "bbox": [
+        543.0,
+        162.0,
+        656.0,
+        237.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 9,
+      "col_text": "凝，有如是沙蓐恒河是诸",
+      "col_bbox": [
+        543,
+        162,
+        656,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        543.0,
+        348.0,
+        656.0,
+        463.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 10,
+      "col_text": "凝，有如是沙蓐恒河是诸",
+      "col_bbox": [
+        543,
+        162,
+        656,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        543.0,
+        463.0,
+        656.0,
+        590.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 11,
+      "col_text": "凝，有如是沙蓐恒河是诸",
+      "col_bbox": [
+        543,
+        162,
+        656,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        543.0,
+        590.0,
+        656.0,
+        685.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 12,
+      "col_text": "凝，有如是沙蓐恒河是诸",
+      "col_bbox": [
+        543,
+        162,
+        656,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沙",
+      "bbox": [
+        543.0,
+        685.0,
+        656.0,
+        831.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 13,
+      "col_text": "凝，有如是沙蓐恒河是诸",
+      "col_bbox": [
+        543,
+        162,
+        656,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "蓐",
+      "bbox": [
+        543.0,
+        831.0,
+        656.0,
+        926.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 14,
+      "col_text": "凝，有如是沙蓐恒河是诸",
+      "col_bbox": [
+        543,
+        162,
+        656,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "恒",
+      "bbox": [
+        543.0,
+        926.0,
+        656.0,
+        1022.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 15,
+      "col_text": "凝，有如是沙蓐恒河是诸",
+      "col_bbox": [
+        543,
+        162,
+        656,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "河",
+      "bbox": [
+        543.0,
+        1022.0,
+        656.0,
+        1160.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 16,
+      "col_text": "凝，有如是沙蓐恒河是诸",
+      "col_bbox": [
+        543,
+        162,
+        656,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        543.0,
+        1160.0,
+        656.0,
+        1253.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 17,
+      "col_text": "凝，有如是沙蓐恒河是诸",
+      "col_bbox": [
+        543,
+        162,
+        656,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诸",
+      "bbox": [
+        543.0,
+        1253.0,
+        656.0,
+        1344.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 18,
+      "col_text": "凝，有如是沙蓐恒河是诸",
+      "col_bbox": [
+        543,
+        162,
+        656,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "河",
+      "bbox": [
+        436.0,
+        166.0,
+        530.0,
+        308.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 19,
+      "col_text": "河沙寧為多否塔言甘芯",
+      "col_bbox": [
+        436,
+        166,
+        530,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沙",
+      "bbox": [
+        436.0,
+        308.0,
+        530.0,
+        419.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 20,
+      "col_text": "河沙寧為多否塔言甘芯",
+      "col_bbox": [
+        436,
+        166,
+        530,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寧",
+      "bbox": [
+        436.0,
+        419.0,
+        530.0,
+        553.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 21,
+      "col_text": "河沙寧為多否塔言甘芯",
+      "col_bbox": [
+        436,
+        166,
+        530,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        436.0,
+        553.0,
+        530.0,
+        601.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 22,
+      "col_text": "河沙寧為多否塔言甘芯",
+      "col_bbox": [
+        436,
+        166,
+        530,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        436.0,
+        601.0,
+        530.0,
+        788.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 23,
+      "col_text": "河沙寧為多否塔言甘芯",
+      "col_bbox": [
+        436,
+        166,
+        530,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "否",
+      "bbox": [
+        436.0,
+        788.0,
+        530.0,
+        906.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 24,
+      "col_text": "河沙寧為多否塔言甘芯",
+      "col_bbox": [
+        436,
+        166,
+        530,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "塔",
+      "bbox": [
+        436.0,
+        906.0,
+        530.0,
+        954.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 25,
+      "col_text": "河沙寧為多否塔言甘芯",
+      "col_bbox": [
+        436,
+        166,
+        530,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        436.0,
+        954.0,
+        530.0,
+        1141.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 26,
+      "col_text": "河沙寧為多否塔言甘芯",
+      "col_bbox": [
+        436,
+        166,
+        530,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "甘",
+      "bbox": [
+        436.0,
+        1141.0,
+        530.0,
+        1190.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 27,
+      "col_text": "河沙寧為多否塔言甘芯",
+      "col_bbox": [
+        436,
+        166,
+        530,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "芯",
+      "bbox": [
+        436.0,
+        1190.0,
+        530.0,
+        1343.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 28,
+      "col_text": "河沙寧為多否塔言甘芯",
+      "col_bbox": [
+        436,
+        166,
+        530,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "但",
+      "bbox": [
+        307.0,
+        165.0,
+        422.0,
+        316.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 29,
+      "col_text": "但諸恆河尚多要數何次",
+      "col_bbox": [
+        307,
+        165,
+        422,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "諸",
+      "bbox": [
+        307.0,
+        316.0,
+        422.0,
+        434.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 30,
+      "col_text": "但諸恆河尚多要數何次",
+      "col_bbox": [
+        307,
+        165,
+        422,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "恆",
+      "bbox": [
+        307.0,
+        434.0,
+        422.0,
+        539.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 31,
+      "col_text": "但諸恆河尚多要數何次",
+      "col_bbox": [
+        307,
+        165,
+        422,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "河",
+      "bbox": [
+        307.0,
+        539.0,
+        422.0,
+        664.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 32,
+      "col_text": "但諸恆河尚多要數何次",
+      "col_bbox": [
+        307,
+        165,
+        422,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尚",
+      "bbox": [
+        307.0,
+        664.0,
+        422.0,
+        788.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 33,
+      "col_text": "但諸恆河尚多要數何次",
+      "col_bbox": [
+        307,
+        165,
+        422,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        307.0,
+        788.0,
+        422.0,
+        901.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 34,
+      "col_text": "但諸恆河尚多要數何次",
+      "col_bbox": [
+        307,
+        165,
+        422,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "要",
+      "bbox": [
+        307.0,
+        901.0,
+        422.0,
+        1023.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 35,
+      "col_text": "但諸恆河尚多要數何次",
+      "col_bbox": [
+        307,
+        165,
+        422,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "數",
+      "bbox": [
+        307.0,
+        1023.0,
+        422.0,
+        1141.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 36,
+      "col_text": "但諸恆河尚多要數何次",
+      "col_bbox": [
+        307,
+        165,
+        422,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        307.0,
+        1141.0,
+        422.0,
+        1259.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 37,
+      "col_text": "但諸恆河尚多要數何次",
+      "col_bbox": [
+        307,
+        165,
+        422,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "次",
+      "bbox": [
+        307.0,
+        1259.0,
+        422.0,
+        1343.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 38,
+      "col_text": "但諸恆河尚多要數何次",
+      "col_bbox": [
+        307,
+        165,
+        422,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        198.0,
+        163.0,
+        303.0,
+        315.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 39,
+      "col_text": "其沙須菩提我今實言告",
+      "col_bbox": [
+        198,
+        163,
+        303,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沙",
+      "bbox": [
+        198.0,
+        315.0,
+        303.0,
+        433.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 40,
+      "col_text": "其沙須菩提我今實言告",
+      "col_bbox": [
+        198,
+        163,
+        303,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "須",
+      "bbox": [
+        198.0,
+        433.0,
+        303.0,
+        551.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 41,
+      "col_text": "其沙須菩提我今實言告",
+      "col_bbox": [
+        198,
+        163,
+        303,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        198.0,
+        551.0,
+        303.0,
+        652.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 42,
+      "col_text": "其沙須菩提我今實言告",
+      "col_bbox": [
+        198,
+        163,
+        303,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        198.0,
+        652.0,
+        303.0,
+        787.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 43,
+      "col_text": "其沙須菩提我今實言告",
+      "col_bbox": [
+        198,
+        163,
+        303,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        198.0,
+        787.0,
+        303.0,
+        905.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 44,
+      "col_text": "其沙須菩提我今實言告",
+      "col_bbox": [
+        198,
+        163,
+        303,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "今",
+      "bbox": [
+        198.0,
+        905.0,
+        303.0,
+        1014.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 45,
+      "col_text": "其沙須菩提我今實言告",
+      "col_bbox": [
+        198,
+        163,
+        303,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "實",
+      "bbox": [
+        198.0,
+        1014.0,
+        303.0,
+        1141.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 46,
+      "col_text": "其沙須菩提我今實言告",
+      "col_bbox": [
+        198,
+        163,
+        303,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        198.0,
+        1141.0,
+        303.0,
+        1259.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 47,
+      "col_text": "其沙須菩提我今實言告",
+      "col_bbox": [
+        198,
+        163,
+        303,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "告",
+      "bbox": [
+        198.0,
+        1259.0,
+        303.0,
+        1343.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 48,
+      "col_text": "其沙須菩提我今實言告",
+      "col_bbox": [
+        198,
+        163,
+        303,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        158.0,
+        148.0,
+        188.0,
+        175.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 49,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        158.0,
+        175.0,
+        188.0,
+        201.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 50,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        158.0,
+        201.0,
+        188.0,
+        229.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 51,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        158.0,
+        229.0,
+        188.0,
+        254.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 52,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "恒",
+      "bbox": [
+        158.0,
+        254.0,
+        188.0,
+        281.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 53,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "河",
+      "bbox": [
+        158.0,
+        281.0,
+        188.0,
+        310.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 54,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        158.0,
+        310.0,
+        188.0,
+        338.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 55,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        158.0,
+        338.0,
+        188.0,
+        381.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 56,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        158.0,
+        381.0,
+        188.0,
+        410.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 57,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沙",
+      "bbox": [
+        158.0,
+        410.0,
+        188.0,
+        430.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 58,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "数",
+      "bbox": [
+        158.0,
+        430.0,
+        188.0,
+        466.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 59,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        158.0,
+        466.0,
+        188.0,
+        495.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 60,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        158.0,
+        495.0,
+        188.0,
+        519.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 61,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        158.0,
+        519.0,
+        188.0,
+        548.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 62,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沙",
+      "bbox": [
+        158.0,
+        548.0,
+        188.0,
+        573.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 63,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "等",
+      "bbox": [
+        158.0,
+        573.0,
+        188.0,
+        599.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 64,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "恒",
+      "bbox": [
+        158.0,
+        599.0,
+        188.0,
+        627.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 65,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "河",
+      "bbox": [
+        158.0,
+        627.0,
+        188.0,
+        652.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 66,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        158.0,
+        652.0,
+        188.0,
+        681.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 67,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诸",
+      "bbox": [
+        158.0,
+        681.0,
+        188.0,
+        708.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 68,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "河",
+      "bbox": [
+        158.0,
+        708.0,
+        188.0,
+        735.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 69,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沙",
+      "bbox": [
+        158.0,
+        735.0,
+        188.0,
+        763.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 70,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宁",
+      "bbox": [
+        158.0,
+        763.0,
+        188.0,
+        804.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 71,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        158.0,
+        804.0,
+        188.0,
+        829.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 72,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        158.0,
+        829.0,
+        188.0,
+        863.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 73,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "否",
+      "bbox": [
+        158.0,
+        863.0,
+        188.0,
+        891.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 74,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "答",
+      "bbox": [
+        158.0,
+        891.0,
+        188.0,
+        920.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 75,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        158.0,
+        920.0,
+        188.0,
+        945.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 76,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "甚",
+      "bbox": [
+        158.0,
+        945.0,
+        188.0,
+        973.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 77,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        158.0,
+        973.0,
+        188.0,
+        998.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 78,
+      "col_text": "须菩提如恒河中所有沙数有如是沙等恒河是诸河沙宁为多否答言甚多",
+      "col_bbox": [
+        158,
+        148,
+        188,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "但",
+      "bbox": [
+        124.0,
+        145.0,
+        152.0,
+        175.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 79,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诸",
+      "bbox": [
+        124.0,
+        175.0,
+        152.0,
+        201.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 80,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "恒",
+      "bbox": [
+        124.0,
+        201.0,
+        152.0,
+        227.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 81,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "河",
+      "bbox": [
+        124.0,
+        227.0,
+        152.0,
+        254.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 82,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尚",
+      "bbox": [
+        124.0,
+        254.0,
+        152.0,
+        282.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 83,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        124.0,
+        282.0,
+        152.0,
+        308.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 84,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        124.0,
+        308.0,
+        152.0,
+        334.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 85,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "数",
+      "bbox": [
+        124.0,
+        334.0,
+        152.0,
+        361.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 86,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        124.0,
+        361.0,
+        152.0,
+        389.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 87,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "况",
+      "bbox": [
+        124.0,
+        389.0,
+        152.0,
+        417.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 88,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        124.0,
+        417.0,
+        152.0,
+        452.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 89,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沙",
+      "bbox": [
+        124.0,
+        452.0,
+        152.0,
+        473.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 90,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        124.0,
+        473.0,
+        152.0,
+        516.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 91,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        124.0,
+        516.0,
+        152.0,
+        544.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 92,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        124.0,
+        544.0,
+        152.0,
+        572.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 93,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        124.0,
+        572.0,
+        152.0,
+        600.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 94,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "今",
+      "bbox": [
+        124.0,
+        600.0,
+        152.0,
+        626.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 95,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "实",
+      "bbox": [
+        124.0,
+        626.0,
+        152.0,
+        655.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 96,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        124.0,
+        655.0,
+        152.0,
+        680.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 97,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "告",
+      "bbox": [
+        124.0,
+        680.0,
+        152.0,
+        705.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 98,
+      "col_text": "但诸恒河尚多无数何况其沙须菩提我今实言告",
+      "col_bbox": [
+        124,
+        145,
+        152,
+        705
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 99,
+  "timestamp": "2026-05-02T23:10:38.855762"
+}

@@ -1,0 +1,2073 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-078.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "来說喜法是名碧菩提若三千太千世界中研骨誌絲再送存大寶医有人持用布施来如以头般蓉波蜜經乃来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等宝聚有人持用布施未如以此般若波罗蜜经乃",
+  "parsed_results": [
+    {
+      "text": "来說喜法是名碧",
+      "bbox": [
+        669,
+        160,
+        791,
+        1348
+      ],
+      "poly": [
+        [
+          669,
+          160
+        ],
+        [
+          791,
+          160
+        ],
+        [
+          791,
+          1348
+        ],
+        [
+          669,
+          1348
+        ]
+      ]
+    },
+    {
+      "text": "菩提若三千太千世界中",
+      "bbox": [
+        553,
+        158,
+        681,
+        1342
+      ],
+      "poly": [
+        [
+          553,
+          158
+        ],
+        [
+          681,
+          158
+        ],
+        [
+          681,
+          1342
+        ],
+        [
+          553,
+          1342
+        ]
+      ]
+    },
+    {
+      "text": "研骨誌絲再送存",
+      "bbox": [
+        438,
+        157,
+        568,
+        1345
+      ],
+      "poly": [
+        [
+          438,
+          157
+        ],
+        [
+          568,
+          157
+        ],
+        [
+          568,
+          1345
+        ],
+        [
+          438,
+          1345
+        ]
+      ]
+    },
+    {
+      "text": "大寶医有人持用布施来",
+      "bbox": [
+        331,
+        154,
+        450,
+        1345
+      ],
+      "poly": [
+        [
+          331,
+          154
+        ],
+        [
+          450,
+          154
+        ],
+        [
+          450,
+          1345
+        ],
+        [
+          331,
+          1345
+        ]
+      ]
+    },
+    {
+      "text": "如以头般蓉 波蜜經乃",
+      "bbox": [
+        226,
+        151,
+        347,
+        1341
+      ],
+      "poly": [
+        [
+          226,
+          151
+        ],
+        [
+          347,
+          151
+        ],
+        [
+          347,
+          1341
+        ],
+        [
+          226,
+          1341
+        ]
+      ]
+    },
+    {
+      "text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "poly": [
+        [
+          181,
+          151
+        ],
+        [
+          211,
+          151
+        ],
+        [
+          211,
+          999
+        ],
+        [
+          181,
+          999
+        ]
+      ]
+    },
+    {
+      "text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "poly": [
+        [
+          146,
+          151
+        ],
+        [
+          175,
+          151
+        ],
+        [
+          175,
+          709
+        ],
+        [
+          146,
+          709
+        ]
+      ]
+    },
+    {
+      "text": "73",
+      "bbox": [
+        26,
+        1440,
+        53,
+        1462
+      ],
+      "poly": [
+        [
+          26,
+          1440
+        ],
+        [
+          53,
+          1440
+        ],
+        [
+          53,
+          1462
+        ],
+        [
+          26,
+          1462
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "来",
+      "bbox": [
+        669.0,
+        160.0,
+        791.0,
+        350.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "来說喜法是名碧",
+      "col_bbox": [
+        669,
+        160,
+        791,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "說",
+      "bbox": [
+        669.0,
+        350.0,
+        791.0,
+        459.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "来說喜法是名碧",
+      "col_bbox": [
+        669,
+        160,
+        791,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "喜",
+      "bbox": [
+        669.0,
+        459.0,
+        791.0,
+        619.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "来說喜法是名碧",
+      "col_bbox": [
+        669,
+        160,
+        791,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        669.0,
+        619.0,
+        791.0,
+        826.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "来說喜法是名碧",
+      "col_bbox": [
+        669,
+        160,
+        791,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        669.0,
+        826.0,
+        791.0,
+        1048.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "来說喜法是名碧",
+      "col_bbox": [
+        669,
+        160,
+        791,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        669.0,
+        1048.0,
+        791.0,
+        1226.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "来說喜法是名碧",
+      "col_bbox": [
+        669,
+        160,
+        791,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "碧",
+      "bbox": [
+        669.0,
+        1226.0,
+        791.0,
+        1348.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "来說喜法是名碧",
+      "col_bbox": [
+        669,
+        160,
+        791,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        553.0,
+        158.0,
+        681.0,
+        248.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 7,
+      "col_text": "菩提若三千太千世界中",
+      "col_bbox": [
+        553,
+        158,
+        681,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        553.0,
+        248.0,
+        681.0,
+        375.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 8,
+      "col_text": "菩提若三千太千世界中",
+      "col_bbox": [
+        553,
+        158,
+        681,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        553.0,
+        375.0,
+        681.0,
+        485.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 9,
+      "col_text": "菩提若三千太千世界中",
+      "col_bbox": [
+        553,
+        158,
+        681,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "三",
+      "bbox": [
+        553.0,
+        485.0,
+        681.0,
+        665.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 10,
+      "col_text": "菩提若三千太千世界中",
+      "col_bbox": [
+        553,
+        158,
+        681,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "千",
+      "bbox": [
+        553.0,
+        665.0,
+        681.0,
+        784.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 11,
+      "col_text": "菩提若三千太千世界中",
+      "col_bbox": [
+        553,
+        158,
+        681,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "太",
+      "bbox": [
+        553.0,
+        784.0,
+        681.0,
+        833.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 12,
+      "col_text": "菩提若三千太千世界中",
+      "col_bbox": [
+        553,
+        158,
+        681,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "千",
+      "bbox": [
+        553.0,
+        833.0,
+        681.0,
+        1020.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 13,
+      "col_text": "菩提若三千太千世界中",
+      "col_bbox": [
+        553,
+        158,
+        681,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        553.0,
+        1020.0,
+        681.0,
+        1139.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 14,
+      "col_text": "菩提若三千太千世界中",
+      "col_bbox": [
+        553,
+        158,
+        681,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "界",
+      "bbox": [
+        553.0,
+        1139.0,
+        681.0,
+        1189.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 15,
+      "col_text": "菩提若三千太千世界中",
+      "col_bbox": [
+        553,
+        158,
+        681,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        553.0,
+        1189.0,
+        681.0,
+        1342.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 16,
+      "col_text": "菩提若三千太千世界中",
+      "col_bbox": [
+        553,
+        158,
+        681,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "研",
+      "bbox": [
+        438.0,
+        157.0,
+        568.0,
+        294.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 17,
+      "col_text": "研骨誌絲再送存",
+      "col_bbox": [
+        438,
+        157,
+        568,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "骨",
+      "bbox": [
+        438.0,
+        294.0,
+        568.0,
+        479.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 18,
+      "col_text": "研骨誌絲再送存",
+      "col_bbox": [
+        438,
+        157,
+        568,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "誌",
+      "bbox": [
+        438.0,
+        479.0,
+        568.0,
+        681.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 19,
+      "col_text": "研骨誌絲再送存",
+      "col_bbox": [
+        438,
+        157,
+        568,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "絲",
+      "bbox": [
+        438.0,
+        681.0,
+        568.0,
+        799.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 20,
+      "col_text": "研骨誌絲再送存",
+      "col_bbox": [
+        438,
+        157,
+        568,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "再",
+      "bbox": [
+        438.0,
+        799.0,
+        568.0,
+        1035.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 21,
+      "col_text": "研骨誌絲再送存",
+      "col_bbox": [
+        438,
+        157,
+        568,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "送",
+      "bbox": [
+        438.0,
+        1035.0,
+        568.0,
+        1223.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 22,
+      "col_text": "研骨誌絲再送存",
+      "col_bbox": [
+        438,
+        157,
+        568,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "存",
+      "bbox": [
+        438.0,
+        1223.0,
+        568.0,
+        1345.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 23,
+      "col_text": "研骨誌絲再送存",
+      "col_bbox": [
+        438,
+        157,
+        568,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        331.0,
+        154.0,
+        450.0,
+        268.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 24,
+      "col_text": "大寶医有人持用布施来",
+      "col_bbox": [
+        331,
+        154,
+        450,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寶",
+      "bbox": [
+        331.0,
+        268.0,
+        450.0,
+        384.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 25,
+      "col_text": "大寶医有人持用布施来",
+      "col_bbox": [
+        331,
+        154,
+        450,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "医",
+      "bbox": [
+        331.0,
+        384.0,
+        450.0,
+        476.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 26,
+      "col_text": "大寶医有人持用布施来",
+      "col_bbox": [
+        331,
+        154,
+        450,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        331.0,
+        476.0,
+        450.0,
+        595.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 27,
+      "col_text": "大寶医有人持用布施来",
+      "col_bbox": [
+        331,
+        154,
+        450,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        331.0,
+        595.0,
+        450.0,
+        772.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 28,
+      "col_text": "大寶医有人持用布施来",
+      "col_bbox": [
+        331,
+        154,
+        450,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "持",
+      "bbox": [
+        331.0,
+        772.0,
+        450.0,
+        902.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 29,
+      "col_text": "大寶医有人持用布施来",
+      "col_bbox": [
+        331,
+        154,
+        450,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "用",
+      "bbox": [
+        331.0,
+        902.0,
+        450.0,
+        1016.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 30,
+      "col_text": "大寶医有人持用布施来",
+      "col_bbox": [
+        331,
+        154,
+        450,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "布",
+      "bbox": [
+        331.0,
+        1016.0,
+        450.0,
+        1136.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 31,
+      "col_text": "大寶医有人持用布施来",
+      "col_bbox": [
+        331,
+        154,
+        450,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "施",
+      "bbox": [
+        331.0,
+        1136.0,
+        450.0,
+        1259.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 32,
+      "col_text": "大寶医有人持用布施来",
+      "col_bbox": [
+        331,
+        154,
+        450,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        331.0,
+        1259.0,
+        450.0,
+        1345.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 33,
+      "col_text": "大寶医有人持用布施来",
+      "col_bbox": [
+        331,
+        154,
+        450,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        226.0,
+        151.0,
+        347.0,
+        282.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 34,
+      "col_text": "如以头般蓉 波蜜經乃",
+      "col_bbox": [
+        226,
+        151,
+        347,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        226.0,
+        282.0,
+        347.0,
+        383.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 35,
+      "col_text": "如以头般蓉 波蜜經乃",
+      "col_bbox": [
+        226,
+        151,
+        347,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "头",
+      "bbox": [
+        226.0,
+        383.0,
+        347.0,
+        508.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 36,
+      "col_text": "如以头般蓉 波蜜經乃",
+      "col_bbox": [
+        226,
+        151,
+        347,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "般",
+      "bbox": [
+        226.0,
+        508.0,
+        347.0,
+        648.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 37,
+      "col_text": "如以头般蓉 波蜜經乃",
+      "col_bbox": [
+        226,
+        151,
+        347,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "蓉",
+      "bbox": [
+        226.0,
+        648.0,
+        347.0,
+        780.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 38,
+      "col_text": "如以头般蓉 波蜜經乃",
+      "col_bbox": [
+        226,
+        151,
+        347,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "波",
+      "bbox": [
+        226.0,
+        859.0,
+        347.0,
+        1016.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 39,
+      "col_text": "如以头般蓉 波蜜經乃",
+      "col_bbox": [
+        226,
+        151,
+        347,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "蜜",
+      "bbox": [
+        226.0,
+        1016.0,
+        347.0,
+        1070.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 40,
+      "col_text": "如以头般蓉 波蜜經乃",
+      "col_bbox": [
+        226,
+        151,
+        347,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "經",
+      "bbox": [
+        226.0,
+        1070.0,
+        347.0,
+        1192.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 41,
+      "col_text": "如以头般蓉 波蜜經乃",
+      "col_bbox": [
+        226,
+        151,
+        347,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乃",
+      "bbox": [
+        226.0,
+        1192.0,
+        347.0,
+        1341.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 42,
+      "col_text": "如以头般蓉 波蜜經乃",
+      "col_bbox": [
+        226,
+        151,
+        347,
+        1341
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        181.0,
+        151.0,
+        211.0,
+        178.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 43,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        181.0,
+        178.0,
+        211.0,
+        205.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 44,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        181.0,
+        205.0,
+        211.0,
+        233.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 45,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "善",
+      "bbox": [
+        181.0,
+        233.0,
+        211.0,
+        258.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 46,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        181.0,
+        258.0,
+        211.0,
+        284.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 47,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        181.0,
+        284.0,
+        211.0,
+        313.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 48,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        181.0,
+        313.0,
+        211.0,
+        340.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 49,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "善",
+      "bbox": [
+        181.0,
+        340.0,
+        211.0,
+        369.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 50,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        181.0,
+        369.0,
+        211.0,
+        407.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 51,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        181.0,
+        407.0,
+        211.0,
+        438.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 52,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        181.0,
+        438.0,
+        211.0,
+        468.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 53,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        181.0,
+        468.0,
+        211.0,
+        497.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 54,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        181.0,
+        497.0,
+        211.0,
+        525.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 55,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "三",
+      "bbox": [
+        181.0,
+        525.0,
+        211.0,
+        550.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 56,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "千",
+      "bbox": [
+        181.0,
+        550.0,
+        211.0,
+        576.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 57,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        181.0,
+        576.0,
+        211.0,
+        604.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 58,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "千",
+      "bbox": [
+        181.0,
+        604.0,
+        211.0,
+        631.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 59,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        181.0,
+        631.0,
+        211.0,
+        657.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 60,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "界",
+      "bbox": [
+        181.0,
+        657.0,
+        211.0,
+        686.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 61,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        181.0,
+        686.0,
+        211.0,
+        712.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 62,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        181.0,
+        712.0,
+        211.0,
+        736.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 63,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        181.0,
+        736.0,
+        211.0,
+        765.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 64,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诸",
+      "bbox": [
+        181.0,
+        765.0,
+        211.0,
+        793.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 65,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        181.0,
+        793.0,
+        211.0,
+        821.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 66,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "弥",
+      "bbox": [
+        181.0,
+        821.0,
+        211.0,
+        864.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 67,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "口",
+      "bbox": [
+        181.0,
+        864.0,
+        211.0,
+        888.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 68,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "王",
+      "bbox": [
+        181.0,
+        888.0,
+        211.0,
+        913.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 69,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        181.0,
+        913.0,
+        211.0,
+        948.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 70,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        181.0,
+        948.0,
+        211.0,
+        977.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 71,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "等",
+      "bbox": [
+        181.0,
+        977.0,
+        211.0,
+        999.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 72,
+      "col_text": "来说非善法是名善法须菩提若三千大千世界中所有诸须弥口王如是等",
+      "col_bbox": [
+        181,
+        151,
+        211,
+        999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宝",
+      "bbox": [
+        146.0,
+        179.0,
+        175.0,
+        205.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 73,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "聚",
+      "bbox": [
+        146.0,
+        205.0,
+        175.0,
+        232.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 74,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        146.0,
+        232.0,
+        175.0,
+        259.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 75,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        146.0,
+        259.0,
+        175.0,
+        285.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 76,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "持",
+      "bbox": [
+        146.0,
+        285.0,
+        175.0,
+        311.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 77,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "用",
+      "bbox": [
+        146.0,
+        311.0,
+        175.0,
+        339.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 78,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "布",
+      "bbox": [
+        146.0,
+        339.0,
+        175.0,
+        366.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 79,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "施",
+      "bbox": [
+        146.0,
+        366.0,
+        175.0,
+        394.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 80,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "未",
+      "bbox": [
+        146.0,
+        394.0,
+        175.0,
+        424.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 81,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        146.0,
+        424.0,
+        175.0,
+        449.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 82,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        146.0,
+        449.0,
+        175.0,
+        483.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 83,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        146.0,
+        483.0,
+        175.0,
+        505.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 84,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "般",
+      "bbox": [
+        146.0,
+        505.0,
+        175.0,
+        548.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 85,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        146.0,
+        548.0,
+        175.0,
+        576.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 86,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "波",
+      "bbox": [
+        146.0,
+        576.0,
+        175.0,
+        604.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 87,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "罗",
+      "bbox": [
+        146.0,
+        604.0,
+        175.0,
+        631.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 88,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "蜜",
+      "bbox": [
+        146.0,
+        631.0,
+        175.0,
+        658.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 89,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        146.0,
+        658.0,
+        175.0,
+        684.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 90,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乃",
+      "bbox": [
+        146.0,
+        684.0,
+        175.0,
+        709.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 91,
+      "col_text": "□宝聚有人持用布施未如以此般若波罗蜜经乃",
+      "col_bbox": [
+        146,
+        151,
+        175,
+        709
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 92,
+  "timestamp": "2026-05-02T23:11:47.123535"
+}

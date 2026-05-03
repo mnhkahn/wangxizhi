@@ -1,0 +1,892 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-008.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "人中飞私疑间法不能陸了或互垂破有或取實掐空馳妄車背跡中道娑為者還有薦之用若",
+  "parsed_results": [
+    {
+      "text": "人中飞私疑间法不能陸",
+      "bbox": [
+        632,
+        151,
+        757,
+        1358
+      ],
+      "poly": [
+        [
+          632,
+          151
+        ],
+        [
+          757,
+          151
+        ],
+        [
+          757,
+          1358
+        ],
+        [
+          632,
+          1358
+        ]
+      ]
+    },
+    {
+      "text": "了或互垂破有或取實掐",
+      "bbox": [
+        525,
+        163,
+        634,
+        1354
+      ],
+      "poly": [
+        [
+          525,
+          163
+        ],
+        [
+          634,
+          163
+        ],
+        [
+          634,
+          1354
+        ],
+        [
+          525,
+          1354
+        ]
+      ]
+    },
+    {
+      "text": "空馳妄車背跡中道",
+      "bbox": [
+        415,
+        168,
+        518,
+        1358
+      ],
+      "poly": [
+        [
+          415,
+          168
+        ],
+        [
+          518,
+          168
+        ],
+        [
+          518,
+          1358
+        ],
+        [
+          415,
+          1358
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "bbox": [
+        295,
+        166,
+        411,
+        1358
+      ],
+      "poly": [
+        [
+          295,
+          166
+        ],
+        [
+          411,
+          166
+        ],
+        [
+          411,
+          1358
+        ],
+        [
+          295,
+          1358
+        ]
+      ]
+    },
+    {
+      "text": "娑為者還有薦之用若",
+      "bbox": [
+        197,
+        174,
+        281,
+        1303
+      ],
+      "poly": [
+        [
+          197,
+          174
+        ],
+        [
+          281,
+          174
+        ],
+        [
+          281,
+          1303
+        ],
+        [
+          197,
+          1303
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "人",
+      "bbox": [
+        632.0,
+        151.0,
+        757.0,
+        298.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "人中飞私疑间法不能陸",
+      "col_bbox": [
+        632,
+        151,
+        757,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        632.0,
+        298.0,
+        757.0,
+        426.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "人中飞私疑间法不能陸",
+      "col_bbox": [
+        632,
+        151,
+        757,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "飞",
+      "bbox": [
+        632.0,
+        426.0,
+        757.0,
+        548.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "人中飞私疑间法不能陸",
+      "col_bbox": [
+        632,
+        151,
+        757,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "私",
+      "bbox": [
+        632.0,
+        548.0,
+        757.0,
+        668.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "人中飞私疑间法不能陸",
+      "col_bbox": [
+        632,
+        151,
+        757,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "疑",
+      "bbox": [
+        632.0,
+        668.0,
+        757.0,
+        718.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "人中飞私疑间法不能陸",
+      "col_bbox": [
+        632,
+        151,
+        757,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "间",
+      "bbox": [
+        632.0,
+        718.0,
+        757.0,
+        839.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "人中飞私疑间法不能陸",
+      "col_bbox": [
+        632,
+        151,
+        757,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        632.0,
+        839.0,
+        757.0,
+        959.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "人中飞私疑间法不能陸",
+      "col_bbox": [
+        632,
+        151,
+        757,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        632.0,
+        959.0,
+        757.0,
+        1141.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "人中飞私疑间法不能陸",
+      "col_bbox": [
+        632,
+        151,
+        757,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        632.0,
+        1141.0,
+        757.0,
+        1272.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "人中飞私疑间法不能陸",
+      "col_bbox": [
+        632,
+        151,
+        757,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "陸",
+      "bbox": [
+        632.0,
+        1272.0,
+        757.0,
+        1358.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "人中飞私疑间法不能陸",
+      "col_bbox": [
+        632,
+        151,
+        757,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "了",
+      "bbox": [
+        525.0,
+        163.0,
+        634.0,
+        316.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "了或互垂破有或取實掐",
+      "col_bbox": [
+        525,
+        163,
+        634,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "或",
+      "bbox": [
+        525.0,
+        316.0,
+        634.0,
+        428.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "了或互垂破有或取實掐",
+      "col_bbox": [
+        525,
+        163,
+        634,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "互",
+      "bbox": [
+        525.0,
+        428.0,
+        634.0,
+        551.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "了或互垂破有或取實掐",
+      "col_bbox": [
+        525,
+        163,
+        634,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "垂",
+      "bbox": [
+        525.0,
+        551.0,
+        634.0,
+        672.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "了或互垂破有或取實掐",
+      "col_bbox": [
+        525,
+        163,
+        634,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "破",
+      "bbox": [
+        525.0,
+        672.0,
+        634.0,
+        782.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "了或互垂破有或取實掐",
+      "col_bbox": [
+        525,
+        163,
+        634,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        525.0,
+        782.0,
+        634.0,
+        911.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "了或互垂破有或取實掐",
+      "col_bbox": [
+        525,
+        163,
+        634,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "或",
+      "bbox": [
+        525.0,
+        911.0,
+        634.0,
+        1014.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "了或互垂破有或取實掐",
+      "col_bbox": [
+        525,
+        163,
+        634,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "取",
+      "bbox": [
+        525.0,
+        1014.0,
+        634.0,
+        1149.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "了或互垂破有或取實掐",
+      "col_bbox": [
+        525,
+        163,
+        634,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "實",
+      "bbox": [
+        525.0,
+        1149.0,
+        634.0,
+        1201.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "了或互垂破有或取實掐",
+      "col_bbox": [
+        525,
+        163,
+        634,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "掐",
+      "bbox": [
+        525.0,
+        1201.0,
+        634.0,
+        1354.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 19,
+      "col_text": "了或互垂破有或取實掐",
+      "col_bbox": [
+        525,
+        163,
+        634,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "空",
+      "bbox": [
+        415.0,
+        168.0,
+        518.0,
+        324.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 20,
+      "col_text": "空馳妄車背跡中道",
+      "col_bbox": [
+        415,
+        168,
+        518,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "馳",
+      "bbox": [
+        415.0,
+        324.0,
+        518.0,
+        486.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 21,
+      "col_text": "空馳妄車背跡中道",
+      "col_bbox": [
+        415,
+        168,
+        518,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "妄",
+      "bbox": [
+        415.0,
+        486.0,
+        518.0,
+        592.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 22,
+      "col_text": "空馳妄車背跡中道",
+      "col_bbox": [
+        415,
+        168,
+        518,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "車",
+      "bbox": [
+        415.0,
+        592.0,
+        518.0,
+        796.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 23,
+      "col_text": "空馳妄車背跡中道",
+      "col_bbox": [
+        415,
+        168,
+        518,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "背",
+      "bbox": [
+        415.0,
+        796.0,
+        518.0,
+        944.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 24,
+      "col_text": "空馳妄車背跡中道",
+      "col_bbox": [
+        415,
+        168,
+        518,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "跡",
+      "bbox": [
+        415.0,
+        944.0,
+        518.0,
+        1032.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 25,
+      "col_text": "空馳妄車背跡中道",
+      "col_bbox": [
+        415,
+        168,
+        518,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        415.0,
+        1032.0,
+        518.0,
+        1195.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 26,
+      "col_text": "空馳妄車背跡中道",
+      "col_bbox": [
+        415,
+        168,
+        518,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "道",
+      "bbox": [
+        415.0,
+        1195.0,
+        518.0,
+        1358.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 27,
+      "col_text": "空馳妄車背跡中道",
+      "col_bbox": [
+        415,
+        168,
+        518,
+        1358
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "娑",
+      "bbox": [
+        197.0,
+        174.0,
+        281.0,
+        262.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 28,
+      "col_text": "娑為者還有薦之用若",
+      "col_bbox": [
+        197,
+        174,
+        281,
+        1303
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        197.0,
+        262.0,
+        281.0,
+        387.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 29,
+      "col_text": "娑為者還有薦之用若",
+      "col_bbox": [
+        197,
+        174,
+        281,
+        1303
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        197.0,
+        387.0,
+        281.0,
+        513.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 30,
+      "col_text": "娑為者還有薦之用若",
+      "col_bbox": [
+        197,
+        174,
+        281,
+        1303
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "還",
+      "bbox": [
+        197.0,
+        513.0,
+        281.0,
+        638.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 31,
+      "col_text": "娑為者還有薦之用若",
+      "col_bbox": [
+        197,
+        174,
+        281,
+        1303
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        197.0,
+        638.0,
+        281.0,
+        766.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 32,
+      "col_text": "娑為者還有薦之用若",
+      "col_bbox": [
+        197,
+        174,
+        281,
+        1303
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薦",
+      "bbox": [
+        197.0,
+        766.0,
+        281.0,
+        913.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 33,
+      "col_text": "娑為者還有薦之用若",
+      "col_bbox": [
+        197,
+        174,
+        281,
+        1303
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        197.0,
+        913.0,
+        281.0,
+        1024.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 34,
+      "col_text": "娑為者還有薦之用若",
+      "col_bbox": [
+        197,
+        174,
+        281,
+        1303
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "用",
+      "bbox": [
+        197.0,
+        1024.0,
+        281.0,
+        1141.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 35,
+      "col_text": "娑為者還有薦之用若",
+      "col_bbox": [
+        197,
+        174,
+        281,
+        1303
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        197.0,
+        1141.0,
+        281.0,
+        1303.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 36,
+      "col_text": "娑為者還有薦之用若",
+      "col_bbox": [
+        197,
+        174,
+        281,
+        1303
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 5,
+  "total_chars": 37,
+  "timestamp": "2026-05-03T21:37:54.238308"
+}

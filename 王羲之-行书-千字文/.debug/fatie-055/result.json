@@ -1,0 +1,2013 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-055.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无上菩提何以故若乐小法者有我人众生则于此经知是人得無邊不可悪議功值知我身分能荷擔要上菩提河八坡若樂小流者有我人眾出則怡經",
+  "parsed_results": [
+    {
+      "text": "50",
+      "bbox": [
+        856,
+        1404,
+        881,
+        1426
+      ],
+      "poly": [
+        [
+          856,
+          1404
+        ],
+        [
+          881,
+          1404
+        ],
+        [
+          881,
+          1426
+        ],
+        [
+          856,
+          1426
+        ]
+      ]
+    },
+    {
+      "text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "poly": [
+        [
+          707,
+          117
+        ],
+        [
+          744,
+          117
+        ],
+        [
+          744,
+          970
+        ],
+        [
+          707,
+          970
+        ]
+      ]
+    },
+    {
+      "text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "poly": [
+        [
+          673,
+          119
+        ],
+        [
+          707,
+          119
+        ],
+        [
+          707,
+          679
+        ],
+        [
+          673,
+          679
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "bbox": [
+        548,
+        112,
+        689,
+        1316
+      ],
+      "poly": [
+        [
+          548,
+          112
+        ],
+        [
+          689,
+          112
+        ],
+        [
+          689,
+          1316
+        ],
+        [
+          548,
+          1316
+        ]
+      ]
+    },
+    {
+      "text": "知是人得無邊不可悪議",
+      "bbox": [
+        436,
+        122,
+        582,
+        1311
+      ],
+      "poly": [
+        [
+          436,
+          122
+        ],
+        [
+          582,
+          122
+        ],
+        [
+          582,
+          1311
+        ],
+        [
+          436,
+          1311
+        ]
+      ]
+    },
+    {
+      "text": "功值知我身分能荷擔要",
+      "bbox": [
+        320,
+        121,
+        471,
+        1324
+      ],
+      "poly": [
+        [
+          320,
+          121
+        ],
+        [
+          471,
+          121
+        ],
+        [
+          471,
+          1324
+        ],
+        [
+          320,
+          1324
+        ]
+      ]
+    },
+    {
+      "text": "上菩提河八坡若 樂小流",
+      "bbox": [
+        215,
+        132,
+        346,
+        1317
+      ],
+      "poly": [
+        [
+          215,
+          132
+        ],
+        [
+          346,
+          132
+        ],
+        [
+          346,
+          1317
+        ],
+        [
+          215,
+          1317
+        ]
+      ]
+    },
+    {
+      "text": "者有我人眾出則怡經",
+      "bbox": [
+        111,
+        144,
+        230,
+        1322
+      ],
+      "poly": [
+        [
+          111,
+          144
+        ],
+        [
+          230,
+          144
+        ],
+        [
+          230,
+          1322
+        ],
+        [
+          111,
+          1322
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "利",
+      "bbox": [
+        707.0,
+        117.0,
+        744.0,
+        146.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        707.0,
+        146.0,
+        744.0,
+        173.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        707.0,
+        173.0,
+        744.0,
+        199.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "教",
+      "bbox": [
+        707.0,
+        199.0,
+        744.0,
+        228.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        707.0,
+        228.0,
+        744.0,
+        253.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "修",
+      "bbox": [
+        707.0,
+        253.0,
+        744.0,
+        279.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "行",
+      "bbox": [
+        707.0,
+        279.0,
+        744.0,
+        308.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        707.0,
+        308.0,
+        744.0,
+        336.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        707.0,
+        336.0,
+        744.0,
+        364.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悉",
+      "bbox": [
+        707.0,
+        364.0,
+        744.0,
+        393.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        707.0,
+        393.0,
+        744.0,
+        436.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 10,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        707.0,
+        436.0,
+        744.0,
+        465.0
+      ],
+      "column": 1,
+      "row": 11,
+      "global_index": 11,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        707.0,
+        465.0,
+        744.0,
+        491.0
+      ],
+      "column": 1,
+      "row": 12,
+      "global_index": 12,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        707.0,
+        491.0,
+        744.0,
+        519.0
+      ],
+      "column": 1,
+      "row": 13,
+      "global_index": 13,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        707.0,
+        519.0,
+        744.0,
+        545.0
+      ],
+      "column": 1,
+      "row": 14,
+      "global_index": 14,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "边",
+      "bbox": [
+        707.0,
+        545.0,
+        744.0,
+        572.0
+      ],
+      "column": 1,
+      "row": 15,
+      "global_index": 15,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        707.0,
+        572.0,
+        744.0,
+        598.0
+      ],
+      "column": 1,
+      "row": 16,
+      "global_index": 16,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        707.0,
+        598.0,
+        744.0,
+        624.0
+      ],
+      "column": 1,
+      "row": 17,
+      "global_index": 17,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "思",
+      "bbox": [
+        707.0,
+        624.0,
+        744.0,
+        651.0
+      ],
+      "column": 1,
+      "row": 18,
+      "global_index": 18,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "议",
+      "bbox": [
+        707.0,
+        651.0,
+        744.0,
+        679.0
+      ],
+      "column": 1,
+      "row": 19,
+      "global_index": 19,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "功",
+      "bbox": [
+        707.0,
+        679.0,
+        744.0,
+        706.0
+      ],
+      "column": 1,
+      "row": 20,
+      "global_index": 20,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        707.0,
+        706.0,
+        744.0,
+        734.0
+      ],
+      "column": 1,
+      "row": 21,
+      "global_index": 21,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        707.0,
+        734.0,
+        744.0,
+        762.0
+      ],
+      "column": 1,
+      "row": 22,
+      "global_index": 22,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        707.0,
+        762.0,
+        744.0,
+        806.0
+      ],
+      "column": 1,
+      "row": 23,
+      "global_index": 23,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        707.0,
+        806.0,
+        744.0,
+        834.0
+      ],
+      "column": 1,
+      "row": 24,
+      "global_index": 24,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "分",
+      "bbox": [
+        707.0,
+        834.0,
+        744.0,
+        863.0
+      ],
+      "column": 1,
+      "row": 25,
+      "global_index": 25,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        707.0,
+        863.0,
+        744.0,
+        891.0
+      ],
+      "column": 1,
+      "row": 26,
+      "global_index": 26,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "荷",
+      "bbox": [
+        707.0,
+        891.0,
+        744.0,
+        917.0
+      ],
+      "column": 1,
+      "row": 27,
+      "global_index": 27,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "檐",
+      "bbox": [
+        707.0,
+        917.0,
+        744.0,
+        944.0
+      ],
+      "column": 1,
+      "row": 28,
+      "global_index": 28,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        707.0,
+        944.0,
+        744.0,
+        970.0
+      ],
+      "column": 1,
+      "row": 29,
+      "global_index": 29,
+      "col_text": "利此法教人修行如来悉知是人得无边不可思议功德如我身分能荷檐无",
+      "col_bbox": [
+        707,
+        117,
+        744,
+        970
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "上",
+      "bbox": [
+        673.0,
+        119.0,
+        707.0,
+        147.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        673.0,
+        147.0,
+        707.0,
+        173.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        673.0,
+        173.0,
+        707.0,
+        200.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        673.0,
+        200.0,
+        707.0,
+        227.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        673.0,
+        227.0,
+        707.0,
+        252.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        673.0,
+        252.0,
+        707.0,
+        280.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        673.0,
+        280.0,
+        707.0,
+        307.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乐",
+      "bbox": [
+        673.0,
+        307.0,
+        707.0,
+        335.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "小",
+      "bbox": [
+        673.0,
+        335.0,
+        707.0,
+        363.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        673.0,
+        363.0,
+        707.0,
+        395.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        673.0,
+        395.0,
+        707.0,
+        419.0
+      ],
+      "column": 2,
+      "row": 10,
+      "global_index": 40,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        673.0,
+        419.0,
+        707.0,
+        462.0
+      ],
+      "column": 2,
+      "row": 11,
+      "global_index": 41,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        673.0,
+        462.0,
+        707.0,
+        490.0
+      ],
+      "column": 2,
+      "row": 12,
+      "global_index": 42,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        673.0,
+        490.0,
+        707.0,
+        518.0
+      ],
+      "column": 2,
+      "row": 13,
+      "global_index": 43,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "众",
+      "bbox": [
+        673.0,
+        518.0,
+        707.0,
+        546.0
+      ],
+      "column": 2,
+      "row": 14,
+      "global_index": 44,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        673.0,
+        546.0,
+        707.0,
+        572.0
+      ],
+      "column": 2,
+      "row": 15,
+      "global_index": 45,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "则",
+      "bbox": [
+        673.0,
+        572.0,
+        707.0,
+        598.0
+      ],
+      "column": 2,
+      "row": 16,
+      "global_index": 46,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "于",
+      "bbox": [
+        673.0,
+        598.0,
+        707.0,
+        625.0
+      ],
+      "column": 2,
+      "row": 17,
+      "global_index": 47,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        673.0,
+        625.0,
+        707.0,
+        652.0
+      ],
+      "column": 2,
+      "row": 18,
+      "global_index": 48,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        673.0,
+        652.0,
+        707.0,
+        679.0
+      ],
+      "column": 2,
+      "row": 19,
+      "global_index": 49,
+      "col_text": "上菩提何以故若乐小法者有我人众生则于此经",
+      "col_bbox": [
+        673,
+        119,
+        707,
+        679
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        436.0,
+        122.0,
+        582.0,
+        205.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 50,
+      "col_text": "知是人得無邊不可悪議",
+      "col_bbox": [
+        436,
+        122,
+        582,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        436.0,
+        205.0,
+        582.0,
+        324.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 51,
+      "col_text": "知是人得無邊不可悪議",
+      "col_bbox": [
+        436,
+        122,
+        582,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        436.0,
+        324.0,
+        582.0,
+        512.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 52,
+      "col_text": "知是人得無邊不可悪議",
+      "col_bbox": [
+        436,
+        122,
+        582,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        436.0,
+        512.0,
+        582.0,
+        603.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 53,
+      "col_text": "知是人得無邊不可悪議",
+      "col_bbox": [
+        436,
+        122,
+        582,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        436.0,
+        603.0,
+        582.0,
+        691.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 54,
+      "col_text": "知是人得無邊不可悪議",
+      "col_bbox": [
+        436,
+        122,
+        582,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "邊",
+      "bbox": [
+        436.0,
+        691.0,
+        582.0,
+        820.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 55,
+      "col_text": "知是人得無邊不可悪議",
+      "col_bbox": [
+        436,
+        122,
+        582,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        436.0,
+        820.0,
+        582.0,
+        988.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 56,
+      "col_text": "知是人得無邊不可悪議",
+      "col_bbox": [
+        436,
+        122,
+        582,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        436.0,
+        988.0,
+        582.0,
+        1101.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 57,
+      "col_text": "知是人得無邊不可悪議",
+      "col_bbox": [
+        436,
+        122,
+        582,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悪",
+      "bbox": [
+        436.0,
+        1101.0,
+        582.0,
+        1216.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 58,
+      "col_text": "知是人得無邊不可悪議",
+      "col_bbox": [
+        436,
+        122,
+        582,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "議",
+      "bbox": [
+        436.0,
+        1216.0,
+        582.0,
+        1311.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 59,
+      "col_text": "知是人得無邊不可悪議",
+      "col_bbox": [
+        436,
+        122,
+        582,
+        1311
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "功",
+      "bbox": [
+        320.0,
+        121.0,
+        471.0,
+        250.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 60,
+      "col_text": "功值知我身分能荷擔要",
+      "col_bbox": [
+        320,
+        121,
+        471,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "值",
+      "bbox": [
+        320.0,
+        250.0,
+        471.0,
+        396.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 61,
+      "col_text": "功值知我身分能荷擔要",
+      "col_bbox": [
+        320,
+        121,
+        471,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        320.0,
+        396.0,
+        471.0,
+        516.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 62,
+      "col_text": "功值知我身分能荷擔要",
+      "col_bbox": [
+        320,
+        121,
+        471,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        320.0,
+        516.0,
+        471.0,
+        618.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 63,
+      "col_text": "功值知我身分能荷擔要",
+      "col_bbox": [
+        320,
+        121,
+        471,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        320.0,
+        618.0,
+        471.0,
+        752.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 64,
+      "col_text": "功值知我身分能荷擔要",
+      "col_bbox": [
+        320,
+        121,
+        471,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "分",
+      "bbox": [
+        320.0,
+        752.0,
+        471.0,
+        843.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 65,
+      "col_text": "功值知我身分能荷擔要",
+      "col_bbox": [
+        320,
+        121,
+        471,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        320.0,
+        843.0,
+        471.0,
+        967.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 66,
+      "col_text": "功值知我身分能荷擔要",
+      "col_bbox": [
+        320,
+        121,
+        471,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "荷",
+      "bbox": [
+        320.0,
+        967.0,
+        471.0,
+        1109.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 67,
+      "col_text": "功值知我身分能荷擔要",
+      "col_bbox": [
+        320,
+        121,
+        471,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "擔",
+      "bbox": [
+        320.0,
+        1109.0,
+        471.0,
+        1232.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 68,
+      "col_text": "功值知我身分能荷擔要",
+      "col_bbox": [
+        320,
+        121,
+        471,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "要",
+      "bbox": [
+        320.0,
+        1232.0,
+        471.0,
+        1324.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 69,
+      "col_text": "功值知我身分能荷擔要",
+      "col_bbox": [
+        320,
+        121,
+        471,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "上",
+      "bbox": [
+        215.0,
+        132.0,
+        346.0,
+        269.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 70,
+      "col_text": "上菩提河八坡若 樂小流",
+      "col_bbox": [
+        215,
+        132,
+        346,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        215.0,
+        269.0,
+        346.0,
+        315.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 71,
+      "col_text": "上菩提河八坡若 樂小流",
+      "col_bbox": [
+        215,
+        132,
+        346,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        215.0,
+        315.0,
+        346.0,
+        423.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 72,
+      "col_text": "上菩提河八坡若 樂小流",
+      "col_bbox": [
+        215,
+        132,
+        346,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "河",
+      "bbox": [
+        215.0,
+        423.0,
+        346.0,
+        541.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 73,
+      "col_text": "上菩提河八坡若 樂小流",
+      "col_bbox": [
+        215,
+        132,
+        346,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "八",
+      "bbox": [
+        215.0,
+        541.0,
+        346.0,
+        678.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 74,
+      "col_text": "上菩提河八坡若 樂小流",
+      "col_bbox": [
+        215,
+        132,
+        346,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "坡",
+      "bbox": [
+        215.0,
+        678.0,
+        346.0,
+        773.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 75,
+      "col_text": "上菩提河八坡若 樂小流",
+      "col_bbox": [
+        215,
+        132,
+        346,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        215.0,
+        773.0,
+        346.0,
+        917.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 76,
+      "col_text": "上菩提河八坡若 樂小流",
+      "col_bbox": [
+        215,
+        132,
+        346,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "樂",
+      "bbox": [
+        215.0,
+        1024.0,
+        346.0,
+        1069.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 77,
+      "col_text": "上菩提河八坡若 樂小流",
+      "col_bbox": [
+        215,
+        132,
+        346,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "小",
+      "bbox": [
+        215.0,
+        1069.0,
+        346.0,
+        1240.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 78,
+      "col_text": "上菩提河八坡若 樂小流",
+      "col_bbox": [
+        215,
+        132,
+        346,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "流",
+      "bbox": [
+        215.0,
+        1240.0,
+        346.0,
+        1317.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 79,
+      "col_text": "上菩提河八坡若 樂小流",
+      "col_bbox": [
+        215,
+        132,
+        346,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        111.0,
+        144.0,
+        230.0,
+        301.0
+      ],
+      "column": 7,
+      "row": 0,
+      "global_index": 80,
+      "col_text": "者有我人眾出則怡經",
+      "col_bbox": [
+        111,
+        144,
+        230,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        111.0,
+        301.0,
+        230.0,
+        443.0
+      ],
+      "column": 7,
+      "row": 1,
+      "global_index": 81,
+      "col_text": "者有我人眾出則怡經",
+      "col_bbox": [
+        111,
+        144,
+        230,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        111.0,
+        443.0,
+        230.0,
+        497.0
+      ],
+      "column": 7,
+      "row": 2,
+      "global_index": 82,
+      "col_text": "者有我人眾出則怡經",
+      "col_bbox": [
+        111,
+        144,
+        230,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        111.0,
+        497.0,
+        230.0,
+        690.0
+      ],
+      "column": 7,
+      "row": 3,
+      "global_index": 83,
+      "col_text": "者有我人眾出則怡經",
+      "col_bbox": [
+        111,
+        144,
+        230,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "眾",
+      "bbox": [
+        111.0,
+        690.0,
+        230.0,
+        797.0
+      ],
+      "column": 7,
+      "row": 4,
+      "global_index": 84,
+      "col_text": "者有我人眾出則怡經",
+      "col_bbox": [
+        111,
+        144,
+        230,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "出",
+      "bbox": [
+        111.0,
+        797.0,
+        230.0,
+        932.0
+      ],
+      "column": 7,
+      "row": 5,
+      "global_index": 85,
+      "col_text": "者有我人眾出則怡經",
+      "col_bbox": [
+        111,
+        144,
+        230,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "則",
+      "bbox": [
+        111.0,
+        932.0,
+        230.0,
+        1069.0
+      ],
+      "column": 7,
+      "row": 6,
+      "global_index": 86,
+      "col_text": "者有我人眾出則怡經",
+      "col_bbox": [
+        111,
+        144,
+        230,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "怡",
+      "bbox": [
+        111.0,
+        1069.0,
+        230.0,
+        1184.0
+      ],
+      "column": 7,
+      "row": 7,
+      "global_index": 87,
+      "col_text": "者有我人眾出則怡經",
+      "col_bbox": [
+        111,
+        144,
+        230,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "經",
+      "bbox": [
+        111.0,
+        1184.0,
+        230.0,
+        1322.0
+      ],
+      "column": 7,
+      "row": 8,
+      "global_index": 88,
+      "col_text": "者有我人眾出則怡經",
+      "col_bbox": [
+        111,
+        144,
+        230,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 8,
+  "total_chars": 89,
+  "timestamp": "2026-05-02T23:11:09.529782"
+}

@@ -1,0 +1,2193 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-029.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无复我相人相众生相寿者相无法相亦非无法相无慧見佛慧患知是人生如是無量福徳取如是無量福德何以故比菩薩雲復我相人相眾生詛壽者相無法相上非法相並",
+  "parsed_results": [
+    {
+      "text": "24",
+      "bbox": [
+        870,
+        1417,
+        893,
+        1438
+      ],
+      "poly": [
+        [
+          870,
+          1417
+        ],
+        [
+          893,
+          1417
+        ],
+        [
+          893,
+          1438
+        ],
+        [
+          870,
+          1438
+        ]
+      ]
+    },
+    {
+      "text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "poly": [
+        [
+          738,
+          130
+        ],
+        [
+          764,
+          130
+        ],
+        [
+          764,
+          979
+        ],
+        [
+          738,
+          979
+        ]
+      ]
+    },
+    {
+      "text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "poly": [
+        [
+          701,
+          128
+        ],
+        [
+          732,
+          128
+        ],
+        [
+          732,
+          686
+        ],
+        [
+          701,
+          686
+        ]
+      ]
+    },
+    {
+      "text": "慧見佛慧患知是人生",
+      "bbox": [
+        593,
+        124,
+        704,
+        1326
+      ],
+      "poly": [
+        [
+          593,
+          124
+        ],
+        [
+          704,
+          124
+        ],
+        [
+          704,
+          1326
+        ],
+        [
+          593,
+          1326
+        ]
+      ]
+    },
+    {
+      "text": "如是無量，福徳取如是無",
+      "bbox": [
+        468,
+        136,
+        589,
+        1329
+      ],
+      "poly": [
+        [
+          468,
+          136
+        ],
+        [
+          589,
+          136
+        ],
+        [
+          589,
+          1329
+        ],
+        [
+          468,
+          1329
+        ]
+      ]
+    },
+    {
+      "text": "量，福德何以故比菩薩し雲",
+      "bbox": [
+        360,
+        136,
+        473,
+        1327
+      ],
+      "poly": [
+        [
+          360,
+          136
+        ],
+        [
+          473,
+          136
+        ],
+        [
+          473,
+          1327
+        ],
+        [
+          360,
+          1327
+        ]
+      ]
+    },
+    {
+      "text": "復我相人相眾生詛壽者",
+      "bbox": [
+        249,
+        139,
+        357,
+        1328
+      ],
+      "poly": [
+        [
+          249,
+          139
+        ],
+        [
+          357,
+          139
+        ],
+        [
+          357,
+          1328
+        ],
+        [
+          249,
+          1328
+        ]
+      ]
+    },
+    {
+      "text": "相無法相上非法相並",
+      "bbox": [
+        131,
+        143,
+        244,
+        1328
+      ],
+      "poly": [
+        [
+          131,
+          143
+        ],
+        [
+          244,
+          143
+        ],
+        [
+          244,
+          1328
+        ],
+        [
+          131,
+          1328
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "悉",
+      "bbox": [
+        738.0,
+        130.0,
+        764.0,
+        156.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "见",
+      "bbox": [
+        738.0,
+        156.0,
+        764.0,
+        183.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        738.0,
+        183.0,
+        764.0,
+        210.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "慧",
+      "bbox": [
+        738.0,
+        210.0,
+        764.0,
+        237.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悉",
+      "bbox": [
+        738.0,
+        237.0,
+        764.0,
+        263.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "觉",
+      "bbox": [
+        738.0,
+        263.0,
+        764.0,
+        291.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        738.0,
+        291.0,
+        764.0,
+        324.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        738.0,
+        324.0,
+        764.0,
+        350.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        738.0,
+        350.0,
+        764.0,
+        376.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        738.0,
+        376.0,
+        764.0,
+        405.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        738.0,
+        405.0,
+        764.0,
+        448.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 10,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        738.0,
+        448.0,
+        764.0,
+        476.0
+      ],
+      "column": 1,
+      "row": 11,
+      "global_index": 11,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        738.0,
+        476.0,
+        764.0,
+        502.0
+      ],
+      "column": 1,
+      "row": 12,
+      "global_index": 12,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "量",
+      "bbox": [
+        738.0,
+        502.0,
+        764.0,
+        529.0
+      ],
+      "column": 1,
+      "row": 13,
+      "global_index": 13,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        738.0,
+        529.0,
+        764.0,
+        556.0
+      ],
+      "column": 1,
+      "row": 14,
+      "global_index": 14,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        738.0,
+        556.0,
+        764.0,
+        583.0
+      ],
+      "column": 1,
+      "row": 15,
+      "global_index": 15,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "取",
+      "bbox": [
+        738.0,
+        583.0,
+        764.0,
+        608.0
+      ],
+      "column": 1,
+      "row": 16,
+      "global_index": 16,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        738.0,
+        608.0,
+        764.0,
+        633.0
+      ],
+      "column": 1,
+      "row": 17,
+      "global_index": 17,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        738.0,
+        633.0,
+        764.0,
+        662.0
+      ],
+      "column": 1,
+      "row": 18,
+      "global_index": 18,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        738.0,
+        662.0,
+        764.0,
+        689.0
+      ],
+      "column": 1,
+      "row": 19,
+      "global_index": 19,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "量",
+      "bbox": [
+        738.0,
+        689.0,
+        764.0,
+        716.0
+      ],
+      "column": 1,
+      "row": 20,
+      "global_index": 20,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        738.0,
+        716.0,
+        764.0,
+        744.0
+      ],
+      "column": 1,
+      "row": 21,
+      "global_index": 21,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        738.0,
+        744.0,
+        764.0,
+        772.0
+      ],
+      "column": 1,
+      "row": 22,
+      "global_index": 22,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        738.0,
+        772.0,
+        764.0,
+        816.0
+      ],
+      "column": 1,
+      "row": 23,
+      "global_index": 23,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        738.0,
+        816.0,
+        764.0,
+        844.0
+      ],
+      "column": 1,
+      "row": 24,
+      "global_index": 24,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        738.0,
+        844.0,
+        764.0,
+        872.0
+      ],
+      "column": 1,
+      "row": 25,
+      "global_index": 25,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        738.0,
+        872.0,
+        764.0,
+        901.0
+      ],
+      "column": 1,
+      "row": 26,
+      "global_index": 26,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        738.0,
+        901.0,
+        764.0,
+        927.0
+      ],
+      "column": 1,
+      "row": 27,
+      "global_index": 27,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "萨",
+      "bbox": [
+        738.0,
+        927.0,
+        764.0,
+        954.0
+      ],
+      "column": 1,
+      "row": 28,
+      "global_index": 28,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        738.0,
+        954.0,
+        764.0,
+        979.0
+      ],
+      "column": 1,
+      "row": 29,
+      "global_index": 29,
+      "col_text": "悉见佛慧悉觉知是人生如是无量福德取如是无量福德何以故此菩萨无",
+      "col_bbox": [
+        738,
+        130,
+        764,
+        979
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "复",
+      "bbox": [
+        701.0,
+        128.0,
+        732.0,
+        158.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        701.0,
+        158.0,
+        732.0,
+        184.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        701.0,
+        184.0,
+        732.0,
+        210.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        701.0,
+        210.0,
+        732.0,
+        237.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        701.0,
+        237.0,
+        732.0,
+        263.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "众",
+      "bbox": [
+        701.0,
+        263.0,
+        732.0,
+        291.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        701.0,
+        291.0,
+        732.0,
+        317.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        701.0,
+        317.0,
+        732.0,
+        343.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寿",
+      "bbox": [
+        701.0,
+        343.0,
+        732.0,
+        371.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        701.0,
+        371.0,
+        732.0,
+        399.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        701.0,
+        399.0,
+        732.0,
+        426.0
+      ],
+      "column": 2,
+      "row": 10,
+      "global_index": 40,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        701.0,
+        426.0,
+        732.0,
+        454.0
+      ],
+      "column": 2,
+      "row": 11,
+      "global_index": 41,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        701.0,
+        454.0,
+        732.0,
+        482.0
+      ],
+      "column": 2,
+      "row": 12,
+      "global_index": 42,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        701.0,
+        482.0,
+        732.0,
+        525.0
+      ],
+      "column": 2,
+      "row": 13,
+      "global_index": 43,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "亦",
+      "bbox": [
+        701.0,
+        525.0,
+        732.0,
+        553.0
+      ],
+      "column": 2,
+      "row": 14,
+      "global_index": 44,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        701.0,
+        553.0,
+        732.0,
+        581.0
+      ],
+      "column": 2,
+      "row": 15,
+      "global_index": 45,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        701.0,
+        581.0,
+        732.0,
+        609.0
+      ],
+      "column": 2,
+      "row": 16,
+      "global_index": 46,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        701.0,
+        609.0,
+        732.0,
+        635.0
+      ],
+      "column": 2,
+      "row": 17,
+      "global_index": 47,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        701.0,
+        635.0,
+        732.0,
+        662.0
+      ],
+      "column": 2,
+      "row": 18,
+      "global_index": 48,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        701.0,
+        662.0,
+        732.0,
+        686.0
+      ],
+      "column": 2,
+      "row": 19,
+      "global_index": 49,
+      "col_text": "复我相人相众生相寿者相无法相亦非无法相无",
+      "col_bbox": [
+        701,
+        128,
+        732,
+        686
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "慧",
+      "bbox": [
+        593.0,
+        124.0,
+        704.0,
+        217.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 50,
+      "col_text": "慧見佛慧患知是人生",
+      "col_bbox": [
+        593,
+        124,
+        704,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "見",
+      "bbox": [
+        593.0,
+        217.0,
+        704.0,
+        403.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 51,
+      "col_text": "慧見佛慧患知是人生",
+      "col_bbox": [
+        593,
+        124,
+        704,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        593.0,
+        403.0,
+        704.0,
+        529.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 52,
+      "col_text": "慧見佛慧患知是人生",
+      "col_bbox": [
+        593,
+        124,
+        704,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "慧",
+      "bbox": [
+        593.0,
+        529.0,
+        704.0,
+        697.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 53,
+      "col_text": "慧見佛慧患知是人生",
+      "col_bbox": [
+        593,
+        124,
+        704,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "患",
+      "bbox": [
+        593.0,
+        697.0,
+        704.0,
+        828.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 54,
+      "col_text": "慧見佛慧患知是人生",
+      "col_bbox": [
+        593,
+        124,
+        704,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        593.0,
+        828.0,
+        704.0,
+        957.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 55,
+      "col_text": "慧見佛慧患知是人生",
+      "col_bbox": [
+        593,
+        124,
+        704,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        593.0,
+        957.0,
+        704.0,
+        1083.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 56,
+      "col_text": "慧見佛慧患知是人生",
+      "col_bbox": [
+        593,
+        124,
+        704,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        593.0,
+        1083.0,
+        704.0,
+        1179.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 57,
+      "col_text": "慧見佛慧患知是人生",
+      "col_bbox": [
+        593,
+        124,
+        704,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        593.0,
+        1179.0,
+        704.0,
+        1326.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 58,
+      "col_text": "慧見佛慧患知是人生",
+      "col_bbox": [
+        593,
+        124,
+        704,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        468.0,
+        136.0,
+        589.0,
+        275.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 59,
+      "col_text": "如是無量，福徳取如是無",
+      "col_bbox": [
+        468,
+        136,
+        589,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        468.0,
+        275.0,
+        589.0,
+        383.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 60,
+      "col_text": "如是無量，福徳取如是無",
+      "col_bbox": [
+        468,
+        136,
+        589,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        468.0,
+        383.0,
+        589.0,
+        492.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 61,
+      "col_text": "如是無量，福徳取如是無",
+      "col_bbox": [
+        468,
+        136,
+        589,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "量",
+      "bbox": [
+        468.0,
+        492.0,
+        589.0,
+        546.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 62,
+      "col_text": "如是無量，福徳取如是無",
+      "col_bbox": [
+        468,
+        136,
+        589,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        468.0,
+        660.0,
+        589.0,
+        805.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 63,
+      "col_text": "如是無量，福徳取如是無",
+      "col_bbox": [
+        468,
+        136,
+        589,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "徳",
+      "bbox": [
+        468.0,
+        805.0,
+        589.0,
+        904.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 64,
+      "col_text": "如是無量，福徳取如是無",
+      "col_bbox": [
+        468,
+        136,
+        589,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "取",
+      "bbox": [
+        468.0,
+        904.0,
+        589.0,
+        1014.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 65,
+      "col_text": "如是無量，福徳取如是無",
+      "col_bbox": [
+        468,
+        136,
+        589,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        468.0,
+        1014.0,
+        589.0,
+        1143.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 66,
+      "col_text": "如是無量，福徳取如是無",
+      "col_bbox": [
+        468,
+        136,
+        589,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        468.0,
+        1143.0,
+        589.0,
+        1250.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 67,
+      "col_text": "如是無量，福徳取如是無",
+      "col_bbox": [
+        468,
+        136,
+        589,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        468.0,
+        1250.0,
+        589.0,
+        1329.0
+      ],
+      "column": 4,
+      "row": 10,
+      "global_index": 68,
+      "col_text": "如是無量，福徳取如是無",
+      "col_bbox": [
+        468,
+        136,
+        589,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "量",
+      "bbox": [
+        360.0,
+        136.0,
+        473.0,
+        206.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 69,
+      "col_text": "量，福德何以故比菩薩し雲",
+      "col_bbox": [
+        360,
+        136,
+        473,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        360.0,
+        343.0,
+        473.0,
+        450.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 70,
+      "col_text": "量，福德何以故比菩薩し雲",
+      "col_bbox": [
+        360,
+        136,
+        473,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        360.0,
+        450.0,
+        473.0,
+        548.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 71,
+      "col_text": "量，福德何以故比菩薩し雲",
+      "col_bbox": [
+        360,
+        136,
+        473,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        360.0,
+        548.0,
+        473.0,
+        660.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 72,
+      "col_text": "量，福德何以故比菩薩し雲",
+      "col_bbox": [
+        360,
+        136,
+        473,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        360.0,
+        660.0,
+        473.0,
+        759.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 73,
+      "col_text": "量，福德何以故比菩薩し雲",
+      "col_bbox": [
+        360,
+        136,
+        473,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        360.0,
+        759.0,
+        473.0,
+        801.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 74,
+      "col_text": "量，福德何以故比菩薩し雲",
+      "col_bbox": [
+        360,
+        136,
+        473,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "比",
+      "bbox": [
+        360.0,
+        801.0,
+        473.0,
+        901.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 75,
+      "col_text": "量，福德何以故比菩薩し雲",
+      "col_bbox": [
+        360,
+        136,
+        473,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        360.0,
+        901.0,
+        473.0,
+        1025.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 76,
+      "col_text": "量，福德何以故比菩薩し雲",
+      "col_bbox": [
+        360,
+        136,
+        473,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薩",
+      "bbox": [
+        360.0,
+        1025.0,
+        473.0,
+        1121.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 77,
+      "col_text": "量，福德何以故比菩薩し雲",
+      "col_bbox": [
+        360,
+        136,
+        473,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "雲",
+      "bbox": [
+        360.0,
+        1255.0,
+        473.0,
+        1327.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 78,
+      "col_text": "量，福德何以故比菩薩し雲",
+      "col_bbox": [
+        360,
+        136,
+        473,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "復",
+      "bbox": [
+        249.0,
+        139.0,
+        357.0,
+        223.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 79,
+      "col_text": "復我相人相眾生詛壽者",
+      "col_bbox": [
+        249,
+        139,
+        357,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        249.0,
+        223.0,
+        357.0,
+        410.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 80,
+      "col_text": "復我相人相眾生詛壽者",
+      "col_bbox": [
+        249,
+        139,
+        357,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        249.0,
+        410.0,
+        357.0,
+        529.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 81,
+      "col_text": "復我相人相眾生詛壽者",
+      "col_bbox": [
+        249,
+        139,
+        357,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        249.0,
+        529.0,
+        357.0,
+        617.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 82,
+      "col_text": "復我相人相眾生詛壽者",
+      "col_bbox": [
+        249,
+        139,
+        357,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        249.0,
+        617.0,
+        357.0,
+        758.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 83,
+      "col_text": "復我相人相眾生詛壽者",
+      "col_bbox": [
+        249,
+        139,
+        357,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "眾",
+      "bbox": [
+        249.0,
+        758.0,
+        357.0,
+        852.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 84,
+      "col_text": "復我相人相眾生詛壽者",
+      "col_bbox": [
+        249,
+        139,
+        357,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        249.0,
+        852.0,
+        357.0,
+        992.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 85,
+      "col_text": "復我相人相眾生詛壽者",
+      "col_bbox": [
+        249,
+        139,
+        357,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "詛",
+      "bbox": [
+        249.0,
+        992.0,
+        357.0,
+        1118.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 86,
+      "col_text": "復我相人相眾生詛壽者",
+      "col_bbox": [
+        249,
+        139,
+        357,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "壽",
+      "bbox": [
+        249.0,
+        1118.0,
+        357.0,
+        1243.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 87,
+      "col_text": "復我相人相眾生詛壽者",
+      "col_bbox": [
+        249,
+        139,
+        357,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        249.0,
+        1243.0,
+        357.0,
+        1328.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 88,
+      "col_text": "復我相人相眾生詛壽者",
+      "col_bbox": [
+        249,
+        139,
+        357,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        131.0,
+        143.0,
+        244.0,
+        312.0
+      ],
+      "column": 7,
+      "row": 0,
+      "global_index": 89,
+      "col_text": "相無法相上非法相並",
+      "col_bbox": [
+        131,
+        143,
+        244,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        131.0,
+        312.0,
+        244.0,
+        438.0
+      ],
+      "column": 7,
+      "row": 1,
+      "global_index": 90,
+      "col_text": "相無法相上非法相並",
+      "col_bbox": [
+        131,
+        143,
+        244,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        131.0,
+        438.0,
+        244.0,
+        576.0
+      ],
+      "column": 7,
+      "row": 2,
+      "global_index": 91,
+      "col_text": "相無法相上非法相並",
+      "col_bbox": [
+        131,
+        143,
+        244,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        131.0,
+        576.0,
+        244.0,
+        707.0
+      ],
+      "column": 7,
+      "row": 3,
+      "global_index": 92,
+      "col_text": "相無法相上非法相並",
+      "col_bbox": [
+        131,
+        143,
+        244,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "上",
+      "bbox": [
+        131.0,
+        707.0,
+        244.0,
+        800.0
+      ],
+      "column": 7,
+      "row": 4,
+      "global_index": 93,
+      "col_text": "相無法相上非法相並",
+      "col_bbox": [
+        131,
+        143,
+        244,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        131.0,
+        800.0,
+        244.0,
+        932.0
+      ],
+      "column": 7,
+      "row": 5,
+      "global_index": 94,
+      "col_text": "相無法相上非法相並",
+      "col_bbox": [
+        131,
+        143,
+        244,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        131.0,
+        932.0,
+        244.0,
+        1040.0
+      ],
+      "column": 7,
+      "row": 6,
+      "global_index": 95,
+      "col_text": "相無法相上非法相並",
+      "col_bbox": [
+        131,
+        143,
+        244,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        131.0,
+        1040.0,
+        244.0,
+        1159.0
+      ],
+      "column": 7,
+      "row": 7,
+      "global_index": 96,
+      "col_text": "相無法相上非法相並",
+      "col_bbox": [
+        131,
+        143,
+        244,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "並",
+      "bbox": [
+        131.0,
+        1159.0,
+        244.0,
+        1328.0
+      ],
+      "column": 7,
+      "row": 8,
+      "global_index": 97,
+      "col_text": "相無法相上非法相並",
+      "col_bbox": [
+        131,
+        143,
+        244,
+        1328
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 8,
+  "total_chars": 98,
+  "timestamp": "2026-05-02T23:10:31.949871"
+}

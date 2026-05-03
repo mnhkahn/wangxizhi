@@ -1,0 +1,2193 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-041.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈等为人宣说其福甚多尔时须菩提闻法威力深酒菩摄在有人以恒河沙等身命希施未如邇利此法恭数受持乃至四句偈尊為人宣詭其福甚多尔時須菩提聞法威力深",
+  "parsed_results": [
+    {
+      "text": "36",
+      "bbox": [
+        859,
+        1422,
+        891,
+        1449
+      ],
+      "poly": [
+        [
+          859,
+          1422
+        ],
+        [
+          891,
+          1422
+        ],
+        [
+          891,
+          1449
+        ],
+        [
+          859,
+          1449
+        ]
+      ]
+    },
+    {
+      "text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "poly": [
+        [
+          733,
+          137
+        ],
+        [
+          760,
+          137
+        ],
+        [
+          760,
+          987
+        ],
+        [
+          733,
+          987
+        ]
+      ]
+    },
+    {
+      "text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "poly": [
+        [
+          698,
+          137
+        ],
+        [
+          724,
+          137
+        ],
+        [
+          724,
+          671
+        ],
+        [
+          698,
+          671
+        ]
+      ]
+    },
+    {
+      "text": "酒菩摄在有人以恒河沙",
+      "bbox": [
+        586,
+        140,
+        690,
+        1332
+      ],
+      "poly": [
+        [
+          586,
+          140
+        ],
+        [
+          690,
+          140
+        ],
+        [
+          690,
+          1332
+        ],
+        [
+          586,
+          1332
+        ]
+      ]
+    },
+    {
+      "text": "等身命希施未如邇利此",
+      "bbox": [
+        471,
+        146,
+        583,
+        1331
+      ],
+      "poly": [
+        [
+          471,
+          146
+        ],
+        [
+          583,
+          146
+        ],
+        [
+          583,
+          1331
+        ],
+        [
+          471,
+          1331
+        ]
+      ]
+    },
+    {
+      "text": "法恭数受持乃至四句偈",
+      "bbox": [
+        364,
+        146,
+        464,
+        1329
+      ],
+      "poly": [
+        [
+          364,
+          146
+        ],
+        [
+          464,
+          146
+        ],
+        [
+          464,
+          1329
+        ],
+        [
+          364,
+          1329
+        ]
+      ]
+    },
+    {
+      "text": "尊為人宣詭其福甚多",
+      "bbox": [
+        248,
+        148,
+        357,
+        1227
+      ],
+      "poly": [
+        [
+          248,
+          148
+        ],
+        [
+          357,
+          148
+        ],
+        [
+          357,
+          1227
+        ],
+        [
+          248,
+          1227
+        ]
+      ]
+    },
+    {
+      "text": "尔時須菩提聞法威力深",
+      "bbox": [
+        127,
+        142,
+        245,
+        1334
+      ],
+      "poly": [
+        [
+          127,
+          142
+        ],
+        [
+          245,
+          142
+        ],
+        [
+          245,
+          1334
+        ],
+        [
+          127,
+          1334
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "须",
+      "bbox": [
+        733.0,
+        137.0,
+        760.0,
+        165.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        733.0,
+        165.0,
+        760.0,
+        191.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        733.0,
+        191.0,
+        760.0,
+        219.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        733.0,
+        219.0,
+        760.0,
+        244.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        733.0,
+        244.0,
+        760.0,
+        272.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        733.0,
+        272.0,
+        760.0,
+        299.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        733.0,
+        299.0,
+        760.0,
+        327.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "恒",
+      "bbox": [
+        733.0,
+        327.0,
+        760.0,
+        370.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "河",
+      "bbox": [
+        733.0,
+        370.0,
+        760.0,
+        399.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沙",
+      "bbox": [
+        733.0,
+        399.0,
+        760.0,
+        419.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "等",
+      "bbox": [
+        733.0,
+        419.0,
+        760.0,
+        455.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 10,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        733.0,
+        455.0,
+        760.0,
+        484.0
+      ],
+      "column": 1,
+      "row": 11,
+      "global_index": 11,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "命",
+      "bbox": [
+        733.0,
+        484.0,
+        760.0,
+        509.0
+      ],
+      "column": 1,
+      "row": 12,
+      "global_index": 12,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "布",
+      "bbox": [
+        733.0,
+        509.0,
+        760.0,
+        536.0
+      ],
+      "column": 1,
+      "row": 13,
+      "global_index": 13,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "施",
+      "bbox": [
+        733.0,
+        536.0,
+        760.0,
+        565.0
+      ],
+      "column": 1,
+      "row": 14,
+      "global_index": 14,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "未",
+      "bbox": [
+        733.0,
+        565.0,
+        760.0,
+        590.0
+      ],
+      "column": 1,
+      "row": 15,
+      "global_index": 15,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        733.0,
+        590.0,
+        760.0,
+        615.0
+      ],
+      "column": 1,
+      "row": 16,
+      "global_index": 16,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "通",
+      "bbox": [
+        733.0,
+        615.0,
+        760.0,
+        643.0
+      ],
+      "column": 1,
+      "row": 17,
+      "global_index": 17,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "利",
+      "bbox": [
+        733.0,
+        643.0,
+        760.0,
+        669.0
+      ],
+      "column": 1,
+      "row": 18,
+      "global_index": 18,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        733.0,
+        669.0,
+        760.0,
+        697.0
+      ],
+      "column": 1,
+      "row": 19,
+      "global_index": 19,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        733.0,
+        697.0,
+        760.0,
+        724.0
+      ],
+      "column": 1,
+      "row": 20,
+      "global_index": 20,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "恭",
+      "bbox": [
+        733.0,
+        724.0,
+        760.0,
+        752.0
+      ],
+      "column": 1,
+      "row": 21,
+      "global_index": 21,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "敬",
+      "bbox": [
+        733.0,
+        752.0,
+        760.0,
+        780.0
+      ],
+      "column": 1,
+      "row": 22,
+      "global_index": 22,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "受",
+      "bbox": [
+        733.0,
+        780.0,
+        760.0,
+        820.0
+      ],
+      "column": 1,
+      "row": 23,
+      "global_index": 23,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "持",
+      "bbox": [
+        733.0,
+        820.0,
+        760.0,
+        852.0
+      ],
+      "column": 1,
+      "row": 24,
+      "global_index": 24,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乃",
+      "bbox": [
+        733.0,
+        852.0,
+        760.0,
+        880.0
+      ],
+      "column": 1,
+      "row": 25,
+      "global_index": 25,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "至",
+      "bbox": [
+        733.0,
+        880.0,
+        760.0,
+        909.0
+      ],
+      "column": 1,
+      "row": 26,
+      "global_index": 26,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "四",
+      "bbox": [
+        733.0,
+        909.0,
+        760.0,
+        937.0
+      ],
+      "column": 1,
+      "row": 27,
+      "global_index": 27,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "句",
+      "bbox": [
+        733.0,
+        937.0,
+        760.0,
+        961.0
+      ],
+      "column": 1,
+      "row": 28,
+      "global_index": 28,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "偈",
+      "bbox": [
+        733.0,
+        961.0,
+        760.0,
+        987.0
+      ],
+      "column": 1,
+      "row": 29,
+      "global_index": 29,
+      "col_text": "须菩提若有人以恒河沙等身命布施未如通利此法恭敬受持乃至四句偈",
+      "col_bbox": [
+        733,
+        137,
+        760,
+        987
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "等",
+      "bbox": [
+        698.0,
+        137.0,
+        724.0,
+        163.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        698.0,
+        163.0,
+        724.0,
+        193.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        698.0,
+        193.0,
+        724.0,
+        219.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宣",
+      "bbox": [
+        698.0,
+        219.0,
+        724.0,
+        245.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        698.0,
+        245.0,
+        724.0,
+        272.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        698.0,
+        272.0,
+        724.0,
+        297.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        698.0,
+        297.0,
+        724.0,
+        325.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "甚",
+      "bbox": [
+        698.0,
+        325.0,
+        724.0,
+        353.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        698.0,
+        353.0,
+        724.0,
+        395.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尔",
+      "bbox": [
+        698.0,
+        395.0,
+        724.0,
+        425.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "时",
+      "bbox": [
+        698.0,
+        425.0,
+        724.0,
+        453.0
+      ],
+      "column": 2,
+      "row": 10,
+      "global_index": 40,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        698.0,
+        453.0,
+        724.0,
+        481.0
+      ],
+      "column": 2,
+      "row": 11,
+      "global_index": 41,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        698.0,
+        481.0,
+        724.0,
+        509.0
+      ],
+      "column": 2,
+      "row": 12,
+      "global_index": 42,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        698.0,
+        509.0,
+        724.0,
+        537.0
+      ],
+      "column": 2,
+      "row": 13,
+      "global_index": 43,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "闻",
+      "bbox": [
+        698.0,
+        537.0,
+        724.0,
+        564.0
+      ],
+      "column": 2,
+      "row": 14,
+      "global_index": 44,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        698.0,
+        564.0,
+        724.0,
+        590.0
+      ],
+      "column": 2,
+      "row": 15,
+      "global_index": 45,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "威",
+      "bbox": [
+        698.0,
+        590.0,
+        724.0,
+        618.0
+      ],
+      "column": 2,
+      "row": 16,
+      "global_index": 46,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "力",
+      "bbox": [
+        698.0,
+        618.0,
+        724.0,
+        643.0
+      ],
+      "column": 2,
+      "row": 17,
+      "global_index": 47,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "深",
+      "bbox": [
+        698.0,
+        643.0,
+        724.0,
+        671.0
+      ],
+      "column": 2,
+      "row": 18,
+      "global_index": 48,
+      "col_text": "等为人宣说其福甚多尔时须菩提闻法威力深",
+      "col_bbox": [
+        698,
+        137,
+        724,
+        671
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "酒",
+      "bbox": [
+        586.0,
+        140.0,
+        690.0,
+        227.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 49,
+      "col_text": "酒菩摄在有人以恒河沙",
+      "col_bbox": [
+        586,
+        140,
+        690,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        586.0,
+        227.0,
+        690.0,
+        349.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 50,
+      "col_text": "酒菩摄在有人以恒河沙",
+      "col_bbox": [
+        586,
+        140,
+        690,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "摄",
+      "bbox": [
+        586.0,
+        349.0,
+        690.0,
+        462.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 51,
+      "col_text": "酒菩摄在有人以恒河沙",
+      "col_bbox": [
+        586,
+        140,
+        690,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "在",
+      "bbox": [
+        586.0,
+        462.0,
+        690.0,
+        605.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 52,
+      "col_text": "酒菩摄在有人以恒河沙",
+      "col_bbox": [
+        586,
+        140,
+        690,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        586.0,
+        605.0,
+        690.0,
+        701.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 53,
+      "col_text": "酒菩摄在有人以恒河沙",
+      "col_bbox": [
+        586,
+        140,
+        690,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        586.0,
+        701.0,
+        690.0,
+        846.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 54,
+      "col_text": "酒菩摄在有人以恒河沙",
+      "col_bbox": [
+        586,
+        140,
+        690,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        586.0,
+        846.0,
+        690.0,
+        939.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 55,
+      "col_text": "酒菩摄在有人以恒河沙",
+      "col_bbox": [
+        586,
+        140,
+        690,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "恒",
+      "bbox": [
+        586.0,
+        939.0,
+        690.0,
+        1127.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 56,
+      "col_text": "酒菩摄在有人以恒河沙",
+      "col_bbox": [
+        586,
+        140,
+        690,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "河",
+      "bbox": [
+        586.0,
+        1127.0,
+        690.0,
+        1246.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 57,
+      "col_text": "酒菩摄在有人以恒河沙",
+      "col_bbox": [
+        586,
+        140,
+        690,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沙",
+      "bbox": [
+        586.0,
+        1246.0,
+        690.0,
+        1332.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 58,
+      "col_text": "酒菩摄在有人以恒河沙",
+      "col_bbox": [
+        586,
+        140,
+        690,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "等",
+      "bbox": [
+        471.0,
+        146.0,
+        583.0,
+        229.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 59,
+      "col_text": "等身命希施未如邇利此",
+      "col_bbox": [
+        471,
+        146,
+        583,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        471.0,
+        229.0,
+        583.0,
+        348.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 60,
+      "col_text": "等身命希施未如邇利此",
+      "col_bbox": [
+        471,
+        146,
+        583,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "命",
+      "bbox": [
+        471.0,
+        348.0,
+        583.0,
+        466.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 61,
+      "col_text": "等身命希施未如邇利此",
+      "col_bbox": [
+        471,
+        146,
+        583,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "希",
+      "bbox": [
+        471.0,
+        466.0,
+        583.0,
+        598.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 62,
+      "col_text": "等身命希施未如邇利此",
+      "col_bbox": [
+        471,
+        146,
+        583,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "施",
+      "bbox": [
+        471.0,
+        598.0,
+        583.0,
+        727.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 63,
+      "col_text": "等身命希施未如邇利此",
+      "col_bbox": [
+        471,
+        146,
+        583,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "未",
+      "bbox": [
+        471.0,
+        727.0,
+        583.0,
+        863.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 64,
+      "col_text": "等身命希施未如邇利此",
+      "col_bbox": [
+        471,
+        146,
+        583,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        471.0,
+        863.0,
+        583.0,
+        946.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 65,
+      "col_text": "等身命希施未如邇利此",
+      "col_bbox": [
+        471,
+        146,
+        583,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "邇",
+      "bbox": [
+        471.0,
+        946.0,
+        583.0,
+        1072.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 66,
+      "col_text": "等身命希施未如邇利此",
+      "col_bbox": [
+        471,
+        146,
+        583,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "利",
+      "bbox": [
+        471.0,
+        1072.0,
+        583.0,
+        1177.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 67,
+      "col_text": "等身命希施未如邇利此",
+      "col_bbox": [
+        471,
+        146,
+        583,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        471.0,
+        1177.0,
+        583.0,
+        1331.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 68,
+      "col_text": "等身命希施未如邇利此",
+      "col_bbox": [
+        471,
+        146,
+        583,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        364.0,
+        146.0,
+        464.0,
+        278.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 69,
+      "col_text": "法恭数受持乃至四句偈",
+      "col_bbox": [
+        364,
+        146,
+        464,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "恭",
+      "bbox": [
+        364.0,
+        278.0,
+        464.0,
+        347.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 70,
+      "col_text": "法恭数受持乃至四句偈",
+      "col_bbox": [
+        364,
+        146,
+        464,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "数",
+      "bbox": [
+        364.0,
+        347.0,
+        464.0,
+        477.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 71,
+      "col_text": "法恭数受持乃至四句偈",
+      "col_bbox": [
+        364,
+        146,
+        464,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "受",
+      "bbox": [
+        364.0,
+        477.0,
+        464.0,
+        584.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 72,
+      "col_text": "法恭数受持乃至四句偈",
+      "col_bbox": [
+        364,
+        146,
+        464,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "持",
+      "bbox": [
+        364.0,
+        584.0,
+        464.0,
+        702.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 73,
+      "col_text": "法恭数受持乃至四句偈",
+      "col_bbox": [
+        364,
+        146,
+        464,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乃",
+      "bbox": [
+        364.0,
+        702.0,
+        464.0,
+        849.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 74,
+      "col_text": "法恭数受持乃至四句偈",
+      "col_bbox": [
+        364,
+        146,
+        464,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "至",
+      "bbox": [
+        364.0,
+        849.0,
+        464.0,
+        941.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 75,
+      "col_text": "法恭数受持乃至四句偈",
+      "col_bbox": [
+        364,
+        146,
+        464,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "四",
+      "bbox": [
+        364.0,
+        941.0,
+        464.0,
+        1126.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 76,
+      "col_text": "法恭数受持乃至四句偈",
+      "col_bbox": [
+        364,
+        146,
+        464,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "句",
+      "bbox": [
+        364.0,
+        1126.0,
+        464.0,
+        1241.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 77,
+      "col_text": "法恭数受持乃至四句偈",
+      "col_bbox": [
+        364,
+        146,
+        464,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "偈",
+      "bbox": [
+        364.0,
+        1241.0,
+        464.0,
+        1329.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 78,
+      "col_text": "法恭数受持乃至四句偈",
+      "col_bbox": [
+        364,
+        146,
+        464,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        248.0,
+        148.0,
+        357.0,
+        232.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 79,
+      "col_text": "尊為人宣詭其福甚多",
+      "col_bbox": [
+        248,
+        148,
+        357,
+        1227
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        248.0,
+        232.0,
+        357.0,
+        352.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 80,
+      "col_text": "尊為人宣詭其福甚多",
+      "col_bbox": [
+        248,
+        148,
+        357,
+        1227
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        248.0,
+        352.0,
+        357.0,
+        534.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 81,
+      "col_text": "尊為人宣詭其福甚多",
+      "col_bbox": [
+        248,
+        148,
+        357,
+        1227
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宣",
+      "bbox": [
+        248.0,
+        534.0,
+        357.0,
+        592.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 82,
+      "col_text": "尊為人宣詭其福甚多",
+      "col_bbox": [
+        248,
+        148,
+        357,
+        1227
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "詭",
+      "bbox": [
+        248.0,
+        592.0,
+        357.0,
+        712.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 83,
+      "col_text": "尊為人宣詭其福甚多",
+      "col_bbox": [
+        248,
+        148,
+        357,
+        1227
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        248.0,
+        712.0,
+        357.0,
+        832.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 84,
+      "col_text": "尊為人宣詭其福甚多",
+      "col_bbox": [
+        248,
+        148,
+        357,
+        1227
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        248.0,
+        832.0,
+        357.0,
+        952.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 85,
+      "col_text": "尊為人宣詭其福甚多",
+      "col_bbox": [
+        248,
+        148,
+        357,
+        1227
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "甚",
+      "bbox": [
+        248.0,
+        952.0,
+        357.0,
+        1077.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 86,
+      "col_text": "尊為人宣詭其福甚多",
+      "col_bbox": [
+        248,
+        148,
+        357,
+        1227
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        248.0,
+        1077.0,
+        357.0,
+        1227.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 87,
+      "col_text": "尊為人宣詭其福甚多",
+      "col_bbox": [
+        248,
+        148,
+        357,
+        1227
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尔",
+      "bbox": [
+        127.0,
+        142.0,
+        245.0,
+        295.0
+      ],
+      "column": 7,
+      "row": 0,
+      "global_index": 88,
+      "col_text": "尔時須菩提聞法威力深",
+      "col_bbox": [
+        127,
+        142,
+        245,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "時",
+      "bbox": [
+        127.0,
+        295.0,
+        245.0,
+        414.0
+      ],
+      "column": 7,
+      "row": 1,
+      "global_index": 89,
+      "col_text": "尔時須菩提聞法威力深",
+      "col_bbox": [
+        127,
+        142,
+        245,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "須",
+      "bbox": [
+        127.0,
+        414.0,
+        245.0,
+        522.0
+      ],
+      "column": 7,
+      "row": 2,
+      "global_index": 90,
+      "col_text": "尔時須菩提聞法威力深",
+      "col_bbox": [
+        127,
+        142,
+        245,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        127.0,
+        522.0,
+        245.0,
+        651.0
+      ],
+      "column": 7,
+      "row": 3,
+      "global_index": 91,
+      "col_text": "尔時須菩提聞法威力深",
+      "col_bbox": [
+        127,
+        142,
+        245,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        127.0,
+        651.0,
+        245.0,
+        713.0
+      ],
+      "column": 7,
+      "row": 4,
+      "global_index": 92,
+      "col_text": "尔時須菩提聞法威力深",
+      "col_bbox": [
+        127,
+        142,
+        245,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "聞",
+      "bbox": [
+        127.0,
+        713.0,
+        245.0,
+        822.0
+      ],
+      "column": 7,
+      "row": 5,
+      "global_index": 93,
+      "col_text": "尔時須菩提聞法威力深",
+      "col_bbox": [
+        127,
+        142,
+        245,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        127.0,
+        822.0,
+        245.0,
+        956.0
+      ],
+      "column": 7,
+      "row": 6,
+      "global_index": 94,
+      "col_text": "尔時須菩提聞法威力深",
+      "col_bbox": [
+        127,
+        142,
+        245,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "威",
+      "bbox": [
+        127.0,
+        956.0,
+        245.0,
+        1074.0
+      ],
+      "column": 7,
+      "row": 7,
+      "global_index": 95,
+      "col_text": "尔時須菩提聞法威力深",
+      "col_bbox": [
+        127,
+        142,
+        245,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "力",
+      "bbox": [
+        127.0,
+        1074.0,
+        245.0,
+        1248.0
+      ],
+      "column": 7,
+      "row": 8,
+      "global_index": 96,
+      "col_text": "尔時須菩提聞法威力深",
+      "col_bbox": [
+        127,
+        142,
+        245,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "深",
+      "bbox": [
+        127.0,
+        1248.0,
+        245.0,
+        1334.0
+      ],
+      "column": 7,
+      "row": 9,
+      "global_index": 97,
+      "col_text": "尔時須菩提聞法威力深",
+      "col_bbox": [
+        127,
+        142,
+        245,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 8,
+  "total_chars": 98,
+  "timestamp": "2026-05-02T23:10:49.268939"
+}

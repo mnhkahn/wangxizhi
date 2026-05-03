@@ -1,0 +1,2193 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-058.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "今過玄要董啊經該切放燃燈佛先得值一百曲萬憶那由他諸佛患皆供養承業藝雲過者蒼濱業世有能受修行此経者念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供养承事无空过者若后末世有能受持修行此经者",
+  "parsed_results": [
+    {
+      "text": "今過玄要董啊經該切放",
+      "bbox": [
+        638,
+        165,
+        754,
+        1326
+      ],
+      "poly": [
+        [
+          638,
+          165
+        ],
+        [
+          754,
+          165
+        ],
+        [
+          754,
+          1326
+        ],
+        [
+          638,
+          1326
+        ]
+      ]
+    },
+    {
+      "text": "燃燈佛先得值一百曲",
+      "bbox": [
+        525,
+        166,
+        642,
+        1323
+      ],
+      "poly": [
+        [
+          525,
+          166
+        ],
+        [
+          642,
+          166
+        ],
+        [
+          642,
+          1323
+        ],
+        [
+          525,
+          1323
+        ]
+      ]
+    },
+    {
+      "text": "萬憶那由他諸佛患皆供",
+      "bbox": [
+        423,
+        169,
+        532,
+        1348
+      ],
+      "poly": [
+        [
+          423,
+          169
+        ],
+        [
+          532,
+          169
+        ],
+        [
+          532,
+          1348
+        ],
+        [
+          423,
+          1348
+        ]
+      ]
+    },
+    {
+      "text": "養承業藝，雲過者蒼濱業",
+      "bbox": [
+        310,
+        172,
+        430,
+        1354
+      ],
+      "poly": [
+        [
+          310,
+          172
+        ],
+        [
+          430,
+          172
+        ],
+        [
+          430,
+          1354
+        ],
+        [
+          310,
+          1354
+        ]
+      ]
+    },
+    {
+      "text": "世有能受修行此経者",
+      "bbox": [
+        201,
+        166,
+        304,
+        1352
+      ],
+      "poly": [
+        [
+          201,
+          166
+        ],
+        [
+          304,
+          166
+        ],
+        [
+          304,
+          1352
+        ],
+        [
+          201,
+          1352
+        ]
+      ]
+    },
+    {
+      "text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "poly": [
+        [
+          152,
+          153
+        ],
+        [
+          185,
+          153
+        ],
+        [
+          185,
+          1005
+        ],
+        [
+          152,
+          1005
+        ]
+      ]
+    },
+    {
+      "text": "养承事无空过者若后末世有能受持修行此经者",
+      "bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "poly": [
+        [
+          118,
+          153
+        ],
+        [
+          144,
+          153
+        ],
+        [
+          144,
+          711
+        ],
+        [
+          118,
+          711
+        ]
+      ]
+    },
+    {
+      "text": "53",
+      "bbox": [
+        0,
+        1445,
+        22,
+        1468
+      ],
+      "poly": [
+        [
+          0,
+          1445
+        ],
+        [
+          22,
+          1445
+        ],
+        [
+          22,
+          1468
+        ],
+        [
+          0,
+          1468
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "今",
+      "bbox": [
+        638.0,
+        165.0,
+        754.0,
+        247.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "今過玄要董啊經該切放",
+      "col_bbox": [
+        638,
+        165,
+        754,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "過",
+      "bbox": [
+        638.0,
+        247.0,
+        754.0,
+        365.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "今過玄要董啊經該切放",
+      "col_bbox": [
+        638,
+        165,
+        754,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "玄",
+      "bbox": [
+        638.0,
+        365.0,
+        754.0,
+        543.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "今過玄要董啊經該切放",
+      "col_bbox": [
+        638,
+        165,
+        754,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "要",
+      "bbox": [
+        638.0,
+        543.0,
+        754.0,
+        595.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "今過玄要董啊經該切放",
+      "col_bbox": [
+        638,
+        165,
+        754,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "董",
+      "bbox": [
+        638.0,
+        595.0,
+        754.0,
+        711.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "今過玄要董啊經該切放",
+      "col_bbox": [
+        638,
+        165,
+        754,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "啊",
+      "bbox": [
+        638.0,
+        711.0,
+        754.0,
+        834.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "今過玄要董啊經該切放",
+      "col_bbox": [
+        638,
+        165,
+        754,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "經",
+      "bbox": [
+        638.0,
+        834.0,
+        754.0,
+        946.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "今過玄要董啊經該切放",
+      "col_bbox": [
+        638,
+        165,
+        754,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "該",
+      "bbox": [
+        638.0,
+        946.0,
+        754.0,
+        1075.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "今過玄要董啊經該切放",
+      "col_bbox": [
+        638,
+        165,
+        754,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "切",
+      "bbox": [
+        638.0,
+        1075.0,
+        754.0,
+        1186.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "今過玄要董啊經該切放",
+      "col_bbox": [
+        638,
+        165,
+        754,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "放",
+      "bbox": [
+        638.0,
+        1186.0,
+        754.0,
+        1326.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "今過玄要董啊經該切放",
+      "col_bbox": [
+        638,
+        165,
+        754,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "燃",
+      "bbox": [
+        525.0,
+        166.0,
+        642.0,
+        318.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "燃燈佛先得值一百曲",
+      "col_bbox": [
+        525,
+        166,
+        642,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "燈",
+      "bbox": [
+        525.0,
+        318.0,
+        642.0,
+        443.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "燃燈佛先得值一百曲",
+      "col_bbox": [
+        525,
+        166,
+        642,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        525.0,
+        443.0,
+        642.0,
+        562.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "燃燈佛先得值一百曲",
+      "col_bbox": [
+        525,
+        166,
+        642,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "先",
+      "bbox": [
+        525.0,
+        562.0,
+        642.0,
+        712.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "燃燈佛先得值一百曲",
+      "col_bbox": [
+        525,
+        166,
+        642,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        525.0,
+        712.0,
+        642.0,
+        845.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "燃燈佛先得值一百曲",
+      "col_bbox": [
+        525,
+        166,
+        642,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "值",
+      "bbox": [
+        525.0,
+        845.0,
+        642.0,
+        933.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "燃燈佛先得值一百曲",
+      "col_bbox": [
+        525,
+        166,
+        642,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        525.0,
+        933.0,
+        642.0,
+        1027.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "燃燈佛先得值一百曲",
+      "col_bbox": [
+        525,
+        166,
+        642,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "百",
+      "bbox": [
+        525.0,
+        1027.0,
+        642.0,
+        1178.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "燃燈佛先得值一百曲",
+      "col_bbox": [
+        525,
+        166,
+        642,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "曲",
+      "bbox": [
+        525.0,
+        1178.0,
+        642.0,
+        1323.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "燃燈佛先得值一百曲",
+      "col_bbox": [
+        525,
+        166,
+        642,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "萬",
+      "bbox": [
+        423.0,
+        169.0,
+        532.0,
+        259.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 19,
+      "col_text": "萬憶那由他諸佛患皆供",
+      "col_bbox": [
+        423,
+        169,
+        532,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "憶",
+      "bbox": [
+        423.0,
+        259.0,
+        532.0,
+        401.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 20,
+      "col_text": "萬憶那由他諸佛患皆供",
+      "col_bbox": [
+        423,
+        169,
+        532,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "那",
+      "bbox": [
+        423.0,
+        401.0,
+        532.0,
+        508.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 21,
+      "col_text": "萬憶那由他諸佛患皆供",
+      "col_bbox": [
+        423,
+        169,
+        532,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "由",
+      "bbox": [
+        423.0,
+        508.0,
+        532.0,
+        605.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 22,
+      "col_text": "萬憶那由他諸佛患皆供",
+      "col_bbox": [
+        423,
+        169,
+        532,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "他",
+      "bbox": [
+        423.0,
+        605.0,
+        532.0,
+        723.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 23,
+      "col_text": "萬憶那由他諸佛患皆供",
+      "col_bbox": [
+        423,
+        169,
+        532,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "諸",
+      "bbox": [
+        423.0,
+        723.0,
+        532.0,
+        910.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 24,
+      "col_text": "萬憶那由他諸佛患皆供",
+      "col_bbox": [
+        423,
+        169,
+        532,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        423.0,
+        910.0,
+        532.0,
+        959.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 25,
+      "col_text": "萬憶那由他諸佛患皆供",
+      "col_bbox": [
+        423,
+        169,
+        532,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "患",
+      "bbox": [
+        423.0,
+        959.0,
+        532.0,
+        1077.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 26,
+      "col_text": "萬憶那由他諸佛患皆供",
+      "col_bbox": [
+        423,
+        169,
+        532,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "皆",
+      "bbox": [
+        423.0,
+        1077.0,
+        532.0,
+        1264.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 27,
+      "col_text": "萬憶那由他諸佛患皆供",
+      "col_bbox": [
+        423,
+        169,
+        532,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "供",
+      "bbox": [
+        423.0,
+        1264.0,
+        532.0,
+        1348.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 28,
+      "col_text": "萬憶那由他諸佛患皆供",
+      "col_bbox": [
+        423,
+        169,
+        532,
+        1348
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "養",
+      "bbox": [
+        310.0,
+        172.0,
+        430.0,
+        247.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 29,
+      "col_text": "養承業藝，雲過者蒼濱業",
+      "col_bbox": [
+        310,
+        172,
+        430,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "承",
+      "bbox": [
+        310.0,
+        247.0,
+        430.0,
+        362.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 30,
+      "col_text": "養承業藝，雲過者蒼濱業",
+      "col_bbox": [
+        310,
+        172,
+        430,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "業",
+      "bbox": [
+        310.0,
+        362.0,
+        430.0,
+        462.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 31,
+      "col_text": "養承業藝，雲過者蒼濱業",
+      "col_bbox": [
+        310,
+        172,
+        430,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "藝",
+      "bbox": [
+        310.0,
+        462.0,
+        430.0,
+        584.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 32,
+      "col_text": "養承業藝，雲過者蒼濱業",
+      "col_bbox": [
+        310,
+        172,
+        430,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "雲",
+      "bbox": [
+        310.0,
+        725.0,
+        430.0,
+        837.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 33,
+      "col_text": "養承業藝，雲過者蒼濱業",
+      "col_bbox": [
+        310,
+        172,
+        430,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "過",
+      "bbox": [
+        310.0,
+        837.0,
+        430.0,
+        955.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 34,
+      "col_text": "養承業藝，雲過者蒼濱業",
+      "col_bbox": [
+        310,
+        172,
+        430,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        310.0,
+        955.0,
+        430.0,
+        1039.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 35,
+      "col_text": "養承業藝，雲過者蒼濱業",
+      "col_bbox": [
+        310,
+        172,
+        430,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "蒼",
+      "bbox": [
+        310.0,
+        1039.0,
+        430.0,
+        1164.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 36,
+      "col_text": "養承業藝，雲過者蒼濱業",
+      "col_bbox": [
+        310,
+        172,
+        430,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "濱",
+      "bbox": [
+        310.0,
+        1164.0,
+        430.0,
+        1220.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 37,
+      "col_text": "養承業藝，雲過者蒼濱業",
+      "col_bbox": [
+        310,
+        172,
+        430,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "業",
+      "bbox": [
+        310.0,
+        1220.0,
+        430.0,
+        1354.0
+      ],
+      "column": 3,
+      "row": 10,
+      "global_index": 38,
+      "col_text": "養承業藝，雲過者蒼濱業",
+      "col_bbox": [
+        310,
+        172,
+        430,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        201.0,
+        166.0,
+        304.0,
+        308.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 39,
+      "col_text": "世有能受修行此経者",
+      "col_bbox": [
+        201,
+        166,
+        304,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        201.0,
+        308.0,
+        304.0,
+        462.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 40,
+      "col_text": "世有能受修行此経者",
+      "col_bbox": [
+        201,
+        166,
+        304,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        201.0,
+        462.0,
+        304.0,
+        576.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 41,
+      "col_text": "世有能受修行此経者",
+      "col_bbox": [
+        201,
+        166,
+        304,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "受",
+      "bbox": [
+        201.0,
+        576.0,
+        304.0,
+        726.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 42,
+      "col_text": "世有能受修行此経者",
+      "col_bbox": [
+        201,
+        166,
+        304,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "修",
+      "bbox": [
+        201.0,
+        726.0,
+        304.0,
+        818.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 43,
+      "col_text": "世有能受修行此経者",
+      "col_bbox": [
+        201,
+        166,
+        304,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "行",
+      "bbox": [
+        201.0,
+        818.0,
+        304.0,
+        918.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 44,
+      "col_text": "世有能受修行此経者",
+      "col_bbox": [
+        201,
+        166,
+        304,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        201.0,
+        918.0,
+        304.0,
+        1064.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 45,
+      "col_text": "世有能受修行此経者",
+      "col_bbox": [
+        201,
+        166,
+        304,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "経",
+      "bbox": [
+        201.0,
+        1064.0,
+        304.0,
+        1187.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 46,
+      "col_text": "世有能受修行此経者",
+      "col_bbox": [
+        201,
+        166,
+        304,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        201.0,
+        1187.0,
+        304.0,
+        1352.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 47,
+      "col_text": "世有能受修行此経者",
+      "col_bbox": [
+        201,
+        166,
+        304,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "念",
+      "bbox": [
+        152.0,
+        153.0,
+        185.0,
+        181.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 48,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "过",
+      "bbox": [
+        152.0,
+        181.0,
+        185.0,
+        208.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 49,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "去",
+      "bbox": [
+        152.0,
+        208.0,
+        185.0,
+        234.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 50,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        152.0,
+        234.0,
+        185.0,
+        260.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 51,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "量",
+      "bbox": [
+        152.0,
+        260.0,
+        185.0,
+        288.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 52,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "阿",
+      "bbox": [
+        152.0,
+        288.0,
+        185.0,
+        315.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 53,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "僧",
+      "bbox": [
+        152.0,
+        315.0,
+        185.0,
+        343.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 54,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "祗",
+      "bbox": [
+        152.0,
+        343.0,
+        185.0,
+        372.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 55,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "劫",
+      "bbox": [
+        152.0,
+        372.0,
+        185.0,
+        410.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 56,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "于",
+      "bbox": [
+        152.0,
+        410.0,
+        185.0,
+        433.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 57,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "燃",
+      "bbox": [
+        152.0,
+        433.0,
+        185.0,
+        472.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 58,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "灯",
+      "bbox": [
+        152.0,
+        472.0,
+        185.0,
+        500.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 59,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        152.0,
+        500.0,
+        185.0,
+        528.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 60,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "先",
+      "bbox": [
+        152.0,
+        528.0,
+        185.0,
+        554.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 61,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        152.0,
+        554.0,
+        185.0,
+        580.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 62,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "值",
+      "bbox": [
+        152.0,
+        580.0,
+        185.0,
+        607.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 63,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "八",
+      "bbox": [
+        152.0,
+        607.0,
+        185.0,
+        633.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 64,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "百",
+      "bbox": [
+        152.0,
+        633.0,
+        185.0,
+        660.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 65,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "四",
+      "bbox": [
+        152.0,
+        660.0,
+        185.0,
+        685.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 66,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "千",
+      "bbox": [
+        152.0,
+        685.0,
+        185.0,
+        715.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 67,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "万",
+      "bbox": [
+        152.0,
+        715.0,
+        185.0,
+        741.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 68,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "亿",
+      "bbox": [
+        152.0,
+        741.0,
+        185.0,
+        769.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 69,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "那",
+      "bbox": [
+        152.0,
+        769.0,
+        185.0,
+        813.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 70,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "由",
+      "bbox": [
+        152.0,
+        813.0,
+        185.0,
+        835.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 71,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "他",
+      "bbox": [
+        152.0,
+        835.0,
+        185.0,
+        870.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 72,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诸",
+      "bbox": [
+        152.0,
+        870.0,
+        185.0,
+        898.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 73,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        152.0,
+        898.0,
+        185.0,
+        926.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 74,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悉",
+      "bbox": [
+        152.0,
+        926.0,
+        185.0,
+        952.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 75,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "皆",
+      "bbox": [
+        152.0,
+        952.0,
+        185.0,
+        979.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 76,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "供",
+      "bbox": [
+        152.0,
+        979.0,
+        185.0,
+        1005.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 77,
+      "col_text": "念过去无量阿僧祗劫于燃灯佛先得值八百四千万亿那由他诸佛悉皆供",
+      "col_bbox": [
+        152,
+        153,
+        185,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "养",
+      "bbox": [
+        118.0,
+        153.0,
+        144.0,
+        181.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 78,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "承",
+      "bbox": [
+        118.0,
+        181.0,
+        144.0,
+        208.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 79,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "事",
+      "bbox": [
+        118.0,
+        208.0,
+        144.0,
+        234.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 80,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        118.0,
+        234.0,
+        144.0,
+        261.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 81,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "空",
+      "bbox": [
+        118.0,
+        261.0,
+        144.0,
+        288.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 82,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "过",
+      "bbox": [
+        118.0,
+        288.0,
+        144.0,
+        314.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 83,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        118.0,
+        314.0,
+        144.0,
+        340.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 84,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        118.0,
+        340.0,
+        144.0,
+        368.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 85,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "后",
+      "bbox": [
+        118.0,
+        368.0,
+        144.0,
+        396.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 86,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "末",
+      "bbox": [
+        118.0,
+        396.0,
+        144.0,
+        424.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 87,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        118.0,
+        424.0,
+        144.0,
+        451.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 88,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        118.0,
+        451.0,
+        144.0,
+        479.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 89,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        118.0,
+        479.0,
+        144.0,
+        517.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 90,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "受",
+      "bbox": [
+        118.0,
+        517.0,
+        144.0,
+        545.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 91,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "持",
+      "bbox": [
+        118.0,
+        545.0,
+        144.0,
+        578.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 92,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "修",
+      "bbox": [
+        118.0,
+        578.0,
+        144.0,
+        606.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 93,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "行",
+      "bbox": [
+        118.0,
+        606.0,
+        144.0,
+        634.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 94,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        118.0,
+        634.0,
+        144.0,
+        661.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 95,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        118.0,
+        661.0,
+        144.0,
+        687.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 96,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        118.0,
+        687.0,
+        144.0,
+        711.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 97,
+      "col_text": "养承事无空过者若后末世有能受持修行此经者",
+      "col_bbox": [
+        118,
+        153,
+        144,
+        711
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 98,
+  "timestamp": "2026-05-02T23:11:15.313562"
+}

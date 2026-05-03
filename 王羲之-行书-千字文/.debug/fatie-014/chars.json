@@ -1,0 +1,802 @@
+[
+  {
+    "char": "切",
+    "bbox": [
+      640.0,
+      160.0,
+      751.0,
+      282.0
+    ],
+    "id": "664c5718-4b96-4c26-8b63-28c97a1c22c0",
+    "row": 0,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 0
+  },
+  {
+    "char": "善",
+    "bbox": [
+      640.0,
+      282.0,
+      751.0,
+      431.0
+    ],
+    "id": "68f3cf0e-6a65-4010-ba53-2b75ca97f11a",
+    "row": 1,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 0
+  },
+  {
+    "char": "法",
+    "bbox": [
+      640.0,
+      431.0,
+      751.0,
+      490.0
+    ],
+    "id": "780bcaad-920e-46d1-8a50-e1292b30ea22",
+    "row": 2,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 0
+  },
+  {
+    "char": "于",
+    "bbox": [
+      640.0,
+      490.0,
+      751.0,
+      600.0
+    ],
+    "id": "b6ebf603-e9d7-4244-bcfb-aeb5ff0db8f6",
+    "row": 3,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 0
+  },
+  {
+    "char": "此",
+    "bbox": [
+      640.0,
+      600.0,
+      751.0,
+      719.0
+    ],
+    "id": "23fdb2c7-7d6c-44a9-9682-2d722a0de38b",
+    "row": 4,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 0
+  },
+  {
+    "char": "见",
+    "bbox": [
+      640.0,
+      719.0,
+      751.0,
+      850.0
+    ],
+    "id": "1b43d539-5ba6-4314-9f38-5659541c1741",
+    "row": 5,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 0
+  },
+  {
+    "char": "中",
+    "bbox": [
+      640.0,
+      850.0,
+      751.0,
+      1025.0
+    ],
+    "id": "596f329f-b68d-4d40-a8be-2d72ca4bf573",
+    "row": 6,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 0
+  },
+  {
+    "char": "而",
+    "bbox": [
+      640.0,
+      1025.0,
+      751.0,
+      1082.0
+    ],
+    "id": "8f36e9d3-3937-487d-a242-e7b679580c79",
+    "row": 7,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 0
+  },
+  {
+    "char": "不",
+    "bbox": [
+      640.0,
+      1082.0,
+      751.0,
+      1194.0
+    ],
+    "id": "8e372f6a-1204-44d6-8a0f-b971cce815e5",
+    "row": 8,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 0
+  },
+  {
+    "char": "取",
+    "bbox": [
+      640.0,
+      1194.0,
+      751.0,
+      1348.0
+    ],
+    "id": "eafa287d-4f90-4a55-a131-337f3d399623",
+    "row": 9,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 0
+  },
+  {
+    "char": "相",
+    "bbox": [
+      527.0,
+      165.0,
+      637.0,
+      248.0
+    ],
+    "id": "936220d7-13e2-4379-8dc8-b221005d607e",
+    "row": 0,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 1
+  },
+  {
+    "char": "即",
+    "bbox": [
+      527.0,
+      248.0,
+      637.0,
+      366.0
+    ],
+    "id": "512f6748-f602-4e80-847e-83086f8858ae",
+    "row": 1,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 1
+  },
+  {
+    "char": "合",
+    "bbox": [
+      527.0,
+      366.0,
+      637.0,
+      485.0
+    ],
+    "id": "713bfddb-dbcb-4bce-b6ee-4347f6b0e86e",
+    "row": 2,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 1
+  },
+  {
+    "char": "无",
+    "bbox": [
+      527.0,
+      485.0,
+      637.0,
+      608.0
+    ],
+    "id": "e9bfe5b9-278e-4cc1-9ffc-e76f670bc284",
+    "row": 3,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 1
+  },
+  {
+    "char": "生",
+    "bbox": [
+      527.0,
+      608.0,
+      637.0,
+      726.0
+    ],
+    "id": "0f50ff8a-f2b1-4473-9c3a-462c03dd2ff4",
+    "row": 4,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 1
+  },
+  {
+    "char": "最",
+    "bbox": [
+      527.0,
+      726.0,
+      637.0,
+      840.0
+    ],
+    "id": "13119bf5-3d5b-41bd-88cc-966bec94a968",
+    "row": 5,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 1
+  },
+  {
+    "char": "上",
+    "bbox": [
+      527.0,
+      840.0,
+      637.0,
+      958.0
+    ],
+    "id": "df9dc1f8-8587-4085-acc0-8a530ea89ddd",
+    "row": 6,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 1
+  },
+  {
+    "char": "之",
+    "bbox": [
+      527.0,
+      958.0,
+      637.0,
+      1145.0
+    ],
+    "id": "01dfb9e4-da01-4ead-a1f0-b17b9fad7b4f",
+    "row": 7,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 1
+  },
+  {
+    "char": "理",
+    "bbox": [
+      527.0,
+      1145.0,
+      637.0,
+      1195.0
+    ],
+    "id": "eded46e6-e391-42d6-af2b-263a42ebb875",
+    "row": 8,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 1
+  },
+  {
+    "char": "额",
+    "bbox": [
+      527.0,
+      1195.0,
+      637.0,
+      1348.0
+    ],
+    "id": "56862f8c-172e-44d1-acca-0d8ff1cbffe6",
+    "row": 9,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 1
+  },
+  {
+    "char": "迷",
+    "bbox": [
+      429.0,
+      163.0,
+      533.0,
+      247.0
+    ],
+    "id": "ea4031ac-9e10-44e4-9552-e5d2da2bc7a7",
+    "row": 0,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 2
+  },
+  {
+    "char": "夫",
+    "bbox": [
+      429.0,
+      247.0,
+      533.0,
+      431.0
+    ],
+    "id": "d9176bf6-855f-4472-9743-c0d2158077fd",
+    "row": 1,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 2
+  },
+  {
+    "char": "也",
+    "bbox": [
+      429.0,
+      431.0,
+      533.0,
+      547.0
+    ],
+    "id": "9beb6f7f-53c2-4cba-afd2-6da194fc6805",
+    "row": 2,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 2
+  },
+  {
+    "char": "小",
+    "bbox": [
+      429.0,
+      547.0,
+      533.0,
+      648.0
+    ],
+    "id": "f4491b80-7112-43f7-aa4f-c68da9c32a90",
+    "row": 3,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 2
+  },
+  {
+    "char": "渚",
+    "bbox": [
+      429.0,
+      648.0,
+      533.0,
+      790.0
+    ],
+    "id": "b6fa33e7-ae8c-44a5-9f36-2cd96ef2dc91",
+    "row": 4,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 2
+  },
+  {
+    "char": "倾",
+    "bbox": [
+      429.0,
+      790.0,
+      533.0,
+      896.0
+    ],
+    "id": "5454355b-cf0a-4f18-b53b-a71c0ab2cf2f",
+    "row": 5,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 2
+  },
+  {
+    "char": "襟",
+    "bbox": [
+      429.0,
+      896.0,
+      533.0,
+      958.0
+    ],
+    "id": "5ef619ce-27e4-4221-8670-e04f33b922b4",
+    "row": 6,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 2
+  },
+  {
+    "char": "岂",
+    "bbox": [
+      429.0,
+      958.0,
+      533.0,
+      1090.0
+    ],
+    "id": "898bb6ed-4174-4481-9534-7ac250a9974f",
+    "row": 7,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 2
+  },
+  {
+    "char": "陶",
+    "bbox": [
+      429.0,
+      1090.0,
+      533.0,
+      1204.0
+    ],
+    "id": "f45236e0-9600-40b8-8ad8-eb5d029285d2",
+    "row": 8,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 2
+  },
+  {
+    "char": "尘",
+    "bbox": [
+      429.0,
+      1204.0,
+      533.0,
+      1350.0
+    ],
+    "id": "f28e5448-ed3e-4bf3-bdef-9c8cdac30fa4",
+    "row": 9,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 2
+  },
+  {
+    "char": "惑",
+    "bbox": [
+      310.0,
+      165.0,
+      431.0,
+      248.0
+    ],
+    "id": "12cb3ae2-ac22-47a1-97ce-1e39ba1f7ea7",
+    "row": 0,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 3
+  },
+  {
+    "char": "众",
+    "bbox": [
+      310.0,
+      248.0,
+      431.0,
+      435.0
+    ],
+    "id": "130d22f1-21b8-4ba5-a742-6c68f4efe4ec",
+    "row": 1,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 3
+  },
+  {
+    "char": "源",
+    "bbox": [
+      310.0,
+      435.0,
+      431.0,
+      553.0
+    ],
+    "id": "fef351b0-b644-4ed8-a9e3-97a0c815f1b4",
+    "row": 2,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 3
+  },
+  {
+    "char": "润",
+    "bbox": [
+      310.0,
+      553.0,
+      431.0,
+      671.0
+    ],
+    "id": "41e6e028-900e-4def-8b3e-6a15eaa4a179",
+    "row": 3,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 3
+  },
+  {
+    "char": "想",
+    "bbox": [
+      310.0,
+      671.0,
+      431.0,
+      780.0
+    ],
+    "id": "6923614b-f76d-41a8-ad8b-496ae6bf1bec",
+    "row": 4,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 3
+  },
+  {
+    "char": "方",
+    "bbox": [
+      310.0,
+      780.0,
+      431.0,
+      907.0
+    ],
+    "id": "53630b5a-2bd2-4ffe-8810-ca4a968f3cf3",
+    "row": 5,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 3
+  },
+  {
+    "char": "洗",
+    "bbox": [
+      310.0,
+      907.0,
+      431.0,
+      1025.0
+    ],
+    "id": "4073001d-03ce-484b-8488-898bcfa29cf8",
+    "row": 6,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 3
+  },
+  {
+    "char": "繁",
+    "bbox": [
+      310.0,
+      1025.0,
+      431.0,
+      1074.0
+    ],
+    "id": "db4786e1-8f2d-44a6-9021-83de4aa7b19b",
+    "row": 7,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 3
+  },
+  {
+    "char": "疑",
+    "bbox": [
+      310.0,
+      1074.0,
+      431.0,
+      1205.0
+    ],
+    "id": "524cdb0e-35d2-4a4f-bc7c-55d44ed5a040",
+    "row": 8,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 3
+  },
+  {
+    "char": "燃",
+    "bbox": [
+      310.0,
+      1205.0,
+      431.0,
+      1345.0
+    ],
+    "id": "aef00f9e-e14b-4f28-bfb9-4034646a37c8",
+    "row": 9,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 3
+  },
+  {
+    "char": "入",
+    "bbox": [
+      211.0,
+      163.0,
+      310.0,
+      315.0
+    ],
+    "id": "5eb82d6f-19ec-4a66-a7f9-73f8098a0312",
+    "row": 0,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 4
+  },
+  {
+    "char": "阇",
+    "bbox": [
+      211.0,
+      315.0,
+      310.0,
+      417.0
+    ],
+    "id": "8ccbaa3c-2fa4-4ea8-b70a-1e56712f44f3",
+    "row": 1,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 4
+  },
+  {
+    "char": "之",
+    "bbox": [
+      211.0,
+      417.0,
+      310.0,
+      527.0
+    ],
+    "id": "db22cd60-4799-4d79-a51c-6596f1bbe79c",
+    "row": 2,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 4
+  },
+  {
+    "char": "宝",
+    "bbox": [
+      211.0,
+      527.0,
+      310.0,
+      670.0
+    ],
+    "id": "6b7f2020-af43-413e-85f3-a7040f376205",
+    "row": 3,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 4
+  },
+  {
+    "char": "灯",
+    "bbox": [
+      211.0,
+      670.0,
+      310.0,
+      788.0
+    ],
+    "id": "585dc8cc-ac24-4bed-ba6e-d58d87b726a4",
+    "row": 4,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 4
+  },
+  {
+    "char": "获",
+    "bbox": [
+      211.0,
+      788.0,
+      310.0,
+      838.0
+    ],
+    "id": "6aa0db6f-559d-492f-9950-a5f5dbeea095",
+    "row": 5,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 4
+  },
+  {
+    "char": "在",
+    "bbox": [
+      211.0,
+      838.0,
+      310.0,
+      965.0
+    ],
+    "id": "3153d7ce-26e8-4563-8447-16879ebd654c",
+    "row": 6,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 4
+  },
+  {
+    "char": "领",
+    "bbox": [
+      211.0,
+      965.0,
+      310.0,
+      1074.0
+    ],
+    "id": "7afd6bf1-064a-4f39-8bfa-7e1eff224858",
+    "row": 7,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 4
+  },
+  {
+    "char": "之",
+    "bbox": [
+      211.0,
+      1074.0,
+      310.0,
+      1261.0
+    ],
+    "id": "ab7b3ec1-481f-4e36-9b34-e68d3daf99b1",
+    "row": 8,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 4
+  },
+  {
+    "char": "无",
+    "bbox": [
+      211.0,
+      1261.0,
+      310.0,
+      1346.0
+    ],
+    "id": "cce4712b-d129-4023-a879-e291543f22b8",
+    "row": 9,
+    "font": "",
+    "author": "",
+    "work": "",
+    "work_dir": "",
+    "column": 4
+  }
+]

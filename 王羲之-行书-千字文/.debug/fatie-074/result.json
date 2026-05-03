@@ -1,0 +1,2193 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-074.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "不不也世尊不可以包身諸相觀於如来何以坟如来所说色相具忌有即雌具逗是名具足須菩接沙谓如来省所说法耶赏不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非具足是名具足须菩提汝谓如来有所说法耶莫",
+  "parsed_results": [
+    {
+      "text": "不不也世尊不可以包身",
+      "bbox": [
+        657,
+        156,
+        763,
+        1344
+      ],
+      "poly": [
+        [
+          657,
+          156
+        ],
+        [
+          763,
+          156
+        ],
+        [
+          763,
+          1344
+        ],
+        [
+          657,
+          1344
+        ]
+      ]
+    },
+    {
+      "text": "諸相觀於如来何以坟如",
+      "bbox": [
+        521,
+        157,
+        657,
+        1352
+      ],
+      "poly": [
+        [
+          521,
+          157
+        ],
+        [
+          657,
+          157
+        ],
+        [
+          657,
+          1352
+        ],
+        [
+          521,
+          1352
+        ]
+      ]
+    },
+    {
+      "text": "来所说色相具忌有即雌",
+      "bbox": [
+        423,
+        165,
+        537,
+        1343
+      ],
+      "poly": [
+        [
+          423,
+          165
+        ],
+        [
+          537,
+          165
+        ],
+        [
+          537,
+          1343
+        ],
+        [
+          423,
+          1343
+        ]
+      ]
+    },
+    {
+      "text": "具逗是名具足須菩接",
+      "bbox": [
+        308,
+        157,
+        417,
+        1339
+      ],
+      "poly": [
+        [
+          308,
+          157
+        ],
+        [
+          417,
+          157
+        ],
+        [
+          417,
+          1339
+        ],
+        [
+          308,
+          1339
+        ]
+      ]
+    },
+    {
+      "text": "沙谓如，来省所说法耶赏",
+      "bbox": [
+        193,
+        150,
+        317,
+        1346
+      ],
+      "poly": [
+        [
+          193,
+          150
+        ],
+        [
+          317,
+          150
+        ],
+        [
+          317,
+          1346
+        ],
+        [
+          193,
+          1346
+        ]
+      ]
+    },
+    {
+      "text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "poly": [
+        [
+          161,
+          148
+        ],
+        [
+          191,
+          148
+        ],
+        [
+          191,
+          996
+        ],
+        [
+          161,
+          996
+        ]
+      ]
+    },
+    {
+      "text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "poly": [
+        [
+          127,
+          146
+        ],
+        [
+          157,
+          146
+        ],
+        [
+          157,
+          681
+        ],
+        [
+          127,
+          681
+        ]
+      ]
+    },
+    {
+      "text": "69",
+      "bbox": [
+        0,
+        1437,
+        25,
+        1458
+      ],
+      "poly": [
+        [
+          0,
+          1437
+        ],
+        [
+          25,
+          1437
+        ],
+        [
+          25,
+          1458
+        ],
+        [
+          0,
+          1458
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "不",
+      "bbox": [
+        657.0,
+        156.0,
+        763.0,
+        314.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "不不也世尊不可以包身",
+      "col_bbox": [
+        657,
+        156,
+        763,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        657.0,
+        314.0,
+        763.0,
+        436.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "不不也世尊不可以包身",
+      "col_bbox": [
+        657,
+        156,
+        763,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "也",
+      "bbox": [
+        657.0,
+        436.0,
+        763.0,
+        536.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "不不也世尊不可以包身",
+      "col_bbox": [
+        657,
+        156,
+        763,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        657.0,
+        536.0,
+        763.0,
+        689.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "不不也世尊不可以包身",
+      "col_bbox": [
+        657,
+        156,
+        763,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        657.0,
+        689.0,
+        763.0,
+        781.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "不不也世尊不可以包身",
+      "col_bbox": [
+        657,
+        156,
+        763,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        657.0,
+        781.0,
+        763.0,
+        904.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "不不也世尊不可以包身",
+      "col_bbox": [
+        657,
+        156,
+        763,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        657.0,
+        904.0,
+        763.0,
+        1045.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "不不也世尊不可以包身",
+      "col_bbox": [
+        657,
+        156,
+        763,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        657.0,
+        1045.0,
+        763.0,
+        1141.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "不不也世尊不可以包身",
+      "col_bbox": [
+        657,
+        156,
+        763,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "包",
+      "bbox": [
+        657.0,
+        1141.0,
+        763.0,
+        1253.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "不不也世尊不可以包身",
+      "col_bbox": [
+        657,
+        156,
+        763,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        657.0,
+        1253.0,
+        763.0,
+        1344.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "不不也世尊不可以包身",
+      "col_bbox": [
+        657,
+        156,
+        763,
+        1344
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "諸",
+      "bbox": [
+        521.0,
+        157.0,
+        657.0,
+        242.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "諸相觀於如来何以坟如",
+      "col_bbox": [
+        521,
+        157,
+        657,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        521.0,
+        242.0,
+        657.0,
+        361.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "諸相觀於如来何以坟如",
+      "col_bbox": [
+        521,
+        157,
+        657,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "觀",
+      "bbox": [
+        521.0,
+        361.0,
+        657.0,
+        483.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "諸相觀於如来何以坟如",
+      "col_bbox": [
+        521,
+        157,
+        657,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "於",
+      "bbox": [
+        521.0,
+        483.0,
+        657.0,
+        620.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "諸相觀於如来何以坟如",
+      "col_bbox": [
+        521,
+        157,
+        657,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        521.0,
+        620.0,
+        657.0,
+        751.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "諸相觀於如来何以坟如",
+      "col_bbox": [
+        521,
+        157,
+        657,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        521.0,
+        751.0,
+        657.0,
+        904.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "諸相觀於如来何以坟如",
+      "col_bbox": [
+        521,
+        157,
+        657,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        521.0,
+        904.0,
+        657.0,
+        985.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "諸相觀於如来何以坟如",
+      "col_bbox": [
+        521,
+        157,
+        657,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        521.0,
+        985.0,
+        657.0,
+        1111.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "諸相觀於如来何以坟如",
+      "col_bbox": [
+        521,
+        157,
+        657,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "坟",
+      "bbox": [
+        521.0,
+        1111.0,
+        657.0,
+        1198.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "諸相觀於如来何以坟如",
+      "col_bbox": [
+        521,
+        157,
+        657,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        521.0,
+        1198.0,
+        657.0,
+        1352.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 19,
+      "col_text": "諸相觀於如来何以坟如",
+      "col_bbox": [
+        521,
+        157,
+        657,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        423.0,
+        165.0,
+        537.0,
+        316.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 20,
+      "col_text": "来所说色相具忌有即雌",
+      "col_bbox": [
+        423,
+        165,
+        537,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        423.0,
+        316.0,
+        537.0,
+        365.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 21,
+      "col_text": "来所说色相具忌有即雌",
+      "col_bbox": [
+        423,
+        165,
+        537,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        423.0,
+        365.0,
+        537.0,
+        483.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 22,
+      "col_text": "来所说色相具忌有即雌",
+      "col_bbox": [
+        423,
+        165,
+        537,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "色",
+      "bbox": [
+        423.0,
+        483.0,
+        537.0,
+        604.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 23,
+      "col_text": "来所说色相具忌有即雌",
+      "col_bbox": [
+        423,
+        165,
+        537,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        423.0,
+        604.0,
+        537.0,
+        719.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 24,
+      "col_text": "来所说色相具忌有即雌",
+      "col_bbox": [
+        423,
+        165,
+        537,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "具",
+      "bbox": [
+        423.0,
+        719.0,
+        537.0,
+        840.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 25,
+      "col_text": "来所说色相具忌有即雌",
+      "col_bbox": [
+        423,
+        165,
+        537,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "忌",
+      "bbox": [
+        423.0,
+        840.0,
+        537.0,
+        954.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 26,
+      "col_text": "来所说色相具忌有即雌",
+      "col_bbox": [
+        423,
+        165,
+        537,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        423.0,
+        954.0,
+        537.0,
+        1072.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 27,
+      "col_text": "来所说色相具忌有即雌",
+      "col_bbox": [
+        423,
+        165,
+        537,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        423.0,
+        1072.0,
+        537.0,
+        1190.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 28,
+      "col_text": "来所说色相具忌有即雌",
+      "col_bbox": [
+        423,
+        165,
+        537,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "雌",
+      "bbox": [
+        423.0,
+        1190.0,
+        537.0,
+        1343.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 29,
+      "col_text": "来所说色相具忌有即雌",
+      "col_bbox": [
+        423,
+        165,
+        537,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "具",
+      "bbox": [
+        308.0,
+        157.0,
+        417.0,
+        326.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "具逗是名具足須菩接",
+      "col_bbox": [
+        308,
+        157,
+        417,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "逗",
+      "bbox": [
+        308.0,
+        326.0,
+        417.0,
+        454.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "具逗是名具足須菩接",
+      "col_bbox": [
+        308,
+        157,
+        417,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        308.0,
+        454.0,
+        417.0,
+        584.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "具逗是名具足須菩接",
+      "col_bbox": [
+        308,
+        157,
+        417,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        308.0,
+        584.0,
+        417.0,
+        715.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "具逗是名具足須菩接",
+      "col_bbox": [
+        308,
+        157,
+        417,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "具",
+      "bbox": [
+        308.0,
+        715.0,
+        417.0,
+        843.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "具逗是名具足須菩接",
+      "col_bbox": [
+        308,
+        157,
+        417,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "足",
+      "bbox": [
+        308.0,
+        843.0,
+        417.0,
+        983.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "具逗是名具足須菩接",
+      "col_bbox": [
+        308,
+        157,
+        417,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "須",
+      "bbox": [
+        308.0,
+        983.0,
+        417.0,
+        1052.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "具逗是名具足須菩接",
+      "col_bbox": [
+        308,
+        157,
+        417,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        308.0,
+        1052.0,
+        417.0,
+        1185.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "具逗是名具足須菩接",
+      "col_bbox": [
+        308,
+        157,
+        417,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "接",
+      "bbox": [
+        308.0,
+        1185.0,
+        417.0,
+        1339.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "具逗是名具足須菩接",
+      "col_bbox": [
+        308,
+        157,
+        417,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沙",
+      "bbox": [
+        193.0,
+        150.0,
+        317.0,
+        307.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 39,
+      "col_text": "沙谓如，来省所说法耶赏",
+      "col_bbox": [
+        193,
+        150,
+        317,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "谓",
+      "bbox": [
+        193.0,
+        307.0,
+        317.0,
+        419.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 40,
+      "col_text": "沙谓如，来省所说法耶赏",
+      "col_bbox": [
+        193,
+        150,
+        317,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        193.0,
+        419.0,
+        317.0,
+        529.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 41,
+      "col_text": "沙谓如，来省所说法耶赏",
+      "col_bbox": [
+        193,
+        150,
+        317,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        193.0,
+        572.0,
+        317.0,
+        654.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 42,
+      "col_text": "沙谓如，来省所说法耶赏",
+      "col_bbox": [
+        193,
+        150,
+        317,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "省",
+      "bbox": [
+        193.0,
+        654.0,
+        317.0,
+        775.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 43,
+      "col_text": "沙谓如，来省所说法耶赏",
+      "col_bbox": [
+        193,
+        150,
+        317,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        193.0,
+        775.0,
+        317.0,
+        926.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 44,
+      "col_text": "沙谓如，来省所说法耶赏",
+      "col_bbox": [
+        193,
+        150,
+        317,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        193.0,
+        926.0,
+        317.0,
+        1048.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 45,
+      "col_text": "沙谓如，来省所说法耶赏",
+      "col_bbox": [
+        193,
+        150,
+        317,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        193.0,
+        1048.0,
+        317.0,
+        1145.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 46,
+      "col_text": "沙谓如，来省所说法耶赏",
+      "col_bbox": [
+        193,
+        150,
+        317,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "耶",
+      "bbox": [
+        193.0,
+        1145.0,
+        317.0,
+        1285.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 47,
+      "col_text": "沙谓如，来省所说法耶赏",
+      "col_bbox": [
+        193,
+        150,
+        317,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "赏",
+      "bbox": [
+        193.0,
+        1285.0,
+        317.0,
+        1346.0
+      ],
+      "column": 4,
+      "row": 10,
+      "global_index": 48,
+      "col_text": "沙谓如，来省所说法耶赏",
+      "col_bbox": [
+        193,
+        150,
+        317,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        161.0,
+        148.0,
+        191.0,
+        175.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 49,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        161.0,
+        175.0,
+        191.0,
+        201.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 50,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "也",
+      "bbox": [
+        161.0,
+        201.0,
+        191.0,
+        230.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 51,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        161.0,
+        230.0,
+        191.0,
+        255.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 52,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        161.0,
+        255.0,
+        191.0,
+        281.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 53,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        161.0,
+        281.0,
+        191.0,
+        309.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 54,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        161.0,
+        309.0,
+        191.0,
+        337.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 55,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        161.0,
+        337.0,
+        191.0,
+        366.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 56,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "色",
+      "bbox": [
+        161.0,
+        366.0,
+        191.0,
+        394.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 57,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "身",
+      "bbox": [
+        161.0,
+        394.0,
+        191.0,
+        422.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 58,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诸",
+      "bbox": [
+        161.0,
+        422.0,
+        191.0,
+        465.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 59,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        161.0,
+        465.0,
+        191.0,
+        494.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 60,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "观",
+      "bbox": [
+        161.0,
+        494.0,
+        191.0,
+        522.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 61,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "于",
+      "bbox": [
+        161.0,
+        522.0,
+        191.0,
+        547.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 62,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        161.0,
+        547.0,
+        191.0,
+        575.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 63,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        161.0,
+        575.0,
+        191.0,
+        601.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 64,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        161.0,
+        601.0,
+        191.0,
+        628.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 65,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        161.0,
+        628.0,
+        191.0,
+        654.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 66,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        161.0,
+        654.0,
+        191.0,
+        682.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 67,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        161.0,
+        682.0,
+        191.0,
+        709.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 68,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        161.0,
+        709.0,
+        191.0,
+        733.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 69,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        161.0,
+        733.0,
+        191.0,
+        761.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 70,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        161.0,
+        761.0,
+        191.0,
+        790.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 71,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "色",
+      "bbox": [
+        161.0,
+        790.0,
+        191.0,
+        818.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 72,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        161.0,
+        818.0,
+        191.0,
+        846.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 73,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "具",
+      "bbox": [
+        161.0,
+        846.0,
+        191.0,
+        889.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 74,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "足",
+      "bbox": [
+        161.0,
+        889.0,
+        191.0,
+        918.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 75,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        161.0,
+        918.0,
+        191.0,
+        946.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 76,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        161.0,
+        946.0,
+        191.0,
+        971.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 77,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        161.0,
+        971.0,
+        191.0,
+        996.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 78,
+      "col_text": "不不也世尊不可以色身诸相观于如来何以故如来所说色相具足者即非",
+      "col_bbox": [
+        161,
+        148,
+        191,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "具",
+      "bbox": [
+        127.0,
+        146.0,
+        157.0,
+        175.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 79,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "足",
+      "bbox": [
+        127.0,
+        175.0,
+        157.0,
+        201.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 80,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        127.0,
+        201.0,
+        157.0,
+        230.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 81,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        127.0,
+        230.0,
+        157.0,
+        255.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 82,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "具",
+      "bbox": [
+        127.0,
+        255.0,
+        157.0,
+        282.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 83,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "足",
+      "bbox": [
+        127.0,
+        282.0,
+        157.0,
+        309.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 84,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        127.0,
+        309.0,
+        157.0,
+        336.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 85,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        127.0,
+        336.0,
+        157.0,
+        363.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 86,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        127.0,
+        363.0,
+        157.0,
+        391.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 87,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "汝",
+      "bbox": [
+        127.0,
+        391.0,
+        157.0,
+        419.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 88,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "谓",
+      "bbox": [
+        127.0,
+        419.0,
+        157.0,
+        455.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 89,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        127.0,
+        455.0,
+        157.0,
+        490.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 90,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        127.0,
+        490.0,
+        157.0,
+        519.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 91,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        127.0,
+        519.0,
+        157.0,
+        547.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 92,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        127.0,
+        547.0,
+        157.0,
+        575.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 93,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        127.0,
+        575.0,
+        157.0,
+        601.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 94,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        127.0,
+        601.0,
+        157.0,
+        627.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 95,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "耶",
+      "bbox": [
+        127.0,
+        627.0,
+        157.0,
+        654.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 96,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "莫",
+      "bbox": [
+        127.0,
+        654.0,
+        157.0,
+        681.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 97,
+      "col_text": "具足是名具足须菩提汝谓如来有所说法耶莫",
+      "col_bbox": [
+        127,
+        146,
+        157,
+        681
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 98,
+  "timestamp": "2026-05-02T23:11:41.051447"
+}

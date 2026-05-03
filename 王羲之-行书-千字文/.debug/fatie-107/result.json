@@ -1,0 +1,1733 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-107.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几翰林侍书学士尚书库部郎中賜紫肉浪是非乃兴经義終日不違有能信嚮或否發揮賠珠心印其殆書庫部郎中賜紫",
+  "parsed_results": [
+    {
+      "text": "1C2",
+      "bbox": [
+        837,
+        1408,
+        870,
+        1432
+      ],
+      "poly": [
+        [
+          837,
+          1408
+        ],
+        [
+          870,
+          1408
+        ],
+        [
+          870,
+          1432
+        ],
+        [
+          837,
+          1432
+        ]
+      ]
+    },
+    {
+      "text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "poly": [
+        [
+          713,
+          122
+        ],
+        [
+          740,
+          122
+        ],
+        [
+          740,
+          919
+        ],
+        [
+          713,
+          919
+        ]
+      ]
+    },
+    {
+      "text": "翰林侍书学士尚书库部郎中賜紫",
+      "bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "poly": [
+        [
+          678,
+          122
+        ],
+        [
+          704,
+          122
+        ],
+        [
+          704,
+          523
+        ],
+        [
+          678,
+          523
+        ]
+      ]
+    },
+    {
+      "text": "肉浪是非乃兴经義終日",
+      "bbox": [
+        561,
+        121,
+        678,
+        1317
+      ],
+      "poly": [
+        [
+          561,
+          121
+        ],
+        [
+          678,
+          121
+        ],
+        [
+          678,
+          1317
+        ],
+        [
+          561,
+          1317
+        ]
+      ]
+    },
+    {
+      "text": "不違有能信嚮或否發揮",
+      "bbox": [
+        448,
+        125,
+        566,
+        1309
+      ],
+      "poly": [
+        [
+          448,
+          125
+        ],
+        [
+          566,
+          125
+        ],
+        [
+          566,
+          1309
+        ],
+        [
+          448,
+          1309
+        ]
+      ]
+    },
+    {
+      "text": "賠珠心印其殆",
+      "bbox": [
+        325,
+        132,
+        464,
+        1319
+      ],
+      "poly": [
+        [
+          325,
+          132
+        ],
+        [
+          464,
+          132
+        ],
+        [
+          464,
+          1319
+        ],
+        [
+          325,
+          1319
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "bbox": [
+        209,
+        363,
+        338,
+        1322
+      ],
+      "poly": [
+        [
+          209,
+          363
+        ],
+        [
+          338,
+          363
+        ],
+        [
+          338,
+          1322
+        ],
+        [
+          209,
+          1322
+        ]
+      ]
+    },
+    {
+      "text": "書庫部郎中賜紫",
+      "bbox": [
+        105,
+        364,
+        215,
+        1326
+      ],
+      "poly": [
+        [
+          105,
+          364
+        ],
+        [
+          215,
+          364
+        ],
+        [
+          215,
+          1326
+        ],
+        [
+          105,
+          1326
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "内",
+      "bbox": [
+        713.0,
+        122.0,
+        740.0,
+        149.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "泯",
+      "bbox": [
+        713.0,
+        149.0,
+        740.0,
+        175.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        713.0,
+        175.0,
+        740.0,
+        203.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        713.0,
+        203.0,
+        740.0,
+        229.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乃",
+      "bbox": [
+        713.0,
+        229.0,
+        740.0,
+        256.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "与",
+      "bbox": [
+        713.0,
+        256.0,
+        740.0,
+        284.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        713.0,
+        284.0,
+        740.0,
+        313.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "义",
+      "bbox": [
+        713.0,
+        313.0,
+        740.0,
+        356.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "终",
+      "bbox": [
+        713.0,
+        356.0,
+        740.0,
+        385.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "日",
+      "bbox": [
+        713.0,
+        385.0,
+        740.0,
+        405.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        713.0,
+        405.0,
+        740.0,
+        441.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 10,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "违",
+      "bbox": [
+        713.0,
+        441.0,
+        740.0,
+        469.0
+      ],
+      "column": 1,
+      "row": 11,
+      "global_index": 11,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        713.0,
+        469.0,
+        740.0,
+        494.0
+      ],
+      "column": 1,
+      "row": 12,
+      "global_index": 12,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        713.0,
+        494.0,
+        740.0,
+        522.0
+      ],
+      "column": 1,
+      "row": 13,
+      "global_index": 13,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "信",
+      "bbox": [
+        713.0,
+        522.0,
+        740.0,
+        549.0
+      ],
+      "column": 1,
+      "row": 14,
+      "global_index": 14,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "向",
+      "bbox": [
+        713.0,
+        549.0,
+        740.0,
+        573.0
+      ],
+      "column": 1,
+      "row": 15,
+      "global_index": 15,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "或",
+      "bbox": [
+        713.0,
+        573.0,
+        740.0,
+        600.0
+      ],
+      "column": 1,
+      "row": 16,
+      "global_index": 16,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "善",
+      "bbox": [
+        713.0,
+        600.0,
+        740.0,
+        627.0
+      ],
+      "column": 1,
+      "row": 17,
+      "global_index": 17,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "发",
+      "bbox": [
+        713.0,
+        627.0,
+        740.0,
+        654.0
+      ],
+      "column": 1,
+      "row": 18,
+      "global_index": 18,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "挥",
+      "bbox": [
+        713.0,
+        654.0,
+        740.0,
+        683.0
+      ],
+      "column": 1,
+      "row": 19,
+      "global_index": 19,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "髻",
+      "bbox": [
+        713.0,
+        683.0,
+        740.0,
+        711.0
+      ],
+      "column": 1,
+      "row": 20,
+      "global_index": 20,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "珠",
+      "bbox": [
+        713.0,
+        711.0,
+        740.0,
+        755.0
+      ],
+      "column": 1,
+      "row": 21,
+      "global_index": 21,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        713.0,
+        755.0,
+        740.0,
+        783.0
+      ],
+      "column": 1,
+      "row": 22,
+      "global_index": 22,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "印",
+      "bbox": [
+        713.0,
+        783.0,
+        740.0,
+        811.0
+      ],
+      "column": 1,
+      "row": 23,
+      "global_index": 23,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        713.0,
+        811.0,
+        740.0,
+        840.0
+      ],
+      "column": 1,
+      "row": 24,
+      "global_index": 24,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "殆",
+      "bbox": [
+        713.0,
+        840.0,
+        740.0,
+        867.0
+      ],
+      "column": 1,
+      "row": 25,
+      "global_index": 25,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "庶",
+      "bbox": [
+        713.0,
+        867.0,
+        740.0,
+        893.0
+      ],
+      "column": 1,
+      "row": 26,
+      "global_index": 26,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "几",
+      "bbox": [
+        713.0,
+        893.0,
+        740.0,
+        919.0
+      ],
+      "column": 1,
+      "row": 27,
+      "global_index": 27,
+      "col_text": "内泯是非乃与经义终日不违有能信向或善发挥髻珠心印其殆庶几",
+      "col_bbox": [
+        713,
+        122,
+        740,
+        919
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "翰",
+      "bbox": [
+        678.0,
+        122.0,
+        704.0,
+        150.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 28,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "林",
+      "bbox": [
+        678.0,
+        150.0,
+        704.0,
+        174.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 29,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "侍",
+      "bbox": [
+        678.0,
+        174.0,
+        704.0,
+        202.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 30,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "书",
+      "bbox": [
+        678.0,
+        202.0,
+        704.0,
+        228.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 31,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "学",
+      "bbox": [
+        678.0,
+        228.0,
+        704.0,
+        257.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 32,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "士",
+      "bbox": [
+        678.0,
+        257.0,
+        704.0,
+        285.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 33,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尚",
+      "bbox": [
+        678.0,
+        285.0,
+        704.0,
+        329.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 34,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "书",
+      "bbox": [
+        678.0,
+        329.0,
+        704.0,
+        358.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 35,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "库",
+      "bbox": [
+        678.0,
+        358.0,
+        704.0,
+        386.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 36,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "部",
+      "bbox": [
+        678.0,
+        386.0,
+        704.0,
+        415.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 37,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "郎",
+      "bbox": [
+        678.0,
+        415.0,
+        704.0,
+        440.0
+      ],
+      "column": 2,
+      "row": 10,
+      "global_index": 38,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        678.0,
+        440.0,
+        704.0,
+        467.0
+      ],
+      "column": 2,
+      "row": 11,
+      "global_index": 39,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "賜",
+      "bbox": [
+        678.0,
+        467.0,
+        704.0,
+        495.0
+      ],
+      "column": 2,
+      "row": 12,
+      "global_index": 40,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "紫",
+      "bbox": [
+        678.0,
+        495.0,
+        704.0,
+        523.0
+      ],
+      "column": 2,
+      "row": 13,
+      "global_index": 41,
+      "col_text": "翰林侍书学士尚书库部郎中賜紫",
+      "col_bbox": [
+        678,
+        122,
+        704,
+        523
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "肉",
+      "bbox": [
+        561.0,
+        121.0,
+        678.0,
+        269.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 42,
+      "col_text": "肉浪是非乃兴经義終日",
+      "col_bbox": [
+        561,
+        121,
+        678,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "浪",
+      "bbox": [
+        561.0,
+        269.0,
+        678.0,
+        384.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 43,
+      "col_text": "肉浪是非乃兴经義終日",
+      "col_bbox": [
+        561,
+        121,
+        678,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        561.0,
+        384.0,
+        678.0,
+        507.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 44,
+      "col_text": "肉浪是非乃兴经義終日",
+      "col_bbox": [
+        561,
+        121,
+        678,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        561.0,
+        507.0,
+        678.0,
+        630.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 45,
+      "col_text": "肉浪是非乃兴经義終日",
+      "col_bbox": [
+        561,
+        121,
+        678,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乃",
+      "bbox": [
+        561.0,
+        630.0,
+        678.0,
+        753.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 46,
+      "col_text": "肉浪是非乃兴经義終日",
+      "col_bbox": [
+        561,
+        121,
+        678,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "兴",
+      "bbox": [
+        561.0,
+        753.0,
+        678.0,
+        872.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 47,
+      "col_text": "肉浪是非乃兴经義終日",
+      "col_bbox": [
+        561,
+        121,
+        678,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        561.0,
+        872.0,
+        678.0,
+        925.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 48,
+      "col_text": "肉浪是非乃兴经義終日",
+      "col_bbox": [
+        561,
+        121,
+        678,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "義",
+      "bbox": [
+        561.0,
+        925.0,
+        678.0,
+        1071.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 49,
+      "col_text": "肉浪是非乃兴经義終日",
+      "col_bbox": [
+        561,
+        121,
+        678,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "終",
+      "bbox": [
+        561.0,
+        1071.0,
+        678.0,
+        1180.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 50,
+      "col_text": "肉浪是非乃兴经義終日",
+      "col_bbox": [
+        561,
+        121,
+        678,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "日",
+      "bbox": [
+        561.0,
+        1180.0,
+        678.0,
+        1317.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 51,
+      "col_text": "肉浪是非乃兴经義終日",
+      "col_bbox": [
+        561,
+        121,
+        678,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        448.0,
+        125.0,
+        566.0,
+        259.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 52,
+      "col_text": "不違有能信嚮或否發揮",
+      "col_bbox": [
+        448,
+        125,
+        566,
+        1309
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "違",
+      "bbox": [
+        448.0,
+        259.0,
+        566.0,
+        382.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 53,
+      "col_text": "不違有能信嚮或否發揮",
+      "col_bbox": [
+        448,
+        125,
+        566,
+        1309
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        448.0,
+        382.0,
+        566.0,
+        503.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 54,
+      "col_text": "不違有能信嚮或否發揮",
+      "col_bbox": [
+        448,
+        125,
+        566,
+        1309
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        448.0,
+        503.0,
+        566.0,
+        613.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 55,
+      "col_text": "不違有能信嚮或否發揮",
+      "col_bbox": [
+        448,
+        125,
+        566,
+        1309
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "信",
+      "bbox": [
+        448.0,
+        613.0,
+        566.0,
+        750.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 56,
+      "col_text": "不違有能信嚮或否發揮",
+      "col_bbox": [
+        448,
+        125,
+        566,
+        1309
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "嚮",
+      "bbox": [
+        448.0,
+        750.0,
+        566.0,
+        869.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 57,
+      "col_text": "不違有能信嚮或否發揮",
+      "col_bbox": [
+        448,
+        125,
+        566,
+        1309
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "或",
+      "bbox": [
+        448.0,
+        869.0,
+        566.0,
+        987.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 58,
+      "col_text": "不違有能信嚮或否發揮",
+      "col_bbox": [
+        448,
+        125,
+        566,
+        1309
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "否",
+      "bbox": [
+        448.0,
+        987.0,
+        566.0,
+        1106.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 59,
+      "col_text": "不違有能信嚮或否發揮",
+      "col_bbox": [
+        448,
+        125,
+        566,
+        1309
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "發",
+      "bbox": [
+        448.0,
+        1106.0,
+        566.0,
+        1219.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 60,
+      "col_text": "不違有能信嚮或否發揮",
+      "col_bbox": [
+        448,
+        125,
+        566,
+        1309
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "揮",
+      "bbox": [
+        448.0,
+        1219.0,
+        566.0,
+        1309.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 61,
+      "col_text": "不違有能信嚮或否發揮",
+      "col_bbox": [
+        448,
+        125,
+        566,
+        1309
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "賠",
+      "bbox": [
+        325.0,
+        132.0,
+        464.0,
+        302.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 62,
+      "col_text": "賠珠心印其殆",
+      "col_bbox": [
+        325,
+        132,
+        464,
+        1319
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "珠",
+      "bbox": [
+        325.0,
+        302.0,
+        464.0,
+        482.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 63,
+      "col_text": "賠珠心印其殆",
+      "col_bbox": [
+        325,
+        132,
+        464,
+        1319
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        325.0,
+        482.0,
+        464.0,
+        739.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 64,
+      "col_text": "賠珠心印其殆",
+      "col_bbox": [
+        325,
+        132,
+        464,
+        1319
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "印",
+      "bbox": [
+        325.0,
+        739.0,
+        464.0,
+        895.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 65,
+      "col_text": "賠珠心印其殆",
+      "col_bbox": [
+        325,
+        132,
+        464,
+        1319
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        325.0,
+        895.0,
+        464.0,
+        1062.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 66,
+      "col_text": "賠珠心印其殆",
+      "col_bbox": [
+        325,
+        132,
+        464,
+        1319
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "殆",
+      "bbox": [
+        325.0,
+        1062.0,
+        464.0,
+        1319.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 67,
+      "col_text": "賠珠心印其殆",
+      "col_bbox": [
+        325,
+        132,
+        464,
+        1319
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "書",
+      "bbox": [
+        105.0,
+        364.0,
+        215.0,
+        460.0
+      ],
+      "column": 7,
+      "row": 0,
+      "global_index": 68,
+      "col_text": "書庫部郎中賜紫",
+      "col_bbox": [
+        105,
+        364,
+        215,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "庫",
+      "bbox": [
+        105.0,
+        460.0,
+        215.0,
+        599.0
+      ],
+      "column": 7,
+      "row": 1,
+      "global_index": 69,
+      "col_text": "書庫部郎中賜紫",
+      "col_bbox": [
+        105,
+        364,
+        215,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "部",
+      "bbox": [
+        105.0,
+        599.0,
+        215.0,
+        735.0
+      ],
+      "column": 7,
+      "row": 2,
+      "global_index": 70,
+      "col_text": "書庫部郎中賜紫",
+      "col_bbox": [
+        105,
+        364,
+        215,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "郎",
+      "bbox": [
+        105.0,
+        735.0,
+        215.0,
+        873.0
+      ],
+      "column": 7,
+      "row": 3,
+      "global_index": 71,
+      "col_text": "書庫部郎中賜紫",
+      "col_bbox": [
+        105,
+        364,
+        215,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        105.0,
+        873.0,
+        215.0,
+        1010.0
+      ],
+      "column": 7,
+      "row": 4,
+      "global_index": 72,
+      "col_text": "書庫部郎中賜紫",
+      "col_bbox": [
+        105,
+        364,
+        215,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "賜",
+      "bbox": [
+        105.0,
+        1010.0,
+        215.0,
+        1151.0
+      ],
+      "column": 7,
+      "row": 5,
+      "global_index": 73,
+      "col_text": "書庫部郎中賜紫",
+      "col_bbox": [
+        105,
+        364,
+        215,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "紫",
+      "bbox": [
+        105.0,
+        1151.0,
+        215.0,
+        1326.0
+      ],
+      "column": 7,
+      "row": 6,
+      "global_index": 74,
+      "col_text": "書庫部郎中賜紫",
+      "col_bbox": [
+        105,
+        364,
+        215,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 8,
+  "total_chars": 75,
+  "timestamp": "2026-05-02T23:12:40.682899"
+}

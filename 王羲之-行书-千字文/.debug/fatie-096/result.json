@@ -1,0 +1,1486 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-096.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "新般新集金到经潢翰林传講與士銀青光禄大夫守宕薇騎常侍鄭軍新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+  "parsed_results": [
+    {
+      "text": "新般",
+      "bbox": [
+        648,
+        145,
+        754,
+        862
+      ],
+      "poly": [
+        [
+          648,
+          145
+        ],
+        [
+          754,
+          145
+        ],
+        [
+          754,
+          862
+        ],
+        [
+          648,
+          862
+        ]
+      ]
+    },
+    {
+      "text": "新集金到经潢",
+      "bbox": [
+        528,
+        144,
+        647,
+        838
+      ],
+      "poly": [
+        [
+          528,
+          144
+        ],
+        [
+          647,
+          144
+        ],
+        [
+          647,
+          838
+        ],
+        [
+          528,
+          838
+        ]
+      ]
+    },
+    {
+      "text": "翰.林传講與士銀",
+      "bbox": [
+        409,
+        372,
+        529,
+        1331
+      ],
+      "poly": [
+        [
+          409,
+          372
+        ],
+        [
+          529,
+          372
+        ],
+        [
+          529,
+          1331
+        ],
+        [
+          409,
+          1331
+        ]
+      ]
+    },
+    {
+      "text": "青光禄大夫守宕薇",
+      "bbox": [
+        301,
+        375,
+        411,
+        1327
+      ],
+      "poly": [
+        [
+          301,
+          375
+        ],
+        [
+          411,
+          375
+        ],
+        [
+          411,
+          1327
+        ],
+        [
+          301,
+          1327
+        ]
+      ]
+    },
+    {
+      "text": "騎常侍鄭軍",
+      "bbox": [
+        190,
+        385,
+        296,
+        1073
+      ],
+      "poly": [
+        [
+          190,
+          385
+        ],
+        [
+          296,
+          385
+        ],
+        [
+          296,
+          1073
+        ],
+        [
+          190,
+          1073
+        ]
+      ]
+    },
+    {
+      "text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "poly": [
+        [
+          147,
+          139
+        ],
+        [
+          177,
+          139
+        ],
+        [
+          177,
+          1201
+        ],
+        [
+          147,
+          1201
+        ]
+      ]
+    },
+    {
+      "text": "91",
+      "bbox": [
+        6,
+        1428,
+        28,
+        1449
+      ],
+      "poly": [
+        [
+          6,
+          1428
+        ],
+        [
+          28,
+          1428
+        ],
+        [
+          28,
+          1449
+        ],
+        [
+          6,
+          1449
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "新",
+      "bbox": [
+        648.0,
+        145.0,
+        754.0,
+        472.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "新般",
+      "col_bbox": [
+        648,
+        145,
+        754,
+        862
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "般",
+      "bbox": [
+        648.0,
+        472.0,
+        754.0,
+        862.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "新般",
+      "col_bbox": [
+        648,
+        145,
+        754,
+        862
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "新",
+      "bbox": [
+        528.0,
+        144.0,
+        647.0,
+        241.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 2,
+      "col_text": "新集金到经潢",
+      "col_bbox": [
+        528,
+        144,
+        647,
+        838
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "集",
+      "bbox": [
+        528.0,
+        241.0,
+        647.0,
+        407.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 3,
+      "col_text": "新集金到经潢",
+      "col_bbox": [
+        528,
+        144,
+        647,
+        838
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        528.0,
+        407.0,
+        647.0,
+        513.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 4,
+      "col_text": "新集金到经潢",
+      "col_bbox": [
+        528,
+        144,
+        647,
+        838
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "到",
+      "bbox": [
+        528.0,
+        513.0,
+        647.0,
+        632.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 5,
+      "col_text": "新集金到经潢",
+      "col_bbox": [
+        528,
+        144,
+        647,
+        838
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        528.0,
+        632.0,
+        647.0,
+        690.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 6,
+      "col_text": "新集金到经潢",
+      "col_bbox": [
+        528,
+        144,
+        647,
+        838
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "潢",
+      "bbox": [
+        528.0,
+        690.0,
+        647.0,
+        838.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 7,
+      "col_text": "新集金到经潢",
+      "col_bbox": [
+        528,
+        144,
+        647,
+        838
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "翰",
+      "bbox": [
+        409.0,
+        372.0,
+        529.0,
+        463.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 8,
+      "col_text": "翰.林传講與士銀",
+      "col_bbox": [
+        409,
+        372,
+        529,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "林",
+      "bbox": [
+        409.0,
+        576.0,
+        529.0,
+        763.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 9,
+      "col_text": "翰.林传講與士銀",
+      "col_bbox": [
+        409,
+        372,
+        529,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "传",
+      "bbox": [
+        409.0,
+        763.0,
+        529.0,
+        816.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 10,
+      "col_text": "翰.林传講與士銀",
+      "col_bbox": [
+        409,
+        372,
+        529,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "講",
+      "bbox": [
+        409.0,
+        816.0,
+        529.0,
+        958.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 11,
+      "col_text": "翰.林传講與士銀",
+      "col_bbox": [
+        409,
+        372,
+        529,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "與",
+      "bbox": [
+        409.0,
+        958.0,
+        529.0,
+        1085.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 12,
+      "col_text": "翰.林传講與士銀",
+      "col_bbox": [
+        409,
+        372,
+        529,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "士",
+      "bbox": [
+        409.0,
+        1085.0,
+        529.0,
+        1187.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 13,
+      "col_text": "翰.林传講與士銀",
+      "col_bbox": [
+        409,
+        372,
+        529,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "銀",
+      "bbox": [
+        409.0,
+        1187.0,
+        529.0,
+        1331.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 14,
+      "col_text": "翰.林传講與士銀",
+      "col_bbox": [
+        409,
+        372,
+        529,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "青",
+      "bbox": [
+        301.0,
+        375.0,
+        411.0,
+        469.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 15,
+      "col_text": "青光禄大夫守宕薇",
+      "col_bbox": [
+        301,
+        375,
+        411,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "光",
+      "bbox": [
+        301.0,
+        469.0,
+        411.0,
+        614.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 16,
+      "col_text": "青光禄大夫守宕薇",
+      "col_bbox": [
+        301,
+        375,
+        411,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "禄",
+      "bbox": [
+        301.0,
+        614.0,
+        411.0,
+        710.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 17,
+      "col_text": "青光禄大夫守宕薇",
+      "col_bbox": [
+        301,
+        375,
+        411,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        301.0,
+        710.0,
+        411.0,
+        874.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 18,
+      "col_text": "青光禄大夫守宕薇",
+      "col_bbox": [
+        301,
+        375,
+        411,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "夫",
+      "bbox": [
+        301.0,
+        874.0,
+        411.0,
+        947.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 19,
+      "col_text": "青光禄大夫守宕薇",
+      "col_bbox": [
+        301,
+        375,
+        411,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "守",
+      "bbox": [
+        301.0,
+        947.0,
+        411.0,
+        1054.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 20,
+      "col_text": "青光禄大夫守宕薇",
+      "col_bbox": [
+        301,
+        375,
+        411,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宕",
+      "bbox": [
+        301.0,
+        1054.0,
+        411.0,
+        1177.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 21,
+      "col_text": "青光禄大夫守宕薇",
+      "col_bbox": [
+        301,
+        375,
+        411,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薇",
+      "bbox": [
+        301.0,
+        1177.0,
+        411.0,
+        1327.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 22,
+      "col_text": "青光禄大夫守宕薇",
+      "col_bbox": [
+        301,
+        375,
+        411,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "騎",
+      "bbox": [
+        190.0,
+        385.0,
+        296.0,
+        562.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 23,
+      "col_text": "騎常侍鄭軍",
+      "col_bbox": [
+        190,
+        385,
+        296,
+        1073
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "常",
+      "bbox": [
+        190.0,
+        562.0,
+        296.0,
+        700.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 24,
+      "col_text": "騎常侍鄭軍",
+      "col_bbox": [
+        190,
+        385,
+        296,
+        1073
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "侍",
+      "bbox": [
+        190.0,
+        700.0,
+        296.0,
+        817.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 25,
+      "col_text": "騎常侍鄭軍",
+      "col_bbox": [
+        190,
+        385,
+        296,
+        1073
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "鄭",
+      "bbox": [
+        190.0,
+        817.0,
+        296.0,
+        894.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 26,
+      "col_text": "騎常侍鄭軍",
+      "col_bbox": [
+        190,
+        385,
+        296,
+        1073
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "軍",
+      "bbox": [
+        190.0,
+        894.0,
+        296.0,
+        1073.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 27,
+      "col_text": "騎常侍鄭軍",
+      "col_bbox": [
+        190,
+        385,
+        296,
+        1073
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "新",
+      "bbox": [
+        147.0,
+        139.0,
+        177.0,
+        168.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 28,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "集",
+      "bbox": [
+        147.0,
+        168.0,
+        177.0,
+        195.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 29,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        147.0,
+        195.0,
+        177.0,
+        221.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 30,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "刚",
+      "bbox": [
+        147.0,
+        221.0,
+        177.0,
+        249.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 31,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "般",
+      "bbox": [
+        147.0,
+        249.0,
+        177.0,
+        291.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 32,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        147.0,
+        291.0,
+        177.0,
+        323.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 33,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "波",
+      "bbox": [
+        147.0,
+        323.0,
+        177.0,
+        352.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 34,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "罗",
+      "bbox": [
+        147.0,
+        352.0,
+        177.0,
+        380.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 35,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "蜜",
+      "bbox": [
+        147.0,
+        380.0,
+        177.0,
+        407.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 36,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        147.0,
+        407.0,
+        177.0,
+        427.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 37,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "新",
+      "bbox": [
+        147.0,
+        427.0,
+        177.0,
+        460.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 38,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "集",
+      "bbox": [
+        147.0,
+        460.0,
+        177.0,
+        487.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 39,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        147.0,
+        487.0,
+        177.0,
+        514.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 40,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "刚",
+      "bbox": [
+        147.0,
+        514.0,
+        177.0,
+        544.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 41,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        147.0,
+        544.0,
+        177.0,
+        584.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 42,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "赞",
+      "bbox": [
+        147.0,
+        584.0,
+        177.0,
+        604.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 43,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "翰",
+      "bbox": [
+        147.0,
+        604.0,
+        177.0,
+        646.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 44,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "林",
+      "bbox": [
+        147.0,
+        646.0,
+        177.0,
+        670.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 45,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "侍",
+      "bbox": [
+        147.0,
+        670.0,
+        177.0,
+        698.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 46,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "讲",
+      "bbox": [
+        147.0,
+        698.0,
+        177.0,
+        724.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 47,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "学",
+      "bbox": [
+        147.0,
+        724.0,
+        177.0,
+        751.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 48,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "士",
+      "bbox": [
+        147.0,
+        751.0,
+        177.0,
+        780.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 49,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "银",
+      "bbox": [
+        147.0,
+        780.0,
+        177.0,
+        809.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 50,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "青",
+      "bbox": [
+        147.0,
+        809.0,
+        177.0,
+        854.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 51,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "光",
+      "bbox": [
+        147.0,
+        854.0,
+        177.0,
+        883.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 52,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "禄",
+      "bbox": [
+        147.0,
+        883.0,
+        177.0,
+        911.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 53,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        147.0,
+        911.0,
+        177.0,
+        938.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 54,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "夫",
+      "bbox": [
+        147.0,
+        938.0,
+        177.0,
+        963.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 55,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "守",
+      "bbox": [
+        147.0,
+        963.0,
+        177.0,
+        990.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 56,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "右",
+      "bbox": [
+        147.0,
+        990.0,
+        177.0,
+        1016.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 57,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "散",
+      "bbox": [
+        147.0,
+        1016.0,
+        177.0,
+        1045.0
+      ],
+      "column": 5,
+      "row": 30,
+      "global_index": 58,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "骑",
+      "bbox": [
+        147.0,
+        1045.0,
+        177.0,
+        1075.0
+      ],
+      "column": 5,
+      "row": 31,
+      "global_index": 59,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "常",
+      "bbox": [
+        147.0,
+        1075.0,
+        177.0,
+        1119.0
+      ],
+      "column": 5,
+      "row": 32,
+      "global_index": 60,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "侍",
+      "bbox": [
+        147.0,
+        1119.0,
+        177.0,
+        1149.0
+      ],
+      "column": 5,
+      "row": 33,
+      "global_index": 61,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "郑",
+      "bbox": [
+        147.0,
+        1149.0,
+        177.0,
+        1175.0
+      ],
+      "column": 5,
+      "row": 34,
+      "global_index": 62,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "覃",
+      "bbox": [
+        147.0,
+        1175.0,
+        177.0,
+        1201.0
+      ],
+      "column": 5,
+      "row": 35,
+      "global_index": 63,
+      "col_text": "新集金刚般若波罗蜜经新集金刚经赞翰林侍讲学士银青光禄大夫守右散骑常侍郑覃",
+      "col_bbox": [
+        147,
+        139,
+        177,
+        1201
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 6,
+  "total_chars": 64,
+  "timestamp": "2026-05-02T23:12:21.369510"
+}

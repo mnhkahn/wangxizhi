@@ -1,0 +1,2173 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-043.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相是故如来说名实相世尊我今闻经信解不足为难澳有人悟無上有法則於此甚深經典能生寶想是實相者則是非相是故如来說名實想世尊我今间涯信渐不足為難",
+  "parsed_results": [
+    {
+      "text": "38",
+      "bbox": [
+        865,
+        1421,
+        890,
+        1443
+      ],
+      "poly": [
+        [
+          865,
+          1421
+        ],
+        [
+          890,
+          1421
+        ],
+        [
+          890,
+          1443
+        ],
+        [
+          865,
+          1443
+        ]
+      ]
+    },
+    {
+      "text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "poly": [
+        [
+          726,
+          131
+        ],
+        [
+          755,
+          131
+        ],
+        [
+          755,
+          984
+        ],
+        [
+          726,
+          984
+        ]
+      ]
+    },
+    {
+      "text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "poly": [
+        [
+          690,
+          132
+        ],
+        [
+          721,
+          132
+        ],
+        [
+          721,
+          694
+        ],
+        [
+          690,
+          694
+        ]
+      ]
+    },
+    {
+      "text": "澳有人悟無上有",
+      "bbox": [
+        589,
+        134,
+        684,
+        1327
+      ],
+      "poly": [
+        [
+          589,
+          134
+        ],
+        [
+          684,
+          134
+        ],
+        [
+          684,
+          1327
+        ],
+        [
+          589,
+          1327
+        ]
+      ]
+    },
+    {
+      "text": "法則於此甚深經典能生",
+      "bbox": [
+        446,
+        130,
+        601,
+        1337
+      ],
+      "poly": [
+        [
+          446,
+          130
+        ],
+        [
+          601,
+          130
+        ],
+        [
+          601,
+          1337
+        ],
+        [
+          446,
+          1337
+        ]
+      ]
+    },
+    {
+      "text": "寶，想是實相者則是非相",
+      "bbox": [
+        349,
+        132,
+        462,
+        1329
+      ],
+      "poly": [
+        [
+          349,
+          132
+        ],
+        [
+          462,
+          132
+        ],
+        [
+          462,
+          1329
+        ],
+        [
+          349,
+          1329
+        ]
+      ]
+    },
+    {
+      "text": "是故如来說名實想世尊",
+      "bbox": [
+        223,
+        137,
+        360,
+        1336
+      ],
+      "poly": [
+        [
+          223,
+          137
+        ],
+        [
+          360,
+          137
+        ],
+        [
+          360,
+          1336
+        ],
+        [
+          223,
+          1336
+        ]
+      ]
+    },
+    {
+      "text": "我今间涯信渐不足為難",
+      "bbox": [
+        122,
+        149,
+        231,
+        1329
+      ],
+      "poly": [
+        [
+          122,
+          149
+        ],
+        [
+          231,
+          149
+        ],
+        [
+          231,
+          1329
+        ],
+        [
+          122,
+          1329
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "若",
+      "bbox": [
+        726.0,
+        131.0,
+        755.0,
+        161.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "复",
+      "bbox": [
+        726.0,
+        161.0,
+        755.0,
+        189.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        726.0,
+        189.0,
+        755.0,
+        216.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        726.0,
+        216.0,
+        755.0,
+        241.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悟",
+      "bbox": [
+        726.0,
+        241.0,
+        755.0,
+        268.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        726.0,
+        268.0,
+        755.0,
+        294.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "土",
+      "bbox": [
+        726.0,
+        294.0,
+        755.0,
+        322.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "希",
+      "bbox": [
+        726.0,
+        322.0,
+        755.0,
+        350.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        726.0,
+        350.0,
+        755.0,
+        378.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        726.0,
+        378.0,
+        755.0,
+        407.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        726.0,
+        407.0,
+        755.0,
+        450.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 10,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "则",
+      "bbox": [
+        726.0,
+        450.0,
+        755.0,
+        479.0
+      ],
+      "column": 1,
+      "row": 11,
+      "global_index": 11,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "于",
+      "bbox": [
+        726.0,
+        479.0,
+        755.0,
+        507.0
+      ],
+      "column": 1,
+      "row": 12,
+      "global_index": 12,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        726.0,
+        507.0,
+        755.0,
+        535.0
+      ],
+      "column": 1,
+      "row": 13,
+      "global_index": 13,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "甚",
+      "bbox": [
+        726.0,
+        535.0,
+        755.0,
+        561.0
+      ],
+      "column": 1,
+      "row": 14,
+      "global_index": 14,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "深",
+      "bbox": [
+        726.0,
+        561.0,
+        755.0,
+        587.0
+      ],
+      "column": 1,
+      "row": 15,
+      "global_index": 15,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        726.0,
+        587.0,
+        755.0,
+        614.0
+      ],
+      "column": 1,
+      "row": 16,
+      "global_index": 16,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "典",
+      "bbox": [
+        726.0,
+        614.0,
+        755.0,
+        640.0
+      ],
+      "column": 1,
+      "row": 17,
+      "global_index": 17,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        726.0,
+        640.0,
+        755.0,
+        667.0
+      ],
+      "column": 1,
+      "row": 18,
+      "global_index": 18,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        726.0,
+        667.0,
+        755.0,
+        694.0
+      ],
+      "column": 1,
+      "row": 19,
+      "global_index": 19,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "实",
+      "bbox": [
+        726.0,
+        694.0,
+        755.0,
+        720.0
+      ],
+      "column": 1,
+      "row": 20,
+      "global_index": 20,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        726.0,
+        720.0,
+        755.0,
+        748.0
+      ],
+      "column": 1,
+      "row": 21,
+      "global_index": 21,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        726.0,
+        748.0,
+        755.0,
+        776.0
+      ],
+      "column": 1,
+      "row": 22,
+      "global_index": 22,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "实",
+      "bbox": [
+        726.0,
+        776.0,
+        755.0,
+        810.0
+      ],
+      "column": 1,
+      "row": 23,
+      "global_index": 23,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        726.0,
+        810.0,
+        755.0,
+        848.0
+      ],
+      "column": 1,
+      "row": 24,
+      "global_index": 24,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        726.0,
+        848.0,
+        755.0,
+        877.0
+      ],
+      "column": 1,
+      "row": 25,
+      "global_index": 25,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "则",
+      "bbox": [
+        726.0,
+        877.0,
+        755.0,
+        905.0
+      ],
+      "column": 1,
+      "row": 26,
+      "global_index": 26,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        726.0,
+        905.0,
+        755.0,
+        933.0
+      ],
+      "column": 1,
+      "row": 27,
+      "global_index": 27,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        726.0,
+        933.0,
+        755.0,
+        960.0
+      ],
+      "column": 1,
+      "row": 28,
+      "global_index": 28,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        726.0,
+        960.0,
+        755.0,
+        984.0
+      ],
+      "column": 1,
+      "row": 29,
+      "global_index": 29,
+      "col_text": "若复有人悟无土希有之法则于此甚深经典能生实相是实相者则是非相",
+      "col_bbox": [
+        726,
+        131,
+        755,
+        984
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        690.0,
+        132.0,
+        721.0,
+        162.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        690.0,
+        162.0,
+        721.0,
+        189.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        690.0,
+        189.0,
+        721.0,
+        215.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        690.0,
+        215.0,
+        721.0,
+        241.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        690.0,
+        241.0,
+        721.0,
+        269.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        690.0,
+        269.0,
+        721.0,
+        294.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "实",
+      "bbox": [
+        690.0,
+        294.0,
+        721.0,
+        322.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        690.0,
+        322.0,
+        721.0,
+        348.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        690.0,
+        348.0,
+        721.0,
+        376.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        690.0,
+        376.0,
+        721.0,
+        410.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        690.0,
+        410.0,
+        721.0,
+        433.0
+      ],
+      "column": 2,
+      "row": 10,
+      "global_index": 40,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "今",
+      "bbox": [
+        690.0,
+        433.0,
+        721.0,
+        474.0
+      ],
+      "column": 2,
+      "row": 11,
+      "global_index": 41,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "闻",
+      "bbox": [
+        690.0,
+        474.0,
+        721.0,
+        504.0
+      ],
+      "column": 2,
+      "row": 12,
+      "global_index": 42,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        690.0,
+        504.0,
+        721.0,
+        532.0
+      ],
+      "column": 2,
+      "row": 13,
+      "global_index": 43,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "信",
+      "bbox": [
+        690.0,
+        532.0,
+        721.0,
+        560.0
+      ],
+      "column": 2,
+      "row": 14,
+      "global_index": 44,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "解",
+      "bbox": [
+        690.0,
+        560.0,
+        721.0,
+        587.0
+      ],
+      "column": 2,
+      "row": 15,
+      "global_index": 45,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        690.0,
+        587.0,
+        721.0,
+        613.0
+      ],
+      "column": 2,
+      "row": 16,
+      "global_index": 46,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "足",
+      "bbox": [
+        690.0,
+        613.0,
+        721.0,
+        641.0
+      ],
+      "column": 2,
+      "row": 17,
+      "global_index": 47,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        690.0,
+        641.0,
+        721.0,
+        668.0
+      ],
+      "column": 2,
+      "row": 18,
+      "global_index": 48,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "难",
+      "bbox": [
+        690.0,
+        668.0,
+        721.0,
+        694.0
+      ],
+      "column": 2,
+      "row": 19,
+      "global_index": 49,
+      "col_text": "是故如来说名实相世尊我今闻经信解不足为难",
+      "col_bbox": [
+        690,
+        132,
+        721,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "澳",
+      "bbox": [
+        589.0,
+        134.0,
+        684.0,
+        341.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 50,
+      "col_text": "澳有人悟無上有",
+      "col_bbox": [
+        589,
+        134,
+        684,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        589.0,
+        341.0,
+        684.0,
+        451.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 51,
+      "col_text": "澳有人悟無上有",
+      "col_bbox": [
+        589,
+        134,
+        684,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        589.0,
+        451.0,
+        684.0,
+        683.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 52,
+      "col_text": "澳有人悟無上有",
+      "col_bbox": [
+        589,
+        134,
+        684,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悟",
+      "bbox": [
+        589.0,
+        683.0,
+        684.0,
+        816.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 53,
+      "col_text": "澳有人悟無上有",
+      "col_bbox": [
+        589,
+        134,
+        684,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        589.0,
+        816.0,
+        684.0,
+        991.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 54,
+      "col_text": "澳有人悟無上有",
+      "col_bbox": [
+        589,
+        134,
+        684,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "上",
+      "bbox": [
+        589.0,
+        991.0,
+        684.0,
+        1150.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 55,
+      "col_text": "澳有人悟無上有",
+      "col_bbox": [
+        589,
+        134,
+        684,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        589.0,
+        1150.0,
+        684.0,
+        1327.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 56,
+      "col_text": "澳有人悟無上有",
+      "col_bbox": [
+        589,
+        134,
+        684,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        446.0,
+        130.0,
+        601.0,
+        214.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 57,
+      "col_text": "法則於此甚深經典能生",
+      "col_bbox": [
+        446,
+        130,
+        601,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "則",
+      "bbox": [
+        446.0,
+        214.0,
+        601.0,
+        335.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 58,
+      "col_text": "法則於此甚深經典能生",
+      "col_bbox": [
+        446,
+        130,
+        601,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "於",
+      "bbox": [
+        446.0,
+        335.0,
+        601.0,
+        527.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 59,
+      "col_text": "法則於此甚深經典能生",
+      "col_bbox": [
+        446,
+        130,
+        601,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        446.0,
+        527.0,
+        601.0,
+        576.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 60,
+      "col_text": "法則於此甚深經典能生",
+      "col_bbox": [
+        446,
+        130,
+        601,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "甚",
+      "bbox": [
+        446.0,
+        576.0,
+        601.0,
+        753.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 61,
+      "col_text": "法則於此甚深經典能生",
+      "col_bbox": [
+        446,
+        130,
+        601,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "深",
+      "bbox": [
+        446.0,
+        753.0,
+        601.0,
+        889.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 62,
+      "col_text": "法則於此甚深經典能生",
+      "col_bbox": [
+        446,
+        130,
+        601,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "經",
+      "bbox": [
+        446.0,
+        889.0,
+        601.0,
+        1009.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 63,
+      "col_text": "法則於此甚深經典能生",
+      "col_bbox": [
+        446,
+        130,
+        601,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "典",
+      "bbox": [
+        446.0,
+        1009.0,
+        601.0,
+        1126.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 64,
+      "col_text": "法則於此甚深經典能生",
+      "col_bbox": [
+        446,
+        130,
+        601,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        446.0,
+        1126.0,
+        601.0,
+        1180.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 65,
+      "col_text": "法則於此甚深經典能生",
+      "col_bbox": [
+        446,
+        130,
+        601,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        446.0,
+        1180.0,
+        601.0,
+        1337.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 66,
+      "col_text": "法則於此甚深經典能生",
+      "col_bbox": [
+        446,
+        130,
+        601,
+        1337
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寶",
+      "bbox": [
+        349.0,
+        132.0,
+        462.0,
+        208.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 67,
+      "col_text": "寶，想是實相者則是非相",
+      "col_bbox": [
+        349,
+        132,
+        462,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "想",
+      "bbox": [
+        349.0,
+        325.0,
+        462.0,
+        451.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 68,
+      "col_text": "寶，想是實相者則是非相",
+      "col_bbox": [
+        349,
+        132,
+        462,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        349.0,
+        451.0,
+        462.0,
+        576.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 69,
+      "col_text": "寶，想是實相者則是非相",
+      "col_bbox": [
+        349,
+        132,
+        462,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "實",
+      "bbox": [
+        349.0,
+        576.0,
+        462.0,
+        699.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 70,
+      "col_text": "寶，想是實相者則是非相",
+      "col_bbox": [
+        349,
+        132,
+        462,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        349.0,
+        699.0,
+        462.0,
+        798.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 71,
+      "col_text": "寶，想是實相者則是非相",
+      "col_bbox": [
+        349,
+        132,
+        462,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        349.0,
+        798.0,
+        462.0,
+        915.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 72,
+      "col_text": "寶，想是實相者則是非相",
+      "col_bbox": [
+        349,
+        132,
+        462,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "則",
+      "bbox": [
+        349.0,
+        915.0,
+        462.0,
+        970.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 73,
+      "col_text": "寶，想是實相者則是非相",
+      "col_bbox": [
+        349,
+        132,
+        462,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        349.0,
+        970.0,
+        462.0,
+        1084.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 74,
+      "col_text": "寶，想是實相者則是非相",
+      "col_bbox": [
+        349,
+        132,
+        462,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        349.0,
+        1084.0,
+        462.0,
+        1188.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 75,
+      "col_text": "寶，想是實相者則是非相",
+      "col_bbox": [
+        349,
+        132,
+        462,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        349.0,
+        1188.0,
+        462.0,
+        1329.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 76,
+      "col_text": "寶，想是實相者則是非相",
+      "col_bbox": [
+        349,
+        132,
+        462,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        223.0,
+        137.0,
+        360.0,
+        290.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 77,
+      "col_text": "是故如来說名實想世尊",
+      "col_bbox": [
+        223,
+        137,
+        360,
+        1336
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        223.0,
+        290.0,
+        360.0,
+        399.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 78,
+      "col_text": "是故如来說名實想世尊",
+      "col_bbox": [
+        223,
+        137,
+        360,
+        1336
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        223.0,
+        399.0,
+        360.0,
+        515.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 79,
+      "col_text": "是故如来說名實想世尊",
+      "col_bbox": [
+        223,
+        137,
+        360,
+        1336
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        223.0,
+        515.0,
+        360.0,
+        631.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 80,
+      "col_text": "是故如来說名實想世尊",
+      "col_bbox": [
+        223,
+        137,
+        360,
+        1336
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "說",
+      "bbox": [
+        223.0,
+        631.0,
+        360.0,
+        770.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 81,
+      "col_text": "是故如来說名實想世尊",
+      "col_bbox": [
+        223,
+        137,
+        360,
+        1336
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        223.0,
+        770.0,
+        360.0,
+        879.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 82,
+      "col_text": "是故如来說名實想世尊",
+      "col_bbox": [
+        223,
+        137,
+        360,
+        1336
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "實",
+      "bbox": [
+        223.0,
+        879.0,
+        360.0,
+        1010.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 83,
+      "col_text": "是故如来說名實想世尊",
+      "col_bbox": [
+        223,
+        137,
+        360,
+        1336
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "想",
+      "bbox": [
+        223.0,
+        1010.0,
+        360.0,
+        1123.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 84,
+      "col_text": "是故如来說名實想世尊",
+      "col_bbox": [
+        223,
+        137,
+        360,
+        1336
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        223.0,
+        1123.0,
+        360.0,
+        1235.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 85,
+      "col_text": "是故如来說名實想世尊",
+      "col_bbox": [
+        223,
+        137,
+        360,
+        1336
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        223.0,
+        1235.0,
+        360.0,
+        1336.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 86,
+      "col_text": "是故如来說名實想世尊",
+      "col_bbox": [
+        223,
+        137,
+        360,
+        1336
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        122.0,
+        149.0,
+        231.0,
+        232.0
+      ],
+      "column": 7,
+      "row": 0,
+      "global_index": 87,
+      "col_text": "我今间涯信渐不足為難",
+      "col_bbox": [
+        122,
+        149,
+        231,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "今",
+      "bbox": [
+        122.0,
+        232.0,
+        231.0,
+        419.0
+      ],
+      "column": 7,
+      "row": 1,
+      "global_index": 88,
+      "col_text": "我今间涯信渐不足為難",
+      "col_bbox": [
+        122,
+        149,
+        231,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "间",
+      "bbox": [
+        122.0,
+        419.0,
+        231.0,
+        468.0
+      ],
+      "column": 7,
+      "row": 2,
+      "global_index": 89,
+      "col_text": "我今间涯信渐不足為難",
+      "col_bbox": [
+        122,
+        149,
+        231,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "涯",
+      "bbox": [
+        122.0,
+        468.0,
+        231.0,
+        602.0
+      ],
+      "column": 7,
+      "row": 3,
+      "global_index": 90,
+      "col_text": "我今间涯信渐不足為難",
+      "col_bbox": [
+        122,
+        149,
+        231,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "信",
+      "bbox": [
+        122.0,
+        602.0,
+        231.0,
+        718.0
+      ],
+      "column": 7,
+      "row": 4,
+      "global_index": 91,
+      "col_text": "我今间涯信渐不足為難",
+      "col_bbox": [
+        122,
+        149,
+        231,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "渐",
+      "bbox": [
+        122.0,
+        718.0,
+        231.0,
+        822.0
+      ],
+      "column": 7,
+      "row": 5,
+      "global_index": 92,
+      "col_text": "我今间涯信渐不足為難",
+      "col_bbox": [
+        122,
+        149,
+        231,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        122.0,
+        822.0,
+        231.0,
+        942.0
+      ],
+      "column": 7,
+      "row": 6,
+      "global_index": 93,
+      "col_text": "我今间涯信渐不足為難",
+      "col_bbox": [
+        122,
+        149,
+        231,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "足",
+      "bbox": [
+        122.0,
+        942.0,
+        231.0,
+        1127.0
+      ],
+      "column": 7,
+      "row": 7,
+      "global_index": 94,
+      "col_text": "我今间涯信渐不足為難",
+      "col_bbox": [
+        122,
+        149,
+        231,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        122.0,
+        1127.0,
+        231.0,
+        1245.0
+      ],
+      "column": 7,
+      "row": 8,
+      "global_index": 95,
+      "col_text": "我今间涯信渐不足為難",
+      "col_bbox": [
+        122,
+        149,
+        231,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "難",
+      "bbox": [
+        122.0,
+        1245.0,
+        231.0,
+        1329.0
+      ],
+      "column": 7,
+      "row": 9,
+      "global_index": 96,
+      "col_text": "我今间涯信渐不足為難",
+      "col_bbox": [
+        122,
+        149,
+        231,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 8,
+  "total_chars": 97,
+  "timestamp": "2026-05-02T23:10:51.635930"
+}

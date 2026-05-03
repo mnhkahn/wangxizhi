@@ -1,0 +1,2033 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-064.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "是主汝於案世當得作佛以每际得然受我記号釋迦年涯何以故知来者即得菩提實無有法佛所得是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即是无生法性真如之义佛得菩提实无有法佛所得",
+  "parsed_results": [
+    {
+      "text": "是主汝於案世當得作佛",
+      "bbox": [
+        634,
+        155,
+        754,
+        1346
+      ],
+      "poly": [
+        [
+          634,
+          155
+        ],
+        [
+          754,
+          155
+        ],
+        [
+          754,
+          1346
+        ],
+        [
+          634,
+          1346
+        ]
+      ]
+    },
+    {
+      "text": "以每际得然受我記号釋",
+      "bbox": [
+        524,
+        156,
+        637,
+        1349
+      ],
+      "poly": [
+        [
+          524,
+          156
+        ],
+        [
+          637,
+          156
+        ],
+        [
+          637,
+          1349
+        ],
+        [
+          524,
+          1349
+        ]
+      ]
+    },
+    {
+      "text": "迦年涯何以故知来者即",
+      "bbox": [
+        420,
+        163,
+        530,
+        1350
+      ],
+      "poly": [
+        [
+          420,
+          163
+        ],
+        [
+          530,
+          163
+        ],
+        [
+          530,
+          1350
+        ],
+        [
+          420,
+          1350
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "bbox": [
+        305,
+        162,
+        427,
+        1351
+      ],
+      "poly": [
+        [
+          305,
+          162
+        ],
+        [
+          427,
+          162
+        ],
+        [
+          427,
+          1351
+        ],
+        [
+          305,
+          1351
+        ]
+      ]
+    },
+    {
+      "text": "得菩提實無有法佛所得",
+      "bbox": [
+        202,
+        166,
+        307,
+        1352
+      ],
+      "poly": [
+        [
+          202,
+          166
+        ],
+        [
+          307,
+          166
+        ],
+        [
+          307,
+          1352
+        ],
+        [
+          202,
+          1352
+        ]
+      ]
+    },
+    {
+      "text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "poly": [
+        [
+          144,
+          162
+        ],
+        [
+          183,
+          162
+        ],
+        [
+          183,
+          1015
+        ],
+        [
+          144,
+          1015
+        ]
+      ]
+    },
+    {
+      "text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "poly": [
+        [
+          108,
+          163
+        ],
+        [
+          143,
+          163
+        ],
+        [
+          143,
+          723
+        ],
+        [
+          108,
+          723
+        ]
+      ]
+    },
+    {
+      "text": "59",
+      "bbox": [
+        5,
+        1458,
+        28,
+        1478
+      ],
+      "poly": [
+        [
+          5,
+          1458
+        ],
+        [
+          28,
+          1458
+        ],
+        [
+          28,
+          1478
+        ],
+        [
+          5,
+          1478
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "是",
+      "bbox": [
+        634.0,
+        155.0,
+        754.0,
+        244.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "是主汝於案世當得作佛",
+      "col_bbox": [
+        634,
+        155,
+        754,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "主",
+      "bbox": [
+        634.0,
+        244.0,
+        754.0,
+        427.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "是主汝於案世當得作佛",
+      "col_bbox": [
+        634,
+        155,
+        754,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "汝",
+      "bbox": [
+        634.0,
+        427.0,
+        754.0,
+        536.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "是主汝於案世當得作佛",
+      "col_bbox": [
+        634,
+        155,
+        754,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "於",
+      "bbox": [
+        634.0,
+        536.0,
+        754.0,
+        649.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "是主汝於案世當得作佛",
+      "col_bbox": [
+        634,
+        155,
+        754,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "案",
+      "bbox": [
+        634.0,
+        649.0,
+        754.0,
+        784.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "是主汝於案世當得作佛",
+      "col_bbox": [
+        634,
+        155,
+        754,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        634.0,
+        784.0,
+        754.0,
+        903.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "是主汝於案世當得作佛",
+      "col_bbox": [
+        634,
+        155,
+        754,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "當",
+      "bbox": [
+        634.0,
+        903.0,
+        754.0,
+        1018.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "是主汝於案世當得作佛",
+      "col_bbox": [
+        634,
+        155,
+        754,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        634.0,
+        1018.0,
+        754.0,
+        1081.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "是主汝於案世當得作佛",
+      "col_bbox": [
+        634,
+        155,
+        754,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "作",
+      "bbox": [
+        634.0,
+        1081.0,
+        754.0,
+        1256.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "是主汝於案世當得作佛",
+      "col_bbox": [
+        634,
+        155,
+        754,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        634.0,
+        1256.0,
+        754.0,
+        1346.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "是主汝於案世當得作佛",
+      "col_bbox": [
+        634,
+        155,
+        754,
+        1346
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        524.0,
+        156.0,
+        637.0,
+        305.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "以每际得然受我記号釋",
+      "col_bbox": [
+        524,
+        156,
+        637,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "每",
+      "bbox": [
+        524.0,
+        305.0,
+        637.0,
+        395.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "以每际得然受我記号釋",
+      "col_bbox": [
+        524,
+        156,
+        637,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "际",
+      "bbox": [
+        524.0,
+        395.0,
+        637.0,
+        539.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "以每际得然受我記号釋",
+      "col_bbox": [
+        524,
+        156,
+        637,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        524.0,
+        539.0,
+        637.0,
+        659.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "以每际得然受我記号釋",
+      "col_bbox": [
+        524,
+        156,
+        637,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "然",
+      "bbox": [
+        524.0,
+        659.0,
+        637.0,
+        765.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "以每际得然受我記号釋",
+      "col_bbox": [
+        524,
+        156,
+        637,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "受",
+      "bbox": [
+        524.0,
+        765.0,
+        637.0,
+        904.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "以每际得然受我記号釋",
+      "col_bbox": [
+        524,
+        156,
+        637,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        524.0,
+        904.0,
+        637.0,
+        1024.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "以每际得然受我記号釋",
+      "col_bbox": [
+        524,
+        156,
+        637,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "記",
+      "bbox": [
+        524.0,
+        1024.0,
+        637.0,
+        1144.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "以每际得然受我記号釋",
+      "col_bbox": [
+        524,
+        156,
+        637,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "号",
+      "bbox": [
+        524.0,
+        1144.0,
+        637.0,
+        1247.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "以每际得然受我記号釋",
+      "col_bbox": [
+        524,
+        156,
+        637,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "釋",
+      "bbox": [
+        524.0,
+        1247.0,
+        637.0,
+        1349.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 19,
+      "col_text": "以每际得然受我記号釋",
+      "col_bbox": [
+        524,
+        156,
+        637,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "迦",
+      "bbox": [
+        420.0,
+        163.0,
+        530.0,
+        280.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 20,
+      "col_text": "迦年涯何以故知来者即",
+      "col_bbox": [
+        420,
+        163,
+        530,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "年",
+      "bbox": [
+        420.0,
+        280.0,
+        530.0,
+        434.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 21,
+      "col_text": "迦年涯何以故知来者即",
+      "col_bbox": [
+        420,
+        163,
+        530,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "涯",
+      "bbox": [
+        420.0,
+        434.0,
+        530.0,
+        531.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 22,
+      "col_text": "迦年涯何以故知来者即",
+      "col_bbox": [
+        420,
+        163,
+        530,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        420.0,
+        531.0,
+        530.0,
+        668.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 23,
+      "col_text": "迦年涯何以故知来者即",
+      "col_bbox": [
+        420,
+        163,
+        530,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        420.0,
+        668.0,
+        530.0,
+        766.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 24,
+      "col_text": "迦年涯何以故知来者即",
+      "col_bbox": [
+        420,
+        163,
+        530,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        420.0,
+        766.0,
+        530.0,
+        885.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 25,
+      "col_text": "迦年涯何以故知来者即",
+      "col_bbox": [
+        420,
+        163,
+        530,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        420.0,
+        885.0,
+        530.0,
+        1024.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 26,
+      "col_text": "迦年涯何以故知来者即",
+      "col_bbox": [
+        420,
+        163,
+        530,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        420.0,
+        1024.0,
+        530.0,
+        1139.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 27,
+      "col_text": "迦年涯何以故知来者即",
+      "col_bbox": [
+        420,
+        163,
+        530,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        420.0,
+        1139.0,
+        530.0,
+        1252.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 28,
+      "col_text": "迦年涯何以故知来者即",
+      "col_bbox": [
+        420,
+        163,
+        530,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        420.0,
+        1252.0,
+        530.0,
+        1350.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 29,
+      "col_text": "迦年涯何以故知来者即",
+      "col_bbox": [
+        420,
+        163,
+        530,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        202.0,
+        166.0,
+        307.0,
+        249.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "得菩提實無有法佛所得",
+      "col_bbox": [
+        202,
+        166,
+        307,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        202.0,
+        249.0,
+        307.0,
+        375.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "得菩提實無有法佛所得",
+      "col_bbox": [
+        202,
+        166,
+        307,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        202.0,
+        375.0,
+        307.0,
+        493.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "得菩提實無有法佛所得",
+      "col_bbox": [
+        202,
+        166,
+        307,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "實",
+      "bbox": [
+        202.0,
+        493.0,
+        307.0,
+        608.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "得菩提實無有法佛所得",
+      "col_bbox": [
+        202,
+        166,
+        307,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        202.0,
+        608.0,
+        307.0,
+        726.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "得菩提實無有法佛所得",
+      "col_bbox": [
+        202,
+        166,
+        307,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        202.0,
+        726.0,
+        307.0,
+        842.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "得菩提實無有法佛所得",
+      "col_bbox": [
+        202,
+        166,
+        307,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        202.0,
+        842.0,
+        307.0,
+        987.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "得菩提實無有法佛所得",
+      "col_bbox": [
+        202,
+        166,
+        307,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        202.0,
+        987.0,
+        307.0,
+        1148.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "得菩提實無有法佛所得",
+      "col_bbox": [
+        202,
+        166,
+        307,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        202.0,
+        1148.0,
+        307.0,
+        1267.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "得菩提實無有法佛所得",
+      "col_bbox": [
+        202,
+        166,
+        307,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        202.0,
+        1267.0,
+        307.0,
+        1352.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "得菩提實無有法佛所得",
+      "col_bbox": [
+        202,
+        166,
+        307,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        144.0,
+        162.0,
+        183.0,
+        194.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 40,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        144.0,
+        194.0,
+        183.0,
+        220.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 41,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "汝",
+      "bbox": [
+        144.0,
+        220.0,
+        183.0,
+        246.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 42,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "于",
+      "bbox": [
+        144.0,
+        246.0,
+        183.0,
+        272.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 43,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        144.0,
+        272.0,
+        183.0,
+        297.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 44,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        144.0,
+        297.0,
+        183.0,
+        325.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 45,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "当",
+      "bbox": [
+        144.0,
+        325.0,
+        183.0,
+        353.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 46,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        144.0,
+        353.0,
+        183.0,
+        381.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 47,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "作",
+      "bbox": [
+        144.0,
+        381.0,
+        183.0,
+        409.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 48,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        144.0,
+        409.0,
+        183.0,
+        443.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 49,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        144.0,
+        443.0,
+        183.0,
+        481.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 50,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        144.0,
+        481.0,
+        183.0,
+        510.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 51,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        144.0,
+        510.0,
+        183.0,
+        537.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 52,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        144.0,
+        537.0,
+        183.0,
+        565.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 53,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "然",
+      "bbox": [
+        144.0,
+        565.0,
+        183.0,
+        592.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 54,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "受",
+      "bbox": [
+        144.0,
+        592.0,
+        183.0,
+        619.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 55,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        144.0,
+        619.0,
+        183.0,
+        645.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 56,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "记",
+      "bbox": [
+        144.0,
+        645.0,
+        183.0,
+        671.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 57,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "号",
+      "bbox": [
+        144.0,
+        671.0,
+        183.0,
+        697.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 58,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "释",
+      "bbox": [
+        144.0,
+        697.0,
+        183.0,
+        726.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 59,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "迦",
+      "bbox": [
+        144.0,
+        726.0,
+        183.0,
+        751.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 60,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "牟",
+      "bbox": [
+        144.0,
+        751.0,
+        183.0,
+        779.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 61,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尼",
+      "bbox": [
+        144.0,
+        779.0,
+        183.0,
+        807.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 62,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        144.0,
+        807.0,
+        183.0,
+        849.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 63,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        144.0,
+        849.0,
+        183.0,
+        869.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 64,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        144.0,
+        869.0,
+        183.0,
+        908.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 65,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        144.0,
+        908.0,
+        183.0,
+        935.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 66,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        144.0,
+        935.0,
+        183.0,
+        963.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 67,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        144.0,
+        963.0,
+        183.0,
+        990.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 68,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        144.0,
+        990.0,
+        183.0,
+        1015.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 69,
+      "col_text": "是言汝于来世当得作佛以无所得然受我记号释迦牟尼何以故如来者即",
+      "col_bbox": [
+        144,
+        162,
+        183,
+        1015
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        108.0,
+        163.0,
+        143.0,
+        193.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 70,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        108.0,
+        193.0,
+        143.0,
+        219.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 71,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        108.0,
+        219.0,
+        143.0,
+        247.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 72,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        108.0,
+        247.0,
+        143.0,
+        272.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 73,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "性",
+      "bbox": [
+        108.0,
+        272.0,
+        143.0,
+        299.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 74,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "真",
+      "bbox": [
+        108.0,
+        299.0,
+        143.0,
+        327.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 75,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        108.0,
+        327.0,
+        143.0,
+        353.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 76,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        108.0,
+        353.0,
+        143.0,
+        379.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 77,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "义",
+      "bbox": [
+        108.0,
+        379.0,
+        143.0,
+        407.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 78,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        108.0,
+        407.0,
+        143.0,
+        435.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 79,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        108.0,
+        435.0,
+        143.0,
+        478.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 80,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        108.0,
+        478.0,
+        143.0,
+        506.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 81,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        108.0,
+        506.0,
+        143.0,
+        534.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 82,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "实",
+      "bbox": [
+        108.0,
+        534.0,
+        143.0,
+        562.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 83,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        108.0,
+        562.0,
+        143.0,
+        590.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 84,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        108.0,
+        590.0,
+        143.0,
+        618.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 85,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        108.0,
+        618.0,
+        143.0,
+        645.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 86,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        108.0,
+        645.0,
+        143.0,
+        671.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 87,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        108.0,
+        671.0,
+        143.0,
+        698.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 88,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        108.0,
+        698.0,
+        143.0,
+        723.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 89,
+      "col_text": "是无生法性真如之义佛得菩提实无有法佛所得",
+      "col_bbox": [
+        108,
+        163,
+        143,
+        723
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 90,
+  "timestamp": "2026-05-02T23:11:24.290238"
+}

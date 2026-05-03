@@ -1,0 +1,1873 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-098.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "朝林學士尚书产部侍郎知制谐上检國賜紫金鱼袋王源中尊傳自似導迷聲五德何有万绿歸凡翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+  "parsed_results": [
+    {
+      "text": "朝林學士尚书产部",
+      "bbox": [
+        645,
+        376,
+        771,
+        1331
+      ],
+      "poly": [
+        [
+          645,
+          376
+        ],
+        [
+          771,
+          376
+        ],
+        [
+          771,
+          1331
+        ],
+        [
+          645,
+          1331
+        ]
+      ]
+    },
+    {
+      "text": "侍郎知 制谐上检國",
+      "bbox": [
+        533,
+        380,
+        661,
+        1332
+      ],
+      "poly": [
+        [
+          533,
+          380
+        ],
+        [
+          661,
+          380
+        ],
+        [
+          661,
+          1332
+        ],
+        [
+          533,
+          1332
+        ]
+      ]
+    },
+    {
+      "text": "賜紫金鱼袋王源中",
+      "bbox": [
+        426,
+        383,
+        549,
+        1302
+      ],
+      "poly": [
+        [
+          426,
+          383
+        ],
+        [
+          549,
+          383
+        ],
+        [
+          549,
+          1302
+        ],
+        [
+          426,
+          1302
+        ]
+      ]
+    },
+    {
+      "text": "尊傳自似導迷聲五",
+      "bbox": [
+        310,
+        143,
+        438,
+        1339
+      ],
+      "poly": [
+        [
+          310,
+          143
+        ],
+        [
+          438,
+          143
+        ],
+        [
+          438,
+          1339
+        ],
+        [
+          310,
+          1339
+        ]
+      ]
+    },
+    {
+      "text": "德何有万绿歸凡",
+      "bbox": [
+        206,
+        141,
+        324,
+        1340
+      ],
+      "poly": [
+        [
+          206,
+          141
+        ],
+        [
+          324,
+          141
+        ],
+        [
+          324,
+          1340
+        ],
+        [
+          206,
+          1340
+        ]
+      ]
+    },
+    {
+      "text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "poly": [
+        [
+          167,
+          143
+        ],
+        [
+          200,
+          143
+        ],
+        [
+          200,
+          836
+        ],
+        [
+          167,
+          836
+        ]
+      ]
+    },
+    {
+      "text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "poly": [
+        [
+          135,
+          142
+        ],
+        [
+          163,
+          142
+        ],
+        [
+          163,
+          674
+        ],
+        [
+          135,
+          674
+        ]
+      ]
+    },
+    {
+      "text": "93",
+      "bbox": [
+        5,
+        1434,
+        29,
+        1454
+      ],
+      "poly": [
+        [
+          5,
+          1434
+        ],
+        [
+          29,
+          1434
+        ],
+        [
+          29,
+          1454
+        ],
+        [
+          5,
+          1454
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "朝",
+      "bbox": [
+        645.0,
+        376.0,
+        771.0,
+        460.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "朝林學士尚书产部",
+      "col_bbox": [
+        645,
+        376,
+        771,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "林",
+      "bbox": [
+        645.0,
+        460.0,
+        771.0,
+        582.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "朝林學士尚书产部",
+      "col_bbox": [
+        645,
+        376,
+        771,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "學",
+      "bbox": [
+        645.0,
+        582.0,
+        771.0,
+        709.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "朝林學士尚书产部",
+      "col_bbox": [
+        645,
+        376,
+        771,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "士",
+      "bbox": [
+        645.0,
+        709.0,
+        771.0,
+        887.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "朝林學士尚书产部",
+      "col_bbox": [
+        645,
+        376,
+        771,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尚",
+      "bbox": [
+        645.0,
+        887.0,
+        771.0,
+        998.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "朝林學士尚书产部",
+      "col_bbox": [
+        645,
+        376,
+        771,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "书",
+      "bbox": [
+        645.0,
+        998.0,
+        771.0,
+        1057.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "朝林學士尚书产部",
+      "col_bbox": [
+        645,
+        376,
+        771,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "产",
+      "bbox": [
+        645.0,
+        1057.0,
+        771.0,
+        1245.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "朝林學士尚书产部",
+      "col_bbox": [
+        645,
+        376,
+        771,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "部",
+      "bbox": [
+        645.0,
+        1245.0,
+        771.0,
+        1331.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "朝林學士尚书产部",
+      "col_bbox": [
+        645,
+        376,
+        771,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "侍",
+      "bbox": [
+        533.0,
+        380.0,
+        661.0,
+        454.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 8,
+      "col_text": "侍郎知 制谐上检國",
+      "col_bbox": [
+        533,
+        380,
+        661,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "郎",
+      "bbox": [
+        533.0,
+        454.0,
+        661.0,
+        564.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 9,
+      "col_text": "侍郎知 制谐上检國",
+      "col_bbox": [
+        533,
+        380,
+        661,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        533.0,
+        564.0,
+        661.0,
+        671.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 10,
+      "col_text": "侍郎知 制谐上检國",
+      "col_bbox": [
+        533,
+        380,
+        661,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "制",
+      "bbox": [
+        533.0,
+        824.0,
+        661.0,
+        877.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 11,
+      "col_text": "侍郎知 制谐上检國",
+      "col_bbox": [
+        533,
+        380,
+        661,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "谐",
+      "bbox": [
+        533.0,
+        877.0,
+        661.0,
+        994.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 12,
+      "col_text": "侍郎知 制谐上检國",
+      "col_bbox": [
+        533,
+        380,
+        661,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "上",
+      "bbox": [
+        533.0,
+        994.0,
+        661.0,
+        1089.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 13,
+      "col_text": "侍郎知 制谐上检國",
+      "col_bbox": [
+        533,
+        380,
+        661,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "检",
+      "bbox": [
+        533.0,
+        1089.0,
+        661.0,
+        1241.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 14,
+      "col_text": "侍郎知 制谐上检國",
+      "col_bbox": [
+        533,
+        380,
+        661,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "國",
+      "bbox": [
+        533.0,
+        1241.0,
+        661.0,
+        1332.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 15,
+      "col_text": "侍郎知 制谐上检國",
+      "col_bbox": [
+        533,
+        380,
+        661,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "賜",
+      "bbox": [
+        426.0,
+        383.0,
+        549.0,
+        479.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 16,
+      "col_text": "賜紫金鱼袋王源中",
+      "col_bbox": [
+        426,
+        383,
+        549,
+        1302
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "紫",
+      "bbox": [
+        426.0,
+        479.0,
+        549.0,
+        578.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 17,
+      "col_text": "賜紫金鱼袋王源中",
+      "col_bbox": [
+        426,
+        383,
+        549,
+        1302
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        426.0,
+        578.0,
+        549.0,
+        758.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 18,
+      "col_text": "賜紫金鱼袋王源中",
+      "col_bbox": [
+        426,
+        383,
+        549,
+        1302
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "鱼",
+      "bbox": [
+        426.0,
+        758.0,
+        549.0,
+        827.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 19,
+      "col_text": "賜紫金鱼袋王源中",
+      "col_bbox": [
+        426,
+        383,
+        549,
+        1302
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "袋",
+      "bbox": [
+        426.0,
+        827.0,
+        549.0,
+        923.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 20,
+      "col_text": "賜紫金鱼袋王源中",
+      "col_bbox": [
+        426,
+        383,
+        549,
+        1302
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "王",
+      "bbox": [
+        426.0,
+        923.0,
+        549.0,
+        1101.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 21,
+      "col_text": "賜紫金鱼袋王源中",
+      "col_bbox": [
+        426,
+        383,
+        549,
+        1302
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "源",
+      "bbox": [
+        426.0,
+        1101.0,
+        549.0,
+        1153.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 22,
+      "col_text": "賜紫金鱼袋王源中",
+      "col_bbox": [
+        426,
+        383,
+        549,
+        1302
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        426.0,
+        1153.0,
+        549.0,
+        1302.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 23,
+      "col_text": "賜紫金鱼袋王源中",
+      "col_bbox": [
+        426,
+        383,
+        549,
+        1302
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        310.0,
+        143.0,
+        438.0,
+        335.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 24,
+      "col_text": "尊傳自似導迷聲五",
+      "col_bbox": [
+        310,
+        143,
+        438,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "傳",
+      "bbox": [
+        310.0,
+        335.0,
+        438.0,
+        479.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 25,
+      "col_text": "尊傳自似導迷聲五",
+      "col_bbox": [
+        310,
+        143,
+        438,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "自",
+      "bbox": [
+        310.0,
+        479.0,
+        438.0,
+        617.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 26,
+      "col_text": "尊傳自似導迷聲五",
+      "col_bbox": [
+        310,
+        143,
+        438,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "似",
+      "bbox": [
+        310.0,
+        617.0,
+        438.0,
+        747.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 27,
+      "col_text": "尊傳自似導迷聲五",
+      "col_bbox": [
+        310,
+        143,
+        438,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "導",
+      "bbox": [
+        310.0,
+        747.0,
+        438.0,
+        891.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 28,
+      "col_text": "尊傳自似導迷聲五",
+      "col_bbox": [
+        310,
+        143,
+        438,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "迷",
+      "bbox": [
+        310.0,
+        891.0,
+        438.0,
+        1004.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 29,
+      "col_text": "尊傳自似導迷聲五",
+      "col_bbox": [
+        310,
+        143,
+        438,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "聲",
+      "bbox": [
+        310.0,
+        1004.0,
+        438.0,
+        1145.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 30,
+      "col_text": "尊傳自似導迷聲五",
+      "col_bbox": [
+        310,
+        143,
+        438,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "五",
+      "bbox": [
+        310.0,
+        1145.0,
+        438.0,
+        1339.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 31,
+      "col_text": "尊傳自似導迷聲五",
+      "col_bbox": [
+        310,
+        143,
+        438,
+        1339
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        206.0,
+        141.0,
+        324.0,
+        261.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 32,
+      "col_text": "德何有万绿歸凡",
+      "col_bbox": [
+        206,
+        141,
+        324,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        206.0,
+        261.0,
+        324.0,
+        432.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 33,
+      "col_text": "德何有万绿歸凡",
+      "col_bbox": [
+        206,
+        141,
+        324,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        206.0,
+        432.0,
+        324.0,
+        630.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 34,
+      "col_text": "德何有万绿歸凡",
+      "col_bbox": [
+        206,
+        141,
+        324,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "万",
+      "bbox": [
+        206.0,
+        630.0,
+        324.0,
+        854.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 35,
+      "col_text": "德何有万绿歸凡",
+      "col_bbox": [
+        206,
+        141,
+        324,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "绿",
+      "bbox": [
+        206.0,
+        854.0,
+        324.0,
+        946.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 36,
+      "col_text": "德何有万绿歸凡",
+      "col_bbox": [
+        206,
+        141,
+        324,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "歸",
+      "bbox": [
+        206.0,
+        946.0,
+        324.0,
+        1129.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 37,
+      "col_text": "德何有万绿歸凡",
+      "col_bbox": [
+        206,
+        141,
+        324,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "凡",
+      "bbox": [
+        206.0,
+        1129.0,
+        324.0,
+        1340.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 38,
+      "col_text": "德何有万绿歸凡",
+      "col_bbox": [
+        206,
+        141,
+        324,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "翰",
+      "bbox": [
+        167.0,
+        143.0,
+        200.0,
+        173.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 39,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "林",
+      "bbox": [
+        167.0,
+        173.0,
+        200.0,
+        197.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 40,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "学",
+      "bbox": [
+        167.0,
+        197.0,
+        200.0,
+        225.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 41,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "士",
+      "bbox": [
+        167.0,
+        225.0,
+        200.0,
+        252.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 42,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尚",
+      "bbox": [
+        167.0,
+        252.0,
+        200.0,
+        279.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 43,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "书",
+      "bbox": [
+        167.0,
+        279.0,
+        200.0,
+        308.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 44,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "户",
+      "bbox": [
+        167.0,
+        308.0,
+        200.0,
+        337.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 45,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "部",
+      "bbox": [
+        167.0,
+        337.0,
+        200.0,
+        366.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 46,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "侍",
+      "bbox": [
+        167.0,
+        366.0,
+        200.0,
+        409.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 47,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "郎",
+      "bbox": [
+        167.0,
+        409.0,
+        200.0,
+        438.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 48,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        167.0,
+        438.0,
+        200.0,
+        462.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 49,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "制",
+      "bbox": [
+        167.0,
+        462.0,
+        200.0,
+        491.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 50,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诰",
+      "bbox": [
+        167.0,
+        491.0,
+        200.0,
+        517.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 51,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "上",
+      "bbox": [
+        167.0,
+        517.0,
+        200.0,
+        544.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 52,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "柱",
+      "bbox": [
+        167.0,
+        544.0,
+        200.0,
+        570.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 53,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "国",
+      "bbox": [
+        167.0,
+        570.0,
+        200.0,
+        598.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 54,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "賜",
+      "bbox": [
+        167.0,
+        598.0,
+        200.0,
+        625.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 55,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "紫",
+      "bbox": [
+        167.0,
+        625.0,
+        200.0,
+        654.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 56,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        167.0,
+        654.0,
+        200.0,
+        683.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 57,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "鱼",
+      "bbox": [
+        167.0,
+        683.0,
+        200.0,
+        727.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 58,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "袋",
+      "bbox": [
+        167.0,
+        727.0,
+        200.0,
+        756.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 59,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "王",
+      "bbox": [
+        167.0,
+        756.0,
+        200.0,
+        783.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 60,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "源",
+      "bbox": [
+        167.0,
+        783.0,
+        200.0,
+        810.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 61,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        167.0,
+        810.0,
+        200.0,
+        836.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 62,
+      "col_text": "翰林学士尚书户部侍郎知制诰上柱国賜紫金鱼袋王源中",
+      "col_bbox": [
+        167,
+        143,
+        200,
+        836
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "释",
+      "bbox": [
+        135.0,
+        142.0,
+        163.0,
+        171.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 63,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        135.0,
+        171.0,
+        163.0,
+        197.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 64,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "传",
+      "bbox": [
+        135.0,
+        197.0,
+        163.0,
+        225.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 65,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "旨",
+      "bbox": [
+        135.0,
+        225.0,
+        163.0,
+        252.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 66,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "化",
+      "bbox": [
+        135.0,
+        252.0,
+        163.0,
+        278.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 67,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "导",
+      "bbox": [
+        135.0,
+        278.0,
+        163.0,
+        305.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 68,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "迷",
+      "bbox": [
+        135.0,
+        305.0,
+        163.0,
+        332.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 69,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "聋",
+      "bbox": [
+        135.0,
+        332.0,
+        163.0,
+        358.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 70,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "五",
+      "bbox": [
+        135.0,
+        358.0,
+        163.0,
+        386.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 71,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "蕴",
+      "bbox": [
+        135.0,
+        386.0,
+        163.0,
+        414.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 72,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        135.0,
+        414.0,
+        163.0,
+        455.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 73,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        135.0,
+        455.0,
+        163.0,
+        485.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 74,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "万",
+      "bbox": [
+        135.0,
+        485.0,
+        163.0,
+        513.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 75,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "缘",
+      "bbox": [
+        135.0,
+        513.0,
+        163.0,
+        541.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 76,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "归",
+      "bbox": [
+        135.0,
+        541.0,
+        163.0,
+        569.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 77,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "空",
+      "bbox": [
+        135.0,
+        569.0,
+        163.0,
+        597.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 78,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "嗤",
+      "bbox": [
+        135.0,
+        597.0,
+        163.0,
+        624.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 79,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "嗤",
+      "bbox": [
+        135.0,
+        624.0,
+        163.0,
+        651.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 80,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "凡",
+      "bbox": [
+        135.0,
+        651.0,
+        163.0,
+        674.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 81,
+      "col_text": "释尊传旨化导迷聋五蕴何有万缘归空嗤嗤凡",
+      "col_bbox": [
+        135,
+        142,
+        163,
+        674
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 82,
+  "timestamp": "2026-05-02T23:12:24.568558"
+}

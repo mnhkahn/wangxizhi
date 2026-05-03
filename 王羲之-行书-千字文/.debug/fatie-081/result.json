@@ -1,0 +1,2093 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-081.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如来不不也世尊不应以诸相具足观如来佛言善哉十人缺為肖我兒夫者則逃凡夫澳菩提汝意云衡可諸桐具照觀如束不不也世不應以諸相具是觀如来佛哉",
+  "parsed_results": [
+    {
+      "text": "76",
+      "bbox": [
+        871,
+        1418,
+        893,
+        1438
+      ],
+      "poly": [
+        [
+          871,
+          1418
+        ],
+        [
+          893,
+          1418
+        ],
+        [
+          893,
+          1438
+        ],
+        [
+          871,
+          1438
+        ]
+      ]
+    },
+    {
+      "text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "poly": [
+        [
+          732,
+          128
+        ],
+        [
+          760,
+          128
+        ],
+        [
+          760,
+          951
+        ],
+        [
+          732,
+          951
+        ]
+      ]
+    },
+    {
+      "text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "poly": [
+        [
+          696,
+          130
+        ],
+        [
+          726,
+          130
+        ],
+        [
+          726,
+          689
+        ],
+        [
+          696,
+          689
+        ]
+      ]
+    },
+    {
+      "text": "十人缺為肖我兒夫者",
+      "bbox": [
+        579,
+        159,
+        690,
+        1323
+      ],
+      "poly": [
+        [
+          579,
+          159
+        ],
+        [
+          690,
+          159
+        ],
+        [
+          690,
+          1323
+        ],
+        [
+          579,
+          1323
+        ]
+      ]
+    },
+    {
+      "text": "則逃凡夫澳菩提汝意",
+      "bbox": [
+        466,
+        155,
+        592,
+        1327
+      ],
+      "poly": [
+        [
+          466,
+          155
+        ],
+        [
+          592,
+          155
+        ],
+        [
+          592,
+          1327
+        ],
+        [
+          466,
+          1327
+        ]
+      ]
+    },
+    {
+      "text": "云衡可諸桐具照觀如",
+      "bbox": [
+        356,
+        146,
+        476,
+        1338
+      ],
+      "poly": [
+        [
+          356,
+          146
+        ],
+        [
+          476,
+          146
+        ],
+        [
+          476,
+          1338
+        ],
+        [
+          356,
+          1338
+        ]
+      ]
+    },
+    {
+      "text": "束不不也世不應以諸",
+      "bbox": [
+        240,
+        162,
+        362,
+        1334
+      ],
+      "poly": [
+        [
+          240,
+          162
+        ],
+        [
+          362,
+          162
+        ],
+        [
+          362,
+          1334
+        ],
+        [
+          240,
+          1334
+        ]
+      ]
+    },
+    {
+      "text": "相具是觀如来佛哉",
+      "bbox": [
+        131,
+        163,
+        247,
+        1334
+      ],
+      "poly": [
+        [
+          131,
+          163
+        ],
+        [
+          247,
+          163
+        ],
+        [
+          247,
+          1334
+        ],
+        [
+          131,
+          1334
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "夫",
+      "bbox": [
+        732.0,
+        128.0,
+        760.0,
+        157.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        732.0,
+        157.0,
+        760.0,
+        183.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        732.0,
+        183.0,
+        760.0,
+        210.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "妄",
+      "bbox": [
+        732.0,
+        210.0,
+        760.0,
+        237.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        732.0,
+        237.0,
+        760.0,
+        264.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        732.0,
+        264.0,
+        760.0,
+        290.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        732.0,
+        290.0,
+        760.0,
+        318.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "凡",
+      "bbox": [
+        732.0,
+        318.0,
+        760.0,
+        347.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "夫",
+      "bbox": [
+        732.0,
+        347.0,
+        760.0,
+        375.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        732.0,
+        375.0,
+        760.0,
+        403.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "则",
+      "bbox": [
+        732.0,
+        403.0,
+        760.0,
+        447.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 10,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        732.0,
+        447.0,
+        760.0,
+        475.0
+      ],
+      "column": 1,
+      "row": 11,
+      "global_index": 11,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "凡",
+      "bbox": [
+        732.0,
+        475.0,
+        760.0,
+        503.0
+      ],
+      "column": 1,
+      "row": 12,
+      "global_index": 12,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "夫",
+      "bbox": [
+        732.0,
+        503.0,
+        760.0,
+        529.0
+      ],
+      "column": 1,
+      "row": 13,
+      "global_index": 13,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        732.0,
+        529.0,
+        760.0,
+        556.0
+      ],
+      "column": 1,
+      "row": 14,
+      "global_index": 14,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        732.0,
+        556.0,
+        760.0,
+        582.0
+      ],
+      "column": 1,
+      "row": 15,
+      "global_index": 15,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        732.0,
+        582.0,
+        760.0,
+        610.0
+      ],
+      "column": 1,
+      "row": 16,
+      "global_index": 16,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "汝",
+      "bbox": [
+        732.0,
+        610.0,
+        760.0,
+        636.0
+      ],
+      "column": 1,
+      "row": 17,
+      "global_index": 17,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "意",
+      "bbox": [
+        732.0,
+        636.0,
+        760.0,
+        664.0
+      ],
+      "column": 1,
+      "row": 18,
+      "global_index": 18,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "云",
+      "bbox": [
+        732.0,
+        664.0,
+        760.0,
+        687.0
+      ],
+      "column": 1,
+      "row": 19,
+      "global_index": 19,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        732.0,
+        687.0,
+        760.0,
+        715.0
+      ],
+      "column": 1,
+      "row": 20,
+      "global_index": 20,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        732.0,
+        715.0,
+        760.0,
+        759.0
+      ],
+      "column": 1,
+      "row": 21,
+      "global_index": 21,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        732.0,
+        759.0,
+        760.0,
+        781.0
+      ],
+      "column": 1,
+      "row": 22,
+      "global_index": 22,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诸",
+      "bbox": [
+        732.0,
+        781.0,
+        760.0,
+        801.0
+      ],
+      "column": 1,
+      "row": 23,
+      "global_index": 23,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        732.0,
+        801.0,
+        760.0,
+        844.0
+      ],
+      "column": 1,
+      "row": 24,
+      "global_index": 24,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "具",
+      "bbox": [
+        732.0,
+        844.0,
+        760.0,
+        872.0
+      ],
+      "column": 1,
+      "row": 25,
+      "global_index": 25,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "足",
+      "bbox": [
+        732.0,
+        872.0,
+        760.0,
+        901.0
+      ],
+      "column": 1,
+      "row": 26,
+      "global_index": 26,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "观",
+      "bbox": [
+        732.0,
+        901.0,
+        760.0,
+        928.0
+      ],
+      "column": 1,
+      "row": 27,
+      "global_index": 27,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        732.0,
+        928.0,
+        760.0,
+        951.0
+      ],
+      "column": 1,
+      "row": 28,
+      "global_index": 28,
+      "col_text": "夫之人妄为有我凡夫者则非凡夫须菩提汝意云何可以诸相具足观如",
+      "col_bbox": [
+        732,
+        128,
+        760,
+        951
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        696.0,
+        130.0,
+        726.0,
+        156.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 29,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        696.0,
+        156.0,
+        726.0,
+        183.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 30,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        696.0,
+        183.0,
+        726.0,
+        209.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 31,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "也",
+      "bbox": [
+        696.0,
+        209.0,
+        726.0,
+        238.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 32,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        696.0,
+        238.0,
+        726.0,
+        263.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 33,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        696.0,
+        263.0,
+        726.0,
+        289.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 34,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        696.0,
+        289.0,
+        726.0,
+        317.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 35,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "应",
+      "bbox": [
+        696.0,
+        317.0,
+        726.0,
+        345.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 36,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        696.0,
+        345.0,
+        726.0,
+        373.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 37,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诸",
+      "bbox": [
+        696.0,
+        373.0,
+        726.0,
+        401.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 38,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        696.0,
+        401.0,
+        726.0,
+        444.0
+      ],
+      "column": 2,
+      "row": 10,
+      "global_index": 39,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "具",
+      "bbox": [
+        696.0,
+        444.0,
+        726.0,
+        472.0
+      ],
+      "column": 2,
+      "row": 11,
+      "global_index": 40,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "足",
+      "bbox": [
+        696.0,
+        472.0,
+        726.0,
+        500.0
+      ],
+      "column": 2,
+      "row": 12,
+      "global_index": 41,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "观",
+      "bbox": [
+        696.0,
+        500.0,
+        726.0,
+        528.0
+      ],
+      "column": 2,
+      "row": 13,
+      "global_index": 42,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        696.0,
+        528.0,
+        726.0,
+        556.0
+      ],
+      "column": 2,
+      "row": 14,
+      "global_index": 43,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        696.0,
+        556.0,
+        726.0,
+        582.0
+      ],
+      "column": 2,
+      "row": 15,
+      "global_index": 44,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        696.0,
+        582.0,
+        726.0,
+        610.0
+      ],
+      "column": 2,
+      "row": 16,
+      "global_index": 45,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        696.0,
+        610.0,
+        726.0,
+        636.0
+      ],
+      "column": 2,
+      "row": 17,
+      "global_index": 46,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "善",
+      "bbox": [
+        696.0,
+        636.0,
+        726.0,
+        663.0
+      ],
+      "column": 2,
+      "row": 18,
+      "global_index": 47,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "哉",
+      "bbox": [
+        696.0,
+        663.0,
+        726.0,
+        689.0
+      ],
+      "column": 2,
+      "row": 19,
+      "global_index": 48,
+      "col_text": "来不不也世尊不应以诸相具足观如来佛言善哉",
+      "col_bbox": [
+        696,
+        130,
+        726,
+        689
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "十",
+      "bbox": [
+        579.0,
+        159.0,
+        690.0,
+        325.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 49,
+      "col_text": "十人缺為肖我兒夫者",
+      "col_bbox": [
+        579,
+        159,
+        690,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        579.0,
+        325.0,
+        690.0,
+        423.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 50,
+      "col_text": "十人缺為肖我兒夫者",
+      "col_bbox": [
+        579,
+        159,
+        690,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "缺",
+      "bbox": [
+        579.0,
+        423.0,
+        690.0,
+        532.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 51,
+      "col_text": "十人缺為肖我兒夫者",
+      "col_bbox": [
+        579,
+        159,
+        690,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        579.0,
+        532.0,
+        690.0,
+        646.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 52,
+      "col_text": "十人缺為肖我兒夫者",
+      "col_bbox": [
+        579,
+        159,
+        690,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "肖",
+      "bbox": [
+        579.0,
+        646.0,
+        690.0,
+        767.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 53,
+      "col_text": "十人缺為肖我兒夫者",
+      "col_bbox": [
+        579,
+        159,
+        690,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        579.0,
+        767.0,
+        690.0,
+        909.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 54,
+      "col_text": "十人缺為肖我兒夫者",
+      "col_bbox": [
+        579,
+        159,
+        690,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "兒",
+      "bbox": [
+        579.0,
+        909.0,
+        690.0,
+        1039.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 55,
+      "col_text": "十人缺為肖我兒夫者",
+      "col_bbox": [
+        579,
+        159,
+        690,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "夫",
+      "bbox": [
+        579.0,
+        1039.0,
+        690.0,
+        1160.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 56,
+      "col_text": "十人缺為肖我兒夫者",
+      "col_bbox": [
+        579,
+        159,
+        690,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        579.0,
+        1160.0,
+        690.0,
+        1323.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 57,
+      "col_text": "十人缺為肖我兒夫者",
+      "col_bbox": [
+        579,
+        159,
+        690,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "則",
+      "bbox": [
+        466.0,
+        155.0,
+        592.0,
+        299.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 58,
+      "col_text": "則逃凡夫澳菩提汝意",
+      "col_bbox": [
+        466,
+        155,
+        592,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "逃",
+      "bbox": [
+        466.0,
+        299.0,
+        592.0,
+        436.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 59,
+      "col_text": "則逃凡夫澳菩提汝意",
+      "col_bbox": [
+        466,
+        155,
+        592,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "凡",
+      "bbox": [
+        466.0,
+        436.0,
+        592.0,
+        547.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 60,
+      "col_text": "則逃凡夫澳菩提汝意",
+      "col_bbox": [
+        466,
+        155,
+        592,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "夫",
+      "bbox": [
+        466.0,
+        547.0,
+        592.0,
+        704.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 61,
+      "col_text": "則逃凡夫澳菩提汝意",
+      "col_bbox": [
+        466,
+        155,
+        592,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "澳",
+      "bbox": [
+        466.0,
+        704.0,
+        592.0,
+        807.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 62,
+      "col_text": "則逃凡夫澳菩提汝意",
+      "col_bbox": [
+        466,
+        155,
+        592,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        466.0,
+        807.0,
+        592.0,
+        945.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 63,
+      "col_text": "則逃凡夫澳菩提汝意",
+      "col_bbox": [
+        466,
+        155,
+        592,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        466.0,
+        945.0,
+        592.0,
+        1082.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 64,
+      "col_text": "則逃凡夫澳菩提汝意",
+      "col_bbox": [
+        466,
+        155,
+        592,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "汝",
+      "bbox": [
+        466.0,
+        1082.0,
+        592.0,
+        1170.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 65,
+      "col_text": "則逃凡夫澳菩提汝意",
+      "col_bbox": [
+        466,
+        155,
+        592,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "意",
+      "bbox": [
+        466.0,
+        1170.0,
+        592.0,
+        1327.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 66,
+      "col_text": "則逃凡夫澳菩提汝意",
+      "col_bbox": [
+        466,
+        155,
+        592,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "云",
+      "bbox": [
+        356.0,
+        146.0,
+        476.0,
+        308.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 67,
+      "col_text": "云衡可諸桐具照觀如",
+      "col_bbox": [
+        356,
+        146,
+        476,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "衡",
+      "bbox": [
+        356.0,
+        308.0,
+        476.0,
+        421.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 68,
+      "col_text": "云衡可諸桐具照觀如",
+      "col_bbox": [
+        356,
+        146,
+        476,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        356.0,
+        421.0,
+        476.0,
+        544.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 69,
+      "col_text": "云衡可諸桐具照觀如",
+      "col_bbox": [
+        356,
+        146,
+        476,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "諸",
+      "bbox": [
+        356.0,
+        544.0,
+        476.0,
+        657.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 70,
+      "col_text": "云衡可諸桐具照觀如",
+      "col_bbox": [
+        356,
+        146,
+        476,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "桐",
+      "bbox": [
+        356.0,
+        657.0,
+        476.0,
+        793.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 71,
+      "col_text": "云衡可諸桐具照觀如",
+      "col_bbox": [
+        356,
+        146,
+        476,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "具",
+      "bbox": [
+        356.0,
+        793.0,
+        476.0,
+        953.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 72,
+      "col_text": "云衡可諸桐具照觀如",
+      "col_bbox": [
+        356,
+        146,
+        476,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "照",
+      "bbox": [
+        356.0,
+        953.0,
+        476.0,
+        1061.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 73,
+      "col_text": "云衡可諸桐具照觀如",
+      "col_bbox": [
+        356,
+        146,
+        476,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "觀",
+      "bbox": [
+        356.0,
+        1061.0,
+        476.0,
+        1205.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 74,
+      "col_text": "云衡可諸桐具照觀如",
+      "col_bbox": [
+        356,
+        146,
+        476,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        356.0,
+        1205.0,
+        476.0,
+        1338.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 75,
+      "col_text": "云衡可諸桐具照觀如",
+      "col_bbox": [
+        356,
+        146,
+        476,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "束",
+      "bbox": [
+        240.0,
+        162.0,
+        362.0,
+        255.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 76,
+      "col_text": "束不不也世不應以諸",
+      "col_bbox": [
+        240,
+        162,
+        362,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        240.0,
+        255.0,
+        362.0,
+        441.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 77,
+      "col_text": "束不不也世不應以諸",
+      "col_bbox": [
+        240,
+        162,
+        362,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        240.0,
+        441.0,
+        362.0,
+        581.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 78,
+      "col_text": "束不不也世不應以諸",
+      "col_bbox": [
+        240,
+        162,
+        362,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "也",
+      "bbox": [
+        240.0,
+        581.0,
+        362.0,
+        685.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 79,
+      "col_text": "束不不也世不應以諸",
+      "col_bbox": [
+        240,
+        162,
+        362,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        240.0,
+        685.0,
+        362.0,
+        837.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 80,
+      "col_text": "束不不也世不應以諸",
+      "col_bbox": [
+        240,
+        162,
+        362,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        240.0,
+        837.0,
+        362.0,
+        930.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 81,
+      "col_text": "束不不也世不應以諸",
+      "col_bbox": [
+        240,
+        162,
+        362,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "應",
+      "bbox": [
+        240.0,
+        930.0,
+        362.0,
+        1090.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 82,
+      "col_text": "束不不也世不應以諸",
+      "col_bbox": [
+        240,
+        162,
+        362,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        240.0,
+        1090.0,
+        362.0,
+        1173.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 83,
+      "col_text": "束不不也世不應以諸",
+      "col_bbox": [
+        240,
+        162,
+        362,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "諸",
+      "bbox": [
+        240.0,
+        1173.0,
+        362.0,
+        1334.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 84,
+      "col_text": "束不不也世不應以諸",
+      "col_bbox": [
+        240,
+        162,
+        362,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        131.0,
+        163.0,
+        247.0,
+        351.0
+      ],
+      "column": 7,
+      "row": 0,
+      "global_index": 85,
+      "col_text": "相具是觀如来佛哉",
+      "col_bbox": [
+        131,
+        163,
+        247,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "具",
+      "bbox": [
+        131.0,
+        351.0,
+        247.0,
+        466.0
+      ],
+      "column": 7,
+      "row": 1,
+      "global_index": 86,
+      "col_text": "相具是觀如来佛哉",
+      "col_bbox": [
+        131,
+        163,
+        247,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        131.0,
+        466.0,
+        247.0,
+        604.0
+      ],
+      "column": 7,
+      "row": 2,
+      "global_index": 87,
+      "col_text": "相具是觀如来佛哉",
+      "col_bbox": [
+        131,
+        163,
+        247,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "觀",
+      "bbox": [
+        131.0,
+        604.0,
+        247.0,
+        790.0
+      ],
+      "column": 7,
+      "row": 3,
+      "global_index": 88,
+      "col_text": "相具是觀如来佛哉",
+      "col_bbox": [
+        131,
+        163,
+        247,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        131.0,
+        790.0,
+        247.0,
+        898.0
+      ],
+      "column": 7,
+      "row": 4,
+      "global_index": 89,
+      "col_text": "相具是觀如来佛哉",
+      "col_bbox": [
+        131,
+        163,
+        247,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        131.0,
+        898.0,
+        247.0,
+        1017.0
+      ],
+      "column": 7,
+      "row": 5,
+      "global_index": 90,
+      "col_text": "相具是觀如来佛哉",
+      "col_bbox": [
+        131,
+        163,
+        247,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        131.0,
+        1017.0,
+        247.0,
+        1171.0
+      ],
+      "column": 7,
+      "row": 6,
+      "global_index": 91,
+      "col_text": "相具是觀如来佛哉",
+      "col_bbox": [
+        131,
+        163,
+        247,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "哉",
+      "bbox": [
+        131.0,
+        1171.0,
+        247.0,
+        1334.0
+      ],
+      "column": 7,
+      "row": 7,
+      "global_index": 92,
+      "col_text": "相具是觀如来佛哉",
+      "col_bbox": [
+        131,
+        163,
+        247,
+        1334
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 8,
+  "total_chars": 93,
+  "timestamp": "2026-05-02T23:11:51.879252"
+}

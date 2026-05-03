@@ -47,6 +47,7 @@ w1000
 ocr_output
 words/
 .debug
+!王羲之-行书-千字文/.debug
 tmp/
 # OCR batch log
 batch_ocr_log.txt

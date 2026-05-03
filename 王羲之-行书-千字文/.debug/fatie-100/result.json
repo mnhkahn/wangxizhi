@@ -1,0 +1,1953 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-100.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "袋詩康佐金仙世尊习示妙门我飞相日照氣儀筌意愉筏入流本源眾生谁度诸法誰論寶津梁玉雲靈根袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+  "parsed_results": [
+    {
+      "text": "袋詩康佐",
+      "bbox": [
+        665,
+        390,
+        750,
+        879
+      ],
+      "poly": [
+        [
+          665,
+          390
+        ],
+        [
+          750,
+          390
+        ],
+        [
+          750,
+          879
+        ],
+        [
+          665,
+          879
+        ]
+      ]
+    },
+    {
+      "text": "金仙世尊习示妙门我",
+      "bbox": [
+        541,
+        148,
+        650,
+        1331
+      ],
+      "poly": [
+        [
+          541,
+          148
+        ],
+        [
+          650,
+          148
+        ],
+        [
+          650,
+          1331
+        ],
+        [
+          541,
+          1331
+        ]
+      ]
+    },
+    {
+      "text": "飞相日照氣儀筌意愉筏",
+      "bbox": [
+        434,
+        165,
+        533,
+        1326
+      ],
+      "poly": [
+        [
+          434,
+          165
+        ],
+        [
+          533,
+          165
+        ],
+        [
+          533,
+          1326
+        ],
+        [
+          434,
+          1326
+        ]
+      ]
+    },
+    {
+      "text": "入流本源眾生谁度诸法",
+      "bbox": [
+        315,
+        156,
+        423,
+        1326
+      ],
+      "poly": [
+        [
+          315,
+          156
+        ],
+        [
+          423,
+          156
+        ],
+        [
+          423,
+          1326
+        ],
+        [
+          315,
+          1326
+        ]
+      ]
+    },
+    {
+      "text": "誰論寶津梁玉雲靈根",
+      "bbox": [
+        208,
+        156,
+        315,
+        1331
+      ],
+      "poly": [
+        [
+          208,
+          156
+        ],
+        [
+          315,
+          156
+        ],
+        [
+          315,
+          1331
+        ],
+        [
+          208,
+          1331
+        ]
+      ]
+    },
+    {
+      "text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "poly": [
+        [
+          163,
+          143
+        ],
+        [
+          193,
+          143
+        ],
+        [
+          193,
+          834
+        ],
+        [
+          163,
+          834
+        ]
+      ]
+    },
+    {
+      "text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "poly": [
+        [
+          129,
+          146
+        ],
+        [
+          153,
+          146
+        ],
+        [
+          153,
+          700
+        ],
+        [
+          129,
+          700
+        ]
+      ]
+    },
+    {
+      "text": "95",
+      "bbox": [
+        0,
+        1434,
+        20,
+        1454
+      ],
+      "poly": [
+        [
+          0,
+          1434
+        ],
+        [
+          20,
+          1434
+        ],
+        [
+          20,
+          1454
+        ],
+        [
+          0,
+          1454
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "袋",
+      "bbox": [
+        665.0,
+        390.0,
+        750.0,
+        478.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "袋詩康佐",
+      "col_bbox": [
+        665,
+        390,
+        750,
+        879
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "詩",
+      "bbox": [
+        665.0,
+        478.0,
+        750.0,
+        601.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "袋詩康佐",
+      "col_bbox": [
+        665,
+        390,
+        750,
+        879
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "康",
+      "bbox": [
+        665.0,
+        601.0,
+        750.0,
+        747.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "袋詩康佐",
+      "col_bbox": [
+        665,
+        390,
+        750,
+        879
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佐",
+      "bbox": [
+        665.0,
+        747.0,
+        750.0,
+        879.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "袋詩康佐",
+      "col_bbox": [
+        665,
+        390,
+        750,
+        879
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        541.0,
+        148.0,
+        650.0,
+        317.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 4,
+      "col_text": "金仙世尊习示妙门我",
+      "col_bbox": [
+        541,
+        148,
+        650,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "仙",
+      "bbox": [
+        541.0,
+        317.0,
+        650.0,
+        403.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 5,
+      "col_text": "金仙世尊习示妙门我",
+      "col_bbox": [
+        541,
+        148,
+        650,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        541.0,
+        403.0,
+        650.0,
+        548.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 6,
+      "col_text": "金仙世尊习示妙门我",
+      "col_bbox": [
+        541,
+        148,
+        650,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        541.0,
+        548.0,
+        650.0,
+        639.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 7,
+      "col_text": "金仙世尊习示妙门我",
+      "col_bbox": [
+        541,
+        148,
+        650,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "习",
+      "bbox": [
+        541.0,
+        639.0,
+        650.0,
+        772.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 8,
+      "col_text": "金仙世尊习示妙门我",
+      "col_bbox": [
+        541,
+        148,
+        650,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "示",
+      "bbox": [
+        541.0,
+        772.0,
+        650.0,
+        897.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 9,
+      "col_text": "金仙世尊习示妙门我",
+      "col_bbox": [
+        541,
+        148,
+        650,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "妙",
+      "bbox": [
+        541.0,
+        897.0,
+        650.0,
+        1036.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 10,
+      "col_text": "金仙世尊习示妙门我",
+      "col_bbox": [
+        541,
+        148,
+        650,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "门",
+      "bbox": [
+        541.0,
+        1036.0,
+        650.0,
+        1176.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 11,
+      "col_text": "金仙世尊习示妙门我",
+      "col_bbox": [
+        541,
+        148,
+        650,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        541.0,
+        1176.0,
+        650.0,
+        1331.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 12,
+      "col_text": "金仙世尊习示妙门我",
+      "col_bbox": [
+        541,
+        148,
+        650,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "飞",
+      "bbox": [
+        434.0,
+        165.0,
+        533.0,
+        250.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 13,
+      "col_text": "飞相日照氣儀筌意愉筏",
+      "col_bbox": [
+        434,
+        165,
+        533,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        434.0,
+        250.0,
+        533.0,
+        366.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 14,
+      "col_text": "飞相日照氣儀筌意愉筏",
+      "col_bbox": [
+        434,
+        165,
+        533,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "日",
+      "bbox": [
+        434.0,
+        366.0,
+        533.0,
+        546.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 15,
+      "col_text": "飞相日照氣儀筌意愉筏",
+      "col_bbox": [
+        434,
+        165,
+        533,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "照",
+      "bbox": [
+        434.0,
+        546.0,
+        533.0,
+        662.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 16,
+      "col_text": "飞相日照氣儀筌意愉筏",
+      "col_bbox": [
+        434,
+        165,
+        533,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "氣",
+      "bbox": [
+        434.0,
+        662.0,
+        533.0,
+        772.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 17,
+      "col_text": "飞相日照氣儀筌意愉筏",
+      "col_bbox": [
+        434,
+        165,
+        533,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "儀",
+      "bbox": [
+        434.0,
+        772.0,
+        533.0,
+        877.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 18,
+      "col_text": "飞相日照氣儀筌意愉筏",
+      "col_bbox": [
+        434,
+        165,
+        533,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "筌",
+      "bbox": [
+        434.0,
+        877.0,
+        533.0,
+        1002.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 19,
+      "col_text": "飞相日照氣儀筌意愉筏",
+      "col_bbox": [
+        434,
+        165,
+        533,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "意",
+      "bbox": [
+        434.0,
+        1002.0,
+        533.0,
+        1121.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 20,
+      "col_text": "飞相日照氣儀筌意愉筏",
+      "col_bbox": [
+        434,
+        165,
+        533,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "愉",
+      "bbox": [
+        434.0,
+        1121.0,
+        533.0,
+        1236.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 21,
+      "col_text": "飞相日照氣儀筌意愉筏",
+      "col_bbox": [
+        434,
+        165,
+        533,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "筏",
+      "bbox": [
+        434.0,
+        1236.0,
+        533.0,
+        1326.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 22,
+      "col_text": "飞相日照氣儀筌意愉筏",
+      "col_bbox": [
+        434,
+        165,
+        533,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "入",
+      "bbox": [
+        315.0,
+        156.0,
+        423.0,
+        297.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 23,
+      "col_text": "入流本源眾生谁度诸法",
+      "col_bbox": [
+        315,
+        156,
+        423,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "流",
+      "bbox": [
+        315.0,
+        297.0,
+        423.0,
+        392.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 24,
+      "col_text": "入流本源眾生谁度诸法",
+      "col_bbox": [
+        315,
+        156,
+        423,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "本",
+      "bbox": [
+        315.0,
+        392.0,
+        423.0,
+        539.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 25,
+      "col_text": "入流本源眾生谁度诸法",
+      "col_bbox": [
+        315,
+        156,
+        423,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "源",
+      "bbox": [
+        315.0,
+        539.0,
+        423.0,
+        651.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 26,
+      "col_text": "入流本源眾生谁度诸法",
+      "col_bbox": [
+        315,
+        156,
+        423,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "眾",
+      "bbox": [
+        315.0,
+        651.0,
+        423.0,
+        759.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 27,
+      "col_text": "入流本源眾生谁度诸法",
+      "col_bbox": [
+        315,
+        156,
+        423,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        315.0,
+        759.0,
+        423.0,
+        880.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 28,
+      "col_text": "入流本源眾生谁度诸法",
+      "col_bbox": [
+        315,
+        156,
+        423,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "谁",
+      "bbox": [
+        315.0,
+        880.0,
+        423.0,
+        996.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 29,
+      "col_text": "入流本源眾生谁度诸法",
+      "col_bbox": [
+        315,
+        156,
+        423,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "度",
+      "bbox": [
+        315.0,
+        996.0,
+        423.0,
+        1122.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 30,
+      "col_text": "入流本源眾生谁度诸法",
+      "col_bbox": [
+        315,
+        156,
+        423,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诸",
+      "bbox": [
+        315.0,
+        1122.0,
+        423.0,
+        1174.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 31,
+      "col_text": "入流本源眾生谁度诸法",
+      "col_bbox": [
+        315,
+        156,
+        423,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        315.0,
+        1174.0,
+        423.0,
+        1326.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 32,
+      "col_text": "入流本源眾生谁度诸法",
+      "col_bbox": [
+        315,
+        156,
+        423,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "誰",
+      "bbox": [
+        208.0,
+        156.0,
+        315.0,
+        302.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 33,
+      "col_text": "誰論寶津梁玉雲靈根",
+      "col_bbox": [
+        208,
+        156,
+        315,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "論",
+      "bbox": [
+        208.0,
+        302.0,
+        315.0,
+        398.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 34,
+      "col_text": "誰論寶津梁玉雲靈根",
+      "col_bbox": [
+        208,
+        156,
+        315,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寶",
+      "bbox": [
+        208.0,
+        398.0,
+        315.0,
+        562.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 35,
+      "col_text": "誰論寶津梁玉雲靈根",
+      "col_bbox": [
+        208,
+        156,
+        315,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "津",
+      "bbox": [
+        208.0,
+        562.0,
+        315.0,
+        677.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 36,
+      "col_text": "誰論寶津梁玉雲靈根",
+      "col_bbox": [
+        208,
+        156,
+        315,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "梁",
+      "bbox": [
+        208.0,
+        677.0,
+        315.0,
+        846.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 37,
+      "col_text": "誰論寶津梁玉雲靈根",
+      "col_bbox": [
+        208,
+        156,
+        315,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "玉",
+      "bbox": [
+        208.0,
+        846.0,
+        315.0,
+        943.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 38,
+      "col_text": "誰論寶津梁玉雲靈根",
+      "col_bbox": [
+        208,
+        156,
+        315,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "雲",
+      "bbox": [
+        208.0,
+        943.0,
+        315.0,
+        1072.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 39,
+      "col_text": "誰論寶津梁玉雲靈根",
+      "col_bbox": [
+        208,
+        156,
+        315,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "靈",
+      "bbox": [
+        208.0,
+        1072.0,
+        315.0,
+        1209.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 40,
+      "col_text": "誰論寶津梁玉雲靈根",
+      "col_bbox": [
+        208,
+        156,
+        315,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "根",
+      "bbox": [
+        208.0,
+        1209.0,
+        315.0,
+        1331.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 41,
+      "col_text": "誰論寶津梁玉雲靈根",
+      "col_bbox": [
+        208,
+        156,
+        315,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "袋",
+      "bbox": [
+        163.0,
+        143.0,
+        193.0,
+        172.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 42,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "许",
+      "bbox": [
+        163.0,
+        172.0,
+        193.0,
+        199.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 43,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "康",
+      "bbox": [
+        163.0,
+        199.0,
+        193.0,
+        225.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 44,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佐",
+      "bbox": [
+        163.0,
+        225.0,
+        193.0,
+        253.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 45,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        163.0,
+        253.0,
+        193.0,
+        278.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 46,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "仙",
+      "bbox": [
+        163.0,
+        278.0,
+        193.0,
+        307.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 47,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        163.0,
+        307.0,
+        193.0,
+        336.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 48,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        163.0,
+        336.0,
+        193.0,
+        380.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 49,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "显",
+      "bbox": [
+        163.0,
+        380.0,
+        193.0,
+        409.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 50,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "示",
+      "bbox": [
+        163.0,
+        409.0,
+        193.0,
+        436.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 51,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "妙",
+      "bbox": [
+        163.0,
+        436.0,
+        193.0,
+        465.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 52,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "门",
+      "bbox": [
+        163.0,
+        465.0,
+        193.0,
+        491.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 53,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        163.0,
+        491.0,
+        193.0,
+        517.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 54,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        163.0,
+        517.0,
+        193.0,
+        545.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 55,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "离",
+      "bbox": [
+        163.0,
+        545.0,
+        193.0,
+        566.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 56,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        163.0,
+        566.0,
+        193.0,
+        598.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 57,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "日",
+      "bbox": [
+        163.0,
+        598.0,
+        193.0,
+        624.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 58,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "照",
+      "bbox": [
+        163.0,
+        624.0,
+        193.0,
+        653.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 59,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "氛",
+      "bbox": [
+        163.0,
+        653.0,
+        193.0,
+        682.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 60,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "昏",
+      "bbox": [
+        163.0,
+        682.0,
+        193.0,
+        725.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 61,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "筌",
+      "bbox": [
+        163.0,
+        725.0,
+        193.0,
+        754.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 62,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "意",
+      "bbox": [
+        163.0,
+        754.0,
+        193.0,
+        783.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 63,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "喻",
+      "bbox": [
+        163.0,
+        783.0,
+        193.0,
+        810.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 64,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "筏",
+      "bbox": [
+        163.0,
+        810.0,
+        193.0,
+        834.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 65,
+      "col_text": "袋许康佐金仙世尊显示妙门无我离相日照氛昏筌意喻筏",
+      "col_bbox": [
+        163,
+        143,
+        193,
+        834
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "入",
+      "bbox": [
+        129.0,
+        146.0,
+        153.0,
+        171.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 66,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "流",
+      "bbox": [
+        129.0,
+        171.0,
+        153.0,
+        199.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 67,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "本",
+      "bbox": [
+        129.0,
+        199.0,
+        153.0,
+        224.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 68,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "源",
+      "bbox": [
+        129.0,
+        224.0,
+        153.0,
+        251.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 69,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "众",
+      "bbox": [
+        129.0,
+        251.0,
+        153.0,
+        280.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 70,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        129.0,
+        280.0,
+        153.0,
+        305.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 71,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "谁",
+      "bbox": [
+        129.0,
+        305.0,
+        153.0,
+        331.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 72,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "度",
+      "bbox": [
+        129.0,
+        331.0,
+        153.0,
+        359.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 73,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诸",
+      "bbox": [
+        129.0,
+        359.0,
+        153.0,
+        387.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 74,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        129.0,
+        387.0,
+        153.0,
+        415.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 75,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "谁",
+      "bbox": [
+        129.0,
+        415.0,
+        153.0,
+        442.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 76,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "论",
+      "bbox": [
+        129.0,
+        442.0,
+        153.0,
+        470.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 77,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宝",
+      "bbox": [
+        129.0,
+        470.0,
+        153.0,
+        507.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 78,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乘",
+      "bbox": [
+        129.0,
+        507.0,
+        153.0,
+        540.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 79,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "津",
+      "bbox": [
+        129.0,
+        540.0,
+        153.0,
+        568.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 80,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "梁",
+      "bbox": [
+        129.0,
+        568.0,
+        153.0,
+        596.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 81,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "玉",
+      "bbox": [
+        129.0,
+        596.0,
+        153.0,
+        623.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 82,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "毫",
+      "bbox": [
+        129.0,
+        623.0,
+        153.0,
+        650.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 83,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "灵",
+      "bbox": [
+        129.0,
+        650.0,
+        153.0,
+        677.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 84,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "根",
+      "bbox": [
+        129.0,
+        677.0,
+        153.0,
+        700.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 85,
+      "col_text": "入流本源众生谁度诸法谁论宝乘津梁玉毫灵根",
+      "col_bbox": [
+        129,
+        146,
+        153,
+        700
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 86,
+  "timestamp": "2026-05-02T23:12:29.422721"
+}

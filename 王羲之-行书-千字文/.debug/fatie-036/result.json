@@ -1,0 +1,2193 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-036.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "门以此福德陈前福读当知此霞一切世閒天人阿傭霾皆應供養如佛靈塔何次畫能榮持讀誦當知是人成就要上有之门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔何况尽能受持读诵当知是人成就无上希有之法",
+  "parsed_results": [
+    {
+      "text": "门以此福德陈前福读当",
+      "bbox": [
+        659,
+        143,
+        772,
+        1332
+      ],
+      "poly": [
+        [
+          659,
+          143
+        ],
+        [
+          772,
+          143
+        ],
+        [
+          772,
+          1332
+        ],
+        [
+          659,
+          1332
+        ]
+      ]
+    },
+    {
+      "text": "知此霞一切世閒天人阿",
+      "bbox": [
+        541,
+        148,
+        665,
+        1331
+      ],
+      "poly": [
+        [
+          541,
+          148
+        ],
+        [
+          665,
+          148
+        ],
+        [
+          665,
+          1331
+        ],
+        [
+          541,
+          1331
+        ]
+      ]
+    },
+    {
+      "text": "傭霾皆應供養如佛靈塔",
+      "bbox": [
+        429,
+        152,
+        543,
+        1332
+      ],
+      "poly": [
+        [
+          429,
+          152
+        ],
+        [
+          543,
+          152
+        ],
+        [
+          543,
+          1332
+        ],
+        [
+          429,
+          1332
+        ]
+      ]
+    },
+    {
+      "text": "何次畫能榮持讀誦當知",
+      "bbox": [
+        318,
+        151,
+        420,
+        1335
+      ],
+      "poly": [
+        [
+          318,
+          151
+        ],
+        [
+          420,
+          151
+        ],
+        [
+          420,
+          1335
+        ],
+        [
+          318,
+          1335
+        ]
+      ]
+    },
+    {
+      "text": "是人成就要上有之",
+      "bbox": [
+        214,
+        148,
+        313,
+        1331
+      ],
+      "poly": [
+        [
+          214,
+          148
+        ],
+        [
+          313,
+          148
+        ],
+        [
+          313,
+          1331
+        ],
+        [
+          214,
+          1331
+        ]
+      ]
+    },
+    {
+      "text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "poly": [
+        [
+          171,
+          140
+        ],
+        [
+          194,
+          140
+        ],
+        [
+          194,
+          985
+        ],
+        [
+          171,
+          985
+        ]
+      ]
+    },
+    {
+      "text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "poly": [
+        [
+          130,
+          134
+        ],
+        [
+          160,
+          134
+        ],
+        [
+          160,
+          694
+        ],
+        [
+          130,
+          694
+        ]
+      ]
+    },
+    {
+      "text": "31",
+      "bbox": [
+        16,
+        1428,
+        39,
+        1448
+      ],
+      "poly": [
+        [
+          16,
+          1428
+        ],
+        [
+          39,
+          1428
+        ],
+        [
+          39,
+          1448
+        ],
+        [
+          16,
+          1448
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "门",
+      "bbox": [
+        659.0,
+        143.0,
+        772.0,
+        293.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "门以此福德陈前福读当",
+      "col_bbox": [
+        659,
+        143,
+        772,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        659.0,
+        293.0,
+        772.0,
+        383.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "门以此福德陈前福读当",
+      "col_bbox": [
+        659,
+        143,
+        772,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        659.0,
+        383.0,
+        772.0,
+        503.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "门以此福德陈前福读当",
+      "col_bbox": [
+        659,
+        143,
+        772,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        659.0,
+        503.0,
+        772.0,
+        645.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "门以此福德陈前福读当",
+      "col_bbox": [
+        659,
+        143,
+        772,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        659.0,
+        645.0,
+        772.0,
+        771.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "门以此福德陈前福读当",
+      "col_bbox": [
+        659,
+        143,
+        772,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "陈",
+      "bbox": [
+        659.0,
+        771.0,
+        772.0,
+        875.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "门以此福德陈前福读当",
+      "col_bbox": [
+        659,
+        143,
+        772,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "前",
+      "bbox": [
+        659.0,
+        875.0,
+        772.0,
+        1009.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "门以此福德陈前福读当",
+      "col_bbox": [
+        659,
+        143,
+        772,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        659.0,
+        1009.0,
+        772.0,
+        1128.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "门以此福德陈前福读当",
+      "col_bbox": [
+        659,
+        143,
+        772,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "读",
+      "bbox": [
+        659.0,
+        1128.0,
+        772.0,
+        1178.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "门以此福德陈前福读当",
+      "col_bbox": [
+        659,
+        143,
+        772,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "当",
+      "bbox": [
+        659.0,
+        1178.0,
+        772.0,
+        1332.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "门以此福德陈前福读当",
+      "col_bbox": [
+        659,
+        143,
+        772,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        541.0,
+        148.0,
+        665.0,
+        300.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "知此霞一切世閒天人阿",
+      "col_bbox": [
+        541,
+        148,
+        665,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        541.0,
+        300.0,
+        665.0,
+        407.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "知此霞一切世閒天人阿",
+      "col_bbox": [
+        541,
+        148,
+        665,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "霞",
+      "bbox": [
+        541.0,
+        407.0,
+        665.0,
+        475.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "知此霞一切世閒天人阿",
+      "col_bbox": [
+        541,
+        148,
+        665,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        541.0,
+        475.0,
+        665.0,
+        638.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "知此霞一切世閒天人阿",
+      "col_bbox": [
+        541,
+        148,
+        665,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "切",
+      "bbox": [
+        541.0,
+        638.0,
+        665.0,
+        769.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "知此霞一切世閒天人阿",
+      "col_bbox": [
+        541,
+        148,
+        665,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        541.0,
+        769.0,
+        665.0,
+        891.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "知此霞一切世閒天人阿",
+      "col_bbox": [
+        541,
+        148,
+        665,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "閒",
+      "bbox": [
+        541.0,
+        891.0,
+        665.0,
+        941.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "知此霞一切世閒天人阿",
+      "col_bbox": [
+        541,
+        148,
+        665,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "天",
+      "bbox": [
+        541.0,
+        941.0,
+        665.0,
+        1062.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "知此霞一切世閒天人阿",
+      "col_bbox": [
+        541,
+        148,
+        665,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        541.0,
+        1062.0,
+        665.0,
+        1178.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "知此霞一切世閒天人阿",
+      "col_bbox": [
+        541,
+        148,
+        665,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "阿",
+      "bbox": [
+        541.0,
+        1178.0,
+        665.0,
+        1331.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 19,
+      "col_text": "知此霞一切世閒天人阿",
+      "col_bbox": [
+        541,
+        148,
+        665,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "傭",
+      "bbox": [
+        429.0,
+        152.0,
+        543.0,
+        271.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 20,
+      "col_text": "傭霾皆應供養如佛靈塔",
+      "col_bbox": [
+        429,
+        152,
+        543,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "霾",
+      "bbox": [
+        429.0,
+        271.0,
+        543.0,
+        397.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 21,
+      "col_text": "傭霾皆應供養如佛靈塔",
+      "col_bbox": [
+        429,
+        152,
+        543,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "皆",
+      "bbox": [
+        429.0,
+        397.0,
+        543.0,
+        533.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 22,
+      "col_text": "傭霾皆應供養如佛靈塔",
+      "col_bbox": [
+        429,
+        152,
+        543,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "應",
+      "bbox": [
+        429.0,
+        533.0,
+        543.0,
+        641.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 23,
+      "col_text": "傭霾皆應供養如佛靈塔",
+      "col_bbox": [
+        429,
+        152,
+        543,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "供",
+      "bbox": [
+        429.0,
+        641.0,
+        543.0,
+        776.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 24,
+      "col_text": "傭霾皆應供養如佛靈塔",
+      "col_bbox": [
+        429,
+        152,
+        543,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "養",
+      "bbox": [
+        429.0,
+        776.0,
+        543.0,
+        825.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 25,
+      "col_text": "傭霾皆應供養如佛靈塔",
+      "col_bbox": [
+        429,
+        152,
+        543,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        429.0,
+        825.0,
+        543.0,
+        1012.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 26,
+      "col_text": "傭霾皆應供養如佛靈塔",
+      "col_bbox": [
+        429,
+        152,
+        543,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        429.0,
+        1012.0,
+        543.0,
+        1125.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 27,
+      "col_text": "傭霾皆應供養如佛靈塔",
+      "col_bbox": [
+        429,
+        152,
+        543,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "靈",
+      "bbox": [
+        429.0,
+        1125.0,
+        543.0,
+        1248.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 28,
+      "col_text": "傭霾皆應供養如佛靈塔",
+      "col_bbox": [
+        429,
+        152,
+        543,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "塔",
+      "bbox": [
+        429.0,
+        1248.0,
+        543.0,
+        1332.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 29,
+      "col_text": "傭霾皆應供養如佛靈塔",
+      "col_bbox": [
+        429,
+        152,
+        543,
+        1332
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        318.0,
+        151.0,
+        420.0,
+        294.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "何次畫能榮持讀誦當知",
+      "col_bbox": [
+        318,
+        151,
+        420,
+        1335
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "次",
+      "bbox": [
+        318.0,
+        294.0,
+        420.0,
+        406.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "何次畫能榮持讀誦當知",
+      "col_bbox": [
+        318,
+        151,
+        420,
+        1335
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "畫",
+      "bbox": [
+        318.0,
+        406.0,
+        420.0,
+        540.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "何次畫能榮持讀誦當知",
+      "col_bbox": [
+        318,
+        151,
+        420,
+        1335
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        318.0,
+        540.0,
+        420.0,
+        589.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "何次畫能榮持讀誦當知",
+      "col_bbox": [
+        318,
+        151,
+        420,
+        1335
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "榮",
+      "bbox": [
+        318.0,
+        589.0,
+        420.0,
+        708.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "何次畫能榮持讀誦當知",
+      "col_bbox": [
+        318,
+        151,
+        420,
+        1335
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "持",
+      "bbox": [
+        318.0,
+        708.0,
+        420.0,
+        831.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "何次畫能榮持讀誦當知",
+      "col_bbox": [
+        318,
+        151,
+        420,
+        1335
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "讀",
+      "bbox": [
+        318.0,
+        831.0,
+        420.0,
+        944.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "何次畫能榮持讀誦當知",
+      "col_bbox": [
+        318,
+        151,
+        420,
+        1335
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "誦",
+      "bbox": [
+        318.0,
+        944.0,
+        420.0,
+        1071.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "何次畫能榮持讀誦當知",
+      "col_bbox": [
+        318,
+        151,
+        420,
+        1335
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "當",
+      "bbox": [
+        318.0,
+        1071.0,
+        420.0,
+        1188.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "何次畫能榮持讀誦當知",
+      "col_bbox": [
+        318,
+        151,
+        420,
+        1335
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        318.0,
+        1188.0,
+        420.0,
+        1335.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "何次畫能榮持讀誦當知",
+      "col_bbox": [
+        318,
+        151,
+        420,
+        1335
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        214.0,
+        148.0,
+        313.0,
+        338.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 40,
+      "col_text": "是人成就要上有之",
+      "col_bbox": [
+        214,
+        148,
+        313,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        214.0,
+        338.0,
+        313.0,
+        444.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 41,
+      "col_text": "是人成就要上有之",
+      "col_bbox": [
+        214,
+        148,
+        313,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "成",
+      "bbox": [
+        214.0,
+        444.0,
+        313.0,
+        549.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 42,
+      "col_text": "是人成就要上有之",
+      "col_bbox": [
+        214,
+        148,
+        313,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "就",
+      "bbox": [
+        214.0,
+        549.0,
+        313.0,
+        713.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 43,
+      "col_text": "是人成就要上有之",
+      "col_bbox": [
+        214,
+        148,
+        313,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "要",
+      "bbox": [
+        214.0,
+        713.0,
+        313.0,
+        902.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 44,
+      "col_text": "是人成就要上有之",
+      "col_bbox": [
+        214,
+        148,
+        313,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "上",
+      "bbox": [
+        214.0,
+        902.0,
+        313.0,
+        1078.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 45,
+      "col_text": "是人成就要上有之",
+      "col_bbox": [
+        214,
+        148,
+        313,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        214.0,
+        1078.0,
+        313.0,
+        1172.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 46,
+      "col_text": "是人成就要上有之",
+      "col_bbox": [
+        214,
+        148,
+        313,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        214.0,
+        1172.0,
+        313.0,
+        1331.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 47,
+      "col_text": "是人成就要上有之",
+      "col_bbox": [
+        214,
+        148,
+        313,
+        1331
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "门",
+      "bbox": [
+        171.0,
+        140.0,
+        194.0,
+        164.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 48,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        171.0,
+        164.0,
+        194.0,
+        190.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 49,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        171.0,
+        190.0,
+        194.0,
+        217.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 50,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        171.0,
+        217.0,
+        194.0,
+        244.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 51,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        171.0,
+        244.0,
+        194.0,
+        272.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 52,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "胜",
+      "bbox": [
+        171.0,
+        272.0,
+        194.0,
+        301.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 53,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "前",
+      "bbox": [
+        171.0,
+        301.0,
+        194.0,
+        344.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 54,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        171.0,
+        344.0,
+        194.0,
+        372.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 55,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        171.0,
+        372.0,
+        194.0,
+        400.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 56,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "当",
+      "bbox": [
+        171.0,
+        400.0,
+        194.0,
+        420.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 57,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        171.0,
+        420.0,
+        194.0,
+        455.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 58,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        171.0,
+        455.0,
+        194.0,
+        484.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 59,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "处",
+      "bbox": [
+        171.0,
+        484.0,
+        194.0,
+        512.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 60,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        171.0,
+        512.0,
+        194.0,
+        532.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 61,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "切",
+      "bbox": [
+        171.0,
+        532.0,
+        194.0,
+        562.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 62,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        171.0,
+        562.0,
+        194.0,
+        589.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 63,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "间",
+      "bbox": [
+        171.0,
+        589.0,
+        194.0,
+        616.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 64,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "天",
+      "bbox": [
+        171.0,
+        616.0,
+        194.0,
+        642.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 65,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        171.0,
+        642.0,
+        194.0,
+        669.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 66,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "阿",
+      "bbox": [
+        171.0,
+        669.0,
+        194.0,
+        696.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 67,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "修",
+      "bbox": [
+        171.0,
+        696.0,
+        194.0,
+        723.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 68,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "罗",
+      "bbox": [
+        171.0,
+        723.0,
+        194.0,
+        766.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 69,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "皆",
+      "bbox": [
+        171.0,
+        766.0,
+        194.0,
+        794.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 70,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "应",
+      "bbox": [
+        171.0,
+        794.0,
+        194.0,
+        814.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 71,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "供",
+      "bbox": [
+        171.0,
+        814.0,
+        194.0,
+        851.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 72,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "养",
+      "bbox": [
+        171.0,
+        851.0,
+        194.0,
+        879.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 73,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        171.0,
+        879.0,
+        194.0,
+        906.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 74,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        171.0,
+        906.0,
+        194.0,
+        934.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 75,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "灵",
+      "bbox": [
+        171.0,
+        934.0,
+        194.0,
+        961.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 76,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "塔",
+      "bbox": [
+        171.0,
+        961.0,
+        194.0,
+        985.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 77,
+      "col_text": "门以此福德胜前福德当知此处一切世间天人阿修罗皆应供养如佛灵塔",
+      "col_bbox": [
+        171,
+        140,
+        194,
+        985
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        130.0,
+        134.0,
+        160.0,
+        164.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 78,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "况",
+      "bbox": [
+        130.0,
+        164.0,
+        160.0,
+        191.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 79,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尽",
+      "bbox": [
+        130.0,
+        191.0,
+        160.0,
+        216.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 80,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        130.0,
+        216.0,
+        160.0,
+        245.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 81,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "受",
+      "bbox": [
+        130.0,
+        245.0,
+        160.0,
+        271.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 82,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "持",
+      "bbox": [
+        130.0,
+        271.0,
+        160.0,
+        298.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 83,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "读",
+      "bbox": [
+        130.0,
+        298.0,
+        160.0,
+        323.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 84,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诵",
+      "bbox": [
+        130.0,
+        323.0,
+        160.0,
+        350.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 85,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "当",
+      "bbox": [
+        130.0,
+        350.0,
+        160.0,
+        378.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 86,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        130.0,
+        378.0,
+        160.0,
+        406.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 87,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        130.0,
+        406.0,
+        160.0,
+        438.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 88,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        130.0,
+        438.0,
+        160.0,
+        464.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 89,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "成",
+      "bbox": [
+        130.0,
+        464.0,
+        160.0,
+        491.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 90,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "就",
+      "bbox": [
+        130.0,
+        491.0,
+        160.0,
+        533.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 91,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        130.0,
+        533.0,
+        160.0,
+        561.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 92,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "上",
+      "bbox": [
+        130.0,
+        561.0,
+        160.0,
+        589.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 93,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "希",
+      "bbox": [
+        130.0,
+        589.0,
+        160.0,
+        615.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 94,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        130.0,
+        615.0,
+        160.0,
+        644.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 95,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        130.0,
+        644.0,
+        160.0,
+        669.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 96,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        130.0,
+        669.0,
+        160.0,
+        694.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 97,
+      "col_text": "何况尽能受持读诵当知是人成就无上希有之法",
+      "col_bbox": [
+        130,
+        134,
+        160,
+        694
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 98,
+  "timestamp": "2026-05-02T23:10:41.173087"
+}

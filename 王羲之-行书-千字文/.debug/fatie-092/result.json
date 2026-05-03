@@ -1,0 +1,1933 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-092.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "者於一切法应如是知應如是見知是終而不生法拇滇喜提所言滋相寺即作弦相是名法相者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者即非法相是名法相须菩提若菩萨以无量阿",
+  "parsed_results": [
+    {
+      "text": "者於一切法应如是知應",
+      "bbox": [
+        674,
+        142,
+        783,
+        1338
+      ],
+      "poly": [
+        [
+          674,
+          142
+        ],
+        [
+          783,
+          142
+        ],
+        [
+          783,
+          1338
+        ],
+        [
+          674,
+          1338
+        ]
+      ]
+    },
+    {
+      "text": "如是見知是終而不生",
+      "bbox": [
+        559,
+        151,
+        673,
+        1343
+      ],
+      "poly": [
+        [
+          559,
+          151
+        ],
+        [
+          673,
+          151
+        ],
+        [
+          673,
+          1343
+        ],
+        [
+          559,
+          1343
+        ]
+      ]
+    },
+    {
+      "text": "法拇滇喜提所言滋相寺",
+      "bbox": [
+        446,
+        156,
+        557,
+        1340
+      ],
+      "poly": [
+        [
+          446,
+          156
+        ],
+        [
+          557,
+          156
+        ],
+        [
+          557,
+          1340
+        ],
+        [
+          446,
+          1340
+        ]
+      ]
+    },
+    {
+      "text": "即作弦相是名法相",
+      "bbox": [
+        321,
+        148,
+        442,
+        1117
+      ],
+      "poly": [
+        [
+          321,
+          148
+        ],
+        [
+          442,
+          148
+        ],
+        [
+          442,
+          1117
+        ],
+        [
+          321,
+          1117
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "bbox": [
+        215,
+        151,
+        335,
+        1354
+      ],
+      "poly": [
+        [
+          215,
+          151
+        ],
+        [
+          335,
+          151
+        ],
+        [
+          335,
+          1354
+        ],
+        [
+          215,
+          1354
+        ]
+      ]
+    },
+    {
+      "text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "poly": [
+        [
+          174,
+          145
+        ],
+        [
+          203,
+          145
+        ],
+        [
+          203,
+          996
+        ],
+        [
+          174,
+          996
+        ]
+      ]
+    },
+    {
+      "text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "poly": [
+        [
+          138,
+          145
+        ],
+        [
+          166,
+          145
+        ],
+        [
+          166,
+          649
+        ],
+        [
+          138,
+          649
+        ]
+      ]
+    },
+    {
+      "text": "87",
+      "bbox": [
+        22,
+        1437,
+        47,
+        1457
+      ],
+      "poly": [
+        [
+          22,
+          1437
+        ],
+        [
+          47,
+          1437
+        ],
+        [
+          47,
+          1457
+        ],
+        [
+          22,
+          1457
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "者",
+      "bbox": [
+        674.0,
+        142.0,
+        783.0,
+        228.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "者於一切法应如是知應",
+      "col_bbox": [
+        674,
+        142,
+        783,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "於",
+      "bbox": [
+        674.0,
+        228.0,
+        783.0,
+        372.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "者於一切法应如是知應",
+      "col_bbox": [
+        674,
+        142,
+        783,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        674.0,
+        372.0,
+        783.0,
+        534.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "者於一切法应如是知應",
+      "col_bbox": [
+        674,
+        142,
+        783,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "切",
+      "bbox": [
+        674.0,
+        534.0,
+        783.0,
+        654.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "者於一切法应如是知應",
+      "col_bbox": [
+        674,
+        142,
+        783,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        674.0,
+        654.0,
+        783.0,
+        765.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "者於一切法应如是知應",
+      "col_bbox": [
+        674,
+        142,
+        783,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "应",
+      "bbox": [
+        674.0,
+        765.0,
+        783.0,
+        883.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "者於一切法应如是知應",
+      "col_bbox": [
+        674,
+        142,
+        783,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        674.0,
+        883.0,
+        783.0,
+        944.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "者於一切法应如是知應",
+      "col_bbox": [
+        674,
+        142,
+        783,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        674.0,
+        944.0,
+        783.0,
+        1063.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "者於一切法应如是知應",
+      "col_bbox": [
+        674,
+        142,
+        783,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        674.0,
+        1063.0,
+        783.0,
+        1251.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "者於一切法应如是知應",
+      "col_bbox": [
+        674,
+        142,
+        783,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "應",
+      "bbox": [
+        674.0,
+        1251.0,
+        783.0,
+        1338.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "者於一切法应如是知應",
+      "col_bbox": [
+        674,
+        142,
+        783,
+        1338
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        559.0,
+        151.0,
+        673.0,
+        321.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "如是見知是終而不生",
+      "col_bbox": [
+        559,
+        151,
+        673,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        559.0,
+        321.0,
+        673.0,
+        442.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "如是見知是終而不生",
+      "col_bbox": [
+        559,
+        151,
+        673,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "見",
+      "bbox": [
+        559.0,
+        442.0,
+        673.0,
+        568.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "如是見知是終而不生",
+      "col_bbox": [
+        559,
+        151,
+        673,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        559.0,
+        568.0,
+        673.0,
+        692.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "如是見知是終而不生",
+      "col_bbox": [
+        559,
+        151,
+        673,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        559.0,
+        692.0,
+        673.0,
+        806.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "如是見知是終而不生",
+      "col_bbox": [
+        559,
+        151,
+        673,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "終",
+      "bbox": [
+        559.0,
+        806.0,
+        673.0,
+        927.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "如是見知是終而不生",
+      "col_bbox": [
+        559,
+        151,
+        673,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "而",
+      "bbox": [
+        559.0,
+        927.0,
+        673.0,
+        1063.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "如是見知是終而不生",
+      "col_bbox": [
+        559,
+        151,
+        673,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        559.0,
+        1063.0,
+        673.0,
+        1171.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "如是見知是終而不生",
+      "col_bbox": [
+        559,
+        151,
+        673,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        559.0,
+        1171.0,
+        673.0,
+        1343.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "如是見知是終而不生",
+      "col_bbox": [
+        559,
+        151,
+        673,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        446.0,
+        156.0,
+        557.0,
+        308.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 19,
+      "col_text": "法拇滇喜提所言滋相寺",
+      "col_bbox": [
+        446,
+        156,
+        557,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "拇",
+      "bbox": [
+        446.0,
+        308.0,
+        557.0,
+        412.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 20,
+      "col_text": "法拇滇喜提所言滋相寺",
+      "col_bbox": [
+        446,
+        156,
+        557,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "滇",
+      "bbox": [
+        446.0,
+        412.0,
+        557.0,
+        545.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 21,
+      "col_text": "法拇滇喜提所言滋相寺",
+      "col_bbox": [
+        446,
+        156,
+        557,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "喜",
+      "bbox": [
+        446.0,
+        545.0,
+        557.0,
+        656.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 22,
+      "col_text": "法拇滇喜提所言滋相寺",
+      "col_bbox": [
+        446,
+        156,
+        557,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        446.0,
+        656.0,
+        557.0,
+        726.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 23,
+      "col_text": "法拇滇喜提所言滋相寺",
+      "col_bbox": [
+        446,
+        156,
+        557,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        446.0,
+        726.0,
+        557.0,
+        846.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 24,
+      "col_text": "法拇滇喜提所言滋相寺",
+      "col_bbox": [
+        446,
+        156,
+        557,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        446.0,
+        846.0,
+        557.0,
+        958.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 25,
+      "col_text": "法拇滇喜提所言滋相寺",
+      "col_bbox": [
+        446,
+        156,
+        557,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "滋",
+      "bbox": [
+        446.0,
+        958.0,
+        557.0,
+        1119.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 26,
+      "col_text": "法拇滇喜提所言滋相寺",
+      "col_bbox": [
+        446,
+        156,
+        557,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        446.0,
+        1119.0,
+        557.0,
+        1254.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 27,
+      "col_text": "法拇滇喜提所言滋相寺",
+      "col_bbox": [
+        446,
+        156,
+        557,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寺",
+      "bbox": [
+        446.0,
+        1254.0,
+        557.0,
+        1340.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 28,
+      "col_text": "法拇滇喜提所言滋相寺",
+      "col_bbox": [
+        446,
+        156,
+        557,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        321.0,
+        148.0,
+        442.0,
+        304.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 29,
+      "col_text": "即作弦相是名法相",
+      "col_bbox": [
+        321,
+        148,
+        442,
+        1117
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "作",
+      "bbox": [
+        321.0,
+        304.0,
+        442.0,
+        391.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 30,
+      "col_text": "即作弦相是名法相",
+      "col_bbox": [
+        321,
+        148,
+        442,
+        1117
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "弦",
+      "bbox": [
+        321.0,
+        391.0,
+        442.0,
+        475.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 31,
+      "col_text": "即作弦相是名法相",
+      "col_bbox": [
+        321,
+        148,
+        442,
+        1117
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        321.0,
+        475.0,
+        442.0,
+        667.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 32,
+      "col_text": "即作弦相是名法相",
+      "col_bbox": [
+        321,
+        148,
+        442,
+        1117
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        321.0,
+        667.0,
+        442.0,
+        730.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 33,
+      "col_text": "即作弦相是名法相",
+      "col_bbox": [
+        321,
+        148,
+        442,
+        1117
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        321.0,
+        730.0,
+        442.0,
+        880.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 34,
+      "col_text": "即作弦相是名法相",
+      "col_bbox": [
+        321,
+        148,
+        442,
+        1117
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        321.0,
+        880.0,
+        442.0,
+        1003.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 35,
+      "col_text": "即作弦相是名法相",
+      "col_bbox": [
+        321,
+        148,
+        442,
+        1117
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        321.0,
+        1003.0,
+        442.0,
+        1117.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 36,
+      "col_text": "即作弦相是名法相",
+      "col_bbox": [
+        321,
+        148,
+        442,
+        1117
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        174.0,
+        145.0,
+        203.0,
+        174.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 37,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "于",
+      "bbox": [
+        174.0,
+        174.0,
+        203.0,
+        202.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 38,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        174.0,
+        202.0,
+        203.0,
+        222.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 39,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "切",
+      "bbox": [
+        174.0,
+        222.0,
+        203.0,
+        254.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 40,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        174.0,
+        254.0,
+        203.0,
+        280.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 41,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "应",
+      "bbox": [
+        174.0,
+        280.0,
+        203.0,
+        307.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 42,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        174.0,
+        307.0,
+        203.0,
+        335.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 43,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        174.0,
+        335.0,
+        203.0,
+        363.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 44,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        174.0,
+        363.0,
+        203.0,
+        392.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 45,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "应",
+      "bbox": [
+        174.0,
+        392.0,
+        203.0,
+        420.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 46,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        174.0,
+        420.0,
+        203.0,
+        464.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 47,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        174.0,
+        464.0,
+        203.0,
+        492.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 48,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "见",
+      "bbox": [
+        174.0,
+        492.0,
+        203.0,
+        520.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 49,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "应",
+      "bbox": [
+        174.0,
+        520.0,
+        203.0,
+        546.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 50,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        174.0,
+        546.0,
+        203.0,
+        571.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 51,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        174.0,
+        571.0,
+        203.0,
+        600.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 52,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "修",
+      "bbox": [
+        174.0,
+        600.0,
+        203.0,
+        626.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 53,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "而",
+      "bbox": [
+        174.0,
+        626.0,
+        203.0,
+        652.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 54,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        174.0,
+        652.0,
+        203.0,
+        679.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 55,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        174.0,
+        679.0,
+        203.0,
+        706.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 56,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        174.0,
+        706.0,
+        203.0,
+        732.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 57,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        174.0,
+        732.0,
+        203.0,
+        761.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 58,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        174.0,
+        761.0,
+        203.0,
+        789.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 59,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        174.0,
+        789.0,
+        203.0,
+        830.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 60,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        174.0,
+        830.0,
+        203.0,
+        861.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 61,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        174.0,
+        861.0,
+        203.0,
+        889.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 62,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        174.0,
+        889.0,
+        203.0,
+        917.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 63,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        174.0,
+        917.0,
+        203.0,
+        944.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 64,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        174.0,
+        944.0,
+        203.0,
+        971.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 65,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        174.0,
+        971.0,
+        203.0,
+        996.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 66,
+      "col_text": "者于一切法应如是知应如是见应如是修而不生法相须菩提所言法相者",
+      "col_bbox": [
+        174,
+        145,
+        203,
+        996
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        138.0,
+        145.0,
+        166.0,
+        173.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 67,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        138.0,
+        173.0,
+        166.0,
+        201.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 68,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        138.0,
+        201.0,
+        166.0,
+        227.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 69,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        138.0,
+        227.0,
+        166.0,
+        253.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 70,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        138.0,
+        253.0,
+        166.0,
+        282.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 71,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "名",
+      "bbox": [
+        138.0,
+        282.0,
+        166.0,
+        307.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 72,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        138.0,
+        307.0,
+        166.0,
+        334.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 73,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        138.0,
+        334.0,
+        166.0,
+        362.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 74,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        138.0,
+        362.0,
+        166.0,
+        389.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 75,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        138.0,
+        389.0,
+        166.0,
+        432.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 76,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        138.0,
+        432.0,
+        166.0,
+        457.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 77,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        138.0,
+        457.0,
+        166.0,
+        488.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 78,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        138.0,
+        488.0,
+        166.0,
+        516.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 79,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "萨",
+      "bbox": [
+        138.0,
+        516.0,
+        166.0,
+        544.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 80,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        138.0,
+        544.0,
+        166.0,
+        572.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 81,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        138.0,
+        572.0,
+        166.0,
+        599.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 82,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "量",
+      "bbox": [
+        138.0,
+        599.0,
+        166.0,
+        626.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 83,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "阿",
+      "bbox": [
+        138.0,
+        626.0,
+        166.0,
+        649.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 84,
+      "col_text": "即非法相是名法相须菩提若菩萨以无量阿",
+      "col_bbox": [
+        138,
+        145,
+        166,
+        649
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 85,
+  "timestamp": "2026-05-02T23:12:14.028430"
+}

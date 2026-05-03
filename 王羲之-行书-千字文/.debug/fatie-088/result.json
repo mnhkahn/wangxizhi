@@ -1,0 +1,2213 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-088.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "須菩提若人以三千大干世界群為塵是塵寧為多不甚多世尊何以薛在徽塵眾實有者佛則不說是微塵眾佛所说微塵則须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若微尘众实有者佛则不说是微尘众佛所说微尘则",
+  "parsed_results": [
+    {
+      "text": "須菩提若人以三千大干",
+      "bbox": [
+        657,
+        157,
+        784,
+        1345
+      ],
+      "poly": [
+        [
+          657,
+          157
+        ],
+        [
+          784,
+          157
+        ],
+        [
+          784,
+          1345
+        ],
+        [
+          657,
+          1345
+        ]
+      ]
+    },
+    {
+      "text": "世界群為塵是塵寧為",
+      "bbox": [
+        555,
+        166,
+        676,
+        1351
+      ],
+      "poly": [
+        [
+          555,
+          166
+        ],
+        [
+          676,
+          166
+        ],
+        [
+          676,
+          1351
+        ],
+        [
+          555,
+          1351
+        ]
+      ]
+    },
+    {
+      "text": "多不甚多世尊何以薛在",
+      "bbox": [
+        444,
+        161,
+        568,
+        1343
+      ],
+      "poly": [
+        [
+          444,
+          161
+        ],
+        [
+          568,
+          161
+        ],
+        [
+          568,
+          1343
+        ],
+        [
+          444,
+          1343
+        ]
+      ]
+    },
+    {
+      "text": "徽塵眾實有者佛則不說",
+      "bbox": [
+        325,
+        161,
+        452,
+        1340
+      ],
+      "poly": [
+        [
+          325,
+          161
+        ],
+        [
+          452,
+          161
+        ],
+        [
+          452,
+          1340
+        ],
+        [
+          325,
+          1340
+        ]
+      ]
+    },
+    {
+      "text": "是微塵眾佛所说微塵則",
+      "bbox": [
+        214,
+        149,
+        334,
+        1342
+      ],
+      "poly": [
+        [
+          214,
+          149
+        ],
+        [
+          334,
+          149
+        ],
+        [
+          334,
+          1342
+        ],
+        [
+          214,
+          1342
+        ]
+      ]
+    },
+    {
+      "text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "poly": [
+        [
+          172,
+          146
+        ],
+        [
+          206,
+          146
+        ],
+        [
+          206,
+          998
+        ],
+        [
+          172,
+          998
+        ]
+      ]
+    },
+    {
+      "text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "poly": [
+        [
+          139,
+          146
+        ],
+        [
+          172,
+          146
+        ],
+        [
+          172,
+          705
+        ],
+        [
+          139,
+          705
+        ]
+      ]
+    },
+    {
+      "text": "83",
+      "bbox": [
+        11,
+        1435,
+        34,
+        1455
+      ],
+      "poly": [
+        [
+          11,
+          1435
+        ],
+        [
+          34,
+          1435
+        ],
+        [
+          34,
+          1455
+        ],
+        [
+          11,
+          1455
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "須",
+      "bbox": [
+        657.0,
+        157.0,
+        784.0,
+        306.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "須菩提若人以三千大干",
+      "col_bbox": [
+        657,
+        157,
+        784,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        657.0,
+        306.0,
+        784.0,
+        366.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "須菩提若人以三千大干",
+      "col_bbox": [
+        657,
+        157,
+        784,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        657.0,
+        366.0,
+        784.0,
+        498.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "須菩提若人以三千大干",
+      "col_bbox": [
+        657,
+        157,
+        784,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        657.0,
+        498.0,
+        784.0,
+        601.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "須菩提若人以三千大干",
+      "col_bbox": [
+        657,
+        157,
+        784,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        657.0,
+        601.0,
+        784.0,
+        783.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "須菩提若人以三千大干",
+      "col_bbox": [
+        657,
+        157,
+        784,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        657.0,
+        783.0,
+        784.0,
+        834.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "須菩提若人以三千大干",
+      "col_bbox": [
+        657,
+        157,
+        784,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "三",
+      "bbox": [
+        657.0,
+        834.0,
+        784.0,
+        1022.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "須菩提若人以三千大干",
+      "col_bbox": [
+        657,
+        157,
+        784,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "千",
+      "bbox": [
+        657.0,
+        1022.0,
+        784.0,
+        1074.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "須菩提若人以三千大干",
+      "col_bbox": [
+        657,
+        157,
+        784,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        657.0,
+        1074.0,
+        784.0,
+        1254.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "須菩提若人以三千大干",
+      "col_bbox": [
+        657,
+        157,
+        784,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "干",
+      "bbox": [
+        657.0,
+        1254.0,
+        784.0,
+        1345.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "須菩提若人以三千大干",
+      "col_bbox": [
+        657,
+        157,
+        784,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        555.0,
+        166.0,
+        676.0,
+        335.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "世界群為塵是塵寧為",
+      "col_bbox": [
+        555,
+        166,
+        676,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "界",
+      "bbox": [
+        555.0,
+        335.0,
+        676.0,
+        437.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "世界群為塵是塵寧為",
+      "col_bbox": [
+        555,
+        166,
+        676,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "群",
+      "bbox": [
+        555.0,
+        437.0,
+        676.0,
+        574.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "世界群為塵是塵寧為",
+      "col_bbox": [
+        555,
+        166,
+        676,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        555.0,
+        574.0,
+        676.0,
+        730.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "世界群為塵是塵寧為",
+      "col_bbox": [
+        555,
+        166,
+        676,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "塵",
+      "bbox": [
+        555.0,
+        730.0,
+        676.0,
+        807.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "世界群為塵是塵寧為",
+      "col_bbox": [
+        555,
+        166,
+        676,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        555.0,
+        807.0,
+        676.0,
+        923.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "世界群為塵是塵寧為",
+      "col_bbox": [
+        555,
+        166,
+        676,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "塵",
+      "bbox": [
+        555.0,
+        923.0,
+        676.0,
+        1048.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "世界群為塵是塵寧為",
+      "col_bbox": [
+        555,
+        166,
+        676,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寧",
+      "bbox": [
+        555.0,
+        1048.0,
+        676.0,
+        1208.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "世界群為塵是塵寧為",
+      "col_bbox": [
+        555,
+        166,
+        676,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        555.0,
+        1208.0,
+        676.0,
+        1351.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "世界群為塵是塵寧為",
+      "col_bbox": [
+        555,
+        166,
+        676,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        444.0,
+        161.0,
+        568.0,
+        309.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 19,
+      "col_text": "多不甚多世尊何以薛在",
+      "col_bbox": [
+        444,
+        161,
+        568,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        444.0,
+        309.0,
+        568.0,
+        416.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 20,
+      "col_text": "多不甚多世尊何以薛在",
+      "col_bbox": [
+        444,
+        161,
+        568,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "甚",
+      "bbox": [
+        444.0,
+        416.0,
+        568.0,
+        490.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 21,
+      "col_text": "多不甚多世尊何以薛在",
+      "col_bbox": [
+        444,
+        161,
+        568,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        444.0,
+        490.0,
+        568.0,
+        652.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 22,
+      "col_text": "多不甚多世尊何以薛在",
+      "col_bbox": [
+        444,
+        161,
+        568,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        444.0,
+        652.0,
+        568.0,
+        760.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 23,
+      "col_text": "多不甚多世尊何以薛在",
+      "col_bbox": [
+        444,
+        161,
+        568,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        444.0,
+        760.0,
+        568.0,
+        839.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 24,
+      "col_text": "多不甚多世尊何以薛在",
+      "col_bbox": [
+        444,
+        161,
+        568,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        444.0,
+        839.0,
+        568.0,
+        953.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 25,
+      "col_text": "多不甚多世尊何以薛在",
+      "col_bbox": [
+        444,
+        161,
+        568,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        444.0,
+        953.0,
+        568.0,
+        1071.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 26,
+      "col_text": "多不甚多世尊何以薛在",
+      "col_bbox": [
+        444,
+        161,
+        568,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薛",
+      "bbox": [
+        444.0,
+        1071.0,
+        568.0,
+        1242.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 27,
+      "col_text": "多不甚多世尊何以薛在",
+      "col_bbox": [
+        444,
+        161,
+        568,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "在",
+      "bbox": [
+        444.0,
+        1242.0,
+        568.0,
+        1343.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 28,
+      "col_text": "多不甚多世尊何以薛在",
+      "col_bbox": [
+        444,
+        161,
+        568,
+        1343
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "徽",
+      "bbox": [
+        325.0,
+        161.0,
+        452.0,
+        298.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 29,
+      "col_text": "徽塵眾實有者佛則不說",
+      "col_bbox": [
+        325,
+        161,
+        452,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "塵",
+      "bbox": [
+        325.0,
+        298.0,
+        452.0,
+        407.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 30,
+      "col_text": "徽塵眾實有者佛則不說",
+      "col_bbox": [
+        325,
+        161,
+        452,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "眾",
+      "bbox": [
+        325.0,
+        407.0,
+        452.0,
+        513.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 31,
+      "col_text": "徽塵眾實有者佛則不說",
+      "col_bbox": [
+        325,
+        161,
+        452,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "實",
+      "bbox": [
+        325.0,
+        513.0,
+        452.0,
+        606.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 32,
+      "col_text": "徽塵眾實有者佛則不說",
+      "col_bbox": [
+        325,
+        161,
+        452,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        325.0,
+        606.0,
+        452.0,
+        729.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 33,
+      "col_text": "徽塵眾實有者佛則不說",
+      "col_bbox": [
+        325,
+        161,
+        452,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        325.0,
+        729.0,
+        452.0,
+        849.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 34,
+      "col_text": "徽塵眾實有者佛則不說",
+      "col_bbox": [
+        325,
+        161,
+        452,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        325.0,
+        849.0,
+        452.0,
+        956.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 35,
+      "col_text": "徽塵眾實有者佛則不說",
+      "col_bbox": [
+        325,
+        161,
+        452,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "則",
+      "bbox": [
+        325.0,
+        956.0,
+        452.0,
+        1083.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 36,
+      "col_text": "徽塵眾實有者佛則不說",
+      "col_bbox": [
+        325,
+        161,
+        452,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        325.0,
+        1083.0,
+        452.0,
+        1200.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 37,
+      "col_text": "徽塵眾實有者佛則不說",
+      "col_bbox": [
+        325,
+        161,
+        452,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "說",
+      "bbox": [
+        325.0,
+        1200.0,
+        452.0,
+        1340.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 38,
+      "col_text": "徽塵眾實有者佛則不說",
+      "col_bbox": [
+        325,
+        161,
+        452,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        214.0,
+        149.0,
+        334.0,
+        301.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 39,
+      "col_text": "是微塵眾佛所说微塵則",
+      "col_bbox": [
+        214,
+        149,
+        334,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "微",
+      "bbox": [
+        214.0,
+        301.0,
+        334.0,
+        403.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 40,
+      "col_text": "是微塵眾佛所说微塵則",
+      "col_bbox": [
+        214,
+        149,
+        334,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "塵",
+      "bbox": [
+        214.0,
+        403.0,
+        334.0,
+        508.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 41,
+      "col_text": "是微塵眾佛所说微塵則",
+      "col_bbox": [
+        214,
+        149,
+        334,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "眾",
+      "bbox": [
+        214.0,
+        508.0,
+        334.0,
+        625.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 42,
+      "col_text": "是微塵眾佛所说微塵則",
+      "col_bbox": [
+        214,
+        149,
+        334,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        214.0,
+        625.0,
+        334.0,
+        719.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 43,
+      "col_text": "是微塵眾佛所说微塵則",
+      "col_bbox": [
+        214,
+        149,
+        334,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        214.0,
+        719.0,
+        334.0,
+        830.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 44,
+      "col_text": "是微塵眾佛所说微塵則",
+      "col_bbox": [
+        214,
+        149,
+        334,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        214.0,
+        830.0,
+        334.0,
+        949.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 45,
+      "col_text": "是微塵眾佛所说微塵則",
+      "col_bbox": [
+        214,
+        149,
+        334,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "微",
+      "bbox": [
+        214.0,
+        949.0,
+        334.0,
+        1068.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 46,
+      "col_text": "是微塵眾佛所说微塵則",
+      "col_bbox": [
+        214,
+        149,
+        334,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "塵",
+      "bbox": [
+        214.0,
+        1068.0,
+        334.0,
+        1206.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 47,
+      "col_text": "是微塵眾佛所说微塵則",
+      "col_bbox": [
+        214,
+        149,
+        334,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "則",
+      "bbox": [
+        214.0,
+        1206.0,
+        334.0,
+        1342.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 48,
+      "col_text": "是微塵眾佛所说微塵則",
+      "col_bbox": [
+        214,
+        149,
+        334,
+        1342
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        172.0,
+        146.0,
+        206.0,
+        176.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 49,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        172.0,
+        176.0,
+        206.0,
+        202.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 50,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        172.0,
+        202.0,
+        206.0,
+        230.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 51,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        172.0,
+        230.0,
+        206.0,
+        255.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 52,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        172.0,
+        255.0,
+        206.0,
+        282.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 53,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        172.0,
+        282.0,
+        206.0,
+        309.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 54,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "三",
+      "bbox": [
+        172.0,
+        309.0,
+        206.0,
+        336.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 55,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "千",
+      "bbox": [
+        172.0,
+        336.0,
+        206.0,
+        365.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 56,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        172.0,
+        365.0,
+        206.0,
+        405.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 57,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "千",
+      "bbox": [
+        172.0,
+        405.0,
+        206.0,
+        425.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 58,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        172.0,
+        425.0,
+        206.0,
+        465.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 59,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "界",
+      "bbox": [
+        172.0,
+        465.0,
+        206.0,
+        493.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 60,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "碎",
+      "bbox": [
+        172.0,
+        493.0,
+        206.0,
+        520.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 61,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        172.0,
+        520.0,
+        206.0,
+        547.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 62,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "微",
+      "bbox": [
+        172.0,
+        547.0,
+        206.0,
+        576.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 63,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尘",
+      "bbox": [
+        172.0,
+        576.0,
+        206.0,
+        601.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 64,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        172.0,
+        601.0,
+        206.0,
+        629.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 65,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尘",
+      "bbox": [
+        172.0,
+        629.0,
+        206.0,
+        655.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 66,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宁",
+      "bbox": [
+        172.0,
+        655.0,
+        206.0,
+        679.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 67,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        172.0,
+        679.0,
+        206.0,
+        708.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 68,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        172.0,
+        708.0,
+        206.0,
+        734.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 69,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        172.0,
+        734.0,
+        206.0,
+        769.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 70,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "甚",
+      "bbox": [
+        172.0,
+        769.0,
+        206.0,
+        798.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 71,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "多",
+      "bbox": [
+        172.0,
+        798.0,
+        206.0,
+        834.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 72,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        172.0,
+        834.0,
+        206.0,
+        863.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 73,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        172.0,
+        863.0,
+        206.0,
+        891.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 74,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        172.0,
+        891.0,
+        206.0,
+        919.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 75,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        172.0,
+        919.0,
+        206.0,
+        945.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 76,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        172.0,
+        945.0,
+        206.0,
+        973.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 77,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        172.0,
+        973.0,
+        206.0,
+        998.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 78,
+      "col_text": "须菩提若人以三千大千世界碎为微尘是尘宁为多不甚多世尊何以故若",
+      "col_bbox": [
+        172,
+        146,
+        206,
+        998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "微",
+      "bbox": [
+        139.0,
+        146.0,
+        172.0,
+        177.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 79,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尘",
+      "bbox": [
+        139.0,
+        177.0,
+        172.0,
+        203.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 80,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "众",
+      "bbox": [
+        139.0,
+        203.0,
+        172.0,
+        230.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 81,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "实",
+      "bbox": [
+        139.0,
+        230.0,
+        172.0,
+        257.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 82,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        139.0,
+        257.0,
+        172.0,
+        283.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 83,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        139.0,
+        283.0,
+        172.0,
+        308.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 84,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        139.0,
+        308.0,
+        172.0,
+        335.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 85,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "则",
+      "bbox": [
+        139.0,
+        335.0,
+        172.0,
+        361.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 86,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        139.0,
+        361.0,
+        172.0,
+        389.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 87,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        139.0,
+        389.0,
+        172.0,
+        417.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 88,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        139.0,
+        417.0,
+        172.0,
+        445.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 89,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "微",
+      "bbox": [
+        139.0,
+        445.0,
+        172.0,
+        473.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 90,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尘",
+      "bbox": [
+        139.0,
+        473.0,
+        172.0,
+        511.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 91,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "众",
+      "bbox": [
+        139.0,
+        511.0,
+        172.0,
+        544.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 92,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        139.0,
+        544.0,
+        172.0,
+        572.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 93,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        139.0,
+        572.0,
+        172.0,
+        600.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 94,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        139.0,
+        600.0,
+        172.0,
+        627.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 95,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "微",
+      "bbox": [
+        139.0,
+        627.0,
+        172.0,
+        655.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 96,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尘",
+      "bbox": [
+        139.0,
+        655.0,
+        172.0,
+        680.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 97,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "则",
+      "bbox": [
+        139.0,
+        680.0,
+        172.0,
+        705.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 98,
+      "col_text": "微尘众实有者佛则不说是微尘众佛所说微尘则",
+      "col_bbox": [
+        139,
+        146,
+        172,
+        705
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 99,
+  "timestamp": "2026-05-02T23:12:05.982266"
+}
