@@ -124,12 +124,12 @@ class CharSplitter:
         debug: bool = False,
     ) -> List[List[float]]:
         """
-        改进的像素投影分割（v3）
+        改进的像素投影分割（v5）
 
         核心改进：
-        1. 严格验证分割结果，不合理则回退
-        2. "真正间隙"检测：避免把字内空白当成间隙
-        3. 更宽的搜索范围以适应行书字高变化
+        1. 使用 Otsu 全局阈值代替 adaptiveThreshold，对碑帖拓片效果更好
+        2. 去掉过高的 cv 权重，优先相信图像中的实际间隙
+        3. 增加 padding + 边缘扩展，避免字的边缘被切掉
         """
         x1, y1, x2, y2 = [int(v) for v in col_bbox]
 
@@ -143,86 +143,130 @@ class CharSplitter:
         if x2 <= x1 or y2 <= y1:
             return self._uniform_split(col_bbox, char_count)
 
-        col_region = image[y1:y2, x1:x2]
+        orig_y1, orig_y2 = y1, y2
+        orig_h = orig_y2 - orig_y1
+        expected_height = orig_h / char_count
+
+        # 增加 padding，确保包含字的完整边缘
+        padding_y = int(expected_height * 0.15)
+        y1_padded = max(0, y1 - padding_y)
+        y2_padded = min(h, y2 + padding_y)
+
+        col_region = image[y1_padded:y2_padded, x1:x2]
 
         if len(col_region.shape) == 3:
             gray = cv2.cvtColor(col_region, cv2.COLOR_BGR2GRAY)
         else:
             gray = col_region
 
-        col_h = y2 - y1
-        expected_height = col_h / char_count
-
         # 检测黑底白字（碑帖拓片）还是白底黑字
         is_dark_bg = float(np.mean(gray)) < 128
         thresh_type = cv2.THRESH_BINARY if is_dark_bg else cv2.THRESH_BINARY_INV
 
-        # 尝试多种参数组合，选择最优
+        # 优先使用 Otsu 全局阈值（对书法扫描件效果更好）
+        _, binary = cv2.threshold(gray, 0, 255, thresh_type + cv2.THRESH_OTSU)
+
+        # 生成宽松的 binary 用于边缘扩展（覆盖字边缘的渐变色）
+        otsu_thresh, _ = cv2.threshold(gray, 0, 255, thresh_type + cv2.THRESH_OTSU)
+        if is_dark_bg:
+            relaxed_thresh = max(0, int(otsu_thresh * 0.75))
+        else:
+            relaxed_thresh = min(255, int(otsu_thresh * 1.25))
+        _, binary_loose = cv2.threshold(gray, relaxed_thresh, 255, thresh_type)
+
+        # 使用中心 50% 宽度计算投影，减少边缘干扰
+        cw = binary.shape[1]
+        center_start = max(0, int(cw * 0.25))
+        center_end = min(cw, int(cw * 0.75))
+        projection = np.sum(binary[:, center_start:center_end], axis=1).astype(float)
+
+        # 平滑
+        kernel_size = max(5, int(expected_height / 3))
+        if kernel_size % 2 == 0:
+            kernel_size += 1
+        kernel = np.ones(kernel_size) / kernel_size
+        smoothed = np.convolve(projection, kernel, mode='same')
+
+        # 尝试多种搜索范围，选择最优
         best_result = None
         best_score = float('inf')
         best_params = None
 
-        for window in [11, 21]:
-            for search_ratio in [0.3, 0.5, 0.7, 1.0]:
-                try:
-                    binary = cv2.adaptiveThreshold(
-                        gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
-                        thresh_type, window, 2
-                    )
-                except cv2.error:
-                    continue
+        for search_ratio in [0.3, 0.5, 0.7, 1.0]:
+            split_points = self._find_split_points(
+                smoothed, char_count, search_ratio, expected_height
+            )
+            if len(split_points) != char_count + 1:
+                continue
 
-                # 使用中心 50% 宽度计算投影，减少边缘干扰
-                cw = binary.shape[1]
-                center_start = max(0, int(cw * 0.25))
-                center_end = min(cw, int(cw * 0.75))
-                projection = np.sum(binary[:, center_start:center_end], axis=1).astype(float)
+            heights = [split_points[i+1] - split_points[i] for i in range(char_count)]
+            avg_h = np.mean(heights)
+            if avg_h <= 0:
+                continue
 
-                # 平滑
-                kernel_size = max(5, int(expected_height / 3))
-                if kernel_size % 2 == 0:
-                    kernel_size += 1
-                kernel = np.ones(kernel_size) / kernel_size
-                smoothed = np.convolve(projection, kernel, mode='same')
+            # 严格验证
+            if not self._validate_splits(heights, expected_height, char_count):
+                if debug:
+                    print(f"[SPLIT] 搜索比例 {search_ratio} 验证失败: heights={heights}")
+                continue
 
-                split_points = self._find_split_points(
-                    smoothed, char_count, search_ratio, expected_height
-                )
-                if len(split_points) != char_count + 1:
-                    continue
+            # 评分：分割点处笔画密度越低越好
+            split_score = self._score_split(smoothed, split_points)
+            score = split_score / (np.max(smoothed) + 1)
 
-                heights = [split_points[i+1] - split_points[i] for i in range(char_count)]
-                avg_h = np.mean(heights)
-                if avg_h <= 0:
-                    continue
-
-                # === 严格验证 ===
-                if not self._validate_splits(heights, expected_height, char_count):
-                    if debug:
-                        print(f"[SPLIT] 参数 window={window}, ratio={search_ratio} 验证失败: heights={heights}")
-                    continue
-
-                cv = np.std(heights) / avg_h
-                split_score = self._score_split(smoothed, split_points)
-                score = cv * 100 + split_score / (np.max(smoothed) + 1)
-
-                if score < best_score:
-                    best_score = score
-                    best_result = split_points
-                    best_params = (window, search_ratio)
+            if score < best_score:
+                best_score = score
+                best_result = split_points
+                best_params = search_ratio
 
         if best_result is None:
             if debug:
-                print(f"[SPLIT] 所有投影参数均验证失败，回退到均匀分割")
+                print(f"[SPLIT] Otsu 投影所有参数均验证失败，回退到均匀分割")
             return self._uniform_split(col_bbox, char_count)
 
         if debug:
-            print(f"[SPLIT] 最优参数: window={best_params[0]}, search={best_params[1]}, score={best_score:.1f}")
+            print(f"[SPLIT] 最优搜索比例: {best_params}, score={best_score:.1f}")
 
+        # 基于宽松二值化图像进行边缘扩展，避免字的边缘被切掉
+        # 限制扩展幅度，避免相邻字 bbox 严重重叠
+        max_expand = max(1, int(expected_height * 0.01))
         char_bboxes = []
         for i in range(char_count):
-            char_y1 = y1 + best_result[i]
-            char_y2 = y1 + best_result[i + 1]
+            seg_start = best_result[i]
+            seg_end = best_result[i + 1]
+
+            # 向上扩展：不超过前一个字分割点的一半距离，且不超过 max_expand
+            if i > 0:
+                max_up = min(max_expand, (seg_start - best_result[i - 1]) // 2)
+            else:
+                max_up = max_expand
+            new_start = seg_start
+            for dy in range(1, max_up + 1):
+                row = seg_start - dy
+                if row < 0:
+                    break
+                if np.sum(binary_loose[row, center_start:center_end]) > 0:
+                    new_start = row
+                else:
+                    break
+
+            # 向下扩展：不超过后一个字分割点的一半距离，且不超过 max_expand
+            if i < char_count - 1:
+                max_down = min(max_expand, (best_result[i + 2] - seg_end) // 2)
+            else:
+                max_down = max_expand
+            new_end = seg_end
+            for dy in range(1, max_down + 1):
+                row = seg_end + dy
+                if row >= len(binary_loose):
+                    break
+                if np.sum(binary_loose[row, center_start:center_end]) > 0:
+                    new_end = row
+                else:
+                    break
+
+            char_y1 = y1_padded + new_start
+            char_y2 = y1_padded + new_end
             char_bboxes.append([float(x1), float(char_y1), float(x2), float(char_y2)])
 
         return char_bboxes

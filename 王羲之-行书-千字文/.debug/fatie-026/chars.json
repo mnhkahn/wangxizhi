@@ -1,802 +1,902 @@
 [
   {
-    "char": "以",
-    "bbox": [
-      637.0,
-      177.0,
-      753.0,
-      294.0
-    ],
     "id": "2b85ad1c-d13d-4f6c-a19a-1ad59b33575b",
-    "row": 0,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 0
-  },
-  {
-    "char": "身",
+    "uuid": "2b85ad1c-d13d-4f6c-a19a-1ad59b33575b",
+    "char": "以",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
     "bbox": [
       637.0,
-      294.0,
-      753.0,
-      412.0
+      160.0,
+      756.6084788029925,
+      218.94763092269326
     ],
+    "column": 0,
+    "row": 0,
+    "visible": true
+  },
+  {
     "id": "3fc476d3-667c-46ec-9b8b-e983663fc2da",
-    "row": 1,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 0
-  },
-  {
-    "char": "相",
-    "bbox": [
-      637.0,
-      412.0,
-      753.0,
-      530.0
-    ],
-    "id": "f7c44203-1ce8-46ff-b353-3797685a4068",
-    "row": 2,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 0
-  },
-  {
-    "char": "成",
-    "bbox": [
-      637.0,
-      530.0,
-      753.0,
-      648.0
-    ],
-    "id": "a4178cf2-cc7a-47b9-8772-55352814102b",
-    "row": 3,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 0
-  },
-  {
-    "char": "就",
-    "bbox": [
-      637.0,
-      648.0,
-      753.0,
-      766.0
-    ],
-    "id": "917f9cc8-753f-4925-8e6e-cd7e168a3a6c",
-    "row": 4,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 0
-  },
-  {
-    "char": "具",
-    "bbox": [
-      637.0,
-      766.0,
-      753.0,
-      883.0
-    ],
-    "id": "a754fb51-2642-4b9b-8875-49eed39cb8cc",
-    "row": 5,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 0
-  },
-  {
-    "char": "足",
-    "bbox": [
-      637.0,
-      883.0,
-      753.0,
-      1001.0
-    ],
-    "id": "865600a0-b91c-4ff2-a6de-4338bf8c4c29",
-    "row": 6,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 0
-  },
-  {
-    "char": "胜",
-    "bbox": [
-      637.0,
-      1001.0,
-      753.0,
-      1119.0
-    ],
-    "id": "8187428c-f6d9-480a-9999-735f80560871",
-    "row": 7,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 0
-  },
-  {
-    "char": "德",
-    "bbox": [
-      637.0,
-      1119.0,
-      753.0,
-      1237.0
-    ],
-    "id": "4c67fe86-d331-42fb-a291-5861b7ee8e25",
-    "row": 8,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 0
-  },
-  {
-    "char": "观",
-    "bbox": [
-      637.0,
-      1237.0,
-      753.0,
-      1355.0
-    ],
-    "id": "c5ef8d6a-1d91-4ffb-aa34-bf141cd3e26c",
-    "row": 9,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 0
-  },
-  {
-    "char": "如",
-    "bbox": [
-      521.0,
-      158.0,
-      650.0,
-      277.0
-    ],
-    "id": "28e1e740-9d2d-4b32-b293-78a6878cb91a",
-    "row": 0,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 1
-  },
-  {
-    "char": "来",
-    "bbox": [
-      521.0,
-      277.0,
-      650.0,
-      397.0
-    ],
-    "id": "e54785e2-2f7e-4b57-8a2e-2befbd6d5e97",
-    "row": 1,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 1
-  },
-  {
-    "char": "不",
-    "bbox": [
-      521.0,
-      397.0,
-      650.0,
-      517.0
-    ],
-    "id": "9d117e09-29c0-42b4-b989-ef744fca9a4c",
-    "row": 2,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 1
-  },
-  {
-    "char": "不",
-    "bbox": [
-      521.0,
-      517.0,
-      650.0,
-      636.0
-    ],
-    "id": "266beb2f-fdcf-4d92-b753-05226faea330",
-    "row": 3,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 1
-  },
-  {
-    "char": "也",
-    "bbox": [
-      521.0,
-      636.0,
-      650.0,
-      756.0
-    ],
-    "id": "56eab07d-0c08-4eca-918c-103230257d8b",
-    "row": 4,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 1
-  },
-  {
-    "char": "世",
-    "bbox": [
-      521.0,
-      756.0,
-      650.0,
-      876.0
-    ],
-    "id": "61fcbedd-9980-400a-b92d-8ae268a0bfb8",
-    "row": 5,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 1
-  },
-  {
-    "char": "尊",
-    "bbox": [
-      521.0,
-      876.0,
-      650.0,
-      995.0
-    ],
-    "id": "ec679b79-a229-48e7-b586-f67a0e930b3e",
-    "row": 6,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 1
-  },
-  {
-    "char": "不",
-    "bbox": [
-      521.0,
-      995.0,
-      650.0,
-      1115.0
-    ],
-    "id": "f03d7797-36f0-415e-800b-66bdceb192ae",
-    "row": 7,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 1
-  },
-  {
-    "char": "可",
-    "bbox": [
-      521.0,
-      1115.0,
-      650.0,
-      1235.0
-    ],
-    "id": "7b888df2-4fbf-4345-9d04-295907ab3649",
-    "row": 8,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 1
-  },
-  {
-    "char": "以",
-    "bbox": [
-      521.0,
-      1235.0,
-      650.0,
-      1355.0
-    ],
-    "id": "8a2db820-d02d-4e38-80fc-796f2d783510",
-    "row": 9,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 1
-  },
-  {
+    "uuid": "3fc476d3-667c-46ec-9b8b-e983663fc2da",
     "char": "身",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
     "bbox": [
-      412.0,
-      162.0,
-      535.0,
-      280.0
+      649.9177057356608,
+      235.4014962593517,
+      743.9177057356608,
+      348.39152119700753
     ],
-    "id": "df904398-3f21-48b3-b652-e45f5ba0b2a9",
-    "row": 0,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 2
-  },
-  {
-    "char": "相",
-    "bbox": [
-      412.0,
-      280.0,
-      535.0,
-      399.0
-    ],
-    "id": "73f0cc1b-77cb-45ae-96c4-2aa84712a640",
+    "column": 0,
     "row": 1,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 2
+    "visible": true
   },
   {
-    "char": "得",
+    "id": "f7c44203-1ce8-46ff-b353-3797685a4068",
+    "uuid": "f7c44203-1ce8-46ff-b353-3797685a4068",
+    "char": "相",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
     "bbox": [
-      412.0,
-      399.0,
-      535.0,
-      518.0
+      656.3815461346634,
+      352.70074812967584,
+      740.3815461346634,
+      459.70074812967584
     ],
-    "id": "b254a27f-0db2-4b9f-bbf3-00ac55361e8e",
+    "column": 0,
     "row": 2,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 2
+    "visible": true
   },
   {
-    "char": "见",
+    "id": "a4178cf2-cc7a-47b9-8772-55352814102b",
+    "uuid": "a4178cf2-cc7a-47b9-8772-55352814102b",
+    "char": "成",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
     "bbox": [
-      412.0,
-      518.0,
-      535.0,
-      637.0
-    ],
-    "id": "9be3e4fc-2e71-4607-9597-995799be85af",
-    "row": 3,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 2
-  },
-  {
-    "char": "如",
-    "bbox": [
-      412.0,
       637.0,
-      535.0,
-      756.0
+      478.0,
+      747.0,
+      586.0
     ],
-    "id": "d0297ca1-a4e2-4480-9b66-6e7f7cdc07e4",
+    "column": 0,
+    "row": 3,
+    "visible": true
+  },
+  {
+    "id": "917f9cc8-753f-4925-8e6e-cd7e168a3a6c",
+    "uuid": "917f9cc8-753f-4925-8e6e-cd7e168a3a6c",
+    "char": "就",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      655.0,
+      616.0,
+      748.0,
+      711.0
+    ],
+    "column": 0,
     "row": 4,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 2
+    "visible": true
   },
   {
-    "char": "来",
+    "id": "a754fb51-2642-4b9b-8875-49eed39cb8cc",
+    "uuid": "a754fb51-2642-4b9b-8875-49eed39cb8cc",
+    "char": "具",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
     "bbox": [
-      412.0,
-      756.0,
-      535.0,
-      875.0
+      664.0,
+      736.0,
+      735.0,
+      830.0922693266832
     ],
-    "id": "74a22816-c860-4e03-93fd-e3868bbdb80d",
+    "column": 0,
     "row": 5,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 2
+    "visible": true
   },
   {
-    "char": "何",
+    "id": "865600a0-b91c-4ff2-a6de-4338bf8c4c29",
+    "uuid": "865600a0-b91c-4ff2-a6de-4338bf8c4c29",
+    "char": "足",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
     "bbox": [
-      412.0,
-      875.0,
-      535.0,
-      994.0
+      644.6907730673315,
+      859.4638403990026,
+      750.6907730673315,
+      943.4638403990026
     ],
-    "id": "44a3c56f-0446-41e1-b076-ba5296687afd",
+    "column": 0,
     "row": 6,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 2
+    "visible": true
   },
   {
-    "char": "以",
+    "id": "8187428c-f6d9-480a-9999-735f80560871",
+    "uuid": "8187428c-f6d9-480a-9999-735f80560871",
+    "char": "胜",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
     "bbox": [
-      412.0,
-      994.0,
-      535.0,
-      1113.0
+      644.3815461346633,
+      973.0,
+      748.3815461346633,
+      1069.0
     ],
-    "id": "096a8b69-4cb5-48b0-95ee-d2f365426c6a",
+    "column": 0,
     "row": 7,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 2
+    "visible": true
   },
   {
-    "char": "故",
+    "id": "4c67fe86-d331-42fb-a291-5861b7ee8e25",
+    "uuid": "4c67fe86-d331-42fb-a291-5861b7ee8e25",
+    "char": "德",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
     "bbox": [
-      412.0,
-      1113.0,
-      535.0,
-      1232.0
+      648.0,
+      1102.0,
+      746.0,
+      1203.0
     ],
-    "id": "39aa68f9-5e5d-4874-802f-fb1474d92a78",
+    "column": 0,
     "row": 8,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 2
+    "visible": true
   },
   {
+    "id": "c5ef8d6a-1d91-4ffb-aa34-bf141cd3e26c",
+    "uuid": "c5ef8d6a-1d91-4ffb-aa34-bf141cd3e26c",
+    "char": "观",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      637.0,
+      1231.0,
+      751.0,
+      1350.0
+    ],
+    "column": 0,
+    "row": 9,
+    "visible": true
+  },
+  {
+    "id": "28e1e740-9d2d-4b32-b293-78a6878cb91a",
+    "uuid": "28e1e740-9d2d-4b32-b293-78a6878cb91a",
     "char": "如",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      522.0,
+      156.0,
+      644.0,
+      232.0
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true
+  },
+  {
+    "id": "e54785e2-2f7e-4b57-8a2e-2befbd6d5e97",
+    "uuid": "e54785e2-2f7e-4b57-8a2e-2befbd6d5e97",
+    "char": "来",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      523.0,
+      246.0,
+      645.0,
+      403.0
+    ],
+    "column": 1,
+    "row": 1,
+    "visible": true
+  },
+  {
+    "id": "9d117e09-29c0-42b4-b989-ef744fca9a4c",
+    "uuid": "9d117e09-29c0-42b4-b989-ef744fca9a4c",
+    "char": "不",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      521.0,
+      405.0,
+      640.0,
+      501.0
+    ],
+    "column": 1,
+    "row": 2,
+    "visible": true
+  },
+  {
+    "id": "266beb2f-fdcf-4d92-b753-05226faea330",
+    "uuid": "266beb2f-fdcf-4d92-b753-05226faea330",
+    "char": "不",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      523.0,
+      500.0,
+      642.0,
+      605.0
+    ],
+    "column": 1,
+    "row": 3,
+    "visible": true
+  },
+  {
+    "id": "56eab07d-0c08-4eca-918c-103230257d8b",
+    "uuid": "56eab07d-0c08-4eca-918c-103230257d8b",
+    "char": "也",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      522.0,
+      604.0,
+      626.0,
+      729.0
+    ],
+    "column": 1,
+    "row": 4,
+    "visible": true
+  },
+  {
+    "id": "61fcbedd-9980-400a-b92d-8ae268a0bfb8",
+    "uuid": "61fcbedd-9980-400a-b92d-8ae268a0bfb8",
+    "char": "世",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      521.0,
+      743.0,
+      626.0,
+      842.0
+    ],
+    "column": 1,
+    "row": 5,
+    "visible": true
+  },
+  {
+    "id": "ec679b79-a229-48e7-b586-f67a0e930b3e",
+    "uuid": "ec679b79-a229-48e7-b586-f67a0e930b3e",
+    "char": "尊",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      521.0,
+      844.0,
+      649.0,
+      996.0
+    ],
+    "column": 1,
+    "row": 6,
+    "visible": true
+  },
+  {
+    "id": "f03d7797-36f0-415e-800b-66bdceb192ae",
+    "uuid": "f03d7797-36f0-415e-800b-66bdceb192ae",
+    "char": "不",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      521.0,
+      1012.0,
+      650.0,
+      1125.0
+    ],
+    "column": 1,
+    "row": 7,
+    "visible": true
+  },
+  {
+    "id": "7b888df2-4fbf-4345-9d04-295907ab3649",
+    "uuid": "7b888df2-4fbf-4345-9d04-295907ab3649",
+    "char": "可",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      521.0,
+      1124.0,
+      650.0,
+      1270.0
+    ],
+    "column": 1,
+    "row": 8,
+    "visible": true
+  },
+  {
+    "id": "8a2db820-d02d-4e38-80fc-796f2d783510",
+    "uuid": "8a2db820-d02d-4e38-80fc-796f2d783510",
+    "char": "以",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      521.0,
+      1270.0,
+      650.0,
+      1350.0
+    ],
+    "column": 1,
+    "row": 9,
+    "visible": false
+  },
+  {
+    "id": "df904398-3f21-48b3-b652-e45f5ba0b2a9",
+    "uuid": "df904398-3f21-48b3-b652-e45f5ba0b2a9",
+    "char": "身",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
     "bbox": [
       412.0,
-      1232.0,
+      155.0,
       535.0,
-      1351.0
+      297.0
     ],
-    "id": "64bb0070-d95e-4cd9-ac5b-7127cc875daf",
-    "row": 9,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 2
+    "column": 2,
+    "row": 0,
+    "visible": true
   },
   {
+    "id": "73f0cc1b-77cb-45ae-96c4-2aa84712a640",
+    "uuid": "73f0cc1b-77cb-45ae-96c4-2aa84712a640",
+    "char": "相",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      433.0,
+      295.0,
+      531.0,
+      415.0
+    ],
+    "column": 2,
+    "row": 1,
+    "visible": true
+  },
+  {
+    "id": "b254a27f-0db2-4b9f-bbf3-00ac55361e8e",
+    "uuid": "b254a27f-0db2-4b9f-bbf3-00ac55361e8e",
+    "char": "得",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      424.9177057356609,
+      413.0,
+      532.0,
+      546.4638403990025
+    ],
+    "column": 2,
+    "row": 2,
+    "visible": true
+  },
+  {
+    "id": "9be3e4fc-2e71-4607-9597-995799be85af",
+    "uuid": "9be3e4fc-2e71-4607-9597-995799be85af",
+    "char": "见",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      412.0,
+      552.0,
+      535.0,
+      663.0
+    ],
+    "column": 2,
+    "row": 3,
+    "visible": true
+  },
+  {
+    "id": "d0297ca1-a4e2-4480-9b66-6e7f7cdc07e4",
+    "uuid": "d0297ca1-a4e2-4480-9b66-6e7f7cdc07e4",
+    "char": "如",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      413.0,
+      691.0,
+      535.0,
+      784.0
+    ],
+    "column": 2,
+    "row": 4,
+    "visible": true
+  },
+  {
+    "id": "74a22816-c860-4e03-93fd-e3868bbdb80d",
+    "uuid": "74a22816-c860-4e03-93fd-e3868bbdb80d",
     "char": "来",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      412.0,
+      784.0,
+      535.0,
+      916.0
+    ],
+    "column": 2,
+    "row": 5,
+    "visible": true
+  },
+  {
+    "id": "44a3c56f-0446-41e1-b076-ba5296687afd",
+    "uuid": "44a3c56f-0446-41e1-b076-ba5296687afd",
+    "char": "何",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      412.0,
+      933.0,
+      535.0,
+      1059.0
+    ],
+    "column": 2,
+    "row": 6,
+    "visible": true
+  },
+  {
+    "id": "096a8b69-4cb5-48b0-95ee-d2f365426c6a",
+    "uuid": "096a8b69-4cb5-48b0-95ee-d2f365426c6a",
+    "char": "以",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      413.0,
+      1057.0,
+      530.0,
+      1155.0
+    ],
+    "column": 2,
+    "row": 7,
+    "visible": true
+  },
+  {
+    "id": "39aa68f9-5e5d-4874-802f-fb1474d92a78",
+    "uuid": "39aa68f9-5e5d-4874-802f-fb1474d92a78",
+    "char": "故",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      412.0,
+      1162.0,
+      535.0,
+      1271.0
+    ],
+    "column": 2,
+    "row": 8,
+    "visible": true
+  },
+  {
+    "id": "64bb0070-d95e-4cd9-ac5b-7127cc875daf",
+    "uuid": "64bb0070-d95e-4cd9-ac5b-7127cc875daf",
+    "char": "如",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      412.0,
+      1272.0,
+      535.0,
+      1349.0
+    ],
+    "column": 2,
+    "row": 9,
+    "visible": true
+  },
+  {
+    "id": "85ae87c5-65d2-4f0e-a010-d729cf8e1c36",
+    "uuid": "85ae87c5-65d2-4f0e-a010-d729cf8e1c36",
+    "char": "来",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
     "bbox": [
       302.0,
-      166.0,
+      155.0,
       419.0,
       284.0
     ],
-    "id": "85ae87c5-65d2-4f0e-a010-d729cf8e1c36",
+    "column": 3,
     "row": 0,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 3
+    "visible": true
   },
   {
-    "char": "所",
-    "bbox": [
-      302.0,
-      284.0,
-      419.0,
-      402.0
-    ],
     "id": "9f4ca8e7-28de-4e24-991f-77c59068139d",
+    "uuid": "9f4ca8e7-28de-4e24-991f-77c59068139d",
+    "char": "所",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      314.0,
+      289.0,
+      408.0,
+      375.0
+    ],
+    "column": 3,
     "row": 1,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 3
+    "visible": true
   },
   {
-    "char": "说",
-    "bbox": [
-      302.0,
-      402.0,
-      419.0,
-      520.0
-    ],
     "id": "f2d21805-da6c-4ab1-bbcb-9df840456f7d",
+    "uuid": "f2d21805-da6c-4ab1-bbcb-9df840456f7d",
+    "char": "说",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      302.0,
+      405.0,
+      409.0,
+      503.0
+    ],
+    "column": 3,
     "row": 2,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 3
+    "visible": true
   },
   {
-    "char": "身",
-    "bbox": [
-      302.0,
-      520.0,
-      419.0,
-      639.0
-    ],
     "id": "18554acd-472b-4b65-871f-8f0eb189c80b",
-    "row": 3,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 3
-  },
-  {
-    "char": "相",
-    "bbox": [
-      302.0,
-      639.0,
-      419.0,
-      757.0
-    ],
-    "id": "23f1b98c-5abc-4310-b030-c05ead66e11a",
-    "row": 4,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 3
-  },
-  {
-    "char": "即",
-    "bbox": [
-      302.0,
-      757.0,
-      419.0,
-      875.0
-    ],
-    "id": "15a532af-16ab-4d7f-ada3-e715fbda822e",
-    "row": 5,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 3
-  },
-  {
-    "char": "非",
-    "bbox": [
-      302.0,
-      875.0,
-      419.0,
-      994.0
-    ],
-    "id": "864ec1ae-7c93-43b2-bb77-ab99c7480d4b",
-    "row": 6,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 3
-  },
-  {
+    "uuid": "18554acd-472b-4b65-871f-8f0eb189c80b",
     "char": "身",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
     "bbox": [
-      302.0,
-      994.0,
+      331.0,
+      526.0,
       419.0,
-      1112.0
+      647.0
     ],
-    "id": "2b53d09e-64d0-4458-9f86-d10d30e2d775",
-    "row": 7,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 3
+    "column": 3,
+    "row": 3,
+    "visible": true
   },
   {
+    "id": "23f1b98c-5abc-4310-b030-c05ead66e11a",
+    "uuid": "23f1b98c-5abc-4310-b030-c05ead66e11a",
     "char": "相",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
     "bbox": [
       302.0,
-      1112.0,
+      650.0,
       419.0,
-      1230.0
+      761.0
     ],
-    "id": "7de232cb-7706-480c-8bf4-5a25cd413805",
-    "row": 8,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 3
+    "column": 3,
+    "row": 4,
+    "visible": true
   },
   {
-    "char": "佛",
+    "id": "15a532af-16ab-4d7f-ada3-e715fbda822e",
+    "uuid": "15a532af-16ab-4d7f-ada3-e715fbda822e",
+    "char": "即",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      306.0,
+      764.0,
+      419.0,
+      884.0
+    ],
+    "column": 3,
+    "row": 5,
+    "visible": true
+  },
+  {
+    "id": "864ec1ae-7c93-43b2-bb77-ab99c7480d4b",
+    "uuid": "864ec1ae-7c93-43b2-bb77-ab99c7480d4b",
+    "char": "非",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      327.0,
+      882.0,
+      398.0,
+      984.0
+    ],
+    "column": 3,
+    "row": 6,
+    "visible": true
+  },
+  {
+    "id": "2b53d09e-64d0-4458-9f86-d10d30e2d775",
+    "uuid": "2b53d09e-64d0-4458-9f86-d10d30e2d775",
+    "char": "身",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      317.0,
+      998.0,
+      419.0,
+      1124.0
+    ],
+    "column": 3,
+    "row": 7,
+    "visible": true
+  },
+  {
+    "id": "7de232cb-7706-480c-8bf4-5a25cd413805",
+    "uuid": "7de232cb-7706-480c-8bf4-5a25cd413805",
+    "char": "相",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
     "bbox": [
       302.0,
-      1230.0,
+      1144.0,
+      419.0,
+      1240.0
+    ],
+    "column": 3,
+    "row": 8,
+    "visible": true
+  },
+  {
+    "id": "75892e40-93d7-4193-96c1-a3a5a66798e7",
+    "uuid": "75892e40-93d7-4193-96c1-a3a5a66798e7",
+    "char": "佛",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      302.0,
+      1257.0,
       419.0,
       1349.0
     ],
-    "id": "75892e40-93d7-4193-96c1-a3a5a66798e7",
+    "column": 3,
     "row": 9,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 3
+    "visible": true
   },
   {
-    "char": "言",
-    "bbox": [
-      195.0,
-      174.0,
-      300.0,
-      291.0
-    ],
     "id": "793a373c-6b87-48a2-bae5-62af6cc2a037",
+    "uuid": "793a373c-6b87-48a2-bae5-62af6cc2a037",
+    "char": "言",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      202.0,
+      157.0,
+      299.0,
+      269.0
+    ],
+    "column": 4,
     "row": 0,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 4
+    "visible": true
   },
   {
-    "char": "凡",
-    "bbox": [
-      195.0,
-      291.0,
-      300.0,
-      409.0
-    ],
     "id": "6fe04cf7-ccb9-40a7-b2a3-800476720068",
+    "uuid": "6fe04cf7-ccb9-40a7-b2a3-800476720068",
+    "char": "凡",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      201.0,
+      269.0,
+      291.0,
+      389.0
+    ],
+    "column": 4,
     "row": 1,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 4
+    "visible": true
   },
   {
-    "char": "所",
-    "bbox": [
-      195.0,
-      409.0,
-      300.0,
-      527.0
-    ],
     "id": "c2a4b02e-7ebb-4686-a33a-bfc54cb84032",
+    "uuid": "c2a4b02e-7ebb-4686-a33a-bfc54cb84032",
+    "char": "所",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      200.0,
+      392.0,
+      290.0,
+      486.0
+    ],
+    "column": 4,
     "row": 2,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 4
+    "visible": true
   },
   {
-    "char": "有",
-    "bbox": [
-      195.0,
-      527.0,
-      300.0,
-      645.0
-    ],
     "id": "f0fe6c81-9d3c-4e6e-ad1d-6a602e2b55f1",
+    "uuid": "f0fe6c81-9d3c-4e6e-ad1d-6a602e2b55f1",
+    "char": "有",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      200.0,
+      488.0,
+      300.0,
+      614.0
+    ],
+    "column": 4,
     "row": 3,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 4
+    "visible": true
   },
   {
-    "char": "相",
-    "bbox": [
-      195.0,
-      645.0,
-      300.0,
-      763.0
-    ],
     "id": "9bbc9b15-c3aa-4b24-b9ef-2af0eaaa3904",
+    "uuid": "9bbc9b15-c3aa-4b24-b9ef-2af0eaaa3904",
+    "char": "相",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      199.0,
+      622.0,
+      300.0,
+      743.0
+    ],
+    "column": 4,
     "row": 4,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 4
+    "visible": true
   },
   {
-    "char": "皆",
-    "bbox": [
-      195.0,
-      763.0,
-      300.0,
-      880.0
-    ],
     "id": "30bdc3e9-87a0-43f7-b7be-449f29036b54",
+    "uuid": "30bdc3e9-87a0-43f7-b7be-449f29036b54",
+    "char": "皆",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      212.0,
+      765.0,
+      282.0,
+      864.0
+    ],
+    "column": 4,
     "row": 5,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 4
+    "visible": true
   },
   {
-    "char": "是",
-    "bbox": [
-      195.0,
-      880.0,
-      300.0,
-      998.0
-    ],
     "id": "67053be2-ab75-401b-aa59-18642a951057",
+    "uuid": "67053be2-ab75-401b-aa59-18642a951057",
+    "char": "是",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      198.0,
+      876.0,
+      300.0,
+      981.0
+    ],
+    "column": 4,
     "row": 6,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 4
+    "visible": true
   },
   {
-    "char": "虚",
-    "bbox": [
-      195.0,
-      998.0,
-      300.0,
-      1116.0
-    ],
     "id": "3dc8d2b2-c915-4453-b42b-d1ba882e163b",
+    "uuid": "3dc8d2b2-c915-4453-b42b-d1ba882e163b",
+    "char": "虚",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      197.0,
+      981.0,
+      300.0,
+      1113.0
+    ],
+    "column": 4,
     "row": 7,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 4
+    "visible": true
   },
   {
-    "char": "妄",
-    "bbox": [
-      195.0,
-      1116.0,
-      300.0,
-      1234.0
-    ],
     "id": "bfc0321c-e56d-420e-aba2-64a281ba9234",
+    "uuid": "bfc0321c-e56d-420e-aba2-64a281ba9234",
+    "char": "妄",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      197.0,
+      1129.0,
+      297.0,
+      1242.0
+    ],
+    "column": 4,
     "row": 8,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 4
+    "visible": true
   },
   {
-    "char": "若",
-    "bbox": [
-      195.0,
-      1234.0,
-      300.0,
-      1352.0
-    ],
     "id": "78516a58-e376-4b5e-a752-db88019cb360",
+    "uuid": "78516a58-e376-4b5e-a752-db88019cb360",
+    "char": "若",
+    "font": "行书",
+    "author": "王羲之",
+    "work": "千字文",
+    "work_dir": "王羲之-行书-千字文",
+    "bbox": [
+      197.0,
+      1242.0,
+      300.0,
+      1348.0
+    ],
+    "column": 4,
     "row": 9,
-    "font": "",
-    "author": "",
-    "work": "",
-    "work_dir": "",
-    "column": 4
+    "visible": true
   }
 ]
