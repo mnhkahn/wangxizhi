@@ -1748,6 +1748,10 @@ class MainWindow(QMainWindow):
                         bbox_item.setOpacity(0.3)
                         break
 
+        # 设置 column/row 映射，用于框的联动调整
+        column_row_map = {item.id: (item.column, item.row) for item in self.char_manager.items}
+        self.image_canvas.set_column_row_map(column_row_map)
+
         # 字体/作者/作品：加载时按第一个字展示
         self.current_font = result.get("font") or self.current_font or "楷书"
         self.current_author = result.get("author") or self.current_author or ""
@@ -2410,7 +2414,10 @@ class MainWindow(QMainWindow):
         item = self.char_manager.get_item(item_id)
         if item:
             item.bbox = bbox
-            self._update_preview(item)
+            # 只在更新当前选中框的预览时刷新，避免联动调整下方框导致预览跳动
+            selected_ids = {b.item_id for b in self.image_canvas.selected_items}
+            if item_id in selected_ids:
+                self._update_preview(item)
 
             # 若当前属性面板正在显示该 item，同步更新数值（不触发信号）
             if (

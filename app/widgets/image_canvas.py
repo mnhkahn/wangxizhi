@@ -227,6 +227,14 @@ class BBoxItem(QGraphicsRectItem):
         self._resize_start_scene_pos = scene_pos
         self._resize_start_bbox = self.get_bbox()
 
+        # 若拖动下边界，通知 ImageCanvas 准备联动
+        if handle_pos == "s":
+            sc = self.scene()
+            if sc:
+                for v in sc.views():
+                    if hasattr(v, '_start_resize_sync'):
+                        v._start_resize_sync(self)
+
     def _notify_bbox_committed(self, old_bbox: List[float], new_bbox: List[float]):
         """向所属 view 通知 bbox 变更（用于撤销栈）"""
         sc = self.scene()
@@ -285,6 +293,14 @@ class BBoxItem(QGraphicsRectItem):
         # 实时通知预览更新
         self._notify_bbox_live()
 
+        # 联动调整：若拖动下边界，同步调整下方相邻框
+        if h == "s":
+            sc = self.scene()
+            if sc:
+                for v in sc.views():
+                    if hasattr(v, '_sync_adjacent_on_resize'):
+                        v._sync_adjacent_on_resize(self, y2)
+
     def _notify_bbox_live(self):
         """实时通知 view：bbox 正在变化（用于预览跟随）"""
         sc = self.scene()
@@ -302,6 +318,14 @@ class BBoxItem(QGraphicsRectItem):
             new_bbox = self.get_bbox()
             if any(abs(a - b) > 0.001 for a, b in zip(old_bbox, new_bbox)):
                 self._notify_bbox_committed(old_bbox, new_bbox)
+
+        # 结束联动调整
+        if self._resize_handle == "s":
+            sc = self.scene()
+            if sc:
+                for v in sc.views():
+                    if hasattr(v, '_end_resize_sync'):
+                        v._end_resize_sync(self)
 
         self._resizing = False
         self._resize_handle = None
@@ -383,6 +407,10 @@ class ImageCanvas(QGraphicsView):
         self._bbox_editing_id: Optional[int] = None
         self._bbox_edit_start: Optional[List[float]] = None
 
+        # 联动调整：column/row 映射与联动状态
+        self._column_row_map: Dict[int, tuple] = {}
+        self._resize_sync_originals: Dict[int, List[float]] = {}
+
         # 视图设置
         self.setRenderHint(QPainter.Antialiasing)
         # 关闭 QGraphicsView 自带的拖拽模式，避免与 bbox 拖拽/缩放冲突。
@@ -405,6 +433,73 @@ class ImageCanvas(QGraphicsView):
     def _notify_bbox_committed(self, item_id: int, old_bbox: list, new_bbox: list):
         """由 BBoxItem/HandleItem 回调触发的提交"""
         self.bbox_edit_committed.emit(item_id, old_bbox, new_bbox)
+
+    def set_column_row_map(self, mapping: Dict[int, tuple]):
+        """设置 item_id -> (column, row) 映射，用于联动调整"""
+        self._column_row_map = mapping
+
+    def _start_resize_sync(self, source_item: "BBoxItem"):
+        """开始联动调整：记录下方相邻框的原始 bbox"""
+        source_id = source_item.item_id
+        if source_id not in self._column_row_map:
+            return
+        col, row = self._column_row_map[source_id]
+        next_id = None
+        for item_id, (c, r) in self._column_row_map.items():
+            if c == col and r == row + 1:
+                next_id = item_id
+                break
+        if next_id is None:
+            return
+        for bbox_item in self.bbox_items:
+            if bbox_item.item_id == next_id:
+                self._resize_sync_originals[next_id] = bbox_item.get_bbox()
+                break
+
+    def _sync_adjacent_on_resize(self, source_item: "BBoxItem", new_y2: float):
+        """实时联动调整下方框的上边界"""
+        source_id = source_item.item_id
+        if source_id not in self._column_row_map:
+            return
+        col, row = self._column_row_map[source_id]
+        next_id = None
+        for item_id, (c, r) in self._column_row_map.items():
+            if c == col and r == row + 1:
+                next_id = item_id
+                break
+        if next_id is None or next_id not in self._resize_sync_originals:
+            return
+        for bbox_item in self.bbox_items:
+            if bbox_item.item_id == next_id:
+                old_bbox = bbox_item.get_bbox()
+                if abs(old_bbox[1] - new_y2) > 0.5:
+                    bbox_item.update_bbox(
+                        old_bbox[0], new_y2, old_bbox[2] - old_bbox[0], old_bbox[3] - new_y2
+                    )
+                    self._notify_bbox_live(next_id, bbox_item.get_bbox())
+                break
+
+    def _end_resize_sync(self, source_item: "BBoxItem"):
+        """结束联动调整：提交下方框的变更"""
+        source_id = source_item.item_id
+        if source_id not in self._column_row_map:
+            self._resize_sync_originals.clear()
+            return
+        col, row = self._column_row_map[source_id]
+        next_id = None
+        for item_id, (c, r) in self._column_row_map.items():
+            if c == col and r == row + 1:
+                next_id = item_id
+                break
+        if next_id is not None and next_id in self._resize_sync_originals:
+            old_bbox = self._resize_sync_originals[next_id]
+            for bbox_item in self.bbox_items:
+                if bbox_item.item_id == next_id:
+                    new_bbox = bbox_item.get_bbox()
+                    if any(abs(a - b) > 0.001 for a, b in zip(old_bbox, new_bbox)):
+                        self._notify_bbox_committed(next_id, old_bbox, new_bbox)
+                    break
+        self._resize_sync_originals.clear()
 
     def _notify_bbox_live(self, item_id: int, bbox: list):
         """由 BBoxItem 回调触发的实时更新"""
