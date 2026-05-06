@@ -35,18 +35,15 @@ def fix_page_from_annotation(result_path: Path, chars_path: Path, img_path: Path
     with open(result_path, 'r', encoding='utf-8') as f:
         result_data = json.load(f)
 
-    char_results = result_data.get('char_results', [])
-    if not char_results:
+    parsed_results = result_data.get('parsed_results', [])
+    if not parsed_results:
         return None
 
-    cols = defaultdict(list)
-    for c in char_results:
-        cols[c['column']].append(c)
-
     col_widths = {}
-    for col_idx, items in cols.items():
-        avg_w = sum(c['bbox'][2] - c['bbox'][0] for c in items) / len(items)
-        col_widths[col_idx] = avg_w
+    for i, p in enumerate(parsed_results):
+        bbox = p['bbox']
+        avg_w = bbox[2] - bbox[0]
+        col_widths[i] = avg_w
 
     if not col_widths:
         return None
@@ -58,10 +55,13 @@ def fix_page_from_annotation(result_path: Path, chars_path: Path, img_path: Path
     anno_cols = []
     for col_idx, avg_w in col_widths.items():
         if avg_w < threshold:
-            items = sorted(cols[col_idx], key=lambda x: x['row'])
-            text = ''.join(c['char'] for c in items)
+            p = parsed_results[col_idx]
+            text = p['text'].replace(' ', '').replace('\n', '').replace('\t', '')
+            # 过滤掉纯数字的列（页码）
+            if text.isdigit():
+                continue
             anno_cols.append((col_idx, text, avg_w))
-    anno_cols.sort(key=lambda x: -cols[x[0]][0]['bbox'][0])  # 从右到左
+    anno_cols.sort(key=lambda x: -parsed_results[x[0]]['bbox'][0])  # 从右到左
 
     if not anno_cols:
         return None
@@ -110,6 +110,25 @@ def fix_page_from_annotation(result_path: Path, chars_path: Path, img_path: Path
         groups = split_text(text, gcount)
         all_groups.extend(groups)
 
+    # 从 parsed_results 中提取主文列 bbox，按 x 从大到小排序
+    parsed_results = result_data.get('parsed_results', [])
+    main_col_bboxes = []
+    if parsed_results:
+        parsed_widths = []
+        for p in parsed_results:
+            bbox = p['bbox']
+            w = bbox[2] - bbox[0]
+            parsed_widths.append(w)
+        if parsed_widths:
+            max_pw = max(parsed_widths)
+            threshold = max(max_pw * 0.5, 50)
+            for p in parsed_results:
+                bbox = p['bbox']
+                w = bbox[2] - bbox[0]
+                if w >= threshold:
+                    main_col_bboxes.append(((bbox[0] + bbox[2]) / 2, bbox))
+            main_col_bboxes.sort(reverse=True)  # 从右到左
+
     # 修正每列主文
     new_chars = []
     for i, (avg_x, col_key, items) in enumerate(col_info):
@@ -118,11 +137,16 @@ def fix_page_from_annotation(result_path: Path, chars_path: Path, img_path: Path
         std_text = all_groups[i]
         ocr_items = sorted(items, key=lambda x: x['row'])
 
-        col_x1 = min(c['bbox'][0] for c in items)
-        col_x2 = max(c['bbox'][2] for c in items)
-        col_y1 = min(c['bbox'][1] for c in items)
-        col_y2 = max(c['bbox'][3] for c in items)
-        col_bbox = [col_x1, col_y1, col_x2, col_y2]
+        # 优先使用 parsed_results 中对应主文列的 bbox（更准确，避免累积误差）
+        if i < len(main_col_bboxes):
+            pbbox = main_col_bboxes[i][1]
+            col_bbox = [float(pbbox[0]), float(pbbox[1]), float(pbbox[2]), float(pbbox[3])]
+        else:
+            col_x1 = min(c['bbox'][0] for c in items)
+            col_x2 = max(c['bbox'][2] for c in items)
+            col_y1 = min(c['bbox'][1] for c in items)
+            col_y2 = max(c['bbox'][3] for c in items)
+            col_bbox = [col_x1, col_y1, col_x2, col_y2]
 
         fixed = fix_column(std_text, ocr_items, col_bbox, len(std_text), img_path)
         for it in fixed:

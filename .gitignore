@@ -51,3 +51,7 @@ words/
 tmp/
 # OCR batch log
 batch_ocr_log.txt
+
+# Debug images
+debug_*.jpg
+test_fatie_*.jpg

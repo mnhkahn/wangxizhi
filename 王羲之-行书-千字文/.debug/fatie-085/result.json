@@ -6,221 +6,221 @@
     "channels": 3,
     "dtype": "uint8"
   },
-  "recognized_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生法忍此功德胜前功德以菩萨不取福德故须菩提菩落蓉隆以滿恆河沙壽世界七寶布施未如知一切法無我雲生漾無生法忍此功德藤前砌德菩薩不取福德故須菩提",
+  "recognized_text": "菩提善薩满恒河沙薺世界士寶布施未知一切法無我無生淺無生法忍此切德勝前切德菩薩不取福德故須菩提",
   "parsed_results": [
     {
       "text": "80",
       "bbox": [
-        868,
-        1418,
-        891,
-        1440
+        869.7819999999999,
+        1417.84,
+        887.6419999999999,
+        1437.08
       ],
       "poly": [
         [
-          868,
-          1418
+          869.7819999999999,
+          1417.84
         ],
         [
-          891,
-          1418
+          887.6419999999999,
+          1417.84
         ],
         [
-          891,
-          1440
+          887.6419999999999,
+          1437.08
         ],
         [
-          868,
-          1440
+          869.7819999999999,
+          1437.08
         ]
       ]
     },
     {
       "text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
       "bbox": [
-        733,
-        128,
-        761,
-        979
+        736.7249999999999,
+        128.76,
+        759.943,
+        984.2
       ],
       "poly": [
         [
-          733,
-          128
+          736.7249999999999,
+          128.76
         ],
         [
-          761,
-          128
+          759.943,
+          128.76
         ],
         [
-          761,
-          979
+          759.943,
+          984.2
         ],
         [
-          733,
-          979
+          736.7249999999999,
+          984.2
         ]
       ]
     },
     {
       "text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
       "bbox": [
-        698,
-        129,
-        726,
-        689
+        701.898,
+        128.76,
+        725.1160000000001,
+        692.64
       ],
       "poly": [
         [
-          698,
-          129
+          701.898,
+          128.76
         ],
         [
-          726,
-          129
+          725.1160000000001,
+          128.76
         ],
         [
-          726,
-          689
+          725.1160000000001,
+          692.64
         ],
         [
-          698,
-          689
+          701.898,
+          692.64
         ]
       ]
     },
     {
-      "text": "菩 落蓉隆以滿恆河沙",
+      "text": "菩提善薩满恒河沙",
       "bbox": [
-        584,
-        138,
-        693,
-        1323
+        587.594,
+        140.6,
+        691.182,
+        1317.2
       ],
       "poly": [
         [
-          584,
-          138
+          587.594,
+          140.6
         ],
         [
-          693,
-          138
+          691.182,
+          140.6
         ],
         [
-          693,
-          1323
+          691.182,
+          1317.2
         ],
         [
-          584,
-          1323
+          587.594,
+          1317.2
         ]
       ]
     },
     {
-      "text": "壽世界七寶布施未如知",
+      "text": "薺世界士寶布施未知",
       "bbox": [
-        469,
-        134,
-        593,
-        1314
+        475.96900000000005,
+        137.64,
+        584.9150000000001,
+        1306.84
       ],
       "poly": [
         [
-          469,
-          134
+          475.96900000000005,
+          137.64
         ],
         [
-          593,
-          134
+          584.9150000000001,
+          137.64
         ],
         [
-          593,
-          1314
+          584.9150000000001,
+          1306.84
         ],
         [
-          469,
-          1314
+          475.96900000000005,
+          1306.84
         ]
       ]
     },
     {
-      "text": "一切法無我雲生漾無生",
+      "text": "一切法無我無生淺無生",
       "bbox": [
-        351,
-        138,
-        476,
-        1319
+        358.093,
+        137.64,
+        467.932,
+        1312.76
       ],
       "poly": [
         [
-          351,
-          138
+          358.093,
+          137.64
         ],
         [
-          476,
-          138
+          467.932,
+          137.64
         ],
         [
-          476,
-          1319
+          467.932,
+          1312.76
         ],
         [
-          351,
-          1319
+          358.093,
+          1312.76
         ]
       ]
     },
     {
-      "text": "法忍此功德藤前砌德",
+      "text": "法忍此切德勝前切德",
       "bbox": [
-        224,
-        137,
-        371,
-        1322
+        247.36100000000002,
+        140.6,
+        358.093,
+        1314.24
       ],
       "poly": [
         [
-          224,
-          137
+          247.36100000000002,
+          140.6
         ],
         [
-          371,
-          137
+          358.093,
+          140.6
         ],
         [
-          371,
-          1322
+          358.093,
+          1314.24
         ],
         [
-          224,
-          1322
+          247.36100000000002,
+          1314.24
         ]
       ]
     },
     {
       "text": "菩薩不取福德故須菩提",
       "bbox": [
-        130,
-        135,
-        247,
-        1323
+        132.164,
+        142.08,
+        245.57500000000002,
+        1317.2
       ],
       "poly": [
         [
-          130,
-          135
+          132.164,
+          142.08
         ],
         [
-          247,
-          135
+          245.57500000000002,
+          142.08
         ],
         [
-          247,
-          1323
+          245.57500000000002,
+          1317.2
         ],
         [
-          130,
-          1323
+          132.164,
+          1317.2
         ]
       ]
     }
@@ -229,1965 +229,925 @@
     {
       "char": "菩",
       "bbox": [
-        733.0,
-        128.0,
-        761.0,
-        157.0
+        587.0,
+        118.0,
+        691.0,
+        266.0
       ],
-      "column": 1,
+      "column": 0,
       "row": 0,
       "global_index": 0,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
+      "col_text": "菩提善薩满恒河沙",
       "col_bbox": [
-        733,
-        128,
-        761,
-        979
+        587.594,
+        140.6,
+        691.182,
+        1317.2
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "提",
       "bbox": [
-        733.0,
-        157.0,
-        761.0,
-        185.0
+        587.0,
+        264.0,
+        691.0,
+        413.0
       ],
-      "column": 1,
+      "column": 0,
       "row": 1,
       "global_index": 1,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
+      "col_text": "菩提善薩满恒河沙",
       "col_bbox": [
-        733,
-        128,
-        761,
-        979
+        587.594,
+        140.6,
+        691.182,
+        1317.2
       ],
       "split_method": "pixel_projection"
     },
     {
-      "char": "若",
+      "char": "善",
       "bbox": [
-        733.0,
-        185.0,
-        761.0,
-        210.0
+        589.0,
+        411.0,
+        691.0,
+        560.0
       ],
-      "column": 1,
+      "column": 0,
       "row": 2,
       "global_index": 2,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "菩",
-      "bbox": [
-        733.0,
-        210.0,
-        761.0,
-        238.0
-      ],
-      "column": 1,
-      "row": 3,
-      "global_index": 3,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "萨",
-      "bbox": [
-        733.0,
-        238.0,
-        761.0,
-        265.0
-      ],
-      "column": 1,
-      "row": 4,
-      "global_index": 4,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "以",
-      "bbox": [
-        733.0,
-        265.0,
-        761.0,
-        290.0
-      ],
-      "column": 1,
-      "row": 5,
-      "global_index": 5,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "满",
-      "bbox": [
-        733.0,
-        290.0,
-        761.0,
-        318.0
-      ],
-      "column": 1,
-      "row": 6,
-      "global_index": 6,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "恒",
-      "bbox": [
-        733.0,
-        318.0,
-        761.0,
-        346.0
-      ],
-      "column": 1,
-      "row": 7,
-      "global_index": 7,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "河",
-      "bbox": [
-        733.0,
-        346.0,
-        761.0,
-        375.0
-      ],
-      "column": 1,
-      "row": 8,
-      "global_index": 8,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "沙",
-      "bbox": [
-        733.0,
-        375.0,
-        761.0,
-        403.0
-      ],
-      "column": 1,
-      "row": 9,
-      "global_index": 9,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "等",
-      "bbox": [
-        733.0,
-        403.0,
-        761.0,
-        447.0
-      ],
-      "column": 1,
-      "row": 10,
-      "global_index": 10,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "世",
-      "bbox": [
-        733.0,
-        447.0,
-        761.0,
-        475.0
-      ],
-      "column": 1,
-      "row": 11,
-      "global_index": 11,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "界",
-      "bbox": [
-        733.0,
-        475.0,
-        761.0,
-        503.0
-      ],
-      "column": 1,
-      "row": 12,
-      "global_index": 12,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "七",
-      "bbox": [
-        733.0,
-        503.0,
-        761.0,
-        530.0
-      ],
-      "column": 1,
-      "row": 13,
-      "global_index": 13,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "宝",
-      "bbox": [
-        733.0,
-        530.0,
-        761.0,
-        557.0
-      ],
-      "column": 1,
-      "row": 14,
-      "global_index": 14,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "布",
-      "bbox": [
-        733.0,
-        557.0,
-        761.0,
-        582.0
-      ],
-      "column": 1,
-      "row": 15,
-      "global_index": 15,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "施",
-      "bbox": [
-        733.0,
-        582.0,
-        761.0,
-        611.0
-      ],
-      "column": 1,
-      "row": 16,
-      "global_index": 16,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "未",
-      "bbox": [
-        733.0,
-        611.0,
-        761.0,
-        636.0
-      ],
-      "column": 1,
-      "row": 17,
-      "global_index": 17,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "如",
-      "bbox": [
-        733.0,
-        636.0,
-        761.0,
-        664.0
-      ],
-      "column": 1,
-      "row": 18,
-      "global_index": 18,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "知",
-      "bbox": [
-        733.0,
-        664.0,
-        761.0,
-        691.0
-      ],
-      "column": 1,
-      "row": 19,
-      "global_index": 19,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "一",
-      "bbox": [
-        733.0,
-        691.0,
-        761.0,
-        715.0
-      ],
-      "column": 1,
-      "row": 20,
-      "global_index": 20,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "切",
-      "bbox": [
-        733.0,
-        715.0,
-        761.0,
-        744.0
-      ],
-      "column": 1,
-      "row": 21,
-      "global_index": 21,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "法",
-      "bbox": [
-        733.0,
-        744.0,
-        761.0,
-        772.0
-      ],
-      "column": 1,
-      "row": 22,
-      "global_index": 22,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "无",
-      "bbox": [
-        733.0,
-        772.0,
-        761.0,
-        800.0
-      ],
-      "column": 1,
-      "row": 23,
-      "global_index": 23,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "我",
-      "bbox": [
-        733.0,
-        800.0,
-        761.0,
-        844.0
-      ],
-      "column": 1,
-      "row": 24,
-      "global_index": 24,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "无",
-      "bbox": [
-        733.0,
-        844.0,
-        761.0,
-        864.0
-      ],
-      "column": 1,
-      "row": 25,
-      "global_index": 25,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "生",
-      "bbox": [
-        733.0,
-        864.0,
-        761.0,
-        893.0
-      ],
-      "column": 1,
-      "row": 26,
-      "global_index": 26,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "得",
-      "bbox": [
-        733.0,
-        893.0,
-        761.0,
-        928.0
-      ],
-      "column": 1,
-      "row": 27,
-      "global_index": 27,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "无",
-      "bbox": [
-        733.0,
-        928.0,
-        761.0,
-        955.0
-      ],
-      "column": 1,
-      "row": 28,
-      "global_index": 28,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "生",
-      "bbox": [
-        733.0,
-        955.0,
-        761.0,
-        979.0
-      ],
-      "column": 1,
-      "row": 29,
-      "global_index": 29,
-      "col_text": "菩提若菩萨以满恒河沙等世界七宝布施未如知一切法无我无生得无生",
-      "col_bbox": [
-        733,
-        128,
-        761,
-        979
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "法",
-      "bbox": [
-        698.0,
-        129.0,
-        726.0,
-        157.0
-      ],
-      "column": 2,
-      "row": 0,
-      "global_index": 30,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "忍",
-      "bbox": [
-        698.0,
-        157.0,
-        726.0,
-        184.0
-      ],
-      "column": 2,
-      "row": 1,
-      "global_index": 31,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "此",
-      "bbox": [
-        698.0,
-        184.0,
-        726.0,
-        212.0
-      ],
-      "column": 2,
-      "row": 2,
-      "global_index": 32,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "功",
-      "bbox": [
-        698.0,
-        212.0,
-        726.0,
-        238.0
-      ],
-      "column": 2,
-      "row": 3,
-      "global_index": 33,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "德",
-      "bbox": [
-        698.0,
-        238.0,
-        726.0,
-        265.0
-      ],
-      "column": 2,
-      "row": 4,
-      "global_index": 34,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "胜",
-      "bbox": [
-        698.0,
-        265.0,
-        726.0,
-        291.0
-      ],
-      "column": 2,
-      "row": 5,
-      "global_index": 35,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "前",
-      "bbox": [
-        698.0,
-        291.0,
-        726.0,
-        319.0
-      ],
-      "column": 2,
-      "row": 6,
-      "global_index": 36,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "功",
-      "bbox": [
-        698.0,
-        319.0,
-        726.0,
-        345.0
-      ],
-      "column": 2,
-      "row": 7,
-      "global_index": 37,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "德",
-      "bbox": [
-        698.0,
-        345.0,
-        726.0,
-        373.0
-      ],
-      "column": 2,
-      "row": 8,
-      "global_index": 38,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "以",
-      "bbox": [
-        698.0,
-        373.0,
-        726.0,
-        401.0
-      ],
-      "column": 2,
-      "row": 9,
-      "global_index": 39,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "菩",
-      "bbox": [
-        698.0,
-        401.0,
-        726.0,
-        434.0
-      ],
-      "column": 2,
-      "row": 10,
-      "global_index": 40,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "萨",
-      "bbox": [
-        698.0,
-        434.0,
-        726.0,
-        472.0
-      ],
-      "column": 2,
-      "row": 11,
-      "global_index": 41,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "不",
-      "bbox": [
-        698.0,
-        472.0,
-        726.0,
-        500.0
-      ],
-      "column": 2,
-      "row": 12,
-      "global_index": 42,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "取",
-      "bbox": [
-        698.0,
-        500.0,
-        726.0,
-        528.0
-      ],
-      "column": 2,
-      "row": 13,
-      "global_index": 43,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "福",
-      "bbox": [
-        698.0,
-        528.0,
-        726.0,
-        556.0
-      ],
-      "column": 2,
-      "row": 14,
-      "global_index": 44,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "德",
-      "bbox": [
-        698.0,
-        556.0,
-        726.0,
-        583.0
-      ],
-      "column": 2,
-      "row": 15,
-      "global_index": 45,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "故",
-      "bbox": [
-        698.0,
-        583.0,
-        726.0,
-        609.0
-      ],
-      "column": 2,
-      "row": 16,
-      "global_index": 46,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "须",
-      "bbox": [
-        698.0,
-        609.0,
-        726.0,
-        637.0
-      ],
-      "column": 2,
-      "row": 17,
-      "global_index": 47,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "菩",
-      "bbox": [
-        698.0,
-        637.0,
-        726.0,
-        662.0
-      ],
-      "column": 2,
-      "row": 18,
-      "global_index": 48,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "提",
-      "bbox": [
-        698.0,
-        662.0,
-        726.0,
-        689.0
-      ],
-      "column": 2,
-      "row": 19,
-      "global_index": 49,
-      "col_text": "法忍此功德胜前功德以菩萨不取福德故须菩提",
-      "col_bbox": [
-        698,
-        129,
-        726,
-        689
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "菩",
-      "bbox": [
-        584.0,
-        138.0,
-        693.0,
-        223.0
-      ],
-      "column": 3,
-      "row": 0,
-      "global_index": 50,
-      "col_text": "菩 落蓉隆以滿恆河沙",
-      "col_bbox": [
-        584,
-        138,
-        693,
-        1323
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "落",
-      "bbox": [
-        584.0,
-        341.0,
-        693.0,
-        472.0
-      ],
-      "column": 3,
-      "row": 2,
-      "global_index": 51,
-      "col_text": "菩 落蓉隆以滿恆河沙",
-      "col_bbox": [
-        584,
-        138,
-        693,
-        1323
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "蓉",
-      "bbox": [
-        584.0,
-        472.0,
-        693.0,
-        603.0
-      ],
-      "column": 3,
-      "row": 3,
-      "global_index": 52,
-      "col_text": "菩 落蓉隆以滿恆河沙",
-      "col_bbox": [
-        584,
-        138,
-        693,
-        1323
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "隆",
-      "bbox": [
-        584.0,
-        603.0,
-        693.0,
-        706.0
-      ],
-      "column": 3,
-      "row": 4,
-      "global_index": 53,
-      "col_text": "菩 落蓉隆以滿恆河沙",
-      "col_bbox": [
-        584,
-        138,
-        693,
-        1323
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "以",
-      "bbox": [
-        584.0,
-        706.0,
-        693.0,
-        883.0
-      ],
-      "column": 3,
-      "row": 5,
-      "global_index": 54,
-      "col_text": "菩 落蓉隆以滿恆河沙",
-      "col_bbox": [
-        584,
-        138,
-        693,
-        1323
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "滿",
-      "bbox": [
-        584.0,
-        883.0,
-        693.0,
-        932.0
-      ],
-      "column": 3,
-      "row": 6,
-      "global_index": 55,
-      "col_text": "菩 落蓉隆以滿恆河沙",
-      "col_bbox": [
-        584,
-        138,
-        693,
-        1323
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "恆",
-      "bbox": [
-        584.0,
-        932.0,
-        693.0,
-        1051.0
-      ],
-      "column": 3,
-      "row": 7,
-      "global_index": 56,
-      "col_text": "菩 落蓉隆以滿恆河沙",
-      "col_bbox": [
-        584,
-        138,
-        693,
-        1323
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "河",
-      "bbox": [
-        584.0,
-        1051.0,
-        693.0,
-        1169.0
-      ],
-      "column": 3,
-      "row": 8,
-      "global_index": 57,
-      "col_text": "菩 落蓉隆以滿恆河沙",
-      "col_bbox": [
-        584,
-        138,
-        693,
-        1323
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "沙",
-      "bbox": [
-        584.0,
-        1169.0,
-        693.0,
-        1323.0
-      ],
-      "column": 3,
-      "row": 9,
-      "global_index": 58,
-      "col_text": "菩 落蓉隆以滿恆河沙",
-      "col_bbox": [
-        584,
-        138,
-        693,
-        1323
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "壽",
-      "bbox": [
-        469.0,
-        134.0,
-        593.0,
-        286.0
-      ],
-      "column": 4,
-      "row": 0,
-      "global_index": 59,
-      "col_text": "壽世界七寶布施未如知",
-      "col_bbox": [
-        469,
-        134,
-        593,
-        1314
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "世",
-      "bbox": [
-        469.0,
-        286.0,
-        593.0,
-        404.0
-      ],
-      "column": 4,
-      "row": 1,
-      "global_index": 60,
-      "col_text": "壽世界七寶布施未如知",
-      "col_bbox": [
-        469,
-        134,
-        593,
-        1314
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "界",
-      "bbox": [
-        469.0,
-        404.0,
-        593.0,
-        522.0
-      ],
-      "column": 4,
-      "row": 2,
-      "global_index": 61,
-      "col_text": "壽世界七寶布施未如知",
-      "col_bbox": [
-        469,
-        134,
-        593,
-        1314
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "七",
-      "bbox": [
-        469.0,
-        522.0,
-        593.0,
-        620.0
-      ],
-      "column": 4,
-      "row": 3,
-      "global_index": 62,
-      "col_text": "壽世界七寶布施未如知",
-      "col_bbox": [
-        469,
-        134,
-        593,
-        1314
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "寶",
-      "bbox": [
-        469.0,
-        620.0,
-        593.0,
-        690.0
-      ],
-      "column": 4,
-      "row": 4,
-      "global_index": 63,
-      "col_text": "壽世界七寶布施未如知",
-      "col_bbox": [
-        469,
-        134,
-        593,
-        1314
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "布",
-      "bbox": [
-        469.0,
-        690.0,
-        593.0,
-        807.0
-      ],
-      "column": 4,
-      "row": 5,
-      "global_index": 64,
-      "col_text": "壽世界七寶布施未如知",
-      "col_bbox": [
-        469,
-        134,
-        593,
-        1314
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "施",
-      "bbox": [
-        469.0,
-        807.0,
-        593.0,
-        966.0
-      ],
-      "column": 4,
-      "row": 6,
-      "global_index": 65,
-      "col_text": "壽世界七寶布施未如知",
-      "col_bbox": [
-        469,
-        134,
-        593,
-        1314
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "未",
-      "bbox": [
-        469.0,
-        966.0,
-        593.0,
-        1081.0
-      ],
-      "column": 4,
-      "row": 7,
-      "global_index": 66,
-      "col_text": "壽世界七寶布施未如知",
-      "col_bbox": [
-        469,
-        134,
-        593,
-        1314
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "如",
-      "bbox": [
-        469.0,
-        1081.0,
-        593.0,
-        1166.0
-      ],
-      "column": 4,
-      "row": 8,
-      "global_index": 67,
-      "col_text": "壽世界七寶布施未如知",
-      "col_bbox": [
-        469,
-        134,
-        593,
-        1314
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "知",
-      "bbox": [
-        469.0,
-        1166.0,
-        593.0,
-        1314.0
-      ],
-      "column": 4,
-      "row": 9,
-      "global_index": 68,
-      "col_text": "壽世界七寶布施未如知",
-      "col_bbox": [
-        469,
-        134,
-        593,
-        1314
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "一",
-      "bbox": [
-        351.0,
-        138.0,
-        476.0,
-        258.0
-      ],
-      "column": 5,
-      "row": 0,
-      "global_index": 69,
-      "col_text": "一切法無我雲生漾無生",
-      "col_bbox": [
-        351,
-        138,
-        476,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "切",
-      "bbox": [
-        351.0,
-        258.0,
-        476.0,
-        388.0
-      ],
-      "column": 5,
-      "row": 1,
-      "global_index": 70,
-      "col_text": "一切法無我雲生漾無生",
-      "col_bbox": [
-        351,
-        138,
-        476,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "法",
-      "bbox": [
-        351.0,
-        388.0,
-        476.0,
-        476.0
-      ],
-      "column": 5,
-      "row": 2,
-      "global_index": 71,
-      "col_text": "一切法無我雲生漾無生",
-      "col_bbox": [
-        351,
-        138,
-        476,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "無",
-      "bbox": [
-        351.0,
-        476.0,
-        476.0,
-        591.0
-      ],
-      "column": 5,
-      "row": 3,
-      "global_index": 72,
-      "col_text": "一切法無我雲生漾無生",
-      "col_bbox": [
-        351,
-        138,
-        476,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "我",
-      "bbox": [
-        351.0,
-        591.0,
-        476.0,
-        752.0
-      ],
-      "column": 5,
-      "row": 4,
-      "global_index": 73,
-      "col_text": "一切法無我雲生漾無生",
-      "col_bbox": [
-        351,
-        138,
-        476,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "雲",
-      "bbox": [
-        351.0,
-        752.0,
-        476.0,
-        862.0
-      ],
-      "column": 5,
-      "row": 5,
-      "global_index": 74,
-      "col_text": "一切法無我雲生漾無生",
-      "col_bbox": [
-        351,
-        138,
-        476,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "生",
-      "bbox": [
-        351.0,
-        862.0,
-        476.0,
-        976.0
-      ],
-      "column": 5,
-      "row": 6,
-      "global_index": 75,
-      "col_text": "一切法無我雲生漾無生",
-      "col_bbox": [
-        351,
-        138,
-        476,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "漾",
-      "bbox": [
-        351.0,
-        976.0,
-        476.0,
-        1103.0
-      ],
-      "column": 5,
-      "row": 7,
-      "global_index": 76,
-      "col_text": "一切法無我雲生漾無生",
-      "col_bbox": [
-        351,
-        138,
-        476,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "無",
-      "bbox": [
-        351.0,
-        1103.0,
-        476.0,
-        1165.0
-      ],
-      "column": 5,
-      "row": 8,
-      "global_index": 77,
-      "col_text": "一切法無我雲生漾無生",
-      "col_bbox": [
-        351,
-        138,
-        476,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "生",
-      "bbox": [
-        351.0,
-        1165.0,
-        476.0,
-        1319.0
-      ],
-      "column": 5,
-      "row": 9,
-      "global_index": 78,
-      "col_text": "一切法無我雲生漾無生",
-      "col_bbox": [
-        351,
-        138,
-        476,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "法",
-      "bbox": [
-        224.0,
-        137.0,
-        371.0,
-        282.0
-      ],
-      "column": 6,
-      "row": 0,
-      "global_index": 79,
-      "col_text": "法忍此功德藤前砌德",
-      "col_bbox": [
-        224,
-        137,
-        371,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "忍",
-      "bbox": [
-        224.0,
-        282.0,
-        371.0,
-        418.0
-      ],
-      "column": 6,
-      "row": 1,
-      "global_index": 80,
-      "col_text": "法忍此功德藤前砌德",
-      "col_bbox": [
-        224,
-        137,
-        371,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "此",
-      "bbox": [
-        224.0,
-        418.0,
-        371.0,
-        514.0
-      ],
-      "column": 6,
-      "row": 2,
-      "global_index": 81,
-      "col_text": "法忍此功德藤前砌德",
-      "col_bbox": [
-        224,
-        137,
-        371,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "功",
-      "bbox": [
-        224.0,
-        514.0,
-        371.0,
-        657.0
-      ],
-      "column": 6,
-      "row": 3,
-      "global_index": 82,
-      "col_text": "法忍此功德藤前砌德",
-      "col_bbox": [
-        224,
-        137,
-        371,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "德",
-      "bbox": [
-        224.0,
-        657.0,
-        371.0,
-        778.0
-      ],
-      "column": 6,
-      "row": 4,
-      "global_index": 83,
-      "col_text": "法忍此功德藤前砌德",
-      "col_bbox": [
-        224,
-        137,
-        371,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "藤",
-      "bbox": [
-        224.0,
-        778.0,
-        371.0,
-        911.0
-      ],
-      "column": 6,
-      "row": 5,
-      "global_index": 84,
-      "col_text": "法忍此功德藤前砌德",
-      "col_bbox": [
-        224,
-        137,
-        371,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "前",
-      "bbox": [
-        224.0,
-        911.0,
-        371.0,
-        1032.0
-      ],
-      "column": 6,
-      "row": 6,
-      "global_index": 85,
-      "col_text": "法忍此功德藤前砌德",
-      "col_bbox": [
-        224,
-        137,
-        371,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "砌",
-      "bbox": [
-        224.0,
-        1032.0,
-        371.0,
-        1191.0
-      ],
-      "column": 6,
-      "row": 7,
-      "global_index": 86,
-      "col_text": "法忍此功德藤前砌德",
-      "col_bbox": [
-        224,
-        137,
-        371,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "德",
-      "bbox": [
-        224.0,
-        1191.0,
-        371.0,
-        1322.0
-      ],
-      "column": 6,
-      "row": 8,
-      "global_index": 87,
-      "col_text": "法忍此功德藤前砌德",
-      "col_bbox": [
-        224,
-        137,
-        371,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "菩",
-      "bbox": [
-        130.0,
-        135.0,
-        247.0,
-        228.0
-      ],
-      "column": 7,
-      "row": 0,
-      "global_index": 88,
-      "col_text": "菩薩不取福德故須菩提",
-      "col_bbox": [
-        130,
-        135,
-        247,
-        1323
+      "col_text": "菩提善薩满恒河沙",
+      "col_bbox": [
+        587.594,
+        140.6,
+        691.182,
+        1317.2
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "薩",
       "bbox": [
-        130.0,
-        228.0,
-        247.0,
-        372.0
+        587.0,
+        558.0,
+        691.0,
+        707.0
       ],
-      "column": 7,
-      "row": 1,
-      "global_index": 89,
-      "col_text": "菩薩不取福德故須菩提",
-      "col_bbox": [
-        130,
-        135,
-        247,
-        1323
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "不",
-      "bbox": [
-        130.0,
-        372.0,
-        247.0,
-        519.0
-      ],
-      "column": 7,
-      "row": 2,
-      "global_index": 90,
-      "col_text": "菩薩不取福德故須菩提",
-      "col_bbox": [
-        130,
-        135,
-        247,
-        1323
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "取",
-      "bbox": [
-        130.0,
-        519.0,
-        247.0,
-        644.0
-      ],
-      "column": 7,
+      "column": 0,
       "row": 3,
-      "global_index": 91,
-      "col_text": "菩薩不取福德故須菩提",
+      "global_index": 3,
+      "col_text": "菩提善薩满恒河沙",
       "col_bbox": [
-        130,
-        135,
-        247,
-        1323
+        587.594,
+        140.6,
+        691.182,
+        1317.2
       ],
       "split_method": "pixel_projection"
     },
     {
-      "char": "福",
+      "char": "满",
       "bbox": [
-        130.0,
-        644.0,
-        247.0,
-        762.0
+        590.0,
+        705.0,
+        691.0,
+        821.0
       ],
-      "column": 7,
+      "column": 0,
       "row": 4,
-      "global_index": 92,
-      "col_text": "菩薩不取福德故須菩提",
+      "global_index": 4,
+      "col_text": "菩提善薩满恒河沙",
       "col_bbox": [
-        130,
-        135,
-        247,
-        1323
+        587.594,
+        140.6,
+        691.182,
+        1317.2
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "恒",
+      "bbox": [
+        587.0,
+        819.0,
+        691.0,
+        968.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "菩提善薩满恒河沙",
+      "col_bbox": [
+        587.594,
+        140.6,
+        691.182,
+        1317.2
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "河",
+      "bbox": [
+        587.0,
+        968.0,
+        691.0,
+        1198.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "菩提善薩满恒河沙",
+      "col_bbox": [
+        587.594,
+        140.6,
+        691.182,
+        1317.2
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沙",
+      "bbox": [
+        587.0,
+        1198.0,
+        691.0,
+        1339.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "菩提善薩满恒河沙",
+      "col_bbox": [
+        587.594,
+        140.6,
+        691.182,
+        1317.2
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薺",
+      "bbox": [
+        475.0,
+        118.0,
+        584.0,
+        247.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 8,
+      "col_text": "薺世界士寶布施未知",
+      "col_bbox": [
+        475.96900000000005,
+        137.64,
+        584.9150000000001,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        478.0,
+        247.0,
+        584.0,
+        378.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 9,
+      "col_text": "薺世界士寶布施未知",
+      "col_bbox": [
+        475.96900000000005,
+        137.64,
+        584.9150000000001,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "界",
+      "bbox": [
+        482.0,
+        376.0,
+        571.0,
+        479.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 10,
+      "col_text": "薺世界士寶布施未知",
+      "col_bbox": [
+        475.96900000000005,
+        137.64,
+        584.9150000000001,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "士",
+      "bbox": [
+        493.0,
+        479.0,
+        556.0,
+        577.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 11,
+      "col_text": "薺世界士寶布施未知",
+      "col_bbox": [
+        475.96900000000005,
+        137.64,
+        584.9150000000001,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寶",
+      "bbox": [
+        490.0,
+        577.0,
+        572.0,
+        717.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 12,
+      "col_text": "薺世界士寶布施未知",
+      "col_bbox": [
+        475.96900000000005,
+        137.64,
+        584.9150000000001,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "布",
+      "bbox": [
+        491.0,
+        717.0,
+        584.0,
+        863.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 13,
+      "col_text": "薺世界士寶布施未知",
+      "col_bbox": [
+        475.96900000000005,
+        137.64,
+        584.9150000000001,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "施",
+      "bbox": [
+        475.0,
+        863.0,
+        584.0,
+        995.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 14,
+      "col_text": "薺世界士寶布施未知",
+      "col_bbox": [
+        475.96900000000005,
+        137.64,
+        584.9150000000001,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "未",
+      "bbox": [
+        475.0,
+        995.0,
+        584.0,
+        1121.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 15,
+      "col_text": "薺世界士寶布施未知",
+      "col_bbox": [
+        475.96900000000005,
+        137.64,
+        584.9150000000001,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        491.0,
+        1121.0,
+        584.0,
+        1325.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 16,
+      "col_text": "薺世界士寶布施未知",
+      "col_bbox": [
+        475.96900000000005,
+        137.64,
+        584.9150000000001,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        358.0,
+        120.0,
+        467.0,
+        199.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 17,
+      "col_text": "一切法無我無生淺無生",
+      "col_bbox": [
+        358.093,
+        137.64,
+        467.932,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "切",
+      "bbox": [
+        358.0,
+        199.0,
+        467.0,
+        306.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 18,
+      "col_text": "一切法無我無生淺無生",
+      "col_bbox": [
+        358.093,
+        137.64,
+        467.932,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        358.0,
+        306.0,
+        453.0,
+        421.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 19,
+      "col_text": "一切法無我無生淺無生",
+      "col_bbox": [
+        358.093,
+        137.64,
+        467.932,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        359.0,
+        419.0,
+        467.0,
+        537.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 20,
+      "col_text": "一切法無我無生淺無生",
+      "col_bbox": [
+        358.093,
+        137.64,
+        467.932,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        358.0,
+        535.0,
+        454.0,
+        670.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 21,
+      "col_text": "一切法無我無生淺無生",
+      "col_bbox": [
+        358.093,
+        137.64,
+        467.932,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        364.0,
+        669.0,
+        459.0,
+        806.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 22,
+      "col_text": "一切法無我無生淺無生",
+      "col_bbox": [
+        358.093,
+        137.64,
+        467.932,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        378.0,
+        806.0,
+        454.0,
+        940.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 23,
+      "col_text": "一切法無我無生淺無生",
+      "col_bbox": [
+        358.093,
+        137.64,
+        467.932,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "淺",
+      "bbox": [
+        363.0,
+        939.0,
+        467.0,
+        1069.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 24,
+      "col_text": "一切法無我無生淺無生",
+      "col_bbox": [
+        358.093,
+        137.64,
+        467.932,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        359.0,
+        1069.0,
+        467.0,
+        1197.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 25,
+      "col_text": "一切法無我無生淺無生",
+      "col_bbox": [
+        358.093,
+        137.64,
+        467.932,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        358.0,
+        1197.0,
+        467.0,
+        1329.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 26,
+      "col_text": "一切法無我無生淺無生",
+      "col_bbox": [
+        358.093,
+        137.64,
+        467.932,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        247.0,
+        121.0,
+        358.0,
+        250.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 27,
+      "col_text": "法忍此切德勝前切德",
+      "col_bbox": [
+        247.36100000000002,
+        140.6,
+        358.093,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "忍",
+      "bbox": [
+        253.0,
+        250.0,
+        358.0,
+        464.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 28,
+      "col_text": "法忍此切德勝前切德",
+      "col_bbox": [
+        247.36100000000002,
+        140.6,
+        358.093,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        247.0,
+        464.0,
+        358.0,
+        567.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 29,
+      "col_text": "法忍此切德勝前切德",
+      "col_bbox": [
+        247.36100000000002,
+        140.6,
+        358.093,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "切",
+      "bbox": [
+        255.0,
+        567.0,
+        347.0,
+        701.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 30,
+      "col_text": "法忍此切德勝前切德",
+      "col_bbox": [
+        247.36100000000002,
+        140.6,
+        358.093,
+        1314.24
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "德",
       "bbox": [
-        130.0,
-        762.0,
-        247.0,
-        812.0
+        251.0,
+        701.0,
+        343.0,
+        830.0
       ],
-      "column": 7,
+      "column": 3,
+      "row": 4,
+      "global_index": 31,
+      "col_text": "法忍此切德勝前切德",
+      "col_bbox": [
+        247.36100000000002,
+        140.6,
+        358.093,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "勝",
+      "bbox": [
+        252.0,
+        830.0,
+        358.0,
+        984.0
+      ],
+      "column": 3,
       "row": 5,
-      "global_index": 93,
-      "col_text": "菩薩不取福德故須菩提",
+      "global_index": 32,
+      "col_text": "法忍此切德勝前切德",
       "col_bbox": [
-        130,
-        135,
-        247,
-        1323
+        247.36100000000002,
+        140.6,
+        358.093,
+        1314.24
       ],
       "split_method": "pixel_projection"
     },
     {
-      "char": "故",
+      "char": "前",
       "bbox": [
-        130.0,
-        812.0,
         247.0,
-        993.0
-      ],
-      "column": 7,
-      "row": 6,
-      "global_index": 94,
-      "col_text": "菩薩不取福德故須菩提",
-      "col_bbox": [
-        130,
-        135,
-        247,
-        1323
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "須",
-      "bbox": [
-        130.0,
-        993.0,
-        247.0,
+        984.0,
+        343.0,
         1099.0
       ],
-      "column": 7,
-      "row": 7,
-      "global_index": 95,
-      "col_text": "菩薩不取福德故須菩提",
+      "column": 3,
+      "row": 6,
+      "global_index": 33,
+      "col_text": "法忍此切德勝前切德",
       "col_bbox": [
-        130,
-        135,
-        247,
-        1323
+        247.36100000000002,
+        140.6,
+        358.093,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "切",
+      "bbox": [
+        249.0,
+        1097.0,
+        358.0,
+        1240.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 34,
+      "col_text": "法忍此切德勝前切德",
+      "col_bbox": [
+        247.36100000000002,
+        140.6,
+        358.093,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        247.0,
+        1240.0,
+        358.0,
+        1333.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 35,
+      "col_text": "法忍此切德勝前切德",
+      "col_bbox": [
+        247.36100000000002,
+        140.6,
+        358.093,
+        1314.24
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "菩",
       "bbox": [
-        130.0,
-        1099.0,
-        247.0,
-        1236.0
+        132.0,
+        125.0,
+        245.0,
+        268.0
       ],
-      "column": 7,
-      "row": 8,
-      "global_index": 96,
+      "column": 4,
+      "row": 0,
+      "global_index": 36,
       "col_text": "菩薩不取福德故須菩提",
       "col_bbox": [
-        130,
-        135,
-        247,
-        1323
+        132.164,
+        142.08,
+        245.57500000000002,
+        1317.2
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薩",
+      "bbox": [
+        132.0,
+        268.0,
+        222.0,
+        398.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 37,
+      "col_text": "菩薩不取福德故須菩提",
+      "col_bbox": [
+        132.164,
+        142.08,
+        245.57500000000002,
+        1317.2
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        132.0,
+        398.0,
+        242.0,
+        487.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 38,
+      "col_text": "菩薩不取福德故須菩提",
+      "col_bbox": [
+        132.164,
+        142.08,
+        245.57500000000002,
+        1317.2
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "取",
+      "bbox": [
+        132.0,
+        487.0,
+        244.0,
+        599.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 39,
+      "col_text": "菩薩不取福德故須菩提",
+      "col_bbox": [
+        132.164,
+        142.08,
+        245.57500000000002,
+        1317.2
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        132.0,
+        599.0,
+        227.0,
+        728.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 40,
+      "col_text": "菩薩不取福德故須菩提",
+      "col_bbox": [
+        132.164,
+        142.08,
+        245.57500000000002,
+        1317.2
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        132.0,
+        728.0,
+        236.0,
+        852.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 41,
+      "col_text": "菩薩不取福德故須菩提",
+      "col_bbox": [
+        132.164,
+        142.08,
+        245.57500000000002,
+        1317.2
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "故",
+      "bbox": [
+        132.0,
+        852.0,
+        233.0,
+        947.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 42,
+      "col_text": "菩薩不取福德故須菩提",
+      "col_bbox": [
+        132.164,
+        142.08,
+        245.57500000000002,
+        1317.2
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "須",
+      "bbox": [
+        132.0,
+        947.0,
+        225.0,
+        1063.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 43,
+      "col_text": "菩薩不取福德故須菩提",
+      "col_bbox": [
+        132.164,
+        142.08,
+        245.57500000000002,
+        1317.2
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        132.0,
+        1063.0,
+        235.0,
+        1201.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 44,
+      "col_text": "菩薩不取福德故須菩提",
+      "col_bbox": [
+        132.164,
+        142.08,
+        245.57500000000002,
+        1317.2
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "提",
       "bbox": [
-        130.0,
-        1236.0,
-        247.0,
-        1323.0
+        132.0,
+        1201.0,
+        245.0,
+        1334.0
       ],
-      "column": 7,
+      "column": 4,
       "row": 9,
-      "global_index": 97,
+      "global_index": 45,
       "col_text": "菩薩不取福德故須菩提",
       "col_bbox": [
-        130,
-        135,
-        247,
-        1323
+        132.164,
+        142.08,
+        245.57500000000002,
+        1317.2
       ],
       "split_method": "pixel_projection"
     }
   ],
-  "column_count": 8,
-  "total_chars": 98,
-  "timestamp": "2026-05-02T23:11:58.398365"
+  "column_count": 5,
+  "total_chars": 46,
+  "timestamp": "2026-05-05T21:28:10.122069"
 }

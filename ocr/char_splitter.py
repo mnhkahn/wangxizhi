@@ -76,11 +76,11 @@ class CharSplitter:
 
         if self.method == SplitMethod.UNIFORM:
             result = self._uniform_split(col_bbox, char_count)
-            return result, "uniform"
+            method_name = "uniform"
 
         elif self.method == SplitMethod.PIXEL_PROJECTION:
             result = self._pixel_projection_split(image, col_bbox, char_count, debug)
-            return result, "pixel_projection"
+            method_name = "pixel_projection"
 
         else:  # HYBRID
             result = self._pixel_projection_split(image, col_bbox, char_count, debug)
@@ -89,9 +89,18 @@ class CharSplitter:
                 if debug:
                     print(f"[SPLIT] 像素投影失败: 期望 {char_count} 个字, 检测到 {len(result)} 个段落")
                 result = self._uniform_split(col_bbox, char_count)
-                return result, "uniform_fallback"
+                method_name = "uniform_fallback"
+            else:
+                method_name = "pixel_projection"
 
-            return result, "pixel_projection"
+        # x 方向收缩，使 bbox 更贴合字的实际宽度
+        if image is not None and result:
+            shrunk = []
+            for bbox in result:
+                shrunk.append(self._shrink_x(image, bbox))
+            result = shrunk
+
+        return result, method_name
 
     def _uniform_split(
         self,
@@ -267,6 +276,9 @@ class CharSplitter:
 
             char_y1 = y1_padded + new_start
             char_y2 = y1_padded + new_end
+            # 裁剪到原始 col_bbox，避免第一个/最后一个字超出列边界
+            char_y1 = max(char_y1, float(orig_y1))
+            char_y2 = min(char_y2, float(orig_y2))
             char_bboxes.append([float(x1), float(char_y1), float(x2), float(char_y2)])
 
         return char_bboxes
@@ -408,6 +420,55 @@ class CharSplitter:
             end = min(len(projection), sp + w + 1)
             score += np.mean(projection[start:end])
         return score
+
+    def _shrink_x(
+        self,
+        image: np.ndarray,
+        bbox: List[float],
+        padding: int = 3,
+    ) -> List[float]:
+        """根据实际文字像素收缩 bbox 的 x 方向，使其更贴合字的实际宽度。
+
+        对黑底白字（碑帖拓片）和白底黑字均适用。
+        """
+        x1, y1, x2, y2 = [int(v) for v in bbox]
+        h, w = image.shape[:2]
+        x1 = max(0, x1)
+        y1 = max(0, y1)
+        x2 = min(w, x2)
+        y2 = min(h, y2)
+
+        if x2 <= x1 or y2 <= y1:
+            return bbox
+
+        region = image[y1:y2, x1:x2]
+        if region.size == 0:
+            return bbox
+
+        if len(region.shape) == 3:
+            gray = cv2.cvtColor(region, cv2.COLOR_BGR2GRAY)
+        else:
+            gray = region
+
+        is_dark_bg = float(np.mean(gray)) < 128
+        thresh_type = cv2.THRESH_BINARY if is_dark_bg else cv2.THRESH_BINARY_INV
+        _, binary = cv2.threshold(gray, 0, 255, thresh_type + cv2.THRESH_OTSU)
+
+        # x 方向投影：统计每列的非零像素数
+        col_projection = np.sum(binary > 0, axis=0)
+        non_zero = np.where(col_projection > 0)[0]
+
+        if len(non_zero) == 0:
+            return bbox
+
+        new_x1 = x1 + max(0, non_zero[0] - padding)
+        new_x2 = x1 + min(x2 - x1, non_zero[-1] + 1 + padding)
+
+        # 确保不超出原始 bbox 和图像边界
+        new_x1 = max(x1, new_x1)
+        new_x2 = min(x2, new_x2)
+
+        return [float(new_x1), float(y1), float(new_x2), float(y2)]
 
 
 def split_column_to_chars(

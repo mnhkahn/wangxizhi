@@ -6,194 +6,221 @@
     "channels": 3,
     "dtype": "uint8"
   },
-  "recognized_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了觉具足圆满则得无上菩提须菩提所言善法者如是名誓上菩以法要我燕夫泉生藝者平蒙性佟一切善法澄覺具足圓滿則得無上喜提須菩提所言善法表",
+  "recognized_text": "是名無上菩提以法無我無人無眾生無壽者得平尊性修一切善法證現了覺具足圓滿則得無上菩提頂菩提所言善法者",
   "parsed_results": [
     {
-      "text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
+      "text": "72",
       "bbox": [
-        738,
-        125,
-        767,
-        977
+        874.247,
+        1416.36,
+        890.321,
+        1434.12
       ],
       "poly": [
         [
-          738,
-          125
+          874.247,
+          1416.36
         ],
         [
-          767,
-          125
+          890.321,
+          1416.36
         ],
         [
-          767,
-          977
+          890.321,
+          1434.12
         ],
         [
-          738,
-          977
+          874.247,
+          1434.12
+        ]
+      ]
+    },
+    {
+      "text": "是名无上菩提以法无我\n无人无众生无寿者得平等性修一切善法证现了",
+      "bbox": [
+        739.404,
+        124.32000000000001,
+        765.3009999999999,
+        979.7600000000001
+      ],
+      "poly": [
+        [
+          739.404,
+          124.32000000000001
+        ],
+        [
+          765.3009999999999,
+          124.32000000000001
+        ],
+        [
+          765.3009999999999,
+          979.7600000000001
+        ],
+        [
+          739.404,
+          979.7600000000001
         ]
       ]
     },
     {
       "text": "觉具足圆满则得无上菩提须菩提所言善法者如",
       "bbox": [
-        702,
-        126,
-        732,
-        685
+        704.577,
+        124.32000000000001,
+        728.688,
+        688.2
       ],
       "poly": [
         [
-          702,
-          126
+          704.577,
+          124.32000000000001
         ],
         [
-          732,
-          126
+          728.688,
+          124.32000000000001
         ],
         [
-          732,
-          685
+          728.688,
+          688.2
         ],
         [
-          702,
-          685
+          704.577,
+          688.2
         ]
       ]
     },
     {
-      "text": "是名誓上菩 以法；要我",
+      "text": "是名無上菩提以法無我",
       "bbox": [
-        583,
-        134,
-        693,
-        1320
+        591.166,
+        139.12,
+        689.3960000000001,
+        1311.28
       ],
       "poly": [
         [
-          583,
-          134
+          591.166,
+          139.12
         ],
         [
-          693,
-          134
+          689.3960000000001,
+          139.12
         ],
         [
-          693,
-          1320
+          689.3960000000001,
+          1311.28
         ],
         [
-          583,
-          1320
+          591.166,
+          1311.28
         ]
       ]
     },
     {
-      "text": "燕夫泉生藝者平",
+      "text": "無人無眾生無壽者得平",
       "bbox": [
-        471,
-        138,
-        586,
-        1319
+        480.434,
+        140.6,
+        576.878,
+        1311.28
       ],
       "poly": [
         [
-          471,
-          138
+          480.434,
+          140.6
         ],
         [
-          586,
-          138
+          576.878,
+          140.6
         ],
         [
-          586,
-          1319
+          576.878,
+          1311.28
         ],
         [
-          471,
-          1319
+          480.434,
+          1311.28
         ]
       ]
     },
     {
-      "text": "蒙性佟一切善法澄う",
+      "text": "尊性修一切善法證現了",
       "bbox": [
-        355,
-        139,
-        475,
-        1326
+        367.02299999999997,
+        139.12,
+        463.46700000000004,
+        1314.24
       ],
       "poly": [
         [
-          355,
-          139
+          367.02299999999997,
+          139.12
         ],
         [
-          475,
-          139
+          463.46700000000004,
+          139.12
         ],
         [
-          475,
-          1326
+          463.46700000000004,
+          1314.24
         ],
         [
-          355,
-          1326
+          367.02299999999997,
+          1314.24
         ]
       ]
     },
     {
-      "text": "覺具足圓滿則得無上喜",
+      "text": "覺具足圓滿則得無上菩",
       "bbox": [
-        249,
-        137,
-        368,
-        1322
+        260.756,
+        139.12,
+        356.307,
+        1311.28
       ],
       "poly": [
         [
-          249,
-          137
+          260.756,
+          139.12
         ],
         [
-          368,
-          137
+          356.307,
+          139.12
         ],
         [
-          368,
-          1322
+          356.307,
+          1311.28
         ],
         [
-          249,
-          1322
+          260.756,
+          1311.28
         ]
       ]
     },
     {
-      "text": "提須菩提所言善法表",
+      "text": "提頂菩提所言善法者",
       "bbox": [
-        139,
-        137,
-        244,
-        1284
+        144.666,
+        139.12,
+        235.752,
+        1260.96
       ],
       "poly": [
         [
-          139,
-          137
+          144.666,
+          139.12
         ],
         [
-          244,
-          137
+          235.752,
+          139.12
         ],
         [
-          244,
-          1284
+          235.752,
+          1260.96
         ],
         [
-          139,
-          1284
+          144.666,
+          1260.96
         ]
       ]
     }
@@ -202,1865 +229,985 @@
     {
       "char": "是",
       "bbox": [
-        738.0,
-        125.0,
-        767.0,
-        155.0
+        591.0,
+        122.0,
+        689.0,
+        255.0
       ],
       "column": 0,
       "row": 0,
       "global_index": 0,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
+      "col_text": "是名無上菩提以法無我",
       "col_bbox": [
-        738,
-        125,
-        767,
-        977
+        591.166,
+        139.12,
+        689.3960000000001,
+        1311.28
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "名",
       "bbox": [
-        738.0,
-        155.0,
-        767.0,
-        180.0
+        604.0,
+        255.0,
+        675.0,
+        363.0
       ],
       "column": 0,
       "row": 1,
       "global_index": 1,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "无",
-      "bbox": [
-        738.0,
-        180.0,
-        767.0,
-        207.0
-      ],
-      "column": 0,
-      "row": 2,
-      "global_index": 2,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "上",
-      "bbox": [
-        738.0,
-        207.0,
-        767.0,
-        234.0
-      ],
-      "column": 0,
-      "row": 3,
-      "global_index": 3,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "菩",
-      "bbox": [
-        738.0,
-        234.0,
-        767.0,
-        261.0
-      ],
-      "column": 0,
-      "row": 4,
-      "global_index": 4,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "提",
-      "bbox": [
-        738.0,
-        261.0,
-        767.0,
-        288.0
-      ],
-      "column": 0,
-      "row": 5,
-      "global_index": 5,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "以",
-      "bbox": [
-        738.0,
-        288.0,
-        767.0,
-        315.0
-      ],
-      "column": 0,
-      "row": 6,
-      "global_index": 6,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "法",
-      "bbox": [
-        738.0,
-        315.0,
-        767.0,
-        344.0
-      ],
-      "column": 0,
-      "row": 7,
-      "global_index": 7,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "无",
-      "bbox": [
-        738.0,
-        344.0,
-        767.0,
-        372.0
-      ],
-      "column": 0,
-      "row": 8,
-      "global_index": 8,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "我",
-      "bbox": [
-        738.0,
-        372.0,
-        767.0,
-        401.0
-      ],
-      "column": 0,
-      "row": 9,
-      "global_index": 9,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "无",
-      "bbox": [
-        738.0,
-        401.0,
-        767.0,
-        444.0
-      ],
-      "column": 0,
-      "row": 10,
-      "global_index": 10,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "人",
-      "bbox": [
-        738.0,
-        444.0,
-        767.0,
-        472.0
-      ],
-      "column": 0,
-      "row": 11,
-      "global_index": 11,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "无",
-      "bbox": [
-        738.0,
-        472.0,
-        767.0,
-        500.0
-      ],
-      "column": 0,
-      "row": 12,
-      "global_index": 12,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "众",
-      "bbox": [
-        738.0,
-        500.0,
-        767.0,
-        529.0
-      ],
-      "column": 0,
-      "row": 13,
-      "global_index": 13,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "生",
-      "bbox": [
-        738.0,
-        529.0,
-        767.0,
-        554.0
-      ],
-      "column": 0,
-      "row": 14,
-      "global_index": 14,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "无",
-      "bbox": [
-        738.0,
-        554.0,
-        767.0,
-        580.0
-      ],
-      "column": 0,
-      "row": 15,
-      "global_index": 15,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "寿",
-      "bbox": [
-        738.0,
-        580.0,
-        767.0,
-        606.0
-      ],
-      "column": 0,
-      "row": 16,
-      "global_index": 16,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "者",
-      "bbox": [
-        738.0,
-        606.0,
-        767.0,
-        632.0
-      ],
-      "column": 0,
-      "row": 17,
-      "global_index": 17,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "得",
-      "bbox": [
-        738.0,
-        632.0,
-        767.0,
-        659.0
-      ],
-      "column": 0,
-      "row": 18,
-      "global_index": 18,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "平",
-      "bbox": [
-        738.0,
-        659.0,
-        767.0,
-        688.0
-      ],
-      "column": 0,
-      "row": 19,
-      "global_index": 19,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "等",
-      "bbox": [
-        738.0,
-        688.0,
-        767.0,
-        713.0
-      ],
-      "column": 0,
-      "row": 20,
-      "global_index": 20,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "性",
-      "bbox": [
-        738.0,
-        713.0,
-        767.0,
-        741.0
-      ],
-      "column": 0,
-      "row": 21,
-      "global_index": 21,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "修",
-      "bbox": [
-        738.0,
-        741.0,
-        767.0,
-        770.0
-      ],
-      "column": 0,
-      "row": 22,
-      "global_index": 22,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "一",
-      "bbox": [
-        738.0,
-        770.0,
-        767.0,
-        798.0
-      ],
-      "column": 0,
-      "row": 23,
-      "global_index": 23,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "切",
-      "bbox": [
-        738.0,
-        798.0,
-        767.0,
-        842.0
-      ],
-      "column": 0,
-      "row": 24,
-      "global_index": 24,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "善",
-      "bbox": [
-        738.0,
-        842.0,
-        767.0,
-        870.0
-      ],
-      "column": 0,
-      "row": 25,
-      "global_index": 25,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "法",
-      "bbox": [
-        738.0,
-        870.0,
-        767.0,
-        898.0
-      ],
-      "column": 0,
-      "row": 26,
-      "global_index": 26,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "证",
-      "bbox": [
-        738.0,
-        898.0,
-        767.0,
-        924.0
-      ],
-      "column": 0,
-      "row": 27,
-      "global_index": 27,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "现",
-      "bbox": [
-        738.0,
-        924.0,
-        767.0,
-        952.0
-      ],
-      "column": 0,
-      "row": 28,
-      "global_index": 28,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "了",
-      "bbox": [
-        738.0,
-        952.0,
-        767.0,
-        977.0
-      ],
-      "column": 0,
-      "row": 29,
-      "global_index": 29,
-      "col_text": "是名无上菩提以法无我无人无众生无寿者得平等性修一切善法证现了",
-      "col_bbox": [
-        738,
-        125,
-        767,
-        977
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "觉",
-      "bbox": [
-        702.0,
-        126.0,
-        732.0,
-        155.0
-      ],
-      "column": 1,
-      "row": 0,
-      "global_index": 30,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "具",
-      "bbox": [
-        702.0,
-        155.0,
-        732.0,
-        180.0
-      ],
-      "column": 1,
-      "row": 1,
-      "global_index": 31,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "足",
-      "bbox": [
-        702.0,
-        180.0,
-        732.0,
-        207.0
-      ],
-      "column": 1,
-      "row": 2,
-      "global_index": 32,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "圆",
-      "bbox": [
-        702.0,
-        207.0,
-        732.0,
-        234.0
-      ],
-      "column": 1,
-      "row": 3,
-      "global_index": 33,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "满",
-      "bbox": [
-        702.0,
-        234.0,
-        732.0,
-        261.0
-      ],
-      "column": 1,
-      "row": 4,
-      "global_index": 34,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "则",
-      "bbox": [
-        702.0,
-        261.0,
-        732.0,
-        287.0
-      ],
-      "column": 1,
-      "row": 5,
-      "global_index": 35,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "得",
-      "bbox": [
-        702.0,
-        287.0,
-        732.0,
-        314.0
-      ],
-      "column": 1,
-      "row": 6,
-      "global_index": 36,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "无",
-      "bbox": [
-        702.0,
-        314.0,
-        732.0,
-        341.0
-      ],
-      "column": 1,
-      "row": 7,
-      "global_index": 37,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "上",
-      "bbox": [
-        702.0,
-        341.0,
-        732.0,
-        369.0
-      ],
-      "column": 1,
-      "row": 8,
-      "global_index": 38,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "菩",
-      "bbox": [
-        702.0,
-        369.0,
-        732.0,
-        397.0
-      ],
-      "column": 1,
-      "row": 9,
-      "global_index": 39,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "提",
-      "bbox": [
-        702.0,
-        397.0,
-        732.0,
-        425.0
-      ],
-      "column": 1,
-      "row": 10,
-      "global_index": 40,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "须",
-      "bbox": [
-        702.0,
-        425.0,
-        732.0,
-        456.0
-      ],
-      "column": 1,
-      "row": 11,
-      "global_index": 41,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "菩",
-      "bbox": [
-        702.0,
-        456.0,
-        732.0,
-        496.0
-      ],
-      "column": 1,
-      "row": 12,
-      "global_index": 42,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "提",
-      "bbox": [
-        702.0,
-        496.0,
-        732.0,
-        524.0
-      ],
-      "column": 1,
-      "row": 13,
-      "global_index": 43,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "所",
-      "bbox": [
-        702.0,
-        524.0,
-        732.0,
-        552.0
-      ],
-      "column": 1,
-      "row": 14,
-      "global_index": 44,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "言",
-      "bbox": [
-        702.0,
-        552.0,
-        732.0,
-        580.0
-      ],
-      "column": 1,
-      "row": 15,
-      "global_index": 45,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "善",
-      "bbox": [
-        702.0,
-        580.0,
-        732.0,
-        607.0
-      ],
-      "column": 1,
-      "row": 16,
-      "global_index": 46,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "法",
-      "bbox": [
-        702.0,
-        607.0,
-        732.0,
-        633.0
-      ],
-      "column": 1,
-      "row": 17,
-      "global_index": 47,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "者",
-      "bbox": [
-        702.0,
-        633.0,
-        732.0,
-        661.0
-      ],
-      "column": 1,
-      "row": 18,
-      "global_index": 48,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "如",
-      "bbox": [
-        702.0,
-        661.0,
-        732.0,
-        685.0
-      ],
-      "column": 1,
-      "row": 19,
-      "global_index": 49,
-      "col_text": "觉具足圆满则得无上菩提须菩提所言善法者如",
-      "col_bbox": [
-        702,
-        126,
-        732,
-        685
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "是",
-      "bbox": [
-        583.0,
-        134.0,
-        693.0,
-        217.0
-      ],
-      "column": 2,
-      "row": 0,
-      "global_index": 50,
-      "col_text": "是名誓上菩 以法；要我",
-      "col_bbox": [
-        583,
-        134,
-        693,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "名",
-      "bbox": [
-        583.0,
-        217.0,
-        693.0,
-        333.0
-      ],
-      "column": 2,
-      "row": 1,
-      "global_index": 51,
-      "col_text": "是名誓上菩 以法；要我",
-      "col_bbox": [
-        583,
-        134,
-        693,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "誓",
-      "bbox": [
-        583.0,
-        333.0,
-        693.0,
-        437.0
-      ],
-      "column": 2,
-      "row": 2,
-      "global_index": 52,
-      "col_text": "是名誓上菩 以法；要我",
-      "col_bbox": [
-        583,
-        134,
-        693,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "上",
-      "bbox": [
-        583.0,
-        437.0,
-        693.0,
-        554.0
-      ],
-      "column": 2,
-      "row": 3,
-      "global_index": 53,
-      "col_text": "是名誓上菩 以法；要我",
-      "col_bbox": [
-        583,
-        134,
-        693,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "菩",
-      "bbox": [
-        583.0,
-        554.0,
-        693.0,
-        675.0
-      ],
-      "column": 2,
-      "row": 4,
-      "global_index": 54,
-      "col_text": "是名誓上菩 以法；要我",
-      "col_bbox": [
-        583,
-        134,
-        693,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "以",
-      "bbox": [
-        583.0,
-        798.0,
-        693.0,
-        885.0
-      ],
-      "column": 2,
-      "row": 6,
-      "global_index": 55,
-      "col_text": "是名誓上菩 以法；要我",
-      "col_bbox": [
-        583,
-        134,
-        693,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "法",
-      "bbox": [
-        583.0,
-        885.0,
-        693.0,
-        1007.0
-      ],
-      "column": 2,
-      "row": 7,
-      "global_index": 56,
-      "col_text": "是名誓上菩 以法；要我",
-      "col_bbox": [
-        583,
-        134,
-        693,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "要",
-      "bbox": [
-        583.0,
-        1135.0,
-        693.0,
-        1243.0
-      ],
-      "column": 2,
-      "row": 9,
-      "global_index": 57,
-      "col_text": "是名誓上菩 以法；要我",
-      "col_bbox": [
-        583,
-        134,
-        693,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "我",
-      "bbox": [
-        583.0,
-        1243.0,
-        693.0,
-        1320.0
-      ],
-      "column": 2,
-      "row": 10,
-      "global_index": 58,
-      "col_text": "是名誓上菩 以法；要我",
-      "col_bbox": [
-        583,
-        134,
-        693,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "燕",
-      "bbox": [
-        471.0,
-        138.0,
-        586.0,
-        297.0
-      ],
-      "column": 3,
-      "row": 0,
-      "global_index": 59,
-      "col_text": "燕夫泉生藝者平",
-      "col_bbox": [
-        471,
-        138,
-        586,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "夫",
-      "bbox": [
-        471.0,
-        297.0,
-        586.0,
-        496.0
-      ],
-      "column": 3,
-      "row": 1,
-      "global_index": 60,
-      "col_text": "燕夫泉生藝者平",
-      "col_bbox": [
-        471,
-        138,
-        586,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "泉",
-      "bbox": [
-        471.0,
-        496.0,
-        586.0,
-        600.0
-      ],
-      "column": 3,
-      "row": 2,
-      "global_index": 61,
-      "col_text": "燕夫泉生藝者平",
-      "col_bbox": [
-        471,
-        138,
-        586,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "生",
-      "bbox": [
-        471.0,
-        600.0,
-        586.0,
-        861.0
-      ],
-      "column": 3,
-      "row": 3,
-      "global_index": 62,
-      "col_text": "燕夫泉生藝者平",
-      "col_bbox": [
-        471,
-        138,
-        586,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "藝",
-      "bbox": [
-        471.0,
-        861.0,
-        586.0,
-        1024.0
-      ],
-      "column": 3,
-      "row": 4,
-      "global_index": 63,
-      "col_text": "燕夫泉生藝者平",
-      "col_bbox": [
-        471,
-        138,
-        586,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "者",
-      "bbox": [
-        471.0,
-        1024.0,
-        586.0,
-        1126.0
-      ],
-      "column": 3,
-      "row": 5,
-      "global_index": 64,
-      "col_text": "燕夫泉生藝者平",
-      "col_bbox": [
-        471,
-        138,
-        586,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "平",
-      "bbox": [
-        471.0,
-        1126.0,
-        586.0,
-        1319.0
-      ],
-      "column": 3,
-      "row": 6,
-      "global_index": 65,
-      "col_text": "燕夫泉生藝者平",
-      "col_bbox": [
-        471,
-        138,
-        586,
-        1319
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "蒙",
-      "bbox": [
-        355.0,
-        139.0,
-        475.0,
-        308.0
-      ],
-      "column": 4,
-      "row": 0,
-      "global_index": 66,
-      "col_text": "蒙性佟一切善法澄う",
-      "col_bbox": [
-        355,
-        139,
-        475,
-        1326
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "性",
-      "bbox": [
-        355.0,
-        308.0,
-        475.0,
-        440.0
-      ],
-      "column": 4,
-      "row": 1,
-      "global_index": 67,
-      "col_text": "蒙性佟一切善法澄う",
-      "col_bbox": [
-        355,
-        139,
-        475,
-        1326
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "佟",
-      "bbox": [
-        355.0,
-        440.0,
-        475.0,
-        551.0
-      ],
-      "column": 4,
-      "row": 2,
-      "global_index": 68,
-      "col_text": "蒙性佟一切善法澄う",
-      "col_bbox": [
-        355,
-        139,
-        475,
-        1326
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "一",
-      "bbox": [
-        355.0,
-        551.0,
-        475.0,
-        639.0
-      ],
-      "column": 4,
-      "row": 3,
-      "global_index": 69,
-      "col_text": "蒙性佟一切善法澄う",
-      "col_bbox": [
-        355,
-        139,
-        475,
-        1326
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "切",
-      "bbox": [
-        355.0,
-        639.0,
-        475.0,
-        778.0
-      ],
-      "column": 4,
-      "row": 4,
-      "global_index": 70,
-      "col_text": "蒙性佟一切善法澄う",
-      "col_bbox": [
-        355,
-        139,
-        475,
-        1326
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "善",
-      "bbox": [
-        355.0,
-        778.0,
-        475.0,
-        915.0
-      ],
-      "column": 4,
-      "row": 5,
-      "global_index": 71,
-      "col_text": "蒙性佟一切善法澄う",
-      "col_bbox": [
-        355,
-        139,
-        475,
-        1326
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "法",
-      "bbox": [
-        355.0,
-        915.0,
-        475.0,
-        1040.0
-      ],
-      "column": 4,
-      "row": 6,
-      "global_index": 72,
-      "col_text": "蒙性佟一切善法澄う",
-      "col_bbox": [
-        355,
-        139,
-        475,
-        1326
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "澄",
-      "bbox": [
-        355.0,
-        1040.0,
-        475.0,
-        1157.0
-      ],
-      "column": 4,
-      "row": 7,
-      "global_index": 73,
-      "col_text": "蒙性佟一切善法澄う",
-      "col_bbox": [
-        355,
-        139,
-        475,
-        1326
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "覺",
-      "bbox": [
-        249.0,
-        137.0,
-        368.0,
-        220.0
-      ],
-      "column": 5,
-      "row": 0,
-      "global_index": 74,
-      "col_text": "覺具足圓滿則得無上喜",
-      "col_bbox": [
-        249,
-        137,
-        368,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "具",
-      "bbox": [
-        249.0,
-        220.0,
-        368.0,
-        359.0
-      ],
-      "column": 5,
-      "row": 1,
-      "global_index": 75,
-      "col_text": "覺具足圓滿則得無上喜",
-      "col_bbox": [
-        249,
-        137,
-        368,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "足",
-      "bbox": [
-        249.0,
-        359.0,
-        368.0,
-        526.0
-      ],
-      "column": 5,
-      "row": 2,
-      "global_index": 76,
-      "col_text": "覺具足圓滿則得無上喜",
-      "col_bbox": [
-        249,
-        137,
-        368,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "圓",
-      "bbox": [
-        249.0,
-        526.0,
-        368.0,
-        640.0
-      ],
-      "column": 5,
-      "row": 3,
-      "global_index": 77,
-      "col_text": "覺具足圓滿則得無上喜",
-      "col_bbox": [
-        249,
-        137,
-        368,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "滿",
-      "bbox": [
-        249.0,
-        640.0,
-        368.0,
-        760.0
-      ],
-      "column": 5,
-      "row": 4,
-      "global_index": 78,
-      "col_text": "覺具足圓滿則得無上喜",
-      "col_bbox": [
-        249,
-        137,
-        368,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "則",
-      "bbox": [
-        249.0,
-        760.0,
-        368.0,
-        877.0
-      ],
-      "column": 5,
-      "row": 5,
-      "global_index": 79,
-      "col_text": "覺具足圓滿則得無上喜",
-      "col_bbox": [
-        249,
-        137,
-        368,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "得",
-      "bbox": [
-        249.0,
-        877.0,
-        368.0,
-        1000.0
-      ],
-      "column": 5,
-      "row": 6,
-      "global_index": 80,
-      "col_text": "覺具足圓滿則得無上喜",
-      "col_bbox": [
-        249,
-        137,
-        368,
-        1322
+      "col_text": "是名無上菩提以法無我",
+      "col_bbox": [
+        591.166,
+        139.12,
+        689.3960000000001,
+        1311.28
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "無",
       "bbox": [
-        249.0,
-        1000.0,
-        368.0,
-        1054.0
+        591.0,
+        363.0,
+        689.0,
+        482.0
       ],
-      "column": 5,
-      "row": 7,
-      "global_index": 81,
-      "col_text": "覺具足圓滿則得無上喜",
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "是名無上菩提以法無我",
       "col_bbox": [
-        249,
-        137,
-        368,
-        1322
+        591.166,
+        139.12,
+        689.3960000000001,
+        1311.28
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "上",
       "bbox": [
-        249.0,
-        1054.0,
-        368.0,
-        1168.0
+        613.0,
+        482.0,
+        679.0,
+        584.0
       ],
-      "column": 5,
-      "row": 8,
-      "global_index": 82,
-      "col_text": "覺具足圓滿則得無上喜",
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "是名無上菩提以法無我",
       "col_bbox": [
-        249,
-        137,
-        368,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "喜",
-      "bbox": [
-        249.0,
-        1168.0,
-        368.0,
-        1322.0
-      ],
-      "column": 5,
-      "row": 9,
-      "global_index": 83,
-      "col_text": "覺具足圓滿則得無上喜",
-      "col_bbox": [
-        249,
-        137,
-        368,
-        1322
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "提",
-      "bbox": [
-        139.0,
-        137.0,
-        244.0,
-        324.0
-      ],
-      "column": 6,
-      "row": 0,
-      "global_index": 84,
-      "col_text": "提須菩提所言善法表",
-      "col_bbox": [
-        139,
-        137,
-        244,
-        1284
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "須",
-      "bbox": [
-        139.0,
-        324.0,
-        244.0,
-        441.0
-      ],
-      "column": 6,
-      "row": 1,
-      "global_index": 85,
-      "col_text": "提須菩提所言善法表",
-      "col_bbox": [
-        139,
-        137,
-        244,
-        1284
+        591.166,
+        139.12,
+        689.3960000000001,
+        1311.28
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "菩",
       "bbox": [
-        139.0,
-        441.0,
-        244.0,
-        570.0
+        591.0,
+        584.0,
+        688.0,
+        708.0
       ],
-      "column": 6,
-      "row": 2,
-      "global_index": 86,
-      "col_text": "提須菩提所言善法表",
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "是名無上菩提以法無我",
       "col_bbox": [
-        139,
-        137,
-        244,
-        1284
+        591.166,
+        139.12,
+        689.3960000000001,
+        1311.28
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "提",
       "bbox": [
-        139.0,
-        570.0,
-        244.0,
-        680.0
+        591.0,
+        708.0,
+        689.0,
+        835.0
       ],
-      "column": 6,
-      "row": 3,
-      "global_index": 87,
-      "col_text": "提須菩提所言善法表",
-      "col_bbox": [
-        139,
-        137,
-        244,
-        1284
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "所",
-      "bbox": [
-        139.0,
-        680.0,
-        244.0,
-        753.0
-      ],
-      "column": 6,
-      "row": 4,
-      "global_index": 88,
-      "col_text": "提須菩提所言善法表",
-      "col_bbox": [
-        139,
-        137,
-        244,
-        1284
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "言",
-      "bbox": [
-        139.0,
-        753.0,
-        244.0,
-        926.0
-      ],
-      "column": 6,
+      "column": 0,
       "row": 5,
-      "global_index": 89,
-      "col_text": "提須菩提所言善法表",
+      "global_index": 5,
+      "col_text": "是名無上菩提以法無我",
       "col_bbox": [
-        139,
-        137,
-        244,
-        1284
+        591.166,
+        139.12,
+        689.3960000000001,
+        1311.28
       ],
       "split_method": "pixel_projection"
     },
     {
-      "char": "善",
+      "char": "以",
       "bbox": [
-        139.0,
-        926.0,
-        244.0,
-        1065.0
+        593.0,
+        835.0,
+        684.0,
+        916.0
       ],
-      "column": 6,
+      "column": 0,
       "row": 6,
-      "global_index": 90,
-      "col_text": "提須菩提所言善法表",
+      "global_index": 6,
+      "col_text": "是名無上菩提以法無我",
       "col_bbox": [
-        139,
-        137,
-        244,
-        1284
+        591.166,
+        139.12,
+        689.3960000000001,
+        1311.28
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "法",
       "bbox": [
-        139.0,
-        1065.0,
-        244.0,
-        1170.0
+        599.0,
+        916.0,
+        681.0,
+        1041.0
       ],
-      "column": 6,
+      "column": 0,
       "row": 7,
-      "global_index": 91,
-      "col_text": "提須菩提所言善法表",
+      "global_index": 7,
+      "col_text": "是名無上菩提以法無我",
       "col_bbox": [
-        139,
-        137,
-        244,
-        1284
+        591.166,
+        139.12,
+        689.3960000000001,
+        1311.28
       ],
       "split_method": "pixel_projection"
     },
     {
-      "char": "表",
+      "char": "無",
       "bbox": [
-        139.0,
-        1170.0,
-        244.0,
-        1284.0
+        591.0,
+        1041.0,
+        689.0,
+        1200.0
       ],
-      "column": 6,
+      "column": 0,
       "row": 8,
-      "global_index": 92,
-      "col_text": "提須菩提所言善法表",
+      "global_index": 8,
+      "col_text": "是名無上菩提以法無我",
       "col_bbox": [
-        139,
-        137,
-        244,
-        1284
+        591.166,
+        139.12,
+        689.3960000000001,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        591.0,
+        1200.0,
+        689.0,
+        1328.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "是名無上菩提以法無我",
+      "col_bbox": [
+        591.166,
+        139.12,
+        689.3960000000001,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        480.0,
+        123.0,
+        576.0,
+        248.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "無人無眾生無壽者得平",
+      "col_bbox": [
+        480.434,
+        140.6,
+        576.878,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        484.0,
+        248.0,
+        576.0,
+        340.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "無人無眾生無壽者得平",
+      "col_bbox": [
+        480.434,
+        140.6,
+        576.878,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        481.0,
+        340.0,
+        576.0,
+        475.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "無人無眾生無壽者得平",
+      "col_bbox": [
+        480.434,
+        140.6,
+        576.878,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "眾",
+      "bbox": [
+        480.0,
+        473.0,
+        576.0,
+        573.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "無人無眾生無壽者得平",
+      "col_bbox": [
+        480.434,
+        140.6,
+        576.878,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        480.0,
+        573.0,
+        571.0,
+        684.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "無人無眾生無壽者得平",
+      "col_bbox": [
+        480.434,
+        140.6,
+        576.878,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        490.0,
+        684.0,
+        573.0,
+        802.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "無人無眾生無壽者得平",
+      "col_bbox": [
+        480.434,
+        140.6,
+        576.878,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "壽",
+      "bbox": [
+        485.0,
+        802.0,
+        573.0,
+        940.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "無人無眾生無壽者得平",
+      "col_bbox": [
+        480.434,
+        140.6,
+        576.878,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        480.0,
+        940.0,
+        552.0,
+        1066.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "無人無眾生無壽者得平",
+      "col_bbox": [
+        480.434,
+        140.6,
+        576.878,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        480.0,
+        1066.0,
+        562.0,
+        1176.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "無人無眾生無壽者得平",
+      "col_bbox": [
+        480.434,
+        140.6,
+        576.878,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "平",
+      "bbox": [
+        480.0,
+        1176.0,
+        576.0,
+        1328.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 19,
+      "col_text": "無人無眾生無壽者得平",
+      "col_bbox": [
+        480.434,
+        140.6,
+        576.878,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        367.0,
+        122.0,
+        463.0,
+        275.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 20,
+      "col_text": "尊性修一切善法證現了",
+      "col_bbox": [
+        367.02299999999997,
+        139.12,
+        463.46700000000004,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "性",
+      "bbox": [
+        367.0,
+        275.0,
+        463.0,
+        391.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 21,
+      "col_text": "尊性修一切善法證現了",
+      "col_bbox": [
+        367.02299999999997,
+        139.12,
+        463.46700000000004,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "修",
+      "bbox": [
+        367.0,
+        391.0,
+        463.0,
+        512.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 22,
+      "col_text": "尊性修一切善法證現了",
+      "col_bbox": [
+        367.02299999999997,
+        139.12,
+        463.46700000000004,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        367.0,
+        512.0,
+        453.0,
+        580.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 23,
+      "col_text": "尊性修一切善法證現了",
+      "col_bbox": [
+        367.02299999999997,
+        139.12,
+        463.46700000000004,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "切",
+      "bbox": [
+        368.0,
+        579.0,
+        463.0,
+        681.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 24,
+      "col_text": "尊性修一切善法證現了",
+      "col_bbox": [
+        367.02299999999997,
+        139.12,
+        463.46700000000004,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "善",
+      "bbox": [
+        368.0,
+        681.0,
+        463.0,
+        837.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 25,
+      "col_text": "尊性修一切善法證現了",
+      "col_bbox": [
+        367.02299999999997,
+        139.12,
+        463.46700000000004,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        367.0,
+        837.0,
+        452.0,
+        951.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 26,
+      "col_text": "尊性修一切善法證現了",
+      "col_bbox": [
+        367.02299999999997,
+        139.12,
+        463.46700000000004,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "證",
+      "bbox": [
+        367.0,
+        951.0,
+        463.0,
+        1076.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 27,
+      "col_text": "尊性修一切善法證現了",
+      "col_bbox": [
+        367.02299999999997,
+        139.12,
+        463.46700000000004,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "現",
+      "bbox": [
+        367.0,
+        1075.0,
+        463.0,
+        1202.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 28,
+      "col_text": "尊性修一切善法證現了",
+      "col_bbox": [
+        367.02299999999997,
+        139.12,
+        463.46700000000004,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "了",
+      "bbox": [
+        367.0,
+        1202.0,
+        463.0,
+        1331.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 29,
+      "col_text": "尊性修一切善法證現了",
+      "col_bbox": [
+        367.02299999999997,
+        139.12,
+        463.46700000000004,
+        1314.24
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "覺",
+      "bbox": [
+        260.0,
+        122.0,
+        356.0,
+        240.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "覺具足圓滿則得無上菩",
+      "col_bbox": [
+        260.756,
+        139.12,
+        356.307,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "具",
+      "bbox": [
+        269.0,
+        238.0,
+        356.0,
+        389.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "覺具足圓滿則得無上菩",
+      "col_bbox": [
+        260.756,
+        139.12,
+        356.307,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "足",
+      "bbox": [
+        280.0,
+        389.0,
+        342.0,
+        474.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "覺具足圓滿則得無上菩",
+      "col_bbox": [
+        260.756,
+        139.12,
+        356.307,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "圓",
+      "bbox": [
+        274.0,
+        472.0,
+        356.0,
+        603.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "覺具足圓滿則得無上菩",
+      "col_bbox": [
+        260.756,
+        139.12,
+        356.307,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "滿",
+      "bbox": [
+        263.0,
+        603.0,
+        355.0,
+        717.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "覺具足圓滿則得無上菩",
+      "col_bbox": [
+        260.756,
+        139.12,
+        356.307,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "則",
+      "bbox": [
+        260.0,
+        717.0,
+        344.0,
+        834.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "覺具足圓滿則得無上菩",
+      "col_bbox": [
+        260.756,
+        139.12,
+        356.307,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        260.0,
+        832.0,
+        351.0,
+        978.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "覺具足圓滿則得無上菩",
+      "col_bbox": [
+        260.756,
+        139.12,
+        356.307,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        262.0,
+        976.0,
+        353.0,
+        1089.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "覺具足圓滿則得無上菩",
+      "col_bbox": [
+        260.756,
+        139.12,
+        356.307,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "上",
+      "bbox": [
+        260.0,
+        1089.0,
+        353.0,
+        1192.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "覺具足圓滿則得無上菩",
+      "col_bbox": [
+        260.756,
+        139.12,
+        356.307,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        260.0,
+        1191.0,
+        356.0,
+        1328.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "覺具足圓滿則得無上菩",
+      "col_bbox": [
+        260.756,
+        139.12,
+        356.307,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        144.0,
+        121.0,
+        235.0,
+        255.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 40,
+      "col_text": "提頂菩提所言善法者",
+      "col_bbox": [
+        144.666,
+        139.12,
+        235.752,
+        1260.96
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "頂",
+      "bbox": [
+        144.0,
+        255.0,
+        230.0,
+        364.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 41,
+      "col_text": "提頂菩提所言善法者",
+      "col_bbox": [
+        144.666,
+        139.12,
+        235.752,
+        1260.96
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        146.0,
+        364.0,
+        235.0,
+        490.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 42,
+      "col_text": "提頂菩提所言善法者",
+      "col_bbox": [
+        144.666,
+        139.12,
+        235.752,
+        1260.96
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        146.0,
+        490.0,
+        235.0,
+        612.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 43,
+      "col_text": "提頂菩提所言善法者",
+      "col_bbox": [
+        144.666,
+        139.12,
+        235.752,
+        1260.96
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        145.0,
+        612.0,
+        235.0,
+        715.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 44,
+      "col_text": "提頂菩提所言善法者",
+      "col_bbox": [
+        144.666,
+        139.12,
+        235.752,
+        1260.96
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        144.0,
+        715.0,
+        235.0,
+        822.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 45,
+      "col_text": "提頂菩提所言善法者",
+      "col_bbox": [
+        144.666,
+        139.12,
+        235.752,
+        1260.96
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "善",
+      "bbox": [
+        144.0,
+        822.0,
+        233.0,
+        977.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 46,
+      "col_text": "提頂菩提所言善法者",
+      "col_bbox": [
+        144.666,
+        139.12,
+        235.752,
+        1260.96
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        144.0,
+        977.0,
+        234.0,
+        1102.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 47,
+      "col_text": "提頂菩提所言善法者",
+      "col_bbox": [
+        144.666,
+        139.12,
+        235.752,
+        1260.96
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        144.0,
+        1101.0,
+        235.0,
+        1278.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 48,
+      "col_text": "提頂菩提所言善法者",
+      "col_bbox": [
+        144.666,
+        139.12,
+        235.752,
+        1260.96
       ],
       "split_method": "pixel_projection"
     }
   ],
-  "column_count": 7,
-  "total_chars": 93,
-  "timestamp": "2026-05-02T23:11:44.986293"
+  "column_count": 5,
+  "total_chars": 49,
+  "timestamp": "2026-05-05T21:26:57.768595"
 }

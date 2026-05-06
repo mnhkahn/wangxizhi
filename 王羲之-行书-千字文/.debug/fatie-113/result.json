@@ -6,1848 +6,1208 @@
     "channels": 3,
     "dtype": "uint8"
   },
-  "recognized_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢新说所以搜诸异一贯群宗为粗愚却妄之程鏡水開文漫囊軸明心燈於典夫大葉有教語必生知探秘穫牽果逢宗为愚却妄之程",
+  "recognized_text": "鏡於闕之便盡軸韜闕錄心燈於轍典夫大乘有教韜必生知探討舊章果逢新說所以搜諸異之貫唐平宗為歲易却安之程",
   "parsed_results": [
     {
       "text": "108",
       "bbox": [
-        836,
-        1406,
-        873,
-        1431
+        840.313,
+        1407.48,
+        867.996,
+        1425.24
       ],
       "poly": [
         [
-          836,
-          1406
+          840.313,
+          1407.48
         ],
         [
-          873,
-          1406
+          867.996,
+          1407.48
         ],
         [
-          873,
-          1431
+          867.996,
+          1425.24
         ],
         [
-          836,
-          1431
+          840.313,
+          1425.24
         ]
       ]
     },
     {
-      "text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
+      "text": "鏡於闕文使蠹轴韜明鑠心灯于堅典夫大乘有教语必生知探討旧章果逢",
       "bbox": [
-        708,
-        119,
-        738,
-        970
+        713.5070000000001,
+        118.4,
+        737.6179999999999,
+        973.84
       ],
       "poly": [
         [
-          708,
-          119
+          713.5070000000001,
+          118.4
         ],
         [
-          738,
-          119
+          737.6179999999999,
+          118.4
         ],
         [
-          738,
-          970
+          737.6179999999999,
+          973.84
         ],
         [
-          708,
-          970
+          713.5070000000001,
+          973.84
         ]
       ]
     },
     {
       "text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
       "bbox": [
-        676,
-        120,
-        702,
-        651
+        677.787,
+        118.4,
+        700.1120000000001,
+        654.16
       ],
       "poly": [
         [
-          676,
-          120
+          677.787,
+          118.4
         ],
         [
-          702,
-          120
+          700.1120000000001,
+          118.4
         ],
         [
-          702,
-          651
+          700.1120000000001,
+          654.16
         ],
         [
-          676,
-          651
+          677.787,
+          654.16
         ]
       ]
     },
     {
-      "text": "鏡水開文漫囊軸明",
+      "text": "鏡於闕之便盡軸韜闕錄",
       "bbox": [
-        550,
-        192,
-        678,
-        1320
+        559.018,
+        199.8,
+        669.75,
+        1308.32
       ],
       "poly": [
         [
-          550,
-          192
+          559.018,
+          199.8
         ],
         [
-          678,
-          192
+          669.75,
+          199.8
         ],
         [
-          678,
-          1320
+          669.75,
+          1308.32
         ],
         [
-          550,
-          1320
+          559.018,
+          1308.32
         ]
       ]
     },
     {
-      "text": "心燈於典夫大葉有教",
+      "text": "心燈於轍典夫大乘有教",
       "bbox": [
-        443,
-        186,
-        560,
-        1320
+        445.60699999999997,
+        199.8,
+        550.088,
+        1312.76
       ],
       "poly": [
         [
-          443,
-          186
+          445.60699999999997,
+          199.8
         ],
         [
-          560,
-          186
+          550.088,
+          199.8
         ],
         [
-          560,
-          1320
+          550.088,
+          1312.76
         ],
         [
-          443,
-          1320
+          445.60699999999997,
+          1312.76
         ]
       ]
     },
     {
-      "text": "語必生知探秘穫牽果逢",
+      "text": "韜必生知探討舊章果逢",
       "bbox": [
-        328,
-        185,
-        447,
-        1317
+        335.76800000000003,
+        187.96,
+        437.57,
+        1311.28
       ],
       "poly": [
         [
-          328,
-          185
+          335.76800000000003,
+          187.96
         ],
         [
-          447,
-          185
+          437.57,
+          187.96
         ],
         [
-          447,
-          1317
+          437.57,
+          1311.28
         ],
         [
-          328,
-          1317
+          335.76800000000003,
+          1311.28
         ]
       ]
     },
     {
-      "text": "",
+      "text": "新說所以搜諸異之貫",
       "bbox": [
-        211,
-        188,
-        332,
-        1317
+        216.106,
+        192.4,
+        319.69399999999996,
+        1308.32
       ],
       "poly": [
         [
-          211,
-          188
+          216.106,
+          192.4
         ],
         [
-          332,
-          188
+          319.69399999999996,
+          192.4
         ],
         [
-          332,
-          1317
+          319.69399999999996,
+          1308.32
         ],
         [
-          211,
-          1317
+          216.106,
+          1308.32
         ]
       ]
     },
     {
-      "text": "宗为愚却妄之程",
+      "text": "唐平宗為歲易却安之程",
       "bbox": [
-        105,
-        189,
-        206,
-        1315
+        108.053,
+        196.84,
+        201.818,
+        1309.8
       ],
       "poly": [
         [
-          105,
-          189
+          108.053,
+          196.84
         ],
         [
-          206,
-          189
+          201.818,
+          196.84
         ],
         [
-          206,
-          1315
+          201.818,
+          1309.8
         ],
         [
-          105,
-          1315
+          108.053,
+          1309.8
         ]
       ]
     }
   ],
   "char_results": [
     {
-      "char": "镜",
-      "bbox": [
-        708.0,
-        119.0,
-        738.0,
-        147.0
-      ],
-      "column": 1,
-      "row": 0,
-      "global_index": 0,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "于",
-      "bbox": [
-        708.0,
-        147.0,
-        738.0,
-        173.0
-      ],
-      "column": 1,
-      "row": 1,
-      "global_index": 1,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "阙",
-      "bbox": [
-        708.0,
-        173.0,
-        738.0,
-        201.0
-      ],
-      "column": 1,
-      "row": 2,
-      "global_index": 2,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "文",
-      "bbox": [
-        708.0,
-        201.0,
-        738.0,
-        228.0
-      ],
-      "column": 1,
-      "row": 3,
-      "global_index": 3,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "使",
-      "bbox": [
-        708.0,
-        228.0,
-        738.0,
-        257.0
-      ],
-      "column": 1,
-      "row": 4,
-      "global_index": 4,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "蠹",
-      "bbox": [
-        708.0,
-        257.0,
-        738.0,
-        287.0
-      ],
-      "column": 1,
-      "row": 5,
-      "global_index": 5,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "轴",
-      "bbox": [
-        708.0,
-        287.0,
-        738.0,
-        331.0
-      ],
-      "column": 1,
-      "row": 6,
-      "global_index": 6,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "韬",
-      "bbox": [
-        708.0,
-        331.0,
-        738.0,
-        358.0
-      ],
-      "column": 1,
-      "row": 7,
-      "global_index": 7,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "明",
-      "bbox": [
-        708.0,
-        358.0,
-        738.0,
-        388.0
-      ],
-      "column": 1,
-      "row": 8,
-      "global_index": 8,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "心",
-      "bbox": [
-        708.0,
-        388.0,
-        738.0,
-        408.0
-      ],
-      "column": 1,
-      "row": 9,
-      "global_index": 9,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "灯",
-      "bbox": [
-        708.0,
-        408.0,
-        738.0,
-        439.0
-      ],
-      "column": 1,
-      "row": 10,
-      "global_index": 10,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "于",
-      "bbox": [
-        708.0,
-        439.0,
-        738.0,
-        466.0
-      ],
-      "column": 1,
-      "row": 11,
-      "global_index": 11,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "坠",
-      "bbox": [
-        708.0,
-        466.0,
-        738.0,
-        492.0
-      ],
-      "column": 1,
-      "row": 12,
-      "global_index": 12,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "典",
-      "bbox": [
-        708.0,
-        492.0,
-        738.0,
-        521.0
-      ],
-      "column": 1,
-      "row": 13,
-      "global_index": 13,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "夫",
-      "bbox": [
-        708.0,
-        521.0,
-        738.0,
-        551.0
-      ],
-      "column": 1,
-      "row": 14,
-      "global_index": 14,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "大",
-      "bbox": [
-        708.0,
-        551.0,
-        738.0,
-        580.0
-      ],
-      "column": 1,
-      "row": 15,
-      "global_index": 15,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "乘",
-      "bbox": [
-        708.0,
-        580.0,
-        738.0,
-        624.0
-      ],
-      "column": 1,
-      "row": 16,
-      "global_index": 16,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "有",
-      "bbox": [
-        708.0,
-        624.0,
-        738.0,
-        652.0
-      ],
-      "column": 1,
-      "row": 17,
-      "global_index": 17,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "教",
-      "bbox": [
-        708.0,
-        652.0,
-        738.0,
-        680.0
-      ],
-      "column": 1,
-      "row": 18,
-      "global_index": 18,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "语",
-      "bbox": [
-        708.0,
-        680.0,
-        738.0,
-        700.0
-      ],
-      "column": 1,
-      "row": 19,
-      "global_index": 19,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "必",
-      "bbox": [
-        708.0,
-        700.0,
-        738.0,
-        731.0
-      ],
-      "column": 1,
-      "row": 20,
-      "global_index": 20,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "生",
-      "bbox": [
-        708.0,
-        731.0,
-        738.0,
-        758.0
-      ],
-      "column": 1,
-      "row": 21,
-      "global_index": 21,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "知",
-      "bbox": [
-        708.0,
-        758.0,
-        738.0,
-        786.0
-      ],
-      "column": 1,
-      "row": 22,
-      "global_index": 22,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "探",
-      "bbox": [
-        708.0,
-        786.0,
-        738.0,
-        815.0
-      ],
-      "column": 1,
-      "row": 23,
-      "global_index": 23,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "讨",
-      "bbox": [
-        708.0,
-        815.0,
-        738.0,
-        844.0
-      ],
-      "column": 1,
-      "row": 24,
-      "global_index": 24,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "旧",
-      "bbox": [
-        708.0,
-        844.0,
-        738.0,
-        888.0
-      ],
-      "column": 1,
-      "row": 25,
-      "global_index": 25,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "章",
-      "bbox": [
-        708.0,
-        888.0,
-        738.0,
-        916.0
-      ],
-      "column": 1,
-      "row": 26,
-      "global_index": 26,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "果",
-      "bbox": [
-        708.0,
-        916.0,
-        738.0,
-        944.0
-      ],
-      "column": 1,
-      "row": 27,
-      "global_index": 27,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "逢",
-      "bbox": [
-        708.0,
-        944.0,
-        738.0,
-        970.0
-      ],
-      "column": 1,
-      "row": 28,
-      "global_index": 28,
-      "col_text": "镜于阙文使蠹轴韬明心灯于坠典夫大乘有教语必生知探讨旧章果逢",
-      "col_bbox": [
-        708,
-        119,
-        738,
-        970
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "新",
-      "bbox": [
-        676.0,
-        120.0,
-        702.0,
-        148.0
-      ],
-      "column": 2,
-      "row": 0,
-      "global_index": 29,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "说",
-      "bbox": [
-        676.0,
-        148.0,
-        702.0,
-        174.0
-      ],
-      "column": 2,
-      "row": 1,
-      "global_index": 30,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "所",
-      "bbox": [
-        676.0,
-        174.0,
-        702.0,
-        202.0
-      ],
-      "column": 2,
-      "row": 2,
-      "global_index": 31,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "以",
-      "bbox": [
-        676.0,
-        202.0,
-        702.0,
-        226.0
-      ],
-      "column": 2,
-      "row": 3,
-      "global_index": 32,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "搜",
-      "bbox": [
-        676.0,
-        226.0,
-        702.0,
-        255.0
-      ],
-      "column": 2,
-      "row": 4,
-      "global_index": 33,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "诸",
-      "bbox": [
-        676.0,
-        255.0,
-        702.0,
-        280.0
-      ],
-      "column": 2,
-      "row": 5,
-      "global_index": 34,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "异",
-      "bbox": [
-        676.0,
-        280.0,
-        702.0,
-        307.0
-      ],
-      "column": 2,
-      "row": 6,
-      "global_index": 35,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "一",
-      "bbox": [
-        676.0,
-        335.0,
-        702.0,
-        363.0
-      ],
-      "column": 2,
-      "row": 8,
-      "global_index": 36,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "贯",
-      "bbox": [
-        676.0,
-        363.0,
-        702.0,
-        391.0
-      ],
-      "column": 2,
-      "row": 9,
-      "global_index": 37,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "群",
-      "bbox": [
-        676.0,
-        391.0,
-        702.0,
-        434.0
-      ],
-      "column": 2,
-      "row": 10,
-      "global_index": 38,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "宗",
-      "bbox": [
-        676.0,
-        434.0,
-        702.0,
-        462.0
-      ],
-      "column": 2,
-      "row": 11,
-      "global_index": 39,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "为",
-      "bbox": [
-        676.0,
-        462.0,
-        702.0,
-        490.0
-      ],
-      "column": 2,
-      "row": 12,
-      "global_index": 40,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "粗",
-      "bbox": [
-        676.0,
-        490.0,
-        702.0,
-        518.0
-      ],
-      "column": 2,
-      "row": 13,
-      "global_index": 41,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "愚",
-      "bbox": [
-        676.0,
-        518.0,
-        702.0,
-        546.0
-      ],
-      "column": 2,
-      "row": 14,
-      "global_index": 42,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "却",
-      "bbox": [
-        676.0,
-        546.0,
-        702.0,
-        573.0
-      ],
-      "column": 2,
-      "row": 15,
-      "global_index": 43,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "妄",
-      "bbox": [
-        676.0,
-        573.0,
-        702.0,
-        601.0
-      ],
-      "column": 2,
-      "row": 16,
-      "global_index": 44,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "之",
-      "bbox": [
-        676.0,
-        601.0,
-        702.0,
-        625.0
-      ],
-      "column": 2,
-      "row": 17,
-      "global_index": 45,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "程",
-      "bbox": [
-        676.0,
-        625.0,
-        702.0,
-        651.0
-      ],
-      "column": 2,
-      "row": 18,
-      "global_index": 46,
-      "col_text": "新说所以搜诸异□一贯群宗为粗愚却妄之程",
-      "col_bbox": [
-        676,
-        120,
-        702,
-        651
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
       "char": "鏡",
       "bbox": [
-        550.0,
-        192.0,
-        678.0,
-        291.0
+        559.0,
+        183.0,
+        669.0,
+        294.0
       ],
-      "column": 3,
+      "column": 0,
       "row": 0,
-      "global_index": 47,
-      "col_text": "鏡水開文漫囊軸明",
+      "global_index": 0,
+      "col_text": "鏡於闕之便盡軸韜闕錄",
       "col_bbox": [
-        550,
-        192,
-        678,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "水",
-      "bbox": [
-        550.0,
-        291.0,
-        678.0,
-        463.0
-      ],
-      "column": 3,
-      "row": 1,
-      "global_index": 48,
-      "col_text": "鏡水開文漫囊軸明",
-      "col_bbox": [
-        550,
-        192,
-        678,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "開",
-      "bbox": [
-        550.0,
-        463.0,
-        678.0,
-        642.0
-      ],
-      "column": 3,
-      "row": 2,
-      "global_index": 49,
-      "col_text": "鏡水開文漫囊軸明",
-      "col_bbox": [
-        550,
-        192,
-        678,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "文",
-      "bbox": [
-        550.0,
-        642.0,
-        678.0,
-        790.0
-      ],
-      "column": 3,
-      "row": 3,
-      "global_index": 50,
-      "col_text": "鏡水開文漫囊軸明",
-      "col_bbox": [
-        550,
-        192,
-        678,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "漫",
-      "bbox": [
-        550.0,
-        790.0,
-        678.0,
-        928.0
-      ],
-      "column": 3,
-      "row": 4,
-      "global_index": 51,
-      "col_text": "鏡水開文漫囊軸明",
-      "col_bbox": [
-        550,
-        192,
-        678,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "囊",
-      "bbox": [
-        550.0,
-        928.0,
-        678.0,
-        1077.0
-      ],
-      "column": 3,
-      "row": 5,
-      "global_index": 52,
-      "col_text": "鏡水開文漫囊軸明",
-      "col_bbox": [
-        550,
-        192,
-        678,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "軸",
-      "bbox": [
-        550.0,
-        1077.0,
-        678.0,
-        1178.0
-      ],
-      "column": 3,
-      "row": 6,
-      "global_index": 53,
-      "col_text": "鏡水開文漫囊軸明",
-      "col_bbox": [
-        550,
-        192,
-        678,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "明",
-      "bbox": [
-        550.0,
-        1178.0,
-        678.0,
-        1320.0
-      ],
-      "column": 3,
-      "row": 7,
-      "global_index": 54,
-      "col_text": "鏡水開文漫囊軸明",
-      "col_bbox": [
-        550,
-        192,
-        678,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "心",
-      "bbox": [
-        443.0,
-        186.0,
-        560.0,
-        308.0
-      ],
-      "column": 4,
-      "row": 0,
-      "global_index": 55,
-      "col_text": "心燈於典夫大葉有教",
-      "col_bbox": [
-        443,
-        186,
-        560,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "燈",
-      "bbox": [
-        443.0,
-        308.0,
-        560.0,
-        421.0
-      ],
-      "column": 4,
-      "row": 1,
-      "global_index": 56,
-      "col_text": "心燈於典夫大葉有教",
-      "col_bbox": [
-        443,
-        186,
-        560,
-        1320
+        559.018,
+        199.8,
+        669.75,
+        1308.32
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "於",
       "bbox": [
-        443.0,
-        421.0,
-        560.0,
-        546.0
-      ],
-      "column": 4,
-      "row": 2,
-      "global_index": 57,
-      "col_text": "心燈於典夫大葉有教",
-      "col_bbox": [
-        443,
-        186,
-        560,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "典",
-      "bbox": [
-        443.0,
-        546.0,
-        560.0,
-        689.0
-      ],
-      "column": 4,
-      "row": 3,
-      "global_index": 58,
-      "col_text": "心燈於典夫大葉有教",
-      "col_bbox": [
-        443,
-        186,
-        560,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "夫",
-      "bbox": [
-        443.0,
-        689.0,
-        560.0,
-        823.0
-      ],
-      "column": 4,
-      "row": 4,
-      "global_index": 59,
-      "col_text": "心燈於典夫大葉有教",
-      "col_bbox": [
-        443,
-        186,
-        560,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "大",
-      "bbox": [
-        443.0,
-        823.0,
-        560.0,
-        905.0
-      ],
-      "column": 4,
-      "row": 5,
-      "global_index": 60,
-      "col_text": "心燈於典夫大葉有教",
-      "col_bbox": [
-        443,
-        186,
-        560,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "葉",
-      "bbox": [
-        443.0,
-        905.0,
-        560.0,
-        1049.0
-      ],
-      "column": 4,
-      "row": 6,
-      "global_index": 61,
-      "col_text": "心燈於典夫大葉有教",
-      "col_bbox": [
-        443,
-        186,
-        560,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "有",
-      "bbox": [
-        443.0,
-        1049.0,
-        560.0,
-        1157.0
-      ],
-      "column": 4,
-      "row": 7,
-      "global_index": 62,
-      "col_text": "心燈於典夫大葉有教",
-      "col_bbox": [
-        443,
-        186,
-        560,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "教",
-      "bbox": [
-        443.0,
-        1157.0,
-        560.0,
-        1320.0
-      ],
-      "column": 4,
-      "row": 8,
-      "global_index": 63,
-      "col_text": "心燈於典夫大葉有教",
-      "col_bbox": [
-        443,
-        186,
-        560,
-        1320
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "語",
-      "bbox": [
-        328.0,
-        185.0,
-        447.0,
-        330.0
-      ],
-      "column": 5,
-      "row": 0,
-      "global_index": 64,
-      "col_text": "語必生知探秘穫牽果逢",
-      "col_bbox": [
-        328,
-        185,
-        447,
-        1317
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "必",
-      "bbox": [
-        328.0,
-        330.0,
-        447.0,
-        378.0
-      ],
-      "column": 5,
-      "row": 1,
-      "global_index": 65,
-      "col_text": "語必生知探秘穫牽果逢",
-      "col_bbox": [
-        328,
-        185,
-        447,
-        1317
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "生",
-      "bbox": [
-        328.0,
-        378.0,
-        447.0,
-        547.0
-      ],
-      "column": 5,
-      "row": 2,
-      "global_index": 66,
-      "col_text": "語必生知探秘穫牽果逢",
-      "col_bbox": [
-        328,
-        185,
-        447,
-        1317
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "知",
-      "bbox": [
-        328.0,
-        547.0,
-        447.0,
-        669.0
-      ],
-      "column": 5,
-      "row": 3,
-      "global_index": 67,
-      "col_text": "語必生知探秘穫牽果逢",
-      "col_bbox": [
-        328,
-        185,
-        447,
-        1317
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "探",
-      "bbox": [
-        328.0,
+        566.0,
+        292.0,
         669.0,
-        447.0,
-        772.0
+        404.0
       ],
-      "column": 5,
-      "row": 4,
-      "global_index": 68,
-      "col_text": "語必生知探秘穫牽果逢",
-      "col_bbox": [
-        328,
-        185,
-        447,
-        1317
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "秘",
-      "bbox": [
-        328.0,
-        772.0,
-        447.0,
-        852.0
-      ],
-      "column": 5,
-      "row": 5,
-      "global_index": 69,
-      "col_text": "語必生知探秘穫牽果逢",
-      "col_bbox": [
-        328,
-        185,
-        447,
-        1317
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "穫",
-      "bbox": [
-        328.0,
-        852.0,
-        447.0,
-        1008.0
-      ],
-      "column": 5,
-      "row": 6,
-      "global_index": 70,
-      "col_text": "語必生知探秘穫牽果逢",
-      "col_bbox": [
-        328,
-        185,
-        447,
-        1317
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "牽",
-      "bbox": [
-        328.0,
-        1008.0,
-        447.0,
-        1118.0
-      ],
-      "column": 5,
-      "row": 7,
-      "global_index": 71,
-      "col_text": "語必生知探秘穫牽果逢",
-      "col_bbox": [
-        328,
-        185,
-        447,
-        1317
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "果",
-      "bbox": [
-        328.0,
-        1118.0,
-        447.0,
-        1172.0
-      ],
-      "column": 5,
-      "row": 8,
-      "global_index": 72,
-      "col_text": "語必生知探秘穫牽果逢",
-      "col_bbox": [
-        328,
-        185,
-        447,
-        1317
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "逢",
-      "bbox": [
-        328.0,
-        1172.0,
-        447.0,
-        1317.0
-      ],
-      "column": 5,
-      "row": 9,
-      "global_index": 73,
-      "col_text": "語必生知探秘穫牽果逢",
-      "col_bbox": [
-        328,
-        185,
-        447,
-        1317
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "宗",
-      "bbox": [
-        105.0,
-        189.0,
-        206.0,
-        390.0
-      ],
-      "column": 7,
-      "row": 0,
-      "global_index": 74,
-      "col_text": "宗为愚却妄之程",
-      "col_bbox": [
-        105,
-        189,
-        206,
-        1315
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "为",
-      "bbox": [
-        105.0,
-        390.0,
-        206.0,
-        556.0
-      ],
-      "column": 7,
+      "column": 0,
       "row": 1,
-      "global_index": 75,
-      "col_text": "宗为愚却妄之程",
+      "global_index": 1,
+      "col_text": "鏡於闕之便盡軸韜闕錄",
       "col_bbox": [
-        105,
-        189,
-        206,
-        1315
+        559.018,
+        199.8,
+        669.75,
+        1308.32
       ],
       "split_method": "pixel_projection"
     },
     {
-      "char": "愚",
+      "char": "闕",
       "bbox": [
-        105.0,
-        556.0,
-        206.0,
-        692.0
+        562.0,
+        404.0,
+        669.0,
+        516.0
       ],
-      "column": 7,
+      "column": 0,
       "row": 2,
-      "global_index": 76,
-      "col_text": "宗为愚却妄之程",
+      "global_index": 2,
+      "col_text": "鏡於闕之便盡軸韜闕錄",
       "col_bbox": [
-        105,
-        189,
-        206,
-        1315
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "却",
-      "bbox": [
-        105.0,
-        692.0,
-        206.0,
-        830.0
-      ],
-      "column": 7,
-      "row": 3,
-      "global_index": 77,
-      "col_text": "宗为愚却妄之程",
-      "col_bbox": [
-        105,
-        189,
-        206,
-        1315
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "妄",
-      "bbox": [
-        105.0,
-        830.0,
-        206.0,
-        987.0
-      ],
-      "column": 7,
-      "row": 4,
-      "global_index": 78,
-      "col_text": "宗为愚却妄之程",
-      "col_bbox": [
-        105,
-        189,
-        206,
-        1315
+        559.018,
+        199.8,
+        669.75,
+        1308.32
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "之",
       "bbox": [
-        105.0,
-        987.0,
-        206.0,
-        1169.0
+        561.0,
+        514.0,
+        669.0,
+        627.0
       ],
-      "column": 7,
-      "row": 5,
-      "global_index": 79,
-      "col_text": "宗为愚却妄之程",
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "鏡於闕之便盡軸韜闕錄",
       "col_bbox": [
-        105,
-        189,
-        206,
-        1315
+        559.018,
+        199.8,
+        669.75,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "便",
+      "bbox": [
+        559.0,
+        625.0,
+        669.0,
+        728.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "鏡於闕之便盡軸韜闕錄",
+      "col_bbox": [
+        559.018,
+        199.8,
+        669.75,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "盡",
+      "bbox": [
+        562.0,
+        728.0,
+        669.0,
+        849.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "鏡於闕之便盡軸韜闕錄",
+      "col_bbox": [
+        559.018,
+        199.8,
+        669.75,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "軸",
+      "bbox": [
+        566.0,
+        847.0,
+        669.0,
+        983.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "鏡於闕之便盡軸韜闕錄",
+      "col_bbox": [
+        559.018,
+        199.8,
+        669.75,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "韜",
+      "bbox": [
+        569.0,
+        983.0,
+        669.0,
+        1071.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "鏡於闕之便盡軸韜闕錄",
+      "col_bbox": [
+        559.018,
+        199.8,
+        669.75,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "闕",
+      "bbox": [
+        561.0,
+        1069.0,
+        669.0,
+        1214.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "鏡於闕之便盡軸韜闕錄",
+      "col_bbox": [
+        559.018,
+        199.8,
+        669.75,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "錄",
+      "bbox": [
+        559.0,
+        1214.0,
+        669.0,
+        1324.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "鏡於闕之便盡軸韜闕錄",
+      "col_bbox": [
+        559.018,
+        199.8,
+        669.75,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        452.0,
+        183.0,
+        546.0,
+        263.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "心燈於轍典夫大乘有教",
+      "col_bbox": [
+        445.60699999999997,
+        199.8,
+        550.088,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "燈",
+      "bbox": [
+        445.0,
+        263.0,
+        550.0,
+        376.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "心燈於轍典夫大乘有教",
+      "col_bbox": [
+        445.60699999999997,
+        199.8,
+        550.088,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "於",
+      "bbox": [
+        455.0,
+        376.0,
+        533.0,
+        471.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "心燈於轍典夫大乘有教",
+      "col_bbox": [
+        445.60699999999997,
+        199.8,
+        550.088,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "轍",
+      "bbox": [
+        445.0,
+        471.0,
+        550.0,
+        610.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "心燈於轍典夫大乘有教",
+      "col_bbox": [
+        445.60699999999997,
+        199.8,
+        550.088,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "典",
+      "bbox": [
+        445.0,
+        610.0,
+        550.0,
+        739.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "心燈於轍典夫大乘有教",
+      "col_bbox": [
+        445.60699999999997,
+        199.8,
+        550.088,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "夫",
+      "bbox": [
+        447.0,
+        739.0,
+        549.0,
+        843.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "心燈於轍典夫大乘有教",
+      "col_bbox": [
+        445.60699999999997,
+        199.8,
+        550.088,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        445.0,
+        843.0,
+        550.0,
+        951.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "心燈於轍典夫大乘有教",
+      "col_bbox": [
+        445.60699999999997,
+        199.8,
+        550.088,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乘",
+      "bbox": [
+        445.0,
+        951.0,
+        543.0,
+        1080.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "心燈於轍典夫大乘有教",
+      "col_bbox": [
+        445.60699999999997,
+        199.8,
+        550.088,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        462.0,
+        1080.0,
+        542.0,
+        1205.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "心燈於轍典夫大乘有教",
+      "col_bbox": [
+        445.60699999999997,
+        199.8,
+        550.088,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "教",
+      "bbox": [
+        445.0,
+        1205.0,
+        550.0,
+        1328.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 19,
+      "col_text": "心燈於轍典夫大乘有教",
+      "col_bbox": [
+        445.60699999999997,
+        199.8,
+        550.088,
+        1312.76
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "韜",
+      "bbox": [
+        335.0,
+        171.0,
+        437.0,
+        284.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 20,
+      "col_text": "韜必生知探討舊章果逢",
+      "col_bbox": [
+        335.76800000000003,
+        187.96,
+        437.57,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "必",
+      "bbox": [
+        335.0,
+        282.0,
+        430.0,
+        396.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 21,
+      "col_text": "韜必生知探討舊章果逢",
+      "col_bbox": [
+        335.76800000000003,
+        187.96,
+        437.57,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "生",
+      "bbox": [
+        335.0,
+        394.0,
+        437.0,
+        511.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 22,
+      "col_text": "韜必生知探討舊章果逢",
+      "col_bbox": [
+        335.76800000000003,
+        187.96,
+        437.57,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        335.0,
+        511.0,
+        435.0,
+        598.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 23,
+      "col_text": "韜必生知探討舊章果逢",
+      "col_bbox": [
+        335.76800000000003,
+        187.96,
+        437.57,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "探",
+      "bbox": [
+        335.0,
+        597.0,
+        436.0,
+        734.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 24,
+      "col_text": "韜必生知探討舊章果逢",
+      "col_bbox": [
+        335.76800000000003,
+        187.96,
+        437.57,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "討",
+      "bbox": [
+        335.0,
+        732.0,
+        436.0,
+        819.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 25,
+      "col_text": "韜必生知探討舊章果逢",
+      "col_bbox": [
+        335.76800000000003,
+        187.96,
+        437.57,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "舊",
+      "bbox": [
+        336.0,
+        819.0,
+        437.0,
+        957.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 26,
+      "col_text": "韜必生知探討舊章果逢",
+      "col_bbox": [
+        335.76800000000003,
+        187.96,
+        437.57,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "章",
+      "bbox": [
+        335.0,
+        957.0,
+        437.0,
+        1089.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 27,
+      "col_text": "韜必生知探討舊章果逢",
+      "col_bbox": [
+        335.76800000000003,
+        187.96,
+        437.57,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "果",
+      "bbox": [
+        336.0,
+        1089.0,
+        434.0,
+        1204.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 28,
+      "col_text": "韜必生知探討舊章果逢",
+      "col_bbox": [
+        335.76800000000003,
+        187.96,
+        437.57,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "逢",
+      "bbox": [
+        335.0,
+        1204.0,
+        437.0,
+        1327.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 29,
+      "col_text": "韜必生知探討舊章果逢",
+      "col_bbox": [
+        335.76800000000003,
+        187.96,
+        437.57,
+        1311.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "新",
+      "bbox": [
+        221.0,
+        174.0,
+        319.0,
+        308.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "新說所以搜諸異之貫",
+      "col_bbox": [
+        216.106,
+        192.4,
+        319.69399999999996,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "說",
+      "bbox": [
+        216.0,
+        308.0,
+        319.0,
+        425.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "新說所以搜諸異之貫",
+      "col_bbox": [
+        216.106,
+        192.4,
+        319.69399999999996,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        232.0,
+        425.0,
+        319.0,
+        518.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "新說所以搜諸異之貫",
+      "col_bbox": [
+        216.106,
+        192.4,
+        319.69399999999996,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        216.0,
+        518.0,
+        319.0,
+        718.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "新說所以搜諸異之貫",
+      "col_bbox": [
+        216.106,
+        192.4,
+        319.69399999999996,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "搜",
+      "bbox": [
+        225.0,
+        718.0,
+        319.0,
+        848.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "新說所以搜諸異之貫",
+      "col_bbox": [
+        216.106,
+        192.4,
+        319.69399999999996,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "諸",
+      "bbox": [
+        246.0,
+        848.0,
+        319.0,
+        919.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "新說所以搜諸異之貫",
+      "col_bbox": [
+        216.106,
+        192.4,
+        319.69399999999996,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "異",
+      "bbox": [
+        225.0,
+        917.0,
+        319.0,
+        1043.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "新說所以搜諸異之貫",
+      "col_bbox": [
+        216.106,
+        192.4,
+        319.69399999999996,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        216.0,
+        1041.0,
+        319.0,
+        1196.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "新說所以搜諸異之貫",
+      "col_bbox": [
+        216.106,
+        192.4,
+        319.69399999999996,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "貫",
+      "bbox": [
+        216.0,
+        1196.0,
+        319.0,
+        1326.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "新說所以搜諸異之貫",
+      "col_bbox": [
+        216.106,
+        192.4,
+        319.69399999999996,
+        1308.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "唐",
+      "bbox": [
+        108.0,
+        180.0,
+        187.0,
+        292.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 39,
+      "col_text": "唐平宗為歲易却安之程",
+      "col_bbox": [
+        108.053,
+        196.84,
+        201.818,
+        1309.8
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "平",
+      "bbox": [
+        108.0,
+        290.0,
+        201.0,
+        359.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 40,
+      "col_text": "唐平宗為歲易却安之程",
+      "col_bbox": [
+        108.053,
+        196.84,
+        201.818,
+        1309.8
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "宗",
+      "bbox": [
+        108.0,
+        359.0,
+        201.0,
+        475.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 41,
+      "col_text": "唐平宗為歲易却安之程",
+      "col_bbox": [
+        108.053,
+        196.84,
+        201.818,
+        1309.8
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        108.0,
+        475.0,
+        195.0,
+        598.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 42,
+      "col_text": "唐平宗為歲易却安之程",
+      "col_bbox": [
+        108.053,
+        196.84,
+        201.818,
+        1309.8
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "歲",
+      "bbox": [
+        108.0,
+        598.0,
+        201.0,
+        728.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 43,
+      "col_text": "唐平宗為歲易却安之程",
+      "col_bbox": [
+        108.053,
+        196.84,
+        201.818,
+        1309.8
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "易",
+      "bbox": [
+        108.0,
+        728.0,
+        197.0,
+        868.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 44,
+      "col_text": "唐平宗為歲易却安之程",
+      "col_bbox": [
+        108.053,
+        196.84,
+        201.818,
+        1309.8
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "却",
+      "bbox": [
+        108.0,
+        868.0,
+        201.0,
+        1005.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 45,
+      "col_text": "唐平宗為歲易却安之程",
+      "col_bbox": [
+        108.053,
+        196.84,
+        201.818,
+        1309.8
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "安",
+      "bbox": [
+        108.0,
+        1003.0,
+        201.0,
+        1119.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 46,
+      "col_text": "唐平宗為歲易却安之程",
+      "col_bbox": [
+        108.053,
+        196.84,
+        201.818,
+        1309.8
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        108.0,
+        1119.0,
+        201.0,
+        1217.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 47,
+      "col_text": "唐平宗為歲易却安之程",
+      "col_bbox": [
+        108.053,
+        196.84,
+        201.818,
+        1309.8
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "程",
       "bbox": [
-        105.0,
-        1169.0,
-        206.0,
-        1315.0
+        108.0,
+        1217.0,
+        201.0,
+        1325.0
       ],
-      "column": 7,
-      "row": 6,
-      "global_index": 80,
-      "col_text": "宗为愚却妄之程",
+      "column": 4,
+      "row": 9,
+      "global_index": 48,
+      "col_text": "唐平宗為歲易却安之程",
       "col_bbox": [
-        105,
-        189,
-        206,
-        1315
+        108.053,
+        196.84,
+        201.818,
+        1309.8
       ],
       "split_method": "pixel_projection"
     }
   ],
-  "column_count": 8,
-  "total_chars": 81,
-  "timestamp": "2026-05-02T23:12:50.557998"
+  "column_count": 5,
+  "total_chars": 49,
+  "timestamp": "2026-05-05T21:32:20.494776"
 }

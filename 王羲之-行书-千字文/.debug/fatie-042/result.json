@@ -6,2148 +6,1228 @@
     "channels": 3,
     "dtype": "uint8"
   },
-  "recognized_text": "渐趣涕悲泣而白佛言成有世尊如來今者所謊此注為家上垂常作諸義利我從昔来所得費眼曾說如是之经世尊解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸义利我从昔来所得慧眼未曾闻说如是之经世尊",
+  "recognized_text": "解義趣涕淚悲泣而白佛言我有世尊如来今者所说此经为家上乘者作诸義利我經昔來所得慧眼未曾聞說如是之經世尊",
   "parsed_results": [
     {
-      "text": "渐 趣涕悲泣而白佛",
+      "text": "解義趣涕淚悲泣而白佛",
       "bbox": [
-        659,
-        166,
-        758,
-        1343
+        664.3919999999999,
+        165.76,
+        753.692,
+        1334.96
       ],
       "poly": [
         [
-          659,
-          166
+          664.3919999999999,
+          165.76
         ],
         [
-          758,
-          166
+          753.692,
+          165.76
         ],
         [
-          758,
-          1343
+          753.692,
+          1334.96
         ],
         [
-          659,
-          1343
+          664.3919999999999,
+          1334.96
         ]
       ]
     },
     {
-      "text": "言成有世尊如來今者所",
+      "text": "言我有世尊如来今者所",
       "bbox": [
-        539,
-        159,
-        651,
-        1349
+        549.1949999999999,
+        165.76,
+        642.067,
+        1342.3600000000001
       ],
       "poly": [
         [
-          539,
-          159
+          549.1949999999999,
+          165.76
         ],
         [
-          651,
-          159
+          642.067,
+          165.76
         ],
         [
-          651,
-          1349
+          642.067,
+          1342.3600000000001
         ],
         [
-          539,
-          1349
+          549.1949999999999,
+          1342.3600000000001
         ]
       ]
     },
     {
-      "text": "謊此注為家上垂常作諸",
+      "text": "说此经为家上乘者作诸",
       "bbox": [
-        426,
-        160,
-        541,
-        1352
+        432.212,
+        162.8,
+        528.656,
+        1348.28
       ],
       "poly": [
         [
-          426,
-          160
+          432.212,
+          162.8
         ],
         [
-          541,
-          160
+          528.656,
+          162.8
         ],
         [
-          541,
-          1352
+          528.656,
+          1348.28
         ],
         [
-          426,
-          1352
+          432.212,
+          1348.28
         ]
       ]
     },
     {
-      "text": "義利我從昔来所得費眼",
+      "text": "義利我經昔來所得慧眼",
       "bbox": [
-        315,
-        159,
-        428,
-        1351
+        325.05199999999996,
+        161.32,
+        416.13800000000003,
+        1343.8400000000001
       ],
       "poly": [
         [
-          315,
-          159
+          325.05199999999996,
+          161.32
         ],
         [
-          428,
-          159
+          416.13800000000003,
+          161.32
         ],
         [
-          428,
-          1351
+          416.13800000000003,
+          1343.8400000000001
         ],
         [
-          315,
-          1351
+          325.05199999999996,
+          1343.8400000000001
         ]
       ]
     },
     {
-      "text": "曾說如是之经世尊",
+      "text": "未曾聞說如是之經世尊",
       "bbox": [
-        195,
-        160,
-        315,
-        1351
+        208.06900000000002,
+        158.35999999999999,
+        304.51300000000003,
+        1345.32
       ],
       "poly": [
         [
-          195,
-          160
+          208.06900000000002,
+          158.35999999999999
         ],
         [
-          315,
-          160
+          304.51300000000003,
+          158.35999999999999
         ],
         [
-          315,
-          1351
+          304.51300000000003,
+          1345.32
         ],
         [
-          195,
-          1351
+          208.06900000000002,
+          1345.32
         ]
       ]
     },
     {
       "text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
       "bbox": [
-        161,
-        156,
-        188,
-        1005
+        165.20499999999998,
+        152.44,
+        189.316,
+        1010.84
       ],
       "poly": [
         [
-          161,
-          156
+          165.20499999999998,
+          152.44
         ],
         [
-          188,
-          156
+          189.316,
+          152.44
         ],
         [
-          188,
-          1005
+          189.316,
+          1010.84
         ],
         [
-          161,
-          1005
+          165.20499999999998,
+          1010.84
         ]
       ]
     },
     {
       "text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
       "bbox": [
-        127,
-        157,
-        152,
-        711
+        129.48499999999999,
+        152.44,
+        151.81,
+        717.8
       ],
       "poly": [
         [
-          127,
-          157
+          129.48499999999999,
+          152.44
         ],
         [
-          152,
-          157
+          151.81,
+          152.44
         ],
         [
-          152,
-          711
+          151.81,
+          717.8
         ],
         [
-          127,
-          711
+          129.48499999999999,
+          717.8
         ]
       ]
     },
     {
       "text": "37",
       "bbox": [
-        0,
-        1445,
-        22,
-        1468
+        0.893,
+        1447.44,
+        18.753,
+        1465.2
       ],
       "poly": [
         [
-          0,
-          1445
+          0.893,
+          1447.44
         ],
         [
-          22,
-          1445
+          18.753,
+          1447.44
         ],
         [
-          22,
-          1468
+          18.753,
+          1465.2
         ],
         [
-          0,
-          1468
+          0.893,
+          1465.2
         ]
       ]
     }
   ],
   "char_results": [
     {
-      "char": "渐",
+      "char": "解",
       "bbox": [
-        659.0,
-        166.0,
-        758.0,
-        257.0
+        664.0,
+        148.0,
+        753.0,
+        281.0
       ],
       "column": 0,
       "row": 0,
       "global_index": 0,
-      "col_text": "渐 趣涕悲泣而白佛",
+      "col_text": "解義趣涕淚悲泣而白佛",
       "col_bbox": [
-        659,
-        166,
-        758,
-        1343
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "趣",
-      "bbox": [
-        659.0,
-        465.0,
-        758.0,
-        596.0
-      ],
-      "column": 0,
-      "row": 2,
-      "global_index": 1,
-      "col_text": "渐 趣涕悲泣而白佛",
-      "col_bbox": [
-        659,
-        166,
-        758,
-        1343
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "涕",
-      "bbox": [
-        659.0,
-        596.0,
-        758.0,
-        727.0
-      ],
-      "column": 0,
-      "row": 3,
-      "global_index": 2,
-      "col_text": "渐 趣涕悲泣而白佛",
-      "col_bbox": [
-        659,
-        166,
-        758,
-        1343
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "悲",
-      "bbox": [
-        659.0,
-        727.0,
-        758.0,
-        857.0
-      ],
-      "column": 0,
-      "row": 4,
-      "global_index": 3,
-      "col_text": "渐 趣涕悲泣而白佛",
-      "col_bbox": [
-        659,
-        166,
-        758,
-        1343
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "泣",
-      "bbox": [
-        659.0,
-        857.0,
-        758.0,
-        988.0
-      ],
-      "column": 0,
-      "row": 5,
-      "global_index": 4,
-      "col_text": "渐 趣涕悲泣而白佛",
-      "col_bbox": [
-        659,
-        166,
-        758,
-        1343
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "而",
-      "bbox": [
-        659.0,
-        988.0,
-        758.0,
-        1096.0
-      ],
-      "column": 0,
-      "row": 6,
-      "global_index": 5,
-      "col_text": "渐 趣涕悲泣而白佛",
-      "col_bbox": [
-        659,
-        166,
-        758,
-        1343
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "白",
-      "bbox": [
-        659.0,
-        1096.0,
-        758.0,
-        1182.0
-      ],
-      "column": 0,
-      "row": 7,
-      "global_index": 6,
-      "col_text": "渐 趣涕悲泣而白佛",
-      "col_bbox": [
-        659,
-        166,
-        758,
-        1343
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "佛",
-      "bbox": [
-        659.0,
-        1182.0,
-        758.0,
-        1343.0
-      ],
-      "column": 0,
-      "row": 8,
-      "global_index": 7,
-      "col_text": "渐 趣涕悲泣而白佛",
-      "col_bbox": [
-        659,
-        166,
-        758,
-        1343
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "言",
-      "bbox": [
-        539.0,
-        159.0,
-        651.0,
-        308.0
-      ],
-      "column": 1,
-      "row": 0,
-      "global_index": 8,
-      "col_text": "言成有世尊如來今者所",
-      "col_bbox": [
-        539,
-        159,
-        651,
-        1349
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "成",
-      "bbox": [
-        539.0,
-        308.0,
-        651.0,
-        362.0
-      ],
-      "column": 1,
-      "row": 1,
-      "global_index": 9,
-      "col_text": "言成有世尊如來今者所",
-      "col_bbox": [
-        539,
-        159,
-        651,
-        1349
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "有",
-      "bbox": [
-        539.0,
-        362.0,
-        651.0,
-        485.0
-      ],
-      "column": 1,
-      "row": 2,
-      "global_index": 10,
-      "col_text": "言成有世尊如來今者所",
-      "col_bbox": [
-        539,
-        159,
-        651,
-        1349
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "世",
-      "bbox": [
-        539.0,
-        485.0,
-        651.0,
-        604.0
-      ],
-      "column": 1,
-      "row": 3,
-      "global_index": 11,
-      "col_text": "言成有世尊如來今者所",
-      "col_bbox": [
-        539,
-        159,
-        651,
-        1349
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "尊",
-      "bbox": [
-        539.0,
-        604.0,
-        651.0,
-        719.0
-      ],
-      "column": 1,
-      "row": 4,
-      "global_index": 12,
-      "col_text": "言成有世尊如來今者所",
-      "col_bbox": [
-        539,
-        159,
-        651,
-        1349
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "如",
-      "bbox": [
-        539.0,
-        719.0,
-        651.0,
-        838.0
-      ],
-      "column": 1,
-      "row": 5,
-      "global_index": 13,
-      "col_text": "言成有世尊如來今者所",
-      "col_bbox": [
-        539,
-        159,
-        651,
-        1349
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "來",
-      "bbox": [
-        539.0,
-        838.0,
-        651.0,
-        972.0
-      ],
-      "column": 1,
-      "row": 6,
-      "global_index": 14,
-      "col_text": "言成有世尊如來今者所",
-      "col_bbox": [
-        539,
-        159,
-        651,
-        1349
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "今",
-      "bbox": [
-        539.0,
-        972.0,
-        651.0,
-        1076.0
-      ],
-      "column": 1,
-      "row": 7,
-      "global_index": 15,
-      "col_text": "言成有世尊如來今者所",
-      "col_bbox": [
-        539,
-        159,
-        651,
-        1349
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "者",
-      "bbox": [
-        539.0,
-        1076.0,
-        651.0,
-        1209.0
-      ],
-      "column": 1,
-      "row": 8,
-      "global_index": 16,
-      "col_text": "言成有世尊如來今者所",
-      "col_bbox": [
-        539,
-        159,
-        651,
-        1349
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "所",
-      "bbox": [
-        539.0,
-        1209.0,
-        651.0,
-        1349.0
-      ],
-      "column": 1,
-      "row": 9,
-      "global_index": 17,
-      "col_text": "言成有世尊如來今者所",
-      "col_bbox": [
-        539,
-        159,
-        651,
-        1349
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "謊",
-      "bbox": [
-        426.0,
-        160.0,
-        541.0,
-        313.0
-      ],
-      "column": 2,
-      "row": 0,
-      "global_index": 18,
-      "col_text": "謊此注為家上垂常作諸",
-      "col_bbox": [
-        426,
-        160,
-        541,
-        1352
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "此",
-      "bbox": [
-        426.0,
-        313.0,
-        541.0,
-        432.0
-      ],
-      "column": 2,
-      "row": 1,
-      "global_index": 19,
-      "col_text": "謊此注為家上垂常作諸",
-      "col_bbox": [
-        426,
-        160,
-        541,
-        1352
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "注",
-      "bbox": [
-        426.0,
-        432.0,
-        541.0,
-        551.0
-      ],
-      "column": 2,
-      "row": 2,
-      "global_index": 20,
-      "col_text": "謊此注為家上垂常作諸",
-      "col_bbox": [
-        426,
-        160,
-        541,
-        1352
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "為",
-      "bbox": [
-        426.0,
-        551.0,
-        541.0,
-        660.0
-      ],
-      "column": 2,
-      "row": 3,
-      "global_index": 21,
-      "col_text": "謊此注為家上垂常作諸",
-      "col_bbox": [
-        426,
-        160,
-        541,
-        1352
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "家",
-      "bbox": [
-        426.0,
-        660.0,
-        541.0,
-        790.0
-      ],
-      "column": 2,
-      "row": 4,
-      "global_index": 22,
-      "col_text": "謊此注為家上垂常作諸",
-      "col_bbox": [
-        426,
-        160,
-        541,
-        1352
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "上",
-      "bbox": [
-        426.0,
-        790.0,
-        541.0,
-        909.0
-      ],
-      "column": 2,
-      "row": 5,
-      "global_index": 23,
-      "col_text": "謊此注為家上垂常作諸",
-      "col_bbox": [
-        426,
-        160,
-        541,
-        1352
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "垂",
-      "bbox": [
-        426.0,
-        909.0,
-        541.0,
-        1028.0
-      ],
-      "column": 2,
-      "row": 6,
-      "global_index": 24,
-      "col_text": "謊此注為家上垂常作諸",
-      "col_bbox": [
-        426,
-        160,
-        541,
-        1352
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "常",
-      "bbox": [
-        426.0,
-        1028.0,
-        541.0,
-        1078.0
-      ],
-      "column": 2,
-      "row": 7,
-      "global_index": 25,
-      "col_text": "謊此注為家上垂常作諸",
-      "col_bbox": [
-        426,
-        160,
-        541,
-        1352
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "作",
-      "bbox": [
-        426.0,
-        1078.0,
-        541.0,
-        1261.0
-      ],
-      "column": 2,
-      "row": 8,
-      "global_index": 26,
-      "col_text": "謊此注為家上垂常作諸",
-      "col_bbox": [
-        426,
-        160,
-        541,
-        1352
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "諸",
-      "bbox": [
-        426.0,
-        1261.0,
-        541.0,
-        1352.0
-      ],
-      "column": 2,
-      "row": 9,
-      "global_index": 27,
-      "col_text": "謊此注為家上垂常作諸",
-      "col_bbox": [
-        426,
-        160,
-        541,
-        1352
+        664.3919999999999,
+        165.76,
+        753.692,
+        1334.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "義",
       "bbox": [
-        315.0,
-        159.0,
-        428.0,
-        245.0
+        687.0,
+        281.0,
+        740.0,
+        431.0
       ],
-      "column": 3,
-      "row": 0,
-      "global_index": 28,
-      "col_text": "義利我從昔来所得費眼",
-      "col_bbox": [
-        315,
-        159,
-        428,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "利",
-      "bbox": [
-        315.0,
-        245.0,
-        428.0,
-        362.0
-      ],
-      "column": 3,
+      "column": 0,
       "row": 1,
-      "global_index": 29,
-      "col_text": "義利我從昔来所得費眼",
+      "global_index": 1,
+      "col_text": "解義趣涕淚悲泣而白佛",
       "col_bbox": [
-        315,
-        159,
-        428,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "我",
-      "bbox": [
-        315.0,
-        362.0,
-        428.0,
-        481.0
-      ],
-      "column": 3,
-      "row": 2,
-      "global_index": 30,
-      "col_text": "義利我從昔来所得費眼",
-      "col_bbox": [
-        315,
-        159,
-        428,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "從",
-      "bbox": [
-        315.0,
-        481.0,
-        428.0,
-        669.0
-      ],
-      "column": 3,
-      "row": 3,
-      "global_index": 31,
-      "col_text": "義利我從昔来所得費眼",
-      "col_bbox": [
-        315,
-        159,
-        428,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "昔",
-      "bbox": [
-        315.0,
-        669.0,
-        428.0,
-        789.0
-      ],
-      "column": 3,
-      "row": 4,
-      "global_index": 32,
-      "col_text": "義利我從昔来所得費眼",
-      "col_bbox": [
-        315,
-        159,
-        428,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "来",
-      "bbox": [
-        315.0,
-        789.0,
-        428.0,
-        908.0
-      ],
-      "column": 3,
-      "row": 5,
-      "global_index": 33,
-      "col_text": "義利我從昔来所得費眼",
-      "col_bbox": [
-        315,
-        159,
-        428,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "所",
-      "bbox": [
-        315.0,
-        908.0,
-        428.0,
-        1021.0
-      ],
-      "column": 3,
-      "row": 6,
-      "global_index": 34,
-      "col_text": "義利我從昔来所得費眼",
-      "col_bbox": [
-        315,
-        159,
-        428,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "得",
-      "bbox": [
-        315.0,
-        1021.0,
-        428.0,
-        1093.0
-      ],
-      "column": 3,
-      "row": 7,
-      "global_index": 35,
-      "col_text": "義利我從昔来所得費眼",
-      "col_bbox": [
-        315,
-        159,
-        428,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "費",
-      "bbox": [
-        315.0,
-        1093.0,
-        428.0,
-        1196.0
-      ],
-      "column": 3,
-      "row": 8,
-      "global_index": 36,
-      "col_text": "義利我從昔来所得費眼",
-      "col_bbox": [
-        315,
-        159,
-        428,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "眼",
-      "bbox": [
-        315.0,
-        1196.0,
-        428.0,
-        1351.0
-      ],
-      "column": 3,
-      "row": 9,
-      "global_index": 37,
-      "col_text": "義利我從昔来所得費眼",
-      "col_bbox": [
-        315,
-        159,
-        428,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "曾",
-      "bbox": [
-        195.0,
-        160.0,
-        315.0,
-        346.0
-      ],
-      "column": 4,
-      "row": 0,
-      "global_index": 38,
-      "col_text": "曾說如是之经世尊",
-      "col_bbox": [
-        195,
-        160,
-        315,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "說",
-      "bbox": [
-        195.0,
-        346.0,
-        315.0,
-        480.0
-      ],
-      "column": 4,
-      "row": 1,
-      "global_index": 39,
-      "col_text": "曾說如是之经世尊",
-      "col_bbox": [
-        195,
-        160,
-        315,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "如",
-      "bbox": [
-        195.0,
-        480.0,
-        315.0,
-        627.0
-      ],
-      "column": 4,
-      "row": 2,
-      "global_index": 40,
-      "col_text": "曾說如是之经世尊",
-      "col_bbox": [
-        195,
-        160,
-        315,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "是",
-      "bbox": [
-        195.0,
-        627.0,
-        315.0,
-        713.0
-      ],
-      "column": 4,
-      "row": 3,
-      "global_index": 41,
-      "col_text": "曾說如是之经世尊",
-      "col_bbox": [
-        195,
-        160,
-        315,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "之",
-      "bbox": [
-        195.0,
-        713.0,
-        315.0,
-        860.0
-      ],
-      "column": 4,
-      "row": 4,
-      "global_index": 42,
-      "col_text": "曾說如是之经世尊",
-      "col_bbox": [
-        195,
-        160,
-        315,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "经",
-      "bbox": [
-        195.0,
-        860.0,
-        315.0,
-        1053.0
-      ],
-      "column": 4,
-      "row": 5,
-      "global_index": 43,
-      "col_text": "曾說如是之经世尊",
-      "col_bbox": [
-        195,
-        160,
-        315,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "世",
-      "bbox": [
-        195.0,
-        1053.0,
-        315.0,
-        1170.0
-      ],
-      "column": 4,
-      "row": 6,
-      "global_index": 44,
-      "col_text": "曾說如是之经世尊",
-      "col_bbox": [
-        195,
-        160,
-        315,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "尊",
-      "bbox": [
-        195.0,
-        1170.0,
-        315.0,
-        1351.0
-      ],
-      "column": 4,
-      "row": 7,
-      "global_index": 45,
-      "col_text": "曾說如是之经世尊",
-      "col_bbox": [
-        195,
-        160,
-        315,
-        1351
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "解",
-      "bbox": [
-        161.0,
-        156.0,
-        188.0,
-        183.0
-      ],
-      "column": 5,
-      "row": 0,
-      "global_index": 46,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "义",
-      "bbox": [
-        161.0,
-        183.0,
-        188.0,
-        210.0
-      ],
-      "column": 5,
-      "row": 1,
-      "global_index": 47,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
+        664.3919999999999,
+        165.76,
+        753.692,
+        1334.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "趣",
       "bbox": [
-        161.0,
-        210.0,
-        188.0,
-        236.0
+        667.0,
+        431.0,
+        751.0,
+        538.0
       ],
-      "column": 5,
+      "column": 0,
       "row": 2,
-      "global_index": 48,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
+      "global_index": 2,
+      "col_text": "解義趣涕淚悲泣而白佛",
       "col_bbox": [
-        161,
-        156,
-        188,
-        1005
+        664.3919999999999,
+        165.76,
+        753.692,
+        1334.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "涕",
       "bbox": [
-        161.0,
-        236.0,
-        188.0,
-        262.0
+        671.0,
+        538.0,
+        748.0,
+        677.0
       ],
-      "column": 5,
+      "column": 0,
       "row": 3,
-      "global_index": 49,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
+      "global_index": 3,
+      "col_text": "解義趣涕淚悲泣而白佛",
       "col_bbox": [
-        161,
-        156,
-        188,
-        1005
+        664.3919999999999,
+        165.76,
+        753.692,
+        1334.96
       ],
       "split_method": "pixel_projection"
     },
     {
-      "char": "泪",
+      "char": "淚",
       "bbox": [
-        161.0,
-        262.0,
-        188.0,
-        290.0
+        668.0,
+        676.0,
+        748.0,
+        793.0
       ],
-      "column": 5,
+      "column": 0,
       "row": 4,
-      "global_index": 50,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
+      "global_index": 4,
+      "col_text": "解義趣涕淚悲泣而白佛",
       "col_bbox": [
-        161,
-        156,
-        188,
-        1005
+        664.3919999999999,
+        165.76,
+        753.692,
+        1334.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "悲",
       "bbox": [
-        161.0,
-        290.0,
-        188.0,
-        317.0
+        673.0,
+        793.0,
+        747.0,
+        914.0
       ],
-      "column": 5,
+      "column": 0,
       "row": 5,
-      "global_index": 51,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
+      "global_index": 5,
+      "col_text": "解義趣涕淚悲泣而白佛",
       "col_bbox": [
-        161,
-        156,
-        188,
-        1005
+        664.3919999999999,
+        165.76,
+        753.692,
+        1334.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "泣",
       "bbox": [
-        161.0,
-        317.0,
-        188.0,
-        346.0
+        672.0,
+        914.0,
+        746.0,
+        1031.0
       ],
-      "column": 5,
+      "column": 0,
       "row": 6,
-      "global_index": 52,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
+      "global_index": 6,
+      "col_text": "解義趣涕淚悲泣而白佛",
       "col_bbox": [
-        161,
-        156,
-        188,
-        1005
+        664.3919999999999,
+        165.76,
+        753.692,
+        1334.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "而",
       "bbox": [
-        161.0,
-        346.0,
-        188.0,
-        374.0
+        672.0,
+        1031.0,
+        751.0,
+        1134.0
       ],
-      "column": 5,
+      "column": 0,
       "row": 7,
-      "global_index": 53,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
+      "global_index": 7,
+      "col_text": "解義趣涕淚悲泣而白佛",
       "col_bbox": [
-        161,
-        156,
-        188,
-        1005
+        664.3919999999999,
+        165.76,
+        753.692,
+        1334.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "白",
       "bbox": [
-        161.0,
-        374.0,
-        188.0,
-        417.0
+        686.0,
+        1134.0,
+        741.0,
+        1238.0
       ],
-      "column": 5,
+      "column": 0,
       "row": 8,
-      "global_index": 54,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
+      "global_index": 8,
+      "col_text": "解義趣涕淚悲泣而白佛",
       "col_bbox": [
-        161,
-        156,
-        188,
-        1005
+        664.3919999999999,
+        165.76,
+        753.692,
+        1334.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "佛",
       "bbox": [
-        161.0,
-        417.0,
-        188.0,
-        437.0
+        665.0,
+        1238.0,
+        745.0,
+        1351.0
       ],
-      "column": 5,
+      "column": 0,
       "row": 9,
-      "global_index": 55,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
+      "global_index": 9,
+      "col_text": "解義趣涕淚悲泣而白佛",
       "col_bbox": [
-        161,
-        156,
-        188,
-        1005
+        664.3919999999999,
+        165.76,
+        753.692,
+        1334.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "言",
       "bbox": [
-        161.0,
-        437.0,
-        188.0,
-        474.0
+        549.0,
+        148.0,
+        642.0,
+        262.0
       ],
-      "column": 5,
-      "row": 10,
-      "global_index": 56,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "希",
-      "bbox": [
-        161.0,
-        474.0,
-        188.0,
-        500.0
-      ],
-      "column": 5,
-      "row": 11,
-      "global_index": 57,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "有",
-      "bbox": [
-        161.0,
-        500.0,
-        188.0,
-        528.0
-      ],
-      "column": 5,
-      "row": 12,
-      "global_index": 58,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "世",
-      "bbox": [
-        161.0,
-        528.0,
-        188.0,
-        555.0
-      ],
-      "column": 5,
-      "row": 13,
-      "global_index": 59,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "尊",
-      "bbox": [
-        161.0,
-        555.0,
-        188.0,
-        585.0
-      ],
-      "column": 5,
-      "row": 14,
-      "global_index": 60,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "如",
-      "bbox": [
-        161.0,
-        585.0,
-        188.0,
-        609.0
-      ],
-      "column": 5,
-      "row": 15,
-      "global_index": 61,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "来",
-      "bbox": [
-        161.0,
-        609.0,
-        188.0,
-        634.0
-      ],
-      "column": 5,
-      "row": 16,
-      "global_index": 62,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "今",
-      "bbox": [
-        161.0,
-        634.0,
-        188.0,
-        661.0
-      ],
-      "column": 5,
-      "row": 17,
-      "global_index": 63,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "者",
-      "bbox": [
-        161.0,
-        661.0,
-        188.0,
-        687.0
-      ],
-      "column": 5,
-      "row": 18,
-      "global_index": 64,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "所",
-      "bbox": [
-        161.0,
-        687.0,
-        188.0,
-        716.0
-      ],
-      "column": 5,
-      "row": 19,
-      "global_index": 65,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "说",
-      "bbox": [
-        161.0,
-        716.0,
-        188.0,
-        742.0
-      ],
-      "column": 5,
-      "row": 20,
-      "global_index": 66,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "此",
-      "bbox": [
-        161.0,
-        742.0,
-        188.0,
-        770.0
-      ],
-      "column": 5,
-      "row": 21,
-      "global_index": 67,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "经",
-      "bbox": [
-        161.0,
-        770.0,
-        188.0,
-        798.0
-      ],
-      "column": 5,
-      "row": 22,
-      "global_index": 68,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "为",
-      "bbox": [
-        161.0,
-        798.0,
-        188.0,
-        836.0
-      ],
-      "column": 5,
-      "row": 23,
-      "global_index": 69,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "最",
-      "bbox": [
-        161.0,
-        836.0,
-        188.0,
-        870.0
-      ],
-      "column": 5,
-      "row": 24,
-      "global_index": 70,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "上",
-      "bbox": [
-        161.0,
-        870.0,
-        188.0,
-        890.0
-      ],
-      "column": 5,
-      "row": 25,
-      "global_index": 71,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "乘",
-      "bbox": [
-        161.0,
-        890.0,
-        188.0,
-        927.0
-      ],
-      "column": 5,
-      "row": 26,
-      "global_index": 72,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "者",
-      "bbox": [
-        161.0,
-        927.0,
-        188.0,
-        953.0
-      ],
-      "column": 5,
-      "row": 27,
-      "global_index": 73,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "作",
-      "bbox": [
-        161.0,
-        953.0,
-        188.0,
-        980.0
-      ],
-      "column": 5,
-      "row": 28,
-      "global_index": 74,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "诸",
-      "bbox": [
-        161.0,
-        980.0,
-        188.0,
-        1005.0
-      ],
-      "column": 5,
-      "row": 29,
-      "global_index": 75,
-      "col_text": "解义趣涕泪悲泣而白佛言希有世尊如来今者所说此经为最上乘者作诸",
-      "col_bbox": [
-        161,
-        156,
-        188,
-        1005
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "义",
-      "bbox": [
-        127.0,
-        157.0,
-        152.0,
-        182.0
-      ],
-      "column": 6,
+      "column": 1,
       "row": 0,
-      "global_index": 76,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
+      "global_index": 10,
+      "col_text": "言我有世尊如来今者所",
       "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "利",
-      "bbox": [
-        127.0,
-        182.0,
-        152.0,
-        209.0
-      ],
-      "column": 6,
-      "row": 1,
-      "global_index": 77,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
+        549.1949999999999,
+        165.76,
+        642.067,
+        1342.3600000000001
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "我",
       "bbox": [
-        127.0,
-        209.0,
-        152.0,
-        236.0
+        549.0,
+        262.0,
+        642.0,
+        400.0
       ],
-      "column": 6,
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "言我有世尊如来今者所",
+      "col_bbox": [
+        549.1949999999999,
+        165.76,
+        642.067,
+        1342.3600000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        553.0,
+        400.0,
+        635.0,
+        544.0
+      ],
+      "column": 1,
       "row": 2,
-      "global_index": 78,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
+      "global_index": 12,
+      "col_text": "言我有世尊如来今者所",
       "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "从",
-      "bbox": [
-        127.0,
-        236.0,
-        152.0,
-        263.0
-      ],
-      "column": 6,
-      "row": 3,
-      "global_index": 79,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "昔",
-      "bbox": [
-        127.0,
-        263.0,
-        152.0,
-        290.0
-      ],
-      "column": 6,
-      "row": 4,
-      "global_index": 80,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "来",
-      "bbox": [
-        127.0,
-        290.0,
-        152.0,
-        315.0
-      ],
-      "column": 6,
-      "row": 5,
-      "global_index": 81,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "所",
-      "bbox": [
-        127.0,
-        315.0,
-        152.0,
-        342.0
-      ],
-      "column": 6,
-      "row": 6,
-      "global_index": 82,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "得",
-      "bbox": [
-        127.0,
-        342.0,
-        152.0,
-        370.0
-      ],
-      "column": 6,
-      "row": 7,
-      "global_index": 83,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "慧",
-      "bbox": [
-        127.0,
-        370.0,
-        152.0,
-        398.0
-      ],
-      "column": 6,
-      "row": 8,
-      "global_index": 84,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "眼",
-      "bbox": [
-        127.0,
-        398.0,
-        152.0,
-        426.0
-      ],
-      "column": 6,
-      "row": 9,
-      "global_index": 85,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "未",
-      "bbox": [
-        127.0,
-        426.0,
-        152.0,
-        453.0
-      ],
-      "column": 6,
-      "row": 10,
-      "global_index": 86,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "曾",
-      "bbox": [
-        127.0,
-        453.0,
-        152.0,
-        496.0
-      ],
-      "column": 6,
-      "row": 11,
-      "global_index": 87,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "闻",
-      "bbox": [
-        127.0,
-        496.0,
-        152.0,
-        524.0
-      ],
-      "column": 6,
-      "row": 12,
-      "global_index": 88,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "说",
-      "bbox": [
-        127.0,
-        524.0,
-        152.0,
-        551.0
-      ],
-      "column": 6,
-      "row": 13,
-      "global_index": 89,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "如",
-      "bbox": [
-        127.0,
-        551.0,
-        152.0,
-        579.0
-      ],
-      "column": 6,
-      "row": 14,
-      "global_index": 90,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "是",
-      "bbox": [
-        127.0,
-        579.0,
-        152.0,
-        607.0
-      ],
-      "column": 6,
-      "row": 15,
-      "global_index": 91,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "之",
-      "bbox": [
-        127.0,
-        607.0,
-        152.0,
-        634.0
-      ],
-      "column": 6,
-      "row": 16,
-      "global_index": 92,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "经",
-      "bbox": [
-        127.0,
-        634.0,
-        152.0,
-        661.0
-      ],
-      "column": 6,
-      "row": 17,
-      "global_index": 93,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
-      "col_bbox": [
-        127,
-        157,
-        152,
-        711
+        549.1949999999999,
+        165.76,
+        642.067,
+        1342.3600000000001
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "世",
       "bbox": [
-        127.0,
-        661.0,
-        152.0,
-        687.0
+        559.0,
+        544.0,
+        632.0,
+        638.0
       ],
-      "column": 6,
-      "row": 18,
-      "global_index": 94,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
+      "column": 1,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "言我有世尊如来今者所",
       "col_bbox": [
-        127,
-        157,
-        152,
-        711
+        549.1949999999999,
+        165.76,
+        642.067,
+        1342.3600000000001
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "尊",
       "bbox": [
-        127.0,
-        687.0,
-        152.0,
-        711.0
+        562.0,
+        638.0,
+        642.0,
+        779.0
       ],
-      "column": 6,
-      "row": 19,
-      "global_index": 95,
-      "col_text": "义利我从昔来所得慧眼未曾闻说如是之经世尊",
+      "column": 1,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "言我有世尊如来今者所",
       "col_bbox": [
-        127,
-        157,
-        152,
-        711
+        549.1949999999999,
+        165.76,
+        642.067,
+        1342.3600000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        549.0,
+        779.0,
+        634.0,
+        866.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "言我有世尊如来今者所",
+      "col_bbox": [
+        549.1949999999999,
+        165.76,
+        642.067,
+        1342.3600000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        551.0,
+        866.0,
+        638.0,
+        1014.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "言我有世尊如来今者所",
+      "col_bbox": [
+        549.1949999999999,
+        165.76,
+        642.067,
+        1342.3600000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "今",
+      "bbox": [
+        549.0,
+        1014.0,
+        642.0,
+        1137.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "言我有世尊如来今者所",
+      "col_bbox": [
+        549.1949999999999,
+        165.76,
+        642.067,
+        1342.3600000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        552.0,
+        1137.0,
+        622.0,
+        1208.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "言我有世尊如来今者所",
+      "col_bbox": [
+        549.1949999999999,
+        165.76,
+        642.067,
+        1342.3600000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        549.0,
+        1206.0,
+        642.0,
+        1359.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 19,
+      "col_text": "言我有世尊如来今者所",
+      "col_bbox": [
+        549.1949999999999,
+        165.76,
+        642.067,
+        1342.3600000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "说",
+      "bbox": [
+        432.0,
+        145.0,
+        528.0,
+        272.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 20,
+      "col_text": "说此经为家上乘者作诸",
+      "col_bbox": [
+        432.212,
+        162.8,
+        528.656,
+        1348.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        449.0,
+        272.0,
+        528.0,
+        370.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 21,
+      "col_text": "说此经为家上乘者作诸",
+      "col_bbox": [
+        432.212,
+        162.8,
+        528.656,
+        1348.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        444.0,
+        370.0,
+        527.0,
+        501.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 22,
+      "col_text": "说此经为家上乘者作诸",
+      "col_bbox": [
+        432.212,
+        162.8,
+        528.656,
+        1348.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        439.0,
+        499.0,
+        525.0,
+        602.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 23,
+      "col_text": "说此经为家上乘者作诸",
+      "col_bbox": [
+        432.212,
+        162.8,
+        528.656,
+        1348.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "家",
+      "bbox": [
+        449.0,
+        602.0,
+        528.0,
+        746.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 24,
+      "col_text": "说此经为家上乘者作诸",
+      "col_bbox": [
+        432.212,
+        162.8,
+        528.656,
+        1348.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "上",
+      "bbox": [
+        457.0,
+        746.0,
+        521.0,
+        857.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 25,
+      "col_text": "说此经为家上乘者作诸",
+      "col_bbox": [
+        432.212,
+        162.8,
+        528.656,
+        1348.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乘",
+      "bbox": [
+        444.0,
+        857.0,
+        519.0,
+        985.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 26,
+      "col_text": "说此经为家上乘者作诸",
+      "col_bbox": [
+        432.212,
+        162.8,
+        528.656,
+        1348.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        432.0,
+        985.0,
+        523.0,
+        1130.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 27,
+      "col_text": "说此经为家上乘者作诸",
+      "col_bbox": [
+        432.212,
+        162.8,
+        528.656,
+        1348.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "作",
+      "bbox": [
+        446.0,
+        1130.0,
+        524.0,
+        1231.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 28,
+      "col_text": "说此经为家上乘者作诸",
+      "col_bbox": [
+        432.212,
+        162.8,
+        528.656,
+        1348.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诸",
+      "bbox": [
+        432.0,
+        1231.0,
+        528.0,
+        1365.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 29,
+      "col_text": "说此经为家上乘者作诸",
+      "col_bbox": [
+        432.212,
+        162.8,
+        528.656,
+        1348.28
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "義",
+      "bbox": [
+        325.0,
+        144.0,
+        416.0,
+        292.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "義利我經昔來所得慧眼",
+      "col_bbox": [
+        325.05199999999996,
+        161.32,
+        416.13800000000003,
+        1343.8400000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "利",
+      "bbox": [
+        336.0,
+        292.0,
+        405.0,
+        397.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "義利我經昔來所得慧眼",
+      "col_bbox": [
+        325.05199999999996,
+        161.32,
+        416.13800000000003,
+        1343.8400000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        332.0,
+        397.0,
+        416.0,
+        517.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "義利我經昔來所得慧眼",
+      "col_bbox": [
+        325.05199999999996,
+        161.32,
+        416.13800000000003,
+        1343.8400000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "經",
+      "bbox": [
+        341.0,
+        517.0,
+        409.0,
+        620.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "義利我經昔來所得慧眼",
+      "col_bbox": [
+        325.05199999999996,
+        161.32,
+        416.13800000000003,
+        1343.8400000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "昔",
+      "bbox": [
+        328.0,
+        620.0,
+        415.0,
+        745.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "義利我經昔來所得慧眼",
+      "col_bbox": [
+        325.05199999999996,
+        161.32,
+        416.13800000000003,
+        1343.8400000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "來",
+      "bbox": [
+        345.0,
+        745.0,
+        416.0,
+        885.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "義利我經昔來所得慧眼",
+      "col_bbox": [
+        325.05199999999996,
+        161.32,
+        416.13800000000003,
+        1343.8400000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        325.0,
+        885.0,
+        416.0,
+        976.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "義利我經昔來所得慧眼",
+      "col_bbox": [
+        325.05199999999996,
+        161.32,
+        416.13800000000003,
+        1343.8400000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        335.0,
+        976.0,
+        411.0,
+        1090.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "義利我經昔來所得慧眼",
+      "col_bbox": [
+        325.05199999999996,
+        161.32,
+        416.13800000000003,
+        1343.8400000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "慧",
+      "bbox": [
+        331.0,
+        1088.0,
+        416.0,
+        1254.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "義利我經昔來所得慧眼",
+      "col_bbox": [
+        325.05199999999996,
+        161.32,
+        416.13800000000003,
+        1343.8400000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "眼",
+      "bbox": [
+        325.0,
+        1254.0,
+        416.0,
+        1360.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "義利我經昔來所得慧眼",
+      "col_bbox": [
+        325.05199999999996,
+        161.32,
+        416.13800000000003,
+        1343.8400000000001
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "未",
+      "bbox": [
+        208.0,
+        141.0,
+        304.0,
+        260.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 40,
+      "col_text": "未曾聞說如是之經世尊",
+      "col_bbox": [
+        208.06900000000002,
+        158.35999999999999,
+        304.51300000000003,
+        1345.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "曾",
+      "bbox": [
+        221.0,
+        258.0,
+        289.0,
+        427.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 41,
+      "col_text": "未曾聞說如是之經世尊",
+      "col_bbox": [
+        208.06900000000002,
+        158.35999999999999,
+        304.51300000000003,
+        1345.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "聞",
+      "bbox": [
+        219.0,
+        427.0,
+        297.0,
+        541.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 42,
+      "col_text": "未曾聞說如是之經世尊",
+      "col_bbox": [
+        208.06900000000002,
+        158.35999999999999,
+        304.51300000000003,
+        1345.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "說",
+      "bbox": [
+        208.0,
+        541.0,
+        304.0,
+        665.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 43,
+      "col_text": "未曾聞說如是之經世尊",
+      "col_bbox": [
+        208.06900000000002,
+        158.35999999999999,
+        304.51300000000003,
+        1345.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        212.0,
+        665.0,
+        301.0,
+        747.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 44,
+      "col_text": "未曾聞說如是之經世尊",
+      "col_bbox": [
+        208.06900000000002,
+        158.35999999999999,
+        304.51300000000003,
+        1345.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        208.0,
+        747.0,
+        304.0,
+        898.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 45,
+      "col_text": "未曾聞說如是之經世尊",
+      "col_bbox": [
+        208.06900000000002,
+        158.35999999999999,
+        304.51300000000003,
+        1345.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        222.0,
+        898.0,
+        287.0,
+        982.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 46,
+      "col_text": "未曾聞說如是之經世尊",
+      "col_bbox": [
+        208.06900000000002,
+        158.35999999999999,
+        304.51300000000003,
+        1345.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "經",
+      "bbox": [
+        208.0,
+        982.0,
+        294.0,
+        1102.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 47,
+      "col_text": "未曾聞說如是之經世尊",
+      "col_bbox": [
+        208.06900000000002,
+        158.35999999999999,
+        304.51300000000003,
+        1345.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        208.0,
+        1100.0,
+        298.0,
+        1209.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 48,
+      "col_text": "未曾聞說如是之經世尊",
+      "col_bbox": [
+        208.06900000000002,
+        158.35999999999999,
+        304.51300000000003,
+        1345.32
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        208.0,
+        1209.0,
+        304.0,
+        1362.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 49,
+      "col_text": "未曾聞說如是之經世尊",
+      "col_bbox": [
+        208.06900000000002,
+        158.35999999999999,
+        304.51300000000003,
+        1345.32
       ],
       "split_method": "pixel_projection"
     }
   ],
-  "column_count": 7,
-  "total_chars": 96,
-  "timestamp": "2026-05-02T23:10:50.390848"
+  "column_count": 5,
+  "total_chars": 50,
+  "timestamp": "2026-05-05T21:21:46.926272"
 }

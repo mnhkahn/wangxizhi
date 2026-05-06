@@ -6,221 +6,221 @@
     "channels": 3,
     "dtype": "uint8"
   },
-  "recognized_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱国赐紫金鱼袋路群百千劫内十二部中我四知見衡奴寄嘉翰林待講子士翰議郎守谏議大夫上柱國賜紫金袋路摩百千劫尚十二部我四",
+  "recognized_text": "知見信解國奴寄言翰林侍講學士朝議郎守谏議大夫上柱國賜紫金魚袋路羣百千劫肉十二部中我四",
   "parsed_results": [
     {
       "text": "96",
       "bbox": [
-        831,
-        1409,
-        857,
-        1431
+        833.1690000000001,
+        1408.96,
+        854.601,
+        1426.72
       ],
       "poly": [
         [
-          831,
-          1409
+          833.1690000000001,
+          1408.96
         ],
         [
-          857,
-          1409
+          854.601,
+          1408.96
         ],
         [
-          857,
-          1431
+          854.601,
+          1426.72
         ],
         [
-          831,
-          1431
+          833.1690000000001,
+          1426.72
         ]
       ]
     },
     {
-      "text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
+      "text": "知見信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
       "bbox": [
-        702,
-        122,
-        733,
-        813
+        703.6840000000001,
+        121.36,
+        731.367,
+        815.48
       ],
       "poly": [
         [
-          702,
-          122
+          703.6840000000001,
+          121.36
         ],
         [
-          733,
-          122
+          731.367,
+          121.36
         ],
         [
-          733,
-          813
+          731.367,
+          815.48
         ],
         [
-          702,
-          813
+          703.6840000000001,
+          815.48
         ]
       ]
     },
     {
       "text": "国赐紫金鱼袋路群百千劫内十二部中我四",
       "bbox": [
-        670,
-        123,
-        696,
-        626
+        669.75,
+        121.36,
+        693.861,
+        627.52
       ],
       "poly": [
         [
-          670,
-          123
+          669.75,
+          121.36
         ],
         [
-          696,
-          123
+          693.861,
+          121.36
         ],
         [
-          696,
-          626
+          693.861,
+          627.52
         ],
         [
-          670,
-          626
+          669.75,
+          627.52
         ]
       ]
     },
     {
-      "text": "知見衡奴寄嘉",
+      "text": "知見信解國奴寄言",
       "bbox": [
-        550,
-        117,
-        667,
-        1073
+        564.376,
+        131.72,
+        658.141,
+        1061.1599999999999
       ],
       "poly": [
         [
-          550,
-          117
+          564.376,
+          131.72
         ],
         [
-          667,
-          117
+          658.141,
+          131.72
         ],
         [
-          667,
-          1073
+          658.141,
+          1061.1599999999999
         ],
         [
-          550,
-          1073
+          564.376,
+          1061.1599999999999
         ]
       ]
     },
     {
-      "text": "翰林 待講子士翰議",
+      "text": "翰林侍講學士朝議",
       "bbox": [
-        434,
-        353,
-        557,
-        1309
+        437.57,
+        356.68,
+        551.874,
+        1306.84
       ],
       "poly": [
         [
-          434,
-          353
+          437.57,
+          356.68
         ],
         [
-          557,
-          353
+          551.874,
+          356.68
         ],
         [
-          557,
-          1309
+          551.874,
+          1306.84
         ],
         [
-          434,
-          1309
+          437.57,
+          1306.84
         ]
       ]
     },
     {
       "text": "郎守谏議大夫上柱",
       "bbox": [
-        325,
-        356,
-        441,
-        1312
+        331.303,
+        356.68,
+        437.57,
+        1306.84
       ],
       "poly": [
         [
-          325,
-          356
+          331.303,
+          356.68
         ],
         [
-          441,
-          356
+          437.57,
+          356.68
         ],
         [
-          441,
-          1312
+          437.57,
+          1306.84
         ],
         [
-          325,
-          1312
+          331.303,
+          1306.84
         ]
       ]
     },
     {
-      "text": "國賜紫金袋路摩",
+      "text": "國賜紫金魚袋路羣",
       "bbox": [
-        217,
-        361,
-        316,
-        1301
+        216.106,
+        362.59999999999997,
+        312.54999999999995,
+        1297.96
       ],
       "poly": [
         [
-          217,
-          361
+          216.106,
+          362.59999999999997
         ],
         [
-          316,
-          361
+          312.54999999999995,
+          362.59999999999997
         ],
         [
-          316,
-          1301
+          312.54999999999995,
+          1297.96
         ],
         [
-          217,
-          1301
+          216.106,
+          1297.96
         ]
       ]
     },
     {
-      "text": "百千劫尚十二部我四",
+      "text": "百千劫肉十二部中我四",
       "bbox": [
-        99,
-        138,
-        210,
-        1312
+        105.374,
+        131.72,
+        201.818,
+        1309.8
       ],
       "poly": [
         [
-          99,
-          138
+          105.374,
+          131.72
         ],
         [
-          210,
-          138
+          201.818,
+          131.72
         ],
         [
-          210,
-          1312
+          201.818,
+          1309.8
         ],
         [
-          99,
-          1312
+          105.374,
+          1309.8
         ]
       ]
     }
@@ -229,1605 +229,845 @@
     {
       "char": "知",
       "bbox": [
-        702.0,
-        122.0,
-        733.0,
-        149.0
+        564.0,
+        114.0,
+        658.0,
+        207.0
       ],
-      "column": 1,
+      "column": 0,
       "row": 0,
       "global_index": 0,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
+      "col_text": "知見信解國奴寄言",
       "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "见",
-      "bbox": [
-        702.0,
-        149.0,
-        733.0,
-        176.0
-      ],
-      "column": 1,
-      "row": 1,
-      "global_index": 1,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "信",
-      "bbox": [
-        702.0,
-        176.0,
-        733.0,
-        202.0
-      ],
-      "column": 1,
-      "row": 2,
-      "global_index": 2,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "解",
-      "bbox": [
-        702.0,
-        202.0,
-        733.0,
-        229.0
-      ],
-      "column": 1,
-      "row": 3,
-      "global_index": 3,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "因",
-      "bbox": [
-        702.0,
-        229.0,
-        733.0,
-        257.0
-      ],
-      "column": 1,
-      "row": 4,
-      "global_index": 4,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "文",
-      "bbox": [
-        702.0,
-        257.0,
-        733.0,
-        286.0
-      ],
-      "column": 1,
-      "row": 5,
-      "global_index": 5,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "寄",
-      "bbox": [
-        702.0,
-        286.0,
-        733.0,
-        322.0
-      ],
-      "column": 1,
-      "row": 6,
-      "global_index": 6,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "言",
-      "bbox": [
-        702.0,
-        322.0,
-        733.0,
-        344.0
-      ],
-      "column": 1,
-      "row": 7,
-      "global_index": 7,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "翰",
-      "bbox": [
-        702.0,
-        344.0,
-        733.0,
-        388.0
-      ],
-      "column": 1,
-      "row": 8,
-      "global_index": 8,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "林",
-      "bbox": [
-        702.0,
-        388.0,
-        733.0,
-        414.0
-      ],
-      "column": 1,
-      "row": 9,
-      "global_index": 9,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "侍",
-      "bbox": [
-        702.0,
-        414.0,
-        733.0,
-        441.0
-      ],
-      "column": 1,
-      "row": 10,
-      "global_index": 10,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "讲",
-      "bbox": [
-        702.0,
-        441.0,
-        733.0,
-        468.0
-      ],
-      "column": 1,
-      "row": 11,
-      "global_index": 11,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "学",
-      "bbox": [
-        702.0,
-        468.0,
-        733.0,
-        496.0
-      ],
-      "column": 1,
-      "row": 12,
-      "global_index": 12,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "士",
-      "bbox": [
-        702.0,
-        496.0,
-        733.0,
-        522.0
-      ],
-      "column": 1,
-      "row": 13,
-      "global_index": 13,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "朝",
-      "bbox": [
-        702.0,
-        522.0,
-        733.0,
-        549.0
-      ],
-      "column": 1,
-      "row": 14,
-      "global_index": 14,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "议",
-      "bbox": [
-        702.0,
-        549.0,
-        733.0,
-        585.0
-      ],
-      "column": 1,
-      "row": 15,
-      "global_index": 15,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "郎",
-      "bbox": [
-        702.0,
-        585.0,
-        733.0,
-        605.0
-      ],
-      "column": 1,
-      "row": 16,
-      "global_index": 16,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "守",
-      "bbox": [
-        702.0,
-        605.0,
-        733.0,
-        646.0
-      ],
-      "column": 1,
-      "row": 17,
-      "global_index": 17,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "谏",
-      "bbox": [
-        702.0,
-        646.0,
-        733.0,
-        676.0
-      ],
-      "column": 1,
-      "row": 18,
-      "global_index": 18,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "议",
-      "bbox": [
-        702.0,
-        676.0,
-        733.0,
-        704.0
-      ],
-      "column": 1,
-      "row": 19,
-      "global_index": 19,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "大",
-      "bbox": [
-        702.0,
-        704.0,
-        733.0,
-        733.0
-      ],
-      "column": 1,
-      "row": 20,
-      "global_index": 20,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "夫",
-      "bbox": [
-        702.0,
-        733.0,
-        733.0,
-        761.0
-      ],
-      "column": 1,
-      "row": 21,
-      "global_index": 21,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "上",
-      "bbox": [
-        702.0,
-        761.0,
-        733.0,
-        787.0
-      ],
-      "column": 1,
-      "row": 22,
-      "global_index": 22,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "柱",
-      "bbox": [
-        702.0,
-        787.0,
-        733.0,
-        813.0
-      ],
-      "column": 1,
-      "row": 23,
-      "global_index": 23,
-      "col_text": "知见信解因文寄言翰林侍讲学士朝议郎守谏议大夫上柱",
-      "col_bbox": [
-        702,
-        122,
-        733,
-        813
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "国",
-      "bbox": [
-        670.0,
-        123.0,
-        696.0,
-        149.0
-      ],
-      "column": 2,
-      "row": 0,
-      "global_index": 24,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "赐",
-      "bbox": [
-        670.0,
-        149.0,
-        696.0,
-        177.0
-      ],
-      "column": 2,
-      "row": 1,
-      "global_index": 25,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "紫",
-      "bbox": [
-        670.0,
-        177.0,
-        696.0,
-        204.0
-      ],
-      "column": 2,
-      "row": 2,
-      "global_index": 26,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "金",
-      "bbox": [
-        670.0,
-        204.0,
-        696.0,
-        231.0
-      ],
-      "column": 2,
-      "row": 3,
-      "global_index": 27,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "鱼",
-      "bbox": [
-        670.0,
-        231.0,
-        696.0,
-        257.0
-      ],
-      "column": 2,
-      "row": 4,
-      "global_index": 28,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "袋",
-      "bbox": [
-        670.0,
-        257.0,
-        696.0,
-        283.0
-      ],
-      "column": 2,
-      "row": 5,
-      "global_index": 29,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "路",
-      "bbox": [
-        670.0,
-        283.0,
-        696.0,
-        310.0
-      ],
-      "column": 2,
-      "row": 6,
-      "global_index": 30,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "群",
-      "bbox": [
-        670.0,
-        310.0,
-        696.0,
-        338.0
-      ],
-      "column": 2,
-      "row": 7,
-      "global_index": 31,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "百",
-      "bbox": [
-        670.0,
-        338.0,
-        696.0,
-        373.0
-      ],
-      "column": 2,
-      "row": 8,
-      "global_index": 32,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "千",
-      "bbox": [
-        670.0,
-        373.0,
-        696.0,
-        406.0
-      ],
-      "column": 2,
-      "row": 9,
-      "global_index": 33,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "劫",
-      "bbox": [
-        670.0,
-        406.0,
-        696.0,
-        437.0
-      ],
-      "column": 2,
-      "row": 10,
-      "global_index": 34,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "内",
-      "bbox": [
-        670.0,
-        437.0,
-        696.0,
-        465.0
-      ],
-      "column": 2,
-      "row": 11,
-      "global_index": 35,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "十",
-      "bbox": [
-        670.0,
-        465.0,
-        696.0,
-        493.0
-      ],
-      "column": 2,
-      "row": 12,
-      "global_index": 36,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "二",
-      "bbox": [
-        670.0,
-        493.0,
-        696.0,
-        521.0
-      ],
-      "column": 2,
-      "row": 13,
-      "global_index": 37,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "部",
-      "bbox": [
-        670.0,
-        521.0,
-        696.0,
-        549.0
-      ],
-      "column": 2,
-      "row": 14,
-      "global_index": 38,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "中",
-      "bbox": [
-        670.0,
-        549.0,
-        696.0,
-        576.0
-      ],
-      "column": 2,
-      "row": 15,
-      "global_index": 39,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "我",
-      "bbox": [
-        670.0,
-        576.0,
-        696.0,
-        603.0
-      ],
-      "column": 2,
-      "row": 16,
-      "global_index": 40,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "四",
-      "bbox": [
-        670.0,
-        603.0,
-        696.0,
-        626.0
-      ],
-      "column": 2,
-      "row": 17,
-      "global_index": 41,
-      "col_text": "国赐紫金鱼袋路群百千劫内十二部中我四",
-      "col_bbox": [
-        670,
-        123,
-        696,
-        626
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "知",
-      "bbox": [
-        550.0,
-        117.0,
-        667.0,
-        293.0
-      ],
-      "column": 3,
-      "row": 0,
-      "global_index": 42,
-      "col_text": "知見衡奴寄嘉",
-      "col_bbox": [
-        550,
-        117,
-        667,
-        1073
+        564.376,
+        131.72,
+        658.141,
+        1061.1599999999999
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "見",
       "bbox": [
-        550.0,
-        293.0,
-        667.0,
-        388.0
+        565.0,
+        207.0,
+        658.0,
+        347.0
       ],
-      "column": 3,
+      "column": 0,
       "row": 1,
-      "global_index": 43,
-      "col_text": "知見衡奴寄嘉",
+      "global_index": 1,
+      "col_text": "知見信解國奴寄言",
       "col_bbox": [
-        550,
-        117,
-        667,
-        1073
+        564.376,
+        131.72,
+        658.141,
+        1061.1599999999999
       ],
       "split_method": "pixel_projection"
     },
     {
-      "char": "衡",
+      "char": "信",
       "bbox": [
-        550.0,
-        388.0,
-        667.0,
-        548.0
+        575.0,
+        345.0,
+        658.0,
+        456.0
       ],
-      "column": 3,
+      "column": 0,
       "row": 2,
-      "global_index": 44,
-      "col_text": "知見衡奴寄嘉",
+      "global_index": 2,
+      "col_text": "知見信解國奴寄言",
       "col_bbox": [
-        550,
-        117,
-        667,
-        1073
+        564.376,
+        131.72,
+        658.141,
+        1061.1599999999999
       ],
       "split_method": "pixel_projection"
     },
     {
-      "char": "奴",
+      "char": "解",
       "bbox": [
-        550.0,
-        548.0,
-        667.0,
-        779.0
+        564.0,
+        456.0,
+        656.0,
+        585.0
       ],
-      "column": 3,
+      "column": 0,
       "row": 3,
-      "global_index": 45,
-      "col_text": "知見衡奴寄嘉",
+      "global_index": 3,
+      "col_text": "知見信解國奴寄言",
       "col_bbox": [
-        550,
-        117,
-        667,
-        1073
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "寄",
-      "bbox": [
-        550.0,
-        779.0,
-        667.0,
-        869.0
-      ],
-      "column": 3,
-      "row": 4,
-      "global_index": 46,
-      "col_text": "知見衡奴寄嘉",
-      "col_bbox": [
-        550,
-        117,
-        667,
-        1073
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "嘉",
-      "bbox": [
-        550.0,
-        869.0,
-        667.0,
-        1073.0
-      ],
-      "column": 3,
-      "row": 5,
-      "global_index": 47,
-      "col_text": "知見衡奴寄嘉",
-      "col_bbox": [
-        550,
-        117,
-        667,
-        1073
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "翰",
-      "bbox": [
-        434.0,
-        353.0,
-        557.0,
-        450.0
-      ],
-      "column": 4,
-      "row": 0,
-      "global_index": 48,
-      "col_text": "翰林 待講子士翰議",
-      "col_bbox": [
-        434,
-        353,
-        557,
-        1309
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "林",
-      "bbox": [
-        434.0,
-        450.0,
-        557.0,
-        551.0
-      ],
-      "column": 4,
-      "row": 1,
-      "global_index": 49,
-      "col_text": "翰林 待講子士翰議",
-      "col_bbox": [
-        434,
-        353,
-        557,
-        1309
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "待",
-      "bbox": [
-        434.0,
-        676.0,
-        557.0,
-        788.0
-      ],
-      "column": 4,
-      "row": 3,
-      "global_index": 50,
-      "col_text": "翰林 待講子士翰議",
-      "col_bbox": [
-        434,
-        353,
-        557,
-        1309
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "講",
-      "bbox": [
-        434.0,
-        788.0,
-        557.0,
-        909.0
-      ],
-      "column": 4,
-      "row": 4,
-      "global_index": 51,
-      "col_text": "翰林 待講子士翰議",
-      "col_bbox": [
-        434,
-        353,
-        557,
-        1309
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "子",
-      "bbox": [
-        434.0,
-        909.0,
-        557.0,
-        1020.0
-      ],
-      "column": 4,
-      "row": 5,
-      "global_index": 52,
-      "col_text": "翰林 待講子士翰議",
-      "col_bbox": [
-        434,
-        353,
-        557,
-        1309
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "士",
-      "bbox": [
-        434.0,
-        1020.0,
-        557.0,
-        1100.0
-      ],
-      "column": 4,
-      "row": 6,
-      "global_index": 53,
-      "col_text": "翰林 待講子士翰議",
-      "col_bbox": [
-        434,
-        353,
-        557,
-        1309
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "翰",
-      "bbox": [
-        434.0,
-        1100.0,
-        557.0,
-        1232.0
-      ],
-      "column": 4,
-      "row": 7,
-      "global_index": 54,
-      "col_text": "翰林 待講子士翰議",
-      "col_bbox": [
-        434,
-        353,
-        557,
-        1309
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "議",
-      "bbox": [
-        434.0,
-        1232.0,
-        557.0,
-        1309.0
-      ],
-      "column": 4,
-      "row": 8,
-      "global_index": 55,
-      "col_text": "翰林 待講子士翰議",
-      "col_bbox": [
-        434,
-        353,
-        557,
-        1309
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "郎",
-      "bbox": [
-        325.0,
-        356.0,
-        441.0,
-        447.0
-      ],
-      "column": 5,
-      "row": 0,
-      "global_index": 56,
-      "col_text": "郎守谏議大夫上柱",
-      "col_bbox": [
-        325,
-        356,
-        441,
-        1312
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "守",
-      "bbox": [
-        325.0,
-        447.0,
-        441.0,
-        560.0
-      ],
-      "column": 5,
-      "row": 1,
-      "global_index": 57,
-      "col_text": "郎守谏議大夫上柱",
-      "col_bbox": [
-        325,
-        356,
-        441,
-        1312
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "谏",
-      "bbox": [
-        325.0,
-        560.0,
-        441.0,
-        698.0
-      ],
-      "column": 5,
-      "row": 2,
-      "global_index": 58,
-      "col_text": "郎守谏議大夫上柱",
-      "col_bbox": [
-        325,
-        356,
-        441,
-        1312
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "議",
-      "bbox": [
-        325.0,
-        698.0,
-        441.0,
-        800.0
-      ],
-      "column": 5,
-      "row": 3,
-      "global_index": 59,
-      "col_text": "郎守谏議大夫上柱",
-      "col_bbox": [
-        325,
-        356,
-        441,
-        1312
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "大",
-      "bbox": [
-        325.0,
-        800.0,
-        441.0,
-        921.0
-      ],
-      "column": 5,
-      "row": 4,
-      "global_index": 60,
-      "col_text": "郎守谏議大夫上柱",
-      "col_bbox": [
-        325,
-        356,
-        441,
-        1312
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "夫",
-      "bbox": [
-        325.0,
-        921.0,
-        441.0,
-        1068.0
-      ],
-      "column": 5,
-      "row": 5,
-      "global_index": 61,
-      "col_text": "郎守谏議大夫上柱",
-      "col_bbox": [
-        325,
-        356,
-        441,
-        1312
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "上",
-      "bbox": [
-        325.0,
-        1068.0,
-        441.0,
-        1174.0
-      ],
-      "column": 5,
-      "row": 6,
-      "global_index": 62,
-      "col_text": "郎守谏議大夫上柱",
-      "col_bbox": [
-        325,
-        356,
-        441,
-        1312
-      ],
-      "split_method": "pixel_projection"
-    },
-    {
-      "char": "柱",
-      "bbox": [
-        325.0,
-        1174.0,
-        441.0,
-        1312.0
-      ],
-      "column": 5,
-      "row": 7,
-      "global_index": 63,
-      "col_text": "郎守谏議大夫上柱",
-      "col_bbox": [
-        325,
-        356,
-        441,
-        1312
+        564.376,
+        131.72,
+        658.141,
+        1061.1599999999999
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "國",
       "bbox": [
-        217.0,
-        361.0,
-        316.0,
-        534.0
+        570.0,
+        585.0,
+        658.0,
+        716.0
       ],
-      "column": 6,
-      "row": 0,
-      "global_index": 64,
-      "col_text": "國賜紫金袋路摩",
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "知見信解國奴寄言",
       "col_bbox": [
-        217,
-        361,
-        316,
-        1301
+        564.376,
+        131.72,
+        658.141,
+        1061.1599999999999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "奴",
+      "bbox": [
+        564.0,
+        716.0,
+        658.0,
+        829.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "知見信解國奴寄言",
+      "col_bbox": [
+        564.376,
+        131.72,
+        658.141,
+        1061.1599999999999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "寄",
+      "bbox": [
+        574.0,
+        829.0,
+        658.0,
+        955.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "知見信解國奴寄言",
+      "col_bbox": [
+        564.376,
+        131.72,
+        658.141,
+        1061.1599999999999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "言",
+      "bbox": [
+        568.0,
+        955.0,
+        658.0,
+        1078.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "知見信解國奴寄言",
+      "col_bbox": [
+        564.376,
+        131.72,
+        658.141,
+        1061.1599999999999
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "翰",
+      "bbox": [
+        440.0,
+        339.0,
+        545.0,
+        458.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 8,
+      "col_text": "翰林侍講學士朝議",
+      "col_bbox": [
+        437.57,
+        356.68,
+        551.874,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "林",
+      "bbox": [
+        443.0,
+        456.0,
+        543.0,
+        615.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 9,
+      "col_text": "翰林侍講學士朝議",
+      "col_bbox": [
+        437.57,
+        356.68,
+        551.874,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "侍",
+      "bbox": [
+        453.0,
+        615.0,
+        551.0,
+        696.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 10,
+      "col_text": "翰林侍講學士朝議",
+      "col_bbox": [
+        437.57,
+        356.68,
+        551.874,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "講",
+      "bbox": [
+        444.0,
+        694.0,
+        551.0,
+        815.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 11,
+      "col_text": "翰林侍講學士朝議",
+      "col_bbox": [
+        437.57,
+        356.68,
+        551.874,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "學",
+      "bbox": [
+        455.0,
+        813.0,
+        551.0,
+        933.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 12,
+      "col_text": "翰林侍講學士朝議",
+      "col_bbox": [
+        437.57,
+        356.68,
+        551.874,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "士",
+      "bbox": [
+        449.0,
+        931.0,
+        537.0,
+        1051.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 13,
+      "col_text": "翰林侍講學士朝議",
+      "col_bbox": [
+        437.57,
+        356.68,
+        551.874,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "朝",
+      "bbox": [
+        449.0,
+        1051.0,
+        541.0,
+        1187.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 14,
+      "col_text": "翰林侍講學士朝議",
+      "col_bbox": [
+        437.57,
+        356.68,
+        551.874,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "議",
+      "bbox": [
+        437.0,
+        1187.0,
+        551.0,
+        1323.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 15,
+      "col_text": "翰林侍講學士朝議",
+      "col_bbox": [
+        437.57,
+        356.68,
+        551.874,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "郎",
+      "bbox": [
+        331.0,
+        339.0,
+        437.0,
+        482.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 16,
+      "col_text": "郎守谏議大夫上柱",
+      "col_bbox": [
+        331.303,
+        356.68,
+        437.57,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "守",
+      "bbox": [
+        347.0,
+        482.0,
+        437.0,
+        611.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 17,
+      "col_text": "郎守谏議大夫上柱",
+      "col_bbox": [
+        331.303,
+        356.68,
+        437.57,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "谏",
+      "bbox": [
+        331.0,
+        611.0,
+        437.0,
+        729.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 18,
+      "col_text": "郎守谏議大夫上柱",
+      "col_bbox": [
+        331.303,
+        356.68,
+        437.57,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "議",
+      "bbox": [
+        331.0,
+        729.0,
+        431.0,
+        864.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 19,
+      "col_text": "郎守谏議大夫上柱",
+      "col_bbox": [
+        331.303,
+        356.68,
+        437.57,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        331.0,
+        863.0,
+        428.0,
+        970.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 20,
+      "col_text": "郎守谏議大夫上柱",
+      "col_bbox": [
+        331.303,
+        356.68,
+        437.57,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "夫",
+      "bbox": [
+        353.0,
+        970.0,
+        434.0,
+        1098.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 21,
+      "col_text": "郎守谏議大夫上柱",
+      "col_bbox": [
+        331.303,
+        356.68,
+        437.57,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "上",
+      "bbox": [
+        356.0,
+        1098.0,
+        432.0,
+        1207.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 22,
+      "col_text": "郎守谏議大夫上柱",
+      "col_bbox": [
+        331.303,
+        356.68,
+        437.57,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "柱",
+      "bbox": [
+        331.0,
+        1207.0,
+        437.0,
+        1323.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 23,
+      "col_text": "郎守谏議大夫上柱",
+      "col_bbox": [
+        331.303,
+        356.68,
+        437.57,
+        1306.84
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "國",
+      "bbox": [
+        216.0,
+        345.0,
+        309.0,
+        462.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 24,
+      "col_text": "國賜紫金魚袋路羣",
+      "col_bbox": [
+        216.106,
+        362.59999999999997,
+        312.54999999999995,
+        1297.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "賜",
       "bbox": [
-        217.0,
-        534.0,
-        316.0,
-        663.0
+        216.0,
+        461.0,
+        310.0,
+        579.0
       ],
-      "column": 6,
+      "column": 3,
       "row": 1,
-      "global_index": 65,
-      "col_text": "國賜紫金袋路摩",
+      "global_index": 25,
+      "col_text": "國賜紫金魚袋路羣",
       "col_bbox": [
-        217,
-        361,
-        316,
-        1301
+        216.106,
+        362.59999999999997,
+        312.54999999999995,
+        1297.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "紫",
       "bbox": [
-        217.0,
-        663.0,
-        316.0,
-        773.0
+        216.0,
+        577.0,
+        311.0,
+        696.0
       ],
-      "column": 6,
+      "column": 3,
       "row": 2,
-      "global_index": 66,
-      "col_text": "國賜紫金袋路摩",
+      "global_index": 26,
+      "col_text": "國賜紫金魚袋路羣",
       "col_bbox": [
-        217,
-        361,
-        316,
-        1301
+        216.106,
+        362.59999999999997,
+        312.54999999999995,
+        1297.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "金",
       "bbox": [
-        217.0,
-        773.0,
-        316.0,
-        925.0
+        216.0,
+        694.0,
+        312.0,
+        813.0
       ],
-      "column": 6,
+      "column": 3,
       "row": 3,
-      "global_index": 67,
-      "col_text": "國賜紫金袋路摩",
+      "global_index": 27,
+      "col_text": "國賜紫金魚袋路羣",
       "col_bbox": [
-        217,
-        361,
-        316,
-        1301
+        216.106,
+        362.59999999999997,
+        312.54999999999995,
+        1297.96
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "魚",
+      "bbox": [
+        231.0,
+        811.0,
+        312.0,
+        930.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 28,
+      "col_text": "國賜紫金魚袋路羣",
+      "col_bbox": [
+        216.106,
+        362.59999999999997,
+        312.54999999999995,
+        1297.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "袋",
       "bbox": [
-        217.0,
-        925.0,
-        316.0,
-        1007.0
+        230.0,
+        928.0,
+        312.0,
+        1071.0
       ],
-      "column": 6,
-      "row": 4,
-      "global_index": 68,
-      "col_text": "國賜紫金袋路摩",
+      "column": 3,
+      "row": 5,
+      "global_index": 29,
+      "col_text": "國賜紫金魚袋路羣",
       "col_bbox": [
-        217,
-        361,
-        316,
-        1301
+        216.106,
+        362.59999999999997,
+        312.54999999999995,
+        1297.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "路",
       "bbox": [
-        217.0,
-        1007.0,
-        316.0,
-        1145.0
+        230.0,
+        1071.0,
+        307.0,
+        1180.0
       ],
-      "column": 6,
-      "row": 5,
-      "global_index": 69,
-      "col_text": "國賜紫金袋路摩",
+      "column": 3,
+      "row": 6,
+      "global_index": 30,
+      "col_text": "國賜紫金魚袋路羣",
       "col_bbox": [
-        217,
-        361,
-        316,
-        1301
+        216.106,
+        362.59999999999997,
+        312.54999999999995,
+        1297.96
       ],
       "split_method": "pixel_projection"
     },
     {
-      "char": "摩",
+      "char": "羣",
       "bbox": [
-        217.0,
-        1145.0,
-        316.0,
-        1301.0
+        223.0,
+        1179.0,
+        293.0,
+        1314.0
       ],
-      "column": 6,
-      "row": 6,
-      "global_index": 70,
-      "col_text": "國賜紫金袋路摩",
+      "column": 3,
+      "row": 7,
+      "global_index": 31,
+      "col_text": "國賜紫金魚袋路羣",
       "col_bbox": [
-        217,
-        361,
-        316,
-        1301
+        216.106,
+        362.59999999999997,
+        312.54999999999995,
+        1297.96
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "百",
       "bbox": [
-        99.0,
-        138.0,
-        210.0,
-        305.0
+        105.0,
+        114.0,
+        201.0,
+        248.0
       ],
-      "column": 7,
+      "column": 4,
       "row": 0,
-      "global_index": 71,
-      "col_text": "百千劫尚十二部我四",
+      "global_index": 32,
+      "col_text": "百千劫肉十二部中我四",
       "col_bbox": [
-        99,
-        138,
-        210,
-        1312
+        105.374,
+        131.72,
+        201.818,
+        1309.8
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "千",
       "bbox": [
-        99.0,
-        305.0,
-        210.0,
-        436.0
+        110.0,
+        246.0,
+        201.0,
+        380.0
       ],
-      "column": 7,
+      "column": 4,
       "row": 1,
-      "global_index": 72,
-      "col_text": "百千劫尚十二部我四",
+      "global_index": 33,
+      "col_text": "百千劫肉十二部中我四",
       "col_bbox": [
-        99,
-        138,
-        210,
-        1312
+        105.374,
+        131.72,
+        201.818,
+        1309.8
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "劫",
       "bbox": [
-        99.0,
-        436.0,
-        210.0,
-        549.0
+        105.0,
+        378.0,
+        201.0,
+        483.0
       ],
-      "column": 7,
+      "column": 4,
       "row": 2,
-      "global_index": 73,
-      "col_text": "百千劫尚十二部我四",
+      "global_index": 34,
+      "col_text": "百千劫肉十二部中我四",
       "col_bbox": [
-        99,
-        138,
-        210,
-        1312
+        105.374,
+        131.72,
+        201.818,
+        1309.8
       ],
       "split_method": "pixel_projection"
     },
     {
-      "char": "尚",
+      "char": "肉",
       "bbox": [
-        99.0,
-        549.0,
-        210.0,
-        644.0
+        118.0,
+        483.0,
+        200.0,
+        599.0
       ],
-      "column": 7,
+      "column": 4,
       "row": 3,
-      "global_index": 74,
-      "col_text": "百千劫尚十二部我四",
+      "global_index": 35,
+      "col_text": "百千劫肉十二部中我四",
       "col_bbox": [
-        99,
-        138,
-        210,
-        1312
+        105.374,
+        131.72,
+        201.818,
+        1309.8
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "十",
       "bbox": [
-        99.0,
-        644.0,
-        210.0,
-        759.0
+        112.0,
+        598.0,
+        191.0,
+        703.0
       ],
-      "column": 7,
+      "column": 4,
       "row": 4,
-      "global_index": 75,
-      "col_text": "百千劫尚十二部我四",
+      "global_index": 36,
+      "col_text": "百千劫肉十二部中我四",
       "col_bbox": [
-        99,
-        138,
-        210,
-        1312
+        105.374,
+        131.72,
+        201.818,
+        1309.8
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "二",
       "bbox": [
-        99.0,
-        759.0,
-        210.0,
-        883.0
+        115.0,
+        703.0,
+        193.0,
+        798.0
       ],
-      "column": 7,
+      "column": 4,
       "row": 5,
-      "global_index": 76,
-      "col_text": "百千劫尚十二部我四",
+      "global_index": 37,
+      "col_text": "百千劫肉十二部中我四",
       "col_bbox": [
-        99,
-        138,
-        210,
-        1312
+        105.374,
+        131.72,
+        201.818,
+        1309.8
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "部",
       "bbox": [
-        99.0,
-        883.0,
-        210.0,
-        1012.0
+        121.0,
+        797.0,
+        199.0,
+        957.0
       ],
-      "column": 7,
+      "column": 4,
       "row": 6,
-      "global_index": 77,
-      "col_text": "百千劫尚十二部我四",
+      "global_index": 38,
+      "col_text": "百千劫肉十二部中我四",
       "col_bbox": [
-        99,
-        138,
-        210,
-        1312
+        105.374,
+        131.72,
+        201.818,
+        1309.8
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        111.0,
+        957.0,
+        201.0,
+        1109.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 39,
+      "col_text": "百千劫肉十二部中我四",
+      "col_bbox": [
+        105.374,
+        131.72,
+        201.818,
+        1309.8
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "我",
       "bbox": [
-        99.0,
-        1012.0,
-        210.0,
-        1195.0
+        119.0,
+        1109.0,
+        192.0,
+        1238.0
       ],
-      "column": 7,
-      "row": 7,
-      "global_index": 78,
-      "col_text": "百千劫尚十二部我四",
+      "column": 4,
+      "row": 8,
+      "global_index": 40,
+      "col_text": "百千劫肉十二部中我四",
       "col_bbox": [
-        99,
-        138,
-        210,
-        1312
+        105.374,
+        131.72,
+        201.818,
+        1309.8
       ],
       "split_method": "pixel_projection"
     },
     {
       "char": "四",
       "bbox": [
-        99.0,
-        1195.0,
-        210.0,
-        1312.0
+        105.0,
+        1237.0,
+        201.0,
+        1326.0
       ],
-      "column": 7,
-      "row": 8,
-      "global_index": 79,
-      "col_text": "百千劫尚十二部我四",
+      "column": 4,
+      "row": 9,
+      "global_index": 41,
+      "col_text": "百千劫肉十二部中我四",
       "col_bbox": [
-        99,
-        138,
-        210,
-        1312
+        105.374,
+        131.72,
+        201.818,
+        1309.8
       ],
       "split_method": "pixel_projection"
     }
   ],
-  "column_count": 8,
-  "total_chars": 80,
-  "timestamp": "2026-05-02T23:12:30.640719"
+  "column_count": 5,
+  "total_chars": 42,
+  "timestamp": "2026-05-05T21:30:12.897133"
 }
