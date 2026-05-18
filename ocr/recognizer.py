@@ -654,23 +654,37 @@ class CalligraphyOCR:
         if not columns:
             return ([], []) if return_separated else columns
 
-        widths = [c["bbox"][2] - c["bbox"][0] for c in columns]
-        if len(widths) <= 1:
+        text_columns = [
+            c for c in columns
+            if self._has_chinese(c.get("text", ""))
+        ]
+        if not text_columns:
             if return_separated:
                 return columns, []
             return columns
 
+        widths = [c["bbox"][2] - c["bbox"][0] for c in text_columns]
+        if len(widths) <= 1:
+            if return_separated:
+                return text_columns, [c for c in columns if c not in text_columns]
+            return text_columns
+
         max_width = max(widths)
-        # 阈值：小于最大宽度的 50% 或小于 50px 视为释文
-        threshold = max(max_width * 0.5, 50)
+        # 阈值只按同页含汉字列计算。第 16 页这类低分辨率图片里，
+        # 主文列宽约 45-58px，固定 50px 会误伤真实主文。
+        threshold = max_width * 0.5
 
         main_cols = []
         anno_cols = []
         for col in columns:
+            text = col.get("text", "")
+            if not self._has_chinese(text):
+                anno_cols.append(col)
+                continue
+
             w = col["bbox"][2] - col["bbox"][0]
             if w < threshold:
                 if debug:
-                    text = col.get("text", "")
                     print(f"[FILTER_ANNO] 释文列(宽{w:.0f}px): '{text[:15]}...'")
                 anno_cols.append(col)
             else:
