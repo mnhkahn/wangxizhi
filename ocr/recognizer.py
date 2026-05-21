@@ -1002,6 +1002,7 @@ class CalligraphyOCR:
         fixed_bboxes = []
         for mb, ab in zip(main_bboxes, anno_bboxes):
             fixed = [mb[0], ab[1], mb[2], ab[3]]
+            fixed = splitter._balance_x_width_to_height(fixed, main_col["bbox"])
             fixed_bboxes.append(fixed)
 
         if debug:

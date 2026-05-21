@@ -421,6 +421,54 @@ class CharSplitter:
             score += np.mean(projection[start:end])
         return score
 
+    def _balance_x_width_to_height(
+        self,
+        bbox: List[float],
+        x_bounds: Optional[List[float]] = None,
+    ) -> List[float]:
+        """扩展 x 方向，使单字框宽度尽量接近高度。
+
+        只在给定列框范围内补宽，避免切到相邻列；若实际笔画已经比字高更宽，
+        则保留实际笔画宽度，不强行裁窄。
+        """
+        x1, y1, x2, y2 = [float(v) for v in bbox]
+        if x_bounds is None:
+            bound_x1, bound_x2 = x1, x2
+        else:
+            bound_x1 = float(x_bounds[0])
+            bound_x2 = float(x_bounds[2])
+
+        bound_width = bound_x2 - bound_x1
+        height = y2 - y1
+        if bound_width <= 0 or height <= 0:
+            return bbox
+
+        x1 = max(bound_x1, min(bound_x2, x1))
+        x2 = max(bound_x1, min(bound_x2, x2))
+        width = x2 - x1
+        if width <= 0:
+            return bbox
+
+        target_width = min(height, bound_width)
+        desired_width = min(bound_width, max(width, target_width))
+        if desired_width <= width:
+            return [float(x1), float(y1), float(x2), float(y2)]
+
+        center = (x1 + x2) / 2
+        new_x1 = center - desired_width / 2
+        new_x2 = center + desired_width / 2
+
+        if new_x1 < bound_x1:
+            new_x2 += bound_x1 - new_x1
+            new_x1 = bound_x1
+        if new_x2 > bound_x2:
+            new_x1 -= new_x2 - bound_x2
+            new_x2 = bound_x2
+
+        new_x1 = max(bound_x1, new_x1)
+        new_x2 = min(bound_x2, new_x2)
+        return [float(new_x1), float(y1), float(new_x2), float(y2)]
+
     def _shrink_x(
         self,
         image: np.ndarray,
@@ -468,7 +516,10 @@ class CharSplitter:
         new_x1 = max(x1, new_x1)
         new_x2 = min(x2, new_x2)
 
-        return [float(new_x1), float(y1), float(new_x2), float(y2)]
+        return self._balance_x_width_to_height(
+            [float(new_x1), float(y1), float(new_x2), float(y2)],
+            [float(x1), float(y1), float(x2), float(y2)],
+        )
 
 
 def split_column_to_chars(
