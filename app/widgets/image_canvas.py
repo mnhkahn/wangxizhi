@@ -416,6 +416,7 @@ class ImageCanvas(QGraphicsView):
         # 关闭 QGraphicsView 自带的拖拽模式，避免与 bbox 拖拽/缩放冲突。
         # 平移改用：鼠标中键拖拽。
         self.setDragMode(QGraphicsView.NoDrag)
+        self.setFocusPolicy(Qt.StrongFocus)
         self.setTransformationAnchor(QGraphicsView.AnchorUnderMouse)
         self.setResizeAnchor(QGraphicsView.AnchorUnderMouse)
         self.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
@@ -749,6 +750,9 @@ class ImageCanvas(QGraphicsView):
 
     def mousePressEvent(self, event):
         """鼠标按下事件"""
+        # 点击画布后由画布接收方向键，而不是停留在属性输入框中。
+        self.setFocus()
+
         # 平移：中键拖拽
         if event.button() == Qt.MiddleButton:
             self._start_pan(event)
@@ -889,6 +893,33 @@ class ImageCanvas(QGraphicsView):
             self.delete_selected_bboxes()
             event.accept()
             return
+
+        # 方向键按画面位置移动选中项：本项目的 column 从右向左编号，
+        # 因而视觉上的左箭头对应下一 column，右箭头对应上一 column。
+        direction = {
+            Qt.Key_Up: (0, -1),
+            Qt.Key_Down: (0, 1),
+            Qt.Key_Left: (1, 0),
+            Qt.Key_Right: (-1, 0),
+        }.get(event.key())
+        if direction and len(self.selected_items) == 1:
+            current_id = self.selected_items[0].item_id
+            current_position = self._column_row_map.get(current_id)
+            if current_position:
+                column, row = current_position
+                target = (column + direction[0], row + direction[1])
+                target_id = next(
+                    (
+                        item_id
+                        for item_id, position in self._column_row_map.items()
+                        if position == target
+                    ),
+                    None,
+                )
+                if target_id is not None:
+                    self.select_bbox(target_id)
+                event.accept()
+                return
         super().keyPressEvent(event)
 
     def get_cv_image(self) -> Optional[np.ndarray]:

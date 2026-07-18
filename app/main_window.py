@@ -2232,6 +2232,8 @@ class MainWindow(QMainWindow):
     def _on_char_selected(self, item_id: int):
         """字符列表选中"""
         self.image_canvas.select_bbox(item_id)
+        # 列表选中后把键盘交给画布，使方向键能继续按版面移动选中字。
+        self.image_canvas.setFocus()
 
         item = self.char_manager.get_item(item_id)
         if item:
