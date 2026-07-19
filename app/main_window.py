@@ -109,8 +109,12 @@ def export_glyphs_to_sqlite(sqlite_path: Path, items: list) -> int:
         conn.close()
 
 
-def export_all_glyphs_sqlite(project_root: Path, progress_cb=None):
-    """扫描所有字帖的 chars.json 并生成全量 glyphs.sqlite。
+def export_all_glyphs_sqlite(
+    project_root: Path, progress_cb=None, scope_work_dir: Optional[Path] = None
+):
+    """扫描字帖的 chars.json 并生成 glyphs.sqlite。
+
+    ``scope_work_dir`` 有值时只导出该字帖；否则导出项目内全部字帖。
 
     progress_cb(done:int, total:int, message:str) 可选。
     """
@@ -118,10 +122,16 @@ def export_all_glyphs_sqlite(project_root: Path, progress_cb=None):
     ocr_output = project_root / "ocr_output"
     ocr_output.mkdir(parents=True, exist_ok=True)
 
-    sqlite_path = ocr_output / "glyphs.sqlite"
+    sqlite_name = "glyphs.sqlite"
+    if scope_work_dir is not None:
+        sqlite_name = f"glyphs-{scope_work_dir.name}.sqlite"
+    sqlite_path = ocr_output / sqlite_name
 
     chars_paths = []
-    for work_dir in sorted([p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name):
+    work_dirs = [scope_work_dir] if scope_work_dir is not None else sorted(
+        [p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name
+    )
+    for work_dir in work_dirs:
         debug_dir = work_dir / ".debug"
         if not debug_dir.exists():
             continue
@@ -156,8 +166,12 @@ def export_all_glyphs_sqlite(project_root: Path, progress_cb=None):
     return str(sqlite_path), total
 
 
-def export_all_crops(project_root: Path, progress_cb=None):
-    """扫描所有字帖的 chars.json 并裁剪导出 webp 到 <字帖目录>/words/。
+def export_all_crops(
+    project_root: Path, progress_cb=None, scope_work_dir: Optional[Path] = None
+):
+    """扫描字帖的 chars.json 并裁剪导出 webp 到 <字帖目录>/words/。
+
+    ``scope_work_dir`` 有值时只导出该字帖；否则导出项目内全部字帖。
 
     progress_cb(done:int, total:int, message:str) 可选。
     """
@@ -172,7 +186,10 @@ def export_all_crops(project_root: Path, progress_cb=None):
         return name[:180] if len(name) > 180 else name
 
     tasks = []
-    for work_dir in sorted([p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name):
+    work_dirs = [scope_work_dir] if scope_work_dir is not None else sorted(
+        [p for p in project_root.iterdir() if p.is_dir()], key=lambda p: p.name
+    )
+    for work_dir in work_dirs:
         debug_dir = work_dir / ".debug"
         if not debug_dir.exists():
             continue
@@ -695,33 +712,39 @@ class UploadWebPWorker(QThread):
 
 
 class ExportAllWorker(QThread):
-    """全量导出（后台线程）：生成 glyphs.sqlite + 导出裁剪 webp。"""
+    """按选中范围导出 glyphs.sqlite 与裁剪 webp。"""
 
     progress = pyqtSignal(int, int, str)  # done, total, message
     finished = pyqtSignal(str, int, int, int, int)  # sqlite_path, sqlite_total, crop_total, crop_ok, crop_fail
     error = pyqtSignal(str)
 
-    def __init__(self, parent=None):
+    def __init__(self, scope_work_dir: str = "", parent=None):
         super().__init__(parent)
+        self.scope_work_dir = Path(scope_work_dir) if scope_work_dir else None
 
     def run(self):
         try:
             project_root = Path(__file__).parent.parent
 
             # 1) SQLite：先扫描（进度不一定准确，主要用于状态提示）
-            self.progress.emit(0, 0, "正在导出 SQLite...")
+            scope_label = self.scope_work_dir.name if self.scope_work_dir else "全部字帖"
+            self.progress.emit(0, 0, f"正在导出 SQLite：{scope_label}...")
 
             def _sqlite_cb(done: int, total: int, msg: str):
                 # SQLite 阶段：不占用进度条，避免和图片导出混淆
                 self.progress.emit(0, 0, msg)
 
-            sqlite_path, sqlite_total = export_all_glyphs_sqlite(project_root, progress_cb=_sqlite_cb)
+            sqlite_path, sqlite_total = export_all_glyphs_sqlite(
+                project_root, progress_cb=_sqlite_cb, scope_work_dir=self.scope_work_dir
+            )
 
             # 2) 裁剪导出：使用可计数进度
             def _crop_cb(done: int, total: int, msg: str):
                 self.progress.emit(int(done), int(total), str(msg))
 
-            crop_total, crop_ok, crop_fail = export_all_crops(project_root, progress_cb=_crop_cb)
+            crop_total, crop_ok, crop_fail = export_all_crops(
+                project_root, progress_cb=_crop_cb, scope_work_dir=self.scope_work_dir
+            )
 
             self.finished.emit(str(sqlite_path), int(sqlite_total), int(crop_total), int(crop_ok), int(crop_fail))
         except Exception as e:
@@ -1143,6 +1166,20 @@ class MainWindow(QMainWindow):
         # 默认：项目根目录
         return (str(Path(__file__).parent.parent), "")
 
+    def _resolve_export_work_dir(self) -> Optional[Path]:
+        """根据左侧选择确定导出范围；选中字帖或其中任一页时仅导出该字帖。"""
+        sel = self._current_tree_selection or {}
+        kind = sel.get("kind")
+        if kind == "work_dir":
+            dir_path = sel.get("dir_path") or ""
+            if dir_path:
+                return Path(dir_path)
+        if kind in ("work_image", "recognized"):
+            image_path = sel.get("image_path") or ""
+            if image_path:
+                return Path(image_path).parent
+        return None
+
     def _read_upload_config_from_env(self):
         """从环境变量（.env 已在 run_app.py 加载）读取上传配置。"""
 
@@ -1301,11 +1338,17 @@ class MainWindow(QMainWindow):
 
         msg_box = QMessageBox(self)
         msg_box.setWindowTitle("选择上传方式")
-        msg_box.setText("请选择要上传的文件范围：")
-        info = f"【全量上传】\n{all_text}\n\n【增量上传（上次上传后新增/修改）】\n上次上传时间: {last_upload_str}\n{recent_text}"
+        scope_label = (
+            Path(scan_root).name
+            if scan_root != str(Path(__file__).parent.parent)
+            else "全部字帖"
+        )
+        msg_box.setText(f"请选择要上传的文件范围（当前：{scope_label}）：")
+        info = f"【当前范围内全部上传】\n{all_text}\n\n【当前范围内增量上传】\n上次上传时间: {last_upload_str}\n{recent_text}"
         msg_box.setInformativeText(info)
 
-        btn_all = msg_box.addButton("全量上传", QMessageBox.AcceptRole)
+        btn_all_label = "上传当前字帖" if scope_label != "全部字帖" else "全量上传"
+        btn_all = msg_box.addButton(btn_all_label, QMessageBox.AcceptRole)
         btn_recent = msg_box.addButton("增量上传", QMessageBox.AcceptRole)
         btn_cancel = msg_box.addButton("取消", QMessageBox.RejectRole)
 
@@ -1972,17 +2015,21 @@ class MainWindow(QMainWindow):
         self.status_label.setText("识别失败")
 
     def export_chars(self):
-        """导出：全量导出所有字帖到 SQLite（无需选择目录）"""
+        """导出当前选中字帖；未选择字帖时导出全部。"""
         # 避免重复触发
         if getattr(self, "export_worker", None) is not None and self.export_worker.isRunning():
             return
 
-        self.status_label.setText("正在导出...")
+        scope_work_dir = self._resolve_export_work_dir()
+        scope_label = scope_work_dir.name if scope_work_dir else "全部字帖"
+        self.status_label.setText(f"正在导出：{scope_label}...")
         self.progress_bar.setVisible(True)
         self.progress_bar.setRange(0, 0)  # indeterminate，直到裁剪阶段拿到 total
         self._set_export_actions_enabled(False)
 
-        self.export_worker = ExportAllWorker(parent=self)
+        self.export_worker = ExportAllWorker(
+            scope_work_dir=str(scope_work_dir) if scope_work_dir else "", parent=self
+        )
         self.export_worker.progress.connect(self._on_export_progress)
         self.export_worker.finished.connect(self._on_export_finished)
         self.export_worker.error.connect(self._on_export_error)
