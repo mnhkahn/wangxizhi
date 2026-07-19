@@ -712,7 +712,7 @@ class UploadWebPWorker(QThread):
 
 
 class ExportAllWorker(QThread):
-    """按选中范围导出 glyphs.sqlite 与裁剪 webp。"""
+    """导出全部字帖的 glyphs.sqlite 与裁剪 webp。"""
 
     progress = pyqtSignal(int, int, str)  # done, total, message
     finished = pyqtSignal(str, int, int, int, int)  # sqlite_path, sqlite_total, crop_total, crop_ok, crop_fail
@@ -1968,10 +1968,18 @@ class MainWindow(QMainWindow):
 
         import hashlib
 
+        ordered_items = sorted(self.char_manager.items, key=lambda x: (x.column, x.row))
+        uuid_counts = {}
+        for r in ordered_items:
+            if r.uuid:
+                uuid_counts[r.uuid] = uuid_counts.get(r.uuid, 0) + 1
+
         char_data = []
-        for r in sorted(self.char_manager.items, key=lambda x: (x.column, x.row)):
-            # 已有 uuid 的保留不动，避免和已导出的 webp / SQLite / 云端对不上
-            if not r.uuid:
+        for r in ordered_items:
+            # 正常情况下保留既有 uuid，避免和已导出的 webp / SQLite / 云端对不上。
+            # 但历史数据可能把同一个 id 复用给同页多个字；这种 id 会导致导出
+            # 时文件互相覆盖，因此按字帖、页名、列、行和字内容重建稳定 id。
+            if not r.uuid or uuid_counts.get(r.uuid, 0) > 1:
                 md5_input = f"{r.char}_{work_dir_name}_{image_name}_{r.column}_{r.row}"
                 r.uuid = hashlib.md5(md5_input.encode("utf-8")).hexdigest()
             char_data.append(
@@ -2015,14 +2023,15 @@ class MainWindow(QMainWindow):
         self.status_label.setText("识别失败")
 
     def export_chars(self):
-        """导出当前选中字帖；未选择字帖时导出全部。"""
+        """导出全部字帖，重建总库 glyphs.sqlite 与全部字图。"""
         # 避免重复触发
         if getattr(self, "export_worker", None) is not None and self.export_worker.isRunning():
             return
 
-        scope_work_dir = self._resolve_export_work_dir()
-        scope_label = scope_work_dir.name if scope_work_dir else "全部字帖"
-        self.status_label.setText(f"正在导出：{scope_label}...")
+        # 导出始终覆盖全项目，确保总库 glyphs.sqlite 是完整索引。
+        # 上传仍可根据左侧选择限定范围，二者互不影响。
+        scope_work_dir = None
+        self.status_label.setText("正在导出全部字帖...")
         self.progress_bar.setVisible(True)
         self.progress_bar.setRange(0, 0)  # indeterminate，直到裁剪阶段拿到 total
         self._set_export_actions_enabled(False)
