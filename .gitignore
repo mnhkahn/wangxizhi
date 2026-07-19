@@ -55,3 +55,6 @@ batch_ocr_log.txt
 # Debug images
 debug_*.jpg
 test_fatie_*.jpg
+
+# Codex 本地配置（含密钥，勿提交）
+.codex/
