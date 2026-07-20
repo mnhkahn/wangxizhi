@@ -1,0 +1,1287 @@
+"""
+Main OCR Module for Chinese Calligraphy
+书法拆字识别主模块 - 使用 Layout Parsing API
+"""
+
+import json
+import os
+import re
+from pathlib import Path
+from typing import Dict, List, Any, Optional
+from datetime import datetime
+import uuid
+import cv2
+import numpy as np
+
+from .config import (
+    OUTPUT_DIR,
+    SAVE_DEBUG_IMAGES,
+    CHAR_BBOX,
+)
+from .preprocess import ImagePreprocessor
+from .api_client import OCRAPIClient
+from .char_splitter import CharSplitter, SplitMethod
+
+
+def log_step(step_name: str, data: Any, output_dir: Path, debug: bool = False,
+             image: Any = None, bboxes: List = None, labels: List = None,
+             title: str = None):
+    """记录步骤信息（不落盘）。
+
+    说明：为了简化输出文件，仅保留 result.json 与 chars.json。
+    因此这里不再生成 step_*.json / step_*.jpg 等中间文件。
+    """
+    if debug:
+        extra = f" | {title}" if title else ""
+        print(f"[STEP] {step_name}{extra}")
+
+
+class CalligraphyOCR:
+    """书法拆字识别器"""
+
+    def __init__(
+        self,
+        api_url: Optional[str] = None,
+        api_token: Optional[str] = None,
+        output_dir: Optional[str] = None,
+    ):
+        """初始化识别器"""
+        self.preprocessor = ImagePreprocessor()
+        self.api_client = OCRAPIClient(api_url, api_token) if api_url else OCRAPIClient()
+        self.output_dir = Path(output_dir or OUTPUT_DIR)
+
+    def crop_and_save_chars(
+        self,
+        image: Any,
+        char_results: List[Dict[str, Any]],
+        image_path: str,
+    ) -> List[str]:
+        """裁剪单字图片并保存"""
+        path_obj = Path(image_path)
+        folder_name = path_obj.parent.name
+
+        chars_dir = self.output_dir / path_obj.stem / "chars"
+        chars_dir.mkdir(parents=True, exist_ok=True)
+
+        saved_paths = []
+
+        for r in char_results:
+            bbox = r["bbox"]
+            char = r["char"]
+
+            x1 = max(0, int(bbox[0]))
+            y1 = max(0, int(bbox[1]))
+            x2 = min(image.shape[1], int(bbox[2]))
+            y2 = min(image.shape[0], int(bbox[3]))
+
+            if x2 > x1 and y2 > y1:
+                char_img = image[y1:y2, x1:x2]
+
+                filename = f"{folder_name}_{char}.jpg"
+                char_path = chars_dir / filename
+
+                cv2.imwrite(str(char_path), char_img)
+                saved_paths.append(str(char_path))
+
+        return saved_paths
+
+    def _save_api_images(self, api_result: Dict[str, Any], output_dir: Path, debug: bool = False):
+        """
+        保存API返回的图片（布局检测图、预处理图等）
+
+        Args:
+            api_result: API返回的结果
+            output_dir: 输出目录
+            debug: 是否输出调试信息
+        """
+        output_dir.mkdir(parents=True, exist_ok=True)
+        saved_images = []
+
+        layout_results = api_result.get("layoutParsingResults", [])
+        for page_idx, page_result in enumerate(layout_results):
+            # 保存 outputImages 中的图片
+            output_images = page_result.get("outputImages", {})
+            for img_name, img_url in output_images.items():
+                try:
+                    import requests
+                    img_response = requests.get(img_url, timeout=30)
+                    if img_response.status_code == 200:
+                        # 根据图片名称确定文件扩展名
+                        ext = ".jpg"
+                        if "png" in img_url.lower():
+                            ext = ".png"
+                        filename = output_dir / f"{img_name}{ext}"
+                        with open(filename, "wb") as f:
+                            f.write(img_response.content)
+                        saved_images.append(str(filename))
+                        if debug:
+                            print(f"[DEBUG] Saved API image: {filename}")
+                except Exception as e:
+                    if debug:
+                        print(f"[DEBUG] Failed to save {img_name}: {e}")
+
+        return saved_images
+
+    def _calculate_luminance(self, b: int, g: int, r: int) -> float:
+        """计算像素亮度 (0-255)"""
+        return (int(b) + int(g) + int(r)) / 3
+
+    def _estimate_threshold_from_corners(
+        self,
+        image: Any,
+        corner_size: int = 50,
+        debug: bool = False,
+    ) -> float:
+        """根据四角背景亮度自动估算单字拆分阈值"""
+        if image is None or len(image.shape) < 2:
+            return 200
+
+        height, width = image.shape[:2]
+        sample_w = min(corner_size, width)
+        sample_h = min(corner_size, height)
+
+        if sample_w <= 0 or sample_h <= 0:
+            return 200
+
+        corners = [
+            image[0:sample_h, 0:sample_w],
+            image[0:sample_h, max(0, width - sample_w):width],
+            image[max(0, height - sample_h):height, 0:sample_w],
+            image[max(0, height - sample_h):height, max(0, width - sample_w):width],
+        ]
+
+        luminance_sum = 0.0
+        pixel_count = 0
+
+        for corner in corners:
+            if corner.size == 0:
+                continue
+
+            if len(corner.shape) == 2:
+                luminance_sum += float(corner.astype("float32").sum())
+                pixel_count += int(corner.size)
+                continue
+
+            pixels = corner.reshape(-1, corner.shape[2])
+            for pixel in pixels:
+                if len(pixel) >= 4 and int(pixel[3]) == 0:
+                    continue
+
+                b = int(pixel[0])
+                g = int(pixel[1]) if len(pixel) > 1 else b
+                r = int(pixel[2]) if len(pixel) > 2 else b
+                luminance_sum += self._calculate_luminance(b, g, r)
+                pixel_count += 1
+
+        if pixel_count == 0:
+            return 200
+
+        bg_luminance = luminance_sum / pixel_count
+        threshold = max(0, min(255, int(bg_luminance)))
+
+        if debug:
+            print(
+                f"[SPLIT] Auto threshold from corners: "
+                f"bg_luminance={bg_luminance:.2f}, threshold={threshold}"
+            )
+
+        return threshold
+
+    def _split_column_by_pixels(
+        self,
+        image: Any,
+        col_bbox: List[float],
+        threshold: float = 200,
+        min_char_height: int = 20,
+        padding: int = 2,
+        debug: bool = False,
+    ) -> List[List[float]]:
+        """
+        使用像素投影法拆分单列中的单字
+
+        Args:
+            image: 原图 (numpy array, BGR格式)
+            col_bbox: 列的边界框 [x1, y1, x2, y2]
+            threshold: 亮度阈值，低于此值视为文字
+            min_char_height: 最小字高度
+            padding: 边距
+
+        Returns:
+            单字边界框列表 [[x1, y1, x2, y2], ...]
+        """
+        x1, y1, x2, y2 = [int(v) for v in col_bbox]
+
+        # 确保坐标在图像范围内
+        h, w = image.shape[:2]
+        x1 = max(0, x1)
+        y1 = max(0, y1)
+        x2 = min(w, x2)
+        y2 = min(h, y2)
+
+        if x2 <= x1 or y2 <= y1:
+            if debug:
+                print(f"[SPLIT] Invalid bbox: [{x1}, {y1}, {x2}, {y2}], skipping")
+            return []
+
+        # 裁剪出列区域
+        col_region = image[y1:y2, x1:x2]
+
+        # 检测黑底白字（碑帖拓片）还是白底黑字
+        if len(col_region.shape) == 3:
+            gray_region = cv2.cvtColor(col_region, cv2.COLOR_BGR2GRAY)
+        else:
+            gray_region = col_region
+        is_dark_bg = float(np.mean(gray_region)) < 128
+        if debug and is_dark_bg:
+            print(f"[SPLIT] 检测到黑底白字，反转亮度判断逻辑")
+
+        # 计算每行的像素投影（亮度累加）
+        row_height = y2 - y1
+        row_projection = []
+
+        for row in range(row_height):
+            dark_count = 0
+            for col in range(x2 - x1):
+                # BGR 转 亮度
+                b, g, r = col_region[row, col]
+                lum = self._calculate_luminance(b, g, r)
+                if is_dark_bg:
+                    # 黑底白字：亮度高的是文字
+                    if lum > threshold:
+                        dark_count += 1
+                else:
+                    # 白底黑字：亮度低的是文字
+                    if lum < threshold:
+                        dark_count += 1
+            row_projection.append(dark_count)
+
+        # 找到分割点（投影为0或接近0的行）
+        segments = []
+        in_seg = False
+        seg_start = 0
+
+        for i, val in enumerate(row_projection):
+            if not in_seg and val > 0:
+                in_seg = True
+                seg_start = i
+            if in_seg and val == 0:
+                seg_end = i - 1
+                if seg_end - seg_start + 1 >= min_char_height:
+                    segments.append([seg_start, seg_end])
+                in_seg = False
+
+        # 处理最后一个段
+        if in_seg:
+            seg_end = len(row_projection) - 1
+            if seg_end - seg_start + 1 >= min_char_height:
+                segments.append([seg_start, seg_end])
+
+        # 转换为全局坐标
+        char_bboxes = []
+        for seg_start, seg_end in segments:
+            char_y1 = max(0, y1 + seg_start - padding)
+            char_y2 = min(h, y1 + seg_end + padding)
+            char_bboxes.append([x1, char_y1, x2, char_y2])
+
+        # 日志输出：拆字参数和结果
+        if debug:
+            print(f"[SPLIT] 列区域 bbox=[{x1}, {y1}, {x2}, {y2}], 尺寸={x2-x1}x{y2-y1}")
+            print(f"[SPLIT] threshold={threshold}, min_char_height={min_char_height}")
+            print(f"[SPLIT] 检测到 {len(segments)} 个字符段落")
+            for i, (s, e) in enumerate(segments):
+                print(f"[SPLIT]   段{i}: y={y1+s}~{y1+e} (高{e-s+1}px)")
+
+        return char_bboxes
+
+    def _split_columns_to_chars(
+        self,
+        parsed_results: List[Dict[str, Any]],
+        image: Any = None,
+        debug: bool = False,
+    ) -> List[Dict[str, Any]]:
+        """
+        使用混合分割策略拆分单字。
+
+        改进：保留释文列，将其与主文列配对后，用释文列的精确 y 坐标
+        辅助主文列的单字分割，使 bbox 位置更准确。
+
+        Args:
+            parsed_results: 解析的列数据，每项包含 text, poly, bbox
+            image: 原图数据 (numpy array)，用于像素分析
+            debug: 是否输出调试信息
+
+        Returns:
+            单字结果列表，每项包含 char, bbox, column, row, global_index
+        """
+        if not parsed_results:
+            return []
+
+        # 分离主文列和释文列
+        main_cols, anno_cols = self._filter_annotation_columns(
+            parsed_results, debug=debug, return_separated=True
+        )
+
+        # 配对主文列和释文列
+        paired = self._pair_main_with_annotation(main_cols, anno_cols, debug=debug)
+
+        # 初始化分割器（无释文辅助时使用）
+        split_method = SplitMethod(CHAR_BBOX.get("split_method", "hybrid"))
+        splitter = CharSplitter(
+            method=split_method,
+            min_char_height=CHAR_BBOX.get("min_char_height", 20),
+            margin_ratio=CHAR_BBOX.get("margin_ratio", 0.05),
+        )
+
+        char_results = []
+        global_index = 0
+        img_h = image.shape[0] if image is not None else 0
+        img_w = image.shape[1] if image is not None else 0
+
+        for col_idx, (main_col, anno_col) in enumerate(paired):
+            text = main_col["text"]
+            if not text:
+                continue
+
+            # 清理 text：去掉换行符、空格等非汉字字符，只保留 CJK 汉字
+            clean_text = ''.join(c for c in text if '\u4e00' <= c <= '\u9fff')
+            if not clean_text:
+                continue
+
+            # 分割：优先使用释文辅助
+            if anno_col is not None and image is not None:
+                char_bboxes, used_method = self._split_with_annotation(
+                    image, main_col, anno_col, clean_text, debug=debug
+                )
+            else:
+                char_bboxes, used_method = splitter.split_column(
+                    image, main_col["bbox"], clean_text, debug=debug
+                )
+
+            if debug:
+                print(f"[SPLIT] 列 {col_idx}: '{text[:10]}...' ({len(text)}字) -> {used_method}")
+
+            # 裁剪 bbox 到图像范围内
+            if image is not None:
+                for i in range(len(char_bboxes)):
+                    b = char_bboxes[i]
+                    char_bboxes[i] = [
+                        max(0.0, b[0]),
+                        max(0.0, b[1]),
+                        min(float(img_w), b[2]),
+                        min(float(img_h), b[3]),
+                    ]
+
+            # 将文字分配到各个 bbox
+            for row_idx, (char, char_bbox) in enumerate(zip(clean_text, char_bboxes)):
+                char_results.append({
+                    "char": char,
+                    "bbox": char_bbox,
+                    "column": col_idx,
+                    "row": row_idx,
+                    "global_index": global_index,
+                    "col_text": clean_text,
+                    "col_bbox": main_col["bbox"],
+                    "split_method": used_method,
+                })
+                global_index += 1
+
+        return char_results
+
+    def _parse_markdown_result(self, api_result: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """
+        解析Layout Parsing API返回的结果，提取文字和对应的坐标
+
+        Args:
+            api_result: API返回的结果（包含 layoutParsingResults）
+
+        Returns:
+            解析后的文字列表，每项包含 text, poly (四边形坐标)
+        """
+        results = []
+        # 同时支持 layoutParsingResults（Layout Parsing API）和 ocrResults（OCR API）
+        layout_results = api_result.get("layoutParsingResults", []) or api_result.get("ocrResults", [])
+
+        for page_result in layout_results:
+            pruned = page_result.get("prunedResult", {})
+            spotting_res = pruned.get("spotting_res", {})
+
+            # 优先从 spotting_res 获取 rec_polys 和 rec_texts（layoutParsing 格式）
+            rec_polys = spotting_res.get("rec_polys", [])
+            rec_texts = spotting_res.get("rec_texts", [])
+
+            # 兼容 ocrResults 格式：直接从 prunedResult 获取
+            if not rec_polys or not rec_texts:
+                rec_polys = pruned.get("rec_polys", [])
+                rec_texts = pruned.get("rec_texts", [])
+
+            if rec_polys and rec_texts and len(rec_polys) == len(rec_texts):
+                # 有精确的坐标信息
+                for i, (poly, text) in enumerate(zip(rec_polys, rec_texts)):
+                    # poly 是四边形的四个点 [[x1,y1], [x2,y2], [x3,y3], [x4,y4]]
+                    # 转换为 bbox 格式 [x_min, y_min, x_max, y_max]
+                    xs = [p[0] for p in poly]
+                    ys = [p[1] for p in poly]
+                    bbox = [min(xs), min(ys), max(xs), max(ys)]
+
+                    results.append({
+                        "text": text,
+                        "poly": poly,
+                        "bbox": bbox,
+                        "index": i,
+                    })
+                continue
+
+            # 回退：从 markdown 字段获取（无坐标信息）
+            markdown_data = page_result.get("markdown", {})
+            text = markdown_data.get("text", "")
+
+            if text:
+                lines = text.split("\n")
+                for i, line in enumerate(lines):
+                    line = re.sub(r'!\[.*?\]\(.*?\)', '', line)
+                    line = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', line)
+                    line = re.sub(r'^#+\s*', '', line)
+                    line = line.strip()
+
+                    if line and not line.startswith("!"):
+                        results.append({
+                            "text": line,
+                            "raw": line,
+                            "index": i,
+                        })
+                continue
+
+            # 最后回退：从 parsing_res_list 获取
+            parsing_list = pruned.get("parsing_res_list", [])
+
+            for block in parsing_list:
+                content = block.get("block_content", "")
+                if content:
+                    lines = content.split("\n")
+                    for line in lines:
+                        line = line.strip()
+                        if line:
+                            results.append({
+                                "text": line,
+                                "raw": line,
+                                "bbox": block.get("block_bbox"),
+                                "label": block.get("block_label"),
+                            })
+
+        return results
+
+    @staticmethod
+    def _has_chinese(text: str) -> bool:
+        """检查文本是否包含至少一个汉字（CJK Unified Ideographs）"""
+        return any('\u4e00' <= c <= '\u9fff' for c in text)
+
+    def _filter_garbage_chars(
+        self,
+        char_results: List[Dict[str, Any]],
+        debug: bool = False,
+    ) -> List[Dict[str, Any]]:
+        """
+        仅保留汉字（CJK Unified Ideographs），丢弃所有非汉字字符。
+        """
+        filtered = []
+        for r in char_results:
+            char = r.get("char", "")
+            bbox = r.get("bbox", [0, 0, 0, 0])
+            h = bbox[3] - bbox[1]
+            w = bbox[2] - bbox[0]
+
+            is_chinese = '一' <= char <= '鿿'
+            if is_chinese:
+                filtered.append(r)
+            else:
+                if debug:
+                    print(f"[FILTER] 丢弃非汉字: '{char}'")
+
+
+        # 重新编号
+        for i, r in enumerate(filtered):
+            r["global_index"] = i
+
+        if debug and len(filtered) < len(char_results):
+            print(f"[FILTER] 单字过滤: {len(char_results)} -> {len(filtered)}")
+        return filtered
+
+    @staticmethod
+    def _deduplicate_columns(columns: List[Dict[str, Any]], iou_threshold: float = 0.6) -> List[Dict[str, Any]]:
+        """基于 bbox IOU 去重：重叠度超过阈值视为同一列的重复识别，保留第一个。"""
+        def _iou(a, b):
+            ax1, ay1, ax2, ay2 = a
+            bx1, by1, bx2, by2 = b
+            ix = max(0, min(ax2, bx2) - max(ax1, bx1))
+            iy = max(0, min(ay2, by2) - max(ay1, by1))
+            inter = ix * iy
+            area_a = (ax2 - ax1) * (ay2 - ay1)
+            area_b = (bx2 - bx1) * (by2 - by1)
+            union = area_a + area_b - inter
+            return inter / union if union > 0 else 0.0
+
+        kept = []
+        for col in columns:
+            bbox = col.get("bbox")
+            if not bbox or len(bbox) != 4:
+                kept.append(col)
+                continue
+            duplicate = False
+            for existing in kept:
+                eb = existing.get("bbox")
+                if eb and len(eb) == 4 and _iou(bbox, eb) > iou_threshold:
+                    duplicate = True
+                    break
+            if not duplicate:
+                kept.append(col)
+        return kept
+
+    def _merge_overlapping_columns(
+        self,
+        columns: List[Dict[str, Any]],
+        max_center_dist: float = 25,
+        debug: bool = False,
+    ) -> List[Dict[str, Any]]:
+        """
+        合并 x 方向重叠的 API 文本块（同一物理列被拆成多个块）。
+        策略：按中心 x 从右到左排序，相邻列若中心 x 距离 < 阈值则视为同一物理列。
+        阈值设置较小（25px），避免把相邻物理列错误合并。
+        """
+        if not columns:
+            return columns
+
+        # 计算每列中心 x，按从右到左排序
+        cols_with_center = [
+            (col, (col["bbox"][0] + col["bbox"][2]) / 2)
+            for col in columns
+        ]
+        cols_sorted = sorted(cols_with_center, key=lambda x: -x[1])
+
+        groups: List[List[Dict[str, Any]]] = []
+        prev_centers: List[float] = []
+
+        for col, center in cols_sorted:
+            placed = False
+            for idx, group in enumerate(groups):
+                # 只与该组最新加入的列比较中心距离
+                if abs(center - prev_centers[idx]) < max_center_dist:
+                    group.append(col)
+                    prev_centers[idx] = center
+                    placed = True
+                    break
+            if not placed:
+                groups.append([col])
+                prev_centers.append(center)
+
+        merged = []
+        for group in groups:
+            # 合并 bbox：并集
+            x1 = min(c["bbox"][0] for c in group)
+            y1 = min(c["bbox"][1] for c in group)
+            x2 = max(c["bbox"][2] for c in group)
+            y2 = max(c["bbox"][3] for c in group)
+            # 合并文字：按 y 坐标（从上到下）排序
+            items_sorted = sorted(group, key=lambda c: c["bbox"][1])
+            text = "".join(c["text"] for c in items_sorted)
+            merged.append({
+                "text": text,
+                "bbox": [x1, y1, x2, y2],
+                "poly": [[x1, y1], [x2, y1], [x2, y2], [x1, y2]],
+            })
+
+        # 保持从右到左排序
+        merged.sort(key=lambda c: -(c["bbox"][0] + c["bbox"][2]) / 2)
+
+        if debug and len(merged) < len(columns):
+            print(f"[MERGE] 列合并: {len(columns)} -> {len(merged)} 列")
+            for i, m in enumerate(merged):
+                print(f"  列{i}: x={m['bbox'][0]:.0f}-{m['bbox'][2]:.0f}: {m['text'][:20]}...")
+
+        return merged
+
+    def _filter_garbage_columns(
+        self,
+        columns: List[Dict[str, Any]],
+        debug: bool = False,
+    ) -> List[Dict[str, Any]]:
+        """
+        过滤明显不是主文的列（极端窄列、完全非汉字）。
+        """
+        if not columns:
+            return columns
+
+        filtered = []
+        for col in columns:
+            bbox = col["bbox"]
+            w = bbox[2] - bbox[0]
+            text = col.get("text", "")
+
+            # 只过滤极端情况：宽度 < 15px 或 > 400px
+            if w < 15 or w > 400:
+                if debug:
+                    print(f"[FILTER_COL] 丢弃极端宽度({w:.0f}px): '{text[:15]}...'")
+                continue
+
+            # 完全非汉字且长度 >= 5（短文本可能是OCR识别错误，保留让fix_page处理）
+            han_chars = sum(1 for ch in text if "\u4e00" <= ch <= "\u9fff")
+            if text and han_chars == 0 and len(text) >= 5:
+                if debug:
+                    print(f"[FILTER_COL] 丢弃无汉字: '{text[:15]}...'")
+                continue
+
+            filtered.append(col)
+
+        if debug and len(filtered) < len(columns):
+            print(f"[FILTER_COL] 列过滤: {len(columns)} -> {len(filtered)} 列")
+
+        return filtered
+
+    def _filter_annotation_columns(
+        self,
+        columns: List[Dict[str, Any]],
+        debug: bool = False,
+        return_separated: bool = False,
+    ):
+        """
+        过滤释文/注释列。
+
+        策略：正文列宽度相近且明显大于释文列。
+        释文列通常宽度 < 50px 或 < 最大列宽的 50%。
+
+        Args:
+            return_separated: 为 True 时返回 (主文列列表, 释文列列表)。
+        """
+        if not columns:
+            return ([], []) if return_separated else columns
+
+        text_columns = [
+            c for c in columns
+            if self._has_chinese(c.get("text", ""))
+        ]
+        if not text_columns:
+            if return_separated:
+                return columns, []
+            return columns
+
+        widths = [c["bbox"][2] - c["bbox"][0] for c in text_columns]
+        if len(widths) <= 1:
+            if return_separated:
+                return text_columns, [c for c in columns if c not in text_columns]
+            return text_columns
+
+        max_width = max(widths)
+        # 阈值只按同页含汉字列计算。第 16 页这类低分辨率图片里，
+        # 主文列宽约 45-58px，固定 50px 会误伤真实主文。
+        threshold = max_width * 0.5
+
+        main_cols = []
+        anno_cols = []
+        for col in columns:
+            text = col.get("text", "")
+            if not self._has_chinese(text):
+                anno_cols.append(col)
+                continue
+
+            w = col["bbox"][2] - col["bbox"][0]
+            if w < threshold:
+                if debug:
+                    print(f"[FILTER_ANNO] 释文列(宽{w:.0f}px): '{text[:15]}...'")
+                anno_cols.append(col)
+            else:
+                main_cols.append(col)
+
+        # 如果过滤后没有主文列，回退到原始列
+        if not main_cols:
+            main_cols = columns
+            anno_cols = []
+
+        if debug and anno_cols:
+            print(f"[FILTER_ANNO] 主文: {len(main_cols)} 列, 释文: {len(anno_cols)} 列")
+
+        if return_separated:
+            return main_cols, anno_cols
+        return main_cols
+
+    def _detect_missing_columns(
+        self,
+        image: np.ndarray,
+        parsed_results: List[Dict[str, Any]],
+        debug: bool = False,
+    ) -> List[Dict[str, Any]]:
+        """基于垂直投影检测 API 遗漏的列，返回补充的列数据（text 为空）。"""
+        if image is None or not parsed_results:
+            return []
+
+        h, w = image.shape[:2]
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        is_dark_bg = float(np.mean(gray)) < 128
+        thresh_type = cv2.THRESH_BINARY if is_dark_bg else cv2.THRESH_BINARY_INV
+        _, binary = cv2.threshold(gray, 0, 255, thresh_type + cv2.THRESH_OTSU)
+
+        col_projection = np.sum(binary > 0, axis=0)
+        kernel = np.ones(11) / 11
+        smoothed = np.convolve(col_projection, kernel, mode='same')
+
+        threshold = np.max(smoothed) * 0.25
+        text_mask = smoothed > threshold
+
+        segments = []
+        in_text = False
+        start = 0
+        for i, is_text in enumerate(text_mask):
+            if is_text and not in_text:
+                in_text = True
+                start = i
+            elif not is_text and in_text:
+                in_text = False
+                if i - start > 15:
+                    segments.append([start, i])
+        if in_text and w - start > 15:
+            segments.append([start, w])
+
+        # 过滤掉和已有列重叠的段（IOU > 0.3）
+        def _iou(a, b):
+            ix = max(0, min(a[1], b[1]) - max(a[0], b[0]))
+            ia = a[1] - a[0]
+            ib = b[1] - b[0]
+            return ix / min(ia, ib) if min(ia, ib) > 0 else 0.0
+
+        existing_ranges = []
+        for col in parsed_results:
+            b = col['bbox']
+            existing_ranges.append([b[0], b[2]])
+
+        new_segments = []
+        for seg in segments:
+            # 过滤太宽（>200px）或太窄（<25px）的段
+            seg_w = seg[1] - seg[0]
+            if seg_w < 25 or seg_w > 200:
+                continue
+            overlap = False
+            for er in existing_ranges:
+                if _iou(seg, er) > 0.3:
+                    overlap = True
+                    break
+            if not overlap:
+                new_segments.append(seg)
+
+        new_cols = []
+        for seg in new_segments:
+            x1, x2 = seg
+            col_region = binary[:, x1:x2]
+            row_projection = np.sum(col_region > 0, axis=1)
+            row_thresh = np.max(row_projection) * 0.05
+            row_mask = row_projection > row_thresh
+            y1, y2 = 0, h
+            for i, v in enumerate(row_mask):
+                if v:
+                    y1 = i
+                    break
+            for i in range(h - 1, -1, -1):
+                if row_mask[i]:
+                    y2 = i + 1
+                    break
+            if y2 - y1 < 100:
+                continue
+            new_cols.append({
+                "text": "",
+                "bbox": [float(x1), float(y1), float(x2), float(y2)],
+                "poly": [[x1, y1], [x2, y1], [x2, y2], [x1, y2]],
+            })
+
+        if debug and new_cols:
+            print(f"[MISSING] 检测到 {len(new_cols)} 个 API 遗漏列")
+            for c in new_cols:
+                print(f"  x={c['bbox'][0]:.0f}-{c['bbox'][2]:.0f} y={c['bbox'][1]:.0f}-{c['bbox'][3]:.0f}")
+
+        return new_cols
+
+    def _detect_edge_columns(
+        self,
+        image: np.ndarray,
+        parsed_results: List[Dict[str, Any]],
+        debug: bool = False,
+    ) -> List[Dict[str, Any]]:
+        """检测图片最左/最右边缘被 API 遗漏的列。
+
+        策略：
+        1. 基于已有宽列的布局推断边缘是否可能有遗漏列。
+        2. 只对宽列数量 < 5 的页面检测（正常 5 列页通常不需要）。
+        3. 返回边缘区域的 bbox，由调用方用滑动窗口裁剪后单独调用 API 识别。
+        """
+        if image is None or not parsed_results:
+            return []
+
+        h, w = image.shape[:2]
+
+        # 使用宽列（w >= 50）推断布局
+        wide_cols = sorted(
+            [c for c in parsed_results if c["bbox"][2] - c["bbox"][0] >= 50],
+            key=lambda c: c["bbox"][0],
+        )
+        if not wide_cols:
+            return []
+
+        # 正常页通常有 5 列，5 列页不检测边缘以减少 API 调用
+        if len(wide_cols) >= 5:
+            return []
+
+        # 计算中位数列宽和列间距
+        col_widths = [c["bbox"][2] - c["bbox"][0] for c in wide_cols]
+        med_width = float(np.median(col_widths))
+
+        gaps = []
+        for i in range(1, len(wide_cols)):
+            gap = wide_cols[i]["bbox"][0] - wide_cols[i - 1]["bbox"][2]
+            if gap > 0:
+                gaps.append(gap)
+        med_gap = float(np.median(gaps)) if gaps else 20.0
+
+        # 阈值：边缘空间 > 列宽的 50% 认为可能遗漏
+        threshold = med_width * 0.5
+
+        new_cols = []
+
+        def _has_significant_overlap(x1: float, x2: float) -> bool:
+            """检查该区域是否与已有列有显著重叠。"""
+            region_width = x2 - x1
+            if region_width <= 0:
+                return True
+            for c in parsed_results:
+                b = c["bbox"]
+                ix = max(0.0, min(x2, b[2]) - max(x1, b[0]))
+                if ix > 0:
+                    overlap_ratio = ix / region_width
+                    if overlap_ratio > 0.5:
+                        return True
+            return False
+
+        # 左边缘：创建精确窗口，覆盖最左列左侧约 1.3 倍列宽的范围
+        leftmost = wide_cols[0]["bbox"][0]
+        if leftmost > threshold:
+            win_w = int(med_width * 1.3)
+            wx1 = max(0, int(leftmost) - win_w)
+            wx2 = int(leftmost) + int(med_gap * 0.3)
+            if not _has_significant_overlap(float(wx1), float(wx2)):
+                new_cols.append({
+                    "text": "",
+                    "bbox": [float(wx1), 0.0, float(wx2), float(h)],
+                    "poly": [[wx1, 0], [wx2, 0], [wx2, h], [wx1, h]],
+                })
+
+        # 右边缘：创建精确窗口，覆盖最右列右侧约 1.3 倍列宽的范围
+        rightmost = wide_cols[-1]["bbox"][2]
+        if w - rightmost > threshold:
+            win_w = int(med_width * 1.3)
+            wx1 = int(rightmost) - int(med_gap * 0.3)
+            wx2 = min(w, int(rightmost) + win_w)
+            if not _has_significant_overlap(float(wx1), float(wx2)):
+                new_cols.append({
+                    "text": "",
+                    "bbox": [float(wx1), 0.0, float(wx2), float(h)],
+                    "poly": [[wx1, 0], [wx2, 0], [wx2, h], [wx1, h]],
+                })
+
+        if debug and new_cols:
+            print(f"[EDGE] 将检测 {len(new_cols)} 个边缘窗口")
+            for c in new_cols:
+                print(f"  x={c['bbox'][0]:.0f}-{c['bbox'][2]:.0f}")
+
+        return new_cols
+
+    def _pair_main_with_annotation(
+        self,
+        main_cols: List[Dict[str, Any]],
+        anno_cols: List[Dict[str, Any]],
+        debug: bool = False,
+    ) -> List[tuple]:
+        """将主文列与最近的释文列配对，返回 [(主文列, 释文列|None), ...]。
+
+        配对策略：
+        1. 对每列主文，找 x 距离最近、且 y 方向重叠 > 20% 的释文列。
+        2. 按主文列从右到左排序（书法阅读顺序）。
+        """
+        if not anno_cols:
+            return [(c, None) for c in main_cols]
+
+        def center_x(col):
+            return (col["bbox"][0] + col["bbox"][2]) / 2
+
+        # 按中心 x 从左到右排序，便于配对
+        main_sorted = sorted(main_cols, key=center_x)
+        anno_sorted = sorted(anno_cols, key=center_x)
+
+        paired = []
+        used_anno = set()
+
+        for main in main_sorted:
+            main_cx = center_x(main)
+            main_y1, main_y2 = main["bbox"][1], main["bbox"][3]
+            main_h = main_y2 - main_y1
+
+            best_anno = None
+            best_dist = float("inf")
+            best_idx = -1
+
+            for idx, anno in enumerate(anno_sorted):
+                if idx in used_anno:
+                    continue
+
+                anno_cx = center_x(anno)
+                dist = abs(main_cx - anno_cx)
+
+                # y 方向重叠检查
+                y_overlap = min(main_y2, anno["bbox"][3]) - max(main_y1, anno["bbox"][1])
+                if y_overlap < main_h * 0.2:
+                    continue
+
+                if dist < best_dist:
+                    best_dist = dist
+                    best_anno = anno
+                    best_idx = idx
+
+            if best_anno is not None:
+                used_anno.add(best_idx)
+
+            paired.append((main, best_anno))
+
+        # 按主文列从右到左排序
+        paired.sort(key=lambda p: -center_x(p[0]))
+
+        if debug:
+            for i, (main, anno) in enumerate(paired):
+                main_text = main.get("text", "")[:10]
+                anno_text = anno.get("text", "")[:10] if anno else "无"
+                print(f"[PAIR] 列{i}: 主文'{main_text}...' <-> 释文'{anno_text}...'")
+
+        return paired
+
+    def _split_with_annotation(
+        self,
+        image: np.ndarray,
+        main_col: Dict[str, Any],
+        anno_col: Dict[str, Any],
+        text: str,
+        debug: bool = False,
+    ) -> tuple:
+        """用释文列辅助分割主文列。
+
+        核心逻辑：
+        1. 先对主文列进行正常分割。
+        2. 对释文列进行分割（释文字间距通常更清晰，位置更准）。
+        3. 若两者字数相同，用释文列的 y 坐标修正主文列的 y 坐标，
+           x 坐标保持主文列原值（经 char_splitter 收缩后）。
+        """
+        from .char_splitter import CharSplitter, SplitMethod
+
+        splitter = CharSplitter(
+            method=SplitMethod.HYBRID,
+            min_char_height=CHAR_BBOX.get("min_char_height", 20),
+            margin_ratio=CHAR_BBOX.get("margin_ratio", 0.05),
+        )
+
+        # 分割主文列
+        main_bboxes, main_method = splitter.split_column(
+            image, main_col["bbox"], text, debug=debug
+        )
+        if len(main_bboxes) != len(text):
+            return main_bboxes, main_method
+
+        # 尝试分割释文列
+        anno_text = anno_col.get("text", "")
+        if not anno_text:
+            return main_bboxes, main_method
+
+        anno_bboxes, _ = splitter.split_column(
+            image, anno_col["bbox"], anno_text, debug=debug
+        )
+        if len(anno_bboxes) != len(anno_text) or len(anno_text) != len(text):
+            return main_bboxes, main_method
+
+        # 字数匹配：用释文的 y 坐标修正主文
+        fixed_bboxes = []
+        for mb, ab in zip(main_bboxes, anno_bboxes):
+            fixed = [mb[0], ab[1], mb[2], ab[3]]
+            fixed = splitter._balance_x_width_to_height(fixed, main_col["bbox"])
+            fixed_bboxes.append(fixed)
+
+        if debug:
+            print(f"[SPLIT_ANNO] 列'{text[:10]}...': {len(text)}字，用释文 y 对齐")
+
+        return fixed_bboxes, f"{main_method}_anno_align"
+
+    def recognize_image(
+        self,
+        image_path: str,
+        save_result: bool = True,
+        debug: bool = False,
+        crop_chars: bool = False,
+    ) -> Dict[str, Any]:
+        """识别单个图像"""
+        image_path = Path(image_path)
+        if not image_path.exists():
+            raise FileNotFoundError(f"Image not found: {image_path}")
+
+        # 创建输出目录（仅用于保存 result.json/chars.json）
+        output_dir = self.output_dir / image_path.stem
+        if save_result:
+            output_dir.mkdir(parents=True, exist_ok=True)
+
+        if debug:
+            print(f"[DEBUG] Processing: {image_path}")
+
+        # Step 1: 加载图像
+        image = self.preprocessor.load_image(str(image_path))
+        image_info = self.preprocessor.get_image_info()
+        log_step("01_image_info", image_info, output_dir, debug, title="原图")
+        if debug:
+            print(f"[DEBUG] Image size: {image_info['width']}x{image_info['height']}")
+
+        # Step 2: 增强图像并调用 Layout Parsing API
+        if debug:
+            print(f"[DEBUG] Calling Layout Parsing API...")
+
+        import tempfile
+        enhanced = self.preprocessor.enhance_for_ocr()
+        with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
+            tmp_path = tmp.name
+            cv2.imwrite(tmp_path, enhanced)
+        try:
+            response = self.api_client.recognize(tmp_path)
+        finally:
+            import os
+            os.unlink(tmp_path)
+
+        log_step("02_api_response", {"ok": True}, output_dir, debug, title="API调用后")
+
+        # Step 3: 解析API结果 - 获取识别的文字和坐标
+        parsed_results = self._parse_markdown_result(response)
+        parsed_results = self._deduplicate_columns(parsed_results)
+        parsed_results = self._merge_overlapping_columns(parsed_results, debug=debug)
+        parsed_results = self._filter_garbage_columns(parsed_results, debug=debug)
+        # 释文列不再在这里过滤，留给 _split_columns_to_chars 内部处理，
+        # 以便保留释文位置信息辅助主文列分割。
+        # parsed_results = self._filter_annotation_columns(parsed_results, debug=debug)
+
+        # 检测 API 遗漏的列（基于垂直投影）
+        missing_cols = self._detect_missing_columns(image, parsed_results, debug=debug)
+        if missing_cols:
+            parsed_results.extend(missing_cols)
+
+        # 检测边缘遗漏列，并尝试单独调用 API 识别文字
+        edge_cols = self._detect_edge_columns(image, parsed_results, debug=debug)
+        for col in edge_cols:
+            ex1, ey1, ex2, ey2 = [int(v) for v in col["bbox"]]
+            if ex2 <= ex1 or ey2 <= ey1:
+                continue
+
+            # 如果边缘区域过宽，使用滑动窗口避免释文/边框干扰
+            region_w = ex2 - ex1
+            window_w = min(130, region_w)
+            stride = max(80, window_w - 30)
+
+            windows = []
+            if region_w <= 150:
+                windows.append((ex1, ey1, ex2, ey2))
+            else:
+                # 从区域最外侧向内侧滑动
+                if ex1 == 0:  # 左边缘
+                    start_x = 0
+                    while start_x + window_w <= ex2:
+                        windows.append((start_x, ey1, start_x + window_w, ey2))
+                        start_x += stride
+                    if not windows:
+                        windows.append((ex1, ey1, ex2, ey2))
+                else:  # 右边缘
+                    end_x = ex2
+                    while end_x - window_w >= ex1:
+                        windows.append((end_x - window_w, ey1, end_x, ey2))
+                        end_x -= stride
+                    if not windows:
+                        windows.append((ex1, ey1, ex2, ey2))
+
+            for wx1, wy1, wx2, wy2 in windows:
+                crop = image[wy1:wy2, wx1:wx2]
+                if crop.size == 0:
+                    continue
+                import tempfile
+                with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
+                    tmp_path = tmp.name
+                    cv2.imwrite(tmp_path, crop)
+                try:
+                    edge_result = self.api_client.recognize(tmp_path)
+                    edge_parsed = self._parse_markdown_result(edge_result)
+                    if edge_parsed:
+                        # 将边缘识别结果的坐标偏移回全局坐标
+                        for ep in edge_parsed:
+                            b = ep["bbox"]
+                            b[0] += wx1
+                            b[2] += wx1
+                            b[1] += wy1
+                            b[3] += wy1
+                            for p in ep.get("poly", []):
+                                p[0] += wx1
+                                p[1] += wy1
+                        parsed_results.extend(edge_parsed)
+                except Exception as e:
+                    if debug:
+                        print(f"[EDGE] 窗口 ({wx1}-{wx2}) API 识别失败: {e}")
+                finally:
+                    import os
+                    os.unlink(tmp_path)
+
+        # 去重、合并、过滤
+        parsed_results = self._deduplicate_columns(parsed_results)
+        parsed_results = self._merge_overlapping_columns(parsed_results, debug=debug)
+        parsed_results = self._filter_garbage_columns(parsed_results, debug=debug)
+
+        # 按 x 坐标排序
+        parsed_results.sort(key=lambda c: (c["bbox"][0] + c["bbox"][2]) / 2)
+
+        # 绘制带坐标的预览图
+        log_step("03_parsed_text", {"columns": len(parsed_results)}, output_dir, debug,
+                 title=f"解析的文本 ({len(parsed_results)}列)")
+
+        if debug:
+            print(f"[DEBUG] Parsed text results: {len(parsed_results)} items")
+            for i, r in enumerate(parsed_results[:10]):
+                print(f" [{i}] {r['text'][:30]}...")
+
+        # Step 5: 使用列坐标数据和像素投影法拆分单字
+        char_results = self._split_columns_to_chars(parsed_results, image=image, debug=debug)
+        char_results = self._filter_garbage_chars(char_results, debug=debug)
+
+        log_step("05_char_results", {"chars": len(char_results)}, output_dir, debug,
+                 title=f"单字结果 ({len(char_results)}字)")
+
+        # Step 6: 生成最终输出
+        recognized_text = "".join(r["char"] for r in char_results)
+        log_step("06_recognized_text", {"text_preview": recognized_text[:20]}, output_dir, debug,
+                 title=f"最终识别: {recognized_text[:20]}...")
+
+        result = {
+            "image_path": str(image_path),
+            "image_info": image_info,
+            "recognized_text": recognized_text,
+            "parsed_results": parsed_results,
+            "char_results": char_results,
+            "column_count": max((r["column"] for r in char_results), default=0) + 1 if char_results else 0,
+            "total_chars": len(char_results),
+            "timestamp": datetime.now().isoformat(),
+        }
+
+        # Step 7: 保存结果
+        if save_result:
+            self._save_result(result, debug)
+
+        # 不再生成裁剪图片/调试图片/中间文件，仅保留 result.json 与 chars.json
+
+        return result
+
+    def _save_result(self, result: Dict[str, Any], debug: bool = False):
+        """保存结果到JSON文件"""
+        img_path = Path(result.get("image_path", ""))
+        work_dir = img_path.parent
+        output_dir = work_dir / ".debug" / img_path.stem
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        # 保存完整结果
+        json_path = output_dir / "result.json"
+        # 移除过大的字段
+        save_result = {k: v for k, v in result.items() if k != "api_output_files"}
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(save_result, f, ensure_ascii=False, indent=2)
+
+        if debug:
+            print(f"[DEBUG] Result saved to: {json_path}")
+
+        # 保存单字结果（简化版）
+        # 约定：chars.json 不包含“字帖”字段，字段使用英文键。
+        chars_path = output_dir / "chars.json"
+        work_name = work_dir.name if work_dir else ""
+        image_name = img_path.name
+
+        # 从字帖目录名注入默认 author/font/work（可被后续编辑器覆盖）
+        author = ""
+        font = ""
+        work_title = ""
+        if work_name and "-" in work_name:
+            parts = [p.strip() for p in work_name.split("-") if p.strip()]
+            if len(parts) >= 2:
+                author = parts[0]
+                font_candidates = {"楷书", "行书", "草书", "篆书", "隶书"}
+                if parts[1] in font_candidates:
+                    font = parts[1]
+                    if len(parts) >= 3:
+                        work_title = "-".join(parts[2:])
+                else:
+                    work_title = "-".join(parts[1:])
+
+        char_data = []
+        for r in result["char_results"]:
+            # chars.json 的 id 改为 UUID
+            rid = str(uuid.uuid4())
+            char_data.append(
+                {
+                    "id": rid,
+                    "char": r.get("char", ""),
+                    # 元数据字段使用英文（后续可由桌面端/其他工具补全）
+                    "font": font,
+                    "author": author,
+                    "work": work_title,
+                    "work_dir": work_name,
+                    "bbox": r.get("bbox", [0, 0, 0, 0]),
+                    "column": r.get("column", 0),
+                    "row": r.get("row", 0),
+                }
+            )
+        with open(chars_path, "w", encoding="utf-8") as f:
+            json.dump(char_data, f, ensure_ascii=False, indent=2)
+
+        if debug:
+            print(f"[DEBUG] Chars saved to: {chars_path}")
+
+    def _save_debug_images(
+        self,
+        result: Dict[str, Any],
+        image: Any,
+        image_path: str,
+    ):
+        """保留空实现：不再写调试图片。"""
+        return
+
+
+def recognize_calligraphy(
+    image_path: str,
+    debug: bool = False,
+) -> Dict[str, Any]:
+    """便捷函数：识别书法图像"""
+    ocr = CalligraphyOCR()
+    return ocr.recognize_image(image_path, debug=debug)
+
+
+def main():
+    """命令行入口"""
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Chinese Calligraphy OCR")
+    parser.add_argument("image_path", help="Path to the calligraphy image")
+    parser.add_argument("--debug", "-d", action="store_true", help="Enable debug output")
+    parser.add_argument("--output", "-o", help="Output directory")
+
+    args = parser.parse_args()
+
+    ocr = CalligraphyOCR(output_dir=args.output)
+    result = ocr.recognize_image(
+        args.image_path,
+        debug=args.debug,
+    )
+
+    print(f"\n识别结果:")
+    print(f" 总字数: {result['total_chars']}")
+    print(f" 列数: {result['column_count']}")
+    print(f" 识别文字: {result['recognized_text'][:50]}...")
+
+
+if __name__ == "__main__":
+    main()

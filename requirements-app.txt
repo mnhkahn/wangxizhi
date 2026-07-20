@@ -1,0 +1,15 @@
+# 书法拆字编辑器依赖
+
+# GUI 框架
+PyQt5>=5.15.0
+
+# 图像处理（已有）
+opencv-python-headless>=4.5.0
+numpy>=1.20.0
+
+# OCR 依赖（已有）
+requests>=2.25.0
+python-dotenv>=0.19.0
+
+# 上传（Cloudinary 官方包）
+cloudinary>=1.0.0

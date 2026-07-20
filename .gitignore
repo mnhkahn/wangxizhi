@@ -1,3 +1,4 @@
+# Java
 *.class
 *.log
 *.jar
@@ -6,8 +7,54 @@
 *.zip
 *.tar.gz
 *.rar
+bin
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node.js
+node_modules
+
+# OS
 .DS_Store
+
+# Environment
+.env
+.claude
+
+# Project specific
 w100
 w1000
-bin
-node_modules
+ocr_output
+words/
+.debug
+!王羲之-行书-千字文/.debug
+tmp/
+# OCR batch log
+batch_ocr_log.txt
+
+# Debug images
+debug_*.jpg
+test_fatie_*.jpg
+
+# Codex 本地配置（含密钥，勿提交）
+.codex/

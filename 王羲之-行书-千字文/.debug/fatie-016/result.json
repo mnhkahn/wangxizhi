@@ -1,0 +1,2213 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-016.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "菩薩及比丘衆千二百兹十人俱尔時世尊日初乡整衣持鉢入舎衛大城食於其城中次第乞已還至本霉飯食讫換衣鋪洗菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞食于其城中次第乞已还至本处饭食讫收衣钵洗",
+  "parsed_results": [
+    {
+      "text": "菩薩及比丘衆千二百兹",
+      "bbox": [
+        646,
+        159,
+        755,
+        1354
+      ],
+      "poly": [
+        [
+          646,
+          159
+        ],
+        [
+          755,
+          159
+        ],
+        [
+          755,
+          1354
+        ],
+        [
+          646,
+          1354
+        ]
+      ]
+    },
+    {
+      "text": "十人俱尔時世尊日初乡",
+      "bbox": [
+        530,
+        164,
+        648,
+        1349
+      ],
+      "poly": [
+        [
+          530,
+          164
+        ],
+        [
+          648,
+          164
+        ],
+        [
+          648,
+          1349
+        ],
+        [
+          530,
+          1349
+        ]
+      ]
+    },
+    {
+      "text": "整衣持鉢入舎衛大城",
+      "bbox": [
+        406,
+        160,
+        534,
+        1354
+      ],
+      "poly": [
+        [
+          406,
+          160
+        ],
+        [
+          534,
+          160
+        ],
+        [
+          534,
+          1354
+        ],
+        [
+          406,
+          1354
+        ]
+      ]
+    },
+    {
+      "text": "食於其城中次第乞已還",
+      "bbox": [
+        300,
+        162,
+        417,
+        1351
+      ],
+      "poly": [
+        [
+          300,
+          162
+        ],
+        [
+          417,
+          162
+        ],
+        [
+          417,
+          1351
+        ],
+        [
+          300,
+          1351
+        ]
+      ]
+    },
+    {
+      "text": "至本霉飯食讫換衣鋪洗",
+      "bbox": [
+        198,
+        151,
+        306,
+        1352
+      ],
+      "poly": [
+        [
+          198,
+          151
+        ],
+        [
+          306,
+          151
+        ],
+        [
+          306,
+          1352
+        ],
+        [
+          198,
+          1352
+        ]
+      ]
+    },
+    {
+      "text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "poly": [
+        [
+          153,
+          156
+        ],
+        [
+          181,
+          156
+        ],
+        [
+          181,
+          1005
+        ],
+        [
+          153,
+          1005
+        ]
+      ]
+    },
+    {
+      "text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "poly": [
+        [
+          119,
+          156
+        ],
+        [
+          146,
+          156
+        ],
+        [
+          146,
+          712
+        ],
+        [
+          119,
+          712
+        ]
+      ]
+    },
+    {
+      "text": "11",
+      "bbox": [
+        0,
+        1446,
+        17,
+        1468
+      ],
+      "poly": [
+        [
+          0,
+          1446
+        ],
+        [
+          17,
+          1446
+        ],
+        [
+          17,
+          1468
+        ],
+        [
+          0,
+          1468
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "菩",
+      "bbox": [
+        646.0,
+        159.0,
+        755.0,
+        247.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "菩薩及比丘衆千二百兹",
+      "col_bbox": [
+        646,
+        159,
+        755,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薩",
+      "bbox": [
+        646.0,
+        247.0,
+        755.0,
+        366.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "菩薩及比丘衆千二百兹",
+      "col_bbox": [
+        646,
+        159,
+        755,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "及",
+      "bbox": [
+        646.0,
+        366.0,
+        755.0,
+        490.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "菩薩及比丘衆千二百兹",
+      "col_bbox": [
+        646,
+        159,
+        755,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "比",
+      "bbox": [
+        646.0,
+        490.0,
+        755.0,
+        602.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "菩薩及比丘衆千二百兹",
+      "col_bbox": [
+        646,
+        159,
+        755,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "丘",
+      "bbox": [
+        646.0,
+        602.0,
+        755.0,
+        736.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "菩薩及比丘衆千二百兹",
+      "col_bbox": [
+        646,
+        159,
+        755,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "衆",
+      "bbox": [
+        646.0,
+        736.0,
+        755.0,
+        841.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "菩薩及比丘衆千二百兹",
+      "col_bbox": [
+        646,
+        159,
+        755,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "千",
+      "bbox": [
+        646.0,
+        841.0,
+        755.0,
+        960.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "菩薩及比丘衆千二百兹",
+      "col_bbox": [
+        646,
+        159,
+        755,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "二",
+      "bbox": [
+        646.0,
+        960.0,
+        755.0,
+        1093.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "菩薩及比丘衆千二百兹",
+      "col_bbox": [
+        646,
+        159,
+        755,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "百",
+      "bbox": [
+        646.0,
+        1093.0,
+        755.0,
+        1202.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "菩薩及比丘衆千二百兹",
+      "col_bbox": [
+        646,
+        159,
+        755,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "兹",
+      "bbox": [
+        646.0,
+        1202.0,
+        755.0,
+        1354.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "菩薩及比丘衆千二百兹",
+      "col_bbox": [
+        646,
+        159,
+        755,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "十",
+      "bbox": [
+        530.0,
+        164.0,
+        648.0,
+        254.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "十人俱尔時世尊日初乡",
+      "col_bbox": [
+        530,
+        164,
+        648,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        530.0,
+        254.0,
+        648.0,
+        434.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "十人俱尔時世尊日初乡",
+      "col_bbox": [
+        530,
+        164,
+        648,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "俱",
+      "bbox": [
+        530.0,
+        434.0,
+        648.0,
+        544.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "十人俱尔時世尊日初乡",
+      "col_bbox": [
+        530,
+        164,
+        648,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尔",
+      "bbox": [
+        530.0,
+        544.0,
+        648.0,
+        657.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "十人俱尔時世尊日初乡",
+      "col_bbox": [
+        530,
+        164,
+        648,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "時",
+      "bbox": [
+        530.0,
+        657.0,
+        648.0,
+        790.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "十人俱尔時世尊日初乡",
+      "col_bbox": [
+        530,
+        164,
+        648,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        530.0,
+        790.0,
+        648.0,
+        874.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "十人俱尔時世尊日初乡",
+      "col_bbox": [
+        530,
+        164,
+        648,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        530.0,
+        874.0,
+        648.0,
+        1027.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "十人俱尔時世尊日初乡",
+      "col_bbox": [
+        530,
+        164,
+        648,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "日",
+      "bbox": [
+        530.0,
+        1027.0,
+        648.0,
+        1146.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "十人俱尔時世尊日初乡",
+      "col_bbox": [
+        530,
+        164,
+        648,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "初",
+      "bbox": [
+        530.0,
+        1146.0,
+        648.0,
+        1205.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "十人俱尔時世尊日初乡",
+      "col_bbox": [
+        530,
+        164,
+        648,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乡",
+      "bbox": [
+        530.0,
+        1205.0,
+        648.0,
+        1349.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 19,
+      "col_text": "十人俱尔時世尊日初乡",
+      "col_bbox": [
+        530,
+        164,
+        648,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "整",
+      "bbox": [
+        406.0,
+        160.0,
+        534.0,
+        253.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 20,
+      "col_text": "整衣持鉢入舎衛大城",
+      "col_bbox": [
+        406,
+        160,
+        534,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "衣",
+      "bbox": [
+        406.0,
+        253.0,
+        534.0,
+        447.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 21,
+      "col_text": "整衣持鉢入舎衛大城",
+      "col_bbox": [
+        406,
+        160,
+        534,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "持",
+      "bbox": [
+        406.0,
+        447.0,
+        534.0,
+        565.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 22,
+      "col_text": "整衣持鉢入舎衛大城",
+      "col_bbox": [
+        406,
+        160,
+        534,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "鉢",
+      "bbox": [
+        406.0,
+        565.0,
+        534.0,
+        709.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 23,
+      "col_text": "整衣持鉢入舎衛大城",
+      "col_bbox": [
+        406,
+        160,
+        534,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "入",
+      "bbox": [
+        406.0,
+        709.0,
+        534.0,
+        784.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 24,
+      "col_text": "整衣持鉢入舎衛大城",
+      "col_bbox": [
+        406,
+        160,
+        534,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "舎",
+      "bbox": [
+        406.0,
+        784.0,
+        534.0,
+        948.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 25,
+      "col_text": "整衣持鉢入舎衛大城",
+      "col_bbox": [
+        406,
+        160,
+        534,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "衛",
+      "bbox": [
+        406.0,
+        948.0,
+        534.0,
+        1085.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 26,
+      "col_text": "整衣持鉢入舎衛大城",
+      "col_bbox": [
+        406,
+        160,
+        534,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        406.0,
+        1085.0,
+        534.0,
+        1210.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 27,
+      "col_text": "整衣持鉢入舎衛大城",
+      "col_bbox": [
+        406,
+        160,
+        534,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "城",
+      "bbox": [
+        406.0,
+        1210.0,
+        534.0,
+        1354.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 28,
+      "col_text": "整衣持鉢入舎衛大城",
+      "col_bbox": [
+        406,
+        160,
+        534,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "食",
+      "bbox": [
+        300.0,
+        162.0,
+        417.0,
+        245.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 29,
+      "col_text": "食於其城中次第乞已還",
+      "col_bbox": [
+        300,
+        162,
+        417,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "於",
+      "bbox": [
+        300.0,
+        245.0,
+        417.0,
+        364.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 30,
+      "col_text": "食於其城中次第乞已還",
+      "col_bbox": [
+        300,
+        162,
+        417,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        300.0,
+        364.0,
+        417.0,
+        496.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 31,
+      "col_text": "食於其城中次第乞已還",
+      "col_bbox": [
+        300,
+        162,
+        417,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "城",
+      "bbox": [
+        300.0,
+        496.0,
+        417.0,
+        612.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 32,
+      "col_text": "食於其城中次第乞已還",
+      "col_bbox": [
+        300,
+        162,
+        417,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        300.0,
+        612.0,
+        417.0,
+        790.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 33,
+      "col_text": "食於其城中次第乞已還",
+      "col_bbox": [
+        300,
+        162,
+        417,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "次",
+      "bbox": [
+        300.0,
+        790.0,
+        417.0,
+        905.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 34,
+      "col_text": "食於其城中次第乞已還",
+      "col_bbox": [
+        300,
+        162,
+        417,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "第",
+      "bbox": [
+        300.0,
+        905.0,
+        417.0,
+        959.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 35,
+      "col_text": "食於其城中次第乞已還",
+      "col_bbox": [
+        300,
+        162,
+        417,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乞",
+      "bbox": [
+        300.0,
+        959.0,
+        417.0,
+        1079.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 36,
+      "col_text": "食於其城中次第乞已還",
+      "col_bbox": [
+        300,
+        162,
+        417,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "已",
+      "bbox": [
+        300.0,
+        1079.0,
+        417.0,
+        1209.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 37,
+      "col_text": "食於其城中次第乞已還",
+      "col_bbox": [
+        300,
+        162,
+        417,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "還",
+      "bbox": [
+        300.0,
+        1209.0,
+        417.0,
+        1351.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 38,
+      "col_text": "食於其城中次第乞已還",
+      "col_bbox": [
+        300,
+        162,
+        417,
+        1351
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "至",
+      "bbox": [
+        198.0,
+        151.0,
+        306.0,
+        306.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 39,
+      "col_text": "至本霉飯食讫換衣鋪洗",
+      "col_bbox": [
+        198,
+        151,
+        306,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "本",
+      "bbox": [
+        198.0,
+        306.0,
+        306.0,
+        417.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 40,
+      "col_text": "至本霉飯食讫換衣鋪洗",
+      "col_bbox": [
+        198,
+        151,
+        306,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "霉",
+      "bbox": [
+        198.0,
+        417.0,
+        306.0,
+        546.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 41,
+      "col_text": "至本霉飯食讫換衣鋪洗",
+      "col_bbox": [
+        198,
+        151,
+        306,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "飯",
+      "bbox": [
+        198.0,
+        546.0,
+        306.0,
+        603.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 42,
+      "col_text": "至本霉飯食讫換衣鋪洗",
+      "col_bbox": [
+        198,
+        151,
+        306,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "食",
+      "bbox": [
+        198.0,
+        603.0,
+        306.0,
+        786.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 43,
+      "col_text": "至本霉飯食讫換衣鋪洗",
+      "col_bbox": [
+        198,
+        151,
+        306,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "讫",
+      "bbox": [
+        198.0,
+        786.0,
+        306.0,
+        835.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 44,
+      "col_text": "至本霉飯食讫換衣鋪洗",
+      "col_bbox": [
+        198,
+        151,
+        306,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "換",
+      "bbox": [
+        198.0,
+        835.0,
+        306.0,
+        955.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 45,
+      "col_text": "至本霉飯食讫換衣鋪洗",
+      "col_bbox": [
+        198,
+        151,
+        306,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "衣",
+      "bbox": [
+        198.0,
+        955.0,
+        306.0,
+        1139.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 46,
+      "col_text": "至本霉飯食讫換衣鋪洗",
+      "col_bbox": [
+        198,
+        151,
+        306,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "鋪",
+      "bbox": [
+        198.0,
+        1139.0,
+        306.0,
+        1195.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 47,
+      "col_text": "至本霉飯食讫換衣鋪洗",
+      "col_bbox": [
+        198,
+        151,
+        306,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "洗",
+      "bbox": [
+        198.0,
+        1195.0,
+        306.0,
+        1352.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 48,
+      "col_text": "至本霉飯食讫換衣鋪洗",
+      "col_bbox": [
+        198,
+        151,
+        306,
+        1352
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        153.0,
+        156.0,
+        181.0,
+        183.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 49,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "萨",
+      "bbox": [
+        153.0,
+        183.0,
+        181.0,
+        209.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 50,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "及",
+      "bbox": [
+        153.0,
+        209.0,
+        181.0,
+        236.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 51,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "比",
+      "bbox": [
+        153.0,
+        236.0,
+        181.0,
+        263.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 52,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "丘",
+      "bbox": [
+        153.0,
+        263.0,
+        181.0,
+        289.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 53,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "众",
+      "bbox": [
+        153.0,
+        289.0,
+        181.0,
+        317.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 54,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "千",
+      "bbox": [
+        153.0,
+        317.0,
+        181.0,
+        355.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 55,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "二",
+      "bbox": [
+        153.0,
+        355.0,
+        181.0,
+        389.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 56,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "百",
+      "bbox": [
+        153.0,
+        389.0,
+        181.0,
+        412.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 57,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "五",
+      "bbox": [
+        153.0,
+        412.0,
+        181.0,
+        432.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 58,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "十",
+      "bbox": [
+        153.0,
+        432.0,
+        181.0,
+        474.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 59,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        153.0,
+        474.0,
+        181.0,
+        502.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 60,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "俱",
+      "bbox": [
+        153.0,
+        502.0,
+        181.0,
+        530.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 61,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尔",
+      "bbox": [
+        153.0,
+        530.0,
+        181.0,
+        555.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 62,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "时",
+      "bbox": [
+        153.0,
+        555.0,
+        181.0,
+        581.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 63,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        153.0,
+        581.0,
+        181.0,
+        609.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 64,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        153.0,
+        609.0,
+        181.0,
+        636.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 65,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "日",
+      "bbox": [
+        153.0,
+        636.0,
+        181.0,
+        660.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 66,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "初",
+      "bbox": [
+        153.0,
+        660.0,
+        181.0,
+        688.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 67,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "分",
+      "bbox": [
+        153.0,
+        688.0,
+        181.0,
+        716.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 68,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "整",
+      "bbox": [
+        153.0,
+        716.0,
+        181.0,
+        742.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 69,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "衣",
+      "bbox": [
+        153.0,
+        742.0,
+        181.0,
+        770.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 70,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "持",
+      "bbox": [
+        153.0,
+        770.0,
+        181.0,
+        798.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 71,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "钵",
+      "bbox": [
+        153.0,
+        798.0,
+        181.0,
+        827.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 72,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "入",
+      "bbox": [
+        153.0,
+        827.0,
+        181.0,
+        855.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 73,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "舍",
+      "bbox": [
+        153.0,
+        855.0,
+        181.0,
+        898.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 74,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "卫",
+      "bbox": [
+        153.0,
+        898.0,
+        181.0,
+        927.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 75,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        153.0,
+        927.0,
+        181.0,
+        954.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 76,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "城",
+      "bbox": [
+        153.0,
+        954.0,
+        181.0,
+        982.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 77,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乞",
+      "bbox": [
+        153.0,
+        982.0,
+        181.0,
+        1005.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 78,
+      "col_text": "菩萨及比丘众千二百五十人俱尔时世尊日初分整衣持钵入舍卫大城乞",
+      "col_bbox": [
+        153,
+        156,
+        181,
+        1005
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "食",
+      "bbox": [
+        119.0,
+        156.0,
+        146.0,
+        183.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 79,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "于",
+      "bbox": [
+        119.0,
+        183.0,
+        146.0,
+        208.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 80,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        119.0,
+        208.0,
+        146.0,
+        235.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 81,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "城",
+      "bbox": [
+        119.0,
+        235.0,
+        146.0,
+        264.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 82,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        119.0,
+        264.0,
+        146.0,
+        290.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 83,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "次",
+      "bbox": [
+        119.0,
+        290.0,
+        146.0,
+        317.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 84,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "第",
+      "bbox": [
+        119.0,
+        317.0,
+        146.0,
+        343.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 85,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乞",
+      "bbox": [
+        119.0,
+        343.0,
+        146.0,
+        370.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 86,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "已",
+      "bbox": [
+        119.0,
+        370.0,
+        146.0,
+        398.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 87,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "还",
+      "bbox": [
+        119.0,
+        398.0,
+        146.0,
+        426.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 88,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "至",
+      "bbox": [
+        119.0,
+        426.0,
+        146.0,
+        466.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 89,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "本",
+      "bbox": [
+        119.0,
+        466.0,
+        146.0,
+        489.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 90,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "处",
+      "bbox": [
+        119.0,
+        489.0,
+        146.0,
+        521.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 91,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "饭",
+      "bbox": [
+        119.0,
+        521.0,
+        146.0,
+        552.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 92,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "食",
+      "bbox": [
+        119.0,
+        552.0,
+        146.0,
+        580.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 93,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "讫",
+      "bbox": [
+        119.0,
+        580.0,
+        146.0,
+        607.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 94,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "收",
+      "bbox": [
+        119.0,
+        607.0,
+        146.0,
+        635.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 95,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "衣",
+      "bbox": [
+        119.0,
+        635.0,
+        146.0,
+        661.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 96,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "钵",
+      "bbox": [
+        119.0,
+        661.0,
+        146.0,
+        688.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 97,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "洗",
+      "bbox": [
+        119.0,
+        688.0,
+        146.0,
+        712.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 98,
+      "col_text": "食于其城中次第乞已还至本处饭食讫收衣钵洗",
+      "col_bbox": [
+        119,
+        156,
+        146,
+        712
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 99,
+  "timestamp": "2026-05-02T23:10:13.627345"
+}

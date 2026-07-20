@@ -1,0 +1,2033 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-024.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "行希施如是不住於相者其福德不可思量須菩提沙意云何東方虚空可思量不不也世尊南西比方声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提汝意云何东方虚空可思量不不也世尊南西北方",
+  "parsed_results": [
+    {
+      "text": "",
+      "bbox": [
+        640,
+        157,
+        760,
+        1355
+      ],
+      "poly": [
+        [
+          640,
+          157
+        ],
+        [
+          760,
+          157
+        ],
+        [
+          760,
+          1355
+        ],
+        [
+          640,
+          1355
+        ]
+      ]
+    },
+    {
+      "text": "行希施如是不住於相者",
+      "bbox": [
+        528,
+        158,
+        652,
+        1355
+      ],
+      "poly": [
+        [
+          528,
+          158
+        ],
+        [
+          652,
+          158
+        ],
+        [
+          652,
+          1355
+        ],
+        [
+          528,
+          1355
+        ]
+      ]
+    },
+    {
+      "text": "其福德不可思量須菩提",
+      "bbox": [
+        407,
+        158,
+        542,
+        1356
+      ],
+      "poly": [
+        [
+          407,
+          158
+        ],
+        [
+          542,
+          158
+        ],
+        [
+          542,
+          1356
+        ],
+        [
+          407,
+          1356
+        ]
+      ]
+    },
+    {
+      "text": "沙意云何東方虚空可思",
+      "bbox": [
+        293,
+        158,
+        419,
+        1357
+      ],
+      "poly": [
+        [
+          293,
+          158
+        ],
+        [
+          419,
+          158
+        ],
+        [
+          419,
+          1357
+        ],
+        [
+          293,
+          1357
+        ]
+      ]
+    },
+    {
+      "text": "量不不也世尊南西比方",
+      "bbox": [
+        187,
+        155,
+        296,
+        1354
+      ],
+      "poly": [
+        [
+          187,
+          155
+        ],
+        [
+          296,
+          155
+        ],
+        [
+          296,
+          1354
+        ],
+        [
+          187,
+          1354
+        ]
+      ]
+    },
+    {
+      "text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "poly": [
+        [
+          150,
+          154
+        ],
+        [
+          178,
+          154
+        ],
+        [
+          178,
+          1004
+        ],
+        [
+          150,
+          1004
+        ]
+      ]
+    },
+    {
+      "text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "poly": [
+        [
+          115,
+          157
+        ],
+        [
+          143,
+          157
+        ],
+        [
+          143,
+          714
+        ],
+        [
+          115,
+          714
+        ]
+      ]
+    },
+    {
+      "text": "19",
+      "bbox": [
+        0,
+        1445,
+        20,
+        1466
+      ],
+      "poly": [
+        [
+          0,
+          1445
+        ],
+        [
+          20,
+          1445
+        ],
+        [
+          20,
+          1466
+        ],
+        [
+          0,
+          1466
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "行",
+      "bbox": [
+        528.0,
+        158.0,
+        652.0,
+        311.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "行希施如是不住於相者",
+      "col_bbox": [
+        528,
+        158,
+        652,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "希",
+      "bbox": [
+        528.0,
+        311.0,
+        652.0,
+        365.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "行希施如是不住於相者",
+      "col_bbox": [
+        528,
+        158,
+        652,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "施",
+      "bbox": [
+        528.0,
+        365.0,
+        652.0,
+        516.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "行希施如是不住於相者",
+      "col_bbox": [
+        528,
+        158,
+        652,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        528.0,
+        516.0,
+        652.0,
+        614.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "行希施如是不住於相者",
+      "col_bbox": [
+        528,
+        158,
+        652,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        528.0,
+        614.0,
+        652.0,
+        760.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "行希施如是不住於相者",
+      "col_bbox": [
+        528,
+        158,
+        652,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        528.0,
+        760.0,
+        652.0,
+        890.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "行希施如是不住於相者",
+      "col_bbox": [
+        528,
+        158,
+        652,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "住",
+      "bbox": [
+        528.0,
+        890.0,
+        652.0,
+        1027.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "行希施如是不住於相者",
+      "col_bbox": [
+        528,
+        158,
+        652,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "於",
+      "bbox": [
+        528.0,
+        1027.0,
+        652.0,
+        1107.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "行希施如是不住於相者",
+      "col_bbox": [
+        528,
+        158,
+        652,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        528.0,
+        1107.0,
+        652.0,
+        1255.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "行希施如是不住於相者",
+      "col_bbox": [
+        528,
+        158,
+        652,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        528.0,
+        1255.0,
+        652.0,
+        1355.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "行希施如是不住於相者",
+      "col_bbox": [
+        528,
+        158,
+        652,
+        1355
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        407.0,
+        158.0,
+        542.0,
+        252.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "其福德不可思量須菩提",
+      "col_bbox": [
+        407,
+        158,
+        542,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        407.0,
+        252.0,
+        542.0,
+        362.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "其福德不可思量須菩提",
+      "col_bbox": [
+        407,
+        158,
+        542,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        407.0,
+        362.0,
+        542.0,
+        510.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 12,
+      "col_text": "其福德不可思量須菩提",
+      "col_bbox": [
+        407,
+        158,
+        542,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        407.0,
+        510.0,
+        542.0,
+        671.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 13,
+      "col_text": "其福德不可思量須菩提",
+      "col_bbox": [
+        407,
+        158,
+        542,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        407.0,
+        671.0,
+        542.0,
+        791.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 14,
+      "col_text": "其福德不可思量須菩提",
+      "col_bbox": [
+        407,
+        158,
+        542,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "思",
+      "bbox": [
+        407.0,
+        791.0,
+        542.0,
+        904.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 15,
+      "col_text": "其福德不可思量須菩提",
+      "col_bbox": [
+        407,
+        158,
+        542,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "量",
+      "bbox": [
+        407.0,
+        904.0,
+        542.0,
+        1012.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 16,
+      "col_text": "其福德不可思量須菩提",
+      "col_bbox": [
+        407,
+        158,
+        542,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "須",
+      "bbox": [
+        407.0,
+        1012.0,
+        542.0,
+        1137.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 17,
+      "col_text": "其福德不可思量須菩提",
+      "col_bbox": [
+        407,
+        158,
+        542,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        407.0,
+        1137.0,
+        542.0,
+        1268.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 18,
+      "col_text": "其福德不可思量須菩提",
+      "col_bbox": [
+        407,
+        158,
+        542,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        407.0,
+        1268.0,
+        542.0,
+        1356.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 19,
+      "col_text": "其福德不可思量須菩提",
+      "col_bbox": [
+        407,
+        158,
+        542,
+        1356
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "沙",
+      "bbox": [
+        293.0,
+        158.0,
+        419.0,
+        292.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 20,
+      "col_text": "沙意云何東方虚空可思",
+      "col_bbox": [
+        293,
+        158,
+        419,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "意",
+      "bbox": [
+        293.0,
+        292.0,
+        419.0,
+        362.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 21,
+      "col_text": "沙意云何東方虚空可思",
+      "col_bbox": [
+        293,
+        158,
+        419,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "云",
+      "bbox": [
+        293.0,
+        362.0,
+        419.0,
+        518.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 22,
+      "col_text": "沙意云何東方虚空可思",
+      "col_bbox": [
+        293,
+        158,
+        419,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        293.0,
+        518.0,
+        419.0,
+        630.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 23,
+      "col_text": "沙意云何東方虚空可思",
+      "col_bbox": [
+        293,
+        158,
+        419,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "東",
+      "bbox": [
+        293.0,
+        630.0,
+        419.0,
+        722.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 24,
+      "col_text": "沙意云何東方虚空可思",
+      "col_bbox": [
+        293,
+        158,
+        419,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "方",
+      "bbox": [
+        293.0,
+        722.0,
+        419.0,
+        850.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 25,
+      "col_text": "沙意云何東方虚空可思",
+      "col_bbox": [
+        293,
+        158,
+        419,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "虚",
+      "bbox": [
+        293.0,
+        850.0,
+        419.0,
+        997.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 26,
+      "col_text": "沙意云何東方虚空可思",
+      "col_bbox": [
+        293,
+        158,
+        419,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "空",
+      "bbox": [
+        293.0,
+        997.0,
+        419.0,
+        1083.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 27,
+      "col_text": "沙意云何東方虚空可思",
+      "col_bbox": [
+        293,
+        158,
+        419,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        293.0,
+        1083.0,
+        419.0,
+        1234.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 28,
+      "col_text": "沙意云何東方虚空可思",
+      "col_bbox": [
+        293,
+        158,
+        419,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "思",
+      "bbox": [
+        293.0,
+        1234.0,
+        419.0,
+        1357.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 29,
+      "col_text": "沙意云何東方虚空可思",
+      "col_bbox": [
+        293,
+        158,
+        419,
+        1357
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "量",
+      "bbox": [
+        187.0,
+        155.0,
+        296.0,
+        294.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "量不不也世尊南西比方",
+      "col_bbox": [
+        187,
+        155,
+        296,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        187.0,
+        294.0,
+        296.0,
+        359.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "量不不也世尊南西比方",
+      "col_bbox": [
+        187,
+        155,
+        296,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        187.0,
+        359.0,
+        296.0,
+        519.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "量不不也世尊南西比方",
+      "col_bbox": [
+        187,
+        155,
+        296,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "也",
+      "bbox": [
+        187.0,
+        519.0,
+        296.0,
+        646.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "量不不也世尊南西比方",
+      "col_bbox": [
+        187,
+        155,
+        296,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        187.0,
+        646.0,
+        296.0,
+        760.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "量不不也世尊南西比方",
+      "col_bbox": [
+        187,
+        155,
+        296,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        187.0,
+        760.0,
+        296.0,
+        843.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "量不不也世尊南西比方",
+      "col_bbox": [
+        187,
+        155,
+        296,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "南",
+      "bbox": [
+        187.0,
+        843.0,
+        296.0,
+        972.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "量不不也世尊南西比方",
+      "col_bbox": [
+        187,
+        155,
+        296,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "西",
+      "bbox": [
+        187.0,
+        972.0,
+        296.0,
+        1085.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "量不不也世尊南西比方",
+      "col_bbox": [
+        187,
+        155,
+        296,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "比",
+      "bbox": [
+        187.0,
+        1085.0,
+        296.0,
+        1199.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "量不不也世尊南西比方",
+      "col_bbox": [
+        187,
+        155,
+        296,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "方",
+      "bbox": [
+        187.0,
+        1199.0,
+        296.0,
+        1354.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "量不不也世尊南西比方",
+      "col_bbox": [
+        187,
+        155,
+        296,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "声",
+      "bbox": [
+        150.0,
+        154.0,
+        178.0,
+        181.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 40,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "香",
+      "bbox": [
+        150.0,
+        181.0,
+        178.0,
+        209.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 41,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "味",
+      "bbox": [
+        150.0,
+        209.0,
+        178.0,
+        234.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 42,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "触",
+      "bbox": [
+        150.0,
+        234.0,
+        178.0,
+        263.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 43,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        150.0,
+        263.0,
+        178.0,
+        289.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 44,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "都",
+      "bbox": [
+        150.0,
+        289.0,
+        178.0,
+        316.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 45,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        150.0,
+        316.0,
+        178.0,
+        344.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 46,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        150.0,
+        344.0,
+        178.0,
+        372.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 47,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "住",
+      "bbox": [
+        150.0,
+        372.0,
+        178.0,
+        416.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 48,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "而",
+      "bbox": [
+        150.0,
+        416.0,
+        178.0,
+        436.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 49,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "行",
+      "bbox": [
+        150.0,
+        436.0,
+        178.0,
+        472.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 50,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "布",
+      "bbox": [
+        150.0,
+        472.0,
+        178.0,
+        500.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 51,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "施",
+      "bbox": [
+        150.0,
+        500.0,
+        178.0,
+        529.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 52,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        150.0,
+        529.0,
+        178.0,
+        553.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 53,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        150.0,
+        553.0,
+        178.0,
+        581.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 54,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        150.0,
+        581.0,
+        178.0,
+        606.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 55,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "住",
+      "bbox": [
+        150.0,
+        606.0,
+        178.0,
+        633.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 56,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "于",
+      "bbox": [
+        150.0,
+        633.0,
+        178.0,
+        660.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 57,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        150.0,
+        660.0,
+        178.0,
+        687.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 58,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        150.0,
+        687.0,
+        178.0,
+        715.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 59,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        150.0,
+        715.0,
+        178.0,
+        741.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 60,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "福",
+      "bbox": [
+        150.0,
+        741.0,
+        178.0,
+        769.0
+      ],
+      "column": 5,
+      "row": 21,
+      "global_index": 61,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "德",
+      "bbox": [
+        150.0,
+        769.0,
+        178.0,
+        797.0
+      ],
+      "column": 5,
+      "row": 22,
+      "global_index": 62,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        150.0,
+        797.0,
+        178.0,
+        841.0
+      ],
+      "column": 5,
+      "row": 23,
+      "global_index": 63,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        150.0,
+        841.0,
+        178.0,
+        869.0
+      ],
+      "column": 5,
+      "row": 24,
+      "global_index": 64,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "思",
+      "bbox": [
+        150.0,
+        869.0,
+        178.0,
+        897.0
+      ],
+      "column": 5,
+      "row": 25,
+      "global_index": 65,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "量",
+      "bbox": [
+        150.0,
+        897.0,
+        178.0,
+        926.0
+      ],
+      "column": 5,
+      "row": 26,
+      "global_index": 66,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "须",
+      "bbox": [
+        150.0,
+        926.0,
+        178.0,
+        953.0
+      ],
+      "column": 5,
+      "row": 27,
+      "global_index": 67,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        150.0,
+        953.0,
+        178.0,
+        979.0
+      ],
+      "column": 5,
+      "row": 28,
+      "global_index": 68,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "提",
+      "bbox": [
+        150.0,
+        979.0,
+        178.0,
+        1004.0
+      ],
+      "column": 5,
+      "row": 29,
+      "global_index": 69,
+      "col_text": "声香味触法都无所住而行布施如是不住于相者其福德不可思量须菩提",
+      "col_bbox": [
+        150,
+        154,
+        178,
+        1004
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "汝",
+      "bbox": [
+        115.0,
+        157.0,
+        143.0,
+        183.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 70,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "意",
+      "bbox": [
+        115.0,
+        183.0,
+        143.0,
+        210.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 71,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "云",
+      "bbox": [
+        115.0,
+        210.0,
+        143.0,
+        235.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 72,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        115.0,
+        235.0,
+        143.0,
+        263.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 73,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "东",
+      "bbox": [
+        115.0,
+        263.0,
+        143.0,
+        289.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 74,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "方",
+      "bbox": [
+        115.0,
+        289.0,
+        143.0,
+        316.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 75,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "虚",
+      "bbox": [
+        115.0,
+        316.0,
+        143.0,
+        343.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 76,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "空",
+      "bbox": [
+        115.0,
+        343.0,
+        143.0,
+        371.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 77,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        115.0,
+        371.0,
+        143.0,
+        399.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 78,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "思",
+      "bbox": [
+        115.0,
+        399.0,
+        143.0,
+        427.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 79,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "量",
+      "bbox": [
+        115.0,
+        427.0,
+        143.0,
+        470.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 80,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        115.0,
+        470.0,
+        143.0,
+        498.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 81,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        115.0,
+        498.0,
+        143.0,
+        526.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 82,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "也",
+      "bbox": [
+        115.0,
+        526.0,
+        143.0,
+        553.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 83,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "世",
+      "bbox": [
+        115.0,
+        553.0,
+        143.0,
+        581.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 84,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "尊",
+      "bbox": [
+        115.0,
+        581.0,
+        143.0,
+        608.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 85,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "南",
+      "bbox": [
+        115.0,
+        608.0,
+        143.0,
+        635.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 86,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "西",
+      "bbox": [
+        115.0,
+        635.0,
+        143.0,
+        660.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 87,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "北",
+      "bbox": [
+        115.0,
+        660.0,
+        143.0,
+        687.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 88,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "方",
+      "bbox": [
+        115.0,
+        687.0,
+        143.0,
+        714.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 89,
+      "col_text": "汝意云何东方虚空可思量不不也世尊南西北方",
+      "col_bbox": [
+        115,
+        157,
+        143,
+        714
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 90,
+  "timestamp": "2026-05-02T23:10:24.975639"
+}

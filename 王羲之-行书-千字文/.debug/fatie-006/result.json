@@ -1,0 +1,1806 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-006.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "东堡到经房弘曲辰楊关迷金剛延前後六譯若實羚同然貞葉皆自西秀五天晋韻一傳授者所贵新集金刚经序弘农杨额述金刚经前后六译各有异同然贝叶皆自西来而五天音韵非一传授者所贵",
+  "parsed_results": [
+    {
+      "text": "东堡到经房",
+      "bbox": [
+        652,
+        296,
+        757,
+        861
+      ],
+      "poly": [
+        [
+          652,
+          296
+        ],
+        [
+          757,
+          296
+        ],
+        [
+          757,
+          861
+        ],
+        [
+          652,
+          861
+        ]
+      ]
+    },
+    {
+      "text": "弘?曲辰，楊关迷",
+      "bbox": [
+        546,
+        609,
+        647,
+        1318
+      ],
+      "poly": [
+        [
+          546,
+          609
+        ],
+        [
+          647,
+          609
+        ],
+        [
+          647,
+          1318
+        ],
+        [
+          546,
+          1318
+        ]
+      ]
+    },
+    {
+      "text": "金剛延前後六譯若實羚",
+      "bbox": [
+        420,
+        149,
+        540,
+        1345
+      ],
+      "poly": [
+        [
+          420,
+          149
+        ],
+        [
+          540,
+          149
+        ],
+        [
+          540,
+          1345
+        ],
+        [
+          420,
+          1345
+        ]
+      ]
+    },
+    {
+      "text": "同 然貞葉 皆自 西秀 五",
+      "bbox": [
+        315,
+        148,
+        414,
+        1340
+      ],
+      "poly": [
+        [
+          315,
+          148
+        ],
+        [
+          414,
+          148
+        ],
+        [
+          414,
+          1340
+        ],
+        [
+          315,
+          1340
+        ]
+      ]
+    },
+    {
+      "text": "天晋韻一傳授者所贵",
+      "bbox": [
+        189,
+        146,
+        301,
+        1345
+      ],
+      "poly": [
+        [
+          189,
+          146
+        ],
+        [
+          301,
+          146
+        ],
+        [
+          301,
+          1345
+        ],
+        [
+          189,
+          1345
+        ]
+      ]
+    },
+    {
+      "text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "poly": [
+        [
+          149,
+          148
+        ],
+        [
+          178,
+          148
+        ],
+        [
+          178,
+          760
+        ],
+        [
+          149,
+          760
+        ]
+      ]
+    },
+    {
+      "text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "poly": [
+        [
+          113,
+          145
+        ],
+        [
+          143,
+          145
+        ],
+        [
+          143,
+          706
+        ],
+        [
+          113,
+          706
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "东",
+      "bbox": [
+        652.0,
+        296.0,
+        757.0,
+        393.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "东堡到经房",
+      "col_bbox": [
+        652,
+        296,
+        757,
+        861
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "堡",
+      "bbox": [
+        652.0,
+        393.0,
+        757.0,
+        554.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "东堡到经房",
+      "col_bbox": [
+        652,
+        296,
+        757,
+        861
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "到",
+      "bbox": [
+        652.0,
+        554.0,
+        757.0,
+        667.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "东堡到经房",
+      "col_bbox": [
+        652,
+        296,
+        757,
+        861
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        652.0,
+        667.0,
+        757.0,
+        780.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "东堡到经房",
+      "col_bbox": [
+        652,
+        296,
+        757,
+        861
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "房",
+      "bbox": [
+        652.0,
+        780.0,
+        757.0,
+        861.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "东堡到经房",
+      "col_bbox": [
+        652,
+        296,
+        757,
+        861
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "弘",
+      "bbox": [
+        546.0,
+        609.0,
+        647.0,
+        674.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 5,
+      "col_text": "弘?曲辰，楊关迷",
+      "col_bbox": [
+        546,
+        609,
+        647,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "曲",
+      "bbox": [
+        546.0,
+        778.0,
+        647.0,
+        850.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 6,
+      "col_text": "弘?曲辰，楊关迷",
+      "col_bbox": [
+        546,
+        609,
+        647,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "辰",
+      "bbox": [
+        546.0,
+        850.0,
+        647.0,
+        945.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 7,
+      "col_text": "弘?曲辰，楊关迷",
+      "col_bbox": [
+        546,
+        609,
+        647,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "楊",
+      "bbox": [
+        546.0,
+        1056.0,
+        647.0,
+        1165.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 8,
+      "col_text": "弘?曲辰，楊关迷",
+      "col_bbox": [
+        546,
+        609,
+        647,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "关",
+      "bbox": [
+        546.0,
+        1165.0,
+        647.0,
+        1251.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 9,
+      "col_text": "弘?曲辰，楊关迷",
+      "col_bbox": [
+        546,
+        609,
+        647,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "迷",
+      "bbox": [
+        546.0,
+        1251.0,
+        647.0,
+        1318.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 10,
+      "col_text": "弘?曲辰，楊关迷",
+      "col_bbox": [
+        546,
+        609,
+        647,
+        1318
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        420.0,
+        149.0,
+        540.0,
+        287.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 11,
+      "col_text": "金剛延前後六譯若實羚",
+      "col_bbox": [
+        420,
+        149,
+        540,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "剛",
+      "bbox": [
+        420.0,
+        287.0,
+        540.0,
+        412.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 12,
+      "col_text": "金剛延前後六譯若實羚",
+      "col_bbox": [
+        420,
+        149,
+        540,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "延",
+      "bbox": [
+        420.0,
+        412.0,
+        540.0,
+        520.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 13,
+      "col_text": "金剛延前後六譯若實羚",
+      "col_bbox": [
+        420,
+        149,
+        540,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "前",
+      "bbox": [
+        420.0,
+        520.0,
+        540.0,
+        624.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 14,
+      "col_text": "金剛延前後六譯若實羚",
+      "col_bbox": [
+        420,
+        149,
+        540,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "後",
+      "bbox": [
+        420.0,
+        624.0,
+        540.0,
+        712.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 15,
+      "col_text": "金剛延前後六譯若實羚",
+      "col_bbox": [
+        420,
+        149,
+        540,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "六",
+      "bbox": [
+        420.0,
+        712.0,
+        540.0,
+        879.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 16,
+      "col_text": "金剛延前後六譯若實羚",
+      "col_bbox": [
+        420,
+        149,
+        540,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "譯",
+      "bbox": [
+        420.0,
+        879.0,
+        540.0,
+        1007.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 17,
+      "col_text": "金剛延前後六譯若實羚",
+      "col_bbox": [
+        420,
+        149,
+        540,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        420.0,
+        1007.0,
+        540.0,
+        1071.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 18,
+      "col_text": "金剛延前後六譯若實羚",
+      "col_bbox": [
+        420,
+        149,
+        540,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "實",
+      "bbox": [
+        420.0,
+        1071.0,
+        540.0,
+        1252.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 19,
+      "col_text": "金剛延前後六譯若實羚",
+      "col_bbox": [
+        420,
+        149,
+        540,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "羚",
+      "bbox": [
+        420.0,
+        1252.0,
+        540.0,
+        1345.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 20,
+      "col_text": "金剛延前後六譯若實羚",
+      "col_bbox": [
+        420,
+        149,
+        540,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "同",
+      "bbox": [
+        315.0,
+        148.0,
+        414.0,
+        212.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 21,
+      "col_text": "同 然貞葉 皆自 西秀 五",
+      "col_bbox": [
+        315,
+        148,
+        414,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "然",
+      "bbox": [
+        315.0,
+        329.0,
+        414.0,
+        444.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 22,
+      "col_text": "同 然貞葉 皆自 西秀 五",
+      "col_bbox": [
+        315,
+        148,
+        414,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "貞",
+      "bbox": [
+        315.0,
+        444.0,
+        414.0,
+        520.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 23,
+      "col_text": "同 然貞葉 皆自 西秀 五",
+      "col_bbox": [
+        315,
+        148,
+        414,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "葉",
+      "bbox": [
+        315.0,
+        520.0,
+        414.0,
+        632.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 24,
+      "col_text": "同 然貞葉 皆自 西秀 五",
+      "col_bbox": [
+        315,
+        148,
+        414,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "皆",
+      "bbox": [
+        315.0,
+        671.0,
+        414.0,
+        795.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 25,
+      "col_text": "同 然貞葉 皆自 西秀 五",
+      "col_bbox": [
+        315,
+        148,
+        414,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "自",
+      "bbox": [
+        315.0,
+        795.0,
+        414.0,
+        907.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 26,
+      "col_text": "同 然貞葉 皆自 西秀 五",
+      "col_bbox": [
+        315,
+        148,
+        414,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "西",
+      "bbox": [
+        315.0,
+        946.0,
+        414.0,
+        1084.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 27,
+      "col_text": "同 然貞葉 皆自 西秀 五",
+      "col_bbox": [
+        315,
+        148,
+        414,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "秀",
+      "bbox": [
+        315.0,
+        1084.0,
+        414.0,
+        1182.0
+      ],
+      "column": 3,
+      "row": 10,
+      "global_index": 28,
+      "col_text": "同 然貞葉 皆自 西秀 五",
+      "col_bbox": [
+        315,
+        148,
+        414,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "五",
+      "bbox": [
+        315.0,
+        1274.0,
+        414.0,
+        1340.0
+      ],
+      "column": 3,
+      "row": 12,
+      "global_index": 29,
+      "col_text": "同 然貞葉 皆自 西秀 五",
+      "col_bbox": [
+        315,
+        148,
+        414,
+        1340
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "天",
+      "bbox": [
+        189.0,
+        146.0,
+        301.0,
+        317.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "天晋韻一傳授者所贵",
+      "col_bbox": [
+        189,
+        146,
+        301,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "晋",
+      "bbox": [
+        189.0,
+        317.0,
+        301.0,
+        450.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "天晋韻一傳授者所贵",
+      "col_bbox": [
+        189,
+        146,
+        301,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "韻",
+      "bbox": [
+        189.0,
+        450.0,
+        301.0,
+        559.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "天晋韻一傳授者所贵",
+      "col_bbox": [
+        189,
+        146,
+        301,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        189.0,
+        559.0,
+        301.0,
+        716.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "天晋韻一傳授者所贵",
+      "col_bbox": [
+        189,
+        146,
+        301,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "傳",
+      "bbox": [
+        189.0,
+        716.0,
+        301.0,
+        850.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "天晋韻一傳授者所贵",
+      "col_bbox": [
+        189,
+        146,
+        301,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "授",
+      "bbox": [
+        189.0,
+        850.0,
+        301.0,
+        914.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "天晋韻一傳授者所贵",
+      "col_bbox": [
+        189,
+        146,
+        301,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        189.0,
+        914.0,
+        301.0,
+        1116.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "天晋韻一傳授者所贵",
+      "col_bbox": [
+        189,
+        146,
+        301,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        189.0,
+        1116.0,
+        301.0,
+        1175.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "天晋韻一傳授者所贵",
+      "col_bbox": [
+        189,
+        146,
+        301,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "贵",
+      "bbox": [
+        189.0,
+        1175.0,
+        301.0,
+        1345.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "天晋韻一傳授者所贵",
+      "col_bbox": [
+        189,
+        146,
+        301,
+        1345
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "新",
+      "bbox": [
+        149.0,
+        148.0,
+        178.0,
+        176.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 39,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "集",
+      "bbox": [
+        149.0,
+        176.0,
+        178.0,
+        203.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 40,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        149.0,
+        203.0,
+        178.0,
+        228.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 41,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "刚",
+      "bbox": [
+        149.0,
+        228.0,
+        178.0,
+        256.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 42,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        149.0,
+        256.0,
+        178.0,
+        300.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 43,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "序",
+      "bbox": [
+        149.0,
+        300.0,
+        178.0,
+        329.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 44,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "弘",
+      "bbox": [
+        149.0,
+        329.0,
+        178.0,
+        359.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 45,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "农",
+      "bbox": [
+        149.0,
+        359.0,
+        178.0,
+        387.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 46,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "杨",
+      "bbox": [
+        149.0,
+        387.0,
+        178.0,
+        414.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 47,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "额",
+      "bbox": [
+        149.0,
+        414.0,
+        178.0,
+        441.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 48,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "述",
+      "bbox": [
+        149.0,
+        441.0,
+        178.0,
+        469.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 49,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        149.0,
+        469.0,
+        178.0,
+        496.0
+      ],
+      "column": 5,
+      "row": 11,
+      "global_index": 50,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "刚",
+      "bbox": [
+        149.0,
+        496.0,
+        178.0,
+        521.0
+      ],
+      "column": 5,
+      "row": 12,
+      "global_index": 51,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        149.0,
+        521.0,
+        178.0,
+        548.0
+      ],
+      "column": 5,
+      "row": 13,
+      "global_index": 52,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "前",
+      "bbox": [
+        149.0,
+        548.0,
+        178.0,
+        577.0
+      ],
+      "column": 5,
+      "row": 14,
+      "global_index": 53,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "后",
+      "bbox": [
+        149.0,
+        577.0,
+        178.0,
+        606.0
+      ],
+      "column": 5,
+      "row": 15,
+      "global_index": 54,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "六",
+      "bbox": [
+        149.0,
+        606.0,
+        178.0,
+        650.0
+      ],
+      "column": 5,
+      "row": 16,
+      "global_index": 55,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "译",
+      "bbox": [
+        149.0,
+        650.0,
+        178.0,
+        679.0
+      ],
+      "column": 5,
+      "row": 17,
+      "global_index": 56,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "各",
+      "bbox": [
+        149.0,
+        679.0,
+        178.0,
+        707.0
+      ],
+      "column": 5,
+      "row": 18,
+      "global_index": 57,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        149.0,
+        707.0,
+        178.0,
+        733.0
+      ],
+      "column": 5,
+      "row": 19,
+      "global_index": 58,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "异",
+      "bbox": [
+        149.0,
+        733.0,
+        178.0,
+        760.0
+      ],
+      "column": 5,
+      "row": 20,
+      "global_index": 59,
+      "col_text": "新集金刚经序弘农杨额述金刚经前后六译各有异",
+      "col_bbox": [
+        149,
+        148,
+        178,
+        760
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "同",
+      "bbox": [
+        113.0,
+        145.0,
+        143.0,
+        175.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 60,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "然",
+      "bbox": [
+        113.0,
+        175.0,
+        143.0,
+        201.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 61,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "贝",
+      "bbox": [
+        113.0,
+        201.0,
+        143.0,
+        229.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 62,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "叶",
+      "bbox": [
+        113.0,
+        229.0,
+        143.0,
+        253.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 63,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "皆",
+      "bbox": [
+        113.0,
+        253.0,
+        143.0,
+        282.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 64,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "自",
+      "bbox": [
+        113.0,
+        282.0,
+        143.0,
+        308.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 65,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "西",
+      "bbox": [
+        113.0,
+        308.0,
+        143.0,
+        334.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 66,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "来",
+      "bbox": [
+        113.0,
+        334.0,
+        143.0,
+        361.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 67,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "而",
+      "bbox": [
+        113.0,
+        361.0,
+        143.0,
+        389.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 68,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "五",
+      "bbox": [
+        113.0,
+        389.0,
+        143.0,
+        417.0
+      ],
+      "column": 6,
+      "row": 9,
+      "global_index": 69,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "天",
+      "bbox": [
+        113.0,
+        417.0,
+        143.0,
+        457.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 70,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "音",
+      "bbox": [
+        113.0,
+        457.0,
+        143.0,
+        486.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 71,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "韵",
+      "bbox": [
+        113.0,
+        486.0,
+        143.0,
+        516.0
+      ],
+      "column": 6,
+      "row": 12,
+      "global_index": 72,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        113.0,
+        516.0,
+        143.0,
+        544.0
+      ],
+      "column": 6,
+      "row": 13,
+      "global_index": 73,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        113.0,
+        544.0,
+        143.0,
+        567.0
+      ],
+      "column": 6,
+      "row": 14,
+      "global_index": 74,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "传",
+      "bbox": [
+        113.0,
+        567.0,
+        143.0,
+        599.0
+      ],
+      "column": 6,
+      "row": 15,
+      "global_index": 75,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "授",
+      "bbox": [
+        113.0,
+        599.0,
+        143.0,
+        628.0
+      ],
+      "column": 6,
+      "row": 16,
+      "global_index": 76,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        113.0,
+        628.0,
+        143.0,
+        653.0
+      ],
+      "column": 6,
+      "row": 17,
+      "global_index": 77,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        113.0,
+        653.0,
+        143.0,
+        681.0
+      ],
+      "column": 6,
+      "row": 18,
+      "global_index": 78,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "贵",
+      "bbox": [
+        113.0,
+        681.0,
+        143.0,
+        706.0
+      ],
+      "column": 6,
+      "row": 19,
+      "global_index": 79,
+      "col_text": "同然贝叶皆自西来而五天音韵非一传授者所贵",
+      "col_bbox": [
+        113,
+        145,
+        143,
+        706
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 80,
+  "timestamp": "2026-05-02T23:10:01.320072"
+}

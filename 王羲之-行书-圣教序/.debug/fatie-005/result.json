@@ -1,0 +1,1569 @@
+{
+  "image_path": "/Users/mnhkahn/code/wangxizhi/王羲之-行书-圣教序/fatie-005.jpg",
+  "image_info": {
+    "width": 3127,
+    "height": 2137,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "地然而真教雄仰莫能一其台歸曲學易遵耶正於焉就醉空有之论或罗俗而是非大小了乘乍法時而隆替有玄奘法师者法门之领袖也务怀貞敬早悟三空之心",
+  "parsed_results": [
+    {
+      "text": "地然而真教雄仰莫",
+      "poly": [
+        [
+          2851.824,
+          0.0
+        ],
+        [
+          3105.111,
+          0.0
+        ],
+        [
+          3105.111,
+          2102.808
+        ],
+        [
+          2851.824,
+          2102.808
+        ]
+      ],
+      "bbox": [
+        2851.824,
+        0.0,
+        3105.111,
+        2102.808
+      ],
+      "index": 0
+    },
+    {
+      "text": "能一其台歸曲學",
+      "poly": [
+        [
+          2520.362,
+          0.0
+        ],
+        [
+          2779.9030000000002,
+          0.0
+        ],
+        [
+          2779.9030000000002,
+          2102.808
+        ],
+        [
+          2520.362,
+          2102.808
+        ]
+      ],
+      "bbox": [
+        2520.362,
+        0.0,
+        2779.9030000000002,
+        2102.808
+      ],
+      "index": 1
+    },
+    {
+      "text": "易遵耶正於焉",
+      "poly": [
+        [
+          2213.9159999999997,
+          0.0
+        ],
+        [
+          2454.695,
+          0.0
+        ],
+        [
+          2454.695,
+          2137.0
+        ],
+        [
+          2213.9159999999997,
+          2137.0
+        ]
+      ],
+      "bbox": [
+        2213.9159999999997,
+        0.0,
+        2454.695,
+        2137.0
+      ],
+      "index": 2
+    },
+    {
+      "text": "就醉空有之论或",
+      "poly": [
+        [
+          1779.263,
+          0.0
+        ],
+        [
+          2066.947,
+          0.0
+        ],
+        [
+          2066.947,
+          2102.808
+        ],
+        [
+          1779.263,
+          2102.808
+        ]
+      ],
+      "bbox": [
+        1779.263,
+        0.0,
+        2066.947,
+        2102.808
+      ],
+      "index": 3
+    },
+    {
+      "text": "罗俗而是非大小了",
+      "poly": [
+        [
+          1404.0230000000001,
+          0.0
+        ],
+        [
+          1660.4370000000001,
+          0.0
+        ],
+        [
+          1660.4370000000001,
+          2102.808
+        ],
+        [
+          1404.0230000000001,
+          2102.808
+        ]
+      ],
+      "bbox": [
+        1404.0230000000001,
+        0.0,
+        1660.4370000000001,
+        2102.808
+      ],
+      "index": 4
+    },
+    {
+      "text": "乘乍法時而隆替",
+      "poly": [
+        [
+          1066.307,
+          0.0
+        ],
+        [
+          1313.34,
+          0.0
+        ],
+        [
+          1313.34,
+          2111.3559999999998
+        ],
+        [
+          1066.307,
+          2111.3559999999998
+        ]
+      ],
+      "bbox": [
+        1066.307,
+        0.0,
+        1313.34,
+        2111.3559999999998
+      ],
+      "index": 5
+    },
+    {
+      "text": "有玄奘法师者法",
+      "poly": [
+        [
+          747.353,
+          0.0
+        ],
+        [
+          985.005,
+          0.0
+        ],
+        [
+          985.005,
+          2107.082
+        ],
+        [
+          747.353,
+          2107.082
+        ]
+      ],
+      "bbox": [
+        747.353,
+        0.0,
+        985.005,
+        2107.082
+      ],
+      "index": 6
+    },
+    {
+      "text": "门之领袖也务怀",
+      "poly": [
+        [
+          434.653,
+          0.0
+        ],
+        [
+          681.686,
+          0.0
+        ],
+        [
+          681.686,
+          2107.082
+        ],
+        [
+          434.653,
+          2107.082
+        ]
+      ],
+      "bbox": [
+        434.653,
+        0.0,
+        681.686,
+        2107.082
+      ],
+      "index": 7
+    },
+    {
+      "text": "貞敬早悟三空之心",
+      "poly": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          281.43,
+          0.0
+        ],
+        [
+          281.43,
+          2098.534
+        ],
+        [
+          0.0,
+          2098.534
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        281.43,
+        2098.534
+      ],
+      "index": 8
+    }
+  ],
+  "char_results": [
+    {
+      "char": "地",
+      "bbox": [
+        2851.0,
+        0.0,
+        3105.0,
+        227.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "地然而真教雄仰莫",
+      "col_bbox": [
+        2851.824,
+        0.0,
+        3105.111,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "然",
+      "bbox": [
+        2851.0,
+        227.0,
+        3105.0,
+        478.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "地然而真教雄仰莫",
+      "col_bbox": [
+        2851.824,
+        0.0,
+        3105.111,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "而",
+      "bbox": [
+        2851.0,
+        478.0,
+        3105.0,
+        710.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "地然而真教雄仰莫",
+      "col_bbox": [
+        2851.824,
+        0.0,
+        3105.111,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "真",
+      "bbox": [
+        2851.0,
+        710.0,
+        3105.0,
+        979.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "地然而真教雄仰莫",
+      "col_bbox": [
+        2851.824,
+        0.0,
+        3105.111,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "教",
+      "bbox": [
+        2851.0,
+        979.0,
+        3105.0,
+        1253.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "地然而真教雄仰莫",
+      "col_bbox": [
+        2851.824,
+        0.0,
+        3105.111,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "雄",
+      "bbox": [
+        2851.0,
+        1253.0,
+        3105.0,
+        1592.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "地然而真教雄仰莫",
+      "col_bbox": [
+        2851.824,
+        0.0,
+        3105.111,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "仰",
+      "bbox": [
+        2851.0,
+        1592.0,
+        3105.0,
+        1813.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "地然而真教雄仰莫",
+      "col_bbox": [
+        2851.824,
+        0.0,
+        3105.111,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "莫",
+      "bbox": [
+        2851.0,
+        1813.0,
+        3105.0,
+        2102.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "地然而真教雄仰莫",
+      "col_bbox": [
+        2851.824,
+        0.0,
+        3105.111,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        2520.0,
+        0.0,
+        2779.0,
+        318.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 8,
+      "col_text": "能一其台歸曲學",
+      "col_bbox": [
+        2520.362,
+        0.0,
+        2779.9030000000002,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        2520.0,
+        318.0,
+        2779.0,
+        511.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 9,
+      "col_text": "能一其台歸曲學",
+      "col_bbox": [
+        2520.362,
+        0.0,
+        2779.9030000000002,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        2520.0,
+        511.0,
+        2779.0,
+        879.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 10,
+      "col_text": "能一其台歸曲學",
+      "col_bbox": [
+        2520.362,
+        0.0,
+        2779.9030000000002,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "台",
+      "bbox": [
+        2520.0,
+        879.0,
+        2779.0,
+        1145.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 11,
+      "col_text": "能一其台歸曲學",
+      "col_bbox": [
+        2520.362,
+        0.0,
+        2779.9030000000002,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "歸",
+      "bbox": [
+        2520.0,
+        1145.0,
+        2779.0,
+        1417.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 12,
+      "col_text": "能一其台歸曲學",
+      "col_bbox": [
+        2520.362,
+        0.0,
+        2779.9030000000002,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "曲",
+      "bbox": [
+        2520.0,
+        1417.0,
+        2779.0,
+        1744.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 13,
+      "col_text": "能一其台歸曲學",
+      "col_bbox": [
+        2520.362,
+        0.0,
+        2779.9030000000002,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "學",
+      "bbox": [
+        2520.0,
+        1744.0,
+        2779.0,
+        2102.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 14,
+      "col_text": "能一其台歸曲學",
+      "col_bbox": [
+        2520.362,
+        0.0,
+        2779.9030000000002,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "易",
+      "bbox": [
+        2213.0,
+        0.0,
+        2454.0,
+        306.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 15,
+      "col_text": "易遵耶正於焉",
+      "col_bbox": [
+        2213.9159999999997,
+        0.0,
+        2454.695,
+        2137.0
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "遵",
+      "bbox": [
+        2213.0,
+        306.0,
+        2454.0,
+        663.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 16,
+      "col_text": "易遵耶正於焉",
+      "col_bbox": [
+        2213.9159999999997,
+        0.0,
+        2454.695,
+        2137.0
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "耶",
+      "bbox": [
+        2213.0,
+        663.0,
+        2454.0,
+        999.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 17,
+      "col_text": "易遵耶正於焉",
+      "col_bbox": [
+        2213.9159999999997,
+        0.0,
+        2454.695,
+        2137.0
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "正",
+      "bbox": [
+        2213.0,
+        999.0,
+        2454.0,
+        1500.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 18,
+      "col_text": "易遵耶正於焉",
+      "col_bbox": [
+        2213.9159999999997,
+        0.0,
+        2454.695,
+        2137.0
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "於",
+      "bbox": [
+        2213.0,
+        1500.0,
+        2454.0,
+        1873.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 19,
+      "col_text": "易遵耶正於焉",
+      "col_bbox": [
+        2213.9159999999997,
+        0.0,
+        2454.695,
+        2137.0
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "焉",
+      "bbox": [
+        2213.0,
+        1873.0,
+        2454.0,
+        2137.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 20,
+      "col_text": "易遵耶正於焉",
+      "col_bbox": [
+        2213.9159999999997,
+        0.0,
+        2454.695,
+        2137.0
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "就",
+      "bbox": [
+        1779.0,
+        0.0,
+        2066.0,
+        328.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 21,
+      "col_text": "就醉空有之论或",
+      "col_bbox": [
+        1779.263,
+        0.0,
+        2066.947,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "醉",
+      "bbox": [
+        1779.0,
+        328.0,
+        2066.0,
+        566.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 22,
+      "col_text": "就醉空有之论或",
+      "col_bbox": [
+        1779.263,
+        0.0,
+        2066.947,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "空",
+      "bbox": [
+        1779.0,
+        566.0,
+        2066.0,
+        813.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 23,
+      "col_text": "就醉空有之论或",
+      "col_bbox": [
+        1779.263,
+        0.0,
+        2066.947,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        1779.0,
+        813.0,
+        2066.0,
+        1116.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 24,
+      "col_text": "就醉空有之论或",
+      "col_bbox": [
+        1779.263,
+        0.0,
+        2066.947,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        1779.0,
+        1116.0,
+        2066.0,
+        1420.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 25,
+      "col_text": "就醉空有之论或",
+      "col_bbox": [
+        1779.263,
+        0.0,
+        2066.947,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "论",
+      "bbox": [
+        1779.0,
+        1420.0,
+        2066.0,
+        1888.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 26,
+      "col_text": "就醉空有之论或",
+      "col_bbox": [
+        1779.263,
+        0.0,
+        2066.947,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "或",
+      "bbox": [
+        1779.0,
+        1888.0,
+        2066.0,
+        2102.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 27,
+      "col_text": "就醉空有之论或",
+      "col_bbox": [
+        1779.263,
+        0.0,
+        2066.947,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "罗",
+      "bbox": [
+        1404.0,
+        0.0,
+        1660.0,
+        288.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 28,
+      "col_text": "罗俗而是非大小了",
+      "col_bbox": [
+        1404.0230000000001,
+        0.0,
+        1660.4370000000001,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "俗",
+      "bbox": [
+        1404.0,
+        288.0,
+        1660.0,
+        555.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 29,
+      "col_text": "罗俗而是非大小了",
+      "col_bbox": [
+        1404.0230000000001,
+        0.0,
+        1660.4370000000001,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "而",
+      "bbox": [
+        1404.0,
+        555.0,
+        1660.0,
+        829.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 30,
+      "col_text": "罗俗而是非大小了",
+      "col_bbox": [
+        1404.0230000000001,
+        0.0,
+        1660.4370000000001,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        1404.0,
+        829.0,
+        1660.0,
+        1077.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 31,
+      "col_text": "罗俗而是非大小了",
+      "col_bbox": [
+        1404.0230000000001,
+        0.0,
+        1660.4370000000001,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        1404.0,
+        1077.0,
+        1660.0,
+        1384.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 32,
+      "col_text": "罗俗而是非大小了",
+      "col_bbox": [
+        1404.0230000000001,
+        0.0,
+        1660.4370000000001,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        1404.0,
+        1384.0,
+        1660.0,
+        1638.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 33,
+      "col_text": "罗俗而是非大小了",
+      "col_bbox": [
+        1404.0230000000001,
+        0.0,
+        1660.4370000000001,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "小",
+      "bbox": [
+        1404.0,
+        1638.0,
+        1660.0,
+        1851.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 34,
+      "col_text": "罗俗而是非大小了",
+      "col_bbox": [
+        1404.0230000000001,
+        0.0,
+        1660.4370000000001,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "了",
+      "bbox": [
+        1404.0,
+        1851.0,
+        1660.0,
+        2102.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 35,
+      "col_text": "罗俗而是非大小了",
+      "col_bbox": [
+        1404.0230000000001,
+        0.0,
+        1660.4370000000001,
+        2102.808
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乘",
+      "bbox": [
+        1066.0,
+        0.0,
+        1313.0,
+        323.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 36,
+      "col_text": "乘乍法時而隆替",
+      "col_bbox": [
+        1066.307,
+        0.0,
+        1313.34,
+        2111.3559999999998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乍",
+      "bbox": [
+        1066.0,
+        323.0,
+        1313.0,
+        625.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 37,
+      "col_text": "乘乍法時而隆替",
+      "col_bbox": [
+        1066.307,
+        0.0,
+        1313.34,
+        2111.3559999999998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        1066.0,
+        625.0,
+        1313.0,
+        863.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 38,
+      "col_text": "乘乍法時而隆替",
+      "col_bbox": [
+        1066.307,
+        0.0,
+        1313.34,
+        2111.3559999999998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "時",
+      "bbox": [
+        1066.0,
+        863.0,
+        1313.0,
+        1191.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 39,
+      "col_text": "乘乍法時而隆替",
+      "col_bbox": [
+        1066.307,
+        0.0,
+        1313.34,
+        2111.3559999999998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "而",
+      "bbox": [
+        1066.0,
+        1191.0,
+        1313.0,
+        1433.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 40,
+      "col_text": "乘乍法時而隆替",
+      "col_bbox": [
+        1066.307,
+        0.0,
+        1313.34,
+        2111.3559999999998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "隆",
+      "bbox": [
+        1066.0,
+        1433.0,
+        1313.0,
+        1839.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 41,
+      "col_text": "乘乍法時而隆替",
+      "col_bbox": [
+        1066.307,
+        0.0,
+        1313.34,
+        2111.3559999999998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "替",
+      "bbox": [
+        1066.0,
+        1839.0,
+        1313.0,
+        2111.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 42,
+      "col_text": "乘乍法時而隆替",
+      "col_bbox": [
+        1066.307,
+        0.0,
+        1313.34,
+        2111.3559999999998
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        747.0,
+        0.0,
+        985.0,
+        281.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 43,
+      "col_text": "有玄奘法师者法",
+      "col_bbox": [
+        747.353,
+        0.0,
+        985.005,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "玄",
+      "bbox": [
+        747.0,
+        281.0,
+        985.0,
+        688.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 44,
+      "col_text": "有玄奘法师者法",
+      "col_bbox": [
+        747.353,
+        0.0,
+        985.005,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "奘",
+      "bbox": [
+        747.0,
+        688.0,
+        985.0,
+        939.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 45,
+      "col_text": "有玄奘法师者法",
+      "col_bbox": [
+        747.353,
+        0.0,
+        985.005,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        747.0,
+        939.0,
+        985.0,
+        1219.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 46,
+      "col_text": "有玄奘法师者法",
+      "col_bbox": [
+        747.353,
+        0.0,
+        985.005,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "师",
+      "bbox": [
+        747.0,
+        1219.0,
+        985.0,
+        1520.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 47,
+      "col_text": "有玄奘法师者法",
+      "col_bbox": [
+        747.353,
+        0.0,
+        985.005,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        747.0,
+        1520.0,
+        985.0,
+        1895.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 48,
+      "col_text": "有玄奘法师者法",
+      "col_bbox": [
+        747.353,
+        0.0,
+        985.005,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        747.0,
+        1895.0,
+        985.0,
+        2107.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 49,
+      "col_text": "有玄奘法师者法",
+      "col_bbox": [
+        747.353,
+        0.0,
+        985.005,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "门",
+      "bbox": [
+        434.0,
+        0.0,
+        681.0,
+        297.0
+      ],
+      "column": 7,
+      "row": 0,
+      "global_index": 50,
+      "col_text": "门之领袖也务怀",
+      "col_bbox": [
+        434.653,
+        0.0,
+        681.686,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        434.0,
+        297.0,
+        681.0,
+        601.0
+      ],
+      "column": 7,
+      "row": 1,
+      "global_index": 51,
+      "col_text": "门之领袖也务怀",
+      "col_bbox": [
+        434.653,
+        0.0,
+        681.686,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "领",
+      "bbox": [
+        434.0,
+        601.0,
+        681.0,
+        986.0
+      ],
+      "column": 7,
+      "row": 2,
+      "global_index": 52,
+      "col_text": "门之领袖也务怀",
+      "col_bbox": [
+        434.653,
+        0.0,
+        681.686,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "袖",
+      "bbox": [
+        434.0,
+        986.0,
+        681.0,
+        1266.0
+      ],
+      "column": 7,
+      "row": 3,
+      "global_index": 53,
+      "col_text": "门之领袖也务怀",
+      "col_bbox": [
+        434.653,
+        0.0,
+        681.686,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "也",
+      "bbox": [
+        434.0,
+        1266.0,
+        681.0,
+        1481.0
+      ],
+      "column": 7,
+      "row": 4,
+      "global_index": 54,
+      "col_text": "门之领袖也务怀",
+      "col_bbox": [
+        434.653,
+        0.0,
+        681.686,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "务",
+      "bbox": [
+        434.0,
+        1481.0,
+        681.0,
+        1811.0
+      ],
+      "column": 7,
+      "row": 5,
+      "global_index": 55,
+      "col_text": "门之领袖也务怀",
+      "col_bbox": [
+        434.653,
+        0.0,
+        681.686,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "怀",
+      "bbox": [
+        434.0,
+        1811.0,
+        681.0,
+        2107.0
+      ],
+      "column": 7,
+      "row": 6,
+      "global_index": 56,
+      "col_text": "门之领袖也务怀",
+      "col_bbox": [
+        434.653,
+        0.0,
+        681.686,
+        2107.082
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "貞",
+      "bbox": [
+        0.0,
+        0.0,
+        281.0,
+        315.0
+      ],
+      "column": 8,
+      "row": 0,
+      "global_index": 57,
+      "col_text": "貞敬早悟三空之心",
+      "col_bbox": [
+        0.0,
+        0.0,
+        281.43,
+        2098.534
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "敬",
+      "bbox": [
+        0.0,
+        315.0,
+        281.0,
+        594.0
+      ],
+      "column": 8,
+      "row": 1,
+      "global_index": 58,
+      "col_text": "貞敬早悟三空之心",
+      "col_bbox": [
+        0.0,
+        0.0,
+        281.43,
+        2098.534
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "早",
+      "bbox": [
+        0.0,
+        594.0,
+        281.0,
+        838.0
+      ],
+      "column": 8,
+      "row": 2,
+      "global_index": 59,
+      "col_text": "貞敬早悟三空之心",
+      "col_bbox": [
+        0.0,
+        0.0,
+        281.43,
+        2098.534
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悟",
+      "bbox": [
+        0.0,
+        838.0,
+        281.0,
+        1126.0
+      ],
+      "column": 8,
+      "row": 3,
+      "global_index": 60,
+      "col_text": "貞敬早悟三空之心",
+      "col_bbox": [
+        0.0,
+        0.0,
+        281.43,
+        2098.534
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "三",
+      "bbox": [
+        0.0,
+        1126.0,
+        281.0,
+        1388.0
+      ],
+      "column": 8,
+      "row": 4,
+      "global_index": 61,
+      "col_text": "貞敬早悟三空之心",
+      "col_bbox": [
+        0.0,
+        0.0,
+        281.43,
+        2098.534
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "空",
+      "bbox": [
+        0.0,
+        1388.0,
+        281.0,
+        1577.0
+      ],
+      "column": 8,
+      "row": 5,
+      "global_index": 62,
+      "col_text": "貞敬早悟三空之心",
+      "col_bbox": [
+        0.0,
+        0.0,
+        281.43,
+        2098.534
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        0.0,
+        1577.0,
+        281.0,
+        1912.0
+      ],
+      "column": 8,
+      "row": 6,
+      "global_index": 63,
+      "col_text": "貞敬早悟三空之心",
+      "col_bbox": [
+        0.0,
+        0.0,
+        281.43,
+        2098.534
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        0.0,
+        1912.0,
+        281.0,
+        2098.0
+      ],
+      "column": 8,
+      "row": 7,
+      "global_index": 64,
+      "col_text": "貞敬早悟三空之心",
+      "col_bbox": [
+        0.0,
+        0.0,
+        281.43,
+        2098.534
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 9,
+  "total_chars": 65,
+  "timestamp": "2026-04-08T22:01:14.946012"
+}

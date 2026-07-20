@@ -1,0 +1,2013 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-015.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经如是我闻一时佛在舍卫国祗树给孤独园与诸大價所學為已不足教新大和元年也新集金劉般著波羅蜜經如是我聞一時佛在舍衛國祇樹给孙獨园兴諸大",
+  "parsed_results": [
+    {
+      "text": "10",
+      "bbox": [
+        864,
+        1423,
+        887,
+        1445
+      ],
+      "poly": [
+        [
+          864,
+          1423
+        ],
+        [
+          887,
+          1423
+        ],
+        [
+          887,
+          1445
+        ],
+        [
+          864,
+          1445
+        ]
+      ]
+    },
+    {
+      "text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "poly": [
+        [
+          733,
+          131
+        ],
+        [
+          760,
+          131
+        ],
+        [
+          760,
+          849
+        ],
+        [
+          733,
+          849
+        ]
+      ]
+    },
+    {
+      "text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "poly": [
+        [
+          698,
+          134
+        ],
+        [
+          724,
+          134
+        ],
+        [
+          724,
+          694
+        ],
+        [
+          698,
+          694
+        ]
+      ]
+    },
+    {
+      "text": "價所學為已不足教新",
+      "bbox": [
+        592,
+        132,
+        695,
+        1310
+      ],
+      "poly": [
+        [
+          592,
+          132
+        ],
+        [
+          695,
+          132
+        ],
+        [
+          695,
+          1310
+        ],
+        [
+          592,
+          1310
+        ]
+      ]
+    },
+    {
+      "text": "大和元年也",
+      "bbox": [
+        472,
+        138,
+        590,
+        751
+      ],
+      "poly": [
+        [
+          472,
+          138
+        ],
+        [
+          590,
+          138
+        ],
+        [
+          590,
+          751
+        ],
+        [
+          472,
+          751
+        ]
+      ]
+    },
+    {
+      "text": "新集金劉般著波羅蜜經",
+      "bbox": [
+        355,
+        142,
+        472,
+        1124
+      ],
+      "poly": [
+        [
+          355,
+          142
+        ],
+        [
+          472,
+          142
+        ],
+        [
+          472,
+          1124
+        ],
+        [
+          355,
+          1124
+        ]
+      ]
+    },
+    {
+      "text": "如是我聞一時佛 在 舍衛",
+      "bbox": [
+        245,
+        137,
+        354,
+        1327
+      ],
+      "poly": [
+        [
+          245,
+          137
+        ],
+        [
+          354,
+          137
+        ],
+        [
+          354,
+          1327
+        ],
+        [
+          245,
+          1327
+        ]
+      ]
+    },
+    {
+      "text": "國祇樹给孙獨园兴諸大",
+      "bbox": [
+        128,
+        142,
+        242,
+        1329
+      ],
+      "poly": [
+        [
+          128,
+          142
+        ],
+        [
+          242,
+          142
+        ],
+        [
+          242,
+          1329
+        ],
+        [
+          128,
+          1329
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "价",
+      "bbox": [
+        733.0,
+        131.0,
+        760.0,
+        161.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        733.0,
+        161.0,
+        760.0,
+        188.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "学",
+      "bbox": [
+        733.0,
+        188.0,
+        760.0,
+        214.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "为",
+      "bbox": [
+        733.0,
+        214.0,
+        760.0,
+        241.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "己",
+      "bbox": [
+        733.0,
+        241.0,
+        760.0,
+        268.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        733.0,
+        268.0,
+        760.0,
+        295.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "足",
+      "bbox": [
+        733.0,
+        295.0,
+        760.0,
+        324.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "教",
+      "bbox": [
+        733.0,
+        324.0,
+        760.0,
+        352.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        733.0,
+        352.0,
+        760.0,
+        396.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "时",
+      "bbox": [
+        733.0,
+        396.0,
+        760.0,
+        416.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        733.0,
+        416.0,
+        760.0,
+        453.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 10,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "和",
+      "bbox": [
+        733.0,
+        453.0,
+        760.0,
+        480.0
+      ],
+      "column": 1,
+      "row": 11,
+      "global_index": 11,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "元",
+      "bbox": [
+        733.0,
+        480.0,
+        760.0,
+        507.0
+      ],
+      "column": 1,
+      "row": 12,
+      "global_index": 12,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "年",
+      "bbox": [
+        733.0,
+        507.0,
+        760.0,
+        534.0
+      ],
+      "column": 1,
+      "row": 13,
+      "global_index": 13,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "也",
+      "bbox": [
+        733.0,
+        534.0,
+        760.0,
+        562.0
+      ],
+      "column": 1,
+      "row": 14,
+      "global_index": 14,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "新",
+      "bbox": [
+        733.0,
+        562.0,
+        760.0,
+        582.0
+      ],
+      "column": 1,
+      "row": 15,
+      "global_index": 15,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "集",
+      "bbox": [
+        733.0,
+        582.0,
+        760.0,
+        614.0
+      ],
+      "column": 1,
+      "row": 16,
+      "global_index": 16,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        733.0,
+        614.0,
+        760.0,
+        641.0
+      ],
+      "column": 1,
+      "row": 17,
+      "global_index": 17,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "刚",
+      "bbox": [
+        733.0,
+        641.0,
+        760.0,
+        668.0
+      ],
+      "column": 1,
+      "row": 18,
+      "global_index": 18,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "般",
+      "bbox": [
+        733.0,
+        668.0,
+        760.0,
+        697.0
+      ],
+      "column": 1,
+      "row": 19,
+      "global_index": 19,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "若",
+      "bbox": [
+        733.0,
+        697.0,
+        760.0,
+        741.0
+      ],
+      "column": 1,
+      "row": 20,
+      "global_index": 20,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "波",
+      "bbox": [
+        733.0,
+        741.0,
+        760.0,
+        763.0
+      ],
+      "column": 1,
+      "row": 21,
+      "global_index": 21,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "罗",
+      "bbox": [
+        733.0,
+        763.0,
+        760.0,
+        798.0
+      ],
+      "column": 1,
+      "row": 22,
+      "global_index": 22,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "密",
+      "bbox": [
+        733.0,
+        798.0,
+        760.0,
+        827.0
+      ],
+      "column": 1,
+      "row": 23,
+      "global_index": 23,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "经",
+      "bbox": [
+        733.0,
+        827.0,
+        760.0,
+        849.0
+      ],
+      "column": 1,
+      "row": 24,
+      "global_index": 24,
+      "col_text": "价所学为己不足教人时大和元年也新集金刚般若波罗密经",
+      "col_bbox": [
+        733,
+        131,
+        760,
+        849
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        698.0,
+        134.0,
+        724.0,
+        160.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 25,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        698.0,
+        160.0,
+        724.0,
+        188.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 26,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        698.0,
+        188.0,
+        724.0,
+        214.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 27,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "闻",
+      "bbox": [
+        698.0,
+        214.0,
+        724.0,
+        242.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 28,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        698.0,
+        242.0,
+        724.0,
+        266.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 29,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "时",
+      "bbox": [
+        698.0,
+        266.0,
+        724.0,
+        294.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 30,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        698.0,
+        294.0,
+        724.0,
+        322.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 31,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "在",
+      "bbox": [
+        698.0,
+        322.0,
+        724.0,
+        350.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 32,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "舍",
+      "bbox": [
+        698.0,
+        350.0,
+        724.0,
+        384.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 33,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "卫",
+      "bbox": [
+        698.0,
+        384.0,
+        724.0,
+        406.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 34,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "国",
+      "bbox": [
+        698.0,
+        406.0,
+        724.0,
+        449.0
+      ],
+      "column": 2,
+      "row": 10,
+      "global_index": 35,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "祗",
+      "bbox": [
+        698.0,
+        449.0,
+        724.0,
+        477.0
+      ],
+      "column": 2,
+      "row": 11,
+      "global_index": 36,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "树",
+      "bbox": [
+        698.0,
+        477.0,
+        724.0,
+        505.0
+      ],
+      "column": 2,
+      "row": 12,
+      "global_index": 37,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "给",
+      "bbox": [
+        698.0,
+        505.0,
+        724.0,
+        533.0
+      ],
+      "column": 2,
+      "row": 13,
+      "global_index": 38,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "孤",
+      "bbox": [
+        698.0,
+        533.0,
+        724.0,
+        560.0
+      ],
+      "column": 2,
+      "row": 14,
+      "global_index": 39,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "独",
+      "bbox": [
+        698.0,
+        560.0,
+        724.0,
+        587.0
+      ],
+      "column": 2,
+      "row": 15,
+      "global_index": 40,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "园",
+      "bbox": [
+        698.0,
+        587.0,
+        724.0,
+        614.0
+      ],
+      "column": 2,
+      "row": 16,
+      "global_index": 41,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "与",
+      "bbox": [
+        698.0,
+        614.0,
+        724.0,
+        640.0
+      ],
+      "column": 2,
+      "row": 17,
+      "global_index": 42,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诸",
+      "bbox": [
+        698.0,
+        640.0,
+        724.0,
+        667.0
+      ],
+      "column": 2,
+      "row": 18,
+      "global_index": 43,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        698.0,
+        667.0,
+        724.0,
+        694.0
+      ],
+      "column": 2,
+      "row": 19,
+      "global_index": 44,
+      "col_text": "如是我闻一时佛在舍卫国祗树给孤独园与诸大",
+      "col_bbox": [
+        698,
+        134,
+        724,
+        694
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "價",
+      "bbox": [
+        592.0,
+        132.0,
+        695.0,
+        227.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 45,
+      "col_text": "價所學為已不足教新",
+      "col_bbox": [
+        592,
+        132,
+        695,
+        1310
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        592.0,
+        227.0,
+        695.0,
+        417.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 46,
+      "col_text": "價所學為已不足教新",
+      "col_bbox": [
+        592,
+        132,
+        695,
+        1310
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "學",
+      "bbox": [
+        592.0,
+        417.0,
+        695.0,
+        485.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 47,
+      "col_text": "價所學為已不足教新",
+      "col_bbox": [
+        592,
+        132,
+        695,
+        1310
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "為",
+      "bbox": [
+        592.0,
+        485.0,
+        695.0,
+        616.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 48,
+      "col_text": "價所學為已不足教新",
+      "col_bbox": [
+        592,
+        132,
+        695,
+        1310
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "已",
+      "bbox": [
+        592.0,
+        616.0,
+        695.0,
+        802.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 49,
+      "col_text": "價所學為已不足教新",
+      "col_bbox": [
+        592,
+        132,
+        695,
+        1310
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        592.0,
+        802.0,
+        695.0,
+        931.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 50,
+      "col_text": "價所學為已不足教新",
+      "col_bbox": [
+        592,
+        132,
+        695,
+        1310
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "足",
+      "bbox": [
+        592.0,
+        931.0,
+        695.0,
+        1042.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 51,
+      "col_text": "價所學為已不足教新",
+      "col_bbox": [
+        592,
+        132,
+        695,
+        1310
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "教",
+      "bbox": [
+        592.0,
+        1042.0,
+        695.0,
+        1167.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 52,
+      "col_text": "價所學為已不足教新",
+      "col_bbox": [
+        592,
+        132,
+        695,
+        1310
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "新",
+      "bbox": [
+        592.0,
+        1167.0,
+        695.0,
+        1310.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 53,
+      "col_text": "價所學為已不足教新",
+      "col_bbox": [
+        592,
+        132,
+        695,
+        1310
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        472.0,
+        138.0,
+        590.0,
+        224.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 54,
+      "col_text": "大和元年也",
+      "col_bbox": [
+        472,
+        138,
+        590,
+        751
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "和",
+      "bbox": [
+        472.0,
+        224.0,
+        590.0,
+        418.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 55,
+      "col_text": "大和元年也",
+      "col_bbox": [
+        472,
+        138,
+        590,
+        751
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "元",
+      "bbox": [
+        472.0,
+        418.0,
+        590.0,
+        536.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 56,
+      "col_text": "大和元年也",
+      "col_bbox": [
+        472,
+        138,
+        590,
+        751
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "年",
+      "bbox": [
+        472.0,
+        536.0,
+        590.0,
+        592.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 57,
+      "col_text": "大和元年也",
+      "col_bbox": [
+        472,
+        138,
+        590,
+        751
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "也",
+      "bbox": [
+        472.0,
+        592.0,
+        590.0,
+        751.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 58,
+      "col_text": "大和元年也",
+      "col_bbox": [
+        472,
+        138,
+        590,
+        751
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "新",
+      "bbox": [
+        355.0,
+        142.0,
+        472.0,
+        221.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 59,
+      "col_text": "新集金劉般著波羅蜜經",
+      "col_bbox": [
+        355,
+        142,
+        472,
+        1124
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "集",
+      "bbox": [
+        355.0,
+        221.0,
+        472.0,
+        352.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 60,
+      "col_text": "新集金劉般著波羅蜜經",
+      "col_bbox": [
+        355,
+        142,
+        472,
+        1124
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        355.0,
+        352.0,
+        472.0,
+        424.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 61,
+      "col_text": "新集金劉般著波羅蜜經",
+      "col_bbox": [
+        355,
+        142,
+        472,
+        1124
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "劉",
+      "bbox": [
+        355.0,
+        424.0,
+        472.0,
+        505.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 62,
+      "col_text": "新集金劉般著波羅蜜經",
+      "col_bbox": [
+        355,
+        142,
+        472,
+        1124
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "般",
+      "bbox": [
+        355.0,
+        505.0,
+        472.0,
+        616.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 63,
+      "col_text": "新集金劉般著波羅蜜經",
+      "col_bbox": [
+        355,
+        142,
+        472,
+        1124
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "著",
+      "bbox": [
+        355.0,
+        616.0,
+        472.0,
+        705.0
+      ],
+      "column": 5,
+      "row": 5,
+      "global_index": 64,
+      "col_text": "新集金劉般著波羅蜜經",
+      "col_bbox": [
+        355,
+        142,
+        472,
+        1124
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "波",
+      "bbox": [
+        355.0,
+        705.0,
+        472.0,
+        800.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 65,
+      "col_text": "新集金劉般著波羅蜜經",
+      "col_bbox": [
+        355,
+        142,
+        472,
+        1124
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "羅",
+      "bbox": [
+        355.0,
+        800.0,
+        472.0,
+        902.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 66,
+      "col_text": "新集金劉般著波羅蜜經",
+      "col_bbox": [
+        355,
+        142,
+        472,
+        1124
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "蜜",
+      "bbox": [
+        355.0,
+        902.0,
+        472.0,
+        996.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 67,
+      "col_text": "新集金劉般著波羅蜜經",
+      "col_bbox": [
+        355,
+        142,
+        472,
+        1124
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "經",
+      "bbox": [
+        355.0,
+        996.0,
+        472.0,
+        1124.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 68,
+      "col_text": "新集金劉般著波羅蜜經",
+      "col_bbox": [
+        355,
+        142,
+        472,
+        1124
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        245.0,
+        137.0,
+        354.0,
+        207.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 69,
+      "col_text": "如是我聞一時佛 在 舍衛",
+      "col_bbox": [
+        245,
+        137,
+        354,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        245.0,
+        207.0,
+        354.0,
+        312.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 70,
+      "col_text": "如是我聞一時佛 在 舍衛",
+      "col_bbox": [
+        245,
+        137,
+        354,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "我",
+      "bbox": [
+        245.0,
+        312.0,
+        354.0,
+        425.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 71,
+      "col_text": "如是我聞一時佛 在 舍衛",
+      "col_bbox": [
+        245,
+        137,
+        354,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "聞",
+      "bbox": [
+        245.0,
+        425.0,
+        354.0,
+        530.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 72,
+      "col_text": "如是我聞一時佛 在 舍衛",
+      "col_bbox": [
+        245,
+        137,
+        354,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        245.0,
+        530.0,
+        354.0,
+        647.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 73,
+      "col_text": "如是我聞一時佛 在 舍衛",
+      "col_bbox": [
+        245,
+        137,
+        354,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "時",
+      "bbox": [
+        245.0,
+        647.0,
+        354.0,
+        746.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 74,
+      "col_text": "如是我聞一時佛 在 舍衛",
+      "col_bbox": [
+        245,
+        137,
+        354,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        245.0,
+        746.0,
+        354.0,
+        859.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 75,
+      "col_text": "如是我聞一時佛 在 舍衛",
+      "col_bbox": [
+        245,
+        137,
+        354,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "在",
+      "bbox": [
+        245.0,
+        901.0,
+        354.0,
+        1045.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 76,
+      "col_text": "如是我聞一時佛 在 舍衛",
+      "col_bbox": [
+        245,
+        137,
+        354,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "舍",
+      "bbox": [
+        245.0,
+        1150.0,
+        354.0,
+        1255.0
+      ],
+      "column": 6,
+      "row": 10,
+      "global_index": 77,
+      "col_text": "如是我聞一時佛 在 舍衛",
+      "col_bbox": [
+        245,
+        137,
+        354,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "衛",
+      "bbox": [
+        245.0,
+        1255.0,
+        354.0,
+        1327.0
+      ],
+      "column": 6,
+      "row": 11,
+      "global_index": 78,
+      "col_text": "如是我聞一時佛 在 舍衛",
+      "col_bbox": [
+        245,
+        137,
+        354,
+        1327
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "國",
+      "bbox": [
+        128.0,
+        142.0,
+        242.0,
+        289.0
+      ],
+      "column": 7,
+      "row": 0,
+      "global_index": 79,
+      "col_text": "國祇樹给孙獨园兴諸大",
+      "col_bbox": [
+        128,
+        142,
+        242,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "祇",
+      "bbox": [
+        128.0,
+        289.0,
+        242.0,
+        413.0
+      ],
+      "column": 7,
+      "row": 1,
+      "global_index": 80,
+      "col_text": "國祇樹给孙獨园兴諸大",
+      "col_bbox": [
+        128,
+        142,
+        242,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "樹",
+      "bbox": [
+        128.0,
+        413.0,
+        242.0,
+        472.0
+      ],
+      "column": 7,
+      "row": 2,
+      "global_index": 81,
+      "col_text": "國祇樹给孙獨园兴諸大",
+      "col_bbox": [
+        128,
+        142,
+        242,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "给",
+      "bbox": [
+        128.0,
+        472.0,
+        242.0,
+        595.0
+      ],
+      "column": 7,
+      "row": 3,
+      "global_index": 82,
+      "col_text": "國祇樹给孙獨园兴諸大",
+      "col_bbox": [
+        128,
+        142,
+        242,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "孙",
+      "bbox": [
+        128.0,
+        595.0,
+        242.0,
+        700.0
+      ],
+      "column": 7,
+      "row": 4,
+      "global_index": 83,
+      "col_text": "國祇樹给孙獨园兴諸大",
+      "col_bbox": [
+        128,
+        142,
+        242,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "獨",
+      "bbox": [
+        128.0,
+        700.0,
+        242.0,
+        819.0
+      ],
+      "column": 7,
+      "row": 5,
+      "global_index": 84,
+      "col_text": "國祇樹给孙獨园兴諸大",
+      "col_bbox": [
+        128,
+        142,
+        242,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "园",
+      "bbox": [
+        128.0,
+        819.0,
+        242.0,
+        937.0
+      ],
+      "column": 7,
+      "row": 6,
+      "global_index": 85,
+      "col_text": "國祇樹给孙獨园兴諸大",
+      "col_bbox": [
+        128,
+        142,
+        242,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "兴",
+      "bbox": [
+        128.0,
+        937.0,
+        242.0,
+        1063.0
+      ],
+      "column": 7,
+      "row": 7,
+      "global_index": 86,
+      "col_text": "國祇樹给孙獨园兴諸大",
+      "col_bbox": [
+        128,
+        142,
+        242,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "諸",
+      "bbox": [
+        128.0,
+        1063.0,
+        242.0,
+        1175.0
+      ],
+      "column": 7,
+      "row": 8,
+      "global_index": 87,
+      "col_text": "國祇樹给孙獨园兴諸大",
+      "col_bbox": [
+        128,
+        142,
+        242,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "大",
+      "bbox": [
+        128.0,
+        1175.0,
+        242.0,
+        1329.0
+      ],
+      "column": 7,
+      "row": 9,
+      "global_index": 88,
+      "col_text": "國祇樹给孙獨园兴諸大",
+      "col_bbox": [
+        128,
+        142,
+        242,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 8,
+  "total_chars": 89,
+  "timestamp": "2026-05-02T23:10:12.421464"
+}

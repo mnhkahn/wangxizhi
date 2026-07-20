@@ -1,0 +1,1152 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-011.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "聲何以番音求之旗聲雲樂聲何有菩趣其用者策可捨其起弊不可捨其樂善得其理者不可取其聲不可取其樂今者以樂比",
+  "parsed_results": [
+    {
+      "text": "聲何以番音求之旗聲雲",
+      "bbox": [
+        572,
+        132,
+        682,
+        1317
+      ],
+      "poly": [
+        [
+          572,
+          132
+        ],
+        [
+          682,
+          132
+        ],
+        [
+          682,
+          1317
+        ],
+        [
+          572,
+          1317
+        ]
+      ]
+    },
+    {
+      "text": "樂聲に何有菩趣其用者",
+      "bbox": [
+        460,
+        134,
+        577,
+        1322
+      ],
+      "poly": [
+        [
+          460,
+          134
+        ],
+        [
+          577,
+          134
+        ],
+        [
+          577,
+          1322
+        ],
+        [
+          460,
+          1322
+        ]
+      ]
+    },
+    {
+      "text": "策可捨 其;起弊り不可捨 其 樂",
+      "bbox": [
+        345,
+        138,
+        470,
+        1322
+      ],
+      "poly": [
+        [
+          345,
+          138
+        ],
+        [
+          470,
+          138
+        ],
+        [
+          470,
+          1322
+        ],
+        [
+          345,
+          1322
+        ]
+      ]
+    },
+    {
+      "text": "善得其理者不可取其聲",
+      "bbox": [
+        240,
+        138,
+        355,
+        1317
+      ],
+      "poly": [
+        [
+          240,
+          138
+        ],
+        [
+          355,
+          138
+        ],
+        [
+          355,
+          1317
+        ],
+        [
+          240,
+          1317
+        ]
+      ]
+    },
+    {
+      "text": "不可取其樂今 者以樂比",
+      "bbox": [
+        125,
+        140,
+        247,
+        1326
+      ],
+      "poly": [
+        [
+          125,
+          140
+        ],
+        [
+          247,
+          140
+        ],
+        [
+          247,
+          1326
+        ],
+        [
+          125,
+          1326
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "聲",
+      "bbox": [
+        572.0,
+        132.0,
+        682.0,
+        215.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "聲何以番音求之旗聲雲",
+      "col_bbox": [
+        572,
+        132,
+        682,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        572.0,
+        215.0,
+        682.0,
+        334.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "聲何以番音求之旗聲雲",
+      "col_bbox": [
+        572,
+        132,
+        682,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        572.0,
+        334.0,
+        682.0,
+        514.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "聲何以番音求之旗聲雲",
+      "col_bbox": [
+        572,
+        132,
+        682,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "番",
+      "bbox": [
+        572.0,
+        514.0,
+        682.0,
+        640.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "聲何以番音求之旗聲雲",
+      "col_bbox": [
+        572,
+        132,
+        682,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "音",
+      "bbox": [
+        572.0,
+        640.0,
+        682.0,
+        758.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "聲何以番音求之旗聲雲",
+      "col_bbox": [
+        572,
+        132,
+        682,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "求",
+      "bbox": [
+        572.0,
+        758.0,
+        682.0,
+        808.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "聲何以番音求之旗聲雲",
+      "col_bbox": [
+        572,
+        132,
+        682,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        572.0,
+        808.0,
+        682.0,
+        967.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "聲何以番音求之旗聲雲",
+      "col_bbox": [
+        572,
+        132,
+        682,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "旗",
+      "bbox": [
+        572.0,
+        967.0,
+        682.0,
+        1071.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "聲何以番音求之旗聲雲",
+      "col_bbox": [
+        572,
+        132,
+        682,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "聲",
+      "bbox": [
+        572.0,
+        1071.0,
+        682.0,
+        1218.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "聲何以番音求之旗聲雲",
+      "col_bbox": [
+        572,
+        132,
+        682,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "雲",
+      "bbox": [
+        572.0,
+        1218.0,
+        682.0,
+        1317.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "聲何以番音求之旗聲雲",
+      "col_bbox": [
+        572,
+        132,
+        682,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "樂",
+      "bbox": [
+        460.0,
+        134.0,
+        577.0,
+        275.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 10,
+      "col_text": "樂聲に何有菩趣其用者",
+      "col_bbox": [
+        460,
+        134,
+        577,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "聲",
+      "bbox": [
+        460.0,
+        275.0,
+        577.0,
+        405.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 11,
+      "col_text": "樂聲に何有菩趣其用者",
+      "col_bbox": [
+        460,
+        134,
+        577,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "何",
+      "bbox": [
+        460.0,
+        509.0,
+        577.0,
+        627.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 12,
+      "col_text": "樂聲に何有菩趣其用者",
+      "col_bbox": [
+        460,
+        134,
+        577,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        460.0,
+        627.0,
+        577.0,
+        735.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 13,
+      "col_text": "樂聲に何有菩趣其用者",
+      "col_bbox": [
+        460,
+        134,
+        577,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        460.0,
+        735.0,
+        577.0,
+        811.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 14,
+      "col_text": "樂聲に何有菩趣其用者",
+      "col_bbox": [
+        460,
+        134,
+        577,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "趣",
+      "bbox": [
+        460.0,
+        811.0,
+        577.0,
+        930.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 15,
+      "col_text": "樂聲に何有菩趣其用者",
+      "col_bbox": [
+        460,
+        134,
+        577,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        460.0,
+        930.0,
+        577.0,
+        1118.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 16,
+      "col_text": "樂聲に何有菩趣其用者",
+      "col_bbox": [
+        460,
+        134,
+        577,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "用",
+      "bbox": [
+        460.0,
+        1118.0,
+        577.0,
+        1237.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 17,
+      "col_text": "樂聲に何有菩趣其用者",
+      "col_bbox": [
+        460,
+        134,
+        577,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        460.0,
+        1237.0,
+        577.0,
+        1322.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 18,
+      "col_text": "樂聲に何有菩趣其用者",
+      "col_bbox": [
+        460,
+        134,
+        577,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "策",
+      "bbox": [
+        345.0,
+        138.0,
+        470.0,
+        207.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 19,
+      "col_text": "策可捨 其;起弊り不可捨 其 樂",
+      "col_bbox": [
+        345,
+        138,
+        470,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        345.0,
+        207.0,
+        470.0,
+        273.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 20,
+      "col_text": "策可捨 其;起弊り不可捨 其 樂",
+      "col_bbox": [
+        345,
+        138,
+        470,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "捨",
+      "bbox": [
+        345.0,
+        273.0,
+        470.0,
+        381.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 21,
+      "col_text": "策可捨 其;起弊り不可捨 其 樂",
+      "col_bbox": [
+        345,
+        138,
+        470,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        345.0,
+        420.0,
+        470.0,
+        529.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 22,
+      "col_text": "策可捨 其;起弊り不可捨 其 樂",
+      "col_bbox": [
+        345,
+        138,
+        470,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "起",
+      "bbox": [
+        345.0,
+        567.0,
+        470.0,
+        637.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 23,
+      "col_text": "策可捨 其;起弊り不可捨 其 樂",
+      "col_bbox": [
+        345,
+        138,
+        470,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "弊",
+      "bbox": [
+        345.0,
+        637.0,
+        470.0,
+        708.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 24,
+      "col_text": "策可捨 其;起弊り不可捨 其 樂",
+      "col_bbox": [
+        345,
+        138,
+        470,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        345.0,
+        816.0,
+        470.0,
+        856.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 25,
+      "col_text": "策可捨 其;起弊り不可捨 其 樂",
+      "col_bbox": [
+        345,
+        138,
+        470,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        345.0,
+        856.0,
+        470.0,
+        930.0
+      ],
+      "column": 2,
+      "row": 10,
+      "global_index": 26,
+      "col_text": "策可捨 其;起弊り不可捨 其 樂",
+      "col_bbox": [
+        345,
+        138,
+        470,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "捨",
+      "bbox": [
+        345.0,
+        930.0,
+        470.0,
+        1032.0
+      ],
+      "column": 2,
+      "row": 11,
+      "global_index": 27,
+      "col_text": "策可捨 其;起弊り不可捨 其 樂",
+      "col_bbox": [
+        345,
+        138,
+        470,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        345.0,
+        1078.0,
+        470.0,
+        1179.0
+      ],
+      "column": 2,
+      "row": 13,
+      "global_index": 28,
+      "col_text": "策可捨 其;起弊り不可捨 其 樂",
+      "col_bbox": [
+        345,
+        138,
+        470,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "樂",
+      "bbox": [
+        345.0,
+        1239.0,
+        470.0,
+        1322.0
+      ],
+      "column": 2,
+      "row": 15,
+      "global_index": 29,
+      "col_text": "策可捨 其;起弊り不可捨 其 樂",
+      "col_bbox": [
+        345,
+        138,
+        470,
+        1322
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "善",
+      "bbox": [
+        240.0,
+        138.0,
+        355.0,
+        220.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "善得其理者不可取其聲",
+      "col_bbox": [
+        240,
+        138,
+        355,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "得",
+      "bbox": [
+        240.0,
+        220.0,
+        355.0,
+        346.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "善得其理者不可取其聲",
+      "col_bbox": [
+        240,
+        138,
+        355,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        240.0,
+        346.0,
+        355.0,
+        494.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "善得其理者不可取其聲",
+      "col_bbox": [
+        240,
+        138,
+        355,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "理",
+      "bbox": [
+        240.0,
+        494.0,
+        355.0,
+        576.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "善得其理者不可取其聲",
+      "col_bbox": [
+        240,
+        138,
+        355,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        240.0,
+        576.0,
+        355.0,
+        703.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "善得其理者不可取其聲",
+      "col_bbox": [
+        240,
+        138,
+        355,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        240.0,
+        703.0,
+        355.0,
+        873.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "善得其理者不可取其聲",
+      "col_bbox": [
+        240,
+        138,
+        355,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        240.0,
+        873.0,
+        355.0,
+        983.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "善得其理者不可取其聲",
+      "col_bbox": [
+        240,
+        138,
+        355,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "取",
+      "bbox": [
+        240.0,
+        983.0,
+        355.0,
+        1098.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "善得其理者不可取其聲",
+      "col_bbox": [
+        240,
+        138,
+        355,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        240.0,
+        1098.0,
+        355.0,
+        1211.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "善得其理者不可取其聲",
+      "col_bbox": [
+        240,
+        138,
+        355,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "聲",
+      "bbox": [
+        240.0,
+        1211.0,
+        355.0,
+        1317.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "善得其理者不可取其聲",
+      "col_bbox": [
+        240,
+        138,
+        355,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        125.0,
+        140.0,
+        247.0,
+        273.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 40,
+      "col_text": "不可取其樂今 者以樂比",
+      "col_bbox": [
+        125,
+        140,
+        247,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "可",
+      "bbox": [
+        125.0,
+        273.0,
+        247.0,
+        386.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 41,
+      "col_text": "不可取其樂今 者以樂比",
+      "col_bbox": [
+        125,
+        140,
+        247,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "取",
+      "bbox": [
+        125.0,
+        386.0,
+        247.0,
+        435.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 42,
+      "col_text": "不可取其樂今 者以樂比",
+      "col_bbox": [
+        125,
+        140,
+        247,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        125.0,
+        435.0,
+        247.0,
+        573.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 43,
+      "col_text": "不可取其樂今 者以樂比",
+      "col_bbox": [
+        125,
+        140,
+        247,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "樂",
+      "bbox": [
+        125.0,
+        573.0,
+        247.0,
+        695.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 44,
+      "col_text": "不可取其樂今 者以樂比",
+      "col_bbox": [
+        125,
+        140,
+        247,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "今",
+      "bbox": [
+        125.0,
+        695.0,
+        247.0,
+        784.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 45,
+      "col_text": "不可取其樂今 者以樂比",
+      "col_bbox": [
+        125,
+        140,
+        247,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        125.0,
+        925.0,
+        247.0,
+        974.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 46,
+      "col_text": "不可取其樂今 者以樂比",
+      "col_bbox": [
+        125,
+        140,
+        247,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        125.0,
+        974.0,
+        247.0,
+        1134.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 47,
+      "col_text": "不可取其樂今 者以樂比",
+      "col_bbox": [
+        125,
+        140,
+        247,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "樂",
+      "bbox": [
+        125.0,
+        1134.0,
+        247.0,
+        1186.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 48,
+      "col_text": "不可取其樂今 者以樂比",
+      "col_bbox": [
+        125,
+        140,
+        247,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "比",
+      "bbox": [
+        125.0,
+        1186.0,
+        247.0,
+        1326.0
+      ],
+      "column": 4,
+      "row": 10,
+      "global_index": 49,
+      "col_text": "不可取其樂今 者以樂比",
+      "col_bbox": [
+        125,
+        140,
+        247,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 5,
+  "total_chars": 50,
+  "timestamp": "2026-05-03T21:38:28.758780"
+}

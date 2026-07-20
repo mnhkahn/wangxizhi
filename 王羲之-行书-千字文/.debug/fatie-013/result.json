@@ -1,0 +1,2186 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-013.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存心佛在法中有法而非佛诸入菩萨乘者但勒修一者物澄理者心心昧即物無所歸物昧即心無所守是以心因法悟離法而存心佛在法中有法而非佛諸入菩薩乗者但勤佟",
+  "parsed_results": [
+    {
+      "text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "poly": [
+        [
+          732,
+          125
+        ],
+        [
+          758,
+          125
+        ],
+        [
+          758,
+          977
+        ],
+        [
+          732,
+          977
+        ]
+      ]
+    },
+    {
+      "text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "poly": [
+        [
+          691,
+          125
+        ],
+        [
+          724,
+          125
+        ],
+        [
+          724,
+          683
+        ],
+        [
+          691,
+          683
+        ]
+      ]
+    },
+    {
+      "text": "者物澄理者心心昧即物",
+      "bbox": [
+        575,
+        134,
+        687,
+        1324
+      ],
+      "poly": [
+        [
+          575,
+          134
+        ],
+        [
+          687,
+          134
+        ],
+        [
+          687,
+          1324
+        ],
+        [
+          575,
+          1324
+        ]
+      ]
+    },
+    {
+      "text": "無所歸物昧即心無所守",
+      "bbox": [
+        462,
+        137,
+        577,
+        1325
+      ],
+      "poly": [
+        [
+          462,
+          137
+        ],
+        [
+          577,
+          137
+        ],
+        [
+          577,
+          1325
+        ],
+        [
+          462,
+          1325
+        ]
+      ]
+    },
+    {
+      "text": "是以心因法悟離法而存",
+      "bbox": [
+        349,
+        135,
+        461,
+        1324
+      ],
+      "poly": [
+        [
+          349,
+          135
+        ],
+        [
+          461,
+          135
+        ],
+        [
+          461,
+          1324
+        ],
+        [
+          349,
+          1324
+        ]
+      ]
+    },
+    {
+      "text": "心佛在法中 有法而非佛",
+      "bbox": [
+        235,
+        131,
+        354,
+        1317
+      ],
+      "poly": [
+        [
+          235,
+          131
+        ],
+        [
+          354,
+          131
+        ],
+        [
+          354,
+          1317
+        ],
+        [
+          235,
+          1317
+        ]
+      ]
+    },
+    {
+      "text": "諸入菩薩乗者但勤佟",
+      "bbox": [
+        125,
+        137,
+        242,
+        1245
+      ],
+      "poly": [
+        [
+          125,
+          137
+        ],
+        [
+          242,
+          137
+        ],
+        [
+          242,
+          1245
+        ],
+        [
+          125,
+          1245
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "者",
+      "bbox": [
+        732.0,
+        125.0,
+        758.0,
+        155.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "物",
+      "bbox": [
+        732.0,
+        155.0,
+        758.0,
+        182.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "证",
+      "bbox": [
+        732.0,
+        182.0,
+        758.0,
+        208.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "理",
+      "bbox": [
+        732.0,
+        208.0,
+        758.0,
+        235.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        732.0,
+        235.0,
+        758.0,
+        263.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        732.0,
+        263.0,
+        758.0,
+        287.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        732.0,
+        287.0,
+        758.0,
+        315.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "昧",
+      "bbox": [
+        732.0,
+        315.0,
+        758.0,
+        344.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        732.0,
+        344.0,
+        758.0,
+        372.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "物",
+      "bbox": [
+        732.0,
+        372.0,
+        758.0,
+        401.0
+      ],
+      "column": 0,
+      "row": 9,
+      "global_index": 9,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        732.0,
+        401.0,
+        758.0,
+        437.0
+      ],
+      "column": 0,
+      "row": 10,
+      "global_index": 10,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        732.0,
+        437.0,
+        758.0,
+        472.0
+      ],
+      "column": 0,
+      "row": 11,
+      "global_index": 11,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "归",
+      "bbox": [
+        732.0,
+        472.0,
+        758.0,
+        500.0
+      ],
+      "column": 0,
+      "row": 12,
+      "global_index": 12,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "物",
+      "bbox": [
+        732.0,
+        500.0,
+        758.0,
+        529.0
+      ],
+      "column": 0,
+      "row": 13,
+      "global_index": 13,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "昧",
+      "bbox": [
+        732.0,
+        529.0,
+        758.0,
+        554.0
+      ],
+      "column": 0,
+      "row": 14,
+      "global_index": 14,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        732.0,
+        554.0,
+        758.0,
+        582.0
+      ],
+      "column": 0,
+      "row": 15,
+      "global_index": 15,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        732.0,
+        582.0,
+        758.0,
+        606.0
+      ],
+      "column": 0,
+      "row": 16,
+      "global_index": 16,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "无",
+      "bbox": [
+        732.0,
+        606.0,
+        758.0,
+        634.0
+      ],
+      "column": 0,
+      "row": 17,
+      "global_index": 17,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        732.0,
+        634.0,
+        758.0,
+        661.0
+      ],
+      "column": 0,
+      "row": 18,
+      "global_index": 18,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "守",
+      "bbox": [
+        732.0,
+        661.0,
+        758.0,
+        688.0
+      ],
+      "column": 0,
+      "row": 19,
+      "global_index": 19,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        732.0,
+        688.0,
+        758.0,
+        713.0
+      ],
+      "column": 0,
+      "row": 20,
+      "global_index": 20,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        732.0,
+        713.0,
+        758.0,
+        741.0
+      ],
+      "column": 0,
+      "row": 21,
+      "global_index": 21,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        732.0,
+        741.0,
+        758.0,
+        770.0
+      ],
+      "column": 0,
+      "row": 22,
+      "global_index": 22,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "因",
+      "bbox": [
+        732.0,
+        770.0,
+        758.0,
+        810.0
+      ],
+      "column": 0,
+      "row": 23,
+      "global_index": 23,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        732.0,
+        810.0,
+        758.0,
+        842.0
+      ],
+      "column": 0,
+      "row": 24,
+      "global_index": 24,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悟",
+      "bbox": [
+        732.0,
+        842.0,
+        758.0,
+        870.0
+      ],
+      "column": 0,
+      "row": 25,
+      "global_index": 25,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "离",
+      "bbox": [
+        732.0,
+        870.0,
+        758.0,
+        898.0
+      ],
+      "column": 0,
+      "row": 26,
+      "global_index": 26,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        732.0,
+        898.0,
+        758.0,
+        926.0
+      ],
+      "column": 0,
+      "row": 27,
+      "global_index": 27,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "而",
+      "bbox": [
+        732.0,
+        926.0,
+        758.0,
+        953.0
+      ],
+      "column": 0,
+      "row": 28,
+      "global_index": 28,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "存",
+      "bbox": [
+        732.0,
+        953.0,
+        758.0,
+        977.0
+      ],
+      "column": 0,
+      "row": 29,
+      "global_index": 29,
+      "col_text": "者物证理者心心昧即物无所归物昧即心无所守是以心因法悟离法而存",
+      "col_bbox": [
+        732,
+        125,
+        758,
+        977
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        691.0,
+        125.0,
+        724.0,
+        154.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 30,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        691.0,
+        154.0,
+        724.0,
+        183.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 31,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "在",
+      "bbox": [
+        691.0,
+        183.0,
+        724.0,
+        208.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 32,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        691.0,
+        208.0,
+        724.0,
+        234.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 33,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        691.0,
+        234.0,
+        724.0,
+        263.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 34,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        691.0,
+        263.0,
+        724.0,
+        289.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 35,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        691.0,
+        289.0,
+        724.0,
+        315.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 36,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "而",
+      "bbox": [
+        691.0,
+        315.0,
+        724.0,
+        342.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 37,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        691.0,
+        342.0,
+        724.0,
+        368.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 38,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        691.0,
+        368.0,
+        724.0,
+        397.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 39,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "诸",
+      "bbox": [
+        691.0,
+        397.0,
+        724.0,
+        423.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 40,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "入",
+      "bbox": [
+        691.0,
+        423.0,
+        724.0,
+        451.0
+      ],
+      "column": 1,
+      "row": 11,
+      "global_index": 41,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        691.0,
+        451.0,
+        724.0,
+        485.0
+      ],
+      "column": 1,
+      "row": 12,
+      "global_index": 42,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "萨",
+      "bbox": [
+        691.0,
+        485.0,
+        724.0,
+        522.0
+      ],
+      "column": 1,
+      "row": 13,
+      "global_index": 43,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乘",
+      "bbox": [
+        691.0,
+        522.0,
+        724.0,
+        550.0
+      ],
+      "column": 1,
+      "row": 14,
+      "global_index": 44,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        691.0,
+        550.0,
+        724.0,
+        578.0
+      ],
+      "column": 1,
+      "row": 15,
+      "global_index": 45,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "但",
+      "bbox": [
+        691.0,
+        578.0,
+        724.0,
+        606.0
+      ],
+      "column": 1,
+      "row": 16,
+      "global_index": 46,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "勒",
+      "bbox": [
+        691.0,
+        606.0,
+        724.0,
+        634.0
+      ],
+      "column": 1,
+      "row": 17,
+      "global_index": 47,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "修",
+      "bbox": [
+        691.0,
+        634.0,
+        724.0,
+        662.0
+      ],
+      "column": 1,
+      "row": 18,
+      "global_index": 48,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "一",
+      "bbox": [
+        691.0,
+        662.0,
+        724.0,
+        683.0
+      ],
+      "column": 1,
+      "row": 19,
+      "global_index": 49,
+      "col_text": "心佛在法中有法而非佛诸入菩萨乘者但勒修一",
+      "col_bbox": [
+        691,
+        125,
+        724,
+        683
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        575.0,
+        134.0,
+        687.0,
+        221.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 50,
+      "col_text": "者物澄理者心心昧即物",
+      "col_bbox": [
+        575,
+        134,
+        687,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "物",
+      "bbox": [
+        575.0,
+        221.0,
+        687.0,
+        337.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 51,
+      "col_text": "者物澄理者心心昧即物",
+      "col_bbox": [
+        575,
+        134,
+        687,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "澄",
+      "bbox": [
+        575.0,
+        337.0,
+        687.0,
+        458.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 52,
+      "col_text": "者物澄理者心心昧即物",
+      "col_bbox": [
+        575,
+        134,
+        687,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "理",
+      "bbox": [
+        575.0,
+        458.0,
+        687.0,
+        575.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 53,
+      "col_text": "者物澄理者心心昧即物",
+      "col_bbox": [
+        575,
+        134,
+        687,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        575.0,
+        575.0,
+        687.0,
+        703.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 54,
+      "col_text": "者物澄理者心心昧即物",
+      "col_bbox": [
+        575,
+        134,
+        687,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        575.0,
+        703.0,
+        687.0,
+        813.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 55,
+      "col_text": "者物澄理者心心昧即物",
+      "col_bbox": [
+        575,
+        134,
+        687,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        575.0,
+        813.0,
+        687.0,
+        1001.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 56,
+      "col_text": "者物澄理者心心昧即物",
+      "col_bbox": [
+        575,
+        134,
+        687,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "昧",
+      "bbox": [
+        575.0,
+        1001.0,
+        687.0,
+        1120.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 57,
+      "col_text": "者物澄理者心心昧即物",
+      "col_bbox": [
+        575,
+        134,
+        687,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        575.0,
+        1120.0,
+        687.0,
+        1239.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 58,
+      "col_text": "者物澄理者心心昧即物",
+      "col_bbox": [
+        575,
+        134,
+        687,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "物",
+      "bbox": [
+        575.0,
+        1239.0,
+        687.0,
+        1324.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 59,
+      "col_text": "者物澄理者心心昧即物",
+      "col_bbox": [
+        575,
+        134,
+        687,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        462.0,
+        137.0,
+        577.0,
+        265.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 60,
+      "col_text": "無所歸物昧即心無所守",
+      "col_bbox": [
+        462,
+        137,
+        577,
+        1325
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        462.0,
+        265.0,
+        577.0,
+        408.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 61,
+      "col_text": "無所歸物昧即心無所守",
+      "col_bbox": [
+        462,
+        137,
+        577,
+        1325
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "歸",
+      "bbox": [
+        462.0,
+        408.0,
+        577.0,
+        527.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 62,
+      "col_text": "無所歸物昧即心無所守",
+      "col_bbox": [
+        462,
+        137,
+        577,
+        1325
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "物",
+      "bbox": [
+        462.0,
+        527.0,
+        577.0,
+        646.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 63,
+      "col_text": "無所歸物昧即心無所守",
+      "col_bbox": [
+        462,
+        137,
+        577,
+        1325
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "昧",
+      "bbox": [
+        462.0,
+        646.0,
+        577.0,
+        764.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 64,
+      "col_text": "無所歸物昧即心無所守",
+      "col_bbox": [
+        462,
+        137,
+        577,
+        1325
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "即",
+      "bbox": [
+        462.0,
+        764.0,
+        577.0,
+        879.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 65,
+      "col_text": "無所歸物昧即心無所守",
+      "col_bbox": [
+        462,
+        137,
+        577,
+        1325
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        462.0,
+        879.0,
+        577.0,
+        988.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 66,
+      "col_text": "無所歸物昧即心無所守",
+      "col_bbox": [
+        462,
+        137,
+        577,
+        1325
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        462.0,
+        988.0,
+        577.0,
+        1113.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 67,
+      "col_text": "無所歸物昧即心無所守",
+      "col_bbox": [
+        462,
+        137,
+        577,
+        1325
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        462.0,
+        1113.0,
+        577.0,
+        1231.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 68,
+      "col_text": "無所歸物昧即心無所守",
+      "col_bbox": [
+        462,
+        137,
+        577,
+        1325
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "守",
+      "bbox": [
+        462.0,
+        1231.0,
+        577.0,
+        1325.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 69,
+      "col_text": "無所歸物昧即心無所守",
+      "col_bbox": [
+        462,
+        137,
+        577,
+        1325
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "是",
+      "bbox": [
+        349.0,
+        135.0,
+        461.0,
+        223.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 70,
+      "col_text": "是以心因法悟離法而存",
+      "col_bbox": [
+        349,
+        135,
+        461,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        349.0,
+        223.0,
+        461.0,
+        389.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 71,
+      "col_text": "是以心因法悟離法而存",
+      "col_bbox": [
+        349,
+        135,
+        461,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        349.0,
+        389.0,
+        461.0,
+        502.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 72,
+      "col_text": "是以心因法悟離法而存",
+      "col_bbox": [
+        349,
+        135,
+        461,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "因",
+      "bbox": [
+        349.0,
+        502.0,
+        461.0,
+        644.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 73,
+      "col_text": "是以心因法悟離法而存",
+      "col_bbox": [
+        349,
+        135,
+        461,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        349.0,
+        644.0,
+        461.0,
+        743.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 74,
+      "col_text": "是以心因法悟離法而存",
+      "col_bbox": [
+        349,
+        135,
+        461,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "悟",
+      "bbox": [
+        349.0,
+        743.0,
+        461.0,
+        878.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 75,
+      "col_text": "是以心因法悟離法而存",
+      "col_bbox": [
+        349,
+        135,
+        461,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "離",
+      "bbox": [
+        349.0,
+        878.0,
+        461.0,
+        1001.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 76,
+      "col_text": "是以心因法悟離法而存",
+      "col_bbox": [
+        349,
+        135,
+        461,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        349.0,
+        1001.0,
+        461.0,
+        1120.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 77,
+      "col_text": "是以心因法悟離法而存",
+      "col_bbox": [
+        349,
+        135,
+        461,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "而",
+      "bbox": [
+        349.0,
+        1120.0,
+        461.0,
+        1239.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 78,
+      "col_text": "是以心因法悟離法而存",
+      "col_bbox": [
+        349,
+        135,
+        461,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "存",
+      "bbox": [
+        349.0,
+        1239.0,
+        461.0,
+        1324.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 79,
+      "col_text": "是以心因法悟離法而存",
+      "col_bbox": [
+        349,
+        135,
+        461,
+        1324
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        235.0,
+        131.0,
+        354.0,
+        265.0
+      ],
+      "column": 5,
+      "row": 0,
+      "global_index": 80,
+      "col_text": "心佛在法中 有法而非佛",
+      "col_bbox": [
+        235,
+        131,
+        354,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        235.0,
+        265.0,
+        354.0,
+        377.0
+      ],
+      "column": 5,
+      "row": 1,
+      "global_index": 81,
+      "col_text": "心佛在法中 有法而非佛",
+      "col_bbox": [
+        235,
+        131,
+        354,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "在",
+      "bbox": [
+        235.0,
+        377.0,
+        354.0,
+        422.0
+      ],
+      "column": 5,
+      "row": 2,
+      "global_index": 82,
+      "col_text": "心佛在法中 有法而非佛",
+      "col_bbox": [
+        235,
+        131,
+        354,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        235.0,
+        422.0,
+        354.0,
+        531.0
+      ],
+      "column": 5,
+      "row": 3,
+      "global_index": 83,
+      "col_text": "心佛在法中 有法而非佛",
+      "col_bbox": [
+        235,
+        131,
+        354,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "中",
+      "bbox": [
+        235.0,
+        531.0,
+        354.0,
+        638.0
+      ],
+      "column": 5,
+      "row": 4,
+      "global_index": 84,
+      "col_text": "心佛在法中 有法而非佛",
+      "col_bbox": [
+        235,
+        131,
+        354,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        235.0,
+        782.0,
+        354.0,
+        916.0
+      ],
+      "column": 5,
+      "row": 6,
+      "global_index": 85,
+      "col_text": "心佛在法中 有法而非佛",
+      "col_bbox": [
+        235,
+        131,
+        354,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        235.0,
+        916.0,
+        354.0,
+        1024.0
+      ],
+      "column": 5,
+      "row": 7,
+      "global_index": 86,
+      "col_text": "心佛在法中 有法而非佛",
+      "col_bbox": [
+        235,
+        131,
+        354,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "而",
+      "bbox": [
+        235.0,
+        1024.0,
+        354.0,
+        1131.0
+      ],
+      "column": 5,
+      "row": 8,
+      "global_index": 87,
+      "col_text": "心佛在法中 有法而非佛",
+      "col_bbox": [
+        235,
+        131,
+        354,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        235.0,
+        1131.0,
+        354.0,
+        1238.0
+      ],
+      "column": 5,
+      "row": 9,
+      "global_index": 88,
+      "col_text": "心佛在法中 有法而非佛",
+      "col_bbox": [
+        235,
+        131,
+        354,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佛",
+      "bbox": [
+        235.0,
+        1238.0,
+        354.0,
+        1317.0
+      ],
+      "column": 5,
+      "row": 10,
+      "global_index": 89,
+      "col_text": "心佛在法中 有法而非佛",
+      "col_bbox": [
+        235,
+        131,
+        354,
+        1317
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "諸",
+      "bbox": [
+        125.0,
+        137.0,
+        242.0,
+        295.0
+      ],
+      "column": 6,
+      "row": 0,
+      "global_index": 90,
+      "col_text": "諸入菩薩乗者但勤佟",
+      "col_bbox": [
+        125,
+        137,
+        242,
+        1245
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "入",
+      "bbox": [
+        125.0,
+        295.0,
+        242.0,
+        410.0
+      ],
+      "column": 6,
+      "row": 1,
+      "global_index": 91,
+      "col_text": "諸入菩薩乗者但勤佟",
+      "col_bbox": [
+        125,
+        137,
+        242,
+        1245
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "菩",
+      "bbox": [
+        125.0,
+        410.0,
+        242.0,
+        512.0
+      ],
+      "column": 6,
+      "row": 2,
+      "global_index": 92,
+      "col_text": "諸入菩薩乗者但勤佟",
+      "col_bbox": [
+        125,
+        137,
+        242,
+        1245
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "薩",
+      "bbox": [
+        125.0,
+        512.0,
+        242.0,
+        664.0
+      ],
+      "column": 6,
+      "row": 3,
+      "global_index": 93,
+      "col_text": "諸入菩薩乗者但勤佟",
+      "col_bbox": [
+        125,
+        137,
+        242,
+        1245
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乗",
+      "bbox": [
+        125.0,
+        664.0,
+        242.0,
+        787.0
+      ],
+      "column": 6,
+      "row": 4,
+      "global_index": 94,
+      "col_text": "諸入菩薩乗者但勤佟",
+      "col_bbox": [
+        125,
+        137,
+        242,
+        1245
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        125.0,
+        787.0,
+        242.0,
+        909.0
+      ],
+      "column": 6,
+      "row": 5,
+      "global_index": 95,
+      "col_text": "諸入菩薩乗者但勤佟",
+      "col_bbox": [
+        125,
+        137,
+        242,
+        1245
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "但",
+      "bbox": [
+        125.0,
+        909.0,
+        242.0,
+        1033.0
+      ],
+      "column": 6,
+      "row": 6,
+      "global_index": 96,
+      "col_text": "諸入菩薩乗者但勤佟",
+      "col_bbox": [
+        125,
+        137,
+        242,
+        1245
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "勤",
+      "bbox": [
+        125.0,
+        1033.0,
+        242.0,
+        1085.0
+      ],
+      "column": 6,
+      "row": 7,
+      "global_index": 97,
+      "col_text": "諸入菩薩乗者但勤佟",
+      "col_bbox": [
+        125,
+        137,
+        242,
+        1245
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "佟",
+      "bbox": [
+        125.0,
+        1085.0,
+        242.0,
+        1245.0
+      ],
+      "column": 6,
+      "row": 8,
+      "global_index": 98,
+      "col_text": "諸入菩薩乗者但勤佟",
+      "col_bbox": [
+        125,
+        137,
+        242,
+        1245
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 7,
+  "total_chars": 99,
+  "timestamp": "2026-05-02T23:10:09.875932"
+}

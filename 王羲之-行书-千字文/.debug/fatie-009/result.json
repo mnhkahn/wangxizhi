@@ -1,0 +1,1132 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-009.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "有實有此見未以無安琴此心御曦有具如之理都座有漆選法之閒澄頭溫禦不癱葵相實想之內琴松手金石知釋觀之風",
+  "parsed_results": [
+    {
+      "text": "有實有此見未以無安",
+      "bbox": [
+        590,
+        135,
+        696,
+        1329
+      ],
+      "poly": [
+        [
+          590,
+          135
+        ],
+        [
+          696,
+          135
+        ],
+        [
+          696,
+          1329
+        ],
+        [
+          590,
+          1329
+        ]
+      ]
+    },
+    {
+      "text": "琴此心御曦有具如之理",
+      "bbox": [
+        477,
+        131,
+        597,
+        1326
+      ],
+      "poly": [
+        [
+          477,
+          131
+        ],
+        [
+          597,
+          131
+        ],
+        [
+          597,
+          1326
+        ],
+        [
+          477,
+          1326
+        ]
+      ]
+    },
+    {
+      "text": "都座有漆選法之閒澄頭",
+      "bbox": [
+        363,
+        137,
+        479,
+        1321
+      ],
+      "poly": [
+        [
+          363,
+          137
+        ],
+        [
+          479,
+          137
+        ],
+        [
+          479,
+          1321
+        ],
+        [
+          363,
+          1321
+        ]
+      ]
+    },
+    {
+      "text": "溫禦不，癱葵，相、實想之內",
+      "bbox": [
+        251,
+        136,
+        355,
+        1323
+      ],
+      "poly": [
+        [
+          251,
+          136
+        ],
+        [
+          355,
+          136
+        ],
+        [
+          355,
+          1323
+        ],
+        [
+          251,
+          1323
+        ]
+      ]
+    },
+    {
+      "text": "琴松手金石知釋觀之風",
+      "bbox": [
+        132,
+        217,
+        244,
+        1329
+      ],
+      "poly": [
+        [
+          132,
+          217
+        ],
+        [
+          244,
+          217
+        ],
+        [
+          244,
+          1329
+        ],
+        [
+          132,
+          1329
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "有",
+      "bbox": [
+        590.0,
+        135.0,
+        696.0,
+        265.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "有實有此見未以無安",
+      "col_bbox": [
+        590,
+        135,
+        696,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "實",
+      "bbox": [
+        590.0,
+        265.0,
+        696.0,
+        438.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "有實有此見未以無安",
+      "col_bbox": [
+        590,
+        135,
+        696,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        590.0,
+        438.0,
+        696.0,
+        551.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "有實有此見未以無安",
+      "col_bbox": [
+        590,
+        135,
+        696,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        590.0,
+        551.0,
+        696.0,
+        703.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "有實有此見未以無安",
+      "col_bbox": [
+        590,
+        135,
+        696,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "見",
+      "bbox": [
+        590.0,
+        703.0,
+        696.0,
+        819.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "有實有此見未以無安",
+      "col_bbox": [
+        590,
+        135,
+        696,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "未",
+      "bbox": [
+        590.0,
+        819.0,
+        696.0,
+        900.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "有實有此見未以無安",
+      "col_bbox": [
+        590,
+        135,
+        696,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "以",
+      "bbox": [
+        590.0,
+        900.0,
+        696.0,
+        1027.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "有實有此見未以無安",
+      "col_bbox": [
+        590,
+        135,
+        696,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        590.0,
+        1027.0,
+        696.0,
+        1158.0
+      ],
+      "column": 0,
+      "row": 7,
+      "global_index": 7,
+      "col_text": "有實有此見未以無安",
+      "col_bbox": [
+        590,
+        135,
+        696,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "安",
+      "bbox": [
+        590.0,
+        1158.0,
+        696.0,
+        1329.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 8,
+      "col_text": "有實有此見未以無安",
+      "col_bbox": [
+        590,
+        135,
+        696,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "琴",
+      "bbox": [
+        477.0,
+        131.0,
+        597.0,
+        215.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 9,
+      "col_text": "琴此心御曦有具如之理",
+      "col_bbox": [
+        477,
+        131,
+        597,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "此",
+      "bbox": [
+        477.0,
+        215.0,
+        597.0,
+        404.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 10,
+      "col_text": "琴此心御曦有具如之理",
+      "col_bbox": [
+        477,
+        131,
+        597,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        477.0,
+        404.0,
+        597.0,
+        523.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 11,
+      "col_text": "琴此心御曦有具如之理",
+      "col_bbox": [
+        477,
+        131,
+        597,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "御",
+      "bbox": [
+        477.0,
+        523.0,
+        597.0,
+        643.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 12,
+      "col_text": "琴此心御曦有具如之理",
+      "col_bbox": [
+        477,
+        131,
+        597,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "曦",
+      "bbox": [
+        477.0,
+        643.0,
+        597.0,
+        693.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 13,
+      "col_text": "琴此心御曦有具如之理",
+      "col_bbox": [
+        477,
+        131,
+        597,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        477.0,
+        693.0,
+        597.0,
+        815.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 14,
+      "col_text": "琴此心御曦有具如之理",
+      "col_bbox": [
+        477,
+        131,
+        597,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "具",
+      "bbox": [
+        477.0,
+        815.0,
+        597.0,
+        975.0
+      ],
+      "column": 1,
+      "row": 6,
+      "global_index": 15,
+      "col_text": "琴此心御曦有具如之理",
+      "col_bbox": [
+        477,
+        131,
+        597,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "如",
+      "bbox": [
+        477.0,
+        975.0,
+        597.0,
+        1064.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 16,
+      "col_text": "琴此心御曦有具如之理",
+      "col_bbox": [
+        477,
+        131,
+        597,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        477.0,
+        1064.0,
+        597.0,
+        1194.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 17,
+      "col_text": "琴此心御曦有具如之理",
+      "col_bbox": [
+        477,
+        131,
+        597,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "理",
+      "bbox": [
+        477.0,
+        1194.0,
+        597.0,
+        1326.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 18,
+      "col_text": "琴此心御曦有具如之理",
+      "col_bbox": [
+        477,
+        131,
+        597,
+        1326
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "都",
+      "bbox": [
+        363.0,
+        137.0,
+        479.0,
+        220.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 19,
+      "col_text": "都座有漆選法之閒澄頭",
+      "col_bbox": [
+        363,
+        137,
+        479,
+        1321
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "座",
+      "bbox": [
+        363.0,
+        220.0,
+        479.0,
+        340.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 20,
+      "col_text": "都座有漆選法之閒澄頭",
+      "col_bbox": [
+        363,
+        137,
+        479,
+        1321
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        363.0,
+        340.0,
+        479.0,
+        472.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 21,
+      "col_text": "都座有漆選法之閒澄頭",
+      "col_bbox": [
+        363,
+        137,
+        479,
+        1321
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "漆",
+      "bbox": [
+        363.0,
+        472.0,
+        479.0,
+        580.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 22,
+      "col_text": "都座有漆選法之閒澄頭",
+      "col_bbox": [
+        363,
+        137,
+        479,
+        1321
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "選",
+      "bbox": [
+        363.0,
+        580.0,
+        479.0,
+        706.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 23,
+      "col_text": "都座有漆選法之閒澄頭",
+      "col_bbox": [
+        363,
+        137,
+        479,
+        1321
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "法",
+      "bbox": [
+        363.0,
+        706.0,
+        479.0,
+        839.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 24,
+      "col_text": "都座有漆選法之閒澄頭",
+      "col_bbox": [
+        363,
+        137,
+        479,
+        1321
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        363.0,
+        839.0,
+        479.0,
+        930.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 25,
+      "col_text": "都座有漆選法之閒澄頭",
+      "col_bbox": [
+        363,
+        137,
+        479,
+        1321
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "閒",
+      "bbox": [
+        363.0,
+        930.0,
+        479.0,
+        1055.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 26,
+      "col_text": "都座有漆選法之閒澄頭",
+      "col_bbox": [
+        363,
+        137,
+        479,
+        1321
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "澄",
+      "bbox": [
+        363.0,
+        1055.0,
+        479.0,
+        1178.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 27,
+      "col_text": "都座有漆選法之閒澄頭",
+      "col_bbox": [
+        363,
+        137,
+        479,
+        1321
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "頭",
+      "bbox": [
+        363.0,
+        1178.0,
+        479.0,
+        1321.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 28,
+      "col_text": "都座有漆選法之閒澄頭",
+      "col_bbox": [
+        363,
+        137,
+        479,
+        1321
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "溫",
+      "bbox": [
+        251.0,
+        136.0,
+        355.0,
+        204.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 29,
+      "col_text": "溫禦不，癱葵，相、實想之內",
+      "col_bbox": [
+        251,
+        136,
+        355,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "禦",
+      "bbox": [
+        251.0,
+        204.0,
+        355.0,
+        305.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 30,
+      "col_text": "溫禦不，癱葵，相、實想之內",
+      "col_bbox": [
+        251,
+        136,
+        355,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        251.0,
+        305.0,
+        355.0,
+        411.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 31,
+      "col_text": "溫禦不，癱葵，相、實想之內",
+      "col_bbox": [
+        251,
+        136,
+        355,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "癱",
+      "bbox": [
+        251.0,
+        527.0,
+        355.0,
+        573.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 32,
+      "col_text": "溫禦不，癱葵，相、實想之內",
+      "col_bbox": [
+        251,
+        136,
+        355,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "葵",
+      "bbox": [
+        251.0,
+        573.0,
+        355.0,
+        679.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 33,
+      "col_text": "溫禦不，癱葵，相、實想之內",
+      "col_bbox": [
+        251,
+        136,
+        355,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "相",
+      "bbox": [
+        251.0,
+        776.0,
+        355.0,
+        874.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 34,
+      "col_text": "溫禦不，癱葵，相、實想之內",
+      "col_bbox": [
+        251,
+        136,
+        355,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "實",
+      "bbox": [
+        251.0,
+        930.0,
+        355.0,
+        1056.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 35,
+      "col_text": "溫禦不，癱葵，相、實想之內",
+      "col_bbox": [
+        251,
+        136,
+        355,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "想",
+      "bbox": [
+        251.0,
+        1056.0,
+        355.0,
+        1162.0
+      ],
+      "column": 3,
+      "row": 10,
+      "global_index": 36,
+      "col_text": "溫禦不，癱葵，相、實想之內",
+      "col_bbox": [
+        251,
+        136,
+        355,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        251.0,
+        1162.0,
+        355.0,
+        1257.0
+      ],
+      "column": 3,
+      "row": 11,
+      "global_index": 37,
+      "col_text": "溫禦不，癱葵，相、實想之內",
+      "col_bbox": [
+        251,
+        136,
+        355,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "內",
+      "bbox": [
+        251.0,
+        1257.0,
+        355.0,
+        1323.0
+      ],
+      "column": 3,
+      "row": 12,
+      "global_index": 38,
+      "col_text": "溫禦不，癱葵，相、實想之內",
+      "col_bbox": [
+        251,
+        136,
+        355,
+        1323
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "琴",
+      "bbox": [
+        132.0,
+        217.0,
+        244.0,
+        295.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 39,
+      "col_text": "琴松手金石知釋觀之風",
+      "col_bbox": [
+        132,
+        217,
+        244,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "松",
+      "bbox": [
+        132.0,
+        295.0,
+        244.0,
+        433.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 40,
+      "col_text": "琴松手金石知釋觀之風",
+      "col_bbox": [
+        132,
+        217,
+        244,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "手",
+      "bbox": [
+        132.0,
+        433.0,
+        244.0,
+        575.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 41,
+      "col_text": "琴松手金石知釋觀之風",
+      "col_bbox": [
+        132,
+        217,
+        244,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "金",
+      "bbox": [
+        132.0,
+        575.0,
+        244.0,
+        665.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 42,
+      "col_text": "琴松手金石知釋觀之風",
+      "col_bbox": [
+        132,
+        217,
+        244,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "石",
+      "bbox": [
+        132.0,
+        665.0,
+        244.0,
+        781.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 43,
+      "col_text": "琴松手金石知釋觀之風",
+      "col_bbox": [
+        132,
+        217,
+        244,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        132.0,
+        781.0,
+        244.0,
+        873.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 44,
+      "col_text": "琴松手金石知釋觀之風",
+      "col_bbox": [
+        132,
+        217,
+        244,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "釋",
+      "bbox": [
+        132.0,
+        873.0,
+        244.0,
+        999.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 45,
+      "col_text": "琴松手金石知釋觀之風",
+      "col_bbox": [
+        132,
+        217,
+        244,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "觀",
+      "bbox": [
+        132.0,
+        999.0,
+        244.0,
+        1073.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 46,
+      "col_text": "琴松手金石知釋觀之風",
+      "col_bbox": [
+        132,
+        217,
+        244,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        132.0,
+        1073.0,
+        244.0,
+        1189.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 47,
+      "col_text": "琴松手金石知釋觀之風",
+      "col_bbox": [
+        132,
+        217,
+        244,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "風",
+      "bbox": [
+        132.0,
+        1189.0,
+        244.0,
+        1329.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 48,
+      "col_text": "琴松手金石知釋觀之風",
+      "col_bbox": [
+        132,
+        217,
+        244,
+        1329
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 5,
+  "total_chars": 49,
+  "timestamp": "2026-05-03T21:38:27.278458"
+}

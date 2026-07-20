@@ -1,0 +1,1132 @@
+{
+  "image_path": "王羲之-行书-千字文/fatie-010.png",
+  "image_info": {
+    "width": 893,
+    "height": 1480,
+    "channels": 3,
+    "dtype": "uint8"
+  },
+  "recognized_text": "聲奉手樂而應在晉樂不能滋其聲雌聲質不快振其者非音不能顯其乐醫之者入有不知所自無象雨感人心求之於樂無",
+  "parsed_results": [
+    {
+      "text": "聲奉手樂而應在，晉",
+      "bbox": [
+        668,
+        176,
+        752,
+        1350
+      ],
+      "poly": [
+        [
+          668,
+          176
+        ],
+        [
+          752,
+          176
+        ],
+        [
+          752,
+          1350
+        ],
+        [
+          668,
+          1350
+        ]
+      ]
+    },
+    {
+      "text": "樂不能滋其聲，雌聲質不快",
+      "bbox": [
+        538,
+        168,
+        651,
+        1354
+      ],
+      "poly": [
+        [
+          538,
+          168
+        ],
+        [
+          651,
+          168
+        ],
+        [
+          651,
+          1354
+        ],
+        [
+          538,
+          1354
+        ]
+      ]
+    },
+    {
+      "text": "振其者非音不能顯其乐",
+      "bbox": [
+        418,
+        163,
+        537,
+        1361
+      ],
+      "poly": [
+        [
+          418,
+          163
+        ],
+        [
+          537,
+          163
+        ],
+        [
+          537,
+          1361
+        ],
+        [
+          418,
+          1361
+        ]
+      ]
+    },
+    {
+      "text": "醫之者入有不知所自無",
+      "bbox": [
+        315,
+        168,
+        419,
+        1354
+      ],
+      "poly": [
+        [
+          315,
+          168
+        ],
+        [
+          419,
+          168
+        ],
+        [
+          419,
+          1354
+        ],
+        [
+          315,
+          1354
+        ]
+      ]
+    },
+    {
+      "text": "象雨感人心求之於樂無",
+      "bbox": [
+        203,
+        166,
+        302,
+        1349
+      ],
+      "poly": [
+        [
+          203,
+          166
+        ],
+        [
+          302,
+          166
+        ],
+        [
+          302,
+          1349
+        ],
+        [
+          203,
+          1349
+        ]
+      ]
+    }
+  ],
+  "char_results": [
+    {
+      "char": "聲",
+      "bbox": [
+        668.0,
+        176.0,
+        752.0,
+        316.0
+      ],
+      "column": 0,
+      "row": 0,
+      "global_index": 0,
+      "col_text": "聲奉手樂而應在，晉",
+      "col_bbox": [
+        668,
+        176,
+        752,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "奉",
+      "bbox": [
+        668.0,
+        316.0,
+        752.0,
+        474.0
+      ],
+      "column": 0,
+      "row": 1,
+      "global_index": 1,
+      "col_text": "聲奉手樂而應在，晉",
+      "col_bbox": [
+        668,
+        176,
+        752,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "手",
+      "bbox": [
+        668.0,
+        474.0,
+        752.0,
+        604.0
+      ],
+      "column": 0,
+      "row": 2,
+      "global_index": 2,
+      "col_text": "聲奉手樂而應在，晉",
+      "col_bbox": [
+        668,
+        176,
+        752,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "樂",
+      "bbox": [
+        668.0,
+        604.0,
+        752.0,
+        732.0
+      ],
+      "column": 0,
+      "row": 3,
+      "global_index": 3,
+      "col_text": "聲奉手樂而應在，晉",
+      "col_bbox": [
+        668,
+        176,
+        752,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "而",
+      "bbox": [
+        668.0,
+        732.0,
+        752.0,
+        831.0
+      ],
+      "column": 0,
+      "row": 4,
+      "global_index": 4,
+      "col_text": "聲奉手樂而應在，晉",
+      "col_bbox": [
+        668,
+        176,
+        752,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "應",
+      "bbox": [
+        668.0,
+        831.0,
+        752.0,
+        950.0
+      ],
+      "column": 0,
+      "row": 5,
+      "global_index": 5,
+      "col_text": "聲奉手樂而應在，晉",
+      "col_bbox": [
+        668,
+        176,
+        752,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "在",
+      "bbox": [
+        668.0,
+        950.0,
+        752.0,
+        1050.0
+      ],
+      "column": 0,
+      "row": 6,
+      "global_index": 6,
+      "col_text": "聲奉手樂而應在，晉",
+      "col_bbox": [
+        668,
+        176,
+        752,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "晉",
+      "bbox": [
+        668.0,
+        1198.0,
+        752.0,
+        1350.0
+      ],
+      "column": 0,
+      "row": 8,
+      "global_index": 7,
+      "col_text": "聲奉手樂而應在，晉",
+      "col_bbox": [
+        668,
+        176,
+        752,
+        1350
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "樂",
+      "bbox": [
+        538.0,
+        168.0,
+        651.0,
+        247.0
+      ],
+      "column": 1,
+      "row": 0,
+      "global_index": 8,
+      "col_text": "樂不能滋其聲，雌聲質不快",
+      "col_bbox": [
+        538,
+        168,
+        651,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        538.0,
+        247.0,
+        651.0,
+        352.0
+      ],
+      "column": 1,
+      "row": 1,
+      "global_index": 9,
+      "col_text": "樂不能滋其聲，雌聲質不快",
+      "col_bbox": [
+        538,
+        168,
+        651,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        538.0,
+        352.0,
+        651.0,
+        459.0
+      ],
+      "column": 1,
+      "row": 2,
+      "global_index": 10,
+      "col_text": "樂不能滋其聲，雌聲質不快",
+      "col_bbox": [
+        538,
+        168,
+        651,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "滋",
+      "bbox": [
+        538.0,
+        459.0,
+        651.0,
+        572.0
+      ],
+      "column": 1,
+      "row": 3,
+      "global_index": 11,
+      "col_text": "樂不能滋其聲，雌聲質不快",
+      "col_bbox": [
+        538,
+        168,
+        651,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        538.0,
+        572.0,
+        651.0,
+        690.0
+      ],
+      "column": 1,
+      "row": 4,
+      "global_index": 12,
+      "col_text": "樂不能滋其聲，雌聲質不快",
+      "col_bbox": [
+        538,
+        168,
+        651,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "聲",
+      "bbox": [
+        538.0,
+        690.0,
+        651.0,
+        789.0
+      ],
+      "column": 1,
+      "row": 5,
+      "global_index": 13,
+      "col_text": "樂不能滋其聲，雌聲質不快",
+      "col_bbox": [
+        538,
+        168,
+        651,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "雌",
+      "bbox": [
+        538.0,
+        830.0,
+        651.0,
+        954.0
+      ],
+      "column": 1,
+      "row": 7,
+      "global_index": 14,
+      "col_text": "樂不能滋其聲，雌聲質不快",
+      "col_bbox": [
+        538,
+        168,
+        651,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "聲",
+      "bbox": [
+        538.0,
+        954.0,
+        651.0,
+        1080.0
+      ],
+      "column": 1,
+      "row": 8,
+      "global_index": 15,
+      "col_text": "樂不能滋其聲，雌聲質不快",
+      "col_bbox": [
+        538,
+        168,
+        651,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "質",
+      "bbox": [
+        538.0,
+        1080.0,
+        651.0,
+        1184.0
+      ],
+      "column": 1,
+      "row": 9,
+      "global_index": 16,
+      "col_text": "樂不能滋其聲，雌聲質不快",
+      "col_bbox": [
+        538,
+        168,
+        651,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        538.0,
+        1184.0,
+        651.0,
+        1279.0
+      ],
+      "column": 1,
+      "row": 10,
+      "global_index": 17,
+      "col_text": "樂不能滋其聲，雌聲質不快",
+      "col_bbox": [
+        538,
+        168,
+        651,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "快",
+      "bbox": [
+        538.0,
+        1279.0,
+        651.0,
+        1354.0
+      ],
+      "column": 1,
+      "row": 11,
+      "global_index": 18,
+      "col_text": "樂不能滋其聲，雌聲質不快",
+      "col_bbox": [
+        538,
+        168,
+        651,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "振",
+      "bbox": [
+        418.0,
+        163.0,
+        537.0,
+        247.0
+      ],
+      "column": 2,
+      "row": 0,
+      "global_index": 19,
+      "col_text": "振其者非音不能顯其乐",
+      "col_bbox": [
+        418,
+        163,
+        537,
+        1361
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        418.0,
+        247.0,
+        537.0,
+        425.0
+      ],
+      "column": 2,
+      "row": 1,
+      "global_index": 20,
+      "col_text": "振其者非音不能顯其乐",
+      "col_bbox": [
+        418,
+        163,
+        537,
+        1361
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        418.0,
+        425.0,
+        537.0,
+        556.0
+      ],
+      "column": 2,
+      "row": 2,
+      "global_index": 21,
+      "col_text": "振其者非音不能顯其乐",
+      "col_bbox": [
+        418,
+        163,
+        537,
+        1361
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "非",
+      "bbox": [
+        418.0,
+        556.0,
+        537.0,
+        607.0
+      ],
+      "column": 2,
+      "row": 3,
+      "global_index": 22,
+      "col_text": "振其者非音不能顯其乐",
+      "col_bbox": [
+        418,
+        163,
+        537,
+        1361
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "音",
+      "bbox": [
+        418.0,
+        607.0,
+        537.0,
+        787.0
+      ],
+      "column": 2,
+      "row": 4,
+      "global_index": 23,
+      "col_text": "振其者非音不能顯其乐",
+      "col_bbox": [
+        418,
+        163,
+        537,
+        1361
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        418.0,
+        787.0,
+        537.0,
+        914.0
+      ],
+      "column": 2,
+      "row": 5,
+      "global_index": 24,
+      "col_text": "振其者非音不能顯其乐",
+      "col_bbox": [
+        418,
+        163,
+        537,
+        1361
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "能",
+      "bbox": [
+        418.0,
+        914.0,
+        537.0,
+        1027.0
+      ],
+      "column": 2,
+      "row": 6,
+      "global_index": 25,
+      "col_text": "振其者非音不能顯其乐",
+      "col_bbox": [
+        418,
+        163,
+        537,
+        1361
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "顯",
+      "bbox": [
+        418.0,
+        1027.0,
+        537.0,
+        1086.0
+      ],
+      "column": 2,
+      "row": 7,
+      "global_index": 26,
+      "col_text": "振其者非音不能顯其乐",
+      "col_bbox": [
+        418,
+        163,
+        537,
+        1361
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "其",
+      "bbox": [
+        418.0,
+        1086.0,
+        537.0,
+        1221.0
+      ],
+      "column": 2,
+      "row": 8,
+      "global_index": 27,
+      "col_text": "振其者非音不能顯其乐",
+      "col_bbox": [
+        418,
+        163,
+        537,
+        1361
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "乐",
+      "bbox": [
+        418.0,
+        1221.0,
+        537.0,
+        1361.0
+      ],
+      "column": 2,
+      "row": 9,
+      "global_index": 28,
+      "col_text": "振其者非音不能顯其乐",
+      "col_bbox": [
+        418,
+        163,
+        537,
+        1361
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "醫",
+      "bbox": [
+        315.0,
+        168.0,
+        419.0,
+        251.0
+      ],
+      "column": 3,
+      "row": 0,
+      "global_index": 29,
+      "col_text": "醫之者入有不知所自無",
+      "col_bbox": [
+        315,
+        168,
+        419,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        315.0,
+        251.0,
+        419.0,
+        439.0
+      ],
+      "column": 3,
+      "row": 1,
+      "global_index": 30,
+      "col_text": "醫之者入有不知所自無",
+      "col_bbox": [
+        315,
+        168,
+        419,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "者",
+      "bbox": [
+        315.0,
+        439.0,
+        419.0,
+        498.0
+      ],
+      "column": 3,
+      "row": 2,
+      "global_index": 31,
+      "col_text": "醫之者入有不知所自無",
+      "col_bbox": [
+        315,
+        168,
+        419,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "入",
+      "bbox": [
+        315.0,
+        498.0,
+        419.0,
+        653.0
+      ],
+      "column": 3,
+      "row": 3,
+      "global_index": 32,
+      "col_text": "醫之者入有不知所自無",
+      "col_bbox": [
+        315,
+        168,
+        419,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "有",
+      "bbox": [
+        315.0,
+        653.0,
+        419.0,
+        726.0
+      ],
+      "column": 3,
+      "row": 4,
+      "global_index": 33,
+      "col_text": "醫之者入有不知所自無",
+      "col_bbox": [
+        315,
+        168,
+        419,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "不",
+      "bbox": [
+        315.0,
+        726.0,
+        419.0,
+        880.0
+      ],
+      "column": 3,
+      "row": 5,
+      "global_index": 34,
+      "col_text": "醫之者入有不知所自無",
+      "col_bbox": [
+        315,
+        168,
+        419,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "知",
+      "bbox": [
+        315.0,
+        880.0,
+        419.0,
+        978.0
+      ],
+      "column": 3,
+      "row": 6,
+      "global_index": 35,
+      "col_text": "醫之者入有不知所自無",
+      "col_bbox": [
+        315,
+        168,
+        419,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "所",
+      "bbox": [
+        315.0,
+        978.0,
+        419.0,
+        1085.0
+      ],
+      "column": 3,
+      "row": 7,
+      "global_index": 36,
+      "col_text": "醫之者入有不知所自無",
+      "col_bbox": [
+        315,
+        168,
+        419,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "自",
+      "bbox": [
+        315.0,
+        1085.0,
+        419.0,
+        1269.0
+      ],
+      "column": 3,
+      "row": 8,
+      "global_index": 37,
+      "col_text": "醫之者入有不知所自無",
+      "col_bbox": [
+        315,
+        168,
+        419,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        315.0,
+        1269.0,
+        419.0,
+        1354.0
+      ],
+      "column": 3,
+      "row": 9,
+      "global_index": 38,
+      "col_text": "醫之者入有不知所自無",
+      "col_bbox": [
+        315,
+        168,
+        419,
+        1354
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "象",
+      "bbox": [
+        203.0,
+        166.0,
+        302.0,
+        256.0
+      ],
+      "column": 4,
+      "row": 0,
+      "global_index": 39,
+      "col_text": "象雨感人心求之於樂無",
+      "col_bbox": [
+        203,
+        166,
+        302,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "雨",
+      "bbox": [
+        203.0,
+        256.0,
+        302.0,
+        367.0
+      ],
+      "column": 4,
+      "row": 1,
+      "global_index": 40,
+      "col_text": "象雨感人心求之於樂無",
+      "col_bbox": [
+        203,
+        166,
+        302,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "感",
+      "bbox": [
+        203.0,
+        367.0,
+        302.0,
+        485.0
+      ],
+      "column": 4,
+      "row": 2,
+      "global_index": 41,
+      "col_text": "象雨感人心求之於樂無",
+      "col_bbox": [
+        203,
+        166,
+        302,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "人",
+      "bbox": [
+        203.0,
+        485.0,
+        302.0,
+        671.0
+      ],
+      "column": 4,
+      "row": 3,
+      "global_index": 42,
+      "col_text": "象雨感人心求之於樂無",
+      "col_bbox": [
+        203,
+        166,
+        302,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "心",
+      "bbox": [
+        203.0,
+        671.0,
+        302.0,
+        775.0
+      ],
+      "column": 4,
+      "row": 4,
+      "global_index": 43,
+      "col_text": "象雨感人心求之於樂無",
+      "col_bbox": [
+        203,
+        166,
+        302,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "求",
+      "bbox": [
+        203.0,
+        775.0,
+        302.0,
+        909.0
+      ],
+      "column": 4,
+      "row": 5,
+      "global_index": 44,
+      "col_text": "象雨感人心求之於樂無",
+      "col_bbox": [
+        203,
+        166,
+        302,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "之",
+      "bbox": [
+        203.0,
+        909.0,
+        302.0,
+        1028.0
+      ],
+      "column": 4,
+      "row": 6,
+      "global_index": 45,
+      "col_text": "象雨感人心求之於樂無",
+      "col_bbox": [
+        203,
+        166,
+        302,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "於",
+      "bbox": [
+        203.0,
+        1028.0,
+        302.0,
+        1146.0
+      ],
+      "column": 4,
+      "row": 7,
+      "global_index": 46,
+      "col_text": "象雨感人心求之於樂無",
+      "col_bbox": [
+        203,
+        166,
+        302,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "樂",
+      "bbox": [
+        203.0,
+        1146.0,
+        302.0,
+        1195.0
+      ],
+      "column": 4,
+      "row": 8,
+      "global_index": 47,
+      "col_text": "象雨感人心求之於樂無",
+      "col_bbox": [
+        203,
+        166,
+        302,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    },
+    {
+      "char": "無",
+      "bbox": [
+        203.0,
+        1195.0,
+        302.0,
+        1349.0
+      ],
+      "column": 4,
+      "row": 9,
+      "global_index": 48,
+      "col_text": "象雨感人心求之於樂無",
+      "col_bbox": [
+        203,
+        166,
+        302,
+        1349
+      ],
+      "split_method": "pixel_projection"
+    }
+  ],
+  "column_count": 5,
+  "total_chars": 49,
+  "timestamp": "2026-05-03T21:38:28.001199"
+}
