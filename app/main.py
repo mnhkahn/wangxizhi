@@ -12,6 +12,16 @@ from PyQt5.QtGui import QIcon
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
+# 支持直接以 ``python -m app.main`` 或打包入口启动时读取项目配置。
+# ``run_app.py`` 也会加载一次；重复加载是安全的。
+try:
+    from dotenv import load_dotenv
+
+    load_dotenv(project_root / ".env")
+except Exception:
+    # 缺少 python-dotenv 时仍允许桌面应用启动。
+    pass
+
 from .main_window import MainWindow
 
 
