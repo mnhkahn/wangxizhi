@@ -205,7 +205,7 @@ def export_all_crops(
                 continue
             tasks.append((work_dir, stem, chars_path, image_abs))
 
-    # 预统计总数（只统计 bbox 合法的记录，便于进度条准确）
+    # 预统计总数（只统计已填写汉字且 bbox 合法的记录，便于进度条准确）
     total = 0
     for work_dir, stem, chars_path, image_abs in tasks:
         try:
@@ -219,6 +219,8 @@ def export_all_crops(
             if not isinstance(rec, dict):
                 continue
             if rec.get("visible") is False:
+                continue
+            if not str(rec.get("char", "")).strip():
                 continue
             bbox = rec.get("bbox")
             if bbox and isinstance(bbox, (list, tuple)) and len(bbox) == 4:
@@ -252,6 +254,8 @@ def export_all_crops(
                 continue
             bbox = rec.get("bbox")
             ch = rec.get("char", "")
+            if not str(ch).strip():
+                continue
             rid = rec.get("id", "")
             row = rec.get("row", 0)
             col = rec.get("column", 0)
@@ -288,6 +292,33 @@ def export_all_crops(
                     progress_cb(done, total, f"导出图片 {done}/{total} [FAIL] {work_dir.name}/{stem} {str(e)[:120]}")
 
     return total, ok, fail
+
+
+def filter_labeled_word_upload_items(scan_root: Path, items: list) -> list:
+    """只保留在 chars.json 中可见且已经填写汉字的单字图片。"""
+
+    allowed_paths = set()
+    for chars_path in scan_root.glob("**/.debug/*/chars.json"):
+        try:
+            with open(chars_path, "r", encoding="utf-8") as f:
+                chars = json.load(f)
+        except Exception:
+            continue
+        if not isinstance(chars, list):
+            continue
+
+        work_dir = chars_path.parent.parent.parent
+        for rec in chars:
+            if (
+                not isinstance(rec, dict)
+                or rec.get("visible") is False
+                or not rec.get("id")
+                or not str(rec.get("char", "")).strip()
+            ):
+                continue
+            allowed_paths.add((work_dir / "words" / f"{rec['id']}.webp").resolve())
+
+    return [it for it in items if it.abs_path.resolve() in allowed_paths]
 
 
 class OCRWorker(QThread):
@@ -587,6 +618,7 @@ class UploadWebPWorker(QThread):
             items = collect_upload_items(root, limit=0, keep_dirs=False, min_mtime=self.min_mtime)
             # 尽量只上传导出产物：*/words/*.webp
             items = [it for it in items if "/words/" in ("/" + it.rel_path.replace("\\", "/") + "/")]
+            items = filter_labeled_word_upload_items(root, items)
 
             # 如果指定了选中图片，读取对应的 chars.json 获取 id 列表进行过滤
             if self.selected_image:
@@ -600,7 +632,11 @@ class UploadWebPWorker(QThread):
                             chars_data = json.load(f)
                         if isinstance(chars_data, list):
                             for rec in chars_data:
-                                if isinstance(rec, dict) and rec.get("id"):
+                                if (
+                                    isinstance(rec, dict)
+                                    and rec.get("id")
+                                    and str(rec.get("char", "")).strip()
+                                ):
                                     allowed_ids.add(rec["id"])
                     except Exception:
                         pass
@@ -1283,6 +1319,7 @@ class MainWindow(QMainWindow):
         root = Path(scan_root).expanduser().resolve()
         all_items = collect_upload_items(root, limit=0, keep_dirs=False)
         all_items = [it for it in all_items if "/words/" in ("/" + it.rel_path.replace("\\", "/") + "/")]
+        all_items = filter_labeled_word_upload_items(root, all_items)
 
         # 如果指定了选中图片，按 chars.json 的 id 过滤
         if selected_image:
@@ -1295,7 +1332,11 @@ class MainWindow(QMainWindow):
                         chars_data = json.load(f)
                     if isinstance(chars_data, list):
                         for rec in chars_data:
-                            if isinstance(rec, dict) and rec.get("id"):
+                            if (
+                                isinstance(rec, dict)
+                                and rec.get("id")
+                                and str(rec.get("char", "")).strip()
+                            ):
                                 allowed_ids.add(rec["id"])
                 except Exception:
                     pass
