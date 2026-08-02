@@ -14,9 +14,9 @@ from PyQt5.QtWidgets import (
     QAbstractItemView,
 )
 from PyQt5.QtCore import Qt, pyqtSignal
-from PyQt5.QtGui import QFont
 
 from ..models.char_item import CharItem
+from ..utils.fonts import extended_cjk_font
 
 
 class CharListWidget(QWidget):
@@ -40,7 +40,7 @@ class CharListWidget(QWidget):
 
         # 标题
         title = QLabel("字符列表")
-        title.setFont(QFont("Arial", 12, QFont.Bold))
+        title.setFont(extended_cjk_font(12, bold=True))
         layout.addWidget(title)
 
         # 搜索框
@@ -51,7 +51,7 @@ class CharListWidget(QWidget):
 
         # 列表
         self.list_widget = QListWidget()
-        self.list_widget.setFont(QFont("Arial", 14))
+        self.list_widget.setFont(extended_cjk_font(14))
         self.list_widget.setSelectionMode(QAbstractItemView.SingleSelection)
         self.list_widget.itemClicked.connect(self._on_item_clicked)
         self.list_widget.itemDoubleClicked.connect(self._on_item_double_clicked)

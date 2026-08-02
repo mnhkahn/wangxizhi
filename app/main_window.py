@@ -24,7 +24,7 @@ from PyQt5.QtWidgets import (
     QApplication,
     QLineEdit,
 )
-from PyQt5.QtCore import Qt, QThread, pyqtSignal, QSize
+from PyQt5.QtCore import Qt, QThread, pyqtSignal, QSize, QFileSystemWatcher, QTimer
 from PyQt5.QtGui import QIcon, QFont, QKeySequence
 from PyQt5.QtWidgets import QStyle
 from PyQt5.QtWidgets import QUndoStack, QUndoCommand
@@ -864,6 +864,8 @@ class CharSearchWorker(QThread):
 class MainWindow(QMainWindow):
     """主窗口"""
 
+    APP_TITLE = "书法拆字编辑器"
+
     def __init__(self):
         super().__init__()
 
@@ -872,6 +874,13 @@ class MainWindow(QMainWindow):
         self.ocr_worker: Optional[OCRWorker] = None
         self._last_loaded_cache_path: Optional[str] = None
         self._current_tree_selection: Optional[dict] = None
+        self._has_unsaved_edits = False
+        self._watched_chars_path: Optional[Path] = None
+        self._last_internal_chars_signature: Optional[tuple] = None
+        self._pending_external_chars_reload = False
+        self._chars_watcher = QFileSystemWatcher(self)
+        self._chars_watcher.fileChanged.connect(self._on_watched_chars_changed)
+        self._chars_watcher.directoryChanged.connect(self._on_watched_chars_directory_changed)
 
         # 每张图片一个：字体/作者
         self.current_font: str = "楷书"
@@ -916,9 +925,16 @@ class MainWindow(QMainWindow):
             if not self.current_work:
                 self.current_work = "-".join(parts[1:])
 
+    def _update_window_title(self):
+        """在打开图片时将当前页文件名附加到窗口标题。"""
+        if self.current_image_path:
+            self.setWindowTitle(f"{self.APP_TITLE} · {Path(self.current_image_path).name}")
+        else:
+            self.setWindowTitle(self.APP_TITLE)
+
     def _init_ui(self):
         """初始化 UI"""
-        self.setWindowTitle("书法拆字编辑器")
+        self._update_window_title()
         # macOS 下某些情况下 setGeometry 会被 Qt 重新计算覆盖，
         # 这里用 resize + setMinimumSize 保证窗口不会"缩成很小"。
         self.resize(1400, 900)
@@ -1059,8 +1075,24 @@ class MainWindow(QMainWindow):
         delete_action.triggered.connect(self.delete_selected_char)
         edit_menu.addAction(delete_action)
 
-        # 视图菜单（保留占位，避免后续扩展时找不到菜单）
-        menubar.addMenu("视图(&V)")
+        # 视图菜单
+        view_menu = menubar.addMenu("视图(&V)")
+
+        self.action_previous_image = QAction("上一页", self)
+        self.action_previous_image.setShortcut(QKeySequence("Ctrl+Up"))
+        self.action_previous_image.setShortcutContext(Qt.ApplicationShortcut)
+        self.action_previous_image.triggered.connect(
+            lambda: self._navigate_work_tree_image(-1)
+        )
+        view_menu.addAction(self.action_previous_image)
+
+        self.action_next_image = QAction("下一页", self)
+        self.action_next_image.setShortcut(QKeySequence("Ctrl+Down"))
+        self.action_next_image.setShortcutContext(Qt.ApplicationShortcut)
+        self.action_next_image.triggered.connect(
+            lambda: self._navigate_work_tree_image(1)
+        )
+        view_menu.addAction(self.action_next_image)
 
         # 帮助菜单
         help_menu = menubar.addMenu("帮助(&H)")
@@ -1519,6 +1551,7 @@ class MainWindow(QMainWindow):
     def _load_image(self, image_path: str):
         """加载图片（优先从缓存加载结果，不自动调用 API）"""
         self.current_image_path = image_path
+        self._has_unsaved_edits = False
 
         # 在字帖树中高亮当前图片（不折叠树）
         if hasattr(self, "work_tree"):
@@ -1529,11 +1562,88 @@ class MainWindow(QMainWindow):
             QMessageBox.warning(self, "错误", f"无法加载图片: {image_path}")
             return
 
+        self._update_window_title()
+
+        self._watch_current_chars_file()
+
         # 尝试从缓存加载
         if self._try_load_cache(image_path):
             return
 
         self.status_label.setText('已打开图片（未发现缓存），请点击"识别"')
+
+    @staticmethod
+    def _file_signature(path: Path) -> Optional[tuple]:
+        """返回用于判断文件是否实际改变的稳定标识。"""
+        try:
+            stat = path.stat()
+            return stat.st_mtime_ns, stat.st_size
+        except OSError:
+            return None
+
+    def _watch_current_chars_file(self):
+        """只监听当前页 chars.json，外部编辑后同步回画布。"""
+        old_paths = self._chars_watcher.files() + self._chars_watcher.directories()
+        if old_paths:
+            self._chars_watcher.removePaths(old_paths)
+
+        self._watched_chars_path = None
+        if not self.current_image_path:
+            return
+
+        chars_path = self._cache_chars_path(self.current_image_path)
+        if chars_path.parent.exists():
+            self._chars_watcher.addPath(str(chars_path.parent))
+        if chars_path.exists():
+            self._chars_watcher.addPath(str(chars_path))
+            self._watched_chars_path = chars_path
+
+    def _on_watched_chars_changed(self, _path: str):
+        self._schedule_external_chars_reload()
+
+    def _on_watched_chars_directory_changed(self, _path: str):
+        self._schedule_external_chars_reload()
+
+    def _schedule_external_chars_reload(self):
+        """等待外部编辑器完成写入（包括临时文件替换）后再读取。"""
+        if self._pending_external_chars_reload or not self.current_image_path:
+            return
+        self._pending_external_chars_reload = True
+        QTimer.singleShot(150, self._reload_external_chars_if_changed)
+
+    def _reload_external_chars_if_changed(self):
+        self._pending_external_chars_reload = False
+        if not self.current_image_path:
+            return
+
+        chars_path = self._cache_chars_path(self.current_image_path)
+        # 原子保存会先移除旧文件；短暂缺失时继续等待。
+        if not chars_path.exists():
+            QTimer.singleShot(150, self._schedule_external_chars_reload)
+            return
+
+        self._watch_current_chars_file()
+        signature = self._file_signature(chars_path)
+        if signature is None or signature == self._last_internal_chars_signature:
+            return
+
+        if self._has_unsaved_edits:
+            choice = QMessageBox.question(
+                self,
+                "检测到外部修改",
+                "当前页的 chars.json 已在外部被修改。\n\n"
+                "重新载入会丢弃编辑器中尚未保存的修改。",
+                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.Yes,
+            )
+            if choice != QMessageBox.Yes:
+                self.status_label.setText("保留编辑器中的未保存修改（外部文件未载入）")
+                return
+
+        if self._try_load_cache(self.current_image_path):
+            self._has_unsaved_edits = False
+            self._last_internal_chars_signature = None
+            self.status_label.setText(f"已载入外部修改：{chars_path.name}")
 
     def _cache_result_path(self, image_path: str) -> Path:
         img = Path(image_path)
@@ -1655,6 +1765,7 @@ class MainWindow(QMainWindow):
                     "_cache_kind": "chars.json",
                 }
                 self._on_ocr_finished(cached)
+                self._has_unsaved_edits = False
                 return True
             except Exception as e:
                 self.status_label.setText(
@@ -1673,6 +1784,7 @@ class MainWindow(QMainWindow):
             cached["_cache_path"] = str(cache_path)
             cached["_cache_kind"] = "result.json"
             self._on_ocr_finished(cached)
+            self._has_unsaved_edits = False
             return True
         except Exception as e:
             self.status_label.setText(f'缓存加载失败：{e}；可点击"识别"重新生成')
@@ -1887,6 +1999,20 @@ class MainWindow(QMainWindow):
             return
         self._load_image(image_path)
 
+    def _navigate_work_tree_image(self, offset: int):
+        """按左侧当前字帖目录的顺序切换上一页或下一页。"""
+        if not self.current_image_path:
+            self.status_label.setText("请先从左侧目录打开一张图片")
+            return
+
+        payload = self.work_tree.adjacent_image(self.current_image_path, offset)
+        if payload is None:
+            direction = "第一页" if offset < 0 else "最后一页"
+            self.status_label.setText(f"当前已是该字帖的{direction}")
+            return
+
+        self._on_tree_item_activated(payload)
+
     def _on_tree_items_deleted(self, image_paths: list):
         """批量删除选中的图片（含缓存）"""
         if not image_paths:
@@ -1927,6 +2053,7 @@ class MainWindow(QMainWindow):
         # 如果当前打开的图片被删了，清空画布
         if self.current_image_path and self.current_image_path in image_paths:
             self.current_image_path = ""
+            self._update_window_title()
             self.image_canvas.scene.clear()
             self.image_canvas.cv_image = None
             self.image_canvas.bbox_items.clear()
@@ -2043,6 +2170,9 @@ class MainWindow(QMainWindow):
 
         with open(chars_path, "w", encoding="utf-8") as f:
             json.dump(char_data, f, ensure_ascii=False, indent=2)
+        self._last_internal_chars_signature = self._file_signature(chars_path)
+        self._watch_current_chars_file()
+        self._has_unsaved_edits = False
 
         # 同步写入 words/<stem>.txt（拆解后的文字）
         try:
@@ -2492,6 +2622,7 @@ class MainWindow(QMainWindow):
 
     def _on_canvas_selection_changed(self, item_id: int):
         """画布选中变化"""
+        self.image_canvas.set_active_ruler_item(item_id if item_id >= 0 else None)
         if item_id >= 0:
             self.char_list.select_item(item_id)
             item = self.char_manager.get_item(item_id)
@@ -2541,6 +2672,8 @@ class MainWindow(QMainWindow):
                 )
                 break
 
+        self.image_canvas.refresh_column_ruler()
+
         # 更新属性面板（不触发信号）
         self.property_panel.update_from_item(item)
         self._update_preview(item)
@@ -2572,6 +2705,7 @@ class MainWindow(QMainWindow):
         item = self.char_manager.get_item(item_id)
         if item:
             item.char = char
+            self._has_unsaved_edits = True
             self.char_list.update_item_char(item_id, char)
 
             # 更新画布上的标签
@@ -2589,12 +2723,15 @@ class MainWindow(QMainWindow):
         item = self.char_manager.get_item(item_id)
         if item:
             item.bbox = [x, y, x + w, y + h]
+            self._has_unsaved_edits = True
 
             # 更新画布上的边界框
             for bbox_item in self.image_canvas.bbox_items:
                 if bbox_item.item_id == item_id:
                     bbox_item.update_bbox(x, y, w, h)
                     break
+
+            self.image_canvas.refresh_column_ruler()
 
             self._update_preview(item)
 
@@ -2612,6 +2749,7 @@ class MainWindow(QMainWindow):
         item = self.char_manager.get_item(item_id)
         if item:
             item.visible = visible
+            self._has_unsaved_edits = True
             # 同步画布视觉：不可见时降低透明度
             for bbox_item in self.image_canvas.bbox_items:
                 if bbox_item.item_id == item_id:
@@ -2626,6 +2764,7 @@ class MainWindow(QMainWindow):
         item = self.char_manager.get_item(item_id)
         if item:
             item.row = row
+            self._has_unsaved_edits = True
             self._sync_bbox_highlight(item)
             self.property_panel.load_item(item)
 
@@ -2634,6 +2773,12 @@ class MainWindow(QMainWindow):
         item = self.char_manager.get_item(item_id)
         if item:
             item.column = column
+            self._has_unsaved_edits = True
+            self.image_canvas.set_column_row_map({
+                current.id: (current.column, current.row)
+                for current in self.char_manager.items
+            })
+            self.image_canvas.set_active_ruler_item(item_id)
             self._sync_bbox_highlight(item)
             self.property_panel.load_item(item)
 

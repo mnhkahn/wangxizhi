@@ -23,6 +23,7 @@ except Exception:
     pass
 
 from .main_window import MainWindow
+from .utils.fonts import load_embedded_fonts
 
 
 def main():
@@ -32,6 +33,7 @@ def main():
     QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps, True)
 
     app = QApplication(sys.argv)
+    load_embedded_fonts()
     app.setApplicationName("书法拆字编辑器")
     app.setApplicationVersion("1.0.0")
 

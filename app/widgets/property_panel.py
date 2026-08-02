@@ -15,9 +15,8 @@ from PyQt5.QtWidgets import (
     QCheckBox,
 )
 from PyQt5.QtCore import Qt, pyqtSignal
-from PyQt5.QtGui import QFont
-
 from ..models.char_item import CharItem
+from ..utils.fonts import extended_cjk_font
 
 
 class PropertyPanel(QWidget):
@@ -84,8 +83,10 @@ class PropertyPanel(QWidget):
         row_char.setSpacing(10)
         row_char.addWidget(QLabel("字:"))
         self.char_edit = QLineEdit()
-        self.char_edit.setFont(QFont("Arial", 18))
-        self.char_edit.setMaxLength(1)
+        self.char_edit.setFont(extended_cjk_font(18))
+        # CJK 扩展 B 及以后的字符在 UTF-16 中占两个 code unit；限制为 1 会
+        # 导致此类单字无法完整输入。
+        self.char_edit.setMaxLength(2)
         self.char_edit.setFixedWidth(64)
         self.char_edit.textChanged.connect(self._on_char_changed)
         row_char.addWidget(self.char_edit)

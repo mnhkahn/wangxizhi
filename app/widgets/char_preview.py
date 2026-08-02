@@ -9,8 +9,10 @@ from typing import Optional, List
 import cv2
 import numpy as np
 from PyQt5.QtCore import Qt, QTimer, pyqtSignal
-from PyQt5.QtGui import QImage, QPixmap, QFont
+from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QLabel, QFrame, QSizePolicy, QPushButton, QHBoxLayout
+
+from ..utils.fonts import extended_cjk_font
 
 
 class CharPreviewWidget(QWidget):
@@ -28,7 +30,7 @@ class CharPreviewWidget(QWidget):
         layout.setSpacing(6)
 
         self.char_label = QLabel("(未选中)")
-        self.char_label.setFont(QFont("Arial", 28, QFont.Bold))
+        self.char_label.setFont(extended_cjk_font(28, bold=True))
         self.char_label.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
         self.char_label.setFixedHeight(44)
         layout.addWidget(self.char_label)

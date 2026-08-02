@@ -121,6 +121,42 @@ class WorkTreeWidget(QWidget):
         finally:
             self._suppress_activation = False
 
+    def adjacent_image(self, image_path: str, offset: int) -> Optional[dict]:
+        """返回同一字帖中相邻图片的节点数据；到边界时返回 ``None``。"""
+        if not image_path or offset == 0:
+            return None
+
+        item = self._image_item_map.get(str(Path(image_path).resolve()))
+        if item is None or item.parent() is None:
+            return None
+
+        siblings: List[dict] = []
+        parent = item.parent()
+        for index in range(parent.childCount()):
+            payload = parent.child(index).data(0, Qt.UserRole)
+            if isinstance(payload, dict) and payload.get("kind") in (
+                "work_image",
+                "recognized",
+            ):
+                siblings.append(payload)
+
+        current_path = str(Path(image_path).resolve())
+        current_index = next(
+            (
+                index
+                for index, payload in enumerate(siblings)
+                if str(Path(payload.get("image_path", "")).resolve()) == current_path
+            ),
+            None,
+        )
+        if current_index is None:
+            return None
+
+        target_index = current_index + offset
+        if not 0 <= target_index < len(siblings):
+            return None
+        return siblings[target_index]
+
     def rebuild(self):
         """重建整棵树"""
         # 记录展开状态与当前选中项，避免刷新后折叠/跳走

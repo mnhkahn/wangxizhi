@@ -10,6 +10,7 @@ from PyQt5.QtWidgets import (
     QGraphicsRectItem,
     QGraphicsTextItem,
     QGraphicsPixmapItem,
+    QGraphicsLineItem,
 )
 from PyQt5.QtCore import Qt, QRectF, QPointF, pyqtSignal
 from PyQt5.QtGui import (
@@ -18,13 +19,14 @@ from PyQt5.QtGui import (
     QPen,
     QBrush,
     QColor,
-    QFont,
     QTransform,
     QPainter,
     QCursor,
 )
 import cv2
 import numpy as np
+
+from ..utils.fonts import extended_cjk_font
 
 
 class HandleItem(QGraphicsRectItem):
@@ -124,7 +126,7 @@ class BBoxItem(QGraphicsRectItem):
         # 字符标签（固定屏幕大小，不随视图缩放）
         self.label = QGraphicsTextItem(char, self)
         self.label.setDefaultTextColor(QColor(255, 0, 0))
-        self.label.setFont(QFont("Arial", 14, QFont.Bold))
+        self.label.setFont(extended_cjk_font(14, bold=True))
         self.label.setPos(0, -16)
         self.label.setZValue(10)
         self.label.setFlag(QGraphicsItem.ItemIgnoresTransformations, True)
@@ -411,6 +413,10 @@ class ImageCanvas(QGraphicsView):
         self._column_row_map: Dict[int, tuple] = {}
         self._resize_sync_originals: Dict[int, List[float]] = {}
 
+        # 列标尺：由每列现有字框的真实横坐标计算，不创建虚拟等宽网格。
+        self._column_ruler_items: List[QGraphicsItem] = []
+        self._active_ruler_column: Optional[int] = None
+
         # 视图设置
         self.setRenderHint(QPainter.Antialiasing)
         # 关闭 QGraphicsView 自带的拖拽模式，避免与 bbox 拖拽/缩放冲突。
@@ -438,6 +444,90 @@ class ImageCanvas(QGraphicsView):
     def set_column_row_map(self, mapping: Dict[int, tuple]):
         """设置 item_id -> (column, row) 映射，用于联动调整"""
         self._column_row_map = mapping
+        if self._active_ruler_column is None and mapping:
+            # 刚打开页面时也保留一处短虚线，让标尺的定位方式可被发现。
+            self._active_ruler_column = min(column for column, _ in mapping.values())
+        self._refresh_column_ruler()
+
+    def set_active_ruler_item(self, item_id: Optional[int]):
+        """用当前选中框所在列更新标尺的短虚线定位。"""
+        column_row = self._column_row_map.get(item_id) if item_id is not None else None
+        column = column_row[0] if column_row else None
+        if column == self._active_ruler_column:
+            return
+        self._active_ruler_column = column
+        self._refresh_column_ruler()
+
+    def refresh_column_ruler(self):
+        """在外部直接修改框坐标或列号后刷新标尺。"""
+        self._refresh_column_ruler()
+
+    def _clear_column_ruler(self):
+        for item in self._column_ruler_items:
+            try:
+                self.scene.removeItem(item)
+            except RuntimeError:
+                pass
+        self._column_ruler_items.clear()
+
+    def _refresh_column_ruler(self):
+        """按已有字框中心绘制列标尺与当前列的短虚线。"""
+        self._clear_column_ruler()
+        if not self.image_item or not self._column_row_map:
+            return
+
+        by_column: Dict[int, List[List[float]]] = {}
+        for bbox_item in self.bbox_items:
+            column_row = self._column_row_map.get(bbox_item.item_id)
+            if column_row is None:
+                continue
+            by_column.setdefault(column_row[0], []).append(bbox_item.get_bbox())
+        if not by_column:
+            return
+
+        # 标尺固定在预览图顶部，避免紧贴首个字框干扰阅读。
+        label_y = 6.0
+        tick_top = 34.0
+        tick_bottom = 58.0
+        guide_bottom = 92.0
+        label_font = extended_cjk_font(max(11, self._font_size + 2), bold=True)
+        view_scale = max(abs(self.transform().m11()), 0.001)
+
+        for column in sorted(by_column):
+            centers = sorted((bbox[0] + bbox[2]) / 2.0 for bbox in by_column[column])
+            center_x = centers[len(centers) // 2]
+            active = column == self._active_ruler_column
+            color = QColor(170, 82, 21) if active else QColor(105, 95, 82)
+
+            tick = QGraphicsLineItem(center_x, tick_top, center_x, tick_bottom)
+            tick.setPen(QPen(color, max(1, self._pen_width // 2)))
+            tick.setZValue(50000)
+            tick.setAcceptedMouseButtons(Qt.NoButton)
+            self.scene.addItem(tick)
+            self._column_ruler_items.append(tick)
+
+            label = QGraphicsTextItem(f"列 {column}")
+            label.setDefaultTextColor(color)
+            label.setFont(label_font)
+            # 列号始终按屏幕字号显示；缩小整页时仍保持可读。
+            label.setFlag(QGraphicsItem.ItemIgnoresTransformations, True)
+            label.setPos(
+                center_x - label.boundingRect().width() / (2.0 * view_scale),
+                label_y,
+            )
+            label.setZValue(50000)
+            label.setAcceptedMouseButtons(Qt.NoButton)
+            self.scene.addItem(label)
+            self._column_ruler_items.append(label)
+
+            # 只为当前列画图顶短虚线，不向下延伸到正文。
+            if active:
+                guide = QGraphicsLineItem(center_x, tick_bottom, center_x, guide_bottom)
+                guide.setPen(QPen(color, max(1, self._pen_width // 2), Qt.DashLine))
+                guide.setZValue(49999)
+                guide.setAcceptedMouseButtons(Qt.NoButton)
+                self.scene.addItem(guide)
+                self._column_ruler_items.append(guide)
 
     def _start_resize_sync(self, source_item: "BBoxItem"):
         """开始联动调整：记录下方相邻框的原始 bbox"""
@@ -504,6 +594,7 @@ class ImageCanvas(QGraphicsView):
 
     def _notify_bbox_live(self, item_id: int, bbox: list):
         """由 BBoxItem 回调触发的实时更新"""
+        self._refresh_column_ruler()
         self.bbox_updated.emit(item_id, bbox)
 
     def load_image(self, image_path: str):
@@ -530,6 +621,7 @@ class ImageCanvas(QGraphicsView):
 
         # 清除场景并添加图片
         self.scene.clear()
+        self._column_ruler_items.clear()
         self.image_item = self.scene.addPixmap(pixmap)
         self.scene.setSceneRect(0, 0, w, h)
 
@@ -537,6 +629,7 @@ class ImageCanvas(QGraphicsView):
         self.reset_view()
         self.bbox_items.clear()
         self.selected_items.clear()
+        self._active_ruler_column = None
 
         return True
 
@@ -563,6 +656,7 @@ class ImageCanvas(QGraphicsView):
 
         # 清除场景并添加图片
         self.scene.clear()
+        self._column_ruler_items.clear()
         self.image_item = self.scene.addPixmap(pixmap)
         self.scene.setSceneRect(0, 0, w, h)
 
@@ -570,6 +664,7 @@ class ImageCanvas(QGraphicsView):
         self.reset_view()
         self.bbox_items.clear()
         self.selected_items.clear()
+        self._active_ruler_column = None
 
     def reset_view(self):
         """重置视图"""
@@ -581,12 +676,14 @@ class ImageCanvas(QGraphicsView):
         if self.zoom_factor < self.max_zoom:
             self.zoom_factor *= 1.2
             self.scale(1.2, 1.2)
+            self._refresh_column_ruler()
 
     def zoom_out(self):
         """缩小"""
         if self.zoom_factor > self.min_zoom:
             self.zoom_factor /= 1.2
             self.scale(1/1.2, 1/1.2)
+            self._refresh_column_ruler()
 
     def wheelEvent(self, event):
         """滚轮事件：缩放"""
@@ -685,6 +782,8 @@ class ImageCanvas(QGraphicsView):
             self.scene.removeItem(bbox)
         self.bbox_items.clear()
         self.selected_items.clear()
+        self._active_ruler_column = None
+        self._refresh_column_ruler()
 
     def select_bbox(self, item_id: int):
         """选中单个边界框"""
