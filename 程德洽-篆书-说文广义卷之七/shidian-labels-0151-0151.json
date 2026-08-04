@@ -1,0 +1,39 @@
+{
+  "source": "程德洽-篆书-说文广义卷之七/shidian-glosses.json",
+  "start_source": 602,
+  "next_source": 606,
+  "assignments": [
+    {
+      "page": 151,
+      "column": 0,
+      "char": "炦",
+      "source_index": 602,
+      "headword_line_id": 2211,
+      "kept_existing": true
+    },
+    {
+      "page": 151,
+      "column": 1,
+      "char": "熱",
+      "source_index": 603,
+      "headword_line_id": 2220,
+      "kept_existing": true
+    },
+    {
+      "page": 151,
+      "column": 2,
+      "char": "炪",
+      "source_index": 604,
+      "headword_line_id": 2223,
+      "kept_existing": true
+    },
+    {
+      "page": 151,
+      "column": 3,
+      "char": "爇",
+      "source_index": 605,
+      "headword_line_id": 2226,
+      "kept_existing": true
+    }
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "source": "程德洽-篆书-说文广义卷之七/shidian-glosses.json",
+  "start_source": 826,
+  "next_source": 887,
+  "assignments": [
+    {
+      "page": 201,
+      "column": 0,
+      "char": "葬",
+      "source_index": 826,
+      "headword_line_id": 2951,
+      "kept_existing": true
+    },
+    {
+      "page": 201,
+      "column": 1,
+      "char": "丙",
+      "source_index": 827,
+      "headword_line_id": 2954,
+      "kept_existing": true
+    },
+    {
+      "page": 201,
+      "column": 2,
+      "char": "皿",
+      "source_index": 828,
+      "headword_line_id": 2958,
+      "kept_existing": true
+    },
+    {
+      "page": 201,
+      "column": 3,
+      "char": "盅",
+      "source_index": 829,
+      "headword_line_id": 2961,
+      "kept_existing": true
+    },
+    {
+      "page": 202,
+      "column": 0,
+      "char": "齍",
+      "source_index": 830,
+      "headword_line_id": 2965,
+      "kept_existing": true
+    },
+    {
+      "page": 202,
+      "column": 1,
+      "char": "盂",
+      "source_index": 831,
+      "headword_line_id": 2968,
+      "kept_existing": true
+    },
+    {
+      "page": 202,
+      "column": 2,
+      "char": "盧",
+      "source_index": 832,
+      "headword_line_id": 2971,
+      "kept_existing": true
+    },
+    {
+      "page": 202,
+      "column": 3,
+      "char": "醯",
+      "source_index": 833,
+      "headword_line_id": 2974,
+      "kept_existing": true
+    },
+    {
+      "page": 203,
+      "column": 0,
+      "char": "酒",
+      "source_index": 834,
+      "headword_line_id": 2974,
+      "kept_existing": true
+    },
+    {
+      "page": 203,
+      "column": 1,
+      "char": "𥁕",
+      "source_index": 835,
+      "headword_line_id": 2979,
+      "kept_existing": true
+    },
+    {
+      "page": 203,
+      "column": 2,
+      "char": "盆",
+      "source_index": 836,
+      "headword_line_id": 2983,
+      "kept_existing": true
+    },
+    {
+      "page": 203,
+      "column": 3,
+      "char": "盄",
+      "source_index": 837,
+      "headword_line_id": 2986,
+      "kept_existing": true
+    },
+    {
+      "page": 203,
+      "column": 4,
+      "char": "盉",
+      "source_index": 838,
+      "headword_line_id": 2989,
+      "kept_existing": true
+    },
+    {
+      "page": 204,
+      "column": 0,
+      "char": "盛",
+      "source_index": 839,
+      "headword_line_id": 2992,
+      "kept_existing": true
+    },
+    {
+      "page": 204,
+      "column": 1,
+      "char": "盈",
+      "source_index": 840,
+      "headword_line_id": 2996,
+      "kept_existing": true
+    },
+    {
+      "page": 204,
+      "column": 2,
+      "char": "㿾",
+      "source_index": 841,
+      "headword_line_id": 2999,
+      "kept_existing": true
+    },
+    {
+      "page": 204,
+      "column": 3,
+      "char": "盨",
+      "source_index": 842,
+      "headword_line_id": 3002,
+      "kept_existing": true
+    },
+    {
+      "page": 205,
+      "column": 0,
+      "char": "䀇",
+      "source_index": 843,
+      "headword_line_id": 3005,
+      "kept_existing": true
+    },
+    {
+      "page": 205,
+      "column": 1,
+      "char": "盡",
+      "source_index": 844,
+      "headword_line_id": 3008,
+      "kept_existing": true
+    },
+    {
+      "page": 205,
+      "column": 2,
+      "char": "盌",
+      "source_index": 845,
+      "headword_line_id": 3014,
+      "kept_existing": true
+    },
+    {
+      "page": 205,
+      "column": 3,
+      "char": "䀊",
+      "source_index": 846,
+      "headword_line_id": 3017,
+      "kept_existing": true
+    },
+    {
+      "page": 205,
+      "column": 4,
+      "char": "盪",
+      "source_index": 847,
+      "headword_line_id": 3020,
+      "kept_existing": true
+    },
+    {
+      "page": 206,
+      "column": 0,
+      "char": "盥",
+      "source_index": 848,
+      "headword_line_id": 3023,
+      "kept_existing": true
+    },
+    {
+      "page": 206,
+      "column": 1,
+      "char": "盎",
+      "source_index": 849,
+      "headword_line_id": 3027,
+      "kept_existing": true
+    },
+    {
+      "page": 206,
+      "column": 2,
+      "char": "䀁",
+      "source_index": 850,
+      "headword_line_id": 3030,
+      "kept_existing": true
+    },
+    {
+      "page": 206,
+      "column": 3,
+      "char": "𥁑",
+      "source_index": 851,
+      "headword_line_id": 3033,
+      "kept_existing": true
+    },
+    {
+      "page": 207,
+      "column": 0,
+      "char": "盋",
+      "source_index": 852,
+      "headword_line_id": 3036,
+      "kept_existing": true
+    },
+    {
+      "page": 207,
+      "column": 1,
+      "char": "益",
+      "source_index": 853,
+      "headword_line_id": 3039,
+      "kept_existing": true
+    },
+    {
+      "page": 207,
+      "column": 2,
+      "char": "盦",
+      "source_index": 854,
+      "headword_line_id": 3043,
+      "kept_existing": true
+    },
+    {
+      "page": 207,
+      "column": 3,
+      "char": "永",
+      "source_index": 855,
+      "headword_line_id": 3050,
+      "kept_existing": true
+    },
+    {
+      "page": 207,
+      "column": 4,
+      "char": "羕",
+      "source_index": 856,
+      "headword_line_id": 3053,
+      "kept_existing": true
+    },
+    {
+      "page": 208,
+      "column": 0,
+      "char": "囧",
+      "source_index": 857,
+      "headword_line_id": 3056,
+      "kept_existing": true
+    },
+    {
+      "page": 208,
+      "column": 1,
+      "char": "𧖸",
+      "source_index": 858,
+      "headword_line_id": 3060,
+      "kept_existing": true
+    },
+    {
+      "page": 208,
+      "column": 2,
+      "char": "黽",
+      "source_index": 859,
+      "headword_line_id": 3064,
+      "kept_existing": true
+    },
+    {
+      "page": 208,
+      "column": 3,
+      "char": "𪓿",
+      "source_index": 860,
+      "headword_line_id": 3067,
+      "kept_existing": true
+    },
+    {
+      "page": 209,
+      "column": 0,
+      "char": "䵹",
+      "source_index": 861,
+      "headword_line_id": 3070,
+      "kept_existing": true
+    },
+    {
+      "page": 209,
+      "column": 1,
+      "char": "䵶",
+      "source_index": 862,
+      "headword_line_id": 3074,
+      "kept_existing": true
+    },
+    {
+      "page": 209,
+      "column": 2,
+      "char": "鼄",
+      "source_index": 863,
+      "headword_line_id": 3077,
+      "kept_existing": true
+    },
+    {
+      "page": 209,
+      "column": 3,
+      "char": "𪓷",
+      "source_index": 864,
+      "headword_line_id": 3080,
+      "kept_existing": true
+    },
+    {
+      "page": 210,
+      "column": 0,
+      "char": "鼃",
+      "source_index": 865,
+      "headword_line_id": 3083,
+      "kept_existing": true
+    },
+    {
+      "page": 210,
+      "column": 1,
+      "char": "黿",
+      "source_index": 866,
+      "headword_line_id": 3086,
+      "kept_existing": true
+    },
+    {
+      "page": 210,
+      "column": 2,
+      "char": "鼂",
+      "source_index": 867,
+      "headword_line_id": 3090,
+      "kept_existing": true
+    },
+    {
+      "page": 210,
+      "column": 3,
+      "char": "鼇",
+      "source_index": 868,
+      "headword_line_id": 3093,
+      "kept_existing": true
+    },
+    {
+      "page": 210,
+      "column": 4,
+      "char": "鼉",
+      "source_index": 869,
+      "headword_line_id": 3096,
+      "kept_existing": true
+    },
+    {
+      "page": 211,
+      "column": 0,
+      "char": "蠅",
+      "source_index": 870,
+      "headword_line_id": 3099,
+      "kept_existing": true
+    },
+    {
+      "page": 211,
+      "column": 1,
+      "char": "鼀",
+      "source_index": 871,
+      "headword_line_id": 3103,
+      "kept_existing": true
+    },
+    {
+      "page": 211,
+      "column": 2,
+      "char": "鼈",
+      "source_index": 872,
+      "headword_line_id": 3106,
+      "kept_existing": true
+    },
+    {
+      "page": 211,
+      "column": 3,
+      "char": "丼",
+      "source_index": 873,
+      "headword_line_id": 3109,
+      "kept_existing": true
+    },
+    {
+      "page": 211,
+      "column": 4,
+      "char": "𠛜",
+      "source_index": 874,
+      "headword_line_id": 3112,
+      "kept_existing": true
+    },
+    {
+      "page": 212,
+      "column": 0,
+      "char": "𤍧",
+      "source_index": 875,
+      "headword_line_id": 3115,
+      "kept_existing": true
+    },
+    {
+      "page": 212,
+      "column": 1,
+      "char": "刱",
+      "source_index": 876,
+      "headword_line_id": 3119,
+      "kept_existing": true
+    },
+    {
+      "page": 212,
+      "column": 2,
+      "char": "刱",
+      "source_index": 877,
+      "headword_line_id": 3121,
+      "kept_existing": true
+    },
+    {
+      "page": 212,
+      "column": 3,
+      "char": "竝",
+      "source_index": 878,
+      "headword_line_id": 3129,
+      "kept_existing": true
+    },
+    {
+      "page": 212,
+      "column": 4,
+      "char": "𤾕",
+      "source_index": 879,
+      "headword_line_id": 3132,
+      "kept_existing": true
+    },
+    {
+      "page": 213,
+      "column": 0,
+      "char": "鼎",
+      "source_index": 880,
+      "headword_line_id": 3136,
+      "kept_existing": true
+    },
+    {
+      "page": 213,
+      "column": 1,
+      "char": "鼒",
+      "source_index": 881,
+      "headword_line_id": 3141,
+      "kept_existing": true
+    },
+    {
+      "page": 213,
+      "column": 2,
+      "char": "鼐",
+      "source_index": 882,
+      "headword_line_id": 3144,
+      "kept_existing": true
+    },
+    {
+      "page": 214,
+      "column": 0,
+      "char": "鼏",
+      "source_index": 883,
+      "headword_line_id": 3147,
+      "kept_existing": true
+    },
+    {
+      "page": 214,
+      "column": 1,
+      "char": "𡈼",
+      "source_index": 884,
+      "headword_line_id": 3151,
+      "kept_existing": true
+    },
+    {
+      "page": 214,
+      "column": 2,
+      "char": "徵",
+      "source_index": 885,
+      "headword_line_id": 3155,
+      "kept_existing": true
+    },
+    {
+      "page": 214,
+      "column": 3,
+      "char": "㸒",
+      "source_index": 886,
+      "headword_line_id": 3158,
+      "kept_existing": true
+    }
+  ]
+}

@@ -109,9 +109,27 @@ def active_runs(gray: np.ndarray, x1: int, x2: int) -> list[tuple[int, int]]:
     # 跳过竖线附近，以免框线本身把整列连起来。
     crop = gray[top:bottom, x1 + 16:x2 - 16]
     active = (crop < 130).sum(axis=1) >= 3
+    # 纸张污点或透印偶尔只形成 2～4px 高的小段。若先闭合白缝，这些噪点
+    # 会像桥墩一样把相邻两个篆字连成一个超长段（0059 col=7）。先删除
+    # 小于 8px 的孤立段；真正的字头横画在扫描图中通常至少持续十余行。
+    raw_start: int | None = None
+    for index, value in enumerate(active):
+        if value and raw_start is None:
+            raw_start = index
+        if raw_start is not None and (not value or index == len(active) - 1):
+            raw_end = index if not value else index + 1
+            if raw_end - raw_start < 8:
+                active[raw_start:raw_end] = False
+            raw_start = None
     # 修补字形内部的短小白缝，保留字与字之间约 50px 以上的大留白。
-    for _ in range(12):
-        active[1:-1] |= active[:-2] & active[2:]
+    # 旧实现反复执行 ``左右相邻皆有墨``，实际上始终只能补 1px 的洞，
+    # 无法连接篆字字头与主体之间常见的 10～25px 留白，结果会丢掉字头并
+    # 令固定高框整体下移。这里显式填充被墨迹夹住、长度不超过 32px 的缝。
+    true_rows = np.flatnonzero(active)
+    for before, after in zip(true_rows, true_rows[1:]):
+        gap = int(after - before - 1)
+        if 0 < gap <= 32:
+            active[before + 1:after] = True
     runs: list[tuple[int, int]] = []
     start: int | None = None
     for index, value in enumerate(active):
@@ -176,6 +194,7 @@ def propose(
     gray: np.ndarray,
     seeds: list[tuple[float, list[float]]] | None = None,
     forced_columns: set[int] | None = None,
+    trust_seed_columns: bool = False,
 ) -> list[dict]:
     """按偶数网格列取得篆书槽位；每个留白分隔的大字生成一个框。"""
     lines = grid_lines(gray)
@@ -198,7 +217,12 @@ def propose(
                 y2 - y1 for y1, y2 in run_map[column]
                 if 84 <= y2 - y1 <= 220
             ]
-            if normal_heights and not is_double_text_column(gray, lines[column], lines[column + 1]):
+            # 纯位置校准时，已有合法框本身就是人工确认过的篆书列证据，
+            # 不能再让容易误判的“双栏释文”密度规则把整列否决掉。
+            if normal_heights and (
+                trust_seed_columns
+                or not is_double_text_column(gray, lines[column], lines[column + 1])
+            ):
                 verified_seeds.append(seed)
         seeds = verified_seeds
 
@@ -233,10 +257,20 @@ def propose(
         x2 = min(width, x1 + box_width)
         y1 = max(0, int(round(center - 64)))
         y2 = min(height, y1 + 128)
+        if y2 - y1 < 128:
+            y1 = max(0, y2 - 128)
         crop = gray[y1:y2, x1:x2]
         # 用较宽松的阈值只做“有无字”判断；框的位置仍来自固定格，
         # 不依赖被虫蛀打断的连续笔画。
         return crop.size > 0 and float(np.mean(crop < 170)) >= 0.08
+
+    def snap_to_run(column: int, center: float) -> float:
+        """把规则行中心吸附到附近完整字形段，避免历史坏框固化偏移。"""
+        candidates = [
+            (y1 + y2) / 2 for y1, y2 in run_map[column]
+            if abs((y1 + y2) / 2 - center) < 85
+        ]
+        return min(candidates, key=lambda value: abs(value - center)) if candidates else center
 
     boxes: list[dict] = []
     def seed_for(center: float) -> tuple[float, list[float]] | None:
@@ -275,7 +309,12 @@ def propose(
             if forced_columns is not None and column not in forced_columns:
                 continue
             center = (left + right) / 2
-            if forced_columns is None and is_double_text_column(gray, left, right):
+            trusted_seed = trust_seed_columns and seed_for(center) is not None
+            if (
+                forced_columns is None
+                and not trusted_seed
+                and is_double_text_column(gray, left, right)
+            ):
                 continue
             # 无历史框时沿用 092 的交替版格；有历史框时以历史篆书列为准。
             if forced_columns is not None:
@@ -291,13 +330,20 @@ def propose(
             for row, row_center in enumerate(centers_for_column(seed_for(center))):
                 if not has_ink(row_center, left, right):
                     continue
+                row_center = snap_to_run(column, row_center)
                 y1 = max(0, int(round(row_center - 64)))
                 y2 = min(height, y1 + 128)
                 boxes.append({"column": column, "row": row, "bbox": [x1, y1, x2, y2]})
     for column, (left, right) in enumerate(zip(lines, lines[1:])):
         if forced_columns is not None and column not in forced_columns:
             continue
-        if forced_columns is None and is_double_text_column(gray, left, right):
+        center = (left + right) / 2
+        trusted_seed = trust_seed_columns and seed_for(center) is not None
+        if (
+            forced_columns is None
+            and not trusted_seed
+            and is_double_text_column(gray, left, right)
+        ):
             continue
         # 无种子时也必须能发现整列漏框。释文或页边有时会连成一个极长
         # 墨迹段，不能把它算作篆字；只接受正常单字高度，并要求同列至少
@@ -307,7 +353,6 @@ def propose(
         # 中位高度 84px 能滤掉 0188 的释文列，同时保留 0017 等较小篆字。
         if len(runs) < 2 or float(np.median([y2 - y1 for y1, y2 in runs])) < 84:
             continue
-        center = (left + right) / 2
         box_width = min(104, right - left - 20)
         x1 = max(0, int(round(center - box_width / 2)))
         x2 = min(width, int(round(center + box_width / 2)))
@@ -319,10 +364,13 @@ def propose(
                 for item in boxes
             ):
                 continue
-            # 包含完整笔势，但不吞进相邻字的留白。
-            pad = max(5, int(round((y2 - y1) * 0.08)))
-            y1, y2 = max(0, y1 - pad), min(height, y2 + pad)
-            boxes.append({"column": column, "row": row, "bbox": [x1, y1, x2, y2]})
+            # 框高统一为 128px。旧逻辑按墨迹段高度加 8% 留白，会令短笔画
+            # 字得到很扁的框、长笔画字得到很高的框，后续人工调整困难。
+            fixed_y1 = max(0, int(round(cy - 64)))
+            fixed_y2 = min(height, fixed_y1 + 128)
+            if fixed_y2 - fixed_y1 < 128:
+                fixed_y1 = max(0, fixed_y2 - 128)
+            boxes.append({"column": column, "row": row, "bbox": [x1, fixed_y1, x2, fixed_y2]})
 
     # 淡墨列可能一个 active_run 都形成不了。若它位于已经确认的篆书列向
     # 外两格处，沿全页可靠行距逐槽检查；双栏释文已在上面排除。
@@ -331,7 +379,14 @@ def propose(
         column for column in range(len(lines) - 1)
         if (forced_columns is None or column in forced_columns)
         and column not in detected_columns
-        and (forced_columns is not None or not is_double_text_column(gray, lines[column], lines[column + 1]))
+        and (
+            forced_columns is not None
+            or (
+                trust_seed_columns
+                and seed_for((lines[column] + lines[column + 1]) / 2) is not None
+            )
+            or not is_double_text_column(gray, lines[column], lines[column + 1])
+        )
         and (column - 2 in detected_columns or column + 2 in detected_columns)
     ]
     for column in extension_columns:
@@ -342,17 +397,23 @@ def propose(
         for row, row_center in enumerate(row_centers):
             if not has_ink(row_center, left, right):
                 continue
+            row_center = snap_to_run(column, row_center)
             y1 = max(0, int(round(row_center - 64)))
             y2 = min(height, y1 + 128)
+            if y2 - y1 < 128:
+                y1 = max(0, y2 - 128)
             boxes.append({"column": column, "row": row, "bbox": [x1, y1, x2, y2]})
     return boxes
 
 
 def make_entry(box: dict, work_dir: Path) -> dict:
     identifier = uuid.uuid4().hex
+    directory_name = work_dir.name
+    prefix = "程德洽-篆书-"
+    work_name = directory_name[len(prefix):] if directory_name.startswith(prefix) else directory_name
     return {
         "id": identifier, "uuid": identifier, "char": "", "font": "篆书",
-        "author": "程德洽", "work": "说文广义", "work_dir": str(work_dir),
+        "author": "程德洽", "work": work_name, "work_dir": str(work_dir),
         "bbox": box["bbox"], "column": box["column"], "row": box["row"], "visible": True,
     }
 
@@ -372,6 +433,7 @@ def process(
     *,
     apply: bool,
     replace: bool,
+    realign: bool,
     forced_columns: set[int] | None = None,
 ) -> tuple[int, int]:
     gray = cv2.imread(str(image_path), cv2.IMREAD_GRAYSCALE)
@@ -382,8 +444,17 @@ def process(
     debug.mkdir(parents=True, exist_ok=True)
     chars = debug / "chars.json"
     existing = json.loads(chars.read_text()) if chars.exists() else []
+    # 批量补框时，空 JSON 通常是卷首目录、卷末附页或明确清空的非正文页。
+    # 没有人工种子就不能自动猜测整页；只有显式 --columns 时才允许处理。
+    if not existing and forced_columns is None:
+        return 0, 0
     seeds = seed_columns(existing)
-    boxes = propose(gray, seeds if existing else None, forced_columns)
+    boxes = propose(
+        gray,
+        seeds if existing else None,
+        forced_columns,
+        trust_seed_columns=realign,
+    )
     (debug / "seal-proposals.json").write_text(json.dumps(boxes, ensure_ascii=False, indent=2) + "\n")
     preview(color, boxes, debug / "seal-proposals-preview.jpg")
     if apply:
@@ -397,6 +468,21 @@ def process(
             lines = grid_lines(gray)
             grid_centers = [(left + right) / 2 for left, right in zip(lines, lines[1:])]
             proposal_columns = {int(box["column"]) for box in boxes}
+            unused_proposals = set(range(len(boxes)))
+            # 同一页各篆书列的对应行通常共用一条水平基线。若某一列因淡墨、
+            # 噪点或双栏误判没有生成提案，可用其余至少两列共同确认的行框
+            # 作为位置模板；这比继续沿用该列已经偏移的旧中心可靠（0075）。
+            proposals_by_row: dict[int, list[dict]] = {}
+            for box in boxes:
+                proposals_by_row.setdefault(int(box["row"]), []).append(box)
+            row_templates: dict[int, list[int]] = {}
+            for row, row_boxes in proposals_by_row.items():
+                if len({int(box["column"]) for box in row_boxes}) < 2:
+                    continue
+                row_templates[row] = [
+                    int(round(float(np.median([box["bbox"][1] for box in row_boxes])))),
+                    int(round(float(np.median([box["bbox"][3] for box in row_boxes])))),
+                ]
             entries = []
             for original in existing:
                 item = dict(original)
@@ -411,14 +497,60 @@ def process(
                     width = bbox[2] - bbox[0]
                     height = bbox[3] - bbox[1]
                     malformed = not (35 <= width <= 140 and 55 <= height <= 280)
-                    if empty and malformed and column in proposal_columns:
+                    if not realign and empty and malformed and column in proposal_columns:
                         continue
-                    if "column" in item or "col" not in item:
-                        item["column"] = column
-                    if "col" in item:
-                        item["col"] = column
+                    if not realign:
+                        if "column" in item or "col" not in item:
+                            item["column"] = column
+                        if "col" in item:
+                            item["col"] = column
+                    if realign:
+                        original_center_y = (bbox[1] + bbox[3]) / 2
+                        candidates = [
+                            index for index in unused_proposals
+                            if int(boxes[index]["column"]) == column
+                            and abs(
+                                (boxes[index]["bbox"][1] + boxes[index]["bbox"][3]) / 2
+                                - original_center_y
+                            ) < 85
+                        ]
+                        if candidates:
+                            nearest = min(
+                                candidates,
+                                key=lambda index: abs(
+                                    (boxes[index]["bbox"][1] + boxes[index]["bbox"][3]) / 2
+                                    - original_center_y
+                                ),
+                            )
+                            target_bbox = list(boxes[nearest]["bbox"])
+                            # 页面排版规整时，同一行其他列的共同位置比单列
+                            # 墨迹边缘更稳定。至少两列支持且中心差小于 35px
+                            # 时，纵向采用其他列中位框；横向仍用本列检测结果。
+                            peer_boxes = [
+                                box for box in proposals_by_row.get(int(item.get("row", -1)), [])
+                                if int(box["column"]) != column
+                            ]
+                            if len({int(box["column"]) for box in peer_boxes}) >= 2:
+                                peer_y1 = int(round(float(np.median([box["bbox"][1] for box in peer_boxes]))))
+                                peer_y2 = int(round(float(np.median([box["bbox"][3] for box in peer_boxes]))))
+                                target_center = (target_bbox[1] + target_bbox[3]) / 2
+                                peer_center = (peer_y1 + peer_y2) / 2
+                                if abs(target_center - peer_center) < 35:
+                                    target_bbox[1], target_bbox[3] = peer_y1, peer_y2
+                            item["bbox"] = target_bbox
+                            unused_proposals.remove(nearest)
+                        else:
+                            template = row_templates.get(int(item.get("row", -1)))
+                            if template:
+                                template_center = (template[0] + template[1]) / 2
+                                if abs(template_center - original_center_y) < 70:
+                                    item["bbox"] = [bbox[0], template[0], bbox[2], template[1]]
                 entries.append(item)
-            for box in boxes:
+            for proposal_index, box in enumerate(boxes):
+                # ``--realign`` 是严格的纯位置模式：未匹配的检测框不能追加，
+                # 否则批量校准会悄悄改变用户已经确认过的框数量。
+                if realign:
+                    continue
                 x1, y1, x2, y2 = box["bbox"]
                 cx, cy = (x1 + x2) / 2, (y1 + y2) / 2
                 # 新的固定格与早期手工框上下边界可能相差约 60px；仍远小于
@@ -426,15 +558,16 @@ def process(
                 if any(abs((e["bbox"][0] + e["bbox"][2]) / 2 - cx) < 35 and abs((e["bbox"][1] + e["bbox"][3]) / 2 - cy) < 85 for e in entries):
                     continue
                 entries.append(make_entry(box, work_dir))
-        # 列号以页面左侧网格为 0；同列行号从上到下连续，杜绝追加后的重复。
-        columns = sorted({int(item.get("column", item.get("col", 0))) for item in entries})
-        for column in columns:
-            members = sorted(
-                (item for item in entries if int(item.get("column", item.get("col", 0))) == column),
-                key=lambda item: (item["bbox"][1] + item["bbox"][3]) / 2,
-            )
-            for row, item in enumerate(members):
-                item["row"] = row
+        if not realign:
+            # 列号以页面左侧网格为 0；同列行号从上到下连续，杜绝追加后的重复。
+            columns = sorted({int(item.get("column", item.get("col", 0))) for item in entries})
+            for column in columns:
+                members = sorted(
+                    (item for item in entries if int(item.get("column", item.get("col", 0))) == column),
+                    key=lambda item: (item["bbox"][1] + item["bbox"][3]) / 2,
+                )
+                for row, item in enumerate(members):
+                    item["row"] = row
         entries.sort(key=lambda item: (-int(item.get("column", item.get("col", 0))), item["row"]))
         chars.write_text(json.dumps(entries, ensure_ascii=False, indent=2) + "\n")
     return len(boxes), len(existing)
@@ -445,6 +578,11 @@ def main() -> None:
     parser.add_argument("work_dir", type=Path)
     parser.add_argument("--apply", action="store_true")
     parser.add_argument("--replace", action="store_true", help="以新检测结果重建框；默认仅补框")
+    parser.add_argument(
+        "--realign",
+        action="store_true",
+        help="保留已有框的字与标识，只把位置吸附到重新检测的完整墨迹中心",
+    )
     parser.add_argument("--start", type=int, default=0)
     parser.add_argument("--end", type=int, default=9999)
     parser.add_argument("--columns", help="只处理指定网格列，例如 0,2,5,7")
@@ -463,6 +601,7 @@ def main() -> None:
                 image,
                 apply=args.apply,
                 replace=args.replace,
+                realign=args.realign,
                 forced_columns=forced_columns,
             )
             print(f"{image.stem}: 检出 {found}，原有 {existing}")

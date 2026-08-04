@@ -1,0 +1,103 @@
+{
+  "source": "程德洽-篆书-说文广义卷之七/shidian-glosses.json",
+  "start_source": 874,
+  "next_source": 886,
+  "assignments": [
+    {
+      "page": 212,
+      "column": 0,
+      "char": "𤍧",
+      "source_index": 874,
+      "headword_line_id": 3115,
+      "kept_existing": true
+    },
+    {
+      "page": 212,
+      "column": 1,
+      "char": "刱",
+      "source_index": 875,
+      "headword_line_id": 3119,
+      "kept_existing": true
+    },
+    {
+      "page": 212,
+      "column": 2,
+      "char": "刱",
+      "source_index": 876,
+      "headword_line_id": 3121,
+      "kept_existing": true
+    },
+    {
+      "page": 212,
+      "column": 3,
+      "char": "竝",
+      "source_index": 877,
+      "headword_line_id": 3129,
+      "kept_existing": true
+    },
+    {
+      "page": 212,
+      "column": 4,
+      "char": "𤾕",
+      "source_index": 878,
+      "headword_line_id": 3132,
+      "kept_existing": true
+    },
+    {
+      "page": 213,
+      "column": 0,
+      "char": "鼎",
+      "source_index": 879,
+      "headword_line_id": 3136,
+      "kept_existing": true
+    },
+    {
+      "page": 213,
+      "column": 1,
+      "char": "鼒",
+      "source_index": 880,
+      "headword_line_id": 3141,
+      "kept_existing": true
+    },
+    {
+      "page": 213,
+      "column": 2,
+      "char": "鼐",
+      "source_index": 881,
+      "headword_line_id": 3144,
+      "kept_existing": true
+    },
+    {
+      "page": 214,
+      "column": 0,
+      "char": "鼏",
+      "source_index": 882,
+      "headword_line_id": 3147,
+      "kept_existing": true
+    },
+    {
+      "page": 214,
+      "column": 1,
+      "char": "𡈼",
+      "source_index": 883,
+      "headword_line_id": 3151,
+      "kept_existing": true
+    },
+    {
+      "page": 214,
+      "column": 2,
+      "char": "徵",
+      "source_index": 884,
+      "headword_line_id": 3155,
+      "kept_existing": true
+    },
+    {
+      "page": 214,
+      "column": 3,
+      "char": "㸒",
+      "source_index": 885,
+      "headword_line_id": 3158,
+      "kept_existing": true
+    }
+  ]
+}

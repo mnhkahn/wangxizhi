@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 from datetime import datetime
 from pathlib import Path
@@ -16,13 +17,80 @@ from pathlib import Path
 from propagate_seal_column_labels import column_groups
 
 
+HEADWORD_PREFIX = re.compile(r"^([^，。；：、]{1,2})[，。；：、]")
+COMMENTARY_PREFIX = re.compile(
+    r"^(?:(?:聲|声)[。．]|徐錯曰|徐锴曰|臣鉉等曰|臣鍇曰|按曰|案曰|(?:屬|属)皆(?:从|從)|酒[，,]並省)"
+)
+
+
+def normalize_headword(value: object) -> str:
+    """把史典把同一篆字重复识别成的字串还原成单字。"""
+    text = str(value or "").strip(" \t\r\n，。；：、")
+    if text and len(set(text)) == 1:
+        return text[0]
+    return text
+
+
 def usable_entries(path: Path) -> list[dict]:
-    """过滤史典 OCR 产生的续行和明显损坏的伪词条。"""
+    """过滤续行，并恢复一条字头下各释文行自己的字头。
+
+    多数卷是一条字头配一条释文；卷十一等页面会把数个字放在同一
+    ``lineType=1`` 字头下，后续字写在释文开头（如“觚，……”）。
+    旧逻辑会把这些列全写成第一个字，这里按释文前缀还原。
+    """
     data = json.loads(path.read_text())
-    return [
-        entry for entry in data["entries"]
-        if len(str(entry.get("headword", ""))) == 1 and "从" in str(entry.get("gloss", ""))
-    ]
+    result: list[dict] = []
+    seen_by_line: dict[object, int] = {}
+    last_label_by_line: dict[object, str] = {}
+
+    for entry in data["entries"]:
+        gloss = str(entry.get("gloss", ""))
+        headword = normalize_headword(entry.get("headword", ""))
+        has_component_note = "从" in gloss or "從" in gloss
+        # 「芇，相當也…母官切」和「丅，底也。指事胡雅切」都是完整
+        # 释文，但比通用长度门槛短，旧逻辑会误删并令后文整体错位。
+        # 只为这两条已经原页确认的字头放行，避免放宽全局规则。
+        is_complete_definition = (
+            (len(gloss) >= 15 or headword in {"芇", "丅"}) and "切" in gloss
+        )
+        if not has_component_note and not is_complete_definition:
+            continue
+        # 有些页只识别出了同一篆形的重复串，前后都没有单字字头。只要
+        # 重复串能无歧义地归一成一个字符，仍保留该词条；具体无法确认的
+        # 个别项可由 --skip-source 配合留空列跳过。
+        if len(headword) != 1:
+            continue
+
+        line_id = entry.get("headword_line_id")
+        occurrence = seen_by_line.get(line_id, 0)
+        prefix = HEADWORD_PREFIX.match(gloss)
+        # 同一字头的长释文会被识典按页拆成数行；没有新单字前缀的后续行
+        # 只是续文，不能再次消耗一个篆字列（如菑后的“甾則下有……”）。
+        if (
+            occurrence
+            and (
+                COMMENTARY_PREFIX.match(gloss)
+                or (
+                    not (prefix and len(prefix.group(1)) == 1)
+                    and not has_component_note
+                )
+            )
+        ):
+            continue
+        label = headword
+        if occurrence:
+            if prefix and len(prefix.group(1)) == 1:
+                label = prefix.group(1)
+            else:
+                label = last_label_by_line.get(line_id, headword)
+
+        cleaned = dict(entry)
+        cleaned["headword"] = label
+        result.append(cleaned)
+        seen_by_line[line_id] = occurrence + 1
+        last_label_by_line[line_id] = label
+
+    return result
 
 
 def main() -> None:
@@ -32,6 +100,26 @@ def main() -> None:
     parser.add_argument("--end-page", type=int, required=True)
     parser.add_argument("--start-source", type=int, required=True, help="清洗后来源的 1 起始条目")
     parser.add_argument("--source", type=Path, help="默认读取字帖目录下的 shidian-glosses.json")
+    parser.add_argument(
+        "--leave-leading-groups",
+        type=int,
+        default=0,
+        help="卷首无法确认的篆字列留空，且不消耗释文字头",
+    )
+    parser.add_argument(
+        "--leave-group",
+        type=int,
+        action="append",
+        default=[],
+        help="指定从起始页算起、0 起始的篆字列留空；可重复使用",
+    )
+    parser.add_argument(
+        "--skip-source",
+        type=int,
+        action="append",
+        default=[],
+        help="跳过清洗后来源中的指定条目（1 起始）；可重复使用",
+    )
     parser.add_argument("--overwrite", action="store_true", help="重写已有字；用于修正已知来源偏移")
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
@@ -41,6 +129,7 @@ def main() -> None:
     offset = args.start_source - 1
     assignments: list[dict] = []
     cursor = offset
+    physical_cursor = 0
     stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
 
     for page in range(args.start_page, args.end_page + 1):
@@ -52,6 +141,26 @@ def main() -> None:
         groups = column_groups(chars, 180) if chars else []
         changed = False
         for column, group in enumerate(groups):
+            leave_groups = set(range(args.leave_leading_groups)) | set(args.leave_group)
+            if physical_cursor in leave_groups:
+                existing = {str(item.get("char", "")).strip() for item in group} - {""}
+                if args.overwrite and existing:
+                    for item in group:
+                        item["char"] = ""
+                    changed = True
+                assignments.append({
+                    "page": page,
+                    "column": column,
+                    "char": "",
+                    "source_index": None,
+                    "headword_line_id": None,
+                    "kept_existing": bool(existing) and not args.overwrite,
+                    "intentionally_blank": True,
+                })
+                physical_cursor += 1
+                continue
+            while cursor + 1 in set(args.skip_source):
+                cursor += 1
             if cursor >= len(entries):
                 raise RuntimeError("来源释文不足，已停止写入")
             entry = entries[cursor]
@@ -70,6 +179,7 @@ def main() -> None:
                 "kept_existing": bool(existing),
             })
             cursor += 1
+            physical_cursor += 1
         if args.apply and changed:
             backups = debug / "backups"
             backups.mkdir(exist_ok=True)

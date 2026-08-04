@@ -1,0 +1,1095 @@
+{
+  "source": "程德洽-篆书-说文广义卷之三/shidian-glosses.json",
+  "start_source": 1,
+  "next_source": 137,
+  "assignments": [
+    {
+      "page": 10,
+      "column": 0,
+      "char": "先",
+      "source_index": 1,
+      "headword_line_id": 183,
+      "kept_existing": false
+    },
+    {
+      "page": 10,
+      "column": 1,
+      "char": "兟",
+      "source_index": 2,
+      "headword_line_id": 189,
+      "kept_existing": false
+    },
+    {
+      "page": 10,
+      "column": 2,
+      "char": "田",
+      "source_index": 3,
+      "headword_line_id": 192,
+      "kept_existing": false
+    },
+    {
+      "page": 10,
+      "column": 3,
+      "char": "畸",
+      "source_index": 4,
+      "headword_line_id": 199,
+      "kept_existing": false
+    },
+    {
+      "page": 11,
+      "column": 0,
+      "char": "畿",
+      "source_index": 5,
+      "headword_line_id": 203,
+      "kept_existing": false
+    },
+    {
+      "page": 11,
+      "column": 1,
+      "char": "畬",
+      "source_index": 6,
+      "headword_line_id": 209,
+      "kept_existing": false
+    },
+    {
+      "page": 11,
+      "column": 2,
+      "char": "畦",
+      "source_index": 7,
+      "headword_line_id": 213,
+      "kept_existing": false
+    },
+    {
+      "page": 11,
+      "column": 3,
+      "char": "𤲬",
+      "source_index": 8,
+      "headword_line_id": 219,
+      "kept_existing": false
+    },
+    {
+      "page": 11,
+      "column": 4,
+      "char": "㽨",
+      "source_index": 9,
+      "headword_line_id": 223,
+      "kept_existing": false
+    },
+    {
+      "page": 12,
+      "column": 0,
+      "char": "當",
+      "source_index": 10,
+      "headword_line_id": 228,
+      "kept_existing": false
+    },
+    {
+      "page": 12,
+      "column": 1,
+      "char": "㽘",
+      "source_index": 11,
+      "headword_line_id": 232,
+      "kept_existing": false
+    },
+    {
+      "page": 12,
+      "column": 2,
+      "char": "甿",
+      "source_index": 12,
+      "headword_line_id": 236,
+      "kept_existing": false
+    },
+    {
+      "page": 12,
+      "column": 3,
+      "char": "留",
+      "source_index": 13,
+      "headword_line_id": 247,
+      "kept_existing": false
+    },
+    {
+      "page": 12,
+      "column": 4,
+      "char": "疁",
+      "source_index": 14,
+      "headword_line_id": 252,
+      "kept_existing": false
+    },
+    {
+      "page": 13,
+      "column": 0,
+      "char": "㽥",
+      "source_index": 15,
+      "headword_line_id": 256,
+      "kept_existing": false
+    },
+    {
+      "page": 13,
+      "column": 1,
+      "char": "畤",
+      "source_index": 16,
+      "headword_line_id": 261,
+      "kept_existing": false
+    },
+    {
+      "page": 13,
+      "column": 2,
+      "char": "畛",
+      "source_index": 17,
+      "headword_line_id": 267,
+      "kept_existing": false
+    },
+    {
+      "page": 13,
+      "column": 3,
+      "char": "畹",
+      "source_index": 18,
+      "headword_line_id": 273,
+      "kept_existing": false
+    },
+    {
+      "page": 14,
+      "column": 0,
+      "char": "疃",
+      "source_index": 19,
+      "headword_line_id": 280,
+      "kept_existing": false
+    },
+    {
+      "page": 14,
+      "column": 1,
+      "char": "町",
+      "source_index": 20,
+      "headword_line_id": 285,
+      "kept_existing": false
+    },
+    {
+      "page": 14,
+      "column": 2,
+      "char": "畮",
+      "source_index": 21,
+      "headword_line_id": 291,
+      "kept_existing": false
+    },
+    {
+      "page": 14,
+      "column": 3,
+      "char": "界",
+      "source_index": 22,
+      "headword_line_id": 300,
+      "kept_existing": false
+    },
+    {
+      "page": 15,
+      "column": 0,
+      "char": "畯",
+      "source_index": 23,
+      "headword_line_id": 306,
+      "kept_existing": false
+    },
+    {
+      "page": 15,
+      "column": 1,
+      "char": "疄",
+      "source_index": 24,
+      "headword_line_id": 313,
+      "kept_existing": false
+    },
+    {
+      "page": 15,
+      "column": 2,
+      "char": "畔",
+      "source_index": 25,
+      "headword_line_id": 319,
+      "kept_existing": false
+    },
+    {
+      "page": 15,
+      "column": 3,
+      "char": "甸",
+      "source_index": 26,
+      "headword_line_id": 325,
+      "kept_existing": false
+    },
+    {
+      "page": 15,
+      "column": 4,
+      "char": "畼",
+      "source_index": 27,
+      "headword_line_id": 330,
+      "kept_existing": false
+    },
+    {
+      "page": 16,
+      "column": 0,
+      "char": "畷",
+      "source_index": 28,
+      "headword_line_id": 341,
+      "kept_existing": false
+    },
+    {
+      "page": 16,
+      "column": 1,
+      "char": "略",
+      "source_index": 29,
+      "headword_line_id": 346,
+      "kept_existing": false
+    },
+    {
+      "page": 16,
+      "column": 2,
+      "char": "幵",
+      "source_index": 30,
+      "headword_line_id": 352,
+      "kept_existing": false
+    },
+    {
+      "page": 16,
+      "column": 3,
+      "char": "弦",
+      "source_index": 31,
+      "headword_line_id": 361,
+      "kept_existing": false
+    },
+    {
+      "page": 17,
+      "column": 0,
+      "char": "玅",
+      "source_index": 32,
+      "headword_line_id": 366,
+      "kept_existing": false
+    },
+    {
+      "page": 17,
+      "column": 1,
+      "char": "盭",
+      "source_index": 33,
+      "headword_line_id": 373,
+      "kept_existing": false
+    },
+    {
+      "page": 17,
+      "column": 2,
+      "char": "盭",
+      "source_index": 34,
+      "headword_line_id": 373,
+      "kept_existing": false
+    },
+    {
+      "page": 17,
+      "column": 3,
+      "char": "𤣥",
+      "source_index": 35,
+      "headword_line_id": 382,
+      "kept_existing": false
+    },
+    {
+      "page": 18,
+      "column": 0,
+      "char": "玆",
+      "source_index": 36,
+      "headword_line_id": 388,
+      "kept_existing": false
+    },
+    {
+      "page": 18,
+      "column": 1,
+      "char": "玈",
+      "source_index": 37,
+      "headword_line_id": 393,
+      "kept_existing": false
+    },
+    {
+      "page": 18,
+      "column": 2,
+      "char": "㳄",
+      "source_index": 38,
+      "headword_line_id": 398,
+      "kept_existing": false
+    },
+    {
+      "page": 19,
+      "column": 0,
+      "char": "㳄",
+      "source_index": 39,
+      "headword_line_id": 398,
+      "kept_existing": false
+    },
+    {
+      "page": 19,
+      "column": 1,
+      "char": "𠩗",
+      "source_index": 40,
+      "headword_line_id": 406,
+      "kept_existing": false
+    },
+    {
+      "page": 19,
+      "column": 2,
+      "char": "羡",
+      "source_index": 41,
+      "headword_line_id": 410,
+      "kept_existing": false
+    },
+    {
+      "page": 19,
+      "column": 3,
+      "char": "羡",
+      "source_index": 42,
+      "headword_line_id": 410,
+      "kept_existing": false
+    },
+    {
+      "page": 19,
+      "column": 4,
+      "char": "盜",
+      "source_index": 43,
+      "headword_line_id": 417,
+      "kept_existing": false
+    },
+    {
+      "page": 20,
+      "column": 0,
+      "char": "羴",
+      "source_index": 44,
+      "headword_line_id": 425,
+      "kept_existing": false
+    },
+    {
+      "page": 20,
+      "column": 1,
+      "char": "羼",
+      "source_index": 45,
+      "headword_line_id": 429,
+      "kept_existing": false
+    },
+    {
+      "page": 20,
+      "column": 2,
+      "char": "㢟",
+      "source_index": 46,
+      "headword_line_id": 433,
+      "kept_existing": false
+    },
+    {
+      "page": 20,
+      "column": 3,
+      "char": "延",
+      "source_index": 47,
+      "headword_line_id": 437,
+      "kept_existing": false
+    },
+    {
+      "page": 21,
+      "column": 0,
+      "char": "辛",
+      "source_index": 48,
+      "headword_line_id": 442,
+      "kept_existing": false
+    },
+    {
+      "page": 21,
+      "column": 1,
+      "char": "童",
+      "source_index": 49,
+      "headword_line_id": 448,
+      "kept_existing": false
+    },
+    {
+      "page": 21,
+      "column": 2,
+      "char": "妾",
+      "source_index": 50,
+      "headword_line_id": 453,
+      "kept_existing": false
+    },
+    {
+      "page": 21,
+      "column": 3,
+      "char": "宀",
+      "source_index": 51,
+      "headword_line_id": 458,
+      "kept_existing": false
+    },
+    {
+      "page": 21,
+      "column": 4,
+      "char": "寷",
+      "source_index": 52,
+      "headword_line_id": 462,
+      "kept_existing": false
+    },
+    {
+      "page": 22,
+      "column": 0,
+      "char": "宗",
+      "source_index": 53,
+      "headword_line_id": 467,
+      "kept_existing": false
+    },
+    {
+      "page": 22,
+      "column": 1,
+      "char": "容",
+      "source_index": 54,
+      "headword_line_id": 473,
+      "kept_existing": false
+    },
+    {
+      "page": 22,
+      "column": 2,
+      "char": "宐",
+      "source_index": 55,
+      "headword_line_id": 481,
+      "kept_existing": false
+    },
+    {
+      "page": 22,
+      "column": 3,
+      "char": "宦",
+      "source_index": 56,
+      "headword_line_id": 488,
+      "kept_existing": false
+    },
+    {
+      "page": 23,
+      "column": 0,
+      "char": "宸",
+      "source_index": 57,
+      "headword_line_id": 492,
+      "kept_existing": false
+    },
+    {
+      "page": 23,
+      "column": 1,
+      "char": "宭",
+      "source_index": 58,
+      "headword_line_id": 500,
+      "kept_existing": false
+    },
+    {
+      "page": 23,
+      "column": 2,
+      "char": "寒",
+      "source_index": 59,
+      "headword_line_id": 507,
+      "kept_existing": false
+    },
+    {
+      "page": 23,
+      "column": 3,
+      "char": "完",
+      "source_index": 60,
+      "headword_line_id": 514,
+      "kept_existing": false
+    },
+    {
+      "page": 23,
+      "column": 4,
+      "char": "安",
+      "source_index": 61,
+      "headword_line_id": 520,
+      "kept_existing": false
+    },
+    {
+      "page": 24,
+      "column": 0,
+      "char": "𡨡",
+      "source_index": 62,
+      "headword_line_id": 528,
+      "kept_existing": false
+    },
+    {
+      "page": 24,
+      "column": 1,
+      "char": "寛",
+      "source_index": 63,
+      "headword_line_id": 538,
+      "kept_existing": false
+    },
+    {
+      "page": 24,
+      "column": 2,
+      "char": "寰",
+      "source_index": 64,
+      "headword_line_id": 546,
+      "kept_existing": false
+    },
+    {
+      "page": 25,
+      "column": 0,
+      "char": "𡫛",
+      "source_index": 65,
+      "headword_line_id": 552,
+      "kept_existing": false
+    },
+    {
+      "page": 25,
+      "column": 1,
+      "char": "宣",
+      "source_index": 66,
+      "headword_line_id": 562,
+      "kept_existing": false
+    },
+    {
+      "page": 25,
+      "column": 2,
+      "char": "宵",
+      "source_index": 67,
+      "headword_line_id": 570,
+      "kept_existing": false
+    },
+    {
+      "page": 25,
+      "column": 3,
+      "char": "家",
+      "source_index": 68,
+      "headword_line_id": 576,
+      "kept_existing": false
+    },
+    {
+      "page": 25,
+      "column": 4,
+      "char": "㝗",
+      "source_index": 69,
+      "headword_line_id": 584,
+      "kept_existing": false
+    },
+    {
+      "page": 26,
+      "column": 0,
+      "char": "㝩",
+      "source_index": 70,
+      "headword_line_id": 589,
+      "kept_existing": false
+    },
+    {
+      "page": 26,
+      "column": 1,
+      "char": "宏",
+      "source_index": 71,
+      "headword_line_id": 594,
+      "kept_existing": false
+    },
+    {
+      "page": 26,
+      "column": 2,
+      "char": "弘",
+      "source_index": 72,
+      "headword_line_id": 600,
+      "kept_existing": false
+    },
+    {
+      "page": 26,
+      "column": 3,
+      "char": "宬",
+      "source_index": 73,
+      "headword_line_id": 605,
+      "kept_existing": false
+    },
+    {
+      "page": 27,
+      "column": 0,
+      "char": "寜",
+      "source_index": 74,
+      "headword_line_id": 612,
+      "kept_existing": false
+    },
+    {
+      "page": 27,
+      "column": 1,
+      "char": "宂",
+      "source_index": 75,
+      "headword_line_id": 618,
+      "kept_existing": false
+    },
+    {
+      "page": 27,
+      "column": 2,
+      "char": "寵",
+      "source_index": 76,
+      "headword_line_id": 625,
+      "kept_existing": false
+    },
+    {
+      "page": 27,
+      "column": 3,
+      "char": "爲",
+      "source_index": 77,
+      "headword_line_id": 631,
+      "kept_existing": false
+    },
+    {
+      "page": 27,
+      "column": 4,
+      "char": "宄",
+      "source_index": 78,
+      "headword_line_id": 639,
+      "kept_existing": false
+    },
+    {
+      "page": 28,
+      "column": 0,
+      "char": "寠",
+      "source_index": 79,
+      "headword_line_id": 646,
+      "kept_existing": false
+    },
+    {
+      "page": 28,
+      "column": 1,
+      "char": "宇",
+      "source_index": 80,
+      "headword_line_id": 651,
+      "kept_existing": false
+    },
+    {
+      "page": 28,
+      "column": 2,
+      "char": "宔",
+      "source_index": 81,
+      "headword_line_id": 656,
+      "kept_existing": false
+    },
+    {
+      "page": 28,
+      "column": 3,
+      "char": "寀",
+      "source_index": 82,
+      "headword_line_id": 660,
+      "kept_existing": false
+    },
+    {
+      "page": 29,
+      "column": 0,
+      "char": "宰",
+      "source_index": 83,
+      "headword_line_id": 666,
+      "kept_existing": false
+    },
+    {
+      "page": 29,
+      "column": 1,
+      "char": "宛",
+      "source_index": 84,
+      "headword_line_id": 672,
+      "kept_existing": false
+    },
+    {
+      "page": 29,
+      "column": 2,
+      "char": "宛",
+      "source_index": 85,
+      "headword_line_id": 672,
+      "kept_existing": false
+    },
+    {
+      "page": 29,
+      "column": 3,
+      "char": "寶",
+      "source_index": 86,
+      "headword_line_id": 686,
+      "kept_existing": false
+    },
+    {
+      "page": 29,
+      "column": 4,
+      "char": "宲",
+      "source_index": 87,
+      "headword_line_id": 693,
+      "kept_existing": false
+    },
+    {
+      "page": 30,
+      "column": 0,
+      "char": "寫",
+      "source_index": 88,
+      "headword_line_id": 699,
+      "kept_existing": false
+    },
+    {
+      "page": 30,
+      "column": 1,
+      "char": "寡",
+      "source_index": 89,
+      "headword_line_id": 706,
+      "kept_existing": false
+    },
+    {
+      "page": 30,
+      "column": 2,
+      "char": "守",
+      "source_index": 90,
+      "headword_line_id": 711,
+      "kept_existing": false
+    },
+    {
+      "page": 30,
+      "column": 3,
+      "char": "寢",
+      "source_index": 91,
+      "headword_line_id": 720,
+      "kept_existing": false
+    },
+    {
+      "page": 31,
+      "column": 0,
+      "char": "寢",
+      "source_index": 92,
+      "headword_line_id": 720,
+      "kept_existing": false
+    },
+    {
+      "page": 31,
+      "column": 1,
+      "char": "宋",
+      "source_index": 93,
+      "headword_line_id": 734,
+      "kept_existing": false
+    },
+    {
+      "page": 31,
+      "column": 2,
+      "char": "寄",
+      "source_index": 94,
+      "headword_line_id": 740,
+      "kept_existing": false
+    },
+    {
+      "page": 31,
+      "column": 3,
+      "char": "寘",
+      "source_index": 95,
+      "headword_line_id": 748,
+      "kept_existing": false
+    },
+    {
+      "page": 31,
+      "column": 4,
+      "char": "寓",
+      "source_index": 96,
+      "headword_line_id": 753,
+      "kept_existing": false
+    },
+    {
+      "page": 32,
+      "column": 0,
+      "char": "𡨂",
+      "source_index": 97,
+      "headword_line_id": 759,
+      "kept_existing": false
+    },
+    {
+      "page": 32,
+      "column": 1,
+      "char": "窫",
+      "source_index": 98,
+      "headword_line_id": 766,
+      "kept_existing": false
+    },
+    {
+      "page": 32,
+      "column": 2,
+      "char": "㝮",
+      "source_index": 99,
+      "headword_line_id": 771,
+      "kept_existing": false
+    },
+    {
+      "page": 32,
+      "column": 3,
+      "char": "害",
+      "source_index": 100,
+      "headword_line_id": 776,
+      "kept_existing": false
+    },
+    {
+      "page": 33,
+      "column": 0,
+      "char": "寴",
+      "source_index": 101,
+      "headword_line_id": 782,
+      "kept_existing": false
+    },
+    {
+      "page": 33,
+      "column": 1,
+      "char": "宦",
+      "source_index": 102,
+      "headword_line_id": 787,
+      "kept_existing": false
+    },
+    {
+      "page": 33,
+      "column": 2,
+      "char": "宴",
+      "source_index": 103,
+      "headword_line_id": 793,
+      "kept_existing": false
+    },
+    {
+      "page": 33,
+      "column": 3,
+      "char": "𡧍",
+      "source_index": 104,
+      "headword_line_id": 798,
+      "kept_existing": false
+    },
+    {
+      "page": 33,
+      "column": 4,
+      "char": "奥",
+      "source_index": 105,
+      "headword_line_id": 806,
+      "kept_existing": false
+    },
+    {
+      "page": 34,
+      "column": 0,
+      "char": "奥",
+      "source_index": 106,
+      "headword_line_id": 806,
+      "kept_existing": false
+    },
+    {
+      "page": 34,
+      "column": 1,
+      "char": "宕",
+      "source_index": 107,
+      "headword_line_id": 820,
+      "kept_existing": false
+    },
+    {
+      "page": 34,
+      "column": 2,
+      "char": "定",
+      "source_index": 108,
+      "headword_line_id": 825,
+      "kept_existing": false
+    },
+    {
+      "page": 34,
+      "column": 3,
+      "char": "宥",
+      "source_index": 109,
+      "headword_line_id": 831,
+      "kept_existing": false
+    },
+    {
+      "page": 35,
+      "column": 0,
+      "char": "㝌",
+      "source_index": 110,
+      "headword_line_id": 837,
+      "kept_existing": false
+    },
+    {
+      "page": 35,
+      "column": 1,
+      "char": "富",
+      "source_index": 111,
+      "headword_line_id": 842,
+      "kept_existing": false
+    },
+    {
+      "page": 35,
+      "column": 2,
+      "char": "宙",
+      "source_index": 112,
+      "headword_line_id": 849,
+      "kept_existing": false
+    },
+    {
+      "page": 35,
+      "column": 3,
+      "char": "㝪",
+      "source_index": 113,
+      "headword_line_id": 856,
+      "kept_existing": false
+    },
+    {
+      "page": 35,
+      "column": 4,
+      "char": "宿",
+      "source_index": 114,
+      "headword_line_id": 861,
+      "kept_existing": false
+    },
+    {
+      "page": 36,
+      "column": 0,
+      "char": "宿",
+      "source_index": 115,
+      "headword_line_id": 861,
+      "kept_existing": false
+    },
+    {
+      "page": 36,
+      "column": 1,
+      "char": "室",
+      "source_index": 116,
+      "headword_line_id": 873,
+      "kept_existing": false
+    },
+    {
+      "page": 36,
+      "column": 2,
+      "char": "實",
+      "source_index": 117,
+      "headword_line_id": 879,
+      "kept_existing": false
+    },
+    {
+      "page": 36,
+      "column": 3,
+      "char": "宓",
+      "source_index": 118,
+      "headword_line_id": 885,
+      "kept_existing": false
+    },
+    {
+      "page": 37,
+      "column": 0,
+      "char": "察",
+      "source_index": 119,
+      "headword_line_id": 890,
+      "kept_existing": false
+    },
+    {
+      "page": 37,
+      "column": 1,
+      "char": "宅",
+      "source_index": 120,
+      "headword_line_id": 895,
+      "kept_existing": false
+    },
+    {
+      "page": 37,
+      "column": 2,
+      "char": "客",
+      "source_index": 121,
+      "headword_line_id": 902,
+      "kept_existing": false
+    },
+    {
+      "page": 37,
+      "column": 3,
+      "char": "累",
+      "source_index": 122,
+      "headword_line_id": 909,
+      "kept_existing": false
+    },
+    {
+      "page": 37,
+      "column": 4,
+      "char": "宗",
+      "source_index": 123,
+      "headword_line_id": 914,
+      "kept_existing": false
+    },
+    {
+      "page": 38,
+      "column": 0,
+      "char": "寔",
+      "source_index": 124,
+      "headword_line_id": 922,
+      "kept_existing": false
+    },
+    {
+      "page": 38,
+      "column": 1,
+      "char": "泉",
+      "source_index": 125,
+      "headword_line_id": 930,
+      "kept_existing": false
+    },
+    {
+      "page": 38,
+      "column": 2,
+      "char": "𬉯",
+      "source_index": 126,
+      "headword_line_id": 935,
+      "kept_existing": false
+    },
+    {
+      "page": 38,
+      "column": 3,
+      "char": "川",
+      "source_index": 127,
+      "headword_line_id": 940,
+      "kept_existing": false
+    },
+    {
+      "page": 39,
+      "column": 0,
+      "char": "邕",
+      "source_index": 128,
+      "headword_line_id": 944,
+      "kept_existing": false
+    },
+    {
+      "page": 39,
+      "column": 1,
+      "char": "巛",
+      "source_index": 129,
+      "headword_line_id": 951,
+      "kept_existing": false
+    },
+    {
+      "page": 39,
+      "column": 2,
+      "char": "巟",
+      "source_index": 130,
+      "headword_line_id": 956,
+      "kept_existing": false
+    },
+    {
+      "page": 39,
+      "column": 3,
+      "char": "巠",
+      "source_index": 131,
+      "headword_line_id": 962,
+      "kept_existing": false
+    },
+    {
+      "page": 40,
+      "column": 0,
+      "char": "州",
+      "source_index": 132,
+      "headword_line_id": 968,
+      "kept_existing": false
+    },
+    {
+      "page": 40,
+      "column": 1,
+      "char": "侃",
+      "source_index": 133,
+      "headword_line_id": 978,
+      "kept_existing": false
+    },
+    {
+      "page": 40,
+      "column": 2,
+      "char": "𣅕",
+      "source_index": 134,
+      "headword_line_id": 985,
+      "kept_existing": false
+    },
+    {
+      "page": 40,
+      "column": 3,
+      "char": "𡿪",
+      "source_index": 135,
+      "headword_line_id": 989,
+      "kept_existing": false
+    },
+    {
+      "page": 40,
+      "column": 4,
+      "char": "𡿿",
+      "source_index": 136,
+      "headword_line_id": 994,
+      "kept_existing": false
+    }
+  ]
+}
