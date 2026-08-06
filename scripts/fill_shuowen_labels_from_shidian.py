@@ -46,6 +46,12 @@ def usable_entries(path: Path) -> list[dict]:
     for entry in data["entries"]:
         gloss = str(entry.get("gloss", ""))
         headword = normalize_headword(entry.get("headword", ""))
+        is_manual_entry = entry.get("headword_resolution") == "manual_from_page"
+        is_continuation = entry.get("headword_resolution") == "continuation"
+        # 人工标记的续文绝不能消耗字头序列；它即使是该行的第一条 OCR
+        # 记录，也仍然只是上一个字的释文延续。
+        if is_continuation:
+            continue
         has_component_note = "从" in gloss or "從" in gloss
         # 「芇，相當也…母官切」和「丅，底也。指事胡雅切」都是完整
         # 释文，但比通用长度门槛短，旧逻辑会误删并令后文整体错位。
@@ -53,7 +59,7 @@ def usable_entries(path: Path) -> list[dict]:
         is_complete_definition = (
             (len(gloss) >= 15 or headword in {"芇", "丅"}) and "切" in gloss
         )
-        if not has_component_note and not is_complete_definition:
+        if not is_manual_entry and not has_component_note and not is_complete_definition:
             continue
         # 有些页只识别出了同一篆形的重复串，前后都没有单字字头。只要
         # 重复串能无歧义地归一成一个字符，仍保留该词条；具体无法确认的
@@ -64,22 +70,41 @@ def usable_entries(path: Path) -> list[dict]:
         line_id = entry.get("headword_line_id")
         occurrence = seen_by_line.get(line_id, 0)
         prefix = HEADWORD_PREFIX.match(gloss)
+        # 释文续句常以“也。”收束；它不是新字头，不能消耗一个篆书列。
+        has_new_headword_prefix = bool(
+            prefix and len(prefix.group(1)) == 1 and prefix.group(1) != "也"
+        )
         # 同一字头的长释文会被识典按页拆成数行；没有新单字前缀的后续行
         # 只是续文，不能再次消耗一个篆字列（如菑后的“甾則下有……”）。
         if (
             occurrence
             and (
+                is_continuation
+                or
+                # 同一个 OCR 字头行被拆成数条释文时，后一条即使仍含
+                # “从”也只是续文。只有释文明确以另一个单字开头时，
+                # 才把它视为共用字头行中的新词条。
+                (
+                    headword == last_label_by_line.get(line_id)
+                    and not has_new_headword_prefix
+                )
+                or
                 COMMENTARY_PREFIX.match(gloss)
                 or (
-                    not (prefix and len(prefix.group(1)) == 1)
+                    not has_new_headword_prefix
                     and not has_component_note
+                    and not is_complete_definition
                 )
             )
         ):
             continue
         label = headword
         if occurrence:
-            if prefix and len(prefix.group(1)) == 1:
+            # OCR 偶尔把同一字头行中的下一个字认成前一个字；经原页
+            # 人工校正后的 headword 应优先于上一条标签。
+            if headword != last_label_by_line.get(line_id):
+                label = headword
+            elif has_new_headword_prefix:
                 label = prefix.group(1)
             else:
                 label = last_label_by_line.get(line_id, headword)

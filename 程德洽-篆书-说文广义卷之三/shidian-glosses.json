@@ -99,6 +99,14 @@
       "gloss_line_id": 237
     },
     {
+      "headword": "疇",
+      "ocr_headword": "疇",
+      "headword_resolution": "manual_from_page",
+      "gloss": "耕治之田也。从田，象耕屈之形。直由切。",
+      "headword_line_id": 241,
+      "gloss_line_id": 242
+    },
+    {
       "headword": "留",
       "ocr_headword": "留",
       "headword_resolution": "single_before",
@@ -299,9 +307,9 @@
       "gloss_line_id": 374
     },
     {
-      "headword": "盭",
+      "headword": "㡫",
       "ocr_headword": "盭",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "不成遂，急戾也。从弦省，曷聲。讀若瘞。葬。於𦋺切。",
       "headword_line_id": 373,
       "gloss_line_id": 378
@@ -827,9 +835,9 @@
       "gloss_line_id": 723
     },
     {
-      "headword": "寢",
+      "headword": "寁",
       "ocr_headword": "寢",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "居之速也。从宀",
       "headword_line_id": 720,
       "gloss_line_id": 728
@@ -1051,12 +1059,20 @@
       "gloss_line_id": 868
     },
     {
-      "headword": "室",
+      "headword": "𡫬",
       "ocr_headword": "室",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "實也。从宀从至，至所止也。式質切。",
       "headword_line_id": 873,
       "gloss_line_id": 874
+    },
+    {
+      "headword": "室",
+      "ocr_headword": "",
+      "headword_resolution": "manual_from_page",
+      "gloss": "第035頁列0後續字頭人工校正。",
+      "headword_line_id": "manual-page-0035-col0",
+      "gloss_line_id": null
     },
     {
       "headword": "實",
@@ -1219,9 +1235,9 @@
       "gloss_line_id": 995
     },
     {
-      "headword": "𡿿",
+      "headword": "叀",
       "ocr_headword": "𡿿",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "十三部。專小謹也。从幺省。屮財見叀也。屮亦聲。凡叀之屬皆从叀。職緣切。",
       "headword_line_id": 994,
       "gloss_line_id": 999
@@ -1491,9 +1507,9 @@
       "gloss_line_id": 1168
     },
     {
-      "headword": "𠣘",
+      "headword": "𠣥",
       "ocr_headword": "𠣘",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "高憤也。从勹豖聲。知隴切。",
       "headword_line_id": 1167,
       "gloss_line_id": 1175
@@ -1739,6 +1755,14 @@
       "gloss_line_id": 1330
     },
     {
+      "headword": "𣯍",
+      "ocr_headword": "",
+      "headword_resolution": "manual_from_page",
+      "gloss": "第053頁列7人工校正。",
+      "headword_line_id": "manual-page-0053-col7",
+      "gloss_line_id": null
+    },
+    {
       "headword": "毨",
       "ocr_headword": "毨",
       "headword_resolution": "single_before",
@@ -1921,6 +1945,14 @@
       "gloss": "鎌也。从刀句聲。古侯切。",
       "headword_line_id": 1462,
       "gloss_line_id": 1470
+    },
+    {
+      "headword": "𠛎",
+      "ocr_headword": "",
+      "headword_resolution": "manual_from_page",
+      "gloss": "第057頁列1人工校正。",
+      "headword_line_id": "manual-page-0057-col1",
+      "gloss_line_id": null
     },
     {
       "headword": "𠠤",
@@ -2491,9 +2523,9 @@
       "gloss_line_id": 1878
     },
     {
-      "headword": "戣",
+      "headword": "𢦏",
       "ocr_headword": "戣",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "傷也。从戈才聲。祖才切。",
       "headword_line_id": 1877,
       "gloss_line_id": 1883
@@ -2523,9 +2555,9 @@
       "gloss_line_id": 1900
     },
     {
-      "headword": "戡",
+      "headword": "𢦟",
       "ocr_headword": "戡",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "殺也。从戈今聲。商書日：西伯旣",
       "headword_line_id": 1899,
       "gloss_line_id": 1906
@@ -2539,17 +2571,17 @@
       "gloss_line_id": 1908
     },
     {
-      "headword": "戡",
+      "headword": "㦰",
       "ocr_headword": "戡",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "絶也。一日田器。从从持戈。古文，讀若咸。讀若詩云：懺㩥女手。臣鉉等日：",
       "headword_line_id": 1899,
       "gloss_line_id": 1914
     },
     {
-      "headword": "戡",
+      "headword": "㦰",
       "ocr_headword": "戡",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "銳意也，故从从。子廉切。",
       "headword_line_id": 1899,
       "gloss_line_id": 1916
@@ -2611,9 +2643,9 @@
       "gloss_line_id": 1955
     },
     {
-      "headword": "戍",
+      "headword": "𢧀",
       "ocr_headword": "戍",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "盾也。从戈旱聲。矦",
       "headword_line_id": 1954,
       "gloss_line_id": 1962
@@ -2667,9 +2699,9 @@
       "gloss_line_id": 1998
     },
     {
-      "headword": "𢧄",
+      "headword": "𢧢",
       "ocr_headword": "𢧄",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "有枝丘也。从戈。",
       "headword_line_id": 1997,
       "gloss_line_id": 2004
@@ -2683,9 +2715,9 @@
       "gloss_line_id": 2006
     },
     {
-      "headword": "𢧄",
+      "headword": "戠",
       "ocr_headword": "𢧄",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "長丈六尺，讀若棘。臣鉉等日：倝非聲。弄當从榦省。榦，枝也。紀逆切。",
       "headword_line_id": 1997,
       "gloss_line_id": 2008
@@ -3013,7 +3045,7 @@
     {
       "headword": "稱",
       "ocr_headword": "稱",
-      "headword_resolution": "single_before",
+      "headword_resolution": "continuation",
       "gloss": "寸，其以爲重，十二粟爲一分，十二分爲一銖，故諸程品皆从禾，處陵切。",
       "headword_line_id": 2247,
       "gloss_line_id": 2249
@@ -3043,9 +3075,9 @@
       "gloss_line_id": 2269
     },
     {
-      "headword": "稴",
+      "headword": "𥞑",
       "ocr_headword": "稴",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "五稯爲𥞑，从禾市聲。一日數億至萬日。𥞑，將几切。",
       "headword_line_id": 2268,
       "gloss_line_id": 2275
@@ -3091,9 +3123,9 @@
       "gloss_line_id": 2308
     },
     {
-      "headword": "稌",
+      "headword": "稹",
       "ocr_headword": "稌",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "也。从禾眞聲。周禮日：稹理而堅。之忍切。",
       "headword_line_id": 2301,
       "gloss_line_id": 2310
@@ -3349,15 +3381,15 @@
     {
       "headword": "秏",
       "ocr_headword": "秏",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "稻屬，从禾毛聲。伊尹日：飯之美者，𤣥山之禾，南海之秏。呼到切。",
       "headword_line_id": 2503,
       "gloss_line_id": 2504
     },
     {
-      "headword": "秏",
+      "headword": "䆃",
       "ocr_headword": "秏",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "禾也。从禾道聲。司馬相如日檤，一莖六穗。徒到切。",
       "headword_line_id": 2503,
       "gloss_line_id": 2511
@@ -3435,9 +3467,9 @@
       "gloss_line_id": 2578
     },
     {
-      "headword": "䅛",
+      "headword": "䅥",
       "ocr_headword": "䅛",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "禾舉出苖也。从禾曷聲。居謁切。",
       "headword_line_id": 2585,
       "gloss_line_id": 2586
@@ -3507,9 +3539,9 @@
       "gloss_line_id": 2634
     },
     {
-      "headword": "䄷",
+      "headword": "稙",
       "ocr_headword": "䄷",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "早穜也。从禾直聲。詩门",
       "headword_line_id": 2633,
       "gloss_line_id": 2640
@@ -3851,9 +3883,9 @@
       "gloss_line_id": 2875
     },
     {
-      "headword": "軘",
+      "headword": "䡩",
       "ocr_headword": "軘",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "鈏也。从車眞聲。讀若論語鏗爾舍瑟而作。又讀若掔。苦閑切。",
       "headword_line_id": 2867,
       "gloss_line_id": 2877
@@ -5157,7 +5189,7 @@
     {
       "headword": "无",
       "ocr_headword": "无",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "奇字无通於元者。王育說：天屈西北爲无。",
       "headword_line_id": 3753,
       "gloss_line_id": 3754
@@ -5347,6 +5379,14 @@
       "gloss_line_id": 3877
     },
     {
+      "headword": "𫝉",
+      "ocr_headword": "",
+      "headword_resolution": "manual_from_page",
+      "gloss": "人工校正：卷三第140页 col=2。",
+      "headword_line_id": "manual-page-0140-col2",
+      "gloss_line_id": "manual-page-0140-col2"
+    },
+    {
       "headword": "亢",
       "ocr_headword": "亢",
       "headword_resolution": "single_before",
@@ -5387,9 +5427,9 @@
       "gloss_line_id": 3904
     },
     {
-      "headword": "𡰖",
+      "headword": "𡰋",
       "ocr_headword": "𡰖",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "㝿不能行，爲人所引曰𡰖。",
       "headword_line_id": 3908,
       "gloss_line_id": 3909
@@ -5397,7 +5437,7 @@
     {
       "headword": "𡰖",
       "ocr_headword": "𡰖",
-      "headword_resolution": "single_before",
+      "headword_resolution": "continuation",
       "gloss": "从𡯁，从爪是聲。都兮切。",
       "headword_line_id": 3908,
       "gloss_line_id": 3911
@@ -5413,15 +5453,15 @@
     {
       "headword": "𡰖",
       "ocr_headword": "𡰖",
-      "headword_resolution": "single_before",
+      "headword_resolution": "continuation",
       "gloss": "也。从九从爪，巂聲。戸圭切。",
       "headword_line_id": 3908,
       "gloss_line_id": 3919
     },
     {
-      "headword": "𡰖",
+      "headword": "尲",
       "ocr_headword": "𡰖",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "不正也。从尢兼聲。古咸切。",
       "headword_line_id": 3908,
       "gloss_line_id": 3924
@@ -5435,9 +5475,9 @@
       "gloss_line_id": 3930
     },
     {
-      "headword": "㝿",
+      "headword": "𡰠",
       "ocr_headword": "㝿",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "㓼中病也。从尢从羸。郎果切。",
       "headword_line_id": 3929,
       "gloss_line_id": 3937
@@ -5445,7 +5485,7 @@
     {
       "headword": "尬",
       "ocr_headword": "尬",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "尲，尬也。从尢介聲。古拜切。又公八切。",
       "headword_line_id": 3941,
       "gloss_line_id": 3942
@@ -5467,9 +5507,9 @@
       "gloss_line_id": 3955
     },
     {
-      "headword": "㞁",
+      "headword": "㝾",
       "ocr_headword": "㞁",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "行不正，从尢左聲。則箇切。",
       "headword_line_id": 3954,
       "gloss_line_id": 3964

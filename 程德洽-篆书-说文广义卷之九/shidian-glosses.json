@@ -59,9 +59,9 @@
       "gloss_line_id": 219
     },
     {
-      "headword": "𡫽",
+      "headword": "窹",
       "ocr_headword": "𡫽",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "寐覺而有信曰寤。从㝱省，吾聲。一曰：晝見而夜㝱也。五故切。",
       "headword_line_id": 218,
       "gloss_line_id": 224
@@ -149,7 +149,7 @@
     {
       "headword": "重",
       "ocr_headword": "重",
-      "headword_resolution": "single_before",
+      "headword_resolution": "continuation",
       "gloss": "者，人在土上，故爲厚也。柱用切。",
       "headword_line_id": 253,
       "gloss_line_id": 258
@@ -931,9 +931,9 @@
       "gloss_line_id": 562
     },
     {
-      "headword": "臱",
-      "ocr_headword": "四四四",
-      "headword_resolution": "single_after",
+      "headword": "自",
+      "ocr_headword": "自",
+      "headword_resolution": "manual_from_page",
       "gloss": "十一部鼻也。象鼻形。凡自自之屬皆从自。疾二切。",
       "headword_line_id": 566,
       "gloss_line_id": 564
@@ -941,9 +941,9 @@
     {
       "headword": "臱",
       "ocr_headword": "臱",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "宀，宀，不見也。闕，武延切。",
-      "headword_line_id": 566,
+      "headword_line_id": "566b",
       "gloss_line_id": 567
     },
     {
@@ -1005,7 +1005,7 @@
     {
       "headword": "者者者者者者者",
       "ocr_headword": "者者者者者者者。",
-      "headword_resolution": "unresolved",
+      "headword_resolution": "continuation",
       "gloss": "識詞也。从白，从亏从知。知義切。",
       "headword_line_id": 589,
       "gloss_line_id": 591
@@ -1019,9 +1019,9 @@
       "gloss_line_id": 597
     },
     {
-      "headword": "百爲",
-      "ocr_headword": "百爲",
-      "headword_resolution": "unresolved",
+      "headword": "百",
+      "ocr_headword": "百",
+      "headword_resolution": "manual_from_page",
       "gloss": "一貫，相章也。博陌切。",
       "headword_line_id": 598,
       "gloss_line_id": 599
@@ -2861,6 +2861,14 @@
     {
       "headword": "倝",
       "ocr_headword": "倝",
+      "headword_resolution": "manual_from_page",
+      "gloss": "五十二部日始出光倝倝也。从旦㫃聲。凡倝之屬皆从倝。古案切。",
+      "headword_line_id": "1313b",
+      "gloss_line_id": "1314b"
+    },
+    {
+      "headword": "倝",
+      "ocr_headword": "倝",
       "headword_resolution": "single_before",
       "gloss": "五十二部日始出光倝倝也。从旦㫃聲。凡倝之屬皆从倝。古案切。",
       "headword_line_id": 1313,
@@ -3817,6 +3825,22 @@
       "gloss": "仙人𠮓形而登天也。从七从目，从眞乚乚音隱，八所乗載也。側鄰切。",
       "headword_line_id": 1688,
       "gloss_line_id": 1695
+    },
+    {
+      "headword": "𠤘",
+      "ocr_headword": "𠤘",
+      "headword_resolution": "manual_from_page",
+      "gloss": "",
+      "headword_line_id": "1688b",
+      "gloss_line_id": "1688c"
+    },
+    {
+      "headword": "真",
+      "ocr_headword": "真",
+      "headword_resolution": "manual_from_page",
+      "gloss": "",
+      "headword_line_id": "1688d",
+      "gloss_line_id": "1688e"
     },
     {
       "headword": "化",

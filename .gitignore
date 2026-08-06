@@ -52,6 +52,9 @@ tmp/
 # OCR batch log
 batch_ocr_log.txt
 
+# 释文填充审计中间文件
+shidian-labels-*.json
+
 # Debug images
 debug_*.jpg
 test_fatie_*.jpg
