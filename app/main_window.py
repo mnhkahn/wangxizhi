@@ -874,6 +874,8 @@ class MainWindow(QMainWindow):
         self.ocr_worker: Optional[OCRWorker] = None
         self._last_loaded_cache_path: Optional[str] = None
         self._current_tree_selection: Optional[dict] = None
+        # 编辑器内的框复制缓冲区；只保存必要字段，避免复用原框的持久化 uuid。
+        self._bbox_clipboard: Optional[dict] = None
         self._has_unsaved_edits = False
         self._watched_chars_path: Optional[Path] = None
         self._last_internal_chars_signature: Optional[tuple] = None
@@ -1069,6 +1071,16 @@ class MainWindow(QMainWindow):
         edit_menu.addAction(self.action_redo)
 
         edit_menu.addSeparator()
+
+        copy_bbox_action = QAction("复制框(&C)", self)
+        copy_bbox_action.setShortcut(QKeySequence.Copy)
+        copy_bbox_action.triggered.connect(self.copy_selected_bbox)
+        edit_menu.addAction(copy_bbox_action)
+
+        paste_bbox_action = QAction("粘贴框(&P)", self)
+        paste_bbox_action.setShortcut(QKeySequence.Paste)
+        paste_bbox_action.triggered.connect(self.paste_bbox)
+        edit_menu.addAction(paste_bbox_action)
 
         delete_action = QAction("删除(&D)", self)
         delete_action.setShortcuts([QKeySequence.Delete, QKeySequence("Backspace")])
@@ -2114,10 +2126,6 @@ class MainWindow(QMainWindow):
             self.status_label.setText("保存失败：请先打开一张图片")
             return
 
-        if not self.char_manager.items:
-            self.status_label.setText("保存失败：当前没有可保存的字符数据")
-            return
-
         # 输出目录调整：<字帖目录>/.debug/<stem>/chars.json
         image_path = Path(self.current_image_path)
         out_dir = image_path.parent / ".debug" / image_path.stem
@@ -2594,12 +2602,93 @@ class MainWindow(QMainWindow):
         self.image_canvas.add_bbox(x, y, avg_w, avg_h, item.char, item.id, highlight=(column == 0 and row == 0))
         self.char_list.load_items(self.char_manager.items)
         self.image_canvas.select_bbox(item.id)
-        self.status_label.setText(f"已添加新框 (id={item.id}, 列{column}, 行{row})")
+        self.save_edits()
+        self.status_label.setText(f"已添加新框并自动保存 (id={item.id}, 列{column}, 行{row})")
 
     def delete_selected_char(self):
         """删除当前选中的字符（框 / 列表项）"""
         if self.image_canvas.selected_items:
             self.image_canvas.delete_selected_bboxes()
+
+    def copy_selected_bbox(self):
+        """复制当前选中的单个框，供粘贴时生成一个独立的新框。"""
+        if len(self.image_canvas.selected_items) != 1:
+            self.status_label.setText("复制失败：请先选中一个框")
+            return
+
+        source_id = self.image_canvas.selected_items[0].item_id
+        source = self.char_manager.get_item(source_id)
+        if not source:
+            self.status_label.setText("复制失败：找不到选中的框")
+            return
+
+        self._bbox_clipboard = {
+            "char": source.char,
+            "bbox": source.bbox.copy(),
+            "column": source.column,
+            "row": source.row,
+            "visible": source.visible,
+        }
+        self.status_label.setText(f"已复制框：{source.char or '空字'}（列{source.column}，行{source.row}）")
+
+    def paste_bbox(self):
+        """在复制框下方的空白处粘贴，保留文字和列号并将行号加一。"""
+        if not self._bbox_clipboard:
+            self.status_label.setText("粘贴失败：请先复制一个框")
+            return
+        if not self.image_canvas.image_item:
+            self.status_label.setText("粘贴失败：请先打开一张图片")
+            return
+
+        source_bbox = self._bbox_clipboard["bbox"]
+        x1, y1, x2, y2 = [float(value) for value in source_bbox]
+        width, height = x2 - x1, y2 - y1
+        if width <= 0 or height <= 0:
+            self.status_label.setText("粘贴失败：复制框尺寸无效")
+            return
+
+        image_rect = self.image_canvas.scene.sceneRect()
+        step = max(height * 0.25, 8.0)
+        candidate_y = y2 + max(height * 0.15, 8.0)
+        pasted_bbox = None
+        while candidate_y + height <= image_rect.bottom():
+            candidate = [x1, candidate_y, x1 + width, candidate_y + height]
+            overlaps = any(
+                candidate[0] < item.bbox[2]
+                and candidate[2] > item.bbox[0]
+                and candidate[1] < item.bbox[3]
+                and candidate[3] > item.bbox[1]
+                for item in self.char_manager.items
+            )
+            if not overlaps:
+                pasted_bbox = candidate
+                break
+            candidate_y += step
+
+        if pasted_bbox is None:
+            self.status_label.setText("粘贴失败：复制框下方没有足够的空白位置")
+            return
+
+        item = self.char_manager.add_item(CharItem(
+            id=0,
+            char=self._bbox_clipboard["char"],
+            bbox=pasted_bbox,
+            column=self._bbox_clipboard["column"],
+            row=self._bbox_clipboard["row"] + 1,
+            visible=self._bbox_clipboard["visible"],
+        ))
+        self.image_canvas.add_bbox(
+            pasted_bbox[0], pasted_bbox[1], width, height, item.char, item.id,
+            highlight=(item.column == 0 and item.row == 0),
+        )
+        self.image_canvas.set_column_row_map({
+            current.id: (current.column, current.row)
+            for current in self.char_manager.items
+        })
+        self.char_list.load_items(self.char_manager.items)
+        self.image_canvas.select_bbox(item.id)
+        self.save_edits()
+        self.status_label.setText(f"已粘贴框并自动保存（列{item.column}，行{item.row}）")
 
     def _on_canvas_item_deleted(self, item_id: int):
         """画布删除字符后同步模型与列表"""
@@ -2608,7 +2697,8 @@ class MainWindow(QMainWindow):
         self.property_panel.load_item(None)
         if hasattr(self, "char_preview"):
             self.char_preview.clear()
-        self.status_label.setText(f"已删除字符 (id={item_id})")
+        self.save_edits()
+        self.status_label.setText(f"已删除字符并自动保存 (id={item_id})")
 
     def _on_canvas_items_deleted(self, item_ids: list):
         """画布批量删除字符后同步模型与列表"""
@@ -2618,7 +2708,8 @@ class MainWindow(QMainWindow):
         self.property_panel.load_item(None)
         if hasattr(self, "char_preview"):
             self.char_preview.clear()
-        self.status_label.setText(f"已删除 {len(item_ids)} 个字符")
+        self.save_edits()
+        self.status_label.setText(f"已删除 {len(item_ids)} 个字符并自动保存")
 
     def _on_canvas_selection_changed(self, item_id: int):
         """画布选中变化"""
@@ -2705,7 +2796,6 @@ class MainWindow(QMainWindow):
         item = self.char_manager.get_item(item_id)
         if item:
             item.char = char
-            self._has_unsaved_edits = True
             self.char_list.update_item_char(item_id, char)
 
             # 更新画布上的标签
@@ -2715,6 +2805,7 @@ class MainWindow(QMainWindow):
                     break
 
             self._update_preview(item)
+            self.save_edits()
 
     def _on_property_bbox_changed(
         self, item_id: int, x: float, y: float, w: float, h: float
@@ -2723,7 +2814,6 @@ class MainWindow(QMainWindow):
         item = self.char_manager.get_item(item_id)
         if item:
             item.bbox = [x, y, x + w, y + h]
-            self._has_unsaved_edits = True
 
             # 更新画布上的边界框
             for bbox_item in self.image_canvas.bbox_items:
@@ -2734,22 +2824,25 @@ class MainWindow(QMainWindow):
             self.image_canvas.refresh_column_ruler()
 
             self._update_preview(item)
+            self.save_edits()
 
     def _on_property_font_changed(self, font: str):
         self.current_font = font or "楷书"
+        self.save_edits()
 
     def _on_property_author_changed(self, author: str):
         self.current_author = author or ""
+        self.save_edits()
 
     def _on_property_work_changed(self, work: str):
         self.current_work = work or ""
+        self.save_edits()
 
     def _on_property_visible_changed(self, item_id: int, visible: bool):
         """属性面板可见性变化"""
         item = self.char_manager.get_item(item_id)
         if item:
             item.visible = visible
-            self._has_unsaved_edits = True
             # 同步画布视觉：不可见时降低透明度
             for bbox_item in self.image_canvas.bbox_items:
                 if bbox_item.item_id == item_id:
@@ -2758,22 +2851,22 @@ class MainWindow(QMainWindow):
                     else:
                         bbox_item.setOpacity(0.3)
                     break
+            self.save_edits()
 
     def _on_property_row_changed(self, item_id: int, row: int):
         """属性面板行变化"""
         item = self.char_manager.get_item(item_id)
         if item:
             item.row = row
-            self._has_unsaved_edits = True
             self._sync_bbox_highlight(item)
             self.property_panel.load_item(item)
+            self.save_edits()
 
     def _on_property_column_changed(self, item_id: int, column: int):
         """属性面板列变化"""
         item = self.char_manager.get_item(item_id)
         if item:
             item.column = column
-            self._has_unsaved_edits = True
             self.image_canvas.set_column_row_map({
                 current.id: (current.column, current.row)
                 for current in self.char_manager.items
@@ -2781,6 +2874,7 @@ class MainWindow(QMainWindow):
             self.image_canvas.set_active_ruler_item(item_id)
             self._sync_bbox_highlight(item)
             self.property_panel.load_item(item)
+            self.save_edits()
 
     def _sync_bbox_highlight(self, item: CharItem):
         """同步画布高亮状态（row=column=0 时高亮）"""

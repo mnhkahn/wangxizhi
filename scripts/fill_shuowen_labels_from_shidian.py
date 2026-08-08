@@ -118,6 +118,25 @@ def usable_entries(path: Path) -> list[dict]:
     return result
 
 
+def stored_column_groups(entries: list[dict]) -> list[list[dict]]:
+    """按已确认的 ``column`` 字段分组，并按页面的右至左顺序返回。
+
+    两个相邻版格有时只相距约一个字宽。用于补框的宽松坐标聚类会把它们
+    合并，造成两列继承同一个释文；当列号已由人工校正时，应以列号为准。
+    """
+    groups: dict[int, list[dict]] = {}
+    for item in entries:
+        column = item.get("column", item.get("col"))
+        if not isinstance(column, int):
+            continue
+        groups.setdefault(column, []).append(item)
+
+    def center(group: list[dict]) -> float:
+        return sum((item["bbox"][0] + item["bbox"][2]) / 2 for item in group) / len(group)
+
+    return sorted(groups.values(), key=center, reverse=True)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("work_dir", type=Path)
@@ -146,6 +165,11 @@ def main() -> None:
         help="跳过清洗后来源中的指定条目（1 起始）；可重复使用",
     )
     parser.add_argument("--overwrite", action="store_true", help="重写已有字；用于修正已知来源偏移")
+    parser.add_argument(
+        "--strict-columns",
+        action="store_true",
+        help="严格按 chars.json 的 column 字段分列，避免相邻版格被坐标聚类合并",
+    )
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
 
@@ -163,7 +187,11 @@ def main() -> None:
         if not chars_path.exists():
             continue
         chars = json.loads(chars_path.read_text())
-        groups = column_groups(chars, 180) if chars else []
+        groups = (
+            stored_column_groups(chars)
+            if args.strict_columns and chars
+            else column_groups(chars, 180) if chars else []
+        )
         changed = False
         for column, group in enumerate(groups):
             leave_groups = set(range(args.leave_leading_groups)) | set(args.leave_group)
