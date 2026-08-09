@@ -419,6 +419,14 @@
       "gloss_line_id": 352
     },
     {
+      "headword": "倠",
+      "ocr_headword": "倠",
+      "headword_resolution": "manual_from_page",
+      "gloss": "人工按第026页篆字确认",
+      "headword_line_id": "manual-倠-before-伊",
+      "gloss_line_id": "manual-倠-before-伊"
+    },
+    {
       "headword": "伊",
       "ocr_headword": "伊",
       "headword_resolution": "single_before",
@@ -1587,6 +1595,14 @@
       "gloss_line_id": 784
     },
     {
+      "headword": "仲",
+      "ocr_headword": "仲",
+      "headword_resolution": "manual_from_page",
+      "gloss": "人工按第057页篆字确认",
+      "headword_line_id": "manual-仲-before-㑥",
+      "gloss_line_id": "manual-仲-before-㑥"
+    },
+    {
       "headword": "㑥",
       "ocr_headword": "㑥",
       "headword_resolution": "single_before",
@@ -1715,9 +1731,9 @@
       "gloss_line_id": 833
     },
     {
-      "headword": "傅",
+      "headword": "侸",
       "ocr_headword": "傅",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "侸立也从人豆聲讀若樹常何切",
       "headword_line_id": 832,
       "gloss_line_id": 835
@@ -2139,9 +2155,9 @@
       "gloss_line_id": 990
     },
     {
-      "headword": "儀滿廉佛川",
+      "headword": "僭",
       "ocr_headword": "儀滿廉佛川",
-      "headword_resolution": "unresolved",
+      "headword_resolution": "manual_from_page",
       "gloss": "僭假也从人濳聲子念切",
       "headword_line_id": 989,
       "gloss_line_id": 991
@@ -2153,6 +2169,54 @@
       "gloss": "也从人从犬臣鉉等司今又作伺房六切",
       "headword_line_id": 993,
       "gloss_line_id": 994
+    },
+    {
+      "headword": "伏",
+      "ocr_headword": "",
+      "headword_resolution": "manual_from_page",
+      "gloss": "人工按第072页篆字确认；位于僭、倬之间",
+      "headword_line_id": "manual-伏-before-倬",
+      "gloss_line_id": "manual-伏-before-倬"
+    },
+    {
+      "headword": "俶",
+      "ocr_headword": "",
+      "headword_resolution": "manual_from_page",
+      "gloss": "人工按第073页篆字确认",
+      "headword_line_id": "manual-俶-before-倬",
+      "gloss_line_id": "manual-俶-before-倬"
+    },
+    {
+      "headword": "儥",
+      "ocr_headword": "",
+      "headword_resolution": "manual_from_page",
+      "gloss": "人工按第073页篆字确认",
+      "headword_line_id": "manual-儥-before-倬",
+      "gloss_line_id": "manual-儥-before-倬"
+    },
+    {
+      "headword": "促",
+      "ocr_headword": "",
+      "headword_resolution": "manual_from_page",
+      "gloss": "人工按第073页篆字确认",
+      "headword_line_id": "manual-促-before-倬",
+      "gloss_line_id": "manual-促-before-倬"
+    },
+    {
+      "headword": "俗",
+      "ocr_headword": "",
+      "headword_resolution": "manual_from_page",
+      "gloss": "人工按第073页篆字确认",
+      "headword_line_id": "manual-俗-before-倬",
+      "gloss_line_id": "manual-俗-before-倬"
+    },
+    {
+      "headword": "偓",
+      "ocr_headword": "",
+      "headword_resolution": "manual_from_page",
+      "gloss": "人工按第074页篆字确认；位于俗、倬之间",
+      "headword_line_id": "manual-偓-before-倬",
+      "gloss_line_id": "manual-偓-before-倬"
     },
     {
       "headword": "倬",
@@ -2203,9 +2267,9 @@
       "gloss_line_id": 1013
     },
     {
-      "headword": "猶两侈协陽",
+      "headword": "佶",
       "ocr_headword": "猶两侈协陽",
-      "headword_resolution": "unresolved",
+      "headword_resolution": "manual_from_page",
       "gloss": "佶正也从人吉聲詩曰旣佶且閑巨乙切",
       "headword_line_id": 1012,
       "gloss_line_id": 1014
@@ -2595,7 +2659,7 @@
       "gloss_line_id": 1166
     },
     {
-      "headword": "灥",
+      "headword": "厵",
       "ocr_headword": "灥",
       "headword_resolution": "single_before",
       "gloss": "水泉本也从灥出丁下愚袁切",
@@ -2683,9 +2747,9 @@
       "gloss_line_id": 1196
     },
     {
-      "headword": "幃㡦嶧",
+      "headword": "帤",
       "ocr_headword": "幃㡦嶧",
-      "headword_resolution": "unresolved",
+      "headword_resolution": "manual_from_page",
       "gloss": "帤巾帤也从巾如聲一曰幣巾女余切",
       "headword_line_id": 1195,
       "gloss_line_id": 1197
@@ -2717,7 +2781,7 @@
     {
       "headword": "㡄",
       "ocr_headword": "㡄",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "領喘也𠙴巾旬聲相倫切",
       "headword_line_id": 1208,
       "gloss_line_id": 1209
@@ -2875,9 +2939,9 @@
       "gloss_line_id": 1267
     },
     {
-      "headword": "㡨",
+      "headword": "㡘",
       "ocr_headword": "㡨",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "㡘帷也从巾兼聲力鹽切",
       "headword_line_id": 1266,
       "gloss_line_id": 1268
@@ -3217,6 +3281,14 @@
       "gloss": "八十三部二山也凡屾之屬皆从屾所臻切",
       "headword_line_id": 1394,
       "gloss_line_id": 1395
+    },
+    {
+      "headword": "嵞",
+      "ocr_headword": "",
+      "headword_resolution": "manual_from_page",
+      "gloss": "會稽山一曰九江當嵞也；人工按第103页篆字确认",
+      "headword_line_id": "manual-嵞-before-文",
+      "gloss_line_id": "manual-嵞-before-文"
     },
     {
       "headword": "文",
@@ -3589,7 +3661,7 @@
     {
       "headword": "䜄",
       "ocr_headword": "䜄",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "語諄諷也川言王人直离卜",
       "headword_line_id": 1533,
       "gloss_line_id": 1534
@@ -3649,6 +3721,14 @@
       "gloss": "諸辯也从言者聲章魚切",
       "headword_line_id": 1551,
       "gloss_line_id": 1553
+    },
+    {
+      "headword": "諸",
+      "ocr_headword": "",
+      "headword_resolution": "manual_from_page",
+      "gloss": "人工按第114页篆字确认；位于譏、諆之间",
+      "headword_line_id": "manual-諸-before-諆-1555",
+      "gloss_line_id": "manual-諸-before-諆-1555"
     },
     {
       "headword": "諆",
@@ -3947,9 +4027,9 @@
       "gloss_line_id": 1660
     },
     {
-      "headword": "繳緜舜氓",
+      "headword": "譞",
       "ocr_headword": "繳緜舜氓",
-      "headword_resolution": "unresolved",
+      "headword_resolution": "manual_from_page",
       "gloss": "譞譞慧也从言圜省聲許緣切",
       "headword_line_id": 1659,
       "gloss_line_id": 1661
@@ -4171,9 +4251,9 @@
       "gloss_line_id": 1742
     },
     {
-      "headword": "謚酗藏",
+      "headword": "訧",
       "ocr_headword": "謚酗藏",
-      "headword_resolution": "unresolved",
+      "headword_resolution": "manual_from_page",
       "gloss": "說罪也从言尤聲周聿日報以庶訪羽求切",
       "headword_line_id": 1741,
       "gloss_line_id": 1743
@@ -5211,7 +5291,7 @@
       "gloss_line_id": 2125
     },
     {
-      "headword": "詐",
+      "headword": "𧧻",
       "ocr_headword": "詐",
       "headword_resolution": "single_before",
       "gloss": "慙語也从言作聲鉏駕切",
@@ -5267,9 +5347,9 @@
       "gloss_line_id": 2146
     },
     {
-      "headword": "諒",
+      "headword": "詇",
       "ocr_headword": "諒",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "詇早知也从言央聲于亮切",
       "headword_line_id": 2145,
       "gloss_line_id": 2148
@@ -5291,9 +5371,9 @@
       "gloss_line_id": 2153
     },
     {
-      "headword": "圳䧺維",
+      "headword": "謗",
       "ocr_headword": "圳䧺維",
-      "headword_resolution": "unresolved",
+      "headword_resolution": "manual_from_page",
       "gloss": "謗毁也从言旁聲補浪切",
       "headword_line_id": 2152,
       "gloss_line_id": 2154
@@ -5331,9 +5411,9 @@
       "gloss_line_id": 2166
     },
     {
-      "headword": "颻豹駉",
+      "headword": "証",
       "ocr_headword": "颻豹駉",
-      "headword_resolution": "unresolved",
+      "headword_resolution": "manual_from_page",
       "gloss": "証諫也从言正聲之成切",
       "headword_line_id": 2165,
       "gloss_line_id": 2167
@@ -5427,9 +5507,9 @@
       "gloss_line_id": 2200
     },
     {
-      "headword": "岀擔贖",
+      "headword": "謈",
       "ocr_headword": "岀擔贖",
-      "headword_resolution": "unresolved",
+      "headword_resolution": "manual_from_page",
       "gloss": "謩大呼自勉也从言暴省聲蒲角切",
       "headword_line_id": 2199,
       "gloss_line_id": 2201
@@ -5699,9 +5779,9 @@
       "gloss_line_id": 2295
     },
     {
-      "headword": "嫋皑家",
+      "headword": "詥",
       "ocr_headword": "嫋皑家",
-      "headword_resolution": "unresolved",
+      "headword_resolution": "manual_from_page",
       "gloss": "合諧也从言台聲候閤切",
       "headword_line_id": 2294,
       "gloss_line_id": 2296
@@ -6507,7 +6587,7 @@
       "gloss_line_id": 2604
     },
     {
-      "headword": "干",
+      "headword": "羊",
       "ocr_headword": "干",
       "headword_resolution": "single_before",
       "gloss": "㨖也从干入一爲千入二爲羊讀若餁言稍甚也如審切",
@@ -7245,7 +7325,7 @@
     {
       "headword": "崛",
       "ocr_headword": "崛",
-      "headword_resolution": "single_before",
+      "headword_resolution": "manual_from_page",
       "gloss": "山短高𬽡山屈聲衢勿切",
       "headword_line_id": 2881,
       "gloss_line_id": 2882

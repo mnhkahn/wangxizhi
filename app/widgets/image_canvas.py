@@ -759,17 +759,27 @@ class ImageCanvas(QGraphicsView):
                 pass
         self.selected_items.clear()
 
+    def _refresh_selection_handles(self):
+        """多选时隐藏缩放手柄，避免拖到手柄后意外退化为单选缩放。"""
+        allow_resize = len(self.selected_items) == 1
+        for bbox in self.bbox_items:
+            is_only_selected = allow_resize and bbox in self.selected_items
+            for handle in bbox.handles:
+                handle.setVisible(is_only_selected)
+
     def _add_to_selection(self, bbox: BBoxItem):
         """添加一个框到选中"""
         if bbox not in self.selected_items:
             bbox.set_selected(True)
             self.selected_items.append(bbox)
+            self._refresh_selection_handles()
 
     def _remove_from_selection(self, bbox: BBoxItem):
         """从选中移除一个框"""
         if bbox in self.selected_items:
             bbox.set_selected(False)
             self.selected_items.remove(bbox)
+            self._refresh_selection_handles()
 
     def _set_single_selection(self, bbox: BBoxItem):
         """单选：清除其他，只选中该框"""
