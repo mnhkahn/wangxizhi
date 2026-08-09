@@ -499,7 +499,10 @@ def process(
                     malformed = not (35 <= width <= 140 and 55 <= height <= 280)
                     if not realign and empty and malformed and column in proposal_columns:
                         continue
-                    if not realign:
+                    # 显式 ``--columns`` 是人工已确认的“只补这一列”操作。
+                    # 此时绝不能借机按网格重算既有框的列号：早期手工框的
+                    # 横向中心会有少量漂移，逐框重算会把同一列拆成两列（0175）。
+                    if not realign and forced_columns is None:
                         if "column" in item or "col" not in item:
                             item["column"] = column
                         if "col" in item:

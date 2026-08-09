@@ -1,0 +1,4 @@
+interface:
+  display_name: "说文框标注审计"
+  short_description: "审计说文广义篆书字框、物理列和释文顺排一致性流程。"
+  default_prompt: "Use $shuowen-frame-audit to inspect this Shuowen Guangyi volume and report safe frame or gloss fixes."

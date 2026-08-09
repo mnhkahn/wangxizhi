@@ -65,6 +65,8 @@ def main():
                         help="删除同页中较后的重复字；后续全部跨页前移")
     parser.add_argument("--allow-tail-blanks", action="store_true",
                         help="明确允许删除/去重后在范围末尾留下空槽")
+    parser.add_argument("--stash-overflow", action="store_true",
+                        help="插入时将范围末尾被挤出的字暂存，默认拒绝写入")
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
 
@@ -79,6 +81,7 @@ def main():
     stream, pages = read_stream(args.work_dir, args.start_page, args.end_page)
     original = [slot["char"] for slot in stream]
     removed = []
+    overflow = ""
     if args.dedupe_page_duplicates:
         # 前移后，下一页可能又带入一个同页重复字；因此必须反复扫描，
         # 直到整条列流稳定，而不是只处理第一批重复。
@@ -106,8 +109,13 @@ def main():
             labels = original[:index] + original[index + 1:] + [""]
             operation = "remove"
         else:
+            overflow = original[-1]
+            if overflow and not args.stash_overflow:
+                raise ValueError(
+                    f"插入会使末尾字「{overflow}」溢出，拒绝写入；"
+                    "请加 --stash-overflow 保存待承接字"
+                )
             labels = original[:index] + [args.insert] + original[index:-1]
-            removed = [{"overflow": original[-1]}] if original[-1] else []
             operation = "insert"
 
     candidate = [{**slot, "char": label} for slot, label in zip(stream, labels)]
@@ -119,11 +127,17 @@ def main():
         "range": [args.start_page, args.end_page],
         "slots": len(stream),
         "removed_or_overflow": removed,
+        "overflow": overflow or None,
         "tail_blanks": sum(1 for char in labels if not char),
     }
-    if audit["tail_blanks"] and args.apply and not args.allow_tail_blanks:
+    original_tail_blanks = sum(1 for char in original if not char)
+    if (
+        audit["tail_blanks"] > original_tail_blanks
+        and args.apply
+        and not args.allow_tail_blanks
+    ):
         raise ValueError(
-            f"重排会在范围末尾留下 {audit['tail_blanks']} 个空槽，拒绝写入。"
+            f"重排会新增 {audit['tail_blanks'] - original_tail_blanks} 个末尾空槽，拒绝写入。"
             "请扩大 --end-page 让后续字承接，或人工确认后加 --allow-tail-blanks"
         )
     print(json.dumps(audit, ensure_ascii=False))
@@ -136,6 +150,18 @@ def main():
             if item.get("column", item.get("col")) == slot["column"]:
                 item["char"] = label
     stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    if overflow:
+        stash_path = args.work_dir / "pending-overflow-labels.json"
+        stash = json.loads(stash_path.read_text()) if stash_path.exists() else []
+        stash.insert(0, {
+            "char": overflow,
+            "operation": operation,
+            "start_page": args.page,
+            "start_column": args.column,
+            "end_page": args.end_page,
+            "stashed_at": datetime.now().isoformat(timespec="seconds"),
+        })
+        stash_path.write_text(json.dumps(stash, ensure_ascii=False, indent=2) + chr(10))
     for path, items in pages.values():
         backup = path.parent / "backups"
         backup.mkdir(exist_ok=True)
