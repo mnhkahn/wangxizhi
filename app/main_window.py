@@ -1574,6 +1574,13 @@ class MainWindow(QMainWindow):
             QMessageBox.warning(self, "错误", f"无法加载图片: {image_path}")
             return
 
+        # 页面已切换，先清掉上一页的字符状态和预览。成功加载本页的
+        # chars.json/result.json 后，_on_ocr_finished 会选中本页左下角的字。
+        self.char_manager.clear()
+        self.char_list.clear()
+        self.property_panel.load_item(None)
+        self.char_preview.clear()
+
         self._update_window_title()
 
         self._watch_current_chars_file()
@@ -1989,6 +1996,46 @@ class MainWindow(QMainWindow):
         # 刷新左侧"已识别"列表
         if hasattr(self, "work_tree"):
             self.work_tree.refresh_recognized()
+
+        self._select_bottom_left_char_in_current_image()
+
+    def _select_bottom_left_char_in_current_image(self) -> None:
+        """选中新页面左下角的字，使右侧单字预览始终对应当前页面。
+
+        以边界框的真实位置为准：先取最左侧一列，再取该列最靠下的字。
+        这样即使 chars.json 中的 column/row 被手工调整过，也仍符合页面上的
+        "左下角"位置。
+        """
+        items = self.char_manager.items
+        if not items:
+            return
+
+        valid_items = [
+            item
+            for item in items
+            if len(item.bbox) == 4 and item.bbox[2] > item.bbox[0]
+            and item.bbox[3] > item.bbox[1]
+        ]
+        if not valid_items:
+            return
+
+        # 同一竖列内的 x 中心允许有少量书写/识别偏差；用中位字宽作为容差，
+        # 避免把同一列里略向右的字误判为另一列。
+        widths = sorted(item.bbox[2] - item.bbox[0] for item in valid_items)
+        median_width = widths[len(widths) // 2]
+        left_x = min((item.bbox[0] + item.bbox[2]) / 2 for item in valid_items)
+        left_column = [
+            item
+            for item in valid_items
+            if (item.bbox[0] + item.bbox[2]) / 2 <= left_x + median_width
+        ]
+        chosen = max(
+            left_column,
+            key=lambda item: (item.bbox[1] + item.bbox[3], -item.id),
+        )
+
+        # select_bbox 会触发 selection_changed，继而同步属性面板和右侧预览。
+        self.image_canvas.select_bbox(chosen.id)
 
     def _on_tree_item_activated(self, payload: dict):
         """点击左侧树节点快速加载"""

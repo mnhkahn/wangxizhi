@@ -61,8 +61,11 @@ def main():
     parser.add_argument("--column", type=int, help="目标列（insert/remove 必填）")
     parser.add_argument("--insert", help="插入的单字；后续全部后移")
     parser.add_argument("--remove", action="store_true", help="删除目标槽位字；后续全部前移")
+    parser.add_argument("--tail-label", help="删除时补回末尾字，适用于撤销一次已暂存溢出的插入")
     parser.add_argument("--dedupe-page-duplicates", action="store_true",
                         help="删除同页中较后的重复字；后续全部跨页前移")
+    parser.add_argument("--allow-page-duplicates", action="store_true",
+                        help="允许同页出现相同字；人工确认的重复字不视为写入错误")
     parser.add_argument("--allow-tail-blanks", action="store_true",
                         help="明确允许删除/去重后在范围末尾留下空槽")
     parser.add_argument("--stash-overflow", action="store_true",
@@ -75,6 +78,8 @@ def main():
         raise ValueError("--insert、--remove、--dedupe-page-duplicates 必须三选一")
     if args.insert is not None and len(args.insert) != 1:
         raise ValueError("--insert 必须为单字")
+    if args.tail_label is not None and (not args.remove or len(args.tail_label) != 1):
+        raise ValueError("--tail-label 只能与 --remove 一起使用，且必须为单字")
     if not args.dedupe_page_duplicates and (args.page is None or args.column is None):
         raise ValueError("insert/remove 必须指定 --page 和 --column")
 
@@ -106,7 +111,7 @@ def main():
             raise ValueError("目标页/列不存在") from error
         if args.remove:
             removed = [{**stream[index], "slot_index": index}]
-            labels = original[:index] + original[index + 1:] + [""]
+            labels = original[:index] + original[index + 1:] + [args.tail_label or ""]
             operation = "remove"
         else:
             overflow = original[-1]
@@ -120,7 +125,7 @@ def main():
 
     candidate = [{**slot, "char": label} for slot, label in zip(stream, labels)]
     remaining = duplicates(candidate)
-    if remaining:
+    if remaining and not args.allow_page_duplicates:
         raise ValueError("重排后仍有重复，拒绝写入：" + json.dumps(remaining[:10], ensure_ascii=False))
     audit = {
         "operation": operation,
@@ -129,6 +134,7 @@ def main():
         "removed_or_overflow": removed,
         "overflow": overflow or None,
         "tail_blanks": sum(1 for char in labels if not char),
+        "page_duplicates": remaining,
     }
     original_tail_blanks = sum(1 for char in original if not char)
     if (

@@ -143,6 +143,24 @@ def active_runs(gray: np.ndarray, x1: int, x2: int) -> list[tuple[int, int]]:
     return runs
 
 
+def has_visible_glyph_ink(gray: np.ndarray, bbox: list[int]) -> bool:
+    """拒绝固定行模板延伸出来的近乎纯纸色空框。
+
+    ``propose`` 会用同页基线补齐列内行数；对页尾短列这很有用，但此前
+    也会在 0199 col=8 生成四个没有字的空框。这里仅用于显式 ``--columns``
+    的新框写入，阈值极低，避免把淡墨的真实篆字过滤掉。
+    """
+    x1, y1, x2, y2 = bbox
+    inset_x = max(8, int((x2 - x1) * 0.13))
+    inset_y = max(8, int((y2 - y1) * 0.10))
+    crop = gray[y1 + inset_y:y2 - inset_y, x1 + inset_x:x2 - inset_x]
+    if crop.size == 0:
+        return False
+    paper = float(np.percentile(crop, 82))
+    threshold = max(95, min(180, int(paper - 38)))
+    return float((crop < threshold).mean()) >= 0.003
+
+
 def is_double_text_column(gray: np.ndarray, x1: int, x2: int) -> bool:
     """判断网格槽是否为左右两条密排小字的释文列。"""
     height, _ = gray.shape
@@ -455,6 +473,11 @@ def process(
         forced_columns,
         trust_seed_columns=realign,
     )
+    if forced_columns is not None:
+        boxes = [
+            box for box in boxes
+            if int(box["column"]) not in forced_columns or has_visible_glyph_ink(gray, box["bbox"])
+        ]
     (debug / "seal-proposals.json").write_text(json.dumps(boxes, ensure_ascii=False, indent=2) + "\n")
     preview(color, boxes, debug / "seal-proposals-preview.jpg")
     if apply:

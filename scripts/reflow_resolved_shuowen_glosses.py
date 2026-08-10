@@ -15,7 +15,9 @@ from datetime import datetime
 from pathlib import Path
 
 
-def source_labels(work_dir: Path, start_entry: int) -> list[tuple[int, str]]:
+def source_labels(
+    work_dir: Path, start_entry: int, limit: int | None = None
+) -> list[tuple[int, str]]:
     entries = json.loads((work_dir / "shidian-glosses.json").read_text())["entries"]
     resolutions = json.loads(
         (work_dir / "shidian-gloss-resolutions.json").read_text()
@@ -31,14 +33,32 @@ def source_labels(work_dir: Path, start_entry: int) -> list[tuple[int, str]]:
         if not isinstance(label, str) or len(label) != 1:
             raise ValueError(f"第 {index} 条没有可用单字头")
         labels.append((index, label))
+        if limit is not None and len(labels) >= limit:
+            break
     return labels
+
+
+def last_annotated_page(work_dir: Path) -> int:
+    """返回有 chars.json 的最后一页，顺排永远必须覆盖到这里。"""
+    pages = []
+    for path in (work_dir / ".debug").glob("fatie-*/chars.json"):
+        try:
+            pages.append(int(path.parent.name.removeprefix("fatie-")))
+        except ValueError:
+            continue
+    if not pages:
+        raise ValueError("未找到任何 chars.json")
+    return max(pages)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("work_dir", type=Path)
     parser.add_argument("--start-page", type=int, required=True)
-    parser.add_argument("--end-page", type=int, required=True)
+    parser.add_argument(
+        "--end-page", type=int,
+        help="仅用于校验；必须等于最后有框页。省略时自动取最后页。",
+    )
     parser.add_argument("--start-entry", type=int, required=True)
     parser.add_argument(
         "--allow-tail-blanks",
@@ -48,7 +68,15 @@ def main() -> None:
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
 
-    labels = source_labels(args.work_dir, args.start_entry)
+    last_page = last_annotated_page(args.work_dir)
+    if args.end_page is None:
+        args.end_page = last_page
+    if args.end_page != last_page:
+        raise ValueError(
+            f"顺排必须从第 {args.start_page:04d} 页持续到最后有框页 "
+            f"{last_page:04d}；不允许局部重排。"
+        )
+
     pages, slots = {}, []
     for page in range(args.start_page, args.end_page + 1):
         path = args.work_dir / ".debug" / f"fatie-{page:04d}" / "chars.json"
@@ -65,6 +93,7 @@ def main() -> None:
         for col, _ in sorted(groups.items(), key=lambda pair: centre(pair[1]), reverse=True):
             slots.append((page, col))
         pages[page] = [path, items]
+    labels = source_labels(args.work_dir, args.start_entry, len(slots))
     if len(labels) < len(slots) and not args.allow_tail_blanks:
         raise ValueError(f"纠正后释文仅 {len(labels)} 字，框有 {len(slots)} 列")
     assigned = labels[:len(slots)]

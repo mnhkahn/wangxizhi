@@ -39,8 +39,6 @@ def main() -> None:
     source_path = args.work_dir / "shidian-glosses.json"
     source = json.loads(source_path.read_text())["entries"]
     labels = [str(item.get("headword", "")).strip() for item in source]
-    if any(len(label) != 1 for label in labels):
-        raise ValueError("原始释文存在非单字字头，拒绝写入")
 
     cursor = args.start_source - 1
     assignments: list[dict] = []
@@ -60,6 +58,11 @@ def main() -> None:
             )
         for group in groups:
             label = labels[cursor]
+            if len(label) != 1:
+                raise ValueError(
+                    f"第 {cursor + 1} 条原始释文字头不是单字：{label!r}；"
+                    "未写入任何文件"
+                )
             for item in group:
                 item["char"] = label
             assignments.append(

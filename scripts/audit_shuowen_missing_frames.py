@@ -85,11 +85,13 @@ def main() -> None:
     parser.add_argument("--start-page", type=int, required=True)
     parser.add_argument("--end-page", type=int, required=True)
     parser.add_argument("--limit", type=int, default=50)
+    parser.add_argument("--output", type=Path, help="同时把完整 JSON 审计报告写到此路径")
     args = parser.parse_args()
 
     extra_columns: list[dict] = []
     missing_columns: list[dict] = []
     missing_rows: list[dict] = []
+    extra_rows: list[dict] = []
     page_summary: list[dict] = []
 
     for page in range(args.start_page, args.end_page + 1):
@@ -158,17 +160,25 @@ def main() -> None:
                 })
 
         # 少列：空槽内必须有至少两组大字，并且大多落在同页共同基线。
+        # 当整页 ``chars.json`` 为空时，旧逻辑的共同基线也为空，因而会把
+        # 明明整页有篆字的 0184 页当成“无可审计数据”。此时以同一固定版格
+        # 内的多个、尺寸一致的大字段为直接证据，强制报出候选。
         for slot, slot_runs in runs.items():
             if slot in occupied or len(slot_runs) < 2:
                 continue
-            if matches[slot] < 0.70 or scores[slot] < 0.68:
+            empty_page_evidence = not columns and scores[slot] >= 0.48
+            baseline_evidence = matches[slot] >= 0.65 and scores[slot] >= 0.68
+            if not empty_page_evidence and not baseline_evidence:
                 continue
             missing_columns.append({
                 "kind": "missing_column", "page": page, "grid_column": slot,
                 "confidence": round(min(0.99, 0.50 + scores[slot] / 2), 2),
                 "run_count": len(slot_runs),
                 "row_match": round(matches[slot], 2),
-                "evidence": "空槽含成组大字墨迹，且与同页共同基线匹配",
+                "evidence": (
+                    "整页无框但固定槽内有成组大字墨迹"
+                    if empty_page_evidence else "空槽含成组大字墨迹，且与同页共同基线匹配"
+                ),
             })
 
         # 少框：已有篆书列少了一个同页共同基线行。
@@ -188,6 +198,25 @@ def main() -> None:
                         "evidence": "已有篆书列漏掉一条共同基线上的大字",
                     })
 
+        # 多框行：排除已判为整列误框的列后，若一个框行附近完全没有
+        # 对应的大字墨迹，则它是孤立的多框候选。不能只因为高度异常就删。
+        extra_stored = {item["stored_column"] for item in extra_columns if item["page"] == page}
+        for stored, group in columns.items():
+            if stored in extra_stored:
+                continue
+            slot = nearest_grid(group, centers)
+            if slot is None or len(runs[slot]) < 2:
+                continue
+            for item in group:
+                center = (item["bbox"][1] + item["bbox"][3]) / 2
+                if any(abs(center - (start + end) / 2) < 85 for start, end in runs[slot]):
+                    continue
+                extra_rows.append({
+                    "kind": "extra_row", "page": page, "stored_column": stored,
+                    "grid_column": slot, "y": round(center), "confidence": 0.82,
+                    "evidence": "已有框行附近没有对应的规范篆书大字墨迹",
+                })
+
         page_summary.append({
             "page": page,
             "physical_columns": len(columns),
@@ -200,14 +229,19 @@ def main() -> None:
         "extra_columns": extra_columns[:args.limit],
         "missing_columns": missing_columns[:args.limit],
         "missing_rows": missing_rows[:args.limit],
+        "extra_rows": extra_rows[:args.limit],
         "totals": {
             "extra_columns": len(extra_columns),
             "missing_columns": len(missing_columns),
             "missing_rows": len(missing_rows),
+            "extra_rows": len(extra_rows),
         },
         "pages": page_summary,
     }
-    print(json.dumps(report, ensure_ascii=False, indent=2))
+    rendered = json.dumps(report, ensure_ascii=False, indent=2)
+    if args.output:
+        args.output.write_text(rendered + "\n")
+    print(rendered)
 
 
 if __name__ == "__main__":
