@@ -13,6 +13,8 @@ Use this skill for the project’s `程德洽-篆书-说文广义*` work directo
 - Separate three operations: frame existence, frame geometry, and gloss labels. Never silently combine them.
 - Use downloaded Shidian glosses plus `shidian-gloss-resolutions.json` for labels. Do not OCR labels from the scan.
 - The label stream is **zero-filter**: every valid one-character Shidian headword, including an independent radical/component, consumes one physical column. The only entries skipped are explicit `{"kind": "continuation"}` rules in `shidian-gloss-resolutions.json`.
+- A physical column is one character slot: every frame in it must carry the **same single Unicode character**. Never concatenate repeated text, variants, or several source entries into one `char` field. Before and after any reflow, reject the write if a source item or a column label is not exactly one character; resolve it explicitly as a `headword` override or `continuation` rule first.
+- Two physically adjacent columns on the same page must never carry the same label. When found, treat the later (leftward in reading order) source entry as a duplicated/continued source slot: add an explicit continuation rule, rebuild the source, and reflow from the earliest affected column through the volume end. Do not delete frames for this label-only repair.
 - Do not change `bbox`, `row`, or `column` while only repairing `char` values.
 - Before modifying, report candidates and wait for the user to confirm, unless they explicitly tell you to apply a specified repair.
 - Back up `chars.json` before every write. Existing project scripts do this; preserve that behavior in new scripts.
@@ -110,6 +112,8 @@ For a page whose boxes are correct columns but poor positions, use a fixed share
 ## Final validation checklist
 
 - Every frame column has exactly one label.
+- Every frame column's non-empty labels form a singleton set, and that label has exactly one character.
+- No adjacent physical columns on a page have the same label.
 - No frame column is empty unless an unavoidable missing source label is explicitly recorded.
 - No confirmed gloss slot retains seal frames.
 - Every accepted missing-column candidate has visible large-glyph evidence.

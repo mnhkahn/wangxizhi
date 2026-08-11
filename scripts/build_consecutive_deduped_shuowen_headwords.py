@@ -42,8 +42,19 @@ def main() -> None:
     for index, entry in enumerate(entries, 1):
         raw_char = str(entry.get("headword", "")).strip()
         char = overrides.get(index, raw_char)
+        # 续文不一定和上一条同字头：版面标题、跨页尾注也可能被解析成独立
+        # 字符串。显式校勘规则优先于一切重复字头判断，绝不让它占用字槽。
+        if index in continuation_entries:
+            removed.append({"source_entry": index, "char": char})
+            continue
+        if len(char) != 1:
+            raise ValueError(
+                f"第 {index} 条字头 {char!r} 不是单字；"
+                "请在 shidian-consecutive-dedup-exceptions.json 写单字 headword_overrides，"
+                "或明确登记为 continuation_source_entries，拒绝将多字写入同一物理列。"
+            )
         if raw_char == previous and index not in preserved_entries and index not in overrides:
-            if index not in continuation_entries and looks_like_independent_entry(entries[index - 2], entry):
+            if looks_like_independent_entry(entries[index - 2], entry):
                 # 保留槽位，避免错误去重让后面的每个字错位；但字头本身仍需校勘。
                 kept.append({
                     "source_entry": index,

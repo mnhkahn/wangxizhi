@@ -53,7 +53,8 @@ def main() -> None:
     parser.add_argument("work_dir", type=Path)
     parser.add_argument("--start-page", type=int, required=True)
     parser.add_argument("--start-column", type=int, required=True)
-    parser.add_argument("--anchor-char", required=True)
+    parser.add_argument("--anchor-char")
+    parser.add_argument("--anchor-source-entry", type=int, help="同字头重复时，以原始释文条目号精确定位")
     parser.add_argument(
         "--preserve-tail",
         action="store_true",
@@ -61,17 +62,31 @@ def main() -> None:
     )
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
-    if len(args.anchor_char) != 1:
+    if bool(args.anchor_char) == bool(args.anchor_source_entry):
+        raise ValueError("--anchor-char 与 --anchor-source-entry 必须且只能指定一个")
+    if args.anchor_char and len(args.anchor_char) != 1:
         raise ValueError("--anchor-char 必须为一个字")
 
     end_page = last_annotated_page(args.work_dir)
     source_path = args.work_dir / "shidian-headwords-consecutive-deduped.json"
     source = json.loads(source_path.read_text())
     labels = source["headwords"]
-    candidates = [i for i, item in enumerate(labels) if item["char"] == args.anchor_char]
+    invalid_labels = [item for item in labels if len(str(item.get("char", ""))) != 1]
+    if invalid_labels:
+        detail = "、".join(
+            f"第 {item.get('source_entry')} 条={item.get('char')!r}" for item in invalid_labels[:8]
+        )
+        raise ValueError(f"去重释文表含多字或空字条目（{detail}）；拒绝顺排。")
+    candidates = (
+        [i for i, item in enumerate(labels) if item["source_entry"] == args.anchor_source_entry]
+        if args.anchor_source_entry
+        else [i for i, item in enumerate(labels) if item["char"] == args.anchor_char]
+    )
     if len(candidates) != 1:
-        raise ValueError(f"锚点字 {args.anchor_char!r} 在去重表中出现 {len(candidates)} 次，无法唯一定位")
+        value = args.anchor_source_entry if args.anchor_source_entry else args.anchor_char
+        raise ValueError(f"锚点 {value!r} 在去重表中出现 {len(candidates)} 次，无法唯一定位")
     source_index = candidates[0]
+    anchor_char = labels[source_index]["char"]
     slots, pages = physical_slots(args.work_dir, args.start_page, end_page)
     try:
         anchor_slot = slots.index((args.start_page, args.start_column))
@@ -95,7 +110,7 @@ def main() -> None:
     shortfall = max(0, len(slots) - available)
     if shortfall and not args.preserve_tail:
         raise ValueError(
-            f"去重释文从第 {source_index + 1} 字“{args.anchor_char}”起仅余 {available} 字，"
+            f"去重释文从第 {source_index + 1} 字“{anchor_char}”起仅余 {available} 字，"
             f"而第 {args.start_page:04d} 页至第 {end_page:04d} 页共有 {len(slots)} 物理列；"
             f"末尾差 {shortfall} 字。需要继续写入已知部分时，请加 --preserve-tail。"
         )
@@ -126,7 +141,7 @@ def main() -> None:
     audit = {
         "mode": "consecutive_deduped_headwords",
         "source": str(source_path),
-        "anchor": {"page": args.start_page, "column": args.start_column, "char": args.anchor_char},
+        "anchor": {"page": args.start_page, "column": args.start_column, "char": anchor_char, "source_entry": args.anchor_source_entry},
         "start_deduped_index": source_index + 1,
         "end_page": end_page,
         "slots": len(slots),
@@ -143,6 +158,25 @@ def main() -> None:
         for item in items:
             if item.get("column", item.get("col")) == assignment["column"]:
                 item["char"] = assignment["char"]
+    for page, column in slots:
+        _, items = pages[page]
+        values = {str(item.get("char", "")) for item in items if item.get("column", item.get("col")) == column}
+        if len(values) != 1 or len(next(iter(values))) != 1:
+            raise ValueError(f"第 {page:04d} 页 col={column} 未收敛为唯一单字，拒绝写入")
+    by_page: dict[int, list[tuple[float, int, str]]] = {}
+    for page, column in slots:
+        _, items = pages[page]
+        group = [item for item in items if item.get("column", item.get("col")) == column]
+        center = sum((item["bbox"][0] + item["bbox"][2]) / 2 for item in group) / len(group)
+        by_page.setdefault(page, []).append((center, column, str(group[0]["char"])))
+    for page, groups in by_page.items():
+        ordered = sorted(groups, reverse=True)
+        for (_, right_column, right_char), (_, left_column, left_char) in zip(ordered, ordered[1:]):
+            if right_char == left_char:
+                raise ValueError(
+                    f"第 {page:04d} 页相邻 col={right_column}/col={left_column} 同为 {right_char!r}；"
+                    "请将后一个源条目登记为 continuation 后再顺排"
+                )
     stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     for path, items in pages.values():
         backup = path.parent / "backups"

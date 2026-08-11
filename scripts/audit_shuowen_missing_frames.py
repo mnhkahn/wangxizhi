@@ -68,6 +68,18 @@ def row_match(runs: list[tuple[int, int]], rows: list[float]) -> float:
     return sum(any(abs(center - row) < 85 for row in rows) for center in centers) / len(centers)
 
 
+def baseline_coverage(runs: list[tuple[int, int]], rows: list[float]) -> float:
+    """返回已有共同基线中，被候选槽大字覆盖的比例。
+
+    不能只用 ``row_match``：候选列可能比同页其他列多出下半页的字，
+    此时按候选行数作分母会把完全覆盖既有基线的真实缺列误降为低置信。
+    """
+    if not runs or not rows:
+        return 0.0
+    centers = [(start + end) / 2 for start, end in runs]
+    return sum(any(abs(center - row) < 85 for center in centers) for row in rows) / len(rows)
+
+
 def slot_score(runs: list[tuple[int, int]], match: float) -> float:
     """大字证据分；五行上下的规则篆书列得分最高。"""
     if len(runs) < 2:
@@ -122,6 +134,7 @@ def main() -> None:
         }
         rows = baseline(occupied, runs)
         matches = {slot: row_match(slot_runs, rows) for slot, slot_runs in runs.items()}
+        coverage = {slot: baseline_coverage(slot_runs, rows) for slot, slot_runs in runs.items()}
         scores = {slot: slot_score(slot_runs, matches[slot]) for slot, slot_runs in runs.items()}
 
         # 多列：两组不同 column 的框占据同一物理版格，保留框数较多的一组，
@@ -167,7 +180,7 @@ def main() -> None:
             if slot in occupied or len(slot_runs) < 2:
                 continue
             empty_page_evidence = not columns and scores[slot] >= 0.48
-            baseline_evidence = matches[slot] >= 0.65 and scores[slot] >= 0.68
+            baseline_evidence = max(matches[slot], coverage[slot]) >= 0.65 and scores[slot] >= 0.68
             if not empty_page_evidence and not baseline_evidence:
                 continue
             missing_columns.append({
@@ -175,6 +188,7 @@ def main() -> None:
                 "confidence": round(min(0.99, 0.50 + scores[slot] / 2), 2),
                 "run_count": len(slot_runs),
                 "row_match": round(matches[slot], 2),
+                "baseline_coverage": round(coverage[slot], 2),
                 "evidence": (
                     "整页无框但固定槽内有成组大字墨迹"
                     if empty_page_evidence else "空槽含成组大字墨迹，且与同页共同基线匹配"
