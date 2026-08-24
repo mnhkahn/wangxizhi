@@ -27,13 +27,34 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("work_dir", type=Path)
     parser.add_argument("page", type=int)
-    parser.add_argument("--columns", required=True, help="从页面左侧网格数的列号，如 2,4,6,8")
-    parser.add_argument("--row-centers", required=True, help="统一行中心，如 465,641,818")
+    parser.add_argument("--columns", help="从页面左侧网格数的列号，如 2,4,6,8")
+    parser.add_argument("--row-centers", help="统一行中心，如 465,641,818")
+    parser.add_argument(
+        "--column-rows",
+        help="按列指定真实行中心，例如 '1:520,700;3:510,690,870'；用于各列字数不等的页。",
+    )
+    parser.add_argument(
+        "--x-overrides",
+        help="指定列的框左边界，例如 '2:170'；用于版线检测偏移的页。",
+    )
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
 
-    columns = [int(value) for value in args.columns.split(",")]
-    rows = [int(value) for value in args.row_centers.split(",")]
+    if bool(args.column_rows) == bool(args.columns or args.row_centers):
+        raise ValueError("请使用 --column-rows，或同时提供 --columns 与 --row-centers")
+    if args.column_rows:
+        layout = {
+            int(partition.split(":", 1)[0]): [int(value) for value in partition.split(":", 1)[1].split(",")]
+            for partition in args.column_rows.split(";")
+        }
+    else:
+        columns = [int(value) for value in args.columns.split(",")]
+        rows = [int(value) for value in args.row_centers.split(",")]
+        layout = {column: rows for column in columns}
+    x_overrides = ({
+        int(partition.split(":", 1)[0]): int(partition.split(":", 1)[1])
+        for partition in args.x_overrides.split(",")
+    } if args.x_overrides else {})
     image_path = args.work_dir / f"fatie-{args.page:04d}.webp"
     chars_path = args.work_dir / ".debug" / image_path.stem / "chars.json"
     image = cv2.imread(str(image_path))
@@ -48,15 +69,15 @@ def main() -> None:
     labels = {column: values[0].get("char", "") for column, values in old_groups.items()}
     lines = grid_lines(cv2.cvtColor(image, cv2.COLOR_BGR2GRAY))
     rebuilt: list[dict] = []
-    for column in columns:
+    for column, column_rows in layout.items():
         if column >= len(lines) - 1:
             raise ValueError(f"网格列 {column} 超出页面范围")
         left, right = lines[column], lines[column + 1]
         width = min(104, right - left - 20)
-        x1 = int(round((left + right - width) / 2))
+        x1 = x_overrides.get(column, int(round((left + right - width) / 2)))
         x2 = x1 + width
         label = labels.get(column, "")
-        for row, center in enumerate(rows):
+        for row, center in enumerate(column_rows):
             identifier = uuid.uuid4().hex
             rebuilt.append({
                 "id": identifier, "uuid": identifier, "char": label, "font": "篆书",
@@ -70,7 +91,7 @@ def main() -> None:
         cv2.rectangle(preview, (x1, y1), (x2, y2), (0, 220, 0), 4)
     preview_path = chars_path.parent / "fixed-grid-preview.jpg"
     cv2.imwrite(str(preview_path), preview)
-    print(f"预览：{preview_path}；{len(columns)} 列 × {len(rows)} 行 = {len(rebuilt)} 框")
+    print(f"预览：{preview_path}；{len(layout)} 列、共 {len(rebuilt)} 框")
     if not args.apply:
         return
     backup = chars_path.parent / "backups"

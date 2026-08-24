@@ -367,9 +367,10 @@ def propose(
         # 墨迹段，不能把它算作篆字；只接受正常单字高度，并要求同列至少
         # 出现两个，以区别偶发污点和释文连片。
         runs = [run for run in run_map[column] if run[1] - run[0] <= 220]
-        # 密排释文偶尔会被切成若干约 75px 的短段；篆字主体通常更高。
-        # 中位高度 84px 能滤掉 0188 的释文列，同时保留 0017 等较小篆字。
-        if len(runs) < 2 or float(np.median([y2 - y1 for y1, y2 in runs])) < 84:
+        # 部分缩放页的完整篆字有效墨迹段约为 78px（0023 的 c5/c9）。
+        # 这里仅在显式指定版格列，或已有可信种子时使用；因此 70px 下限
+        # 仍不会仅凭小释文短段盲目新增整列。
+        if len(runs) < 2 or float(np.median([y2 - y1 for y1, y2 in runs])) < 70:
             continue
         box_width = min(104, right - left - 20)
         x1 = max(0, int(round(center - box_width / 2)))

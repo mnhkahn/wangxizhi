@@ -61,6 +61,7 @@ def main():
     parser.add_argument("--column", type=int, help="目标列（insert/remove 必填）")
     parser.add_argument("--insert", help="插入的单字；后续全部后移")
     parser.add_argument("--remove", action="store_true", help="删除目标槽位字；后续全部前移")
+    parser.add_argument("--remove-label", help="删除范围内所有等于此单字的标签；后续全部前移")
     parser.add_argument("--tail-label", help="删除时补回末尾字，适用于撤销一次已暂存溢出的插入")
     parser.add_argument("--dedupe-page-duplicates", action="store_true",
                         help="删除同页中较后的重复字；后续全部跨页前移")
@@ -73,21 +74,31 @@ def main():
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
 
-    actions = int(args.insert is not None) + int(args.remove) + int(args.dedupe_page_duplicates)
+    actions = int(args.insert is not None) + int(args.remove) + int(args.remove_label is not None) + int(args.dedupe_page_duplicates)
     if actions != 1:
-        raise ValueError("--insert、--remove、--dedupe-page-duplicates 必须三选一")
+        raise ValueError("--insert、--remove、--remove-label、--dedupe-page-duplicates 必须四选一")
     if args.insert is not None and len(args.insert) != 1:
         raise ValueError("--insert 必须为单字")
+    if args.remove_label is not None and len(args.remove_label) != 1:
+        raise ValueError("--remove-label 必须为单字")
     if args.tail_label is not None and (not args.remove or len(args.tail_label) != 1):
         raise ValueError("--tail-label 只能与 --remove 一起使用，且必须为单字")
-    if not args.dedupe_page_duplicates and (args.page is None or args.column is None):
+    if not (args.dedupe_page_duplicates or args.remove_label is not None) and (args.page is None or args.column is None):
         raise ValueError("insert/remove 必须指定 --page 和 --column")
 
     stream, pages = read_stream(args.work_dir, args.start_page, args.end_page)
     original = [slot["char"] for slot in stream]
     removed = []
     overflow = ""
-    if args.dedupe_page_duplicates:
+    if args.remove_label is not None:
+        removed = [{**slot, "slot_index": index} for index, slot in enumerate(stream) if slot["char"] == args.remove_label]
+        if not removed:
+            raise ValueError(f"范围内没有标签「{args.remove_label}」")
+        cut = {item["slot_index"] for item in removed}
+        labels = [char for index, char in enumerate(original) if index not in cut]
+        labels += [""] * len(cut)
+        operation = "remove_label"
+    elif args.dedupe_page_duplicates:
         # 前移后，下一页可能又带入一个同页重复字；因此必须反复扫描，
         # 直到整条列流稳定，而不是只处理第一批重复。
         labels = original

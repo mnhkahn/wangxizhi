@@ -40,7 +40,10 @@ def seal_runs(gray: np.ndarray, left: int, right: int) -> list[tuple[int, int]]:
     return [
         (start, end)
         for start, end in active_runs(gray, left, right)
-        if 84 <= end - start <= 220
+        # 部分页面缩放后，完整篆字的有效墨迹段只有约 78px；此前 84px
+        # 的下限会漏掉整列（如 0023 页的中间列）。后续仍须经过固定
+        # 版格断档和共同基线校验，不能仅凭这个尺寸阈值接受候选。
+        if 70 <= end - start <= 220
     ]
 
 
@@ -181,7 +184,16 @@ def main() -> None:
                 continue
             empty_page_evidence = not columns and scores[slot] >= 0.48
             baseline_evidence = max(matches[slot], coverage[slot]) >= 0.65 and scores[slot] >= 0.68
-            if not empty_page_evidence and not baseline_evidence:
+            # 页边短列可能只保留两字，覆盖不了整页多数共同基线；若它正好
+            # 位于最外版格、内侧隔一格就是同奇偶的已确认篆书列，并且两字
+            # 都贴共同基线，仍是强的少列证据（0023 c9）。
+            edge_evidence = (
+                slot in {0, len(runs) - 1}
+                and (slot + 2 in occupied or slot - 2 in occupied)
+                and matches[slot] >= 0.80
+                and scores[slot] >= 0.62
+            )
+            if not empty_page_evidence and not baseline_evidence and not edge_evidence:
                 continue
             missing_columns.append({
                 "kind": "missing_column", "page": page, "grid_column": slot,
@@ -191,7 +203,10 @@ def main() -> None:
                 "baseline_coverage": round(coverage[slot], 2),
                 "evidence": (
                     "整页无框但固定槽内有成组大字墨迹"
-                    if empty_page_evidence else "空槽含成组大字墨迹，且与同页共同基线匹配"
+                    if empty_page_evidence else (
+                        "页边空槽含两字以上大字墨迹，且紧邻同版格篆书列"
+                        if edge_evidence else "空槽含成组大字墨迹，且与同页共同基线匹配"
+                    )
                 ),
             })
 
