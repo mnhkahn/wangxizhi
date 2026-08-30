@@ -59,6 +59,11 @@ Set `WORK_DIR` to the chosen volume directory. These scripts are in the project 
 python3 scripts/audit_shuowen_missing_frames.py "$WORK_DIR" \
   --start-page START --end-page END --output frame-audit.json
 
+# Inspect geometric frame overlaps only; no writes.  It catches cases where
+# two stored columns occupy the same physical seal slot.
+python3 scripts/audit_shuowen_overlapping_frames.py "$WORK_DIR" \
+  --start-page START --end-page END --output overlap-audit.json
+
 # After the user confirms the high-confidence whole-column candidates, apply only
 # those additions/deletions. It never changes labels or any row-level frames.
 python3 scripts/apply_shuowen_frame_audit.py "$WORK_DIR" frame-audit.json --apply

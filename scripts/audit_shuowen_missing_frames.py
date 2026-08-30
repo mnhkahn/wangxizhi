@@ -187,7 +187,10 @@ def main() -> None:
             # 基线（0058 曾因此漏报）。此时仍要求该空槽至少有两组、
             # 尺寸符合篆字的墨迹段，并采用较高分数阈值；不能仅因页面
             # 列数少就推断缺列。
-            sparse_page_evidence = len(columns) <= 2 and scores[slot] >= 0.68
+            # 仅剩一列时，若该页每列恰好只有三字，count_score 只能达到
+            # 0.75；原 0.68 门槛会漏掉像 0025 这样的规则三字短列。
+            # 0.60 仍要求至少两段、且段高接近篆字，不能仅凭空版格补列。
+            sparse_page_evidence = len(columns) <= 2 and scores[slot] >= 0.60
             baseline_evidence = max(matches[slot], coverage[slot]) >= 0.65 and scores[slot] >= 0.68
             # 页边短列可能只保留两字，覆盖不了整页多数共同基线；若它正好
             # 位于最外版格、内侧隔一格就是同奇偶的已确认篆书列，并且两字
