@@ -183,6 +183,11 @@ def main() -> None:
             if slot in occupied or len(slot_runs) < 2:
                 continue
             empty_page_evidence = not columns and scores[slot] >= 0.48
+            # 极端漏框页可能只残留一两列，无法从足够的既有框推导共同
+            # 基线（0058 曾因此漏报）。此时仍要求该空槽至少有两组、
+            # 尺寸符合篆字的墨迹段，并采用较高分数阈值；不能仅因页面
+            # 列数少就推断缺列。
+            sparse_page_evidence = len(columns) <= 2 and scores[slot] >= 0.68
             baseline_evidence = max(matches[slot], coverage[slot]) >= 0.65 and scores[slot] >= 0.68
             # 页边短列可能只保留两字，覆盖不了整页多数共同基线；若它正好
             # 位于最外版格、内侧隔一格就是同奇偶的已确认篆书列，并且两字
@@ -193,7 +198,7 @@ def main() -> None:
                 and matches[slot] >= 0.80
                 and scores[slot] >= 0.62
             )
-            if not empty_page_evidence and not baseline_evidence and not edge_evidence:
+            if not empty_page_evidence and not sparse_page_evidence and not baseline_evidence and not edge_evidence:
                 continue
             missing_columns.append({
                 "kind": "missing_column", "page": page, "grid_column": slot,
@@ -204,8 +209,11 @@ def main() -> None:
                 "evidence": (
                     "整页无框但固定槽内有成组大字墨迹"
                     if empty_page_evidence else (
+                        "页面仅剩一两列框，空槽仍有成组篆书大字墨迹"
+                        if sparse_page_evidence else (
                         "页边空槽含两字以上大字墨迹，且紧邻同版格篆书列"
                         if edge_evidence else "空槽含成组大字墨迹，且与同页共同基线匹配"
+                        )
                     )
                 ),
             })
