@@ -1536,6 +1536,7 @@ class MainWindow(QMainWindow):
 
         # 属性面板信号
         self.property_panel.char_changed.connect(self._on_property_char_changed)
+        self.property_panel.batch_char_changed.connect(self._on_property_batch_char_changed)
         self.property_panel.bbox_changed.connect(self._on_property_bbox_changed)
         self.property_panel.font_changed.connect(self._on_property_font_changed)
         self.property_panel.author_changed.connect(self._on_property_author_changed)
@@ -2769,7 +2770,13 @@ class MainWindow(QMainWindow):
                 self._update_preview(item)
         elif item_id == -2:
             # 多选状态
-            self.property_panel.load_item(None)
+            selected_items = [
+                self.char_manager.get_item(bbox.item_id)
+                for bbox in self.image_canvas.selected_items
+            ]
+            self.property_panel.load_items(
+                [item for item in selected_items if item is not None]
+            )
             if hasattr(self, "char_preview"):
                 self.char_preview.clear()
         else:
@@ -2853,6 +2860,28 @@ class MainWindow(QMainWindow):
 
             self._update_preview(item)
             self.save_edits()
+
+    def _on_property_batch_char_changed(self, item_ids: list, char: str):
+        """把右侧面板输入的单字写入当前所有选框。"""
+        if len(char) != 1:
+            return
+
+        selected_ids = set(item_ids)
+        changed = 0
+        for item in self.char_manager.items:
+            if item.id not in selected_ids:
+                continue
+            item.char = char
+            self.char_list.update_item_char(item.id, char)
+            for bbox_item in self.image_canvas.bbox_items:
+                if bbox_item.item_id == item.id:
+                    bbox_item.update_char(char)
+                    break
+            changed += 1
+
+        if changed:
+            self.save_edits()
+            self.status_label.setText(f"已批量写入“{char}”到 {changed} 个选框")
 
     def _on_property_bbox_changed(
         self, item_id: int, x: float, y: float, w: float, h: float

@@ -2,7 +2,7 @@
 属性面板组件
 """
 
-from typing import Optional
+from typing import List, Optional
 from PyQt5.QtWidgets import (
     QWidget,
     QVBoxLayout,
@@ -24,6 +24,7 @@ class PropertyPanel(QWidget):
 
     # 信号：属性变化
     char_changed = pyqtSignal(int, str)  # item_id, char
+    batch_char_changed = pyqtSignal(list, str)  # item_ids, char
     bbox_changed = pyqtSignal(int, float, float, float, float)  # item_id, x, y, w, h
     font_changed = pyqtSignal(str)  # 字体（每张图）
     author_changed = pyqtSignal(str)  # 作者（每张图）
@@ -36,6 +37,7 @@ class PropertyPanel(QWidget):
         super().__init__(parent)
 
         self.current_item: Optional[CharItem] = None
+        self._batch_item_ids: List[int] = []
         self._updating = False  # 防止循环更新
 
         self._image_meta_enabled = False
@@ -209,6 +211,8 @@ class PropertyPanel(QWidget):
         """加载字符项"""
         self._updating = True
         self.current_item = item
+        self._batch_item_ids = []
+        self.char_edit.setPlaceholderText("")
 
         if item:
             self._set_item_enabled(True)
@@ -237,9 +241,34 @@ class PropertyPanel(QWidget):
 
         self._updating = False
 
+    def load_items(self, items: List[CharItem]):
+        """加载多选项，仅允许批量填写字符，避免误改坐标或行列。"""
+        self._updating = True
+        self.current_item = None
+        self._batch_item_ids = [item.id for item in items]
+
+        self._set_item_enabled(False)
+        self.char_edit.setEnabled(bool(self._batch_item_ids))
+        self.char_edit.clear()
+        count = len(self._batch_item_ids)
+        self.char_edit.setPlaceholderText(f"批量填入（{count} 个框）")
+        self.info_label.setText(f"已选中 {count} 个框：输入一个字后批量写入")
+        self.info_label.setStyleSheet("color: #1a73e8;")
+        self._updating = False
+
     def _on_char_changed(self, text: str):
         """字符变化"""
-        if self._updating or not self.current_item:
+        if self._updating:
+            return
+
+        # Python 的 len 按 Unicode 码点计数，扩展区汉字也会正确视为一个字。
+        # 空内容用于清空输入框；两个以上字符不批量落库，防止误粘贴说明文字。
+        if self._batch_item_ids:
+            if len(text) == 1:
+                self.batch_char_changed.emit(self._batch_item_ids.copy(), text)
+            return
+
+        if not self.current_item:
             return
 
         self.current_item.char = text
