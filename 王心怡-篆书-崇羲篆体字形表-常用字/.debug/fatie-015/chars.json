@@ -310,5 +310,61 @@
     "source_style_evidence": "《崇羲篆體》編者製作體例所列大徐本小篆與依小篆偏旁轉寫",
     "source_style_origin": "现代字形表",
     "split_method": "pixel_projection_and_raster_cell"
+  },
+  {
+    "char": "懶",
+    "source_label": "懶",
+    "author": "王心怡",
+    "work": "崇羲篆体字形表-常用字",
+    "bbox": [
+      1499,
+      1112,
+      1557,
+      1186
+    ],
+    "column": 1,
+    "row": 7,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=15",
+    "source_image_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=15",
+    "source_page": 15,
+    "source_position": "王心怡《崇羲篆体字形表》原刊第 15 页 1458 号，楷书栏「懶」，取相邻篆体栏。",
+    "source_note": "王心怡《崇羲篆体字形表》原刊第 15 页 1458 号，楷书栏「懶」，取相邻篆体栏。",
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "split_method": "pixel_projection_and_raster_cell",
+    "review_method": "printed",
+    "id": "04a9fc0ad7f55018b6886483165deadb",
+    "uuid": "04a9fc0ad7f55018b6886483165deadb",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-常用字",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "慚",
+    "source_label": "慚",
+    "author": "王心怡",
+    "work": "崇羲篆体字形表-常用字",
+    "bbox": [
+      557,
+      2593,
+      608,
+      2676
+    ],
+    "column": 3,
+    "row": 21,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=15",
+    "source_image_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=15",
+    "source_page": 15,
+    "source_position": "王心怡《崇羲篆体字形表》原刊第 15 页 1422 号，楷书栏「慚」，取相邻篆体栏。",
+    "source_note": "王心怡《崇羲篆体字形表》原刊第 15 页 1422 号，楷书栏「慚」，取相邻篆体栏。",
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "split_method": "pixel_projection_and_raster_cell",
+    "review_method": "printed",
+    "id": "ac2006bb523f55d0bcf2c0e15fb62191",
+    "uuid": "ac2006bb523f55d0bcf2c0e15fb62191",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-常用字",
+    "font": "篆书",
+    "visible": true
   }
 ]

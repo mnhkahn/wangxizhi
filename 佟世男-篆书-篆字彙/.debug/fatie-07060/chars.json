@@ -1,0 +1,28 @@
+[
+  {
+    "char": "窿",
+    "source_label": "窿",
+    "author": "佟世男",
+    "work": "篆字彙",
+    "bbox": [
+      555,
+      715,
+      639,
+      831
+    ],
+    "column": 11,
+    "row": 0,
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Harvard_drs_17372821_%E7%AF%86%E5%AD%97%E5%BD%99_v.7.pdf#page=60",
+    "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Harvard_drs_17372821_%E7%AF%86%E5%AD%97%E5%BD%99_v.7.pdf#page=60",
+    "source_page": "哈佛燕京藏多山堂康熙刻本，卷七午集，PDF 第60页左叶第4栏",
+    "source_index": "https://id.lib.harvard.edu/alma/990080454000203941/catalog",
+    "source_note": "原页楷字头为「窿」，右注「音隆」，左注「穹窿」。取字头正下方从穴、隆的原刊独立篆形。",
+    "split_method": "source_manual_visual_review",
+    "review_method": "reviewed",
+    "id": "0f7d452143715bed9c98ebc7c05b287e",
+    "uuid": "0f7d452143715bed9c98ebc7c05b287e",
+    "work_dir": "佟世男-篆书-篆字彙",
+    "font": "篆书",
+    "visible": true
+  }
+]

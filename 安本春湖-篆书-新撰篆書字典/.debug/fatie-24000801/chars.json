@@ -1,0 +1,32 @@
+[
+  {
+    "char": "藐",
+    "source_label": "藐",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      1423,
+      1035,
+      1505,
+      1163
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181893/canvas/10",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181893/R0000010/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181893/canvas/10",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00024/annotation/TE00024_0008_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/1181893/canvas/10，框 3083,2244,177,277",
+    "source_note": "CODH 著录原字「藐」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00024/characters/U+85D0/U+85D0_TE00024_0008_1_X3083_Y2244.jpg",
+    "template_score": 0.9767,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "c1a9457a560a5291ac3da8d61afded0d",
+    "uuid": "c1a9457a560a5291ac3da8d61afded0d",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "char": "稚",
+    "source_label": "稚",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      1030,
+      732,
+      1104,
+      842
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/49",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00049.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/49",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0449_1/C0001",
+    "source_position": "索引页 https://kokusho.nijl.ac.jp/biblio/200013970/canvas/49，框 2411,1714,172,257",
+    "source_note": "CODH 著录原字「稚」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00005/characters/U+7A1A/U+7A1A_TE00005_0449_1_X2411_Y1714.jpg",
+    "template_score": 0.9444,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "32468a25dcd2593887cae0a62cef5b91",
+    "uuid": "32468a25dcd2593887cae0a62cef5b91",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  }
+]

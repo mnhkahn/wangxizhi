@@ -1,0 +1,29 @@
+[
+  {
+    "char": "禅",
+    "source_label": "禪",
+    "author": "俞和",
+    "work": "篆隶千文",
+    "bbox": [
+      836,
+      1393,
+      981,
+      1587
+    ],
+    "column": 6,
+    "row": 4,
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000023PAA/full/full/0/default.jpg",
+    "source_page": "K2B000175N000000023PAA",
+    "source_context": "「禪主云亭」第1字",
+    "source_note": "臺北故宮《元俞和篆隸千文》冊第23幅，正文篆列第4列第5字，原帖釋「禪」。",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "split_method": "pixel_projection_reviewed",
+    "review_method": "ink",
+    "id": "b8e2ec7cbac05bfa85bcd1edb35e8e63",
+    "uuid": "b8e2ec7cbac05bfa85bcd1edb35e8e63",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "font": "篆书",
+    "visible": true
+  }
+]

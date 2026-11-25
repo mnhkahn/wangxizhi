@@ -1,0 +1,32 @@
+[
+  {
+    "char": "鋒",
+    "source_label": "鋒",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1777,
+      874,
+      1962,
+      1073
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00012/canvas/TE00012_0057_1",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00012/TE00012_0057_1.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00012/canvas/TE00012_0057_1",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00012/annotation/TE00012_0057_1/C3570",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00012/canvas/TE00012_0057_1，框 1945,0956,203,218",
+    "source_note": "CODH 著录原字「鋒」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00012/characters/U+92D2/U+92D2_TE00012_0057_1_X1945_Y0956.jpg",
+    "template_score": 0.9902,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "37a68d97eeca5f8db6f5a6c42be17e31",
+    "uuid": "37a68d97eeca5f8db6f5a6c42be17e31",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

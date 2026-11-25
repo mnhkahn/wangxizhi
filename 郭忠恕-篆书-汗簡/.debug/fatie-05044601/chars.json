@@ -1,0 +1,63 @@
+[
+  {
+    "id": "82d465b783a159bcb0fbadbb25689e32",
+    "uuid": "82d465b783a159bcb0fbadbb25689e32",
+    "char": "頽",
+    "font": "篆书",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "bbox": [
+      1395,
+      323,
+      1469,
+      423
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/59#xywh=3263,756,174,235",
+    "source_label": "頽",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0446_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00005/character.json",
+    "source_bbox": [
+      3263,
+      756,
+      3437,
+      991
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00005/characters/U+983D/U+983D_TE00005_0446_1_X3263_Y0756.jpg",
+    "template_score": 0.9377,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "羨",
+    "source_label": "羨",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      485,
+      333,
+      566,
+      457
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/59",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00059.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/59",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0446_1/C0001",
+    "source_position": "索引页 https://kokusho.nijl.ac.jp/biblio/200013970/canvas/59，框 1134,779,189,290",
+    "source_note": "CODH 著录原字「羨」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00005/characters/U+7FA8/U+7FA8_TE00005_0446_1_X1134_Y0779.jpg",
+    "template_score": 0.9081,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "cc272ce30229596dabffd3daa9062c55",
+    "uuid": "cc272ce30229596dabffd3daa9062c55",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  }
+]

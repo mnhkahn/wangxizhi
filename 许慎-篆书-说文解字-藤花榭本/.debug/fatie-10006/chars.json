@@ -140,5 +140,31 @@
     "source_style": "小篆",
     "source_style_evidence": "藤花榭本校勘条目类型为正篆",
     "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "垕",
+    "source_label": "厚",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "bbox": [
+      1121,
+      430,
+      1193,
+      531
+    ],
+    "column": 10,
+    "row": 0,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=3848",
+    "source_image_url": "https://seal.cmex.org.tw/ori/5d-6.jpg",
+    "source_page": "卷5下，頁6右，第2行",
+    "source_note": "藤花榭本原字下释「古文厚，从后土」。中文數位化技術推廣基金會標作厚的異體，编号03848；台灣教育部《異體字字典》A00460-008 將此古文楷定 垕，以「垕」入检索。范字從后土，顶部与口部折画形态可和《摭古遺文》对照。",
+    "source_index": "https://dict.variants.moe.edu.tw/dictView.jsp?ID=4993&la=1",
+    "split_method": "source_template_visual_review",
+    "review_method": "reviewed",
+    "id": "d6884632d7e35db4a2ed4803dcbfadf1",
+    "uuid": "d6884632d7e35db4a2ed4803dcbfadf1",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "font": "篆书",
+    "visible": true
   }
 ]

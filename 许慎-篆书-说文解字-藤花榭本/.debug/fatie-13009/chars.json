@@ -194,5 +194,34 @@
     "source_edition_type": "新附",
     "source_style_evidence": "藤花榭本校勘条目类型为新附",
     "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "稿",
+    "source_label": "稿",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "bbox": [
+      1868,
+      1210,
+      1933,
+      1318
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=5064",
+    "source_image_url": "https://seal.cmex.org.tw/ori/7u-9.jpg",
+    "source_page": "卷7上，頁8左，第3行。",
+    "source_position": "卷7上，頁8左，第3行。",
+    "source_style": "小篆",
+    "source_note": "藤花榭本《说文解字》校勘库标为 Zhengzhuan 正篆，今字「稿」。",
+    "split_method": "source_template+pixel_projection_check",
+    "template_score": 0.908,
+    "source_template": "https://seal.cmex.org.tw/glyph/5/05064.png",
+    "review_method": "indexed",
+    "id": "98cb4684f09450f4b15ba2bd7f3877bb",
+    "uuid": "98cb4684f09450f4b15ba2bd7f3877bb",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "font": "篆书",
+    "visible": true
   }
 ]

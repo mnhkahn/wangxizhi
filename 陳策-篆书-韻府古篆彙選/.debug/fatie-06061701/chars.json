@@ -1,0 +1,32 @@
+[
+  {
+    "char": "蜘",
+    "source_label": "蜘",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      982,
+      1164,
+      1078,
+      1278
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/25",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000025/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/25",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0617_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/2559689/canvas/25，框 2722,3227,267,315",
+    "source_note": "CODH 著录原字「蜘」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+8718/U+8718_TE00006_0617_1_X2722_Y3227.jpg",
+    "template_score": 0.982,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "18a9e7ac99c95e09a59c9293b096483c",
+    "uuid": "18a9e7ac99c95e09a59c9293b096483c",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

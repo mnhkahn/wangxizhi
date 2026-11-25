@@ -1,0 +1,32 @@
+[
+  {
+    "char": "靴",
+    "source_label": "靴",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      726,
+      3200,
+      934,
+      3446
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0071_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00011/TE00011_0071_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0071_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00011/annotation/TE00011_0071_2/C4768",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0071_2，框 0803,3539,230,272",
+    "source_note": "CODH 著录原字「靴」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00011/characters/U+9774/U+9774_TE00011_0071_2_X0803_Y3539.jpg",
+    "template_score": 0.9917,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "f9f606519f69586f891470a6b7203aca",
+    "uuid": "f9f606519f69586f891470a6b7203aca",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

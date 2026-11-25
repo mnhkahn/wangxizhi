@@ -568,5 +568,46 @@
     "source_style": "小篆",
     "source_style_evidence": "藤花榭本校勘条目类型为正篆",
     "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "serial": 8995,
+    "char": "捣",
+    "crop": "glyph/8/08995.png",
+    "loc": "卷12上，頁7右，第7行。",
+    "norm": "捣",
+    "bbox": [
+      741,
+      1394,
+      807,
+      1506
+    ],
+    "split_bbox": [
+      741.0,
+      1394.0,
+      807.0,
+      1506.0
+    ],
+    "score": 0.894,
+    "runner": 0.543,
+    "anchor": 0.29500000000000004,
+    "source_label": "擣",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "source_style": "小篆",
+    "source_edition_type": "正篆",
+    "column": 16,
+    "row": 1,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=8995",
+    "source_image_url": "https://seal.cmex.org.tw/ori/12u-7.jpg",
+    "source_page": "卷12上，頁7右，第7行。",
+    "source_note": "基金会校勘条目释「擣」，载《说文》手部正篆；「搗」同「擣」，现用简字「捣」作检索标签。",
+    "split_method": "source_template+pixel_projection_check",
+    "source_alias_url": "https://chardb.iis.sinica.edu.tw/char/12346",
+    "review_method": "reviewed",
+    "id": "266e7af5eee15c49a46e02b58d7aad3d",
+    "uuid": "266e7af5eee15c49a46e02b58d7aad3d",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "font": "篆书",
+    "visible": true
   }
 ]

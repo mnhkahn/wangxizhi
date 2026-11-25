@@ -1,0 +1,83 @@
+[
+  {
+    "char": "妇",
+    "source_label": "婦",
+    "author": "俞和",
+    "work": "篆隶千文",
+    "bbox": [
+      1296,
+      1577,
+      1530,
+      1820
+    ],
+    "column": 4,
+    "row": 5,
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000013PAA/full/full/0/default.jpg",
+    "source_page": "K2B000175N000000013PAA",
+    "source_context": "「夫唱婦隨」第3字",
+    "source_note": "臺北故宮《元俞和篆隸千文》冊第13幅，正文篆列第3列第6字，原帖釋「婦」。",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "split_method": "pixel_projection_reviewed",
+    "review_method": "ink",
+    "id": "c81bcc4729995ec78df0e22f29a9a72e",
+    "uuid": "c81bcc4729995ec78df0e22f29a9a72e",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "随",
+    "source_label": "隨",
+    "author": "俞和",
+    "work": "篆隶千文",
+    "bbox": [
+      1299,
+      1804,
+      1530,
+      2048
+    ],
+    "column": 4,
+    "row": 6,
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000013PAA/full/full/0/default.jpg",
+    "source_page": "K2B000175N000000013PAA",
+    "source_context": "「夫唱婦隨」第4字",
+    "source_note": "臺北故宮《元俞和篆隸千文》冊第13幅，正文篆列第3列第7字，原帖釋「隨」。",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "split_method": "pixel_projection_reviewed",
+    "review_method": "ink",
+    "id": "e4b06f5dbf8155759f4f8910f74ab3d2",
+    "uuid": "e4b06f5dbf8155759f4f8910f74ab3d2",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "训",
+    "source_label": "訓",
+    "author": "俞和",
+    "work": "篆隶千文",
+    "bbox": [
+      801,
+      1183,
+      997,
+      1350
+    ],
+    "column": 6,
+    "row": 3,
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000013PAA/full/full/0/default.jpg",
+    "source_page": "K2B000175N000000013PAA",
+    "source_context": "「外受傅訓」第4字",
+    "source_note": "臺北故宮《元俞和篆隸千文》冊第13幅，正文篆列第4列第4字，原帖釋「訓」。",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "split_method": "pixel_projection_reviewed",
+    "review_method": "ink",
+    "id": "9400ace974095003a88d31b5ed52a91b",
+    "uuid": "9400ace974095003a88d31b5ed52a91b",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "font": "篆书",
+    "visible": true
+  }
+]

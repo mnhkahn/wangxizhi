@@ -1,0 +1,62 @@
+[
+  {
+    "char": "查",
+    "source_label": "查",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1497,
+      895,
+      1660,
+      1131
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0080_1",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00009/TE00009_0080_1.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0080_1",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00009/annotation/TE00009_0080_1/C3829",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0080_1，框 1621,0969,176,256",
+    "source_note": "CODH 著录原字「查」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00009/characters/U+67E5/U+67E5_TE00009_0080_1_X1621_Y0969.jpg",
+    "template_score": 0.9935,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "a5ec87d5ec1959ef82161c243172d62f",
+    "uuid": "a5ec87d5ec1959ef82161c243172d62f",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "査",
+    "source_label": "查",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1789,
+      2349,
+      1996,
+      2560
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0080_1",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00009/TE00009_0080_1.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0080_1",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00009/annotation/TE00009_0080_1/C3832",
+    "source_position": "CODH 定位 https://codh.rois.ac.jp/tensho/book/TE00009/annotation/TE00009_0080_1/C3832",
+    "source_note": "《偏類六書通》原頁查欄另例，左木右且。查、査為異體，用原庫査檢索字。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00009/characters/U+67E5/U+67E5_TE00009_0080_1_X1937_Y2543.jpg",
+    "template_score": 0.9947,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "reviewed",
+    "id": "cdf32fc03ba25bdf8cedaa4132c4c7f2",
+    "uuid": "cdf32fc03ba25bdf8cedaa4132c4c7f2",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

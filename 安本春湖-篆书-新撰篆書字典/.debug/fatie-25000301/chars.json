@@ -1,0 +1,28 @@
+[
+  {
+    "char": "曜",
+    "source_label": "曜",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      830,
+      1849,
+      944,
+      1998
+    ],
+    "column": 21,
+    "row": 18,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B66DC/#TE00025",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181885/R0000005/full/3000,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181885/canvas/5",
+    "source_note": "《新撰篆書字典》卷二，「曜」篆例為左日、右翟，與《汗簡》所載寫法對照。 CODH 單字索引以原頁座標交叉核對。",
+    "split_method": "codh_index_visual_review",
+    "source_index": "https://codh.rois.ac.jp/tensho/unicode/U%2B66DC/#TE00025",
+    "review_method": "reviewed",
+    "id": "5128fb2286ed5741be6554b3a4deae7c",
+    "uuid": "5128fb2286ed5741be6554b3a4deae7c",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

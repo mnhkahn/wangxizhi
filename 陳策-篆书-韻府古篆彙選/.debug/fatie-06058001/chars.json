@@ -1,0 +1,32 @@
+[
+  {
+    "char": "芬",
+    "source_label": "芬",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      682,
+      1381,
+      772,
+      1497
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/51",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000051/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/51",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0580_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/2559689/canvas/51，框 1891,3827,249,321",
+    "source_note": "CODH 著录原字「芬」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+82AC/U+82AC_TE00006_0580_1_X1891_Y3827.jpg",
+    "template_score": 0.9945,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "baffd684783158f4b6688482d3a99a6b",
+    "uuid": "baffd684783158f4b6688482d3a99a6b",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

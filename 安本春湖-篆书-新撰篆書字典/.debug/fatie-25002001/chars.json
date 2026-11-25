@@ -1,0 +1,32 @@
+[
+  {
+    "char": "氈",
+    "source_label": "氈",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      677,
+      1499,
+      776,
+      1604
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181885/canvas/22",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181885/R0000022/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181885/canvas/22",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00025/annotation/TE00025_0020_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/1181885/canvas/22，框 1460,3230,214,227",
+    "source_note": "CODH 著录原字「氈」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00025/characters/U+6C08/U+6C08_TE00025_0020_1_X1460_Y3230.jpg",
+    "template_score": 0.9882,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "347f634e49e4560caad5ed63b1b8f1ad",
+    "uuid": "347f634e49e4560caad5ed63b1b8f1ad",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

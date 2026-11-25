@@ -1,0 +1,32 @@
+[
+  {
+    "char": "纏",
+    "source_label": "纏",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      713,
+      1147,
+      806,
+      1275
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/62",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000062/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/62",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0598_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/2559689/canvas/62，框 1976,3179,257,356",
+    "source_note": "CODH 著录原字「纏」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+7E8F/U+7E8F_TE00006_0598_1_X1976_Y3179.jpg",
+    "template_score": 0.9743,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "47ee1231270857c386bc2ae3fa57569d",
+    "uuid": "47ee1231270857c386bc2ae3fa57569d",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

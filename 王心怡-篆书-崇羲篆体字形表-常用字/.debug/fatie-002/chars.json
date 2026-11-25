@@ -180,5 +180,33 @@
     "source_style_evidence": "《崇羲篆體》編者製作體例所列大徐本小篆與依小篆偏旁轉寫",
     "source_style_origin": "现代字形表",
     "split_method": "pixel_projection_and_raster_cell"
+  },
+  {
+    "char": "值",
+    "source_label": "值",
+    "author": "王心怡",
+    "work": "崇羲篆体字形表-常用字",
+    "bbox": [
+      1971,
+      685,
+      2032,
+      763
+    ],
+    "column": 0,
+    "row": 3,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=2",
+    "source_image_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=2",
+    "source_page": 2,
+    "source_position": "王心怡《崇羲篆体字形表》原刊第 2 页 179 号，楷书栏「值」，取相邻篆体栏。",
+    "source_note": "王心怡《崇羲篆体字形表》原刊第 2 页 179 号，楷书栏「值」，取相邻篆体栏。",
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "split_method": "pixel_projection_and_raster_cell",
+    "review_method": "printed",
+    "id": "56b0d0f0d0485d3ea9db586af2c59ca5",
+    "uuid": "56b0d0f0d0485d3ea9db586af2c59ca5",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-常用字",
+    "font": "篆书",
+    "visible": true
   }
 ]

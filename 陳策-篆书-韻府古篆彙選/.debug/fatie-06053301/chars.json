@@ -1,0 +1,33 @@
+[
+  {
+    "i": 12,
+    "n": 6,
+    "char": "腼",
+    "source_label": "靦",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      1755,
+      1404,
+      1845,
+      1508
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B9766/#TE00006",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000130/full/2400,/0/default.jpg",
+    "source_page": "TE00006_0533_1",
+    "source_note": "原页同栏释「靦面見」，下文注明「上同」。该例以「腼」为检索标签，原书及 CODH 释字「靦」，对应腼（面见）。底本为篆书字谱，取横栏内黑字墨写范字。 全页配准 0.977。",
+    "split_method": "source_template_reviewed",
+    "score": 0.9765006899833679,
+    "source_credit": "国文学研究资料馆收集、CODH／DHII 整理《篆書字体データセット》，CC BY-SA 4.0，DOI 10.20676/00000390。",
+    "position": "TE00006_0533_1",
+    "source_context": "原页同栏释「靦面見」，下文注明「上同」",
+    "review_method": "reviewed",
+    "id": "3d8e1abf25915d27ba1575b9329d3463",
+    "uuid": "3d8e1abf25915d27ba1575b9329d3463",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

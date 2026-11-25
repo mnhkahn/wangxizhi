@@ -1,0 +1,62 @@
+[
+  {
+    "char": "啼",
+    "source_label": "啼",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1532,
+      1124,
+      1715,
+      1346
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0005_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00011/TE00011_0005_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0005_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00011/annotation/TE00011_0005_2/C0665",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0005_2，框 1699,1247,203,246",
+    "source_note": "CODH 著录原字「啼」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00011/characters/U+557C/U+557C_TE00011_0005_2_X1699_Y1247.jpg",
+    "template_score": 0.9942,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "3b605ad6295d5bbbb7ec10afc782f67d",
+    "uuid": "3b605ad6295d5bbbb7ec10afc782f67d",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "喉",
+    "source_label": "喉",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1254,
+      856,
+      1447,
+      1094
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0005_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00011/TE00011_0005_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0005_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00011/annotation/TE00011_0005_2/C0667",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0005_2，框 1391,0949,214,264",
+    "source_note": "CODH 著录原字「喉」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00011/characters/U+5589/U+5589_TE00011_0005_2_X1391_Y0949.jpg",
+    "template_score": 0.9971,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "77bfa19c8ecf59f0991249eb9bbf3b73",
+    "uuid": "77bfa19c8ecf59f0991249eb9bbf3b73",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "char": "晋",
+    "source_label": "晉",
+    "author": "俞和",
+    "work": "篆隶千文",
+    "bbox": [
+      2285,
+      667,
+      2490,
+      911
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000022PAA/full/full/0/default.jpg",
+    "source_page": "K2B000175N000000022PAA",
+    "source_context": "「晉楚更霸」第1字",
+    "source_note": "臺北故宮《元俞和篆隸千文》冊第22幅，正文篆列第1列第2字，原帖釋「晉」。",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "split_method": "pixel_projection_reviewed",
+    "review_method": "ink",
+    "id": "8f72814c8c995a89a9c0c73c5aa1aefd",
+    "uuid": "8f72814c8c995a89a9c0c73c5aa1aefd",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "font": "篆书",
+    "visible": true
+  }
+]

@@ -284,5 +284,33 @@
     "source_style_evidence": "《崇羲篆體》編者製作體例所列大徐本小篆與依小篆偏旁轉寫",
     "source_style_origin": "现代字形表",
     "split_method": "pixel_projection_and_raster_cell"
+  },
+  {
+    "char": "怔",
+    "source_label": "怔",
+    "author": "王心怡",
+    "work": "崇羲篆体字形表-常用字",
+    "bbox": [
+      554,
+      2493,
+      611,
+      2564
+    ],
+    "column": 3,
+    "row": 20,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=14",
+    "source_image_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=14",
+    "source_page": 14,
+    "source_position": "王心怡《崇羲篆体字形表》原刊第 14 页 1321 号，楷书栏「怔」，取相邻篆体栏。",
+    "source_note": "王心怡《崇羲篆体字形表》原刊第 14 页 1321 号，楷书栏「怔」，取相邻篆体栏。",
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "split_method": "pixel_projection_and_raster_cell",
+    "review_method": "printed",
+    "id": "077628e4480d565bb8a3748eef7895a8",
+    "uuid": "077628e4480d565bb8a3748eef7895a8",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-常用字",
+    "font": "篆书",
+    "visible": true
   }
 ]

@@ -1,0 +1,62 @@
+[
+  {
+    "char": "畎",
+    "source_label": "畎",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      1593,
+      954,
+      1664,
+      1027
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/87",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00087.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/87",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0474_1/C0001",
+    "source_position": "CODH 定位 https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0474_1/C0001",
+    "source_note": "CODH 著录原字「畎」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00005/characters/U+754E/U+754E_TE00005_0474_1_X3727_Y2232.jpg",
+    "template_score": 0.9057,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "c7521bde756c5301b8a176563e783931",
+    "uuid": "c7521bde756c5301b8a176563e783931",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "畕",
+    "source_label": "畕",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      1336,
+      568,
+      1377,
+      644
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/87",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00087.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/87",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0474_1/C0001",
+    "source_position": "CODH 定位 https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0474_1/C0001",
+    "source_note": "CODH 著录原字「畕」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00005/characters/U+7555/U+7555_TE00005_0474_1_X3126_Y1328.jpg",
+    "template_score": 0.9719,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "22bf046c4d14530da4ed7a4d179cbe0f",
+    "uuid": "22bf046c4d14530da4ed7a4d179cbe0f",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "char": "吳",
+    "source_label": "吴",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      382,
+      822,
+      545,
+      1066
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0012_1",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00009/TE00009_0012_1.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0012_1",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00009/annotation/TE00009_0012_1/C1401",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0012_1，框 0419,0902,179,268",
+    "source_note": "CODH 著录原字为「吴」，归入本库标签「吳」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00009/characters/U+5434/U+5434_TE00009_0012_1_X0419_Y0902.jpg",
+    "template_score": 0.9978,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "e11b8b7d438350e99faf5c4f282d4cb1",
+    "uuid": "e11b8b7d438350e99faf5c4f282d4cb1",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

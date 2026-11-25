@@ -1,0 +1,28 @@
+[
+  {
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "char": "槜",
+    "source_label": "檇",
+    "bbox": [
+      1673,
+      3191,
+      1869,
+      3465
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/pid/1181885/1/16",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181885/R0000016/full/full/0/default.jpg",
+    "source_page": "卷二，第16扫描页",
+    "source_index": "https://codh.rois.ac.jp/tensho/unicode/U%2B6A87/",
+    "source_note": "以「槜」为检索标签，原刊及 CODH 释作「檇」。另核《说文广义》卷十檇条引《春秋传》越败吴于檇李。",
+    "source_style": "篆书",
+    "split_method": "codh_template_reviewed",
+    "id": "93621eb0674d5d00b2ce9bb454f7c2a8",
+    "uuid": "93621eb0674d5d00b2ce9bb454f7c2a8",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

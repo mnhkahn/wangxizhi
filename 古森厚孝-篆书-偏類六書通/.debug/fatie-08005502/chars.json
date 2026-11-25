@@ -1,0 +1,32 @@
+[
+  {
+    "char": "屎",
+    "source_label": "屎",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1297,
+      520,
+      1480,
+      757
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00008/canvas/TE00008_0055_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00008/TE00008_0055_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00008/canvas/TE00008_0055_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00008/annotation/TE00008_0055_2/C2410",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00008/canvas/TE00008_0055_2，框 1418,0568,200,259",
+    "source_note": "CODH 著录原字「屎」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00008/characters/U+5C4E/U+5C4E_TE00008_0055_2_X1418_Y0568.jpg",
+    "template_score": 0.9919,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "d517a94ad74655d68938653971494929",
+    "uuid": "d517a94ad74655d68938653971494929",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

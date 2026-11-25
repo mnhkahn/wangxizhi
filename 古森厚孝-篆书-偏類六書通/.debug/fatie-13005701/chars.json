@@ -1,0 +1,32 @@
+[
+  {
+    "char": "鵡",
+    "source_label": "鵡",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1210,
+      1112,
+      1416,
+      1341
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00013/canvas/TE00013_0057_1",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00013/TE00013_0057_1.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00013/canvas/TE00013_0057_1",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00013/annotation/TE00013_0057_1/C3605",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00013/canvas/TE00013_0057_1，框 1347,1238,229,255",
+    "source_note": "CODH 著录原字「鵡」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00013/characters/U+9D61/U+9D61_TE00013_0057_1_X1347_Y1238.jpg",
+    "template_score": 0.9975,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "3d3e75129f905648877a273e9fa14a41",
+    "uuid": "3d3e75129f905648877a273e9fa14a41",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

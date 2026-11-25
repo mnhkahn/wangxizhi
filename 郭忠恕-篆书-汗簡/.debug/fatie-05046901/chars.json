@@ -1,0 +1,33 @@
+[
+  {
+    "i": 10,
+    "n": 5,
+    "char": "颻",
+    "source_label": "颻",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      1319,
+      847,
+      1398,
+      943
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B98BB/#TE00005",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00085.tif/full/2400,/0/default.jpg",
+    "source_page": "TE00005_0469_1",
+    "source_note": "原书小注在该字下标「颻出裴光遠集綴」。原篆部件作纵展曲线，与俞和原帖写法不同。 全页配准 0.921。",
+    "split_method": "source_template_reviewed",
+    "score": 0.9210911989212036,
+    "source_credit": "国文学研究资料馆收集、CODH／DHII 整理《篆書字体データセット》，CC BY-SA 4.0，DOI 10.20676/00000390。",
+    "position": "TE00005_0469_1",
+    "source_context": "原书小注在该字下标「颻出裴光遠集綴」",
+    "review_method": "reviewed",
+    "id": "dde2eb9039a1513e9770c1c1049ce824",
+    "uuid": "dde2eb9039a1513e9770c1c1049ce824",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  }
+]

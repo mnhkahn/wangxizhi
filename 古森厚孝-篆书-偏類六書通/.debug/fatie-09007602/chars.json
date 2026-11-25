@@ -1,0 +1,32 @@
+[
+  {
+    "char": "拯",
+    "source_label": "拯",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1021,
+      793,
+      1183,
+      1020
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0076_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00009/TE00009_0076_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0076_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00009/annotation/TE00009_0076_2/C3258",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0076_2，框 1099,0854,174,244",
+    "source_note": "CODH 著录原字「拯」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00009/characters/U+62EF/U+62EF_TE00009_0076_2_X1099_Y0854.jpg",
+    "template_score": 0.9963,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "6538fd9ecafd5f57a5328ab2f933a94b",
+    "uuid": "6538fd9ecafd5f57a5328ab2f933a94b",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

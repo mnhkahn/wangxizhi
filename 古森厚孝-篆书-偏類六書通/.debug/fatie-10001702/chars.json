@@ -1,0 +1,54 @@
+[
+  {
+    "char": "悚",
+    "source_label": "悚",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1734,
+      2085,
+      1924,
+      2362
+    ],
+    "column": 5,
+    "row": 12,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B609A/#TE00010",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00010/TE00010_0017_2.tif/full/3000,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0017_2",
+    "source_note": "《偏類六書通》悚欄所載「古文」，下為心，與左心的寫法有別。 CODH 單字索引以原頁座標交叉核對。",
+    "split_method": "codh_index_visual_review",
+    "source_index": "https://codh.rois.ac.jp/tensho/unicode/U%2B609A/#TE00010",
+    "review_method": "reviewed",
+    "id": "37abac224bab5d3182028e7e369e81f1",
+    "uuid": "37abac224bab5d3182028e7e369e81f1",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "悚",
+    "source_label": "悚",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1706,
+      2803,
+      1922,
+      3043
+    ],
+    "column": 5,
+    "row": 16,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B609A/#TE00010",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00010/TE00010_0017_2.tif/full/3000,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0017_2",
+    "source_note": "《偏類六書通》悚欄，左心右側形近朿、束；與該欄心部在下的篆形並存。 CODH 單字索引以原頁座標交叉核對。",
+    "split_method": "codh_index_visual_review",
+    "source_index": "https://codh.rois.ac.jp/tensho/unicode/U%2B609A/#TE00010",
+    "review_method": "reviewed",
+    "id": "1d299e292ba75c5280b6d4d24ca54cb3",
+    "uuid": "1d299e292ba75c5280b6d4d24ca54cb3",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

@@ -142,5 +142,32 @@
     "source_style": "小篆",
     "source_style_evidence": "藤花榭本校勘条目类型为正篆",
     "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "毋",
+    "source_label": "毋",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "bbox": [
+      1193,
+      413,
+      1261,
+      536
+    ],
+    "column": 10,
+    "row": 0,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=9367",
+    "source_image_url": "https://seal.cmex.org.tw/ori/12d-5.jpg",
+    "source_page": "卷12下，頁5右，第1行。",
+    "source_note": "藤花榭本校勘库Zhengzhuan 正篆，原字释毋，已与基金会公布单字图配准。",
+    "split_method": "source_template+pixel_projection_check",
+    "source_style": "小篆",
+    "source_edition_type": "正篆",
+    "review_method": "reviewed",
+    "id": "6eebdd41a7375a069133e29f00fdf983",
+    "uuid": "6eebdd41a7375a069133e29f00fdf983",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "font": "篆书",
+    "visible": true
   }
 ]

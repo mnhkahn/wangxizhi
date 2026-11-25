@@ -1,0 +1,32 @@
+[
+  {
+    "char": "肇",
+    "source_label": "肇",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      596,
+      538,
+      670,
+      637
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/77",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00077.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/77",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0443_1/C0001",
+    "source_position": "索引页 https://kokusho.nijl.ac.jp/biblio/200013970/canvas/77，框 1393,1260,174,232",
+    "source_note": "CODH 著录原字「肇」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00005/characters/U+8087/U+8087_TE00005_0443_1_X1393_Y1260.jpg",
+    "template_score": 0.9118,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "ef9f02a28bdb5f36906d33a809e3505e",
+    "uuid": "ef9f02a28bdb5f36906d33a809e3505e",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  }
+]

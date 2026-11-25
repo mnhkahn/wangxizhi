@@ -1,0 +1,32 @@
+[
+  {
+    "char": "臀",
+    "source_label": "臀",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      1725,
+      429,
+      1821,
+      542
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/53",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000053/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/53",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0583_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/2559689/canvas/53，框 4779,1189,265,313",
+    "source_note": "CODH 著录原字「臀」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+81C0/U+81C0_TE00006_0583_1_X4779_Y1189.jpg",
+    "template_score": 0.9634,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "741047fffb985036ad3f045f0c1024bd",
+    "uuid": "741047fffb985036ad3f045f0c1024bd",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

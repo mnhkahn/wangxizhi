@@ -1,0 +1,63 @@
+[
+  {
+    "id": "4a136af9a0ad5435afc79ffe98dff458",
+    "uuid": "4a136af9a0ad5435afc79ffe98dff458",
+    "char": "蝶",
+    "font": "篆书",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "bbox": [
+      1441,
+      435,
+      1525,
+      536
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559690/canvas/102#xywh=4094,1236,239,288",
+    "source_label": "蝶",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00007/annotation/TE00007_0742_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00007/character.json",
+    "source_bbox": [
+      4094,
+      1236,
+      4333,
+      1524
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00007/characters/U+8776/U+8776_TE00007_0742_1_X4094_Y1236.jpg",
+    "template_score": 0.9908,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "疊",
+    "source_label": "疊",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      1343,
+      427,
+      1424,
+      537
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559690/canvas/102",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559690/R0000102/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559690/canvas/102",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00007/annotation/TE00007_0742_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/2559690/canvas/102，框 3816,1213,230,313",
+    "source_note": "CODH 著录原字「疊」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00007/characters/U+758A/U+758A_TE00007_0742_1_X3816_Y1213.jpg",
+    "template_score": 0.9607,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "995998db170d5fd1b386e04b07d3717c",
+    "uuid": "995998db170d5fd1b386e04b07d3717c",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

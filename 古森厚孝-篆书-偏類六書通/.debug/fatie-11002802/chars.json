@@ -1,0 +1,32 @@
+[
+  {
+    "char": "腕",
+    "source_label": "腕",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1564,
+      2287,
+      1784,
+      2537
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0028_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00011/TE00011_0028_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0028_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00011/annotation/TE00011_0028_2/C3318",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0028_2，框 1700,2485,239,272",
+    "source_note": "CODH 著录原字「腕」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00011/characters/U+8155/U+8155_TE00011_0028_2_X1700_Y2485.jpg",
+    "template_score": 0.9918,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "7723e876bd595a0d8814dbcf7feb1549",
+    "uuid": "7723e876bd595a0d8814dbcf7feb1549",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

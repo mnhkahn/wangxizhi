@@ -1,0 +1,63 @@
+[
+  {
+    "id": "9fa4eff621145a3b9883c074897bb19c",
+    "uuid": "9fa4eff621145a3b9883c074897bb19c",
+    "char": "緞",
+    "font": "篆书",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "bbox": [
+      594,
+      1070,
+      682,
+      1187
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181885/canvas/75#xywh=1280,2307,190,251",
+    "source_label": "緞",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00025/annotation/TE00025_0073_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00025/character.json",
+    "source_bbox": [
+      1280,
+      2307,
+      1470,
+      2558
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00025/characters/U+7DDE/U+7DDE_TE00025_0073_1_X1280_Y2307.jpg",
+    "template_score": 0.9862,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "締",
+    "source_label": "締",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      814,
+      1072,
+      897,
+      1182
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181885/canvas/75",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181885/R0000075/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181885/canvas/75",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00025/annotation/TE00025_0073_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/1181885/canvas/75，框 1755,2311,179,238",
+    "source_note": "CODH 著录原字「締」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00025/characters/U+7DE0/U+7DE0_TE00025_0073_1_X1755_Y2311.jpg",
+    "template_score": 0.9881,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "b9263ae3e6345b2bab7447733de17e7f",
+    "uuid": "b9263ae3e6345b2bab7447733de17e7f",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

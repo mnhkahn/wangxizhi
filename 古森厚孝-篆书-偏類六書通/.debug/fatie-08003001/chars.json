@@ -1,0 +1,32 @@
+[
+  {
+    "char": "廼",
+    "source_label": "廼",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      954,
+      987,
+      1114,
+      1213
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00008/canvas/TE00008_0030_1",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00008/TE00008_0030_1.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00008/canvas/TE00008_0030_1",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00008/annotation/TE00008_0030_1/C2721",
+    "source_position": "CODH 定位 https://codh.rois.ac.jp/tensho/book/TE00008/annotation/TE00008_0030_1/C2721",
+    "source_note": "CODH 著录原字「廼」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00008/characters/U+5EFC/U+5EFC_TE00008_0030_1_X1038_Y1074.jpg",
+    "template_score": 0.9966,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "01c409ed495251e7989ce9c296871b2b",
+    "uuid": "01c409ed495251e7989ce9c296871b2b",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

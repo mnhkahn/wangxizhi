@@ -1,0 +1,56 @@
+[
+  {
+    "char": "玄",
+    "source_label": "玄",
+    "author": "俞和",
+    "work": "篆隶千文",
+    "bbox": [
+      871,
+      928,
+      997,
+      1103
+    ],
+    "column": 6,
+    "row": 2,
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000001PAA/full/full/0/default.jpg",
+    "source_page": "K2B000175N000000001PAA",
+    "source_context": "「天地玄黃」第3字",
+    "source_note": "臺北故宮《元俞和篆隸千文》冊第1幅，正文篆列第4列第3字，原帖釋「玄」。",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "split_method": "visual_position_reviewed",
+    "review_method": "ink",
+    "id": "464032da4ca458da9b12cba3294adec0",
+    "uuid": "464032da4ca458da9b12cba3294adec0",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "黄",
+    "source_label": "黃",
+    "author": "俞和",
+    "work": "篆隶千文",
+    "bbox": [
+      863,
+      1150,
+      1005,
+      1360
+    ],
+    "column": 6,
+    "row": 3,
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000001PAA/full/full/0/default.jpg",
+    "source_page": "K2B000175N000000001PAA",
+    "source_context": "「天地玄黃」第4字",
+    "source_note": "臺北故宮《元俞和篆隸千文》冊第1幅，正文篆列第4列第4字，原帖釋「黃」。",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "split_method": "pixel_projection_reviewed",
+    "review_method": "ink",
+    "id": "f4c34d8635355ba39dc1b73a7b5b7285",
+    "uuid": "f4c34d8635355ba39dc1b73a7b5b7285",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "font": "篆书",
+    "visible": true
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "char": "崐",
+    "source_label": "崐",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      348,
+      1843,
+      444,
+      1990
+    ],
+    "column": 25,
+    "row": 18,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B5D10/#TE00026",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181876/R0000059/full/3000,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181876/canvas/59",
+    "source_note": "《新撰篆書字典》卷一，崐欄上有「今昆」旁注；原刊篆形從山在上，異於俞和的左山形。 CODH 單字索引以原頁座標交叉核對。",
+    "split_method": "codh_index_visual_review",
+    "source_index": "https://codh.rois.ac.jp/tensho/unicode/U%2B5D10/#TE00026",
+    "review_method": "reviewed",
+    "id": "1c6257898cce5a279000c3823c463165",
+    "uuid": "1c6257898cce5a279000c3823c463165",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

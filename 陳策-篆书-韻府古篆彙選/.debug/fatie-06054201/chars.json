@@ -1,0 +1,63 @@
+[
+  {
+    "id": "38e42e079f455240b1c058f084c569a1",
+    "uuid": "38e42e079f455240b1c058f084c569a1",
+    "char": "惱",
+    "font": "篆书",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "bbox": [
+      708,
+      945,
+      788,
+      1037
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/137#xywh=1964,2621,223,254",
+    "source_label": "惱",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0542_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/character.json",
+    "source_bbox": [
+      1964,
+      2621,
+      2187,
+      2875
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+60F1/U+60F1_TE00006_0542_1_X1964_Y2621.jpg",
+    "template_score": 0.9439,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "坷",
+    "source_label": "坷",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      389,
+      1408,
+      485,
+      1512
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/137",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000137/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/137",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0542_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/2559689/canvas/137，框 1079,3901,267,287",
+    "source_note": "CODH 著录原字「坷」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+5777/U+5777_TE00006_0542_1_X1079_Y3901.jpg",
+    "template_score": 0.9597,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "ecda949c18135a26972412be7a774cd0",
+    "uuid": "ecda949c18135a26972412be7a774cd0",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "char": "颻",
+    "source_label": "颻",
+    "author": "俞和",
+    "font": "篆书",
+    "work": "篆隶千文",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "source_page": "K2B000175N000000029PAA",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000029PAA/full/full/0/default.jpg",
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "bbox": [
+      1791,
+      1603,
+      1968,
+      1783
+    ],
+    "column": 2,
+    "row": 5,
+    "source_context": "落葉飄颻",
+    "source_note": "左䍃右風，緊接同列的「飄」。",
+    "variant_existing": "",
+    "split_method": "pixel_projection_reviewed",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "id": "7f1347e82bd055bdbd14611f95de6d4f",
+    "uuid": "7f1347e82bd055bdbd14611f95de6d4f",
+    "visible": true
+  }
+]

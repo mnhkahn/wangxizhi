@@ -1,0 +1,32 @@
+[
+  {
+    "char": "咬",
+    "source_label": "咬",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      150,
+      1930,
+      381,
+      2177
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0067_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00009/TE00009_0067_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0067_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00009/annotation/TE00009_0067_2/C1601",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0067_2，框 0163,2096,251,268",
+    "source_note": "CODH 著录原字「咬」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00009/characters/U+54AC/U+54AC_TE00009_0067_2_X0163_Y2096.jpg",
+    "template_score": 0.9912,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "09705f8ae7c45715807c6f144a86fafa",
+    "uuid": "09705f8ae7c45715807c6f144a86fafa",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

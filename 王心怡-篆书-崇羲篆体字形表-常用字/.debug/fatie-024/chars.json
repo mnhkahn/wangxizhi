@@ -310,5 +310,61 @@
     "source_style_evidence": "《崇羲篆體》編者製作體例所列大徐本小篆與依小篆偏旁轉寫",
     "source_style_origin": "现代字形表",
     "split_method": "pixel_projection_and_raster_cell"
+  },
+  {
+    "char": "濾",
+    "source_label": "濾",
+    "author": "王心怡",
+    "work": "崇羲篆体字形表-常用字",
+    "bbox": [
+      1501,
+      1855,
+      1556,
+      1928
+    ],
+    "column": 1,
+    "row": 14,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=24",
+    "source_image_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=24",
+    "source_page": 24,
+    "source_position": "王心怡《崇羲篆体字形表》原刊第 24 页 2365 号，楷书栏「濾」，取相邻篆体栏。",
+    "source_note": "王心怡《崇羲篆体字形表》原刊第 24 页 2365 号，楷书栏「濾」，取相邻篆体栏。",
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "split_method": "pixel_projection_and_raster_cell",
+    "review_method": "printed",
+    "id": "804929844af85ef8b905fb8d5082a0f4",
+    "uuid": "804929844af85ef8b905fb8d5082a0f4",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-常用字",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "澎",
+    "source_label": "澎",
+    "author": "王心怡",
+    "work": "崇羲篆体字形表-常用字",
+    "bbox": [
+      1027,
+      1431,
+      1084,
+      1503
+    ],
+    "column": 2,
+    "row": 10,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=24",
+    "source_image_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=24",
+    "source_page": 24,
+    "source_position": "王心怡《崇羲篆体字形表》原刊第 24 页 2336 号，楷书栏「澎」，取相邻篆体栏。",
+    "source_note": "王心怡《崇羲篆体字形表》原刊第 24 页 2336 号，楷书栏「澎」，取相邻篆体栏。",
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "split_method": "pixel_projection_and_raster_cell",
+    "review_method": "printed",
+    "id": "4f87a87496305a548bf9a0b26d1e9b3f",
+    "uuid": "4f87a87496305a548bf9a0b26d1e9b3f",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-常用字",
+    "font": "篆书",
+    "visible": true
   }
 ]

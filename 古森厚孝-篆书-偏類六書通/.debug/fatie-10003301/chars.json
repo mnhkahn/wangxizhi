@@ -1,0 +1,32 @@
+[
+  {
+    "char": "航",
+    "source_label": "航",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      48,
+      2471,
+      269,
+      2699
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0033_1",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00010/TE00010_0033_1.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0033_1",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00010/annotation/TE00010_0033_1/C3955",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0033_1，框 0052,2664,238,246",
+    "source_note": "CODH 著录原字「航」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00010/characters/U+822A/U+822A_TE00010_0033_1_X0052_Y2664.jpg",
+    "template_score": 0.997,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "372dbbe808115c0b86b9cdefa78ef08c",
+    "uuid": "372dbbe808115c0b86b9cdefa78ef08c",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

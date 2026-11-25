@@ -258,5 +258,33 @@
     "source_style_evidence": "《崇羲篆體》編者製作體例所列大徐本小篆與依小篆偏旁轉寫",
     "source_style_origin": "现代字形表",
     "split_method": "pixel_projection_and_raster_cell"
+  },
+  {
+    "char": "丫",
+    "source_label": "丫",
+    "author": "王心怡",
+    "work": "崇羲篆体字形表-常用字",
+    "bbox": [
+      561,
+      2279,
+      604,
+      2353
+    ],
+    "column": 3,
+    "row": 18,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=1",
+    "source_image_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=1",
+    "source_page": 1,
+    "source_position": "王心怡《崇羲篆体字形表》原刊第 1 页 19 号，楷书栏「丫」，取相邻篆体栏。",
+    "source_note": "王心怡《崇羲篆体字形表》原刊第 1 页 19 号，楷书栏「丫」，取相邻篆体栏。",
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "split_method": "pixel_projection_and_raster_cell",
+    "review_method": "printed",
+    "id": "b33aeb25c88051e08980bc5724fd5c94",
+    "uuid": "b33aeb25c88051e08980bc5724fd5c94",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-常用字",
+    "font": "篆书",
+    "visible": true
   }
 ]

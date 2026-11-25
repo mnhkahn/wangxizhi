@@ -1,0 +1,28 @@
+[
+  {
+    "char": "敕",
+    "source_label": "敕",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      577,
+      1141,
+      684,
+      1281
+    ],
+    "column": 31,
+    "row": 14,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B6555/#TE00007",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559690/R0000090/full/3000,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559690/canvas/90",
+    "source_note": "《韻府古篆彙選》敕欄，篆形從束，右側為曲筆；下署「禹文」為原刊引源，不作斷代。 CODH 單字索引以原頁座標交叉核對。",
+    "split_method": "codh_index_visual_review",
+    "source_index": "https://codh.rois.ac.jp/tensho/unicode/U%2B6555/#TE00007",
+    "review_method": "reviewed",
+    "id": "4c1c1c95230b5942ae2d35a2deea72b2",
+    "uuid": "4c1c1c95230b5942ae2d35a2deea72b2",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

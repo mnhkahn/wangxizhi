@@ -93,5 +93,34 @@
     "source_edition_type": "新附",
     "source_style_evidence": "藤花榭本校勘条目类型为新附",
     "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "i": 6463,
+    "char": "腼",
+    "source_label": "靦",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "bbox": [
+      1037,
+      429,
+      1108,
+      534
+    ],
+    "column": 12,
+    "row": 0,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=6463",
+    "source_image_url": "https://seal.cmex.org.tw/ori/9u-3.jpg",
+    "source_page": "卷9上，頁3右，第3行。",
+    "source_note": "藤花榭本《說文解字》面部正篆，原书释「面見也」「从面見」。检索沿用馆释简体「腼」，原刊释字标为「靦」。",
+    "split_method": "source_template_reviewed",
+    "source_style": "小篆",
+    "source_edition_type": "正篆",
+    "source_context": "藤花榭本《說文解字》面部正篆，原书释「面見也」「从面見」。检索沿用馆释简体「腼」，原刊释字标为「靦」。",
+    "review_method": "reviewed",
+    "id": "4623cdbb94a957c68dc10f78c1741c6e",
+    "uuid": "4623cdbb94a957c68dc10f78c1741c6e",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "font": "篆书",
+    "visible": true
   }
 ]

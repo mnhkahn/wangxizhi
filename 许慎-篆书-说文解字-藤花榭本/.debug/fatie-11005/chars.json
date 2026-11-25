@@ -262,5 +262,32 @@
     "source_style": "小篆",
     "source_style_evidence": "藤花榭本校勘条目类型为正篆",
     "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "槁",
+    "source_label": "槁",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "bbox": [
+      1978,
+      1277,
+      2044,
+      1388
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=4153",
+    "source_image_url": "https://seal.cmex.org.tw/ori/6u-5.jpg",
+    "source_page": "卷6上，頁4左，第1行。",
+    "source_note": "藤花榭本校勘库Zhengzhuan 正篆，原字释槁，已与基金会公布单字图配准。",
+    "split_method": "source_template+pixel_projection_check",
+    "source_style": "小篆",
+    "source_edition_type": "正篆",
+    "review_method": "reviewed",
+    "id": "e3e261fd75b7589ba12f2c50792a531a",
+    "uuid": "e3e261fd75b7589ba12f2c50792a531a",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "font": "篆书",
+    "visible": true
   }
 ]

@@ -1,0 +1,54 @@
+[
+  {
+    "char": "勔",
+    "source_label": "勔",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      987,
+      1016,
+      1214,
+      1258
+    ],
+    "column": 9,
+    "row": 6,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B52D4/#TE00010",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00010/TE00010_0044_1.tif/full/3000,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0044_1",
+    "source_note": "《偏類六書通》勔欄第一式，刊下有引源小字；與同條另一篆形左右結構不同。 CODH 單字索引以原頁座標交叉核對。",
+    "split_method": "codh_index_visual_review",
+    "source_index": "https://codh.rois.ac.jp/tensho/unicode/U%2B52D4/#TE00010",
+    "review_method": "reviewed",
+    "id": "ebee6f46fa315f26b01a2939d405aeb6",
+    "uuid": "ebee6f46fa315f26b01a2939d405aeb6",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "勔",
+    "source_label": "勔",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      995,
+      1856,
+      1215,
+      2097
+    ],
+    "column": 9,
+    "row": 10,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B52D4/#TE00010",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00010/TE00010_0044_1.tif/full/3000,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0044_1",
+    "source_note": "《偏類六書通》勔欄第二式，左側「面」，右部另寫；原刊下署「碧碑」。 CODH 單字索引以原頁座標交叉核對。",
+    "split_method": "codh_index_visual_review",
+    "source_index": "https://codh.rois.ac.jp/tensho/unicode/U%2B52D4/#TE00010",
+    "review_method": "reviewed",
+    "id": "936ab4d25f455b63b3608f5b6899b4ac",
+    "uuid": "936ab4d25f455b63b3608f5b6899b4ac",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

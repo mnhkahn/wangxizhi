@@ -1,0 +1,32 @@
+[
+  {
+    "char": "垛",
+    "source_label": "垛",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      817,
+      1045,
+      904,
+      1159
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181876/canvas/43",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181876/R0000043/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181876/canvas/43",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00026/annotation/TE00026_0009_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/1181876/canvas/43，框 1765,2258,187,246",
+    "source_note": "CODH 著录原字「垛」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00026/characters/U+579B/U+579B_TE00026_0009_1_X1765_Y2258.jpg",
+    "template_score": 0.9875,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "4011a7bfc2fa5cc6a0ca85dfd2a054c8",
+    "uuid": "4011a7bfc2fa5cc6a0ca85dfd2a054c8",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

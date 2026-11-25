@@ -1,0 +1,33 @@
+[
+  {
+    "char": "迺",
+    "bbox": [
+      690,
+      1768,
+      863,
+      2010
+    ],
+    "column": 0,
+    "row": 6,
+    "column_text": "花时鲤帛寓安迺乐",
+    "source_position": "右联正文从上第7字",
+    "variant": "廼",
+    "variant_url": "https://dict.variants.moe.edu.tw/dictView.jsp?ID=-45186",
+    "source_label": "迺",
+    "author": "吴昌硕",
+    "work": "篆书八言联",
+    "source_url": "https://www.dpm.org.cn/collection/handwriting/231408.html",
+    "source_image_url": "https://www.dpm.org.cn/dyx.html?path=/Uploads/tilegenerator/dest/files/image/8831/2007/2091/img0002.xml",
+    "source_page": "全幅",
+    "source_style": "集石鼓文",
+    "source_style_evidence": "故宫馆方定为集石鼓文对联",
+    "source_credit": "",
+    "source_context": "花时鲤帛寓安迺乐",
+    "split_method": "visual_position_reviewed",
+    "id": "7c45b5c0a2ee55dcb80bde820b7adbd7",
+    "uuid": "7c45b5c0a2ee55dcb80bde820b7adbd7",
+    "work_dir": "吴昌硕-篆书-篆书八言联",
+    "font": "篆书",
+    "visible": true
+  }
+]

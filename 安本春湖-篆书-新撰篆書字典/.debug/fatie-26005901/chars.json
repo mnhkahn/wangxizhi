@@ -1,0 +1,32 @@
+[
+  {
+    "char": "彌",
+    "source_label": "彌",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      1576,
+      1320,
+      1666,
+      1434
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181876/canvas/67",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181876/R0000067/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181876/canvas/67",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00026/annotation/TE00026_0059_1/C0001",
+    "source_position": "CODH 定位 https://codh.rois.ac.jp/tensho/book/TE00026/annotation/TE00026_0059_1/C0001",
+    "source_note": "CODH 著录原字「彌」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00026/characters/U+5F4C/U+5F4C_TE00026_0059_1_X3405_Y2851.jpg",
+    "template_score": 0.9953,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "bb22d097f51854a7af71db267816bf34",
+    "uuid": "bb22d097f51854a7af71db267816bf34",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

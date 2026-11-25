@@ -1,0 +1,32 @@
+[
+  {
+    "char": "併",
+    "source_label": "併",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1772,
+      853,
+      1970,
+      1096
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0032_1",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00009/TE00009_0032_1.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0032_1",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00009/annotation/TE00009_0032_1/C0666",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00009/canvas/TE00009_0032_1，框 1929,0928,215,264",
+    "source_note": "CODH 著录原字「併」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00009/characters/U+4F75/U+4F75_TE00009_0032_1_X1929_Y0928.jpg",
+    "template_score": 0.9929,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "fd91144ee3695e61be46c0013aca5110",
+    "uuid": "fd91144ee3695e61be46c0013aca5110",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "char": "吅",
+    "source_label": "吅",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      494,
+      549,
+      562,
+      605
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/19",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00019.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/19",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0470_1/C0001",
+    "source_position": "CODH 定位 https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0470_1/C0001",
+    "source_note": "CODH 著录原字「吅」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00005/characters/U+5405/U+5405_TE00005_0470_1_X1156_Y1284.jpg",
+    "template_score": 0.9867,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "baf92ffe47045130b412b13bb86c1fc1",
+    "uuid": "baf92ffe47045130b412b13bb86c1fc1",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  }
+]

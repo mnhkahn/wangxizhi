@@ -1,0 +1,89 @@
+[
+  {
+    "id": "12435eac908559af95b0fb509425d0b3",
+    "uuid": "12435eac908559af95b0fb509425d0b3",
+    "char": "歧",
+    "font": "篆书",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "bbox": [
+      1592,
+      316,
+      1653,
+      412
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/46#xywh=3725,740,142,225",
+    "source_label": "歧",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0445_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00005/character.json",
+    "source_bbox": [
+      3725,
+      740,
+      3867,
+      965
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00005/characters/U+6B67/U+6B67_TE00005_0445_1_X3725_Y0740.jpg",
+    "template_score": 0.9584,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "鄧",
+    "source_label": "鄧",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      1584,
+      917,
+      1658,
+      1014
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/46",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00046.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/46",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0445_1/C0001",
+    "source_position": "索引页 https://kokusho.nijl.ac.jp/biblio/200013970/canvas/46，框 3706,2145,173,227",
+    "source_note": "CODH 著录原字「鄧」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00005/characters/U+9127/U+9127_TE00005_0445_1_X3706_Y2145.jpg",
+    "template_score": 0.9609,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "5353f3171d9d5f62932bd15d808ebed0",
+    "uuid": "5353f3171d9d5f62932bd15d808ebed0",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "曜",
+    "source_label": "曜",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      584,
+      540,
+      656,
+      627
+    ],
+    "column": 24,
+    "row": 7,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B66DC/#TE00005",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00046.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/46",
+    "source_note": "《汗簡》刊印字例；下方楷書原標「曜」；日旁與右側行筆有別於俞和。 CODH 單字索引以原頁座標交叉核對。",
+    "split_method": "codh_index_visual_review",
+    "source_index": "https://codh.rois.ac.jp/tensho/unicode/U%2B66DC/#TE00005",
+    "review_method": "reviewed",
+    "id": "18a7898445be5222b311f38a56c8e2c5",
+    "uuid": "18a7898445be5222b311f38a56c8e2c5",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  }
+]

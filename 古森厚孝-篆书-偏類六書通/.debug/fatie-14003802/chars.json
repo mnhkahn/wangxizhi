@@ -1,0 +1,32 @@
+[
+  {
+    "char": "攬",
+    "source_label": "攬",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1827,
+      2168,
+      2042,
+      2418
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00014/canvas/TE00014_0038_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00014/TE00014_0038_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00014/canvas/TE00014_0038_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00014/annotation/TE00014_0038_2/C0674",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00014/canvas/TE00014_0038_2，框 1994,2366,235,273",
+    "source_note": "CODH 著录原字「攬」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00014/characters/U+652C/U+652C_TE00014_0038_2_X1994_Y2366.jpg",
+    "template_score": 0.9923,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "b07ee35345d25e108de95b8ea659b790",
+    "uuid": "b07ee35345d25e108de95b8ea659b790",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

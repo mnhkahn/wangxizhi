@@ -1,0 +1,32 @@
+[
+  {
+    "char": "豁",
+    "source_label": "豁",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      353,
+      623,
+      447,
+      719
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181893/canvas/30",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181893/R0000030/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181893/canvas/30",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00024/annotation/TE00024_0028_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/1181893/canvas/30，框 765,1351,203,207",
+    "source_note": "CODH 著录原字「豁」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00024/characters/U+8C41/U+8C41_TE00024_0028_1_X0765_Y1351.jpg",
+    "template_score": 0.9771,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "578717504e0c58709f09ae84a1bce0a3",
+    "uuid": "578717504e0c58709f09ae84a1bce0a3",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

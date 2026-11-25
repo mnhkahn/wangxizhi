@@ -1,0 +1,32 @@
+[
+  {
+    "char": "詢",
+    "source_label": "詢",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      424,
+      561,
+      480,
+      685
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/24",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00024.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/24",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0444_1/C0001",
+    "source_position": "索引页 https://kokusho.nijl.ac.jp/biblio/200013970/canvas/24，框 993,1313,130,291",
+    "source_note": "CODH 著录原字「詢」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00005/characters/U+8A62/U+8A62_TE00005_0444_1_X0993_Y1313.jpg",
+    "template_score": 0.968,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "34509b6638bd58aeb204a6b06b603c13",
+    "uuid": "34509b6638bd58aeb204a6b06b603c13",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  }
+]

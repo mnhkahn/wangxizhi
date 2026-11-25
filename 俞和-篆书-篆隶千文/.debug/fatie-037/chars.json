@@ -1,0 +1,29 @@
+[
+  {
+    "char": "誚",
+    "source_label": "誚",
+    "author": "俞和",
+    "font": "篆书",
+    "work": "篆隶千文",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "source_page": "K2B000175N000000037PAA",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000037PAA/full/full/0/default.jpg",
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "bbox": [
+      2279,
+      1371,
+      2441,
+      1578
+    ],
+    "column": 0,
+    "row": 4,
+    "source_context": "愚蒙等誚",
+    "source_note": "左言右肖。",
+    "variant_existing": "",
+    "split_method": "pixel_projection_reviewed",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "id": "c5e3d691365d5807a98c4f52f7a9fcc4",
+    "uuid": "c5e3d691365d5807a98c4f52f7a9fcc4",
+    "visible": true
+  }
+]

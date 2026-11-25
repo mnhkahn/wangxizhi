@@ -1,0 +1,83 @@
+[
+  {
+    "char": "调",
+    "source_label": "調",
+    "author": "俞和",
+    "work": "篆隶千文",
+    "bbox": [
+      784,
+      906,
+      1033,
+      1097
+    ],
+    "column": 6,
+    "row": 2,
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000002PAA/full/full/0/default.jpg",
+    "source_page": "K2B000175N000000002PAA",
+    "source_context": "「律召調陽」第3字",
+    "source_note": "臺北故宮《元俞和篆隸千文》冊第2幅，正文篆列第4列第3字，原帖釋「調」。",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "split_method": "pixel_projection_reviewed",
+    "review_method": "ink",
+    "id": "619bcadd60425b3ba6626b81f4c94219",
+    "uuid": "619bcadd60425b3ba6626b81f4c94219",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "阳",
+    "source_label": "陽",
+    "author": "俞和",
+    "work": "篆隶千文",
+    "bbox": [
+      823,
+      1163,
+      1020,
+      1365
+    ],
+    "column": 6,
+    "row": 3,
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000002PAA/full/full/0/default.jpg",
+    "source_page": "K2B000175N000000002PAA",
+    "source_context": "「律召調陽」第4字",
+    "source_note": "臺北故宮《元俞和篆隸千文》冊第2幅，正文篆列第4列第4字，原帖釋「陽」。",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "split_method": "pixel_projection_reviewed",
+    "review_method": "ink",
+    "id": "b9f25053f2d855e4ac78b85221ea1794",
+    "uuid": "b9f25053f2d855e4ac78b85221ea1794",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "腾",
+    "source_label": "騰",
+    "author": "俞和",
+    "work": "篆隶千文",
+    "bbox": [
+      782,
+      1598,
+      1036,
+      1820
+    ],
+    "column": 6,
+    "row": 5,
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000002PAA/full/full/0/default.jpg",
+    "source_page": "K2B000175N000000002PAA",
+    "source_context": "「雲騰致雨」第2字",
+    "source_note": "臺北故宮《元俞和篆隸千文》冊第2幅，正文篆列第4列第6字，原帖釋「騰」。",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "split_method": "pixel_projection_reviewed",
+    "review_method": "ink",
+    "id": "0a8f9abc76dc562eaada05a640444366",
+    "uuid": "0a8f9abc76dc562eaada05a640444366",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "font": "篆书",
+    "visible": true
+  }
+]

@@ -236,5 +236,30 @@
     "source_style": "小篆",
     "source_style_evidence": "藤花榭本校勘条目类型为正篆",
     "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "柠",
+    "source_label": "柠",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "bbox": [
+      913,
+      537,
+      982,
+      643
+    ],
+    "column": 14,
+    "row": 0,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=4066",
+    "source_image_url": "https://seal.cmex.org.tw/ori/6u-3.jpg",
+    "source_page": "卷6上，頁3右，第5行",
+    "source_note": "原页字下释「楮或从宁」，藤花榭本校勘标为「柠(楮)」、编码 04066、异体，与京都大学藏陈昌治本的同条构形一致，版刻写法有别。此处是柠的古字义，不代表柠檬的「檸」。",
+    "split_method": "source_template_visual_review",
+    "review_method": "reviewed",
+    "id": "39777fd5045e5da1b71ffa3138929416",
+    "uuid": "39777fd5045e5da1b71ffa3138929416",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "font": "篆书",
+    "visible": true
   }
 ]

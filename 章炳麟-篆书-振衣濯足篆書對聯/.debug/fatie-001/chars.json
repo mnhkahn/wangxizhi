@@ -1,0 +1,28 @@
+[
+  {
+    "char": "崗",
+    "source_label": "崗",
+    "author": "章炳麟",
+    "work": "振衣濯足篆書對聯",
+    "bbox": [
+      176,
+      1832,
+      501,
+      2148
+    ],
+    "column": 0,
+    "row": 4,
+    "source_url": "https://www.christies.com/zh/lot/lot-5852135",
+    "source_image_url": "https://www.christies.com/img/LotImages/2014/HGK/2014_HGK_03365_1392_000(zhang_binglin_calligraphic_couplet_in_seal_script021808).jpg?mode=max",
+    "source_page": "佳士得拍品 1392 首張全幅，上聯第 5 字",
+    "source_note": "佳士得拍品記錄的原作正幅「振衣千仞崗」最末字；章炳麟筆跡全幅，形從岡內出山，與戴明說字例不同。",
+    "source_style": "篆书",
+    "split_method": "catalog_text+manual_bbox",
+    "review_method": "reviewed",
+    "id": "d07ba10fe3085bf2ace5007be7eee601",
+    "uuid": "d07ba10fe3085bf2ace5007be7eee601",
+    "work_dir": "章炳麟-篆书-振衣濯足篆書對聯",
+    "font": "篆书",
+    "visible": true
+  }
+]

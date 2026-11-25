@@ -1,0 +1,32 @@
+[
+  {
+    "char": "頽",
+    "source_label": "頽",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      1752,
+      670,
+      1842,
+      782
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/44",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000044/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/44",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0603_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/2559689/canvas/44，框 4854,1857,249,309",
+    "source_note": "CODH 著录原字「頽」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+983D/U+983D_TE00006_0603_1_X4854_Y1857.jpg",
+    "template_score": 0.9696,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "b05584163ad453669178eaccd87db28d",
+    "uuid": "b05584163ad453669178eaccd87db28d",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

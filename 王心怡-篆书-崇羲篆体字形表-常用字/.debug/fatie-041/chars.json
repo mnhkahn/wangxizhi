@@ -492,5 +492,61 @@
     "source_style_evidence": "《崇羲篆體》編者製作體例所列大徐本小篆與依小篆偏旁轉寫",
     "source_style_origin": "现代字形表",
     "split_method": "pixel_projection_and_raster_cell"
+  },
+  {
+    "char": "軟",
+    "source_label": "軟",
+    "author": "王心怡",
+    "work": "崇羲篆体字形表-常用字",
+    "bbox": [
+      1502,
+      2175,
+      1555,
+      2245
+    ],
+    "column": 1,
+    "row": 17,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=41",
+    "source_image_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=41",
+    "source_page": 41,
+    "source_position": "王心怡《崇羲篆体字形表》原刊第 41 页 4068 号，楷书栏「軟」，取相邻篆体栏。",
+    "source_note": "王心怡《崇羲篆体字形表》原刊第 41 页 4068 号，楷书栏「軟」，取相邻篆体栏。",
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "split_method": "pixel_projection_and_raster_cell",
+    "review_method": "printed",
+    "id": "be027e3bc6cb5de89fb4840a6e59d31f",
+    "uuid": "be027e3bc6cb5de89fb4840a6e59d31f",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-常用字",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "較",
+    "source_label": "較",
+    "author": "王心怡",
+    "work": "崇羲篆体字形表-常用字",
+    "bbox": [
+      1500,
+      2599,
+      1557,
+      2670
+    ],
+    "column": 1,
+    "row": 21,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=41",
+    "source_image_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=41",
+    "source_page": 41,
+    "source_position": "王心怡《崇羲篆体字形表》原刊第 41 页 4072 号，楷书栏「較」，取相邻篆体栏。",
+    "source_note": "王心怡《崇羲篆体字形表》原刊第 41 页 4072 号，楷书栏「較」，取相邻篆体栏。",
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "split_method": "pixel_projection_and_raster_cell",
+    "review_method": "printed",
+    "id": "34cdbf1b7fc2555eb4e8e33851c239a0",
+    "uuid": "34cdbf1b7fc2555eb4e8e33851c239a0",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-常用字",
+    "font": "篆书",
+    "visible": true
   }
 ]

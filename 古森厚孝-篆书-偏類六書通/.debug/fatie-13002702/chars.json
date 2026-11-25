@@ -1,0 +1,32 @@
+[
+  {
+    "char": "弥",
+    "source_label": "弥",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1576,
+      757,
+      1756,
+      974
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00013/canvas/TE00013_0027_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00013/TE00013_0027_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00013/canvas/TE00013_0027_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00013/annotation/TE00013_0027_2/C0726",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00013/canvas/TE00013_0027_2，框 1738,0835,198,239",
+    "source_note": "CODH 著录原字「弥」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00013/characters/U+5F25/U+5F25_TE00013_0027_2_X1738_Y0835.jpg",
+    "template_score": 0.9916,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "7232acb2a7f65d799be78b9bd2df1840",
+    "uuid": "7232acb2a7f65d799be78b9bd2df1840",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

@@ -492,5 +492,33 @@
     "source_style_evidence": "《崇羲篆體》編者製作體例所列大徐本小篆與依小篆偏旁轉寫",
     "source_style_origin": "现代字形表",
     "split_method": "pixel_projection_and_raster_cell"
+  },
+  {
+    "char": "嚅",
+    "source_label": "嚅",
+    "author": "王心怡",
+    "work": "崇羲篆体字形表-常用字",
+    "bbox": [
+      553,
+      794,
+      613,
+      867
+    ],
+    "column": 3,
+    "row": 4,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=8",
+    "source_image_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=8",
+    "source_page": 8,
+    "source_position": "王心怡《崇羲篆体字形表》原刊第 8 页 705 号，楷书栏「嚅」，取相邻篆体栏。",
+    "source_note": "王心怡《崇羲篆体字形表》原刊第 8 页 705 号，楷书栏「嚅」，取相邻篆体栏。",
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "split_method": "pixel_projection_and_raster_cell",
+    "review_method": "printed",
+    "id": "f5a4de999bef5eb39691891005c2374c",
+    "uuid": "f5a4de999bef5eb39691891005c2374c",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-常用字",
+    "font": "篆书",
+    "visible": true
   }
 ]

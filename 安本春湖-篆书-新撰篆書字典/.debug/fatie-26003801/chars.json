@@ -1,0 +1,32 @@
+[
+  {
+    "char": "剎",
+    "source_label": "刹",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      1178,
+      1479,
+      1253,
+      1598
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181876/canvas/27",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181876/R0000027/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181876/canvas/27",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00026/annotation/TE00026_0038_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/1181876/canvas/27，框 2544,3197,162,256",
+    "source_note": "CODH 著录原字为「刹」，归入本库标签「剎」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00026/characters/U+5239/U+5239_TE00026_0038_1_X2544_Y3197.jpg",
+    "template_score": 0.9796,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "a43c547733f55461bf1aa146ea55b6f3",
+    "uuid": "a43c547733f55461bf1aa146ea55b6f3",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

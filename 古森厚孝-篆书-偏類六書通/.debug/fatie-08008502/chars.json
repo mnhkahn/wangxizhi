@@ -1,0 +1,32 @@
+[
+  {
+    "char": "刺",
+    "source_label": "刺",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      444,
+      1863,
+      643,
+      2079
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00008/canvas/TE00008_0085_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00008/TE00008_0085_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00008/canvas/TE00008_0085_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00008/annotation/TE00008_0085_2/C1268",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00008/canvas/TE00008_0085_2，框 0486,2039,218,236",
+    "source_note": "CODH 著录原字「刺」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00008/characters/U+523A/U+523A_TE00008_0085_2_X0486_Y2039.jpg",
+    "template_score": 0.9981,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "c193ddccac2b5a76afc2e8db7f4b011e",
+    "uuid": "c193ddccac2b5a76afc2e8db7f4b011e",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

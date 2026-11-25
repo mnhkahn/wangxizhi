@@ -1,0 +1,32 @@
+[
+  {
+    "char": "纖",
+    "source_label": "纖",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      155,
+      1846,
+      329,
+      2072
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00014/canvas/TE00014_0035_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00014/TE00014_0035_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00014/canvas/TE00014_0035_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00014/annotation/TE00014_0035_2/C1253",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00014/canvas/TE00014_0035_2，框 0171,2038,192,249",
+    "source_note": "CODH 著录原字「纖」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00014/characters/U+7E96/U+7E96_TE00014_0035_2_X0171_Y2038.jpg",
+    "template_score": 0.9978,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "af6e3be6bb525815984afd4711961dfc",
+    "uuid": "af6e3be6bb525815984afd4711961dfc",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

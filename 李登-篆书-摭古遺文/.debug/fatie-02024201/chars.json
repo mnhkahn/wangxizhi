@@ -1,0 +1,28 @@
+[
+  {
+    "char": "斌",
+    "source_label": "斌",
+    "author": "李登",
+    "work": "摭古遺文",
+    "bbox": [
+      2249,
+      1613,
+      2372,
+      1748
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Harvard_drs_15755656_%E6%91%AD%E5%8F%A4%E9%81%BA%E6%96%87_v.1.pdf#page=26",
+    "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Harvard_drs_15755656_%E6%91%AD%E5%8F%A4%E9%81%BA%E6%96%87_v.1.pdf#page=26",
+    "source_page": "哈佛燕京藏明刻本卷一 PDF 第26页；CODH TE00002_0242_1，画幅 15757588",
+    "source_index": "https://codh.rois.ac.jp/tensho/unicode/U%2B658C/#TE00002",
+    "source_note": "原刊篆形下并标「彬」「斌」，取同字组中此刊印篆形。此例有作者原刊的「斌」作释，不以现库「吳彬之印」字例当作斌的独立结构；本例不是文、武组成的篆形。",
+    "split_method": "source_template_visual_review",
+    "review_method": "reviewed",
+    "id": "49de7892dd1c502797ea041c37de4086",
+    "uuid": "49de7892dd1c502797ea041c37de4086",
+    "work_dir": "李登-篆书-摭古遺文",
+    "font": "篆书",
+    "visible": true
+  }
+]

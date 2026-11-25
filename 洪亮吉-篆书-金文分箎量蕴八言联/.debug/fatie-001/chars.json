@@ -1,0 +1,56 @@
+[
+  {
+    "char": "芷",
+    "source_label": "芷",
+    "author": "洪亮吉",
+    "work": "金文分箎量蕴八言联",
+    "work_dir": "洪亮吉-篆书-金文分箎量蕴八言联",
+    "bbox": [
+      513,
+      1593,
+      648,
+      1789
+    ],
+    "image_url": "https://9610.com/qing/hongliangji/08x.JPG",
+    "source_url": "https://9610.com/qing/hongliangji/08.htm",
+    "source_position": "浙江省博物馆藏纸本上联「情符蘭芷」末字（原图右幅最下大字）",
+    "source_note": "数字影像出自浙江省博物馆典藏大系《翰墨清芬》图录所载原件；中线右幅为上联。",
+    "font": "篆书",
+    "source_image_url": "https://9610.com/qing/hongliangji/08x.JPG",
+    "column": 0,
+    "row": 0,
+    "source_index": "https://www.cidianwang.com/shufazuopin/qingchao/440657.htm",
+    "source_page": "浙江省博物馆藏纸本上联「情符蘭芷」末字（原图右幅最下大字）",
+    "source_style": "篆书",
+    "split_method": "visual_position_reviewed",
+    "id": "b377752d6869543388d30c33d7590111",
+    "uuid": "b377752d6869543388d30c33d7590111",
+    "visible": true
+  },
+  {
+    "char": "藴",
+    "source_label": "蘊",
+    "author": "洪亮吉",
+    "work": "金文分箎量蕴八言联",
+    "bbox": [
+      111,
+      250,
+      262,
+      441
+    ],
+    "column": 1,
+    "row": 1,
+    "source_url": "https://www.70thvictory.com.tw/shufazuopin/qingchao/440657.htm",
+    "source_image_url": "https://9610.com/qing/hongliangji/08x.JPG",
+    "source_page": "左幅第2字（下联「量蘊文傳」）",
+    "source_note": "原释文为「蘊」，古籍楷字藴、蘊异写；下联「量蘊文傳」四字中第2字。",
+    "split_method": "catalog_text+manual_bbox",
+    "source_style": "篆书",
+    "review_method": "reviewed",
+    "id": "156a7bf5f3fe5cae82fe7ca4110013c7",
+    "uuid": "156a7bf5f3fe5cae82fe7ca4110013c7",
+    "work_dir": "洪亮吉-篆书-金文分箎量蕴八言联",
+    "font": "篆书",
+    "visible": true
+  }
+]

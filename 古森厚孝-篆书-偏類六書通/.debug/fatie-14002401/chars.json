@@ -1,0 +1,62 @@
+[
+  {
+    "char": "籀",
+    "source_label": "籀",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      350,
+      2094,
+      543,
+      2353
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00014/canvas/TE00014_0024_1",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00014/TE00014_0024_1.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00014/canvas/TE00014_0024_1",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00014/annotation/TE00014_0024_1/C1130",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00014/canvas/TE00014_0024_1，框 0386,2309,213,286",
+    "source_note": "CODH 著录原字「籀」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00014/characters/U+7C40/U+7C40_TE00014_0024_1_X0386_Y2309.jpg",
+    "template_score": 0.9968,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "ecd5d63549e85e519669f0eb5187cf17",
+    "uuid": "ecd5d63549e85e519669f0eb5187cf17",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "灶",
+    "source_label": "竈",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      634,
+      3273,
+      836,
+      3501
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00014/canvas/TE00014_0024_1",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00014/TE00014_0024_1.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00014/canvas/TE00014_0024_1",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00014/annotation/TE00014_0024_1/C1100",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00014/canvas/TE00014_0024_1，框 0699,3610,223,251",
+    "source_note": "CODH 著录原字为「竈」，归入本库标签「灶」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00014/characters/U+7AC8/U+7AC8_TE00014_0024_1_X0699_Y3610.jpg",
+    "template_score": 0.9974,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "e047223ff7fd59189f0f7522ba4229ed",
+    "uuid": "e047223ff7fd59189f0f7522ba4229ed",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

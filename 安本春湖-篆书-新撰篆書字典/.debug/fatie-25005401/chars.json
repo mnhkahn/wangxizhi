@@ -1,0 +1,32 @@
+[
+  {
+    "char": "瞞",
+    "source_label": "瞞",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      1918,
+      612,
+      2007,
+      727
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181885/canvas/56",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181885/R0000056/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181885/canvas/56",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00025/annotation/TE00025_0054_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/1181885/canvas/56，框 4135,1319,191,248",
+    "source_note": "CODH 著录原字「瞞」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00025/characters/U+779E/U+779E_TE00025_0054_1_X4135_Y1319.jpg",
+    "template_score": 0.9901,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "3f11af2276b851f68fdb07746ecf07e0",
+    "uuid": "3f11af2276b851f68fdb07746ecf07e0",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

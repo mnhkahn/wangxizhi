@@ -1,0 +1,29 @@
+[
+  {
+    "char": "曜",
+    "source_label": "曜",
+    "author": "俞和",
+    "font": "篆书",
+    "work": "篆隶千文",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "source_page": "K2B000175N000000035PAA",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000035PAA/full/full/0/default.jpg",
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "bbox": [
+      1329,
+      1829,
+      1491,
+      2040
+    ],
+    "column": 4,
+    "row": 6,
+    "source_context": "羲暉朗曜",
+    "source_note": "左日右翟；右上墨跡稍淡。",
+    "variant_existing": "",
+    "split_method": "pixel_projection_reviewed",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "id": "2617c6f5c7e65a4bbc2086c18fec77eb",
+    "uuid": "2617c6f5c7e65a4bbc2086c18fec77eb",
+    "visible": true
+  }
+]

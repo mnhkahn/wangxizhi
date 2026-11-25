@@ -1,0 +1,60 @@
+[
+  {
+    "id": "f0643a326811583dbe16cc2b6958ed7b",
+    "uuid": "f0643a326811583dbe16cc2b6958ed7b",
+    "char": "濺",
+    "font": "篆书",
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "bbox": [
+      738,
+      1058,
+      813,
+      1158
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/66#xywh=1727,2477,175,233",
+    "source_label": "濺",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00003/annotation/TE00003_0370_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00003/character.json",
+    "scan_canvas": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/65",
+    "source_bbox": [
+      1727,
+      2477,
+      1902,
+      2710
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00003/characters/U+6FFA/U+6FFA_TE00003_0370_1_X1727_Y2477.jpg",
+    "template_score": 0.9631,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "char": "璽",
+    "source_label": "璽",
+    "bbox": [
+      561,
+      374,
+      640,
+      480
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/65",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/100250413/v4/NDSN/NDSN-00082/NDSN-00082-0065.tif/full/full/0/default.jpg",
+    "source_page": "馆方 IIIF 第 65 扫描页",
+    "source_note": "CODH 旧索引标为 canvas/66，对应馆方现行第 65 扫描页，同栏楷字为「璽」。",
+    "source_index": "https://codh.rois.ac.jp/tensho/unicode/U%2B74BD/",
+    "source_style": "篆书",
+    "split_method": "codh_template_reviewed",
+    "id": "3d30bbc6b3e857169689ecfb5567edad",
+    "uuid": "3d30bbc6b3e857169689ecfb5567edad",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "font": "篆书",
+    "visible": true
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "char": "享",
+    "source_label": "享",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      1885,
+      469,
+      1950,
+      562
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/142",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000142/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/142",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0549_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/2559689/canvas/142，框 5223,1300,179,258",
+    "source_note": "CODH 著录原字「享」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+4EAB/U+4EAB_TE00006_0549_1_X5223_Y1300.jpg",
+    "template_score": 0.9873,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "98d42223a0965b9bbd60196c1e968a06",
+    "uuid": "98d42223a0965b9bbd60196c1e968a06",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

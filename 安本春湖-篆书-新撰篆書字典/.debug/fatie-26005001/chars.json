@@ -1,0 +1,32 @@
+[
+  {
+    "char": "夥",
+    "source_label": "夥",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      1559,
+      1478,
+      1649,
+      1591
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181876/canvas/47",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181876/R0000047/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181876/canvas/47",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00026/annotation/TE00026_0050_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/1181876/canvas/47，框 3369,3193,195,245",
+    "source_note": "CODH 著录原字「夥」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00026/characters/U+5925/U+5925_TE00026_0050_1_X3369_Y3193.jpg",
+    "template_score": 0.9865,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "ac1a9f53770b52ba80ebd1d77c5ba273",
+    "uuid": "ac1a9f53770b52ba80ebd1d77c5ba273",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

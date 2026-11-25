@@ -700,5 +700,33 @@
     "source_style_evidence": "《崇羲篆體》編者製作體例所列大徐本小篆與依小篆偏旁轉寫",
     "source_style_origin": "现代字形表",
     "split_method": "pixel_projection_and_raster_cell"
+  },
+  {
+    "char": "碗",
+    "source_label": "碗",
+    "author": "王心怡",
+    "work": "崇羲篆体字形表-常用字",
+    "bbox": [
+      1027,
+      2278,
+      1085,
+      2354
+    ],
+    "column": 2,
+    "row": 18,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=29",
+    "source_image_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=29",
+    "source_page": 29,
+    "source_position": "王心怡《崇羲篆体字形表》原刊第 29 页 2844 号，楷书栏「碗」，取相邻篆体栏。",
+    "source_note": "王心怡《崇羲篆体字形表》原刊第 29 页 2844 号，楷书栏「碗」，取相邻篆体栏。",
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "split_method": "pixel_projection_and_raster_cell",
+    "review_method": "printed",
+    "id": "651894212bed5bb0967fa3e9a835c8bd",
+    "uuid": "651894212bed5bb0967fa3e9a835c8bd",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-常用字",
+    "font": "篆书",
+    "visible": true
   }
 ]

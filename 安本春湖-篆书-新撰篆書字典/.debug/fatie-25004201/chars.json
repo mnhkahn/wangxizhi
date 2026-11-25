@@ -1,0 +1,32 @@
+[
+  {
+    "char": "瑣",
+    "source_label": "瑣",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      1601,
+      1483,
+      1685,
+      1602
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181885/canvas/44",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181885/R0000044/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181885/canvas/44",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00025/annotation/TE00025_0042_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/1181885/canvas/44，框 3451,3196,180,257",
+    "source_note": "CODH 著录原字「瑣」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00025/characters/U+7463/U+7463_TE00025_0042_1_X3451_Y3196.jpg",
+    "template_score": 0.9908,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "9ccdf6610b635f5f933c5001e5f1788a",
+    "uuid": "9ccdf6610b635f5f933c5001e5f1788a",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

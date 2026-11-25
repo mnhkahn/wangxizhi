@@ -1,0 +1,32 @@
+[
+  {
+    "char": "肢",
+    "source_label": "肢",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      257,
+      484,
+      341,
+      581
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/22",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000022/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/22",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0614_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/2559689/canvas/22，框 714,1342,232,269",
+    "source_note": "CODH 著录原字「肢」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+80A2/U+80A2_TE00006_0614_1_X0714_Y1342.jpg",
+    "template_score": 0.9876,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "114fe4691de052cfb3ff3f63effb463f",
+    "uuid": "114fe4691de052cfb3ff3f63effb463f",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

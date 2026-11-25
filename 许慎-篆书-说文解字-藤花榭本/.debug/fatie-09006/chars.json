@@ -46,5 +46,34 @@
     "source_style": "小篆",
     "source_style_evidence": "藤花榭本校勘条目类型为正篆",
     "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "i": 3496,
+    "char": "迺",
+    "source_label": "迺",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "bbox": [
+      1684,
+      400,
+      1748,
+      511
+    ],
+    "column": 4,
+    "row": 0,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=3496",
+    "source_image_url": "https://seal.cmex.org.tw/ori/5u-6.jpg",
+    "source_page": "卷5上，頁5左，第5行。",
+    "source_note": "藤花榭本校勘条目释「迺」，卷五上古文（第3496号），和吴昌硕、池永榮春来源各异。",
+    "split_method": "source_template_reviewed",
+    "source_style": "古文",
+    "source_edition_type": "古文",
+    "source_context": "藤花榭本校勘条目释「迺」，卷五上古文（第3496号），和吴昌硕、池永榮春来源各异。",
+    "review_method": "reviewed",
+    "id": "a6fd37f8b9a9541abde2b8f0194a77c8",
+    "uuid": "a6fd37f8b9a9541abde2b8f0194a77c8",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "font": "篆书",
+    "visible": true
   }
 ]

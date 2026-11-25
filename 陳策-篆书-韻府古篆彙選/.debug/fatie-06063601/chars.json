@@ -1,0 +1,63 @@
+[
+  {
+    "id": "b836429c390a5992a9854a14afad7afd",
+    "uuid": "b836429c390a5992a9854a14afad7afd",
+    "char": "囉",
+    "font": "篆书",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "bbox": [
+      1752,
+      670,
+      1848,
+      791
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/73#xywh=4855,1858,265,336",
+    "source_label": "囉",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0636_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/character.json",
+    "source_bbox": [
+      4855,
+      1858,
+      5120,
+      2194
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+56C9/U+56C9_TE00006_0636_1_X4855_Y1858.jpg",
+    "template_score": 0.9786,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "騾",
+    "source_label": "騾",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      1653,
+      427,
+      1744,
+      552
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/73",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000073/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/73",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0636_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/2559689/canvas/73，框 4582,1185,251,347",
+    "source_note": "CODH 著录原字「騾」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+9A3E/U+9A3E_TE00006_0636_1_X4582_Y1185.jpg",
+    "template_score": 0.9599,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "5a5ccd72619d57c9a81684f685425d22",
+    "uuid": "5a5ccd72619d57c9a81684f685425d22",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

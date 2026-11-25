@@ -1,0 +1,28 @@
+[
+  {
+    "char": "毗",
+    "source_label": "毘",
+    "author": "李登",
+    "work": "摭古遺文",
+    "bbox": [
+      1743,
+      669,
+      1866,
+      819
+    ],
+    "column": 6,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B6BD8/#TE00002",
+    "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Harvard_drs_15755656_%E6%91%AD%E5%8F%A4%E9%81%BA%E6%96%87_v.1.pdf#page=18",
+    "source_page": "Harvard 影印第 18 页，CODH TE00002_0228_1",
+    "source_note": "原刊在此上下结构篆字下并列两种楷字写法。CODH释为「毘」；教育部《异体字字典》确认「毘、毗」为异体，囟与比的部件可作上下排列。",
+    "split_method": "source_template+manual_review",
+    "source_alias_url": "https://dict.variants.moe.edu.tw/dictView.jsp?ID=23110&la=0",
+    "review_method": "reviewed",
+    "id": "9d9cf6b2b5195533b6f8b1da0d1382e8",
+    "uuid": "9d9cf6b2b5195533b6f8b1da0d1382e8",
+    "work_dir": "李登-篆书-摭古遺文",
+    "font": "篆书",
+    "visible": true
+  }
+]

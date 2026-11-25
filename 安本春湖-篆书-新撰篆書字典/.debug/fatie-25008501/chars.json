@@ -1,0 +1,63 @@
+[
+  {
+    "id": "2d3587b66b925dbdbda1d2860d36d397",
+    "uuid": "2d3587b66b925dbdbda1d2860d36d397",
+    "char": "膨",
+    "font": "篆书",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "bbox": [
+      1039,
+      1505,
+      1130,
+      1616
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181885/canvas/87#xywh=2240,3245,195,239",
+    "source_label": "膨",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00025/annotation/TE00025_0085_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00025/character.json",
+    "source_bbox": [
+      2240,
+      3245,
+      2435,
+      3484
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00025/characters/U+81A8/U+81A8_TE00025_0085_1_X2240_Y3245.jpg",
+    "template_score": 0.9866,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "腳",
+    "source_label": "腳",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      2009,
+      1485,
+      2100,
+      1594
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181885/canvas/87",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181885/R0000087/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181885/canvas/87",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00025/annotation/TE00025_0085_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/1181885/canvas/87，框 4330,3199,195,235",
+    "source_note": "CODH 著录原字「腳」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00025/characters/U+8173/U+8173_TE00025_0085_1_X4330_Y3199.jpg",
+    "template_score": 0.9931,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "f0568ee1cde75ad5a3dc7c3a4e1b933d",
+    "uuid": "f0568ee1cde75ad5a3dc7c3a4e1b933d",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

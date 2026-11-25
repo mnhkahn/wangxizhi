@@ -1,0 +1,28 @@
+[
+  {
+    "char": "敕",
+    "source_label": "敕",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      2223,
+      2088,
+      2425,
+      2339
+    ],
+    "column": 2,
+    "row": 12,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B6555/#TE00010",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00010/TE00010_0057_1.tif/full/3000,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0057_1",
+    "source_note": "《偏類六書通》敕欄所載「古文」，左部呈交疊斜畫，右部為攴形。 CODH 單字索引以原頁座標交叉核對。",
+    "split_method": "codh_index_visual_review",
+    "source_index": "https://codh.rois.ac.jp/tensho/unicode/U%2B6555/#TE00010",
+    "review_method": "reviewed",
+    "id": "b403ce552f27586696ebe6986b4a6f44",
+    "uuid": "b403ce552f27586696ebe6986b4a6f44",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

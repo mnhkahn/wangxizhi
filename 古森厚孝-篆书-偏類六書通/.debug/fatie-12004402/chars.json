@@ -1,0 +1,32 @@
+[
+  {
+    "char": "獎",
+    "source_label": "獎",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      688,
+      2019,
+      894,
+      2259
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00012/canvas/TE00012_0044_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00012/TE00012_0044_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00012/canvas/TE00012_0044_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00012/annotation/TE00012_0044_2/C2049",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00012/canvas/TE00012_0044_2，框 0750,2202,225,262",
+    "source_note": "CODH 著录原字「獎」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00012/characters/U+734E/U+734E_TE00012_0044_2_X0750_Y2202.jpg",
+    "template_score": 0.9957,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "1ac32108596f51e8af139ea2acdfd9e7",
+    "uuid": "1ac32108596f51e8af139ea2acdfd9e7",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

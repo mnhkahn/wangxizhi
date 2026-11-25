@@ -1,0 +1,56 @@
+[
+  {
+    "char": "悚",
+    "source_label": "悚",
+    "author": "俞和",
+    "font": "篆书",
+    "work": "篆隶千文",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "source_page": "K2B000175N000000033PAA",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000033PAA/full/full/0/default.jpg",
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "bbox": [
+      2289,
+      704,
+      2444,
+      888
+    ],
+    "column": 0,
+    "row": 1,
+    "source_context": "悚懼恐惶",
+    "source_note": "從心、束聲，右為束；拍攝頁最右列第二字。",
+    "variant_existing": "",
+    "split_method": "pixel_projection_reviewed",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "id": "cc2fe4bfb98851c4ac146423a11adc82",
+    "uuid": "cc2fe4bfb98851c4ac146423a11adc82",
+    "visible": true
+  },
+  {
+    "char": "牋",
+    "source_label": "牋",
+    "author": "俞和",
+    "font": "篆书",
+    "work": "篆隶千文",
+    "work_dir": "俞和-篆书-篆隶千文",
+    "source_page": "K2B000175N000000033PAA",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000175N000000033PAA/full/full/0/default.jpg",
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/369?dep=P",
+    "bbox": [
+      2292,
+      1615,
+      2449,
+      1803
+    ],
+    "column": 0,
+    "row": 5,
+    "source_context": "牋牒簡要",
+    "source_note": "原篆左片右戔，館方釋牋；與從竹聲戔之箋為異寫。",
+    "variant_existing": "箋",
+    "split_method": "pixel_projection_reviewed",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "id": "2bcdbd6c7e3c5a4b938ad738bd0e31f6",
+    "uuid": "2bcdbd6c7e3c5a4b938ad738bd0e31f6",
+    "visible": true
+  }
+]

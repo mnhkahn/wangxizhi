@@ -1,0 +1,32 @@
+[
+  {
+    "char": "醞",
+    "source_label": "醞",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      583,
+      642,
+      679,
+      735
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181893/canvas/48",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181893/R0000048/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181893/canvas/48",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00024/annotation/TE00024_0046_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/1181893/canvas/48，框 1264,1392,208,202",
+    "source_note": "CODH 著录原字「醞」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00024/characters/U+919E/U+919E_TE00024_0046_1_X1264_Y1392.jpg",
+    "template_score": 0.9917,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "860b5b85b0b75555b6ae2f9104be90fc",
+    "uuid": "860b5b85b0b75555b6ae2f9104be90fc",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

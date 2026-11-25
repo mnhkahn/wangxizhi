@@ -1,0 +1,32 @@
+[
+  {
+    "char": "揭",
+    "source_label": "揭",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1274,
+      866,
+      1456,
+      1110
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0013_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00011/TE00011_0013_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0013_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00011/annotation/TE00011_0013_2/C1588",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0013_2，框 1389,0944,199,266",
+    "source_note": "CODH 著录原字「揭」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00011/characters/U+63ED/U+63ED_TE00011_0013_2_X1389_Y0944.jpg",
+    "template_score": 0.9957,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "2a2d3d0ed1975c1ca1b0c79d390e226a",
+    "uuid": "2a2d3d0ed1975c1ca1b0c79d390e226a",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

@@ -190,5 +190,32 @@
     "source_style": "小篆",
     "source_style_evidence": "藤花榭本校勘条目类型为正篆",
     "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "槜",
+    "source_label": "檇",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "bbox": [
+      1233,
+      1139,
+      1295,
+      1236
+    ],
+    "column": 10,
+    "row": 0,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=4361",
+    "source_image_url": "https://seal.cmex.org.tw/ori/6u-8.jpg",
+    "source_page": "卷6上，頁8右，第1行。",
+    "source_note": "基金会校勘条目标为《说文》正篆，原字释檇。翻检原页确认是右叶第1行、下接「以木有所擣」的篆字；本批检索于槜下。",
+    "split_method": "source_template+manual_alignment",
+    "source_style": "小篆",
+    "source_edition_type": "正篆",
+    "review_method": "reviewed",
+    "id": "62fc8ae3002f52d5ab1f483f0e6de2f6",
+    "uuid": "62fc8ae3002f52d5ab1f483f0e6de2f6",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "font": "篆书",
+    "visible": true
   }
 ]

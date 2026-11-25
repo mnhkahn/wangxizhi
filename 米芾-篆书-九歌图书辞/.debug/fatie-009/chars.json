@@ -1,0 +1,29 @@
+[
+  {
+    "char": "芷",
+    "source_label": "芷",
+    "author": "米芾",
+    "work": "九歌图书辞",
+    "bbox": [
+      2396,
+      904,
+      2506,
+      1038
+    ],
+    "column": 3,
+    "row": 6,
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14146?dep=P",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A001548N000000000PAI/full/full/0/default.jpg",
+    "source_page": "K2A001548N000000000PAI",
+    "source_note": "台北故宫馆方题为宋李公麟九歌图米芾书辞卷，标篆书。《湘夫人》「沅有芷兮澧有蘭」第3字，卷画面第9段。",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "source_context": "《湘夫人》「沅有芷兮澧有蘭」第3字，卷画面第9段。",
+    "split_method": "visual_position_reviewed",
+    "review_method": "reviewed",
+    "id": "49d5ebcfc5ed595ca774d671d0b80631",
+    "uuid": "49d5ebcfc5ed595ca774d671d0b80631",
+    "work_dir": "米芾-篆书-九歌图书辞",
+    "font": "篆书",
+    "visible": true
+  }
+]

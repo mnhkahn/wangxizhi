@@ -1,0 +1,32 @@
+[
+  {
+    "char": "崎",
+    "source_label": "崎",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      765,
+      324,
+      838,
+      426
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/64",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00064.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/64",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0435_1/C0001",
+    "source_position": "索引页 https://kokusho.nijl.ac.jp/biblio/200013970/canvas/64，框 1790,757,171,239",
+    "source_note": "CODH 著录原字「崎」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00005/characters/U+5D0E/U+5D0E_TE00005_0435_1_X1790_Y0757.jpg",
+    "template_score": 0.9549,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "aa2b8c87bf23550a8fc35293bab208ba",
+    "uuid": "aa2b8c87bf23550a8fc35293bab208ba",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  }
+]

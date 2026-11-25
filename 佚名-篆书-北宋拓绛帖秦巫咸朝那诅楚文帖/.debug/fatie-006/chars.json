@@ -1,0 +1,32 @@
+[
+  {
+    "char": "毋",
+    "source_label": "毋",
+    "bbox": [
+      782,
+      523,
+      910,
+      701
+    ],
+    "column": 7,
+    "row": 2,
+    "column_text": "子孫毋相為不利親卬不",
+    "source_position": "《绛帖》卷一第6开左页从右第3列第3字，从篆书正文起是第8列第3字",
+    "source_note": "馆释为毋，原帖篆文位于「子孫」之后「相為不利」之前。",
+    "author": "佚名",
+    "work": "北宋拓绛帖秦巫咸朝那诅楚文帖",
+    "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/17234?dep=P",
+    "source_image_url": "https://iiifod.npm.gov.tw/iiif/2/K2D%2FK2D000042N000000000PAG/full/full/0/default.jpg",
+    "source_page": 6,
+    "source_style": "秦篆",
+    "source_style_evidence": "馆方释文标为篆书，作品说明其书风与石鼓文相近，呈现由金文发展至小篆的特色。北宋摹刻《绛帖》所收原拓。",
+    "source_credit": "國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw",
+    "source_context": "子孫毋相為不利親卬不",
+    "split_method": "visual_position_reviewed",
+    "id": "8b0d9a39964d5a4895c2f19454e4df71",
+    "uuid": "8b0d9a39964d5a4895c2f19454e4df71",
+    "work_dir": "佚名-篆书-北宋拓绛帖秦巫咸朝那诅楚文帖",
+    "font": "篆书",
+    "visible": true
+  }
+]

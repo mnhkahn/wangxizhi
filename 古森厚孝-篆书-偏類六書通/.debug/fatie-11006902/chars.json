@@ -1,0 +1,32 @@
+[
+  {
+    "char": "鄉",
+    "source_label": "鄉",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      141,
+      563,
+      346,
+      809
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0069_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00011/TE00011_0069_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0069_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00011/annotation/TE00011_0069_2/C4444",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0069_2，框 0153,0608,221,266",
+    "source_note": "CODH 著录原字「鄉」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00011/characters/U+9109/U+9109_TE00011_0069_2_X0153_Y0608.jpg",
+    "template_score": 0.991,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "0b6711cf8e8f5764a499da2796974000",
+    "uuid": "0b6711cf8e8f5764a499da2796974000",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

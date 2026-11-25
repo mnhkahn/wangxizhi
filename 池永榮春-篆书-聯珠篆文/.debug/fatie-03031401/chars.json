@@ -1,0 +1,27 @@
+[
+  {
+    "char": "毋",
+    "source_label": "毋",
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "bbox": [
+      632,
+      843,
+      707,
+      942
+    ],
+    "column": 20,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B6BCB/#TE00003",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/100250413/v4/NDSN/NDSN-00082/NDSN-00082-0009.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/9",
+    "source_note": "《聯珠篆文》“毋”栏的第二个字例，结构呈左右对称双体；与同栏下方楷字逐字比对。现行扫描页9对应CODH索引的10。",
+    "split_method": "source_template+manual_review",
+    "review_method": "reviewed",
+    "id": "c297ed56964a54118b8f2aa391ce9f01",
+    "uuid": "c297ed56964a54118b8f2aa391ce9f01",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "font": "篆书",
+    "visible": true
+  }
+]

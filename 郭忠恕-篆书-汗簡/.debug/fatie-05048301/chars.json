@@ -1,0 +1,32 @@
+[
+  {
+    "char": "悦",
+    "source_label": "悦",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      1263,
+      723,
+      1321,
+      856
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/17",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00017.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/17",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0483_1/C0001",
+    "source_position": "索引页 https://kokusho.nijl.ac.jp/biblio/200013970/canvas/17，框 2954,1692,136,311",
+    "source_note": "CODH 著录原字「悦」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00005/characters/U+60A6/U+60A6_TE00005_0483_1_X2954_Y1692.jpg",
+    "template_score": 0.9375,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "00f321e04ad858df995178feafb880fc",
+    "uuid": "00f321e04ad858df995178feafb880fc",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  }
+]

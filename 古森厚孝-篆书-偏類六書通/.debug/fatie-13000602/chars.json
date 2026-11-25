@@ -1,0 +1,32 @@
+[
+  {
+    "char": "憊",
+    "source_label": "憊",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1261,
+      1108,
+      1453,
+      1351
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00013/canvas/TE00013_0006_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00013/TE00013_0006_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00013/canvas/TE00013_0006_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00013/annotation/TE00013_0006_2/C0858",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00013/canvas/TE00013_0006_2，框 1378,1211,210,265",
+    "source_note": "CODH 著录原字「憊」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00013/characters/U+618A/U+618A_TE00013_0006_2_X1378_Y1211.jpg",
+    "template_score": 0.9867,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "4b74c46ea9005b4bb9c5db28049c39c4",
+    "uuid": "4b74c46ea9005b4bb9c5db28049c39c4",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

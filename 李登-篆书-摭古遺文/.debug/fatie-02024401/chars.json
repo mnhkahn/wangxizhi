@@ -1,0 +1,31 @@
+[
+  {
+    "char": "垕",
+    "source_label": "垕",
+    "author": "李登",
+    "work": "摭古遺文",
+    "work_dir": "李登-篆书-摭古遺文",
+    "bbox": [
+      307,
+      840,
+      436,
+      992
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Harvard_drs_15755656_%E6%91%AD%E5%8F%A4%E9%81%BA%E6%96%87_v.2.pdf#page=39",
+    "variant_evidence": "https://dict.variants.moe.edu.tw/dictView.jsp?ID=4993&la=0",
+    "source_url": "https://id.lib.harvard.edu/alma/990081068000203941/catalog",
+    "source_position": "哈佛燕京藏明刻本卷二 PDF 第39页；CODH TE00002_0244_1、画幅 15757650；页左栏中「厚並」下所列古文",
+    "source_note": "CODH 将篆体释为垕，单字样本匹配整页得 0.980；教育部异体字字典以「从后土」为厚的古文来源，垕兼正字。原书为明刻篆书字谱。",
+    "font": "篆书",
+    "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Harvard_drs_15755656_%E6%91%AD%E5%8F%A4%E9%81%BA%E6%96%87_v.2.pdf#page=39",
+    "column": 0,
+    "row": 0,
+    "source_index": "https://codh.rois.ac.jp/tensho/unicode/U%2B5795/#TE00002",
+    "source_page": "哈佛燕京藏明刻本卷二 PDF 第39页；CODH TE00002_0244_1、画幅 15757650；页左栏中「厚並」下所列古文",
+    "source_style": "篆书",
+    "split_method": "visual_position_reviewed",
+    "id": "8bdf861fd8c25624b9b2d03a1b9d6836",
+    "uuid": "8bdf861fd8c25624b9b2d03a1b9d6836",
+    "visible": true
+  }
+]

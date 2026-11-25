@@ -362,5 +362,61 @@
     "source_style_evidence": "《崇羲篆體》編者製作體例所列大徐本小篆與依小篆偏旁轉寫",
     "source_style_origin": "现代字形表",
     "split_method": "pixel_projection_and_raster_cell"
+  },
+  {
+    "char": "胚",
+    "source_label": "胚",
+    "author": "王心怡",
+    "work": "崇羲篆体字形表-常用字",
+    "bbox": [
+      554,
+      1325,
+      612,
+      1396
+    ],
+    "column": 3,
+    "row": 9,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=34",
+    "source_image_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=34",
+    "source_page": 34,
+    "source_position": "王心怡《崇羲篆体字形表》原刊第 34 页 3310 号，楷书栏「胚」，取相邻篆体栏。",
+    "source_note": "王心怡《崇羲篆体字形表》原刊第 34 页 3310 号，楷书栏「胚」，取相邻篆体栏。",
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "split_method": "pixel_projection_and_raster_cell",
+    "review_method": "printed",
+    "id": "e8f3dcbf4eda50ce9e777f465c712011",
+    "uuid": "e8f3dcbf4eda50ce9e777f465c712011",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-常用字",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "脆",
+    "source_label": "脆",
+    "author": "王心怡",
+    "work": "崇羲篆体字形表-常用字",
+    "bbox": [
+      555,
+      2917,
+      610,
+      2988
+    ],
+    "column": 3,
+    "row": 24,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=34",
+    "source_image_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_CommonWords.pdf#page=34",
+    "source_page": 34,
+    "source_position": "王心怡《崇羲篆体字形表》原刊第 34 页 3325 号，楷书栏「脆」，取相邻篆体栏。",
+    "source_note": "王心怡《崇羲篆体字形表》原刊第 34 页 3325 号，楷书栏「脆」，取相邻篆体栏。",
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "split_method": "pixel_projection_and_raster_cell",
+    "review_method": "printed",
+    "id": "7b961b625aba5a5fb51b8133bfd8f245",
+    "uuid": "7b961b625aba5a5fb51b8133bfd8f245",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-常用字",
+    "font": "篆书",
+    "visible": true
   }
 ]

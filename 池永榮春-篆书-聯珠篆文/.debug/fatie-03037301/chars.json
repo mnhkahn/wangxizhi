@@ -1,0 +1,192 @@
+[
+  {
+    "id": "6d20f292d7605bdaac0430610696a825",
+    "uuid": "6d20f292d7605bdaac0430610696a825",
+    "char": "藝",
+    "font": "篆书",
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "bbox": [
+      1788,
+      719,
+      1852,
+      825
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/69#xywh=4185,1683,149,249",
+    "source_label": "藝",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00003/annotation/TE00003_0373_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00003/character.json",
+    "scan_canvas": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/68",
+    "source_bbox": [
+      4185,
+      1683,
+      4334,
+      1932
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00003/characters/U+85DD/U+85DD_TE00003_0373_1_X4185_Y1683.jpg",
+    "template_score": 0.9435,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "5601455e461f556897e53ddd29d5ca17",
+    "uuid": "5601455e461f556897e53ddd29d5ca17",
+    "char": "藤",
+    "font": "篆书",
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "bbox": [
+      1697,
+      383,
+      1767,
+      488
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/69#xywh=3970,896,164,245",
+    "source_label": "藤",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00003/annotation/TE00003_0373_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00003/character.json",
+    "scan_canvas": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/68",
+    "source_bbox": [
+      3970,
+      896,
+      4134,
+      1141
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00003/characters/U+85E4/U+85E4_TE00003_0373_1_X3970_Y0896.jpg",
+    "template_score": 0.947,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "babeb9fa87e05387ad6e81ca3b778c53",
+    "uuid": "babeb9fa87e05387ad6e81ca3b778c53",
+    "char": "邊",
+    "font": "篆书",
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "bbox": [
+      1438,
+      384,
+      1508,
+      485
+    ],
+    "column": 2,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/69#xywh=3365,898,164,237",
+    "source_label": "邊",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00003/annotation/TE00003_0373_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00003/character.json",
+    "scan_canvas": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/68",
+    "source_bbox": [
+      3365,
+      898,
+      3529,
+      1135
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00003/characters/U+908A/U+908A_TE00003_0373_1_X3365_Y0898.jpg",
+    "template_score": 0.9675,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "75ff79fed1d85a188b64c0c2530d4c47",
+    "uuid": "75ff79fed1d85a188b64c0c2530d4c47",
+    "char": "鵲",
+    "font": "篆书",
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "bbox": [
+      926,
+      1054,
+      1002,
+      1157
+    ],
+    "column": 3,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/69#xywh=2166,2466,179,240",
+    "source_label": "鵲",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00003/annotation/TE00003_0373_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00003/character.json",
+    "scan_canvas": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/68",
+    "source_bbox": [
+      2166,
+      2466,
+      2345,
+      2706
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00003/characters/U+9D72/U+9D72_TE00003_0373_1_X2166_Y2466.jpg",
+    "template_score": 0.9718,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "952d0354c4af57a68f6c6673fa9b451d",
+    "uuid": "952d0354c4af57a68f6c6673fa9b451d",
+    "char": "懸",
+    "font": "篆书",
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "bbox": [
+      505,
+      727,
+      568,
+      823
+    ],
+    "column": 4,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/69#xywh=1181,1701,147,225",
+    "source_label": "懸",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00003/annotation/TE00003_0373_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00003/character.json",
+    "scan_canvas": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/68",
+    "source_bbox": [
+      1181,
+      1701,
+      1328,
+      1926
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00003/characters/U+61F8/U+61F8_TE00003_0373_1_X1181_Y1701.jpg",
+    "template_score": 0.972,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "霧",
+    "source_label": "霧",
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "bbox": [
+      1269,
+      487,
+      1341,
+      597
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/68",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/100250413/v4/NDSN/NDSN-00082/NDSN-00082-0068.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/68",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00003/annotation/TE00003_0373_1/C0001",
+    "source_position": "索引页 https://kokusho.nijl.ac.jp/biblio/100250413/canvas/69，框 2968,1140,169,257",
+    "source_note": "CODH 著录原字「霧」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00003/characters/U+9727/U+9727_TE00003_0373_1_X2968_Y1140.jpg",
+    "template_score": 0.9413,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "311a1cd0304f55649ceab0239f443836",
+    "uuid": "311a1cd0304f55649ceab0239f443836",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "font": "篆书",
+    "visible": true
+  }
+]

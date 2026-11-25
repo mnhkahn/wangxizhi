@@ -1,0 +1,161 @@
+[
+  {
+    "id": "38b969d5d77d52c1b262179c9e92e5da",
+    "uuid": "38b969d5d77d52c1b262179c9e92e5da",
+    "char": "陣",
+    "font": "篆书",
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "bbox": [
+      1494,
+      724,
+      1561,
+      827
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/38#xywh=3495,1694,157,242",
+    "source_label": "陣",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00003/annotation/TE00003_0342_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00003/character.json",
+    "scan_canvas": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/37",
+    "source_bbox": [
+      3495,
+      1694,
+      3652,
+      1936
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00003/characters/U+9663/U+9663_TE00003_0342_1_X3495_Y1694.jpg",
+    "template_score": 0.9689,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "874926461fe850e1b9a91d7e7f29a687",
+    "uuid": "874926461fe850e1b9a91d7e7f29a687",
+    "char": "做",
+    "font": "篆书",
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "bbox": [
+      729,
+      503,
+      794,
+      598
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/38#xywh=1706,1176,151,223",
+    "source_label": "做",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00003/annotation/TE00003_0342_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00003/character.json",
+    "scan_canvas": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/37",
+    "source_bbox": [
+      1706,
+      1176,
+      1857,
+      1399
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00003/characters/U+505A/U+505A_TE00003_0342_1_X1706_Y1176.jpg",
+    "template_score": 0.9807,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "763936c64bc95726a48573af0ba8435f",
+    "uuid": "763936c64bc95726a48573af0ba8435f",
+    "char": "凰",
+    "font": "篆书",
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "bbox": [
+      557,
+      726,
+      628,
+      827
+    ],
+    "column": 2,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/38#xywh=1303,1699,165,237",
+    "source_label": "凰",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00003/annotation/TE00003_0342_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00003/character.json",
+    "scan_canvas": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/37",
+    "source_bbox": [
+      1303,
+      1699,
+      1468,
+      1936
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00003/characters/U+51F0/U+51F0_TE00003_0342_1_X1303_Y1699.jpg",
+    "template_score": 0.9514,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "2c96eab9fd635863a9cab80934b9f557",
+    "uuid": "2c96eab9fd635863a9cab80934b9f557",
+    "char": "剪",
+    "font": "篆书",
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "bbox": [
+      560,
+      1055,
+      625,
+      1152
+    ],
+    "column": 2,
+    "row": 1,
+    "visible": true,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/38#xywh=1311,2468,152,228",
+    "source_label": "剪",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00003/annotation/TE00003_0342_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00003/character.json",
+    "scan_canvas": "https://kokusho.nijl.ac.jp/biblio/100250413/canvas/37",
+    "source_bbox": [
+      1311,
+      2468,
+      1463,
+      2696
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00003/characters/U+526A/U+526A_TE00003_0342_1_X1311_Y2468.jpg",
+    "template_score": 0.9681,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "i": 0,
+    "n": 3,
+    "char": "迺",
+    "source_label": "迺",
+    "author": "池永榮春",
+    "work": "聯珠篆文",
+    "bbox": [
+      1837,
+      384,
+      1900,
+      472
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B8FFA/#TE00003",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/100250413/v4/NDSN/NDSN-00082/NDSN-00082-0037.tif/full/2400,/0/default.jpg",
+    "source_page": "TE00003_0342_1",
+    "source_note": "同栏楷字作「迺」，篆文可辨内框及外部迂回笔势，和吴昌硕所用原帖结构、结体均有区别。CODH 旧索引为第38页，现行图源为第37页。 全页配准 0.938。",
+    "split_method": "source_template_reviewed",
+    "score": 0.938366711139679,
+    "source_credit": "国文学研究资料馆收集、CODH／DHII 整理《篆書字体データセット》，CC BY-SA 4.0，DOI 10.20676/00000390。",
+    "position": "TE00003_0342_1",
+    "source_context": "同栏楷字作「迺」，篆文可辨内框及外部迂回笔势，和吴昌硕所用原帖结构、结体均有区别",
+    "review_method": "reviewed",
+    "id": "13cf2782b08a5393825c1d8e7c761f56",
+    "uuid": "13cf2782b08a5393825c1d8e7c761f56",
+    "work_dir": "池永榮春-篆书-聯珠篆文",
+    "font": "篆书",
+    "visible": true
+  }
+]

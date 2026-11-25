@@ -1,0 +1,63 @@
+[
+  {
+    "id": "06486f56455f50bdba7d9861ff428ee6",
+    "uuid": "06486f56455f50bdba7d9861ff428ee6",
+    "char": "辣",
+    "font": "篆书",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "bbox": [
+      1840,
+      849,
+      2020,
+      1077
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "http://codh.rois.ac.jp/tensho/iiif/TE00012/canvas/TE00012_0028_2#xywh=2025,0935,198,251",
+    "source_label": "辣",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00012/annotation/TE00012_0028_2/C3363",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00012/character.json",
+    "source_bbox": [
+      2025,
+      935,
+      2223,
+      1186
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00012/characters/U+8FA3/U+8FA3_TE00012_0028_2_X2025_Y0935.jpg",
+    "template_score": 0.9852,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "遙",
+    "source_label": "遙",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      980,
+      1911,
+      1187,
+      2151
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00012/canvas/TE00012_0028_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00012/TE00012_0028_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00012/canvas/TE00012_0028_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00012/annotation/TE00012_0028_2/C3419",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00012/canvas/TE00012_0028_2，框 1079,2103,228,264",
+    "source_note": "CODH 著录原字「遙」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00012/characters/U+9059/U+9059_TE00012_0028_2_X1079_Y2103.jpg",
+    "template_score": 0.9902,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "2b95a47d2bb35a5b9f4b2601049f54bd",
+    "uuid": "2b95a47d2bb35a5b9f4b2601049f54bd",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

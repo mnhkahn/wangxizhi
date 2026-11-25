@@ -1,0 +1,32 @@
+[
+  {
+    "char": "床",
+    "source_label": "床",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      1524,
+      932,
+      1617,
+      1047
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/79",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000079/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/79",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0646_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/2559689/canvas/79，框 4224,2584,258,318",
+    "source_note": "CODH 著录原字「床」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+5E8A/U+5E8A_TE00006_0646_1_X4224_Y2584.jpg",
+    "template_score": 0.9703,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "1cac0cd92ff05f2e9ad7bbc2d572207f",
+    "uuid": "1cac0cd92ff05f2e9ad7bbc2d572207f",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "char": "槁",
+    "source_label": "槀",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      1544,
+      1163,
+      1633,
+      1276
+    ],
+    "column": 10,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B69C0/#TE00006",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000136/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/136",
+    "source_note": "《韻府古篆彙選》原刊「槀木枯」条，字框在“大篆”标记之上。图中上部平行折笔、下部木形方直，可与原帖小篆对照。",
+    "split_method": "source_template+manual_review",
+    "source_style": "大篆",
+    "source_style_evidence": "原刊字例下有「大篆」标注",
+    "review_method": "reviewed",
+    "id": "436a204ae4755c7f99a24450f3f996ef",
+    "uuid": "436a204ae4755c7f99a24450f3f996ef",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]

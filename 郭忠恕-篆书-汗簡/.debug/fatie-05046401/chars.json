@@ -1,0 +1,63 @@
+[
+  {
+    "i": 9,
+    "n": 5,
+    "char": "笈",
+    "source_label": "笈",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      959,
+      322,
+      1021,
+      439
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/unicode/U%2B7B08/#TE00005",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00034.tif/full/2400,/0/default.jpg",
+    "source_page": "TE00005_0464_1",
+    "source_note": "原页小注在该字下标「笈碧落文」，出自《汗簡》用古文录写。以 CODH 发布的单字样本配准，确认竹头之下与《聯珠篆文》用形不同。 全页配准 0.924。",
+    "split_method": "source_template_reviewed",
+    "score": 0.924309253692627,
+    "source_credit": "国文学研究资料馆收集、CODH／DHII 整理《篆書字体データセット》，CC BY-SA 4.0，DOI 10.20676/00000390。",
+    "position": "TE00005_0464_1",
+    "source_context": "原页小注在该字下标「笈碧落文」，出自《汗簡》用古文录写",
+    "review_method": "reviewed",
+    "id": "a80b1b259485545ca6fd147733556fe7",
+    "uuid": "a80b1b259485545ca6fd147733556fe7",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  },
+  {
+    "char": "丌",
+    "source_label": "丌",
+    "author": "郭忠恕",
+    "work": "汗簡",
+    "bbox": [
+      692,
+      561,
+      761,
+      628
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/34",
+    "source_image_url": "https://kokusho.nijl.ac.jp/api/iiif/200013970/v4/NIIP/054-0289/054-0289-00034.tif/full/2400,/0/default.jpg",
+    "source_page": "https://kokusho.nijl.ac.jp/biblio/200013970/canvas/34",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0464_1/C0001",
+    "source_position": "CODH 定位 https://codh.rois.ac.jp/tensho/book/TE00005/annotation/TE00005_0464_1/C0001",
+    "source_note": "CODH 著录原字「丌」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00005/characters/U+4E0C/U+4E0C_TE00005_0464_1_X1620_Y1313.jpg",
+    "template_score": 0.9722,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "d157992326b851ea8990cb1d0fcf7a57",
+    "uuid": "d157992326b851ea8990cb1d0fcf7a57",
+    "work_dir": "郭忠恕-篆书-汗簡",
+    "font": "篆书",
+    "visible": true
+  }
+]

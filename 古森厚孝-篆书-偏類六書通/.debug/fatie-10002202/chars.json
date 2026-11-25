@@ -1,0 +1,32 @@
+[
+  {
+    "char": "殼",
+    "source_label": "殻",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      2132,
+      810,
+      2307,
+      1048
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0022_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00010/TE00010_0022_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0022_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00010/annotation/TE00010_0022_2/C2736",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0022_2，框 2323,0883,191,259",
+    "source_note": "CODH 著录原字为「殻」，归入本库标签「殼」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00010/characters/U+6BBB/U+6BBB_TE00010_0022_2_X2323_Y0883.jpg",
+    "template_score": 0.9945,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "bb96aef3baea540aa3ac3158dadbd1cd",
+    "uuid": "bb96aef3baea540aa3ac3158dadbd1cd",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

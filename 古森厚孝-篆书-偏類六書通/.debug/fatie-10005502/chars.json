@@ -1,0 +1,32 @@
+[
+  {
+    "char": "捶",
+    "source_label": "捶",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      2131,
+      1403,
+      2336,
+      1652
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0055_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00010/TE00010_0055_2.tif/full/2400,/0/default.jpg",
+    "source_page": "http://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0055_2",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00010/annotation/TE00010_0055_2/C2217",
+    "source_position": "索引页 http://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0055_2，框 2302,1515,221,269",
+    "source_note": "CODH 著录原字「捶」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00010/characters/U+6376/U+6376_TE00010_0055_2_X2302_Y1515.jpg",
+    "template_score": 0.9939,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "84acbd7b2e365c1aa1a67e08c97433ef",
+    "uuid": "84acbd7b2e365c1aa1a67e08c97433ef",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

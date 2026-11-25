@@ -1,0 +1,32 @@
+[
+  {
+    "char": "拋",
+    "source_label": "拋",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      1448,
+      445,
+      1539,
+      549
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/69",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000069/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/69",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0610_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/2559689/canvas/69，框 4014,1234,251,287",
+    "source_note": "CODH 著录原字「拋」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+62CB/U+62CB_TE00006_0610_1_X4014_Y1234.jpg",
+    "template_score": 0.9725,
+    "split_method": "source_template+pixel_projection_check",
+    "review_method": "indexed",
+    "id": "beb8532f41af5bef8f00a5c21bffa5fc",
+    "uuid": "beb8532f41af5bef8f00a5c21bffa5fc",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
+  }
+]
