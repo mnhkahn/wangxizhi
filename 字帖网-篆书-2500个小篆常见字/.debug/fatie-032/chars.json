@@ -1,0 +1,32 @@
+[
+  {
+    "char": "皺",
+    "source_label": "皱",
+    "author": "字帖网",
+    "work": "2500个小篆常见字",
+    "bbox": [
+      303,
+      206,
+      340,
+      264
+    ],
+    "column": 4,
+    "row": 1,
+    "source_url": "https://www.zitiewang.com/shufa/ge56693.htm",
+    "source_image_url": "https://img.zitiewang.com/file/202410/1728631614910211.jpg",
+    "source_page": 32,
+    "source_position": "发布页第 32 图，从上数第 2 行篆字、左起第 5 列。",
+    "source_note": "楷书字头为「皱」，见本图正上方。原页未署书家，录为现代排印字帖。与库内王心怡《崇羲篆体字形表》的「皺」对照补第二例。",
+    "source_archive_kind": "published_copybook_full_page",
+    "source_full_page": true,
+    "source_style": "小篆",
+    "source_style_origin": "现代排印教学字帖",
+    "split_method": "published_table_cell+visual_review",
+    "id": "186d497813ba563cbc3908f48a54f00b",
+    "uuid": "186d497813ba563cbc3908f48a54f00b",
+    "work_dir": "字帖网-篆书-2500个小篆常见字",
+    "font": "篆书",
+    "visible": true,
+    "source_file": "fatie-032.jpg"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "char": "卡",
+    "source_label": "卡",
+    "author": "字帖网",
+    "work": "2500个小篆常见字",
+    "bbox": [
+      576,
+      584,
+      607,
+      643
+    ],
+    "column": 0,
+    "row": 3,
+    "source_url": "https://www.zitiewang.com/shufa/ge56693.htm",
+    "source_image_url": "https://img.zitiewang.com/file/202410/1728631612188257.jpg",
+    "source_page": 4,
+    "source_position": "发布页第 4 图，从上数第 4 行篆字、左起第 9 列。",
+    "source_note": "楷书字头为「卡」，见本图正上方。原页未署书家，录为现代排印字帖。与库内王心怡《崇羲篆体字形表》的「卡」对照补第二例。",
+    "source_archive_kind": "published_copybook_full_page",
+    "source_full_page": true,
+    "source_style": "小篆",
+    "source_style_origin": "现代排印教学字帖",
+    "split_method": "published_table_cell+visual_review",
+    "id": "b164780f1e4d5a318293b5b6a008ff4c",
+    "uuid": "b164780f1e4d5a318293b5b6a008ff4c",
+    "work_dir": "字帖网-篆书-2500个小篆常见字",
+    "font": "篆书",
+    "visible": true,
+    "source_file": "fatie-004.jpg"
+  },
+  {
+    "char": "扒",
+    "source_label": "扒",
+    "author": "字帖网",
+    "work": "2500个小篆常见字",
+    "bbox": [
+      300,
+      402,
+      339,
+      460
+    ],
+    "column": 4,
+    "row": 2,
+    "source_url": "https://www.zitiewang.com/shufa/ge56693.htm",
+    "source_image_url": "https://img.zitiewang.com/file/202410/1728631612188257.jpg",
+    "source_page": 4,
+    "source_position": "发布页第 4 图，从上数第 3 行篆字、左起第 5 列。",
+    "source_note": "楷书字头为「扒」，见本图正上方。原页未署书家，录为现代排印字帖。与库内王心怡《崇羲篆体字形表》的「扒」对照补第二例。",
+    "source_archive_kind": "published_copybook_full_page",
+    "source_full_page": true,
+    "source_style": "小篆",
+    "source_style_origin": "现代排印教学字帖",
+    "split_method": "published_table_cell+visual_review",
+    "id": "b5117334cd695fd287a1e35eec1e7b95",
+    "uuid": "b5117334cd695fd287a1e35eec1e7b95",
+    "work_dir": "字帖网-篆书-2500个小篆常见字",
+    "font": "篆书",
+    "visible": true,
+    "source_file": "fatie-004.jpg"
+  }
+]
