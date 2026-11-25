@@ -1,0 +1,25 @@
+[
+  {
+    "id": "3fd978e677875d8d91a187b1092ea7eb",
+    "uuid": "3fd978e677875d8d91a187b1092ea7eb",
+    "char": "撼",
+    "author": "傅世垚",
+    "font": "篆书",
+    "work": "六书分类",
+    "work_dir": "傅世垚-篆书-六书分类",
+    "bbox": [
+      888,
+      575,
+      995,
+      704
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://www.shidianguji.com/zh/book/HY2675/chapter/1kpi74r0390yt",
+    "source_label": "撼",
+    "source_position": "卷四手部，原刊「撼」字头下标作小篆的首例",
+    "source_style": "小篆",
+    "split_method": "pixel_projection"
+  }
+]

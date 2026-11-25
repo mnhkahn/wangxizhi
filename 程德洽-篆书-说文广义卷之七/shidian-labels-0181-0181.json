@@ -1,0 +1,47 @@
+{
+  "source": "程德洽-篆书-说文广义卷之七/shidian-glosses.json",
+  "start_source": 736,
+  "next_source": 741,
+  "assignments": [
+    {
+      "page": 181,
+      "column": 0,
+      "char": "馺",
+      "source_index": 736,
+      "headword_line_id": 2651,
+      "kept_existing": true
+    },
+    {
+      "page": 181,
+      "column": 1,
+      "char": "𩣘",
+      "source_index": 737,
+      "headword_line_id": 2655,
+      "kept_existing": true
+    },
+    {
+      "page": 181,
+      "column": 2,
+      "char": "冎",
+      "source_index": 738,
+      "headword_line_id": 2658,
+      "kept_existing": true
+    },
+    {
+      "page": 181,
+      "column": 3,
+      "char": "𠕩",
+      "source_index": 739,
+      "headword_line_id": 2661,
+      "kept_existing": true
+    },
+    {
+      "page": 181,
+      "column": 4,
+      "char": "別",
+      "source_index": 740,
+      "headword_line_id": 2664,
+      "kept_existing": true
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "48b2bebe90af5ca3a84420afc1c188d9",
+    "uuid": "48b2bebe90af5ca3a84420afc1c188d9",
+    "char": "嘴",
+    "author": "傅世垚",
+    "font": "篆书",
+    "work": "六书分类",
+    "work_dir": "傅世垚-篆书-六书分类",
+    "bbox": [
+      568,
+      650,
+      657,
+      791
+    ],
+    "column": 3,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://www.shidianguji.com/zh/book/HY2675/chapter/1kpi74gtp338z",
+    "source_label": "嘴",
+    "source_position": "卷二口部，原刊「嘴」字头下标作小篆的首例",
+    "source_style": "小篆",
+    "split_method": "pixel_projection"
+  },
+  {
+    "id": "0dcf2c2dafe450588e3db8b01b04fcb7",
+    "uuid": "0dcf2c2dafe450588e3db8b01b04fcb7",
+    "char": "嘶",
+    "author": "傅世垚",
+    "font": "篆书",
+    "work": "六书分类",
+    "work_dir": "傅世垚-篆书-六书分类",
+    "bbox": [
+      428,
+      658,
+      537,
+      791
+    ],
+    "column": 4,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://www.shidianguji.com/zh/book/HY2675/chapter/1kpi74gtp338z",
+    "source_label": "嘶",
+    "source_position": "卷二口部，原刊「嘶」字头下标作小篆的首例",
+    "source_style": "小篆",
+    "split_method": "pixel_projection"
+  },
+  {
+    "id": "317404034e5957df8751404ea1e407a9",
+    "uuid": "317404034e5957df8751404ea1e407a9",
+    "char": "嘹",
+    "author": "傅世垚",
+    "font": "篆书",
+    "work": "六书分类",
+    "work_dir": "傅世垚-篆书-六书分类",
+    "bbox": [
+      152,
+      637,
+      257,
+      776
+    ],
+    "column": 6,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://www.shidianguji.com/zh/book/HY2675/chapter/1kpi74gtp338z?pageId=7444966796085641227",
+    "source_label": "嘹",
+    "source_caption": "嘹音聊",
+    "source_position": "卷二口部，阅读器第 38 页，原刊「嘹」字头下首例小篆",
+    "split_method": "pixel_projection"
+  }
+]

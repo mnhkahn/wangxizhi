@@ -1,0 +1,50 @@
+[
+  {
+    "id": "33b9a44785935ece99bd876d258c524c",
+    "uuid": "33b9a44785935ece99bd876d258c524c",
+    "char": "悉",
+    "font": "篆书",
+    "author": "曹本",
+    "work": "续复古编-咫进斋本",
+    "work_dir": "曹本-篆书-续复古编-咫进斋本",
+    "bbox": [
+      1968,
+      1457,
+      2081,
+      1640
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_label": "悉",
+    "source_url": "https://hiroshima.repo.nii.ac.jp/record/2000054/files/zokufukkohen_syoten_20220509.pdf#page=35",
+    "source_position": "卷3第7葉左第2字，Xu-FGB-1782",
+    "source_style": "小篆",
+    "source_style_evidence": "廣島大學《復古編・續復古編》小篆字形對照表「續清」欄",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "a09f7edd82f05c2fb995c43b8e9cf364",
+    "uuid": "a09f7edd82f05c2fb995c43b8e9cf364",
+    "char": "室",
+    "font": "篆书",
+    "author": "曹本",
+    "work": "续复古编-咫进斋本",
+    "work_dir": "曹本-篆书-续复古编-咫进斋本",
+    "bbox": [
+      512,
+      663,
+      647,
+      839
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true,
+    "source_label": "室",
+    "source_url": "https://hiroshima.repo.nii.ac.jp/record/2000054/files/zokufukkohen_syoten_20220509.pdf#page=35",
+    "source_position": "卷3第8葉右第4字，Xu-FGB-1792",
+    "source_style": "小篆",
+    "source_style_evidence": "廣島大學《復古編・續復古編》小篆字形對照表「續清」欄",
+    "split_method": "source_template+pixel_projection_check"
+  }
+]

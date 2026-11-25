@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ad7bc628a8368a24d4205deddb73488d",
+    "uuid": "ad7bc628a8368a24d4205deddb73488d",
+    "char": "澗",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      0,
+      0,
+      506,
+      672
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true
+  },
+  {
+    "id": "58092319c46a1a61e6f51728bcdee9a7",
+    "uuid": "58092319c46a1a61e6f51728bcdee9a7",
+    "char": "夾",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      70,
+      633,
+      493,
+      1312
+    ],
+    "column": 1,
+    "row": 1,
+    "visible": true
+  },
+  {
+    "id": "19ffea77a0c80639185f2e659a74090a",
+    "uuid": "19ffea77a0c80639185f2e659a74090a",
+    "char": "南",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      528,
+      0,
+      984,
+      643
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true
+  },
+  {
+    "id": "0d70261d4d73cdbae3825aca23cbbff8",
+    "uuid": "0d70261d4d73cdbae3825aca23cbbff8",
+    "char": "抵",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      516,
+      634,
+      1024,
+      1306
+    ],
+    "column": 0,
+    "row": 1,
+    "visible": true
+  },
+  {
+    "id": "ec2dbbf28756403979473e085b50160a",
+    "uuid": "ec2dbbf28756403979473e085b50160a",
+    "char": "石",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      517.7805486284291,
+      1303.067331670823,
+      1025.0124688279302,
+      1949.6009975062345
+    ],
+    "column": 0,
+    "row": 2,
+    "visible": true
+  }
+]

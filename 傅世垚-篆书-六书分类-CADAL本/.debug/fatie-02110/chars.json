@@ -1,0 +1,25 @@
+[
+  {
+    "id": "49f9474435c150159a244ed75dae0274",
+    "uuid": "49f9474435c150159a244ed75dae0274",
+    "char": "嫩",
+    "author": "傅世垚",
+    "work": "六书分类-CADAL本",
+    "work_dir": "傅世垚-篆书-六书分类-CADAL本",
+    "font": "篆书",
+    "visible": true,
+    "column": 5,
+    "row": 0,
+    "bbox": [
+      606,
+      814,
+      730,
+      960
+    ],
+    "source_url": "https://commons.wikimedia.org/wiki/File:CADAL02046393_%E5%85%AD%E6%9B%B8%E5%88%86%E9%A1%9E%EF%BC%88%E5%9B%9B%EF%BC%89.djvu#page=110",
+    "source_position": "卷2女部，CADAL第 110 页，原刊「嫩」字头下标作小篆的首例",
+    "source_label": "嫩",
+    "source_style": "小篆",
+    "split_method": "pixel_projection"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "8509c5cfa3665d179bd5978388ede4f8",
+    "uuid": "8509c5cfa3665d179bd5978388ede4f8",
+    "char": "佐",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      190,
+      9,
+      355,
+      206
+    ],
+    "column": 2,
+    "row": 0,
+    "source_label": "佐",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 38 圖，右起第 3 欄第 1 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  }
+]

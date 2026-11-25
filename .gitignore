@@ -16,6 +16,7 @@ __pycache__/
 *.so
 .Python
 build/
+backups/
 develop-eggs/
 dist/
 downloads/
@@ -51,6 +52,10 @@ words/
 tmp/
 # OCR batch log
 batch_ocr_log.txt
+
+# 释文填充审计中间文件
+shidian-labels-*.json
+*.json
 
 # Debug images
 debug_*.jpg

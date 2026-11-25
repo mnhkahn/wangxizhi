@@ -1,0 +1,110 @@
+[
+  {
+    "id": "80825d179fc4869c9aed8f944a57ea47",
+    "uuid": "80825d179fc4869c9aed8f944a57ea47",
+    "char": "多",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      620,
+      10,
+      924,
+      693
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true
+  },
+  {
+    "id": "6df79319e6c9865eb4872c0d29935967",
+    "uuid": "6df79319e6c9865eb4872c0d29935967",
+    "char": "灌",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      529,
+      605,
+      1019,
+      1330
+    ],
+    "column": 0,
+    "row": 1,
+    "visible": true
+  },
+  {
+    "id": "7b01796e8be5f17f4f0838179647cc99",
+    "uuid": "7b01796e8be5f17f4f0838179647cc99",
+    "char": "叢",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      517.7805486284291,
+      1303.067331670823,
+      1025.0124688279302,
+      1997.2431421446386
+    ],
+    "column": 0,
+    "row": 2,
+    "visible": true
+  },
+  {
+    "id": "ba78ad39153a435c678835180d5c8036",
+    "uuid": "ba78ad39153a435c678835180d5c8036",
+    "char": "蘿",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      7,
+      38,
+      467,
+      693
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true
+  },
+  {
+    "id": "dab8cef093eef432e8bf85fee40c28c2",
+    "uuid": "dab8cef093eef432e8bf85fee40c28c2",
+    "char": "蔦",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      10.0,
+      684.1159600997506,
+      517.2319201995012,
+      1370.7693266832914
+    ],
+    "column": 1,
+    "row": 1,
+    "visible": true
+  },
+  {
+    "id": "2bc328b4ed713f73dd6cb46e4b4ddb4f",
+    "uuid": "2bc328b4ed713f73dd6cb46e4b4ddb4f",
+    "char": "葉",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      27,
+      1345,
+      490,
+      2011
+    ],
+    "column": 1,
+    "row": 2,
+    "visible": true
+  }
+]

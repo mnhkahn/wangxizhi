@@ -1,0 +1,32 @@
+[
+  {
+    "char": "榨",
+    "source_label": "榨",
+    "author": "字帖网",
+    "work": "2500个小篆常见字",
+    "bbox": [
+      106,
+      392,
+      143,
+      448
+    ],
+    "column": 7,
+    "row": 2,
+    "source_url": "https://www.zitiewang.com/shufa/ge56693.htm",
+    "source_image_url": "https://img.zitiewang.com/file/202410/1728631620333979.jpg",
+    "source_page": 46,
+    "source_position": "发布页第 46 图，从上数第 3 行篆字、左起第 2 列。",
+    "source_note": "楷书字头为「榨」，见本图正上方。原页未署书家，录为现代排印字帖。与库内王心怡《崇羲篆体字形表》的「榨」对照补第二例。",
+    "source_archive_kind": "published_copybook_full_page",
+    "source_full_page": true,
+    "source_style": "小篆",
+    "source_style_origin": "现代排印教学字帖",
+    "split_method": "published_table_cell+visual_review",
+    "id": "c5fa40b7edce5542a44fb4024fec7c4d",
+    "uuid": "c5fa40b7edce5542a44fb4024fec7c4d",
+    "work_dir": "字帖网-篆书-2500个小篆常见字",
+    "font": "篆书",
+    "visible": true,
+    "source_file": "fatie-046.jpg"
+  }
+]

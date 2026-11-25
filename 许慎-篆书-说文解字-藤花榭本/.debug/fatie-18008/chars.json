@@ -1,0 +1,27 @@
+[
+  {
+    "id": "2b13af075926583a9220096b9cadc714",
+    "uuid": "2b13af075926583a9220096b9cadc714",
+    "char": "貓",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      1769,
+      428,
+      1838,
+      531
+    ],
+    "column": 3,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=6950",
+    "source_position": "卷9下，頁7左，第4行。",
+    "source_label": "貓",
+    "source_style": "小篆",
+    "source_edition_type": "新附",
+    "source_style_evidence": "藤花榭本校勘条目类型为新附",
+    "split_method": "source_template+pixel_projection_check"
+  }
+]

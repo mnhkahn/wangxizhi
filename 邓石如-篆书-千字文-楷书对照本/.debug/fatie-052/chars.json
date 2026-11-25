@@ -1,0 +1,48 @@
+[
+  {
+    "id": "691eacdaa37557738d8d622beb1b436c",
+    "uuid": "691eacdaa37557738d8d622beb1b436c",
+    "char": "耀",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      173,
+      826,
+      361,
+      1030
+    ],
+    "column": 2,
+    "row": 3,
+    "source_label": "耀",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 52 圖，右起第 3 欄第 4 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "39873086e64f5bc8bc52097d975245f8",
+    "uuid": "39873086e64f5bc8bc52097d975245f8",
+    "char": "懸",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      14,
+      556,
+      187,
+      764
+    ],
+    "column": 3,
+    "row": 2,
+    "source_label": "懸",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 52 圖，右起第 4 欄第 3 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  }
+]

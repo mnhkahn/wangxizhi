@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1dd95c4d7dae56e2a20f863dae9253cf",
+    "uuid": "1dd95c4d7dae56e2a20f863dae9253cf",
+    "char": "返",
+    "font": "篆书",
+    "author": "傅世垚",
+    "work": "六书分类-早稻田藏本",
+    "work_dir": "傅世垚-篆书-六书分类-早稻田藏本",
+    "bbox": [
+      1774,
+      530,
+      1844,
+      612
+    ],
+    "visible": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:WUL-ho04_00835_%E5%85%AD%E6%9B%B8%E5%88%86%E9%A1%9E_12.pdf#page=14",
+    "source_label": "返",
+    "source_position": "卷10，早稻田藏本第12册 PDF 第14页，原刊圈内「返」字头下标作「小篆」的首例",
+    "source_style": "小篆",
+    "split_method": "source_type_cell+pixel_projection_check",
+    "column": 0,
+    "row": 0
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "10a0a88bb98656d19170acc16384a1ed",
+    "uuid": "10a0a88bb98656d19170acc16384a1ed",
+    "char": "遲",
+    "font": "篆书",
+    "author": "傅世垚",
+    "work": "六书分类-早稻田藏本",
+    "work_dir": "傅世垚-篆书-六书分类-早稻田藏本",
+    "bbox": [
+      1847,
+      518,
+      1924,
+      614
+    ],
+    "visible": true,
+    "source_url": "https://commons.wikimedia.org/wiki/File:WUL-ho04_00835_%E5%85%AD%E6%9B%B8%E5%88%86%E9%A1%9E_12.pdf#page=23",
+    "source_label": "遲",
+    "source_position": "卷10，早稻田藏本第12册 PDF 第23页，原刊圈内「遲」字头下标作「小篆」的首例",
+    "source_style": "小篆",
+    "split_method": "source_type_cell+pixel_projection_check",
+    "column": 0,
+    "row": 0
+  }
+]

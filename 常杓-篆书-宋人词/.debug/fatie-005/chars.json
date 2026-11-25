@@ -1,0 +1,1842 @@
+[
+  {
+    "id": "b28462e2cf185a33b08ba97fa8980e79",
+    "uuid": "b28462e2cf185a33b08ba97fa8980e79",
+    "char": "天",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      2171,
+      379,
+      2312,
+      521
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 193
+  },
+  {
+    "id": "9553bab45da156e8ae86543fece7899b",
+    "uuid": "9553bab45da156e8ae86543fece7899b",
+    "char": "命",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      2178,
+      519,
+      2316,
+      667
+    ],
+    "column": 0,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 194
+  },
+  {
+    "id": "709092237ea55c64a15ea29e6b9e2ce6",
+    "uuid": "709092237ea55c64a15ea29e6b9e2ce6",
+    "char": "更",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      2197,
+      667,
+      2312,
+      806
+    ],
+    "column": 0,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 195
+  },
+  {
+    "id": "96d0c06d3ab35bad86c1bec3ef95e74c",
+    "uuid": "96d0c06d3ab35bad86c1bec3ef95e74c",
+    "char": "奚",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      2175.0,
+      795.0,
+      2308.0,
+      943.0
+    ],
+    "column": 0,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 196
+  },
+  {
+    "id": "02672db9e74150d78d33dc4f9c67dcaf",
+    "uuid": "02672db9e74150d78d33dc4f9c67dcaf",
+    "char": "疑",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      2183,
+      958,
+      2312,
+      1108
+    ],
+    "column": 0,
+    "row": 4,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 197
+  },
+  {
+    "id": "9c21da82a0e15ded986fea6536bd36aa",
+    "uuid": "9c21da82a0e15ded986fea6536bd36aa",
+    "char": "且",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      2186,
+      1108,
+      2309,
+      1237
+    ],
+    "column": 0,
+    "row": 5,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 198
+  },
+  {
+    "id": "b3e556f9770f5d9a9ce2854cf0392aeb",
+    "uuid": "b3e556f9770f5d9a9ce2854cf0392aeb",
+    "char": "乘",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      2186,
+      1233,
+      2312,
+      1386
+    ],
+    "column": 0,
+    "row": 6,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 199
+  },
+  {
+    "id": "eb3b37ee71685b69bf3b65e52405d671",
+    "uuid": "eb3b37ee71685b69bf3b65e52405d671",
+    "char": "流",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      2175.0,
+      1379.0,
+      2308.0,
+      1527.0
+    ],
+    "column": 0,
+    "row": 7,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 200
+  },
+  {
+    "id": "0565ee76977b592ba1567b6eed0e75c1",
+    "uuid": "0565ee76977b592ba1567b6eed0e75c1",
+    "char": "遇",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      2175.0,
+      1525.0,
+      2308.0,
+      1672.0
+    ],
+    "column": 0,
+    "row": 8,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 201
+  },
+  {
+    "id": "1177e4b3121b5b9bb9cd5a9df311a3e7",
+    "uuid": "1177e4b3121b5b9bb9cd5a9df311a3e7",
+    "char": "坎",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      2183,
+      1667,
+      2300,
+      1837
+    ],
+    "column": 0,
+    "row": 9,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 202
+  },
+  {
+    "id": "de36e5d2d71256029867ac6cf2ea2aeb",
+    "uuid": "de36e5d2d71256029867ac6cf2ea2aeb",
+    "char": "還",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      2051,
+      357,
+      2177,
+      522
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 203
+  },
+  {
+    "id": "da0347e1d10e5a498a8d9ce16282081f",
+    "uuid": "da0347e1d10e5a498a8d9ce16282081f",
+    "char": "止",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      2055,
+      510,
+      2186,
+      677
+    ],
+    "column": 1,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 204
+  },
+  {
+    "id": "9a580043368b583e94dda08f61b86c6c",
+    "uuid": "9a580043368b583e94dda08f61b86c6c",
+    "char": "太",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1917,
+      365,
+      2029,
+      523
+    ],
+    "column": 2,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 205
+  },
+  {
+    "id": "3932629c464355d3ad67c611122a26e9",
+    "uuid": "3932629c464355d3ad67c611122a26e9",
+    "char": "行",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1902.0,
+      490.0,
+      2033.0,
+      640.0
+    ],
+    "column": 2,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 206
+  },
+  {
+    "id": "a4ffc9c5212552868fa08ff9dd36fb05",
+    "uuid": "a4ffc9c5212552868fa08ff9dd36fb05",
+    "char": "之",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1902.0,
+      638.0,
+      2033.0,
+      787.0
+    ],
+    "column": 2,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 207
+  },
+  {
+    "id": "f002bab661c05e5797c94db9644e2fd1",
+    "uuid": "f002bab661c05e5797c94db9644e2fd1",
+    "char": "暘",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1902.0,
+      787.0,
+      2033.0,
+      936.0
+    ],
+    "column": 2,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 208
+  },
+  {
+    "id": "091c9d3ef0ff5631b9791c4de33656e7",
+    "uuid": "091c9d3ef0ff5631b9791c4de33656e7",
+    "char": "環",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1902.0,
+      934.0,
+      2033.0,
+      1084.0
+    ],
+    "column": 2,
+    "row": 4,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 209
+  },
+  {
+    "id": "5c146188912f5ad890a3ec328089dac1",
+    "uuid": "5c146188912f5ad890a3ec328089dac1",
+    "char": "抱",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1902.0,
+      1082.0,
+      2033.0,
+      1232.0
+    ],
+    "column": 2,
+    "row": 5,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 210
+  },
+  {
+    "id": "e8011eb4d21d5f11893d29a81c2a7052",
+    "uuid": "e8011eb4d21d5f11893d29a81c2a7052",
+    "char": "兩",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1902.0,
+      1230.0,
+      2033.0,
+      1380.0
+    ],
+    "column": 2,
+    "row": 6,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 211
+  },
+  {
+    "id": "54fd34d3dc4950f7a7dd918212f50ebb",
+    "uuid": "54fd34d3dc4950f7a7dd918212f50ebb",
+    "char": "山",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1902.0,
+      1378.0,
+      2033.0,
+      1527.0
+    ],
+    "column": 2,
+    "row": 7,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 212
+  },
+  {
+    "id": "27dac00e16ea5880bc82c6e1fff3c68a",
+    "uuid": "27dac00e16ea5880bc82c6e1fff3c68a",
+    "char": "般",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1902.0,
+      1526.0,
+      2033.0,
+      1676.0
+    ],
+    "column": 2,
+    "row": 8,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 213
+  },
+  {
+    "id": "d0c10e68ef785e8cab9cbc52e7572fd7",
+    "uuid": "d0c10e68ef785e8cab9cbc52e7572fd7",
+    "char": "谷",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1902.0,
+      1674.0,
+      2033.0,
+      1845.0
+    ],
+    "column": 2,
+    "row": 9,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 214
+  },
+  {
+    "id": "987714a709265520a38518f68c9680a9",
+    "uuid": "987714a709265520a38518f68c9680a9",
+    "char": "真",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1761.0,
+      363.0,
+      1896.0,
+      489.0
+    ],
+    "column": 3,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 215
+  },
+  {
+    "id": "1600cae4d6e55ef981f29d30d82c6024",
+    "uuid": "1600cae4d6e55ef981f29d30d82c6024",
+    "char": "堪",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1761.0,
+      487.0,
+      1896.0,
+      637.0
+    ],
+    "column": 3,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 216
+  },
+  {
+    "id": "67b8d6ddf11a51d18e917c6ed00c0ee6",
+    "uuid": "67b8d6ddf11a51d18e917c6ed00c0ee6",
+    "char": "記",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1761.0,
+      635.0,
+      1896.0,
+      784.0
+    ],
+    "column": 3,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 217
+  },
+  {
+    "id": "959772c6b08f573ea493934a06c9f4eb",
+    "uuid": "959772c6b08f573ea493934a06c9f4eb",
+    "char": "盤",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1761.0,
+      782.0,
+      1896.0,
+      932.0
+    ],
+    "column": 3,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 218
+  },
+  {
+    "id": "bad0448164c25507a72537466fb41a0d",
+    "uuid": "bad0448164c25507a72537466fb41a0d",
+    "char": "之",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1761.0,
+      930.0,
+      1896.0,
+      1080.0
+    ],
+    "column": 3,
+    "row": 4,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 219
+  },
+  {
+    "id": "253e78af455f525081f0287fe0f90fc5",
+    "uuid": "253e78af455f525081f0287fe0f90fc5",
+    "char": "間",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1761.0,
+      1078.0,
+      1896.0,
+      1227.0
+    ],
+    "column": 3,
+    "row": 5,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 220
+  },
+  {
+    "id": "69db2c6dad1c5762afcc217f8c47a2f4",
+    "uuid": "69db2c6dad1c5762afcc217f8c47a2f4",
+    "char": "灥",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1761.0,
+      1225.0,
+      1896.0,
+      1375.0
+    ],
+    "column": 3,
+    "row": 6,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 221
+  },
+  {
+    "id": "f18cb74abf295cb7890567d5a0e541d8",
+    "uuid": "f18cb74abf295cb7890567d5a0e541d8",
+    "char": "甘",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1761.0,
+      1373.0,
+      1896.0,
+      1522.0
+    ],
+    "column": 3,
+    "row": 7,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 222
+  },
+  {
+    "id": "adaf61c70ece550da42160ccc3f3e973",
+    "uuid": "adaf61c70ece550da42160ccc3f3e973",
+    "char": "而",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1761.0,
+      1521.0,
+      1896.0,
+      1670.0
+    ],
+    "column": 3,
+    "row": 8,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 223
+  },
+  {
+    "id": "86d5e701d10a54f7a7d778bb4a731d20",
+    "uuid": "86d5e701d10a54f7a7d778bb4a731d20",
+    "char": "土",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1761.0,
+      1668.0,
+      1896.0,
+      1839.0
+    ],
+    "column": 3,
+    "row": 9,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 224
+  },
+  {
+    "id": "734cadad05df5861b8366789ab5daf26",
+    "uuid": "734cadad05df5861b8366789ab5daf26",
+    "char": "肥",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1621.0,
+      361.0,
+      1755.0,
+      487.0
+    ],
+    "column": 4,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 225
+  },
+  {
+    "id": "f20bd44cf1d459978b266a6120788875",
+    "uuid": "f20bd44cf1d459978b266a6120788875",
+    "char": "草",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1621.0,
+      485.0,
+      1755.0,
+      635.0
+    ],
+    "column": 4,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 226
+  },
+  {
+    "id": "b7551fa1181651efba2c482eb048dd10",
+    "uuid": "b7551fa1181651efba2c482eb048dd10",
+    "char": "木",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1621.0,
+      633.0,
+      1755.0,
+      783.0
+    ],
+    "column": 4,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 227
+  },
+  {
+    "id": "7c4d762793c05f08a2ad22db33da7d26",
+    "uuid": "7c4d762793c05f08a2ad22db33da7d26",
+    "char": "番",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1621.0,
+      781.0,
+      1755.0,
+      931.0
+    ],
+    "column": 4,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 228
+  },
+  {
+    "id": "945e44f02dbc551896ec114a1a73b162",
+    "uuid": "945e44f02dbc551896ec114a1a73b162",
+    "char": "居",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1621.0,
+      929.0,
+      1755.0,
+      1079.0
+    ],
+    "column": 4,
+    "row": 4,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 229
+  },
+  {
+    "id": "6665ef1ffbfa5427a93de2022c21b612",
+    "uuid": "6665ef1ffbfa5427a93de2022c21b612",
+    "char": "民",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1621.0,
+      1077.0,
+      1755.0,
+      1226.0
+    ],
+    "column": 4,
+    "row": 5,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 230
+  },
+  {
+    "id": "76971be2afc5505ab03dad81396661b6",
+    "uuid": "76971be2afc5505ab03dad81396661b6",
+    "char": "尟",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1621.0,
+      1224.0,
+      1755.0,
+      1374.0
+    ],
+    "column": 4,
+    "row": 6,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 231
+  },
+  {
+    "id": "94698b11d6075ef6bca0d2673f3aa894",
+    "uuid": "94698b11d6075ef6bca0d2673f3aa894",
+    "char": "至",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1621.0,
+      1372.0,
+      1755.0,
+      1522.0
+    ],
+    "column": 4,
+    "row": 7,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 232
+  },
+  {
+    "id": "437cd91e6fc2595caa88d2d21d5ed69e",
+    "uuid": "437cd91e6fc2595caa88d2d21d5ed69e",
+    "char": "或",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1621.0,
+      1520.0,
+      1755.0,
+      1670.0
+    ],
+    "column": 4,
+    "row": 8,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 233
+  },
+  {
+    "id": "8d926901aa4a545db2dcb673e829ea2d",
+    "uuid": "8d926901aa4a545db2dcb673e829ea2d",
+    "char": "以",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1621.0,
+      1668.0,
+      1755.0,
+      1839.0
+    ],
+    "column": 4,
+    "row": 9,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 234
+  },
+  {
+    "id": "0cfde38697c052ff97f038acc91c6bdb",
+    "uuid": "0cfde38697c052ff97f038acc91c6bdb",
+    "char": "為",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1325.0,
+      361.0,
+      1447.0,
+      487.0
+    ],
+    "column": 5,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 235
+  },
+  {
+    "id": "e5ac1da5376259eb80f25ca2950aaa77",
+    "uuid": "e5ac1da5376259eb80f25ca2950aaa77",
+    "char": "茲",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1325.0,
+      485.0,
+      1447.0,
+      635.0
+    ],
+    "column": 5,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 236
+  },
+  {
+    "id": "d0fc35b98a635d27afd35128d405f341",
+    "uuid": "d0fc35b98a635d27afd35128d405f341",
+    "char": "山",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1325.0,
+      633.0,
+      1447.0,
+      782.0
+    ],
+    "column": 5,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 237
+  },
+  {
+    "id": "11a6befdb04b5d8ebf86e0a4aeae19f4",
+    "uuid": "11a6befdb04b5d8ebf86e0a4aeae19f4",
+    "char": "宅",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1325.0,
+      781.0,
+      1447.0,
+      930.0
+    ],
+    "column": 5,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 238
+  },
+  {
+    "id": "dfabffed85f356cca97a43353a481887",
+    "uuid": "dfabffed85f356cca97a43353a481887",
+    "char": "幽",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1325.0,
+      928.0,
+      1447.0,
+      1078.0
+    ],
+    "column": 5,
+    "row": 4,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 239
+  },
+  {
+    "id": "590172480e895431ac15fcbf1c617c7a",
+    "uuid": "590172480e895431ac15fcbf1c617c7a",
+    "char": "而",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1325.0,
+      1076.0,
+      1447.0,
+      1225.0
+    ],
+    "column": 5,
+    "row": 5,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 240
+  },
+  {
+    "id": "9630e8c7cd905bf99e9eeb8f498bb441",
+    "uuid": "9630e8c7cd905bf99e9eeb8f498bb441",
+    "char": "阻",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1325.0,
+      1223.0,
+      1447.0,
+      1373.0
+    ],
+    "column": 5,
+    "row": 6,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 241
+  },
+  {
+    "id": "33297f307f6a5facba5e96842493c103",
+    "uuid": "33297f307f6a5facba5e96842493c103",
+    "char": "隱",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1325.0,
+      1371.0,
+      1447.0,
+      1521.0
+    ],
+    "column": 5,
+    "row": 7,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 242
+  },
+  {
+    "id": "2474377386c6575fa372e1a34bd6ba76",
+    "uuid": "2474377386c6575fa372e1a34bd6ba76",
+    "char": "人",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1325.0,
+      1519.0,
+      1447.0,
+      1667.0
+    ],
+    "column": 5,
+    "row": 8,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 243
+  },
+  {
+    "id": "b0ef532a32505954abcbe34d72e14cf6",
+    "uuid": "b0ef532a32505954abcbe34d72e14cf6",
+    "char": "之",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1325.0,
+      1667.0,
+      1447.0,
+      1837.0
+    ],
+    "column": 5,
+    "row": 9,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 244
+  },
+  {
+    "id": "dbf9b0c8fc7f519799ce81ab3489a240",
+    "uuid": "dbf9b0c8fc7f519799ce81ab3489a240",
+    "char": "所",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1193.0,
+      361.0,
+      1323.0,
+      509.0
+    ],
+    "column": 6,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 245
+  },
+  {
+    "id": "1a4d8355e7b0546c9c9dfb06dc3a6f4e",
+    "uuid": "1a4d8355e7b0546c9c9dfb06dc3a6f4e",
+    "char": "回",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1193.0,
+      507.0,
+      1323.0,
+      637.0
+    ],
+    "column": 6,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 246
+  },
+  {
+    "id": "2e10fe83f9fa5e528481ef402e9cdb06",
+    "uuid": "2e10fe83f9fa5e528481ef402e9cdb06",
+    "char": "旋",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1193.0,
+      635.0,
+      1323.0,
+      786.0
+    ],
+    "column": 6,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 247
+  },
+  {
+    "id": "be82f0a264b5567fa33052300d353d1a",
+    "uuid": "be82f0a264b5567fa33052300d353d1a",
+    "char": "地",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1193.0,
+      784.0,
+      1323.0,
+      935.0
+    ],
+    "column": 6,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 248
+  },
+  {
+    "id": "06598309d9625e3cb979ddefe9ad5b93",
+    "uuid": "06598309d9625e3cb979ddefe9ad5b93",
+    "char": "嗟",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1193.0,
+      933.0,
+      1323.0,
+      1084.0
+    ],
+    "column": 6,
+    "row": 4,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 249
+  },
+  {
+    "id": "9d432842227e54dba8cc439d8f56f04a",
+    "uuid": "9d432842227e54dba8cc439d8f56f04a",
+    "char": "舊",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1193.0,
+      1082.0,
+      1323.0,
+      1232.0
+    ],
+    "column": 6,
+    "row": 5,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 250
+  },
+  {
+    "id": "0882de2f4b8a55229a8a9c229a5857be",
+    "uuid": "0882de2f4b8a55229a8a9c229a5857be",
+    "char": "友",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1193.0,
+      1230.0,
+      1323.0,
+      1381.0
+    ],
+    "column": 6,
+    "row": 6,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 251
+  },
+  {
+    "id": "8f09e062dc2452dfb39d9b1f1a7cb59b",
+    "uuid": "8f09e062dc2452dfb39d9b1f1a7cb59b",
+    "char": "良",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1193.0,
+      1379.0,
+      1323.0,
+      1527.0
+    ],
+    "column": 6,
+    "row": 7,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 252
+  },
+  {
+    "id": "f8dc0df98931570dbbb1ab1680c71a61",
+    "uuid": "f8dc0df98931570dbbb1ab1680c71a61",
+    "char": "朋",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1193.0,
+      1525.0,
+      1323.0,
+      1679.0
+    ],
+    "column": 6,
+    "row": 8,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 253
+  },
+  {
+    "id": "fe6740d068bc53089e96d3cbc7df3d6d",
+    "uuid": "fe6740d068bc53089e96d3cbc7df3d6d",
+    "char": "李",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1193.0,
+      1677.0,
+      1323.0,
+      1849.0
+    ],
+    "column": 6,
+    "row": 9,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 254
+  },
+  {
+    "id": "99af094a29315ac4b7cc29077a7a6391",
+    "uuid": "99af094a29315ac4b7cc29077a7a6391",
+    "char": "愿",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1040.0,
+      363.0,
+      1182.0,
+      490.0
+    ],
+    "column": 7,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 255
+  },
+  {
+    "id": "2e5b8c97e01c5403a2a86ff544a43fde",
+    "uuid": "2e5b8c97e01c5403a2a86ff544a43fde",
+    "char": "居",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1040.0,
+      488.0,
+      1182.0,
+      638.0
+    ],
+    "column": 7,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 256
+  },
+  {
+    "id": "62610b2f05b85d48bc09d05e756cbb77",
+    "uuid": "62610b2f05b85d48bc09d05e756cbb77",
+    "char": "此",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1040.0,
+      636.0,
+      1182.0,
+      786.0
+    ],
+    "column": 7,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 257
+  },
+  {
+    "id": "ec85f5a7427d52cdab5dd8349e820b2e",
+    "uuid": "ec85f5a7427d52cdab5dd8349e820b2e",
+    "char": "其",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1040.0,
+      784.0,
+      1182.0,
+      933.0
+    ],
+    "column": 7,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 258
+  },
+  {
+    "id": "76966cc93aa6556a9c0791befcba5424",
+    "uuid": "76966cc93aa6556a9c0791befcba5424",
+    "char": "言",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1040.0,
+      932.0,
+      1182.0,
+      1083.0
+    ],
+    "column": 7,
+    "row": 4,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 259
+  },
+  {
+    "id": "f480bd00de125f9884b5371721e312de",
+    "uuid": "f480bd00de125f9884b5371721e312de",
+    "char": "真",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1040.0,
+      1081.0,
+      1182.0,
+      1231.0
+    ],
+    "column": 7,
+    "row": 5,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 260
+  },
+  {
+    "id": "4caa6cbafe0355e6a06e69ca1e3c16c8",
+    "uuid": "4caa6cbafe0355e6a06e69ca1e3c16c8",
+    "char": "又",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1040.0,
+      1229.0,
+      1182.0,
+      1379.0
+    ],
+    "column": 7,
+    "row": 6,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 261
+  },
+  {
+    "id": "49774af7d3fd579785b7d73faac04ac6",
+    "uuid": "49774af7d3fd579785b7d73faac04ac6",
+    "char": "突",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1040.0,
+      1377.0,
+      1182.0,
+      1527.0
+    ],
+    "column": 7,
+    "row": 7,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 262
+  },
+  {
+    "id": "f2cee24fa0fd54c4b4c57d1a599fdef6",
+    "uuid": "f2cee24fa0fd54c4b4c57d1a599fdef6",
+    "char": "味",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1040.0,
+      1525.0,
+      1182.0,
+      1675.0
+    ],
+    "column": 7,
+    "row": 8,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 263
+  },
+  {
+    "id": "4a4115e22ed0546982c318fbc5c96afc",
+    "uuid": "4a4115e22ed0546982c318fbc5c96afc",
+    "char": "彼",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      1040.0,
+      1673.0,
+      1182.0,
+      1845.0
+    ],
+    "column": 7,
+    "row": 9,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 264
+  },
+  {
+    "id": "8dc9f142e23b5cc588e9614b28b73f44",
+    "uuid": "8dc9f142e23b5cc588e9614b28b73f44",
+    "char": "大",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      897.0,
+      361.0,
+      1038.0,
+      488.0
+    ],
+    "column": 8,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 265
+  },
+  {
+    "id": "629efadb77f053c6bedc3b878db66ce8",
+    "uuid": "629efadb77f053c6bedc3b878db66ce8",
+    "char": "丈",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      897.0,
+      486.0,
+      1038.0,
+      634.0
+    ],
+    "column": 8,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 266
+  },
+  {
+    "id": "c5b6be65e8fb5d5a8eab5be93da34113",
+    "uuid": "c5b6be65e8fb5d5a8eab5be93da34113",
+    "char": "夫",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      897.0,
+      633.0,
+      1038.0,
+      784.0
+    ],
+    "column": 8,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 267
+  },
+  {
+    "id": "aecafc6fe4ca5437ac02f253096658ff",
+    "uuid": "aecafc6fe4ca5437ac02f253096658ff",
+    "char": "者",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      897.0,
+      783.0,
+      1038.0,
+      933.0
+    ],
+    "column": 8,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 268
+  },
+  {
+    "id": "9fba1520005e5e5f8c40a532422c69d6",
+    "uuid": "9fba1520005e5e5f8c40a532422c69d6",
+    "char": "我",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      897.0,
+      931.0,
+      1038.0,
+      1082.0
+    ],
+    "column": 8,
+    "row": 4,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 269
+  },
+  {
+    "id": "de27749075525c6b9f6c76efb535cd8c",
+    "uuid": "de27749075525c6b9f6c76efb535cd8c",
+    "char": "知",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      897.0,
+      1080.0,
+      1038.0,
+      1230.0
+    ],
+    "column": 8,
+    "row": 5,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 270
+  },
+  {
+    "id": "20fefb3ff65550288b4866127eb18fdf",
+    "uuid": "20fefb3ff65550288b4866127eb18fdf",
+    "char": "之",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      897.0,
+      1228.0,
+      1038.0,
+      1378.0
+    ],
+    "column": 8,
+    "row": 6,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 271
+  },
+  {
+    "id": "ceb50b0bc3695f478d7a34922caba005",
+    "uuid": "ceb50b0bc3695f478d7a34922caba005",
+    "char": "坐",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      897.0,
+      1376.0,
+      1038.0,
+      1526.0
+    ],
+    "column": 8,
+    "row": 7,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 272
+  },
+  {
+    "id": "e76d1d96466150ac955282e45aa55b3a",
+    "uuid": "e76d1d96466150ac955282e45aa55b3a",
+    "char": "郎",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      897.0,
+      1526.0,
+      1038.0,
+      1675.0
+    ],
+    "column": 8,
+    "row": 8,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 273
+  },
+  {
+    "id": "114743b82ab65be58544f5246d99168a",
+    "uuid": "114743b82ab65be58544f5246d99168a",
+    "char": "廟",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      897.0,
+      1673.0,
+      1038.0,
+      1845.0
+    ],
+    "column": 8,
+    "row": 9,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 274
+  },
+  {
+    "id": "79512b73a80355fbbda0748fecfa1d50",
+    "uuid": "79512b73a80355fbbda0748fecfa1d50",
+    "char": "喜",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      756.0,
+      361.0,
+      893.0,
+      489.0
+    ],
+    "column": 9,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 275
+  },
+  {
+    "id": "e3458ba827ca566b8474eb45b0f31215",
+    "uuid": "e3458ba827ca566b8474eb45b0f31215",
+    "char": "怒",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      756.0,
+      487.0,
+      893.0,
+      638.0
+    ],
+    "column": 9,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 276
+  },
+  {
+    "id": "fa8f3ab6527a558eb08596332dc14c95",
+    "uuid": "fa8f3ab6527a558eb08596332dc14c95",
+    "char": "有",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      756.0,
+      636.0,
+      893.0,
+      738.0
+    ],
+    "column": 9,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 277
+  },
+  {
+    "id": "9932711806375d8eb85a996b51551ae7",
+    "uuid": "9932711806375d8eb85a996b51551ae7",
+    "char": "恩",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      756.0,
+      736.0,
+      893.0,
+      936.0
+    ],
+    "column": 9,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 278
+  },
+  {
+    "id": "6fb80185c90a5d88b5f72c3f66feb78c",
+    "uuid": "6fb80185c90a5d88b5f72c3f66feb78c",
+    "char": "畏",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      756.0,
+      934.0,
+      893.0,
+      1085.0
+    ],
+    "column": 9,
+    "row": 4,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 279
+  },
+  {
+    "id": "de46c37f18f05031a32dbda23475cc37",
+    "uuid": "de46c37f18f05031a32dbda23475cc37",
+    "char": "才",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      756.0,
+      1083.0,
+      893.0,
+      1234.0
+    ],
+    "column": 9,
+    "row": 5,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 280
+  },
+  {
+    "id": "114a1f072a0f568ea08c267ceda054a8",
+    "uuid": "114a1f072a0f568ea08c267ceda054a8",
+    "char": "俊",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      756.0,
+      1232.0,
+      893.0,
+      1383.0
+    ],
+    "column": 9,
+    "row": 6,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 281
+  },
+  {
+    "id": "291ee497769554bca4f98cbe839035a1",
+    "uuid": "291ee497769554bca4f98cbe839035a1",
+    "char": "盈",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      756.0,
+      1381.0,
+      893.0,
+      1532.0
+    ],
+    "column": 9,
+    "row": 7,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 282
+  },
+  {
+    "id": "6e4e489bfc6552e994f1795a47b11533",
+    "uuid": "6e4e489bfc6552e994f1795a47b11533",
+    "char": "前",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      756.0,
+      1530.0,
+      893.0,
+      1680.0
+    ],
+    "column": 9,
+    "row": 8,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 283
+  },
+  {
+    "id": "955228aebde45e26ab26e22548fcf85e",
+    "uuid": "955228aebde45e26ab26e22548fcf85e",
+    "char": "窈",
+    "font": "篆书",
+    "author": "常杓",
+    "work": "宋人词",
+    "work_dir": "常杓-篆书-宋人词",
+    "bbox": [
+      756.0,
+      1680.0,
+      893.0,
+      1851.0
+    ],
+    "column": 9,
+    "row": 9,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 284
+  }
+]

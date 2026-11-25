@@ -1,0 +1,802 @@
+[
+  {
+    "id": "ed57401257e659b9bdcf695560ea179d",
+    "uuid": "ed57401257e659b9bdcf695560ea179d",
+    "char": "于",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      1073.0,
+      38.0,
+      1174.0,
+      171.0
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 41
+  },
+  {
+    "id": "56e236e08ab75a61b35040b3058f481a",
+    "uuid": "56e236e08ab75a61b35040b3058f481a",
+    "char": "王",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      1074.0,
+      197.0,
+      1170.0,
+      322.0
+    ],
+    "column": 0,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 42
+  },
+  {
+    "id": "18f4df22cc875489b6c4b1156514121d",
+    "uuid": "18f4df22cc875489b6c4b1156514121d",
+    "char": "庭",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      1072.0,
+      340.0,
+      1179.0,
+      497.0
+    ],
+    "column": 0,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 43
+  },
+  {
+    "id": "01825ff2119a546e9898030036c2676c",
+    "uuid": "01825ff2119a546e9898030036c2676c",
+    "char": "言",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      1064.0,
+      509.0,
+      1168.0,
+      652.0
+    ],
+    "column": 0,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 44
+  },
+  {
+    "id": "2e5f929a2d895fe8bf02c8dc731c9bfd",
+    "uuid": "2e5f929a2d895fe8bf02c8dc731c9bfd",
+    "char": "文",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      951.0,
+      29.0,
+      1059.0,
+      173.0
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 45
+  },
+  {
+    "id": "582d2b40ac7f5cb0bcaa0484feb04f0d",
+    "uuid": "582d2b40ac7f5cb0bcaa0484feb04f0d",
+    "char": "者",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      959.0,
+      186.0,
+      1053.0,
+      324.0
+    ],
+    "column": 1,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 46
+  },
+  {
+    "id": "da73c10fa9ab5854acee0c71bdfaa27c",
+    "uuid": "da73c10fa9ab5854acee0c71bdfaa27c",
+    "char": "宣",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      951.0,
+      343.0,
+      1062.0,
+      476.0
+    ],
+    "column": 1,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 47
+  },
+  {
+    "id": "1a941d7ad9fe5336a708fb0de4b7fdc1",
+    "uuid": "1a941d7ad9fe5336a708fb0de4b7fdc1",
+    "char": "教",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      953.0,
+      499.0,
+      1057.0,
+      643.0
+    ],
+    "column": 1,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 48
+  },
+  {
+    "id": "6055d6dc890f554c9b84bcf2f38b5703",
+    "uuid": "6055d6dc890f554c9b84bcf2f38b5703",
+    "char": "明",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      841.0,
+      38.0,
+      949.0,
+      175.0
+    ],
+    "column": 2,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 49
+  },
+  {
+    "id": "a31efa0215ed589cadc8d5d5e5add344",
+    "uuid": "a31efa0215ed589cadc8d5d5e5add344",
+    "char": "化",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      838.0,
+      182.0,
+      949.0,
+      331.0
+    ],
+    "column": 2,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 50
+  },
+  {
+    "id": "9ca8c3feb3d45c80b59bad5fd0151146",
+    "uuid": "9ca8c3feb3d45c80b59bad5fd0151146",
+    "char": "于",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      847.0,
+      363.0,
+      941.0,
+      478.0
+    ],
+    "column": 2,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 51
+  },
+  {
+    "id": "3329467799795cb8b4aeb1bfb366d575",
+    "uuid": "3329467799795cb8b4aeb1bfb366d575",
+    "char": "王",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      850.0,
+      503.0,
+      945.0,
+      633.0
+    ],
+    "column": 2,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 52
+  },
+  {
+    "id": "766aeb357ff353dd9f3336ea6804fd49",
+    "uuid": "766aeb357ff353dd9f3336ea6804fd49",
+    "char": "者",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      731.0,
+      30.0,
+      836.0,
+      178.0
+    ],
+    "column": 3,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 53
+  },
+  {
+    "id": "a0ae3a3f63c059f59596c6741f933915",
+    "uuid": "a0ae3a3f63c059f59596c6741f933915",
+    "char": "朝",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      729.0,
+      190.0,
+      830.0,
+      338.0
+    ],
+    "column": 3,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 54
+  },
+  {
+    "id": "5bff26e12a7458a2a0b9956d207b8aa3",
+    "uuid": "5bff26e12a7458a2a0b9956d207b8aa3",
+    "char": "廷",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      730.0,
+      346.0,
+      830.0,
+      490.0
+    ],
+    "column": 3,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 55
+  },
+  {
+    "id": "a67e47f8f4d155fe98a9521317ec6d9a",
+    "uuid": "a67e47f8f4d155fe98a9521317ec6d9a",
+    "char": "君",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      735.0,
+      501.0,
+      827.0,
+      651.0
+    ],
+    "column": 3,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 56
+  },
+  {
+    "id": "c90e8c5eddb45819b1c002e6f8718828",
+    "uuid": "c90e8c5eddb45819b1c002e6f8718828",
+    "char": "子",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      619.0,
+      24.0,
+      720.0,
+      178.0
+    ],
+    "column": 4,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 57
+  },
+  {
+    "id": "a364966674f8565dba196489a3ab3277",
+    "uuid": "a364966674f8565dba196489a3ab3277",
+    "char": "所",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      615.0,
+      187.0,
+      727.0,
+      331.0
+    ],
+    "column": 4,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 58
+  },
+  {
+    "id": "55884aeee1fb5b38b48525203bd32360",
+    "uuid": "55884aeee1fb5b38b48525203bd32360",
+    "char": "以",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      615.0,
+      343.0,
+      727.0,
+      497.0
+    ],
+    "column": 4,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 59
+  },
+  {
+    "id": "e5f51b1094495790a84f4c2505a19bf6",
+    "uuid": "e5f51b1094495790a84f4c2505a19bf6",
+    "char": "施",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      615.0,
+      501.0,
+      727.0,
+      652.0
+    ],
+    "column": 4,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 60
+  },
+  {
+    "id": "d00ad581b5425c20b9c0e5324fd08b7c",
+    "uuid": "d00ad581b5425c20b9c0e5324fd08b7c",
+    "char": "祿",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      483.0,
+      30.0,
+      577.0,
+      178.0
+    ],
+    "column": 5,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 61
+  },
+  {
+    "id": "d7fa7a5cd2ea5beaad74d001acd06637",
+    "uuid": "d7fa7a5cd2ea5beaad74d001acd06637",
+    "char": "下",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      476,
+      191,
+      585,
+      323
+    ],
+    "column": 5,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 62
+  },
+  {
+    "id": "31c910b1f2d8526aa585f769f4b707f4",
+    "uuid": "31c910b1f2d8526aa585f769f4b707f4",
+    "char": "居",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      474.0,
+      340.0,
+      576.0,
+      496.0
+    ],
+    "column": 5,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 63
+  },
+  {
+    "id": "7986a417466c5b60ac98e8c385258318",
+    "uuid": "7986a417466c5b60ac98e8c385258318",
+    "char": "德",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      492.0,
+      499.0,
+      585.0,
+      652.0
+    ],
+    "column": 5,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 64
+  },
+  {
+    "id": "bdd0504793345c799f3e7d0d76a65620",
+    "uuid": "bdd0504793345c799f3e7d0d76a65620",
+    "char": "則",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      367.0,
+      23.0,
+      472.0,
+      171.0
+    ],
+    "column": 6,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 65
+  },
+  {
+    "id": "761b4fba738a55bfbef6b0868dd502ce",
+    "uuid": "761b4fba738a55bfbef6b0868dd502ce",
+    "char": "忌",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      373.0,
+      187.0,
+      466.0,
+      336.0
+    ],
+    "column": 6,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 66
+  },
+  {
+    "id": "7501e1f8c4305aff94972ce735613fe6",
+    "uuid": "7501e1f8c4305aff94972ce735613fe6",
+    "char": "也",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      368.0,
+      343.0,
+      472.0,
+      496.0
+    ],
+    "column": 6,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 67
+  },
+  {
+    "id": "f5089f2f4ab8520e9fa81ca11efde639",
+    "uuid": "f5089f2f4ab8520e9fa81ca11efde639",
+    "char": "倉",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      364.0,
+      499.0,
+      470.0,
+      637.0
+    ],
+    "column": 6,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 68
+  },
+  {
+    "id": "7f13528023d3536ca6f2c4485adef6dc",
+    "uuid": "7f13528023d3536ca6f2c4485adef6dc",
+    "char": "頡",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      253.0,
+      28.0,
+      361.0,
+      178.0
+    ],
+    "column": 7,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 69
+  },
+  {
+    "id": "6b461d032d4f5a9a97705346e9726e76",
+    "uuid": "6b461d032d4f5a9a97705346e9726e76",
+    "char": "之",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      255.0,
+      180.0,
+      356.0,
+      322.0
+    ],
+    "column": 7,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 70
+  },
+  {
+    "id": "039bcf49b9af511ba67d4c0d6778005c",
+    "uuid": "039bcf49b9af511ba67d4c0d6778005c",
+    "char": "初",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      239,
+      335,
+      357,
+      487
+    ],
+    "column": 7,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 71
+  },
+  {
+    "id": "b5936dadb5a950fa8c8e675b3c45d665",
+    "uuid": "b5936dadb5a950fa8c8e675b3c45d665",
+    "char": "作",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      250.0,
+      500.0,
+      361.0,
+      645.0
+    ],
+    "column": 7,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 72
+  },
+  {
+    "id": "c92a1dbbd34253f59450775273696cf4",
+    "uuid": "c92a1dbbd34253f59450775273696cf4",
+    "char": "書",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      140.0,
+      23.0,
+      248.0,
+      169.0
+    ],
+    "column": 8,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 73
+  },
+  {
+    "id": "959465564e5c56b7a7f90bf207eeed3b",
+    "uuid": "959465564e5c56b7a7f90bf207eeed3b",
+    "char": "蓋",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      140.0,
+      180.0,
+      242.0,
+      338.0
+    ],
+    "column": 8,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 74
+  },
+  {
+    "id": "7cee8845aaa658ae8014188e5fccbe7a",
+    "uuid": "7cee8845aaa658ae8014188e5fccbe7a",
+    "char": "依",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      151.0,
+      340.0,
+      248.0,
+      497.0
+    ],
+    "column": 8,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 75
+  },
+  {
+    "id": "58c1b74b7da15c51b87869d771cb7619",
+    "uuid": "58c1b74b7da15c51b87869d771cb7619",
+    "char": "類",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      137.0,
+      501.0,
+      242.0,
+      652.0
+    ],
+    "column": 8,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 76
+  },
+  {
+    "id": "e91dce1ad03c5244aa3cd738ef22cc31",
+    "uuid": "e91dce1ad03c5244aa3cd738ef22cc31",
+    "char": "象",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      20.0,
+      23.0,
+      112.0,
+      166.0
+    ],
+    "column": 9,
+    "row": 0,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 77
+  },
+  {
+    "id": "b506aa1c0690589db53c6cc77f2dae8b",
+    "uuid": "b506aa1c0690589db53c6cc77f2dae8b",
+    "char": "形",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      23.0,
+      181.0,
+      126.0,
+      323.0
+    ],
+    "column": 9,
+    "row": 1,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 78
+  },
+  {
+    "id": "2d974d88d11051969a8c3a79fc8d14c5",
+    "uuid": "2d974d88d11051969a8c3a79fc8d14c5",
+    "char": "故",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      20.0,
+      343.0,
+      134.0,
+      490.0
+    ],
+    "column": 9,
+    "row": 2,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 79
+  },
+  {
+    "id": "b38d174ac70a5ddda52246de248fc592",
+    "uuid": "b38d174ac70a5ddda52246de248fc592",
+    "char": "謂",
+    "font": "篆书",
+    "author": "赵之谦",
+    "work": "许氏说文叙册",
+    "work_dir": "赵之谦-篆书-许氏说文叙册",
+    "bbox": [
+      20.0,
+      499.0,
+      135.0,
+      652.0
+    ],
+    "column": 9,
+    "row": 3,
+    "visible": true,
+    "split_method": "pixel_projection",
+    "transcript_slot": 80
+  }
+]

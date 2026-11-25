@@ -1,0 +1,25 @@
+[
+  {
+    "id": "f6cb056ade125b0bac8b4f3094b8f812",
+    "uuid": "f6cb056ade125b0bac8b4f3094b8f812",
+    "char": "互",
+    "author": "傅世垚",
+    "work": "六书分类-CADAL本",
+    "work_dir": "傅世垚-篆书-六书分类-CADAL本",
+    "font": "篆书",
+    "visible": true,
+    "column": 1,
+    "row": 0,
+    "bbox": [
+      1397,
+      872,
+      1519,
+      1024
+    ],
+    "source_url": "https://commons.wikimedia.org/wiki/File:CADAL02046392_%E5%85%AD%E6%9B%B8%E5%88%86%E9%A1%9E%EF%BC%88%E4%B8%89%EF%BC%89.djvu#page=20",
+    "source_position": "卷1二部，CADAL第 20 页，原刊「互」字头下标作小篆的首例",
+    "source_label": "互",
+    "source_style": "小篆",
+    "split_method": "pixel_projection"
+  }
+]

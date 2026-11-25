@@ -1,0 +1,26 @@
+[
+  {
+    "id": "9b629d5eb4ae57b599d6a270e2908e7b",
+    "uuid": "9b629d5eb4ae57b599d6a270e2908e7b",
+    "char": "寵",
+    "font": "篆书",
+    "author": "曹本",
+    "work": "续复古编-咫进斋本",
+    "work_dir": "曹本-篆书-续复古编-咫进斋本",
+    "bbox": [
+      504,
+      715,
+      642,
+      901
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_label": "寵",
+    "source_url": "https://hiroshima.repo.nii.ac.jp/record/2000054/files/zokufukkohen_syoten_20220509.pdf#page=24",
+    "source_position": "卷2第23葉右第4字，Xu-FGB-1202",
+    "source_style": "小篆",
+    "source_style_evidence": "廣島大學《復古編・續復古編》小篆字形對照表「續清」欄",
+    "split_method": "source_template+pixel_projection_check"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ce1d9f847de25644963a42237d3ebc50",
+    "uuid": "ce1d9f847de25644963a42237d3ebc50",
+    "char": "屯",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      724,
+      457,
+      794,
+      564
+    ],
+    "column": 16,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=277",
+    "source_position": "卷1下，頁1右，第7行",
+    "source_label": "屯",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "e61d802dd53d5c75856df894bd24a74c",
+    "uuid": "e61d802dd53d5c75856df894bd24a74c",
+    "char": "每",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      733,
+      1145,
+      801,
+      1254
+    ],
+    "column": 16,
+    "row": 1,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=278",
+    "source_position": "卷1下，頁1右，第7行",
+    "source_label": "每",
+    "source_style": "小篆",
+    "source_style_evidence": "藤花榭本校勘条目类型为正篆",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "95c3abc13d385f0b93f729e06225154d",
+    "uuid": "95c3abc13d385f0b93f729e06225154d",
+    "char": "芬",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      665,
+      1290,
+      730,
+      1387
+    ],
+    "column": 17,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=281",
+    "source_position": "卷1下，頁1右，第8行",
+    "source_label": "芬",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "ac6bae1d3d3b5a829a07f78d8e460153",
+    "uuid": "ac6bae1d3d3b5a829a07f78d8e460153",
+    "char": "熏",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      594,
+      1377,
+      659,
+      1480
+    ],
+    "column": 18,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=285",
+    "source_position": "卷1下，頁1右，第9行",
+    "source_label": "熏",
+    "source_style": "小篆",
+    "source_style_evidence": "藤花榭本校勘条目类型为正篆",
+    "split_method": "source_template+pixel_projection_check"
+  }
+]

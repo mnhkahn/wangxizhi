@@ -1,0 +1,26 @@
+[
+  {
+    "id": "fb6fd3e163755f5a806f92f9cbf2c45a",
+    "uuid": "fb6fd3e163755f5a806f92f9cbf2c45a",
+    "char": "蒲",
+    "font": "篆书",
+    "author": "曹本",
+    "work": "续复古编-咫进斋本",
+    "work_dir": "曹本-篆书-续复古编-咫进斋本",
+    "bbox": [
+      1919,
+      1601,
+      2061,
+      1800
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_label": "蒲",
+    "source_url": "https://hiroshima.repo.nii.ac.jp/record/2000054/files/zokufukkohen_syoten_20220509.pdf#page=7",
+    "source_position": "卷1第26葉左第2字，Xu-FGB-0360",
+    "source_style": "小篆",
+    "source_style_evidence": "廣島大學《復古編・續復古編》小篆字形對照表「續清」欄",
+    "split_method": "source_template+pixel_projection_check"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "char": "謊",
+    "source_label": "谎",
+    "author": "字帖网",
+    "work": "2500个小篆常见字",
+    "bbox": [
+      439,
+      222,
+      480,
+      281
+    ],
+    "column": 2,
+    "row": 1,
+    "source_url": "https://www.zitiewang.com/shufa/ge56693.htm",
+    "source_image_url": "https://img.zitiewang.com/file/202410/1728631619890175.jpg",
+    "source_page": 38,
+    "source_position": "发布页第 38 图，从上数第 2 行篆字、左起第 7 列。",
+    "source_note": "楷书字头为「谎」，见本图正上方。原页未署书家，录为现代排印字帖。与库内王心怡《崇羲篆体字形表》的「謊」对照补第二例。",
+    "source_archive_kind": "published_copybook_full_page",
+    "source_full_page": true,
+    "source_style": "小篆",
+    "source_style_origin": "现代排印教学字帖",
+    "split_method": "published_table_cell+visual_review",
+    "id": "07ae52ef21b45340a63d2c73711d920f",
+    "uuid": "07ae52ef21b45340a63d2c73711d920f",
+    "work_dir": "字帖网-篆书-2500个小篆常见字",
+    "font": "篆书",
+    "visible": true,
+    "source_file": "fatie-038.jpg"
+  }
+]

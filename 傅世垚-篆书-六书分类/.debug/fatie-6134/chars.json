@@ -1,0 +1,25 @@
+[
+  {
+    "id": "a4092c0a66235cb5a17164105205a43d",
+    "uuid": "a4092c0a66235cb5a17164105205a43d",
+    "char": "獰",
+    "author": "傅世垚",
+    "font": "篆书",
+    "work": "六书分类",
+    "work_dir": "傅世垚-篆书-六书分类",
+    "bbox": [
+      207,
+      568,
+      315,
+      697
+    ],
+    "column": 6,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://www.shidianguji.com/zh/book/HY2675/chapter/1kpi751jl5cmd?pageId=7444967218317721650",
+    "source_label": "獰",
+    "source_caption": "獰音能",
+    "source_position": "卷六犬部，阅读器第 134 页，原刊「獰」字头下首例小篆",
+    "split_method": "pixel_projection"
+  }
+]

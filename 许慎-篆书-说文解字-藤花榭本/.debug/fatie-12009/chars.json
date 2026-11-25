@@ -1,0 +1,94 @@
+[
+  {
+    "id": "2cefd5d087f25b17bca27e3d661fb304",
+    "uuid": "2cefd5d087f25b17bca27e3d661fb304",
+    "char": "村",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      1690,
+      528,
+      1756,
+      636
+    ],
+    "column": 4,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=4762",
+    "source_position": "卷6下，頁8左，第5行。",
+    "source_label": "村",
+    "source_style": "小篆",
+    "source_style_evidence": "藤花榭本校勘条目类型为正篆",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "151330daa96150208d5f23c37e5ee42c",
+    "uuid": "151330daa96150208d5f23c37e5ee42c",
+    "char": "鄉",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      1208,
+      434,
+      1270,
+      542
+    ],
+    "column": 10,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=4776",
+    "source_position": "卷6下，頁9右，第1行。",
+    "source_label": "鄉",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "91714d2d89285253886d0c60e8ceda8a",
+    "uuid": "91714d2d89285253886d0c60e8ceda8a",
+    "char": "巷",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      1215,
+      1082,
+      1280,
+      1190
+    ],
+    "column": 10,
+    "row": 1,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=4777",
+    "source_position": "卷6下，頁9右，第1行。",
+    "source_label": "巷",
+    "source_style": "小篆",
+    "source_style_evidence": "藤花榭本校勘条目类型为正篆",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "ac0eb6db0a525dfaaa2f6600e9b015f6",
+    "uuid": "ac0eb6db0a525dfaaa2f6600e9b015f6",
+    "char": "巷",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      1133,
+      433,
+      1201,
+      541
+    ],
+    "column": 11,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=4778",
+    "source_position": "卷6下，頁9右，第2行。",
+    "source_label": "巷",
+    "split_method": "source_template+pixel_projection_check"
+  }
+]

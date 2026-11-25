@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1b1b9afacc36533e86e3c76a5d5ab08c",
+    "uuid": "1b1b9afacc36533e86e3c76a5d5ab08c",
+    "char": "少",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      664,
+      450,
+      727,
+      556
+    ],
+    "column": 17,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=785",
+    "source_position": "卷2上，頁1右，第8行",
+    "source_label": "少",
+    "source_style": "小篆",
+    "source_style_evidence": "藤花榭本校勘条目类型为正篆",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "b97ec9b392ef5e76aed8e52bee9a5285",
+    "uuid": "b97ec9b392ef5e76aed8e52bee9a5285",
+    "char": "曾",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      522,
+      1153,
+      587,
+      1261
+    ],
+    "column": 19,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=790",
+    "source_position": "卷2上，頁1右，第10行",
+    "source_label": "曾",
+    "source_style": "小篆",
+    "source_style_evidence": "藤花榭本校勘条目类型为正篆",
+    "split_method": "source_template+pixel_projection_check"
+  }
+]

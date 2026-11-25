@@ -1,0 +1,25 @@
+[
+  {
+    "id": "5550a7f15ee0513badba43b99625ffbb",
+    "uuid": "5550a7f15ee0513badba43b99625ffbb",
+    "char": "叛",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      498,
+      509,
+      653,
+      712
+    ],
+    "column": 0,
+    "row": 2,
+    "source_label": "叛",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 58 圖，右起第 1 欄第 3 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  }
+]
