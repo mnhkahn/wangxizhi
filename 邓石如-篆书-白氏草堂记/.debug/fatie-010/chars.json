@@ -1,0 +1,110 @@
+[
+  {
+    "id": "fc242e12e04b9c5dc37ca6c0364c2cdd",
+    "uuid": "fc242e12e04b9c5dc37ca6c0364c2cdd",
+    "char": "月",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      599,
+      84,
+      887,
+      787
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true
+  },
+  {
+    "id": "7fe1ee129317c990a763ee561ee08d5c",
+    "uuid": "7fe1ee129317c990a763ee561ee08d5c",
+    "char": "光",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      546,
+      778,
+      993,
+      1421
+    ],
+    "column": 0,
+    "row": 1,
+    "visible": true
+  },
+  {
+    "id": "3e4e616b42cb6d666d20cc3d666aa650",
+    "uuid": "3e4e616b42cb6d666d20cc3d666aa650",
+    "char": "不",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      517.7805486284291,
+      1412.8765586034913,
+      1025.0124688279302,
+      2074.5087281795513
+    ],
+    "column": 0,
+    "row": 2,
+    "visible": true
+  },
+  {
+    "id": "7a1b28826cd63b5b164bf942bb39193a",
+    "uuid": "7a1b28826cd63b5b164bf942bb39193a",
+    "char": "到",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      36,
+      0,
+      496,
+      755
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true
+  },
+  {
+    "id": "48e90b0f5c202ceb40fc65baa0027501",
+    "uuid": "48e90b0f5c202ceb40fc65baa0027501",
+    "char": "地",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      14,
+      763,
+      485,
+      1536
+    ],
+    "column": 1,
+    "row": 1,
+    "visible": true
+  },
+  {
+    "id": "6bed738c4d465c1eb70c3eee9ac02f47",
+    "uuid": "6bed738c4d465c1eb70c3eee9ac02f47",
+    "char": "北",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      35,
+      1448,
+      463,
+      2085
+    ],
+    "column": 1,
+    "row": 2,
+    "visible": true
+  }
+]

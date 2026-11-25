@@ -1,0 +1,25 @@
+[
+  {
+    "id": "b35014a34d8351b5b7f7d69321021dfd",
+    "uuid": "b35014a34d8351b5b7f7d69321021dfd",
+    "char": "椿",
+    "author": "傅世垚",
+    "work": "六书分类-CADAL本",
+    "work_dir": "傅世垚-篆书-六书分类-CADAL本",
+    "font": "篆书",
+    "visible": true,
+    "column": 6,
+    "row": 0,
+    "bbox": [
+      369,
+      906,
+      519,
+      1063
+    ],
+    "source_url": "https://commons.wikimedia.org/wiki/File:CADAL02046396_%E5%85%AD%E6%9B%B8%E5%88%86%E9%A1%9E%EF%BC%88%E4%B8%83%EF%BC%89.djvu#page=65",
+    "source_position": "卷5木部，CADAL第 65 页，原刊「椿」字头下标作小篆的首例",
+    "source_label": "椿",
+    "source_style": "小篆",
+    "split_method": "pixel_projection"
+  }
+]

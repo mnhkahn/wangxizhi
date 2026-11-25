@@ -1,0 +1,50 @@
+[
+  {
+    "id": "51ff34b03ce25d0f9892d2f1ed9f636f",
+    "uuid": "51ff34b03ce25d0f9892d2f1ed9f636f",
+    "char": "粘",
+    "font": "篆书",
+    "author": "字帖网",
+    "work": "2500个小篆常见字",
+    "work_dir": "字帖网-篆书-2500个小篆常见字",
+    "visible": true,
+    "column": 2,
+    "row": 2,
+    "bbox": [
+      435,
+      479,
+      473,
+      536
+    ],
+    "source_url": "https://img.zitiewang.com/file/202410/1728631617897632.jpg",
+    "source_label": "粘",
+    "source_position": "发布页第 37 图，左起第 7 列，原图印刷「粘」下方的同列小篆字形",
+    "source_style": "小篆",
+    "source_style_origin": "现代发布字帖",
+    "split_method": "pixel_projection_and_raster_cell"
+  },
+  {
+    "id": "4a601d39c47c568a8b8ff321c0a8123c",
+    "uuid": "4a601d39c47c568a8b8ff321c0a8123c",
+    "char": "着",
+    "font": "篆书",
+    "author": "字帖网",
+    "work": "2500个小篆常见字",
+    "work_dir": "字帖网-篆书-2500个小篆常见字",
+    "visible": true,
+    "column": 4,
+    "row": 2,
+    "bbox": [
+      302,
+      478,
+      337,
+      537
+    ],
+    "source_url": "https://img.zitiewang.com/file/202410/1728631617897632.jpg",
+    "source_label": "着",
+    "source_position": "发布页第 37 图，左起第 5 列，原图印刷「着」下方的同列小篆字形",
+    "source_style": "小篆",
+    "source_style_origin": "现代发布字帖",
+    "split_method": "pixel_projection_and_raster_cell"
+  }
+]

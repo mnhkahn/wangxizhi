@@ -1,0 +1,25 @@
+[
+  {
+    "id": "40cb20b6f6fa50be9df8d2276b48bc0f",
+    "uuid": "40cb20b6f6fa50be9df8d2276b48bc0f",
+    "char": "妙",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      222,
+      809,
+      380,
+      1015
+    ],
+    "column": 2,
+    "row": 3,
+    "source_label": "妙",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 59 圖，右起第 3 欄第 4 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  }
+]

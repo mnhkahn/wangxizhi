@@ -1,0 +1,98 @@
+[
+  {
+    "id": "501689b8417b5feebcdac529fe45537f",
+    "uuid": "501689b8417b5feebcdac529fe45537f",
+    "char": "蜈",
+    "font": "篆书",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "bbox": [
+      2042,
+      600,
+      2131,
+      717
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181893/canvas/14#xywh=4426,1300,192,254",
+    "source_label": "蜈",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00024/annotation/TE00024_0012_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00024/character.json",
+    "source_bbox": [
+      4426,
+      1300,
+      4618,
+      1554
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00024/characters/U+8708/U+8708_TE00024_0012_1_X4426_Y1300.jpg",
+    "template_score": 0.9787,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "9857d228a6115edcbb31ea1bbb0379c7",
+    "uuid": "9857d228a6115edcbb31ea1bbb0379c7",
+    "char": "蜒",
+    "font": "篆书",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "bbox": [
+      1602,
+      622,
+      1694,
+      718
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181893/canvas/14#xywh=3471,1347,200,209",
+    "source_label": "蜒",
+    "source_style": "小篆",
+    "source_style_evidence": "札幌市中央图书馆著录为小篆字典，卷三第352页刊印字头「蜒」，下注「從今」",
+    "source_style_url": "https://ndlsearch.ndl.go.jp/books/R100000001-I01211005550000639",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00024/annotation/TE00024_0012_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00024/character.json",
+    "source_bbox": [
+      3471,
+      1347,
+      3671,
+      1556
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00024/characters/U+8712/U+8712_TE00024_0012_1_X3471_Y1347.jpg",
+    "template_score": 0.9921,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "9720a3d2f1e65547a874b700ea4f11e1",
+    "uuid": "9720a3d2f1e65547a874b700ea4f11e1",
+    "char": "蝌",
+    "font": "篆书",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "bbox": [
+      289,
+      621,
+      371,
+      737
+    ],
+    "column": 2,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181893/canvas/14#xywh=627,1346,178,251",
+    "source_label": "蝌",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00024/annotation/TE00024_0012_1/C0001",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00024/character.json",
+    "source_bbox": [
+      627,
+      1346,
+      805,
+      1597
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00024/characters/U+874C/U+874C_TE00024_0012_1_X0627_Y1346.jpg",
+    "template_score": 0.9979,
+    "split_method": "source_template+pixel_projection_check"
+  }
+]

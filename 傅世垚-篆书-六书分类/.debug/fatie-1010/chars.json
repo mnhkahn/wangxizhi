@@ -1,0 +1,25 @@
+[
+  {
+    "id": "f9c5aeebdcf15ac292e9d68da7fc4052",
+    "uuid": "f9c5aeebdcf15ac292e9d68da7fc4052",
+    "char": "丫",
+    "author": "傅世垚",
+    "font": "篆书",
+    "work": "六书分类",
+    "work_dir": "傅世垚-篆书-六书分类",
+    "bbox": [
+      221,
+      619,
+      291,
+      751
+    ],
+    "column": 6,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://www.shidianguji.com/zh/book/HY2675/chapter/1kpi74bpqkzrv?pageId=7444966666095624246",
+    "source_label": "丫",
+    "source_caption": "丫音鴉",
+    "source_position": "卷一丨部，阅读器第 10 页，原刊「丫」字头下首例小篆",
+    "split_method": "pixel_projection"
+  }
+]

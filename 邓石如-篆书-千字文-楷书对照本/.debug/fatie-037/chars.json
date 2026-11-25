@@ -1,0 +1,117 @@
+[
+  {
+    "id": "b30f337736e253598cd552d14b020fe9",
+    "uuid": "b30f337736e253598cd552d14b020fe9",
+    "char": "魏",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      545,
+      272,
+      696,
+      478
+    ],
+    "column": 0,
+    "row": 1,
+    "source_label": "魏",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 37 圖，右起第 1 欄第 2 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "d71a381cd818573ba40588e46130dbc2",
+    "uuid": "d71a381cd818573ba40588e46130dbc2",
+    "char": "途",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      359,
+      272,
+      534,
+      478
+    ],
+    "column": 1,
+    "row": 1,
+    "source_label": "途",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 37 圖，右起第 2 欄第 2 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "12bde40bcd1a56898075c2747a8c21d3",
+    "uuid": "12bde40bcd1a56898075c2747a8c21d3",
+    "char": "踐",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      179,
+      6,
+      335,
+      206
+    ],
+    "column": 2,
+    "row": 0,
+    "source_label": "踐",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 37 圖，右起第 3 欄第 1 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "e17a23b76c045ffdbdcce88a73d807aa",
+    "uuid": "e17a23b76c045ffdbdcce88a73d807aa",
+    "char": "遵",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      14,
+      272,
+      180,
+      484
+    ],
+    "column": 3,
+    "row": 1,
+    "source_label": "遵",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 37 圖，右起第 4 欄第 2 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "9bfef86f08065f50b8b1ab579bf52a45",
+    "uuid": "9bfef86f08065f50b8b1ab579bf52a45",
+    "char": "法",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      14,
+      801,
+      180,
+      1005
+    ],
+    "column": 3,
+    "row": 3,
+    "source_label": "法",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 37 圖，右起第 4 欄第 4 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  }
+]

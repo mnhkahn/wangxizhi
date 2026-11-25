@@ -1,0 +1,48 @@
+[
+  {
+    "id": "a769e3560dcd5708ac156fb6afc5efed",
+    "uuid": "a769e3560dcd5708ac156fb6afc5efed",
+    "char": "適",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      177,
+      9,
+      363,
+      212
+    ],
+    "column": 2,
+    "row": 0,
+    "source_label": "適",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 45 圖，右起第 3 欄第 1 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "37ce90ee8e495cbd8b174c6576f8edc7",
+    "uuid": "37ce90ee8e495cbd8b174c6576f8edc7",
+    "char": "烹",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      14,
+      551,
+      183,
+      767
+    ],
+    "column": 3,
+    "row": 2,
+    "source_label": "烹",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 45 圖，右起第 4 欄第 3 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  }
+]

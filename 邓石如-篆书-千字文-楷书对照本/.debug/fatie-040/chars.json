@@ -1,0 +1,71 @@
+[
+  {
+    "id": "126702de4e8c5971a3b3bc2bfa221740",
+    "uuid": "126702de4e8c5971a3b3bc2bfa221740",
+    "char": "藝",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      189,
+      277,
+      353,
+      491
+    ],
+    "column": 2,
+    "row": 1,
+    "source_label": "藝",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 40 圖，右起第 3 欄第 2 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "16597238ad7158b792e1e538710ce346",
+    "uuid": "16597238ad7158b792e1e538710ce346",
+    "char": "稅",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      14,
+      9,
+      178,
+      217
+    ],
+    "column": 3,
+    "row": 0,
+    "source_label": "稅",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 40 圖，右起第 4 欄第 1 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "34634c93de1d5a8282b792a05b8cd04f",
+    "uuid": "34634c93de1d5a8282b792a05b8cd04f",
+    "char": "熟",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      14,
+      277,
+      178,
+      492
+    ],
+    "column": 3,
+    "row": 1,
+    "source_label": "熟",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 40 圖，右起第 4 欄第 2 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  }
+]

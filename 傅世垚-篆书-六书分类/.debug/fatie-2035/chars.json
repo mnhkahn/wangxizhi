@@ -1,0 +1,25 @@
+[
+  {
+    "id": "3bfd5e3a6a965fcea6474651c30bea5b",
+    "uuid": "3bfd5e3a6a965fcea6474651c30bea5b",
+    "char": "嗽",
+    "author": "傅世垚",
+    "font": "篆书",
+    "work": "六书分类",
+    "work_dir": "傅世垚-篆书-六书分类",
+    "bbox": [
+      347,
+      656,
+      457,
+      787
+    ],
+    "column": 5,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://www.shidianguji.com/zh/book/HY2675/chapter/1kpi74gtp338z?pageId=7444966750405541940",
+    "source_label": "嗽",
+    "source_caption": "嗽音瘦",
+    "source_position": "卷二口部，阅读器第 35 页，原刊「嗽」字头下首例小篆",
+    "split_method": "pixel_projection"
+  }
+]

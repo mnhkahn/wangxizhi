@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ae39ae538855511d8bf18d27fd0d876a",
+    "uuid": "ae39ae538855511d8bf18d27fd0d876a",
+    "char": "銀",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      523,
+      567,
+      591,
+      672
+    ],
+    "column": 19,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=10416",
+    "source_position": "卷14上，頁1右，第10行。",
+    "source_label": "銀",
+    "source_style": "小篆",
+    "source_style_evidence": "藤花榭本校勘条目类型为正篆",
+    "split_method": "source_template+pixel_projection_check"
+  }
+]

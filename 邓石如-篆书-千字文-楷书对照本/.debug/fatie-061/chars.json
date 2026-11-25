@@ -1,0 +1,71 @@
+[
+  {
+    "id": "45d3ff5fae9058ad99d754fcfde2d62e",
+    "uuid": "45d3ff5fae9058ad99d754fcfde2d62e",
+    "char": "束",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      369,
+      9,
+      536,
+      213
+    ],
+    "column": 1,
+    "row": 0,
+    "source_label": "束",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 61 圖，右起第 2 欄第 1 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "e096d7ee50235e0dac50d1db9f8a0bbf",
+    "uuid": "e096d7ee50235e0dac50d1db9f8a0bbf",
+    "char": "徘",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      192,
+      10,
+      359,
+      210
+    ],
+    "column": 2,
+    "row": 0,
+    "source_label": "徘",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 61 圖，右起第 3 欄第 1 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "b7f4e92c861856989e89908ac82c81c6",
+    "uuid": "b7f4e92c861856989e89908ac82c81c6",
+    "char": "陋",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      14,
+      280,
+      181,
+      491
+    ],
+    "column": 3,
+    "row": 1,
+    "source_label": "陋",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 61 圖，右起第 4 欄第 2 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  }
+]

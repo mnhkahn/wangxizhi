@@ -1,0 +1,26 @@
+[
+  {
+    "id": "8d0c5ca7f035547c91f6b092a765b89f",
+    "uuid": "8d0c5ca7f035547c91f6b092a765b89f",
+    "char": "挎",
+    "font": "篆书",
+    "author": "字帖网",
+    "work": "2500个小篆常见字",
+    "work_dir": "字帖网-篆书-2500个小篆常见字",
+    "visible": true,
+    "column": 2,
+    "row": 3,
+    "bbox": [
+      438,
+      579,
+      478,
+      637
+    ],
+    "source_url": "https://img.zitiewang.com/file/202410/1728631613717976.jpg",
+    "source_label": "挎",
+    "source_position": "发布页第 22 图，左起第 7 列，原图印刷「挎」下方的同列小篆字形",
+    "source_style": "小篆",
+    "source_style_origin": "现代发布字帖",
+    "split_method": "pixel_projection_and_raster_cell"
+  }
+]

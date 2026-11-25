@@ -1,0 +1,48 @@
+[
+  {
+    "id": "ccc858eec528543d92317c4264aca761",
+    "uuid": "ccc858eec528543d92317c4264aca761",
+    "char": "答",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      173,
+      261,
+      325,
+      458
+    ],
+    "column": 2,
+    "row": 1,
+    "source_label": "答",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 50 圖，右起第 3 欄第 2 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "4fc21c797768507386aa6600304c2116",
+    "uuid": "4fc21c797768507386aa6600304c2116",
+    "char": "審",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      173,
+      512,
+      324,
+      713
+    ],
+    "column": 2,
+    "row": 2,
+    "source_label": "審",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 50 圖，右起第 3 欄第 3 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "dac73a414e755aab96223c05507b8b42",
+    "uuid": "dac73a414e755aab96223c05507b8b42",
+    "char": "岗",
+    "font": "篆书",
+    "author": "字帖网",
+    "work": "2500个小篆常见字",
+    "work_dir": "字帖网-篆书-2500个小篆常见字",
+    "visible": true,
+    "column": 6,
+    "row": 2,
+    "bbox": [
+      166,
+      489,
+      199,
+      543
+    ],
+    "source_url": "https://img.zitiewang.com/file/202410/1728631612958161.jpg",
+    "source_label": "岗",
+    "source_position": "发布页第 13 图，左起第 3 列，原图印刷「岗」下方的同列小篆字形",
+    "source_style": "小篆",
+    "source_style_origin": "现代发布字帖",
+    "split_method": "pixel_projection_and_raster_cell"
+  }
+]

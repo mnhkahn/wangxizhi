@@ -1,0 +1,75 @@
+[
+  {
+    "id": "24b8da9e501a55a8b5cddc33dffd0bdc",
+    "uuid": "24b8da9e501a55a8b5cddc33dffd0bdc",
+    "char": "蔬",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      1954,
+      715,
+      2022,
+      834
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=768",
+    "source_position": "卷1下，頁9左，第1行",
+    "source_label": "蔬",
+    "source_style": "小篆",
+    "source_edition_type": "新附",
+    "source_style_evidence": "藤花榭本校勘条目类型为新附",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "e14441f5d35f5580b444cbaf6e271906",
+    "uuid": "e14441f5d35f5580b444cbaf6e271906",
+    "char": "莽",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      1162,
+      834,
+      1228,
+      948
+    ],
+    "column": 10,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=782",
+    "source_position": "卷1下，頁10右，第1行",
+    "source_label": "莽",
+    "source_style": "小篆",
+    "source_style_evidence": "藤花榭本校勘条目类型为正篆",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "2bb3baaaf3ab5272b8561fead7f38283",
+    "uuid": "2bb3baaaf3ab5272b8561fead7f38283",
+    "char": "葬",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      1168,
+      1359,
+      1233,
+      1479
+    ],
+    "column": 10,
+    "row": 1,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=783",
+    "source_position": "卷1下，頁10右，第1行",
+    "source_label": "葬",
+    "source_style": "小篆",
+    "source_style_evidence": "藤花榭本校勘条目类型为正篆",
+    "split_method": "source_template+pixel_projection_check"
+  }
+]

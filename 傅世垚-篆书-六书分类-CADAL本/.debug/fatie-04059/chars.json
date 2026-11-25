@@ -1,0 +1,25 @@
+[
+  {
+    "id": "9920829e9c925bf0b19da4219d86d4f3",
+    "uuid": "9920829e9c925bf0b19da4219d86d4f3",
+    "char": "扎",
+    "author": "傅世垚",
+    "work": "六书分类-CADAL本",
+    "work_dir": "傅世垚-篆书-六书分类-CADAL本",
+    "font": "篆书",
+    "visible": true,
+    "column": 4,
+    "row": 0,
+    "bbox": [
+      521,
+      776,
+      652,
+      938
+    ],
+    "source_url": "https://commons.wikimedia.org/wiki/File:CADAL02046395_%E5%85%AD%E6%9B%B8%E5%88%86%E9%A1%9E%EF%BC%88%E5%85%AD%EF%BC%89.djvu#page=59",
+    "source_position": "卷4手部，CADAL第 59 页，原刊「扎」字头下标作小篆的首例",
+    "source_label": "扎",
+    "source_style": "小篆",
+    "split_method": "pixel_projection"
+  }
+]

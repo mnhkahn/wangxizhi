@@ -1,0 +1,95 @@
+[
+  {
+    "id": "92d36791f1095352b59bdf9f03f316d1",
+    "uuid": "92d36791f1095352b59bdf9f03f316d1",
+    "char": "須",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      1865,
+      411,
+      1933,
+      517
+    ],
+    "column": 2,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=6475",
+    "source_position": "卷9上，頁3左，第3行。",
+    "source_label": "須",
+    "source_style": "小篆",
+    "source_style_evidence": "藤花榭本校勘条目类型为正篆",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "3fda6d47cecb57578f551e6aa6e55711",
+    "uuid": "3fda6d47cecb57578f551e6aa6e55711",
+    "char": "彰",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      1424,
+      471,
+      1496,
+      581
+    ],
+    "column": 8,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=6485",
+    "source_position": "卷9上，頁3左，第9行。",
+    "source_label": "彰",
+    "source_style": "小篆",
+    "source_edition_type": "正篆",
+    "source_style_evidence": "藤花榭本校勘条目类型为正篆",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "827097ccfddd50b4be697f0bf4e842d5",
+    "uuid": "827097ccfddd50b4be697f0bf4e842d5",
+    "char": "斑",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      892,
+      910,
+      960,
+      1015
+    ],
+    "column": 14,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=6495",
+    "source_position": "卷9上，頁4右，第5行。",
+    "source_label": "斑",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "f893dad1bf4456f08e71cd96bcc5137e",
+    "uuid": "f893dad1bf4456f08e71cd96bcc5137e",
+    "char": "鬢",
+    "font": "篆书",
+    "author": "许慎",
+    "work": "说文解字-藤花榭本",
+    "work_dir": "许慎-篆书-说文解字-藤花榭本",
+    "bbox": [
+      681,
+      994,
+      749,
+      1102
+    ],
+    "column": 17,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://seal.cmex.org.tw/view.jsp?ID=6501",
+    "source_position": "卷9上，頁4右，第8行。",
+    "source_label": "鬢",
+    "split_method": "source_template+pixel_projection_check"
+  }
+]

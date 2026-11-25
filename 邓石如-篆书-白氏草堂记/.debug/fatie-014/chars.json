@@ -1,0 +1,110 @@
+[
+  {
+    "id": "04fd694d0055bfe0ab2758133531325e",
+    "uuid": "04fd694d0055bfe0ab2758133531325e",
+    "char": "朱",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      619,
+      23,
+      930,
+      607
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true
+  },
+  {
+    "id": "013e695d2547743df027ad04868727d1",
+    "uuid": "013e695d2547743df027ad04868727d1",
+    "char": "實",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      547,
+      590,
+      959,
+      1234
+    ],
+    "column": 0,
+    "row": 1,
+    "visible": true
+  },
+  {
+    "id": "309dbb1fe4bc7af4680e8c58c37e1fca",
+    "uuid": "309dbb1fe4bc7af4680e8c58c37e1fca",
+    "char": "離",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      517.7805486284291,
+      1256.857855361596,
+      1025.0124688279302,
+      1949.6009975062345
+    ],
+    "column": 0,
+    "row": 2,
+    "visible": true
+  },
+  {
+    "id": "4fabc112cfe6ebffa1e8a634749a7c45",
+    "uuid": "4fabc112cfe6ebffa1e8a634749a7c45",
+    "char": "不",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      92,
+      37,
+      440,
+      632
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true
+  },
+  {
+    "id": "ed060505c463359abc94da94b60925ab",
+    "uuid": "ed060505c463359abc94da94b60925ab",
+    "char": "知",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      20,
+      656,
+      459,
+      1254
+    ],
+    "column": 1,
+    "row": 1,
+    "visible": true
+  },
+  {
+    "id": "8a1458ac3e48ecc946f27c398621b3f5",
+    "uuid": "8a1458ac3e48ecc946f27c398621b3f5",
+    "char": "其",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      51,
+      1327,
+      492,
+      1968
+    ],
+    "column": 1,
+    "row": 2,
+    "visible": true
+  }
+]

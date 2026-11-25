@@ -1,0 +1,40 @@
+[
+  {
+    "id": "56df55002491aec7ea2a4226a03e661a",
+    "uuid": "56df55002491aec7ea2a4226a03e661a",
+    "char": "澗",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      1836,
+      767,
+      1958,
+      925
+    ],
+    "column": 0,
+    "row": 5,
+    "visible": true,
+    "source_url": "https://www.jiguzuo.com/shufa/deng-shi-ru-shu-bai-shi-cao-tang-ji.html"
+  },
+  {
+    "id": "4b11a85eccaa292159feb49e7a5fb6c3",
+    "uuid": "4b11a85eccaa292159feb49e7a5fb6c3",
+    "char": "張",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      1167,
+      468,
+      1281,
+      628
+    ],
+    "column": 4,
+    "row": 3,
+    "visible": true,
+    "source_url": "https://www.jiguzuo.com/shufa/deng-shi-ru-shu-bai-shi-cao-tang-ji.html"
+  }
+]

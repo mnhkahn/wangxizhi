@@ -1,0 +1,110 @@
+[
+  {
+    "id": "57d0c6046ad3ff7af4ed0d7ece959bd8",
+    "uuid": "57d0c6046ad3ff7af4ed0d7ece959bd8",
+    "char": "覆",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      540,
+      65,
+      989,
+      745
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true
+  },
+  {
+    "id": "4114a3eb2248c6d9c6318abc35dec8e8",
+    "uuid": "4114a3eb2248c6d9c6318abc35dec8e8",
+    "char": "其",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      517.8478802992516,
+      734.9875311720697,
+      1025.0798004987528,
+      1321.2518703241892
+    ],
+    "column": 0,
+    "row": 1,
+    "visible": true
+  },
+  {
+    "id": "5923fa9558527e6ab5b3a0d93e271462",
+    "uuid": "5923fa9558527e6ab5b3a0d93e271462",
+    "char": "上",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      517.7805486284291,
+      1321.2518703241892,
+      1025.0124688279302,
+      1949.6009975062345
+    ],
+    "column": 0,
+    "row": 2,
+    "visible": true
+  },
+  {
+    "id": "64a621be0f384dcae708d274192de335",
+    "uuid": "64a621be0f384dcae708d274192de335",
+    "char": "綠",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      49,
+      60,
+      473,
+      640
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true
+  },
+  {
+    "id": "ae93a059d3dbd1038355bb81159c92f2",
+    "uuid": "ae93a059d3dbd1038355bb81159c92f2",
+    "char": "陰",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      42,
+      654,
+      469,
+      1310
+    ],
+    "column": 1,
+    "row": 1,
+    "visible": true
+  },
+  {
+    "id": "da32e5eb1f0a8dc59f223a9028fbd423",
+    "uuid": "da32e5eb1f0a8dc59f223a9028fbd423",
+    "char": "蒙",
+    "font": "篆书",
+    "author": "邓石如",
+    "work": "白氏草堂记",
+    "work_dir": "邓石如-篆书-白氏草堂记",
+    "bbox": [
+      41,
+      1296,
+      497,
+      1993
+    ],
+    "column": 1,
+    "row": 2,
+    "visible": true
+  }
+]

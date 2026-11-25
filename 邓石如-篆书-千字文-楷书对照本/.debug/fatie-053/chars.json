@@ -1,0 +1,25 @@
+[
+  {
+    "id": "c0bbe7df09f3508092794de1a29ba76e",
+    "uuid": "c0bbe7df09f3508092794de1a29ba76e",
+    "char": "眠",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      14,
+      288,
+      187,
+      506
+    ],
+    "column": 3,
+    "row": 1,
+    "source_label": "眠",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 53 圖，右起第 4 欄第 2 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  }
+]

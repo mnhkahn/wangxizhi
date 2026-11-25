@@ -1,0 +1,28 @@
+[
+  {
+    "id": "0f6f2b54ceb650278bf521bdf12bf3e2",
+    "uuid": "0f6f2b54ceb650278bf521bdf12bf3e2",
+    "char": "蝟",
+    "source_label": "蝟",
+    "author": "王心怡",
+    "font": "篆书",
+    "work": "崇羲篆体字形表-说文解字",
+    "work_dir": "王心怡-篆书-崇羲篆体字形表-说文解字",
+    "bbox": [
+      747,
+      1333,
+      786,
+      1390
+    ],
+    "column": 2,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://xiaoxue.iis.sinica.edu.tw/chongxi/files/chongxi_SmallSeal.pdf#page=65",
+    "source_position": "发布方原刊第 65 页，字號 6070「或」行，楷書栏「蝟」，取相邻小篆栏字例",
+    "source_number": 6070,
+    "source_style": "小篆",
+    "source_style_origin": "现代字形表",
+    "source_edition_type": "或體",
+    "split_method": "pixel_projection_and_raster_cell"
+  }
+]

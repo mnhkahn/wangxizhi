@@ -1,0 +1,50 @@
+[
+  {
+    "id": "e835316284cf5d7fb0ffdcc093abd1b2",
+    "uuid": "e835316284cf5d7fb0ffdcc093abd1b2",
+    "char": "翻",
+    "font": "篆书",
+    "author": "曹本",
+    "work": "续复古编-咫进斋本",
+    "work_dir": "曹本-篆书-续复古编-咫进斋本",
+    "bbox": [
+      1445,
+      1244,
+      1594,
+      1402
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_label": "翻",
+    "source_url": "https://hiroshima.repo.nii.ac.jp/record/2000054/files/zokufukkohen_syoten_20220509.pdf#page=6",
+    "source_position": "卷1第19葉左第6字，Xu-FGB-0263",
+    "source_style": "小篆",
+    "source_style_evidence": "廣島大學《復古編・續復古編》小篆字形對照表「續清」欄",
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "id": "d650cc8e3a1a5f4da403a6c9b3822825",
+    "uuid": "d650cc8e3a1a5f4da403a6c9b3822825",
+    "char": "番",
+    "font": "篆书",
+    "author": "曹本",
+    "work": "续复古编-咫进斋本",
+    "work_dir": "曹本-篆书-续复古编-咫进斋本",
+    "bbox": [
+      829,
+      1639,
+      950,
+      1800
+    ],
+    "column": 1,
+    "row": 0,
+    "visible": true,
+    "source_label": "番",
+    "source_url": "https://hiroshima.repo.nii.ac.jp/record/2000054/files/zokufukkohen_syoten_20220509.pdf#page=6",
+    "source_position": "卷1第20葉右第2字，Xu-FGB-0266",
+    "source_style": "小篆",
+    "source_style_evidence": "廣島大學《復古編・續復古編》小篆字形對照表「續清」欄",
+    "split_method": "source_template+pixel_projection_check"
+  }
+]

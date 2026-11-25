@@ -1,0 +1,71 @@
+[
+  {
+    "id": "a6fe76dc16dd5130939298a5f3e117d0",
+    "uuid": "a6fe76dc16dd5130939298a5f3e117d0",
+    "char": "摸",
+    "author": "傅世垚",
+    "font": "篆书",
+    "work": "六书分类",
+    "work_dir": "傅世垚-篆书-六书分类",
+    "bbox": [
+      1040,
+      599,
+      1134,
+      716
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://www.shidianguji.com/zh/book/HY2675/chapter/1kpi74r0390yt",
+    "source_label": "摸",
+    "source_position": "卷四手部，原刊「摸」字头下标作小篆的首例",
+    "source_style": "小篆",
+    "split_method": "pixel_projection"
+  },
+  {
+    "id": "7710237b53f8536bbc76cd722000da5c",
+    "uuid": "7710237b53f8536bbc76cd722000da5c",
+    "char": "摻",
+    "author": "傅世垚",
+    "font": "篆书",
+    "work": "六书分类",
+    "work_dir": "傅世垚-篆书-六书分类",
+    "bbox": [
+      640,
+      600,
+      732,
+      726
+    ],
+    "column": 3,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://www.shidianguji.com/zh/book/HY2675/chapter/1kpi74r0390yt?pageId=7444966963161546771",
+    "source_label": "摻",
+    "source_caption": "摻通攕",
+    "source_position": "卷四手部，阅读器第 91 页，原刊「摻」字头下首例小篆",
+    "split_method": "pixel_projection"
+  },
+  {
+    "id": "8b7fa35e8b905a1eb3248adfcb9567a0",
+    "uuid": "8b7fa35e8b905a1eb3248adfcb9567a0",
+    "char": "撇",
+    "author": "傅世垚",
+    "font": "篆书",
+    "work": "六书分类",
+    "work_dir": "傅世垚-篆书-六书分类",
+    "bbox": [
+      116,
+      598,
+      203,
+      727
+    ],
+    "column": 7,
+    "row": 0,
+    "visible": true,
+    "source_url": "https://www.shidianguji.com/zh/book/HY2675/chapter/1kpi74r0390yt",
+    "source_label": "撇",
+    "source_position": "卷四手部，原刊「撇」字头下标作小篆的首例",
+    "source_style": "小篆",
+    "split_method": "pixel_projection"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "77cbc3ace3775a1a84a1dd8537d1103b",
+    "uuid": "77cbc3ace3775a1a84a1dd8537d1103b",
+    "char": "弊",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      527,
+      267,
+      682,
+      464
+    ],
+    "column": 0,
+    "row": 1,
+    "source_label": "弊",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 39 圖，右起第 1 欄第 2 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "731019e6e1545ecebef76a5cc4037c34",
+    "uuid": "731019e6e1545ecebef76a5cc4037c34",
+    "char": "用",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      187,
+      15,
+      320,
+      211
+    ],
+    "column": 2,
+    "row": 0,
+    "source_label": "用",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 39 圖，右起第 3 欄第 1 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  }
+]

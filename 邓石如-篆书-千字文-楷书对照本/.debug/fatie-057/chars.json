@@ -1,0 +1,48 @@
+[
+  {
+    "id": "e537b2b3c6eb58d6a947ac7028a6a5ab",
+    "uuid": "e537b2b3c6eb58d6a947ac7028a6a5ab",
+    "char": "吉",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      195,
+      573,
+      364,
+      790
+    ],
+    "column": 2,
+    "row": 2,
+    "source_label": "吉",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 57 圖，右起第 3 欄第 3 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "7d4ece26fbb351bb9fb00989fc39c66e",
+    "uuid": "7d4ece26fbb351bb9fb00989fc39c66e",
+    "char": "矩",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      14,
+      9,
+      183,
+      226
+    ],
+    "column": 3,
+    "row": 0,
+    "source_label": "矩",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 57 圖，右起第 4 欄第 1 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  }
+]

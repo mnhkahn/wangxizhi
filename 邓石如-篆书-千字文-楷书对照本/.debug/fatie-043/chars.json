@@ -1,0 +1,71 @@
+[
+  {
+    "id": "4bb542b94ff25ef9a991942dad586d28",
+    "uuid": "4bb542b94ff25ef9a991942dad586d28",
+    "char": "兩",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      376,
+      9,
+      546,
+      212
+    ],
+    "column": 1,
+    "row": 0,
+    "source_label": "兩",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 43 圖，右起第 2 欄第 1 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "5052317797be51cc8e0dd757bffc2caa",
+    "uuid": "5052317797be51cc8e0dd757bffc2caa",
+    "char": "疏",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      376,
+      277,
+      546,
+      486
+    ],
+    "column": 1,
+    "row": 1,
+    "source_label": "疏",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 43 圖，右起第 2 欄第 2 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  },
+  {
+    "id": "679fd4d3779f5528bfbfdac6191c40f7",
+    "uuid": "679fd4d3779f5528bfbfdac6191c40f7",
+    "char": "逼",
+    "author": "邓石如",
+    "font": "篆书",
+    "work": "千字文-楷书对照本",
+    "work_dir": "邓石如-篆书-千字文-楷书对照本",
+    "visible": true,
+    "bbox": [
+      196,
+      811,
+      377,
+      1024
+    ],
+    "column": 2,
+    "row": 3,
+    "source_label": "逼",
+    "source_url": "https://www.shufazidian.com/ziliao/41546.html",
+    "source_position": "網站所刊第 43 圖，右起第 3 欄第 4 字，採原頁印刷楷書釋字",
+    "source_style": "小篆",
+    "split_method": "published_cell+pixel_projection_check"
+  }
+]
