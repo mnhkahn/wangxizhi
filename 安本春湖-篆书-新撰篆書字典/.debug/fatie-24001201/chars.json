@@ -94,5 +94,36 @@
     "source_template": "https://codh.rois.ac.jp/tensho/book/TE00024/characters/U+874C/U+874C_TE00024_0012_1_X0627_Y1346.jpg",
     "template_score": 0.9979,
     "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "蜜",
+    "source_label": "蜜",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      1832,
+      1041,
+      1916,
+      1170
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181893/canvas/14",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181893/R0000014/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181893/canvas/14",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00024/annotation/TE00024_0012_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/1181893/canvas/14，框 3976,2262,170,266",
+    "source_note": "CODH 著录原字「蜜」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00024/characters/U+871C/U+871C_TE00024_0012_1_X3976_Y2262.jpg",
+    "template_score": 0.986,
+    "split_method": "source_template+pixel_projection_check",
+    "source_credit": "日本国立国会图书馆藏本，CODH 篆書字体データセット字图索引",
+    "review_method": "原页与 CODH 字图并排复核",
+    "id": "a850f15a1e365d00af86db817dcfb5a5",
+    "uuid": "a850f15a1e365d00af86db817dcfb5a5",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
   }
 ]

@@ -1,0 +1,33 @@
+[
+  {
+    "char": "遊",
+    "source_label": "遊",
+    "author": "安本春湖",
+    "work": "新撰篆書字典",
+    "bbox": [
+      358,
+      899,
+      449,
+      1002
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/1181893/canvas/44",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/1181893/R0000044/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/1181893/canvas/44",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00024/annotation/TE00024_0042_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/1181893/canvas/44，框 782,1955,185,208",
+    "source_note": "CODH 著录原字「遊」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00024/characters/U+904A/U+904A_TE00024_0042_1_X0782_Y1955.jpg",
+    "template_score": 0.9915,
+    "split_method": "source_template+pixel_projection_check",
+    "source_credit": "日本国立国会图书馆藏本，CODH 篆書字体データセット字图索引",
+    "review_method": "原页与 CODH 字图并排复核",
+    "id": "c59fc12e8e315c29ae355b31c256686f",
+    "uuid": "c59fc12e8e315c29ae355b31c256686f",
+    "work_dir": "安本春湖-篆书-新撰篆書字典",
+    "font": "篆书",
+    "visible": true
+  }
+]

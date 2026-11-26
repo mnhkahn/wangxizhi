@@ -1,0 +1,31 @@
+[
+  {
+    "char": "硅",
+    "source_label": "硅",
+    "author": "张恒成",
+    "work": "硬笔篆书单字辑",
+    "bbox": [
+      32,
+      17,
+      179,
+      196
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://www.cidianwang.com/yingbishufa/gui3828_zs.htm",
+    "source_image_url": "https://c.cidianwang.com/file/gbzd/zs/zhanghengcheng/2021919201228ab99e.jpg",
+    "source_archive_kind": "attributed_single_glyph_excerpt",
+    "source_full_page": false,
+    "source_attribution_url": "https://www.70thvictory.com.tw/yingbishufa/zhanghengcheng83.htm",
+    "source_context": "公开字条的张恒成硬笔篆书单字摘图，整页及原始出版物未取得。",
+    "source_note": "字条图片明确署张恒成硬笔篆书硅，字形从石、圭；原书未注明，「硬笔篆书单字辑」用作本地归档名。底部水印与字形分离，原摘图完整保留，完整字形裁框在水印上方。",
+    "source_watermark": "原摘图完整保留，字形裁框在水印上方",
+    "training_note": "硬笔域样本，适合跨来源字形覆盖，不应视为实物印蜕。",
+    "split_method": "visual_glyph_bbox",
+    "id": "5bda070418aa5c1795fed0d3e96cc0bf",
+    "uuid": "5bda070418aa5c1795fed0d3e96cc0bf",
+    "work_dir": "张恒成-篆书-硬笔篆书单字辑",
+    "font": "篆书",
+    "visible": true
+  }
+]

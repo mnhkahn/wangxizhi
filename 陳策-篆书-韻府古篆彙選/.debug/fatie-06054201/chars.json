@@ -59,5 +59,36 @@
     "work_dir": "陳策-篆书-韻府古篆彙選",
     "font": "篆书",
     "visible": true
+  },
+  {
+    "char": "藻",
+    "source_label": "藻",
+    "author": "陳策",
+    "work": "韻府古篆彙選",
+    "bbox": [
+      1859,
+      685,
+      1954,
+      805
+    ],
+    "column": 0,
+    "row": 2,
+    "source_url": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/137",
+    "source_image_url": "https://dl.ndl.go.jp/api/iiif/2559689/R0000137/full/2400,/0/default.jpg",
+    "source_page": "https://dl.ndl.go.jp/api/iiif/2559689/canvas/137",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00006/annotation/TE00006_0542_1/C0001",
+    "source_position": "索引页 https://dl.ndl.go.jp/api/iiif/2559689/canvas/137，框 5159,1910,247,312",
+    "source_note": "CODH 著录原字「藻」。",
+    "source_style": "篆书",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00006/characters/U+85FB/U+85FB_TE00006_0542_1_X5159_Y1910.jpg",
+    "template_score": 0.9904,
+    "split_method": "source_template+pixel_projection_check",
+    "source_credit": "日本国立国会图书馆藏本，CODH 篆書字体データセット字图索引",
+    "review_method": "原页与 CODH 字图并排复核",
+    "id": "bdbae77aac115064be2b76fde11c46fa",
+    "uuid": "bdbae77aac115064be2b76fde11c46fa",
+    "work_dir": "陳策-篆书-韻府古篆彙選",
+    "font": "篆书",
+    "visible": true
   }
 ]

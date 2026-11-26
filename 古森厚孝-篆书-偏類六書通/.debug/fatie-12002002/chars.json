@@ -1,0 +1,64 @@
+[
+  {
+    "id": "97470909112b563bbad9c853ef8d46dc",
+    "uuid": "97470909112b563bbad9c853ef8d46dc",
+    "char": "綻",
+    "font": "篆书",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "bbox": [
+      1543,
+      2011,
+      1764,
+      2201
+    ],
+    "column": 0,
+    "row": 0,
+    "visible": true,
+    "source_url": "http://codh.rois.ac.jp/tensho/iiif/TE00012/canvas/TE00012_0020_2#xywh=1725,2248,247,212",
+    "source_label": "綻",
+    "source_annotation": "http://codh.rois.ac.jp/tensho/book/TE00012/annotation/TE00012_0020_2/C2491",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00012/character.json",
+    "source_bbox": [
+      1725,
+      2248,
+      1972,
+      2460
+    ],
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00012/characters/U+7DBB/U+7DBB_TE00012_0020_2_X1725_Y2248.jpg",
+    "template_score": 0.9974,
+    "split_method": "source_template+pixel_projection_check"
+  },
+  {
+    "char": "綽",
+    "source_label": "綽",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      1286,
+      818,
+      1487,
+      1064
+    ],
+    "column": 0,
+    "row": 1,
+    "source_url": "https://codh.rois.ac.jp/tensho/book/TE00012/characters/U+7DBD/",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00012/annotation/TE00012_0020_2/C2499",
+    "source_page": "https://codh.rois.ac.jp/tensho/iiif/TE00012/canvas/TE00012_0020_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00012/TE00012_0020_2.tif/full/full/0/default.jpg",
+    "source_position": "TE00012_0020_2，CODH 字框 1443,0920,214,265",
+    "source_note": "日本国立国会图书馆藏《偏類六書通》，国立国会图书馆数字馆原典，CODH 矫正版影印（CC BY-SA 4.0），亲字索引为「綽」。依原页核对；字框四侧按笔画留出少量空白。",
+    "source_license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source_attribution": "国立国会図書館所蔵／CODH 加工・配信",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00012/characters/U+7DBD/U+7DBD_TE00012_0020_2_X1443_Y0920.jpg",
+    "split_method": "CODH_source_frame+visual_review",
+    "crop": "/Users/mnhkahn/code/wangxizhi/tmp/nov25-glyph-topup/middle/selected-綽.png",
+    "source_crop_sha256": "cfd2f3dce7862779e5f444dbc6871fd49d74fc5bda6fe5112416a9676222bbaa",
+    "id": "a5e2f37eaa6a5e63bb97c50f52b288d0",
+    "uuid": "a5e2f37eaa6a5e63bb97c50f52b288d0",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

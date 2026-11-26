@@ -1,0 +1,33 @@
+[
+  {
+    "char": "蜂",
+    "source_label": "蜂",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      709,
+      3117,
+      923,
+      3381
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/book/TE00011/characters/U+8702/",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00011/annotation/TE00011_0062_1/C3676",
+    "source_page": "https://codh.rois.ac.jp/tensho/iiif/TE00011/canvas/TE00011_0062_1",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00011/TE00011_0062_1.tif/full/full/0/default.jpg",
+    "source_position": "TE00011_0062_1，CODH 字框 0716,3124,200,250",
+    "source_note": "日本国立国会图书馆藏《偏類六書通》，国立国会图书馆数字馆原典，CODH 矫正版影印（CC BY-SA 4.0），亲字索引为「蜂」。依原页核对；字框四侧按笔画留出少量空白。",
+    "source_license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source_attribution": "国立国会図書館所蔵／CODH 加工・配信",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00011/characters/U+8702/U+8702_TE00011_0062_1_X0716_Y3124.jpg",
+    "split_method": "CODH_source_frame+visual_review",
+    "crop": "/Users/mnhkahn/code/wangxizhi/tmp/nov25-glyph-topup/middle/selected-蜂.png",
+    "source_crop_sha256": "4494aa78f94086b4f643a1794d6eb1640823089924d7457e57eeae0699af37c9",
+    "id": "e4d1a9a377c95e668bd79f9ce610d901",
+    "uuid": "e4d1a9a377c95e668bd79f9ce610d901",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

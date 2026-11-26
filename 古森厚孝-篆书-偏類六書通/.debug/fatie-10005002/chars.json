@@ -1,0 +1,33 @@
+[
+  {
+    "char": "崩",
+    "source_label": "崩",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      2298,
+      945,
+      2514,
+      1182
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/book/TE00010/characters/U+5D29/",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00010/annotation/TE00010_0050_2/C1616",
+    "source_page": "https://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0050_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00010/TE00010_0050_2.tif/full/full/0/default.jpg",
+    "source_position": "TE00010_0050_2，CODH 字框 2305,0952,202,223",
+    "source_note": "日本国立国会图书馆藏《偏類六書通》，国立国会图书馆数字馆原典，CODH 矫正版影印（CC BY-SA 4.0），亲字索引为「崩」。依原页核对；字框四侧按笔画留出少量空白。",
+    "source_license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source_attribution": "国立国会図書館所蔵／CODH 加工・配信",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00010/characters/U+5D29/U+5D29_TE00010_0050_2_X2305_Y0952.jpg",
+    "split_method": "CODH_source_frame+visual_review",
+    "crop": "/Users/mnhkahn/code/wangxizhi/tmp/nov25-glyph-topup/middle/selected-崩.png",
+    "source_crop_sha256": "e68ce351c193be59b39aba1f3162b0759874d6cd07a5b857be80dc66929fa6a3",
+    "id": "e804964a8bbb5432a0ccaf8507cb30ed",
+    "uuid": "e804964a8bbb5432a0ccaf8507cb30ed",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

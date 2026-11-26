@@ -1,0 +1,33 @@
+[
+  {
+    "char": "峻",
+    "source_label": "峻",
+    "author": "古森厚孝",
+    "work": "偏類六書通",
+    "bbox": [
+      461,
+      1201,
+      668,
+      1475
+    ],
+    "column": 0,
+    "row": 0,
+    "source_url": "https://codh.rois.ac.jp/tensho/book/TE00010/characters/U+5CFB/",
+    "source_index": "https://codh.rois.ac.jp/tensho/book/TE00010/annotation/TE00010_0014_2/C1577",
+    "source_page": "https://codh.rois.ac.jp/tensho/iiif/TE00010/canvas/TE00010_0014_2",
+    "source_image_url": "https://codh.rois.ac.jp/tensho/iiif/TE00010/TE00010_0014_2.tif/full/full/0/default.jpg",
+    "source_position": "TE00010_0014_2，CODH 字框 0468,1208,193,260",
+    "source_note": "日本国立国会图书馆藏《偏類六書通》，国立国会图书馆数字馆原典，CODH 矫正版影印（CC BY-SA 4.0），亲字索引为「峻」。依原页核对；字框四侧按笔画留出少量空白。",
+    "source_license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source_attribution": "国立国会図書館所蔵／CODH 加工・配信",
+    "source_template": "https://codh.rois.ac.jp/tensho/book/TE00010/characters/U+5CFB/U+5CFB_TE00010_0014_2_X0468_Y1208.jpg",
+    "split_method": "CODH_source_frame+visual_review",
+    "crop": "/Users/mnhkahn/code/wangxizhi/tmp/nov25-glyph-topup/middle/selected-峻.png",
+    "source_crop_sha256": "0f74b494588f2d91b41ff3fbb8d7886b6e3635d78e6b5a30f8dd951c006b2d9d",
+    "id": "a09ae1d0c1af563abe7098748d1013b6",
+    "uuid": "a09ae1d0c1af563abe7098748d1013b6",
+    "work_dir": "古森厚孝-篆书-偏類六書通",
+    "font": "篆书",
+    "visible": true
+  }
+]

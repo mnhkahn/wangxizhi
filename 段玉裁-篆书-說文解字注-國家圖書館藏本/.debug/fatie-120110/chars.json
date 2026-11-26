@@ -1,0 +1,29 @@
+[
+  {
+    "char": "摻",
+    "source_label": "摻",
+    "author": "段玉裁",
+    "work": "說文解字注-國家圖書館藏本",
+    "bbox": [
+      607,
+      1311,
+      702,
+      1437
+    ],
+    "column": 7,
+    "row": 0,
+    "source_url": "https://www.shidianguji.com/zh/book/NGJ892312002095942313612/chapter/1lujb0l2kunub?pageId=7588334005650325544",
+    "source_image_url": "https://p9-ancientlib-sign.byteimg.com/tos-cn-i-ceu0di7tn2/read/NGJ892312002095942313612/1/page/1lvou9ha5tc7e/1lnhrswvo61an-12-58_0.webp~tplv-ceu0di7tn2-image.image?lk3s=e5c95217&x-expires=1798848000&x-signature=Dwl7ZmS%2BmS%2BWLDoyGOd1Ryfw8pU%3D",
+    "source_page": "十二篇上手部末，識典閱讀器第 110 / 112 頁，書影 12-58_0",
+    "source_position": "十二篇上手部末，正篆下接「斂也。从手，參聲」",
+    "source_note": "原頁大字篆形核對下接「斂也。从手，參聲」，段玉裁據《毛詩正義》補。与教育部異體字字典所示同一補篆寫法核對，來源採實際古籍整頁。",
+    "source_style": "小篆（段注補篆）",
+    "split_method": "original_folio_manual_review",
+    "source_credit": "中國國家圖書館藏本，識典古籍數字化書影",
+    "id": "e2f3da62bee9517887fba074da596bfe",
+    "uuid": "e2f3da62bee9517887fba074da596bfe",
+    "work_dir": "段玉裁-篆书-說文解字注-國家圖書館藏本",
+    "font": "篆书",
+    "visible": true
+  }
+]
